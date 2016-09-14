@@ -74,6 +74,20 @@ cp 参数 源文件 目标文件 // 拷贝文件  参数 -R 表示对目录进�
 ```
 defaults write com.apple.finder AppleShowAllFiles YES  // 显示隐藏文件
 defaults write com.apple.finder AppleShowAllFiles NO   // 隐藏隐藏文件
+defaults write com.apple.finder AppleShowAllFiles -bool true // 显示隐藏文件
+defaults write com.apple.finder AppleShowAllFiles -bool false // 隐藏隐藏文件
+
+
+find ./ -name "*.html" -exec rm -rf {} \;  // 注意 {}和\;之间有空格
+
+/*
+find [目录名] -name "文件名" -exec rm -rf {} \;
+搜索删除文件，例如：find / -name *.raw -exec rm -rf {} \; 其中， -exec 表示后面执行命令 "{}" 表示查询到的文件名 -rf 为删除命令rm的参数，r 表示递归删除， f表示不需要确认，两个参数可根据需要去留
+*/
+
+find . -name .DS_Store -print0 | xargs -0 Git rm -f --ignore-unmatch
+// 删除原有的.DS_Store
+
 
 cat /etc/shells  // 查看一共有多少shell
 chsh -s /bin/zsh // 

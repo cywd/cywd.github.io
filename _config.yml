@@ -39,7 +39,7 @@ permalink: /:year/:month/:day/:title
 ####################################
 #
 owner:
-  name: Cyrill'Blog
+  name: Cyrill
   avatar: cyrill.jpg
   job: "IOS"
   bio: "Cyrill"

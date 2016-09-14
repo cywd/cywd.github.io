@@ -61,7 +61,25 @@ layout: default
   </ul>
 </div><!-- end share-buttons -->
 
+{% if page.comments == true %}
+{% include disqus.html %}
+{% endif %}
+
+
+{% if site.related_posts.size > 0 %}
+<div class="related-articles">
+<h4>You might also enjoy</h4>
+  <ul>
+  {% for post in site.related_posts limit:3 %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div><!-- /.related-articles -->
+{% endif %}
+
+<!-- 
 {% if site.owner.disqus-shortname and page.comments == true %}
 <div id="disqus_thread"></div>
 {% include disqus.html %}
 {% endif %}
+ -->

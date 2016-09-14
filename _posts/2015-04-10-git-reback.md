@@ -2,7 +2,7 @@
 layout: post
 title: "Git版本回退"
 excerpt: "Git版本回退"
-categories: [Git, feature photo]
+categories: [Git]
 tags: [Git, 版本回退]
 date: 2015-04-10 
 modified: 

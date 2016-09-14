@@ -51,3 +51,48 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+
+permalink:  /:year/:month/:day/:title
+
+owner:
+  name: everettjf
+  avatar: everettjf.png
+  bio: "iOS/Windows Developer"
+  email: everettjf@live.com
+  disqus-shortname: everettjf
+  twitter: everettjf #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: everettjf #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: everettjf #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+

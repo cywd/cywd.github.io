@@ -29,12 +29,17 @@ homebrew升级
 `brew install autoconf`
 
 当执行这句安装cocoapods时
+
 `sudo sudo gem install -n /usr/local/bin cocoapods`
+
 出现这个的时候
+
 ```
 ERROR:  While executing gem ... (TypeError)
     no implicit conversion of nil into String
 ```
+
+
 请
 更新gem
 `sudo gem update --system`

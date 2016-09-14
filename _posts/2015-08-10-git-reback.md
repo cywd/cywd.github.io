@@ -2,10 +2,9 @@
 layout: post
 title: "Git版本回退"
 excerpt: "Git版本回退"
-author: Cyrill
 categories: [Git, feature photo]
 tags: [Git, 版本回退]
-date: 2011-03-10 
+date: 2015-08-10 
 modified: 
 comments: true
 ---

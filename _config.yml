@@ -26,6 +26,6 @@ github_username:  CoderCYLee
 markdown: kramdown
 theme: minima
 
-# owner:
-#   name: Cyrill
-#   bio: "iOS Developer"
+owner:
+  name: Cyrill
+  bio: "iOS Developer"

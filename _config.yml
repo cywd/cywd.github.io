@@ -3,22 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Cyrill
-email: lichunyang@outlook.com
-description: > # this means to ignore newlines until "baseurl:"
-  Cyrill
-# baseurl: "https://CoderCYLee.github.io" # the subpath of your site, e.g. /blog
-url: https://CoderCYLee.github.io # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  CoderCYLee
-
-# # Build settings
-# markdown: kramdown
-# theme: minima
-
-# owner:
-#   name: Cyrill
-#   bio: "iOS Developer"
+title: Leonids
+email:
+description: A simple and awesome blog theme powered by jekyll.
+url: # the base hostname & protocol for your site
 
 
 #
@@ -26,14 +14,11 @@ url: https://CoderCYLee.github.io # the base hostname & protocol for your site
 # Jekyll configuration
 ####################################
 #
-markdown:    kramdown
-highlighter: rouge
+timezone:          Europe/Paris
+markdown:          kramdown
+highlighter:       rouge
 excerpt_separator: <!--more-->
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
+permalink:         /articles/:year-:month/:title
 
 kramdown:
   auto_ids: true
@@ -44,19 +29,17 @@ kramdown:
 
 #
 ###################################
-# Jekyll configuration
+# Site Owner configuration
 ####################################
 #
-
-permalink:  /:year/:month/:day/:title
-
 owner:
-  name: everettjf
-  avatar: everettjf.png
-  bio: "iOS/Windows Developer"
-  email: everettjf@live.com
-  disqus-shortname: everettjf
-  twitter: everettjf #username
+  name: Leonids
+  avatar: leonids-logo.png
+  job: "A jekyll theme"
+  bio: "A simple and awesome blog theme powered by jekyll."
+  email:
+  disqus-shortname:
+  twitter: #username
   facebook: #username
   google:
     plus: #username
@@ -65,7 +48,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: everettjf #username
+  github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
@@ -78,11 +61,7 @@ owner:
   dribbble: #username
   youtube: #username
   soundcloud: #username
-  weibo: everettjf #username
+  weibo: #username
   flickr: #username
+  500px: #username
   codepen: #username
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-
-

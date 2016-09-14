@@ -1,0 +1,35 @@
+{% if page.author %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+{% endif %}
+
+<div class="header">
+
+  {% if author.avatar %}
+  <div class="row visible-md-block visible-lg-block">
+    <img class="author-avatar" src="{{ site.url }}/images/{{ author.avatar }}" alt="{{ author.name | downcase }}">
+  </div>
+  {% endif %}
+  <div class="row">
+    <a href="{{ site.url }}/" class="brand-title">{{ author.name }}</a>
+    <span class="brand-tagline">{{ author.bio }}</span>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/about/">About</a> <span>/</span>
+        </li>
+        <li class="nav-item">
+          <a href="/archive/">Archive</a> <span>/</span>
+        </li>          
+        <li class="nav-item">
+          <a href="/tags/">Tags</a> <span>/</span>
+        </li>
+        <li class="nav-item">
+          <a href="/feed.xml" target="_blank">Feed</a>
+        </li>
+      </ul>
+    </nav>
+    {% include social-links.html %}
+  </div>
+
+</div>

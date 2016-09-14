@@ -40,7 +40,7 @@ permalink: /:year/:month/:day/:title
 #
 owner:
   name: Cyrill
-  avatar: leonids-logo.png
+  avatar: avatar.jpg
   job: "A jekyll theme"
   bio: "A simple and awesome blog theme powered by jekyll."
   email: lichunyang@outlook.com

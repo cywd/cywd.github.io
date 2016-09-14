@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
+title: Cyrill
+email: lichunyang@outlook.com
 description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
+url: https://CoderCYLee.github.io # the base hostname & protocol for your site
 
 
 #
@@ -14,11 +14,15 @@ url: # the base hostname & protocol for your site
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
 kramdown:
   auto_ids: true
@@ -27,17 +31,19 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
+permalink: /:year/:month/:day/:title
+
 #
 ###################################
 # Site Owner configuration
 ####################################
 #
 owner:
-  name: Leonids
+  name: Cyrill
   avatar: leonids-logo.png
   job: "A jekyll theme"
   bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  email: lichunyang@outlook.com
   disqus-shortname:
   twitter: #username
   facebook: #username

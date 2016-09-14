@@ -5,7 +5,7 @@
 #
 title: Cyrill
 email: lichunyang@outlook.com
-description: Cyrill's blog by Cyrill.
+description: Cyrill.
 url: https://CoderCYLee.github.io # the base hostname & protocol for your site
 
 
@@ -42,19 +42,19 @@ owner:
   name: Cyrill
   avatar: cyrill.jpg
   job: "IOS"
-  bio: "Cyrill's blog by Cyrill."
+  bio: "Cyrill."
   email: lichunyang@outlook.com
   disqus-shortname:
-  twitter: #username
+  twitter: cyrill #username
   facebook: #username
   google:
-    plus: #username
+    plus:  #username
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: CoderCYLee #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
@@ -67,7 +67,7 @@ owner:
   dribbble: #username
   youtube: #username
   soundcloud: #username
-  weibo: #username
+  weibo: PennyBerry工程 #username
   flickr: #username
   500px: #username
   codepen: #username

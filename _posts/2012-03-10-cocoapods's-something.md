@@ -4,7 +4,7 @@ title: "关于cocoaPods安装的那些事"
 excerpt: "安装cocoapods顺序
 Xcode->homebrew->RVM->Ruby->CocoaPots;"
 tags: [Git]
-date: 2011-03-10 
+date: 2012-03-10 
 modified: 
 comments: true
 ---

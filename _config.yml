@@ -19,13 +19,35 @@ description: > # this means to ignore newlines until "baseurl:"
   Cyrill
 # baseurl: "https://CoderCYLee.github.io" # the subpath of your site, e.g. /blog
 url: https://CoderCYLee.github.io # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  CoderCYLee
+# twitter_username: jekyllrb
+# github_username:  CoderCYLee
 
-# Build settings
-markdown: kramdown
-theme: minima
+# # Build settings
+# markdown: kramdown
+# theme: minima
 
 # owner:
 #   name: Cyrill
 #   bio: "iOS Developer"
+
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+markdown:    kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false

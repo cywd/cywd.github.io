@@ -5,7 +5,7 @@
 #
 title: Cyrill
 email: lichunyang@outlook.com
-description: Cyrill.
+description: Cyrill
 url: https://CoderCYLee.github.io # the base hostname & protocol for your site
 
 
@@ -39,10 +39,10 @@ permalink: /:year/:month/:day/:title
 ####################################
 #
 owner:
-  name: Cyrill
+  name: Cyrill'Blog
   avatar: cyrill.jpg
   job: "IOS"
-  bio: "Cyrill."
+  bio: "Cyrill"
   email: lichunyang@outlook.com
   disqus-shortname:
   twitter: pennyberry01 #username

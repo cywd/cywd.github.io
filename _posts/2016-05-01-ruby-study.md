@@ -2,7 +2,8 @@
 layout: post
 title: "Ruby的学习历程"
 excerpt: "Ruby的学习历程"
-tags: [Git]
+categories: [Ruby, Study]
+tags: [Ruby, Study]
 date: 2016-05-01 
 modified: 
 comments: true

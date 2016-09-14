@@ -69,7 +69,7 @@ mv 文件       // 移动文件
 cp 参数 源文件 目标文件 // 拷贝文件  参数 -R 表示对目录进行递归操作
 ```
 
-mac相关的一些操作
+## mac相关的一些操作
 
 ```
 defaults write com.apple.finder AppleShowAllFiles YES  // 显示隐藏文件

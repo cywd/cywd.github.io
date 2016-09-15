@@ -55,7 +55,7 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 
 ## 3.如下图
 
-![问题3](/article/problem/p3.png)
+![问题3](/img/article/problem/p3.png)
 
 
 

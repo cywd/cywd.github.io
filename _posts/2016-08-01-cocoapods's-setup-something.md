@@ -73,8 +73,16 @@ activesupport requires Ruby version >= 2.2.2.
 `sudo gem install cocoa pods`
 `sudo gem install -n /usr/local/bin cocoapods`
 `pod setup`
+
+// 查看pod版本
+`pod --version`
+
+
 ``
-``
+
+
+
+
 
 
 关于pod setup 特别慢的问题

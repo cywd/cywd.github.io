@@ -9,7 +9,8 @@ modified:
 comments: true
 ---
 
-[TOC]
+* TOC
+{:toc}
 
 ## 尝试用python爬取图片
 

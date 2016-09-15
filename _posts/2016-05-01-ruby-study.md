@@ -9,6 +9,9 @@ modified:
 comments: true
 ---
 
+* TOC
+{:toc}
+
 ```ruby
 #!/usr/bin/ruby -w
 # -*- coding: UTF-8 -*-

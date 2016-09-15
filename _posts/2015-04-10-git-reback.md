@@ -9,7 +9,8 @@ modified:
 comments: true
 ---
 
-[TOC]
+* TOC
+{:toc}
 
 回退到前一个版本后
 

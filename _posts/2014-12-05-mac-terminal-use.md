@@ -9,7 +9,8 @@ modified:
 comments: true
 ---
 
-[TOC]
+* TOC
+{:toc}
 
 ## 一些快捷键
 

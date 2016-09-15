@@ -54,6 +54,7 @@ ERROR:  While executing gem ... (TypeError)
 `gem install rails`
 
 ruby的版本号过低
+
 ```
 ERROR:  Error installing cocoapods:
 activesupport requires Ruby version >= 2.2.2.

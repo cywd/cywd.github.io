@@ -57,9 +57,35 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 
 ![问题3](/img/article/problem/p3.png)
 
+由于是从外包接手的项目，出现了这个问题。
 
+意思是开启配置了Xcode中自带的Git,但是仓库路径无效,应该是仓库在别的电脑上.
+结局办法:1.直接忽略.  2. 把工程下的.git删掉.
 
+## 4.Xcode错误-`Could not launch app - No such file or directory Error.`
 
+蛋疼的一个Xcode bug，基本上应该不是工程本身问题。
+解决方法：
+1、拔掉设备，删除之前Build的内容
+2、退出Xcode，不是关闭窗口
+3、删除那个/Users/XXX/Library/Developer/Xcode/DerivedData/XXX-grgrmtzqajhyqgghabyjttajwbsm文件夹
+4、启动XCode连接设备，现在应该OK了
+
+## 5.支付宝遇到的问题
+
+![问题5](/img/article/problem/p5.png)
+
+## 6.Xcode证书问题
+
+![问题5](/img/article/problem/p6.png)
+
+重新配置开发者中心的证书相关 或者  导入合适的 p12文件.
+
+## 7.如图
+
+![问题5](/img/article/problem/p7.png)
+
+系统的按钮偏移，说明的某个类扩展修改了系统的东西,找到对应的类扩展修改到正确的位置就好了。
 
 
 

@@ -9,7 +9,7 @@ modified:
 comments: true
 ---
 
-```
+```ruby
 #!/usr/bin/ruby -w
 # -*- coding: UTF-8 -*-
 
@@ -509,42 +509,6 @@ puts "#{nums}"
 
 nums = Array.[](1, 2, 3, 4, 5)
 puts "#{nums}"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

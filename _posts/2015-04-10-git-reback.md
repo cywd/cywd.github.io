@@ -9,6 +9,8 @@ modified:
 comments: true
 ---
 
+[TOC]
+
 回退到前一个版本后
 
 `git reset --hard HEAD~1`

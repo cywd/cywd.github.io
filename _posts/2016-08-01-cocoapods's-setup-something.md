@@ -10,6 +10,8 @@ modified:
 comments: true
 ---
 
+[TOC]
+
 安装cocoapods顺序
 Xcode->homebrew->RVM->Ruby->CocoaPots;
 

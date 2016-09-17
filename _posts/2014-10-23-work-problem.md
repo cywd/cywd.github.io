@@ -23,7 +23,7 @@ comments: true
 某天机器又换IP了，ssh又报错了：
 
 ```
-mmt@FS01:~$ ssh  -o StrictHostKeyChecking=no  192.168.0.130
+~ ssh -o StrictHostKeyChecking=no 192.168.0.130
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!    @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -33,8 +33,8 @@ It is also possible that the RSA host key has just been changed.
 The fingerprint for the RSA key sent by the remote host is
 fe:d6:f8:59:03:a5:de:e8:29:ef:3b:26:6e:3d:1d:4b.
 Please contact your system administrator.
-Add correct host key in /home/mmt/.ssh/known_hosts to get rid of this message.
-Offending key in /home/mmt/.ssh/known_hosts:38
+Add correct host key in /home/cyrill/.ssh/known_hosts to get rid of this message.
+Offending key in /home/cyrill/.ssh/known_hosts:38
 Password authentication is disabled to avoid man-in-the-middle attacks.
 Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
 Permission denied (publickey,password).

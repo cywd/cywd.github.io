@@ -1,13 +1,5 @@
 
-aside {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  display: block;
-}
-
-.aside {
+#particles-js {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +9,7 @@ aside {
   background: #59a0b0;
 }
 
-.aside {
+#particles-js {
 	position: relative;
 	width: 100%;
 	height: 200px;

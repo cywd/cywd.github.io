@@ -17,19 +17,21 @@ ul.tag-cloud {
   .tag-group {
     margin-bottom: 2em;
     .tag-group-title {
-      color: $warning;
-      text-transform: capitalize;
+//       color: $warning;
+//       text-transform: capitalize;
+	color: $text-color;
+	text-transform: uppercase;
     }
 
     .tag-item {
       padding-left: 1em;
       margin-bottom: .5em;
-      a {
-        color: $text-color;
-        &:hover,
-        &:focus {
-          color: lighten($text-color, 24%);
-        }
+      // a {
+//         color: $text-color;
+//         &:hover,
+//         &:focus {
+//           color: lighten($text-color, 24%);
+//         }
       }
     }
   }

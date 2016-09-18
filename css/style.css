@@ -1,3 +1,29 @@
+
+aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  max-width: 500px;
+  background: #59a0b0;
+}
+
+.aside {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	max-width: none;
+}
+
 #particles-js {
   width: 100%;
   height: 100%;

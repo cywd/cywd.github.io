@@ -90,10 +90,23 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 
 系统的按钮偏移，说明的某个类扩展修改了系统的东西,找到对应的类扩展修改到正确的位置就好了。
 
+## 8.Xcode 删除文件后编译出现的missing file的警告
 
+进入“Missing File”对应的目录进行删除即可。
 
+1.由于使用SVN导致的，可进行如下操作：
 
+```
+# cd /Users/lichunyang/Desktop/vKan/Code_1_0/VKan/VKan/ViewControllers/
+# svn delete CYUploadPhotoViewController.m
+```
 
+2.由于使用GIT导致的，可进行如下操作：
+
+```
+# cd ~CYUploadPhotoViewController.m
+# git rm CYUploadPhotoViewController.m
+```
 
 
 

@@ -16,9 +16,15 @@ comments: true
 
 知识学会很久了，苦于一直没有能越狱的设备，刚好PP盘古刚刚发布了iOS9.3.3越狱，这就把我的iPad给越狱了，记录实践一下。
 
+
+
 ##简介
 `Cycript`是由`saurik`推出的一款脚本语言，是混合了`objective-c`与`javascript`语法的一个工具，让开发者在命令行下和应用交互，在运行时查看和修改应用。
-##基本使用
+
+
+
+## 基本使用
+
 安装：可以在`Cydia`里搜索`cycript`来下载安装，可以配合`MTerminal`使用。
 使用：可以通过`MTerminal`，后者`ssh`到`iOS`中执行。
 ssh到笔者的iPad：
@@ -49,6 +55,8 @@ cy# [alertView show]
 cy# [#0x156f9f0a0 show]
 ```
 一样可以弹出提示框.
+
+
 
 
 ##问题

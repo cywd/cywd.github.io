@@ -134,3 +134,15 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 
 `performSelector:withObject:afterDelay:`和`[NSTimer timerWithTimeInterval:invocation:repeats:] ` 都要保证在主线程中.
 
+## 12.No architectures to compile for (ONLY_ACTIVE_ARCH=YES, active arch=x86_64, VALID_
+
+错误代码：`No architectures to compile for (ONLY_ACTIVE_ARCH=YES, active arch=x86_64, VALID_ARCHS=armv7 armv7s)`
+
+xcodebuild 这个target的时候命令行报错。
+
+![问题6](/img/article/problem/p12.jpg)
+
+还有解决办法：
+
+[来自stackoverflow](http://stackoverflow.com/questions/12889065/no-architectures-to-compile-for-only-active-arch-yes-active-arch-x86-64-valid)
+

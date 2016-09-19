@@ -24,7 +24,7 @@ TOCK
 
 ## 2.当view旋转缩放的时候出现锯齿
 
-去掉锯齿
+使用`layer`的`allowsEdgeAntialiasing`属性消除锯齿
 
 ```objective-c
 self.layer.allowsEdgeAntialiasing = YES;

@@ -46,3 +46,19 @@ self.layer.allowsEdgeAntialiasing = YES;
 ```shell
 find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name ".rss" -or -name ".xib"  ")" -print | xargs wc -l
 ```
+## 5.宏的##和#作用
+
+在宏里面, ##的作用:连接2个标识符
+
+```objective-c
+#define method(name) - (void)load##name {}method(abc)  
+//- (void)loadabc {}method(ddd)  
+//- (void)loadddd {}method(ttt)  
+//- (void)loadttt {}
+```
+
+在宏里面, #的作用:给右边的标识符加上双引号""
+
+```c
+#define test(name) @#nametest(abc) // @"abc"
+```

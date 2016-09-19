@@ -11,6 +11,8 @@ comments: true
 
 * TOC
 {:toc}
+
+
 ## 1.如何快速的查看一段代码的执行时间。
 
 ```objective-c
@@ -36,3 +38,4 @@ self.layer.allowsEdgeAntialiasing = YES;
 引用网上的图，不知道原作者是谁。
 
 ![引用网上的图](/img/article/tips/3.jpg)
+

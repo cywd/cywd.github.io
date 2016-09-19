@@ -108,6 +108,16 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 # git rm CYUploadPhotoViewController.m
 ```
 
+## 9.imageNamed和imageWithContentsOfFile
 
+读取图片有两种方式
 
+1.`imageNamed`,其参数为图片的名字；
 
+2.`imageWithContentsOfFile`，其参数是图片文件的路径。
+
+二者的区别：
+
+1.`imageNamed`: 这个方法用一个指定的名字在系统缓存中查找并返回一个图片对象如果它存在的话。如果缓存中没有找到相应的图片，这个方法从指定的文档中加载然后缓存并返回这个对象。因此`imageNamed`的优点是当加载时会缓存图片。所以当图片会频繁的使用时，那么用`imageNamed`的方法会比较好。
+
+2.`imageWithContentsOfFile`：仅加载图片，图像数据不会缓存。因此对于较大的图片以及使用情况较少时，那就可以用该方法，降低内存消耗。

@@ -121,3 +121,16 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 1.`imageNamed`: 这个方法用一个指定的名字在系统缓存中查找并返回一个图片对象如果它存在的话。如果缓存中没有找到相应的图片，这个方法从指定的文档中加载然后缓存并返回这个对象。因此`imageNamed`的优点是当加载时会缓存图片。所以当图片会频繁的使用时，那么用`imageNamed`的方法会比较好。
 
 2.`imageWithContentsOfFile`：仅加载图片，图像数据不会缓存。因此对于较大的图片以及使用情况较少时，那就可以用该方法，降低内存消耗。
+
+## 10.为什么ViewController does not accept kUTTypeText?  
+
+需要包含  MobileCoreServices
+
+```objective-c
+#import <MobileCoreServices/MobileCoreServices.h>
+```
+
+## 11.performSelector:withObject:afterDelay:调用没有作用的问题及解决方法  
+
+`performSelector:withObject:afterDelay:`和`[NSTimer timerWithTimeInterval:invocation:repeats:] ` 都要保证在主线程中.
+

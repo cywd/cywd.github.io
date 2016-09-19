@@ -39,3 +39,10 @@ self.layer.allowsEdgeAntialiasing = YES;
 
 ![引用网上的图](/img/article/tips/3.jpg)
 
+## 4.统计项目中代码行数  
+
+终端cd到相应目录，执行
+
+```shell
+find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name ".rss" -or -name ".xib"  ")" -print | xargs wc -l
+```

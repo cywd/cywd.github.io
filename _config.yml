@@ -41,8 +41,8 @@ permalink: /:year/:month/:day/:title
 owner:
   name: Cyrill
   avatar: cyrill.jpg
-  job: "iOS / Try Everthing"
-  bio: "Cyrill"
+  job: "iOS"
+  bio: "Try Everthing"
   email: lichunyang@outlook.com
   disqus-shortname:
   twitter: pennyberry01 #username

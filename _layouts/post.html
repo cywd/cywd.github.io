@@ -40,7 +40,6 @@ layout: default
   </article>
 </div>
 
-<div class="share-buttons">
 <!-- JiaThis Button BEGIN -->
 <div class="jiathis_style_32x32">
 	<a class="jiathis_button_qzone"></a>
@@ -53,8 +52,10 @@ layout: default
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
-  <!-- 
-<h6>Share on: </h6>
+
+<!-- 
+<div class="share-buttons">
+  <h6>Share on: </h6>
   <ul>
     <li>
       <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
@@ -72,8 +73,8 @@ layout: default
       <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
+</div><!~~ end share-buttons ~~>
  -->
-</div><!-- end share-buttons -->
 
 {% if page.comments == true %}
 {% include disqus.html %}

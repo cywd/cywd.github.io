@@ -95,7 +95,7 @@ struct stStruct = NULL;
 NSArray *array = [NSArray arrayWithObjects:[[NSObject alloc] init], [NSNull null], [[NSObject alloc] init], [[NSObject alloc] init], nil];
 ```
 
-#### 为什么上面`array`里面的空对象不直接用`nil`？
+### 为什么上面`array`里面的空对象不直接用`nil`？
 
 ```objective-c
 NSArray *array = [NSArray arrayWithObjects:[[NSObject alloc] init], nil,  [[NSObject alloc] init], [[NSObject alloc] init], nil];

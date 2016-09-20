@@ -40,7 +40,7 @@ Keyboard-interactive authentication is disabled to avoid man-in-the-middle attac
 Permission denied (publickey,password).
 ```
 
-注意这句`Add correct host key in /home/mmt/.ssh/known_hosts to get rid of this message.`，我们按提示输入：`mv  /home/mmt/.ssh/known_hosts known_hosts.bak`，再ssh，`ssh  -o StrictHostKeyChecking=no  192.168.0.130`,可以了。
+注意这句`Add correct host key in /home/cyrill/.ssh/known_hosts to get rid of this message.`，我们按提示输入：`mv  /home/cyrill/.ssh/known_hosts known_hosts.bak`，再ssh，`ssh  -o StrictHostKeyChecking=no  192.168.0.130`,可以了。
 
 ## 2.Xcode更新后SVN失败
 

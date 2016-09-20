@@ -2,8 +2,8 @@
 layout: post
 title: "nil、Nil、NULL与NSNull的区别"
 excerpt: "nil、Nil、NULL与NSNull的区别,记录一下"
-categories: [OC, Study]
-tags: [OC, Tips, Study]
+categories: [OC, Tips]
+tags: [OC, Tips]
 date: 2014-04-20 
 modified: 
 comments: true

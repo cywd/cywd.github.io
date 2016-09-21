@@ -46,6 +46,7 @@ self.layer.allowsEdgeAntialiasing = YES;
 ```shell
 find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name ".rss" -or -name ".xib"  ")" -print | xargs wc -l
 ```
+
 ## 5.宏的##和#作用
 
 在宏里面, ##的作用:连接2个标识符
@@ -62,6 +63,7 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 ```c
 #define test(name) @#nametest(abc) // @"abc"
 ```
+
 ## 6.忽略未使用变量的警告
 
 ```objective-c

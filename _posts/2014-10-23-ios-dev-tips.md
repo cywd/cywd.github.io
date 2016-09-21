@@ -62,3 +62,42 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 ```c
 #define test(name) @#nametest(abc) // @"abc"
 ```
+## 6.忽略未使用变量的警告
+
+```objective-c
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+	UIView *testView = [[UIView alloc] init];
+#pragma clang diagnostic pop
+```
+
+## 7.忽略方法未声明警告
+
+```objective-c
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleNavigationTransition:)];
+    
+#pragma clang diagnostic pop
+```
+
+## 8.在APPDelegate中禁用第三方键盘
+
+```objective-c
+#pragma mark - 禁用第三方键盘
+- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
+    return NO;
+}
+```
+
+## 9.判断是模拟器还是真机
+
+```objective-c
+#if TARGET_IPHONE_SIMULATOR //模拟器
+
+#elif TARGET_OS_IPHONE //真机
+
+#endif
+```
+

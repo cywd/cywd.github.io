@@ -91,7 +91,8 @@ find . -name .DS_Store -print0 | xargs -0 Git rm -f --ignore-unmatch
 
 
 cat /etc/shells  // 查看一共有多少shell
-chsh -s /bin/zsh // 
+chsh -s /bin/zsh // 切换到zsh
+chsh -s /bin/bash // 切换到bash
 zsh   // 切换到zsh
 bash  // 切换到bash
 ```

@@ -82,8 +82,9 @@ activesupport requires Ruby version >= 2.2.2.
 // 查看pod版本
 `pod --version`
 
+查看源
 
-``
+`gem sources -l`
 
 
 

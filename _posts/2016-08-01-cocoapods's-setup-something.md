@@ -15,7 +15,7 @@ comments: true
 ---
 
 安装cocoapods顺序
-Xcode->homebrew->RVM->Ruby->CocoaPots;
+Xcode->homebrew->RVM->Ruby->CocoaPods;
 
 查看gcc版本
 `gcc --version`

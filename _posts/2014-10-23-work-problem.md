@@ -147,3 +147,7 @@ xcodebuild 这个target的时候命令行报错。
 
 [来自stackoverflow](http://stackoverflow.com/questions/12889065/no-architectures-to-compile-for-only-active-arch-yes-active-arch-x86-64-valid)
 
+## 13.集成支付宝报错`file not found`
+
+在`Search Paths`里加上对应的路径
+

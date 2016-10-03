@@ -64,7 +64,7 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 由于是从外包接手的项目，出现了这个问题。
 
 意思是开启配置了Xcode中自带的Git,但是仓库路径无效,应该是仓库在别的电脑上.
-结局办法:1.直接忽略.  2. 把工程下的.git删掉.
+解决办法:1.直接忽略.  2. 把工程下的.git删掉.
 
 ## 4.Xcode错误-`Could not launch app - No such file or directory Error.`
 

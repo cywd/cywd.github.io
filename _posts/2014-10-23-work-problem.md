@@ -73,7 +73,7 @@ sudo xcode-select --switch “Xcode的path，直接在应用程序里面找到Xc
 1、拔掉设备，删除之前Build的内容
 2、退出Xcode，不是关闭窗口
 3、删除那个/Users/XXX/Library/Developer/Xcode/DerivedData/XXX-grgrmtzqajhyqgghabyjttajwbsm文件夹
-4、启动XCode连接设备，现在应该OK了
+4、启动Xcode连接设备，现在应该OK了
 
 ## 5.支付宝遇到的问题
 

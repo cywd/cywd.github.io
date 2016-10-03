@@ -151,3 +151,8 @@ xcodebuild 这个target的时候命令行报错。
 
 在`Search Paths`里加上对应的路径
 
+## 14.报警告：`warning: All interface orientations must be supported unless the app requires full screen.`
+
+勾选
+
+![问题14](/img/article/problem/p14.png)

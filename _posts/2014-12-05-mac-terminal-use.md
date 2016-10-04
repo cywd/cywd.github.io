@@ -98,7 +98,15 @@ zsh   // 切换到zsh
 bash  // 切换到bash
 ```
 
+## iTerm2
 
+```c
+Ctrl w          // 删除前一个单词
+Command + r     // 清除屏幕上的内容
+Command + t/w    // 打开/关闭 tab
+Command + 数字   // 切换到第 n 个 tab
+// 双击 选中一个单词，自动复制
+```
 
 
 

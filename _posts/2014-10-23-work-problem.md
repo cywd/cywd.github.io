@@ -156,3 +156,9 @@ xcodebuild 这个target的时候命令行报错。
 勾选
 
 ![问题14](/img/article/problem/p14.png)
+
+## 15.报错`fatal error: too many errors emitted, stopping now`,提示`UIKit.h`等找不到
+
+原因应该是设置了`prefix header = YES` 。
+
+如果是需要`pch`的, 用`Cy-4AH`忽略它， `ifdef __OBJC__`放在`pch`里。

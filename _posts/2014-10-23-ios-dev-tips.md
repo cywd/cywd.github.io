@@ -103,3 +103,23 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 #endif
 ```
 
+## 10.给NSObject 增加属性
+
+举例，比如我们希望button点击的时候，可以传递更多的属性。除开继承自UIButton添加属性外，还有这种方法。
+
+```
+UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+
+objc_setAssociatedObject(btn, "firstObject", @1, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+[btn setFrame:CGRectMake(10, 250, 100, 50)];
+[btn setTitle:@"Test To Logic" forState:UIControlStateNormal];
+[self.view addSubview:btn];
+btn.showsTouchWhenHighlighted = YES;
+[btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+
+- (void)click:(UIButton *)sender {
+	// 
+    id first = objc_getAssociatedObject(sender, "firstObject");
+}
+```

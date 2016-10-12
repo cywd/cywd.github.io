@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xcode8打印的问题
+title: "Xcode8打印的问题"
 excerpt: "升级Xcode8正式版以后,下方控制台打印出现了两个问题，一是会打印出来多余的调试信息，二是NSLog打印很长的JSON会发生显现不全的问题"
 categories: [Xcode]
 tags: [Xcode, Tips]

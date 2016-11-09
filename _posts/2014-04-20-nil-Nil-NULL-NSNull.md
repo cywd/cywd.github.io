@@ -103,4 +103,4 @@ NSArray *array = [NSArray arrayWithObjects:[[NSObject alloc] init], nil,  [[NSOb
 ```
 
 那么数组到第二个位置就会结束。打印`[array count]`的话会显示1而不是4,
-所以`[NSNull null]`通常可以作为一个数组的占位符，从而使数组的count计算准确.
+所以`[NSNull null]`通常可以作为一个数组的占位符，从而使数组的count计算准确。

@@ -72,4 +72,5 @@ WKWebView 的estimatedProgress和title 都是KVO模式，需要添加监控：
 [self.webView removeObserver:self forKeyPath:kTitleKey];
 ```
 
-[https://github.com/CoderCYLee/CYProgressWebVIew]: https://github.com/CoderCYLee/CYProgressWebVIew	"Demo地址在这"
+[https://github.com/CoderCYLee/CYProgressWebVIew]:https://github.com/CoderCYLee/CYProgressWebVIew
+

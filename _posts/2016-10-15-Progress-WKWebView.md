@@ -34,7 +34,7 @@ WKWebView 的estimatedProgress和title 都是KVO模式，需要添加监控：
 [_webView addObserver:self forKeyPath:kTitleKey options:NSKeyValueObservingOptionNew context:NULL];
 ```
 
-
+### 监听方法
 
 ```objective-c
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
@@ -65,7 +65,7 @@ WKWebView 的estimatedProgress和title 都是KVO模式，需要添加监控：
 }
 ```
 
-另外别忘记移除
+### 另外别忘记移除
 
 ```objective-c
 [self.webView removeObserver:self forKeyPath:kProgressKey];

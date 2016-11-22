@@ -100,7 +100,7 @@ bash  // 切换到bash
 
 ## iTerm2
 
-```c
+```shell
 Ctrl w          // 删除前一个单词
 Command + r     // 清除屏幕上的内容
 Command + t/w    // 打开/关闭 tab
@@ -110,5 +110,9 @@ Command + 数字   // 切换到第 n 个 tab
 
 
 
+## 技巧  
 
+```shell
+sudo chown -R `whoami` /usr/local   // 修复/usr/local权限
+```
 

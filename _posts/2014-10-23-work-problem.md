@@ -162,3 +162,9 @@ xcodebuild 这个target的时候命令行报错。
 原因应该是设置了`prefix header = YES` 。
 
 如果是需要`pch`的, 用`Cy-4AH`忽略它， `ifdef __OBJC__`放在`pch`里。
+
+## 16.PCH位置
+
+PCH 添加
+ $(SRCROOT)/PCHDemo/PrefixHeader.pch
+

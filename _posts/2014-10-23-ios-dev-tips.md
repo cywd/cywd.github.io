@@ -123,3 +123,43 @@ btn.showsTouchWhenHighlighted = YES;
     id first = objc_getAssociatedObject(sender, "firstObject");
 }
 ```
+## 11.CGfloat和float的区别?
+
+command+左键点击CGFloat.
+
+```
+typedef CGFLOAT_TYPE CGFloat;
+```
+
+```
+#if defined(__LP64__) && __LP64__
+# define CGFLOAT_TYPE double
+# define CGFLOAT_IS_DOUBLE 1
+# define CGFLOAT_MIN DBL_MIN
+# define CGFLOAT_MAX DBL_MAX
+#else
+# define CGFLOAT_TYPE float
+# define CGFLOAT_IS_DOUBLE 0
+# define CGFLOAT_MIN FLT_MIN
+# define CGFLOAT_MAX FLT_MAX
+#endif
+```
+
+64位系统下,CGFLOAT是double类型,32位系统下是float类型.
+
+## 12.FOUNDATION_EXPORT和#define
+
+比较的时候FOUNDATION_EXPORT 可以 == ，#define 只是单纯的替换.
+
+## 13.滑动的时候隐藏navigationbar(类似safari)
+
+```
+navigationController.hidesBarsOnSwipe = Yes;
+```
+
+## 14.去掉导航条返回键带的title
+
+```
+[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                     forBarMetrics:UIBarMetricsDefault];
+```

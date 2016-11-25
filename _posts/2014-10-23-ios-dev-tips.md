@@ -163,3 +163,12 @@ navigationController.hidesBarsOnSwipe = Yes;
 [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
                                                      forBarMetrics:UIBarMetricsDefault];
 ```
+## 15.isKindOfClass、isMemberOfClass和isSubclassOfClass
+
+苛刻程度   `isKindOfClass < isSubclassOfClass < isMemberOfClass;`
+
+```objective-c
+// isKindOfClass:       
+// isSubclassOfClass:   是子类
+// isMemberOfClass:     类型需完全一样
+```

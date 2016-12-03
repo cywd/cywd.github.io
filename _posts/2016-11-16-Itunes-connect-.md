@@ -47,5 +47,5 @@ For information on changing the app name and other metadata in iTunes Connect, p
 
 ### 找到问题了
 
-seo优化，搞了好多个本地化，每个名字不一样，其中一个出了问题。
+seo优化，搞了好多个本地化，每个名字不一样，其中一个出了问题。删除或修改出问题的文字，即可解决。
 

@@ -172,3 +172,25 @@ navigationController.hidesBarsOnSwipe = Yes;
 // isSubclassOfClass:   是子类
 // isMemberOfClass:     类型需完全一样
 ```
+## 16.代码中字符串换行
+
+```objective-c
+NSString *string = @"ABCDEFGHIJKL" \
+         "MNOPQRSTUVsWXYZ";
+```
+## 17.判断一个字符串是否包含另一个字符串
+
+```objective-c
+[str1 rangeOfString:str2].length != 0 ? @"包含" : @"不包含" ;
+```
+
+## 18.引用
+
+C++支持引用，Objective-C是从C衍变来的，不支持引用
+
+## 19.重写description
+
+输出重要变量的值，因为调试窗口variableView有时候变量值显示不出来。
+
+
+

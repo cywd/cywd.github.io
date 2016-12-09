@@ -30,7 +30,7 @@ TOCK
 
 ```objective-c
 self.layer.allowsEdgeAntialiasing = YES;
-// 设置对应view的这个属性
+// 设置对应view的layer这个属性
 ```
 
 ## 3.UIContentMode的显示方式，备忘
@@ -53,9 +53,9 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 
 ```objective-c
 #define method(name) - (void)load##name {}method(abc)  
-//- (void)loadabc {}method(ddd)  
-//- (void)loadddd {}method(ttt)  
-//- (void)loadttt {}
+//- (void)loadabc {}   method(abc)  
+//- (void)loadddd {}   method(ddd)  
+//- (void)loadttt {}   method(ttt) 
 ```
 
 在宏里面, #的作用:给右边的标识符加上双引号""
@@ -80,7 +80,7 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleNavigationTransition:)];
-    
+    // 错误实例，这样做会在点击时崩溃
 #pragma clang diagnostic pop
 ```
 

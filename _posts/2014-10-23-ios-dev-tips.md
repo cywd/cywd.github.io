@@ -84,13 +84,11 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 #pragma clang diagnostic pop
 ```
 
-## 8.在APPDelegate中禁用第三方键盘
+## 8.开启ARC和MRC
 
-```objective-c
-#pragma mark - 禁用第三方键盘
-- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
-    return NO;
-}
+```
+-fobjc-arc     MRC
+-fno-objc-arc  ARC
 ```
 
 ## 9.判断是模拟器还是真机
@@ -150,7 +148,7 @@ typedef CGFLOAT_TYPE CGFloat;
 
 ## 12.FOUNDATION_EXPORT和#define
 
-比较的时候FOUNDATION_EXPORT 可以 == ，#define 只是单纯的替换.
+比较的时候FOUNDATION_EXPORT 可以 == 这种方式进行比较，#define 只是单纯的替换.
 
 ## 13.滑动的时候隐藏navigationbar(类似safari)
 
@@ -292,5 +290,19 @@ NSString *stmp = @"test";
 [self ShowNotifyWithString:stmp fromMethod:_cmd]; 
 // 打印当前方法名称： 
 NSLog(@"%@", NSStringFromSelector(_cmd));
+```
+
+## 26.在APPDelegate中禁用第三方键盘
+
+```objective-c
+#pragma mark - 禁用第三方键盘
+- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
+    return NO;
+}
+```
+## 27.自动滚动调整
+
+```objective-c
+self.automaticallyAdjustsScrollViewInsets = NO;  // 自动滚动调整，默认为YES
 ```
 

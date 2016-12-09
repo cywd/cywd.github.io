@@ -146,6 +146,7 @@ typedef CGFLOAT_TYPE CGFloat;
 ```
 
 64位系统下,CGFLOAT是double类型,32位系统下是float类型.
+如果需要精确计算，不要使用CGFloat或float，1.1	有时计算不准确，后面几位会出现精度丢失，要用double.
 
 ## 12.FOUNDATION_EXPORT和#define
 
@@ -192,5 +193,104 @@ C++支持引用，Objective-C是从C衍变来的，不支持引用
 
 输出重要变量的值，因为调试窗口variableView有时候变量值显示不出来。
 
+## 20.UIScrollView等滚动条闪一下
 
+```objective-c
+scrollVIew.flashScrollIndicators = YES;
+```
+
+## 21.点击Cell中的按钮时，如何取所在的Cell
+
+```objective-c
+-(void)OnTouchBtnInCell:(UIButton *)btn 
+{ 
+  CGPoint point = btn.center; 
+  point = [table convertPoint:point fromView:btn.superview]; 
+  NSIndexPath* indexpath = [table indexPathForRowAtPoint:point]; 
+  UITableViewCell *cell = [table cellForRowAtIndexPath:indexpath]; 
+  /*... */
+  // 也可以通过一路取btn的父窗口取到cell，但如果cell下通过好几层subview才到btn,就要取好几次 superview
+  // 所以我用上面的方法，比较通用。这种  方法也适用于其它控件。 
+} 
+```
+
+## 22.禁止程序运行时自动锁屏
+
+```objective-c
+[[UIApplication sharedApplication] setIdleTimerDisabled:YES]; 
+```
+
+## 23.allSubviews, allApplicationViews, pathToView
+
+```
+NSArray *allSubviews(UIView *aView)
+{
+	NSArray *results = [aView subviews];
+	for (UIView *eachView in [aView subviews])
+	{
+		NSArray *riz = allSubviews(eachView);
+		if (riz) results = [results arrayByAddingObjectsFromArray:riz];
+	}
+	return results;
+}
+
+// Return all views throughout the application
+NSArray *allApplicationViews()
+{
+    NSArray *results = [[UIApplication sharedApplication] windows];
+    for (UIWindow *window in [[UIApplication sharedApplication] windows])
+	{
+		NSArray *riz = allSubviews(window);
+        if (riz) results = [results arrayByAddingObjectsFromArray: riz];
+	}
+    return results;
+}
+
+// Return an array of parent views from the window down to the view
+NSArray *pathToView(UIView *aView)
+{
+    NSMutableArray *array = [NSMutableArray arrayWithObject:aView];
+    UIView *view = aView;
+    UIWindow *window = aView.window;
+    while (view != window)
+    {
+        view = [view superview];
+        [array insertObject:view atIndex:0];
+    }
+    return array;
+}
+
+```
+## 24.非常规退出
+
+苹果不建议程序主动退出，但还是有一个函数可以实现这个效果：    
+
+```
+exit(0)
+```
+
+不过这个函数不触发`applicationWillResignActive`等`AppDelegate method`.
+
+## 25. Objective-C中的_cmd
+
+Objective-C的编译器在编译后会在每个方法中加两个隐藏的参数:
+
+一个是_cmd，当前方法的一个SEL指针。
+
+另一个就是用的比较多的self，指向当前对象的一个指针。
+
+_cmd可以赋值给SEL类型的变量，可以做为参数传递。
+
+example:
+
+```objective-c
+// 例如一个显示消息的方法： 
+- (void)ShowNotifyWithString:(NSString *)notifyString fromMethod:(SEL)originalMethod; 
+// originalMethod就是调用这个方法的selector。 
+// 调用： 
+NSString *stmp = @"test"; 
+[self ShowNotifyWithString:stmp fromMethod:_cmd]; 
+// 打印当前方法名称： 
+NSLog(@"%@", NSStringFromSelector(_cmd));
+```
 

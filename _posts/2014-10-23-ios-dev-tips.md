@@ -307,3 +307,39 @@ NSLog(@"%@", NSStringFromSelector(_cmd));
 self.automaticallyAdjustsScrollViewInsets = NO;  // 自动滚动调整，默认为YES
 ```
 
+## 28.修改Cell分割线距离
+
+```objective-c
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+	if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 15, 0, 15)];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 15, 0, 15)];
+    }
+    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
+}
+```
+
+## 29.将汉字转换为拼音
+
+```objective-c
+- (NSString *)chineseToPinyin:(NSString *)chinese withSpace:(BOOL)withSpace {
+    if(chinese) {
+        CFStringRef hanzi = (__bridge CFStringRef)chinese;
+        CFMutableStringRef string =CFStringCreateMutableCopy(NULL,0, hanzi);
+        CFStringTransform(string,NULL, kCFStringTransformMandarinLatin,NO);
+        CFStringTransform(string,NULL, kCFStringTransformStripDiacritics,NO);
+        NSString*pinyin = (NSString*)CFBridgingRelease(string);
+        
+        if(!withSpace) {
+            pinyin = [pinyin stringByReplacingOccurrencesOfString:@" "withString:@""];
+        }
+        return pinyin;
+    }
+    return nil;
+}
+```
+

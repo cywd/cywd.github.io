@@ -2,7 +2,7 @@
 layout: post
 title: "关于cocoaPods安装的那些事"
 excerpt: "安装cocoapods顺序
-Xcode->homebrew->RVM->Ruby->CocoaPots;"
+Xcode->homebrew->RVM->Ruby->CocoaPods;"
 categories: [cocoaPods]
 tags: [cocoaPods安装]
 date: 2016-08-01 

@@ -343,3 +343,37 @@ self.automaticallyAdjustsScrollViewInsets = NO;  // 自动滚动调整，默认�
 }
 ```
 
+## 30.dispatch_once和@synchronized的单例模式
+
+### @synchronized
+
+```objective-c
++ (id)sharedInstance {
+    static Instance *obj = nil;
+    @synchronized([Instance class]) {
+        if(!obj) 
+            obj = [[Instance alloc] init];
+    }
+    return obj;
+}
+```
+
+### dispatch_once
+
+```objective-c
++ (id)sharedInstance {
+    static dispatch_once_t pred;
+    static Instance *obj = nil;
+    dispatch_once(&pred, ^{
+        obj = [[Instance alloc] init];
+    });
+    return obj;
+}
+```
+
+### 区别
+
+使用`@synchronized`，这样性能不是很好，因为每次调用+ (id)sharedInstance函数都会付出取锁的代价。
+GCD的单例首先满足了线程安全问题，其次很好满足静态分析器要求。GCD可以确保以更快的方式完成这些检测，它可以保证block中的代码在任何线程通过dispatch_once调用之前被执行，但它不会强制每次调用这个函数都让代码进行同步控制。实际上，如果你去看这个函数所在的头文件，你会发现目前它的实现其实是一个宏，进行了内联的初始化测试，这意味着通常情况下，你不用付出函数调用的负载代价，并且会有更少的同步控制负载。
+
+因此，单例模式的时候尽量使用GCD。

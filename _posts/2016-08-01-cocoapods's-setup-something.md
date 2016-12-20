@@ -34,7 +34,7 @@ homebrew升级
 
 当执行这句安装cocoapods时
 
-`sudo sudo gem install -n /usr/local/bin cocoapods`
+`sudo gem install -n /usr/local/bin cocoapods`
 
 出现这个的时候
 

@@ -168,3 +168,6 @@ xcodebuild 这个target的时候命令行报错。
 PCH 添加
  $(SRCROOT)/PCHDemo/PrefixHeader.pch
 
+## 17.error in __connection_block_invoke_2: Connection interrupted
+
+在执行异步任务的时候，切到后台，再回来就会报这个错误。意思是异步任务执行失败。

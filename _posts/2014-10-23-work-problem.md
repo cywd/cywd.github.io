@@ -171,3 +171,7 @@ PCH 添加
 ## 17.error in __connection_block_invoke_2: Connection interrupted
 
 在执行异步任务的时候，切到后台，再回来就会报这个错误。意思是异步任务执行失败。
+
+## 18.真机调试提示`.app: resource fork, Finder information, or similar detritus not allowed`
+
+分别进入工程目录与DerivedData目录；执行 "xattr -rc ."；解决

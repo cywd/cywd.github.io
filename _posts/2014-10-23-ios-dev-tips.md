@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title: "iOS开发的一些Tips"
 excerpt: "iOS开发的一些Tips，记录下便于日后查看"
@@ -385,3 +386,19 @@ int abs(int i);         // 处理int类型的取绝对值
 double fabs(double i);  // 处理double类型的取绝对值  
 float fabsf(float i);   // 处理float类型的取绝对值  
 ```
+## 32.当子视图需要超出父视图响应事件
+
+```objective-c
+// 可以重写 hitTest 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *v = [super hitTest:point withEvent:event];
+    if (v == nil) {
+        CGPoint tp = [self.cameraButton convertPoint:point fromView:self];
+        if (CGRectContainsPoint(self.cameraButton.bounds, tp)) {
+            v = self.cameraButton;
+        }
+    }
+    return v;
+}
+```
+

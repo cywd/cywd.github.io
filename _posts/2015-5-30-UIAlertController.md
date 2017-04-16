@@ -11,7 +11,8 @@ comments: true
 
 * TOC
 {:toc}
-## **UIAlertView**
+
+## UIAlertView
 
 OC
 
@@ -28,7 +29,7 @@ var alertView = UIAlertView(title: "标题", message: "这个是UIAlertView的�
 alertView.show()
 ```
 
-## **UIAlertController**
+## UIAlertController
 
 ### alertView
 
@@ -75,5 +76,3 @@ var okAction = UIAlertAction(title: "好的", style: UIAlertActionStyle.Default,
 alertController.addAction(cancelAction)
 alertController.addAction(okAction)
 ```
-
-### 

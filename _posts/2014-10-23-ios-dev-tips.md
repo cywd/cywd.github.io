@@ -427,3 +427,21 @@ float fabsf(float i);   // 处理float类型的取绝对值
     }
 }
 ```
+## 34.提取.ipa中的Assets.car
+
+利用工具[iOS-Images-Extractor](https://github.com/devcxm/iOS-Images-Extractor)
+
+到终端分别执行下面的四条命令：
+
+```
+git clone https://github.com/devcxm/iOS-Images-Extractor
+cd iOS-Images-Extractor
+git submodule update --init --recursive
+open iOSImagesExtractor.xcworkspace
+```
+
+### 提取素材
+
+将Assets.car拖动到刚才运行的应用中。
+
+先点击“start”开始解压，然后点击“Output Dir”来查看导出的目录，就可以看到所有的素材了。

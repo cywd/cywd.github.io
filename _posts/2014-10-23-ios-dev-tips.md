@@ -402,3 +402,28 @@ float fabsf(float i);   // 处理float类型的取绝对值
 }
 ```
 
+## 33.判断当前ViewController是push还是present方式显示的
+
+### 1.通过判断self有没有present方式显示的父视图presentingViewController
+
+```objective-c
+- (IBAction)dismiss:(id)sender {
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+```
+
+### 2.通过判断self.navigationController.viewControllers的最后一个是否是当前控制器，或者self.navigationController.topViewController == self
+
+```objective-c
+- (IBAction)dismiss:(id)sender {
+    if (self.navigationController.topViewController == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+```

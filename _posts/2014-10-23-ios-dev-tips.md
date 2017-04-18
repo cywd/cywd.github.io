@@ -431,6 +431,8 @@ float fabsf(float i);   // 处理float类型的取绝对值
 
 利用工具[iOS-Images-Extractor](https://github.com/devcxm/iOS-Images-Extractor)
 
+[中文使用方法看这里](https://github.com/devcxm/iOS-Images-Extractor/blob/master/README_zh-Hans.md)
+
 到终端分别执行下面的四条命令：
 
 ```

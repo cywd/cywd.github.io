@@ -70,7 +70,29 @@ Clsss bClass = [NSURL class];
 #endif  /* NULL */
 ```
 
-### 作用：指向其他类型（如：基本类型、C类型）的指针为空.
+其中`__DARWIN_NULL`的定义在`usr/include/sys/__types.h `里
+
+```
+#ifdef __cplusplus
+#  ifdef __GNUG__
+#    define __DARWIN_NULL __null
+#  else /* ! __GNUG__ */
+#    ifdef __LP64__
+#      define __DARWIN_NULL (0L)
+#    else /* !__LP64__ */
+#      define __DARWIN_NULL 0
+#    endif /* __LP64__ */
+#  endif /* __GNUG__ */
+#else /* ! __cplusplus */
+#  define __DARWIN_NULL ((void *)0)
+#endif /* __cplusplus */
+```
+
+### 作用
+
+指向其他类型（如：基本类型、C类型）的指针为空.
+
+**NULL 一般用于表示 C 指针空值**
 
 ### 例子
 

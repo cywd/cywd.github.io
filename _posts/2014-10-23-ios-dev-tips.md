@@ -447,3 +447,38 @@ open iOSImagesExtractor.xcworkspace
 将Assets.car拖动到刚才运行的应用中。
 
 先点击“start”开始解压，然后点击“Output Dir”来查看导出的目录，就可以看到所有的素材了。
+
+## 35获取LaunchImage的图片
+
+```
++ (UIImage *)getTheLaunchImage
+{
+    CGSize viewSize = [UIScreen mainScreen].bounds.size;
+
+    NSString *viewOrientation = nil;
+    if (([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown) || ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait)) {
+        viewOrientation = @"Portrait";
+    } else {
+        viewOrientation = @"Landscape";
+    }
+
+
+    NSString *launchImage = nil;
+
+    NSArray* imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    for (NSDictionary* dict in imagesDict)
+    {
+        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
+
+        if (CGSizeEqualToSize(imageSize, viewSize) && [viewOrientation isEqualToString:dict[@"UILaunchImageOrientation"]])
+        {
+            launchImage = dict[@"UILaunchImageName"];
+        }
+    }
+
+    return [UIImage imageNamed:launchImage];
+
+}
+```
+
+参考：[如何从Images.xcassets中获取LaunchImage的图片](https://www.ianisme.com/ios/1825.html)

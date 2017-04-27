@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "关于#include #import @import @class"
-excerpt: ""
+excerpt: "#include #import @import @class的区别和用法"
 categories: [OC]
 tags: [OC]
 date: 2015-05-10
@@ -13,7 +13,7 @@ comments: true
 {:toc}
 
 
-## #include " " 和 #include <>
+## #include "" 和 #include <>
 
 `#include "xxx.h"`:它用于对系统自带的头文件的引用,编译器会在系统文件目录下去查找该文件.
 
@@ -35,7 +35,7 @@ comments: true
 
 
 
-## #import " " 和 #import < >
+## #import "" 和 #import < >
 
 `#import`大部分功能和`#include`是一样的,但是他处理了重复引用的问题,我们在引用文件的时候不用再去自己进行重复引用处理.
 

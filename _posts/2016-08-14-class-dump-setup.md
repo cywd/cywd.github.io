@@ -10,8 +10,8 @@ comments: true
 ---
 
 * TOC
-{:toc}
-
+  {:toc}
+---
 
 # 简介
 *class-dump is a command-line utility for examining the Objective-C segment of Mach-O files. It generates declarations for the classes, categories and protocols. This is the same information provided by using 'otool -ov', but presented as normal Objective-C declarations.*

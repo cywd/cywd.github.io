@@ -10,7 +10,7 @@ comments: true
 
 * TOC
 {:toc}
---
+---
 
 UIBlurEffect最早出现于iOS 8，到了iOS 10，又增加了两个枚举值，看下效果:
 

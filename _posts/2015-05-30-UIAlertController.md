@@ -10,11 +10,7 @@ comments: true
 ---
 
 * TOC
-<<<<<<< HEAD
 {:toc}
-=======
-  {:toc}
->>>>>>> origin/master
 ---
 
 ## UIAlertView

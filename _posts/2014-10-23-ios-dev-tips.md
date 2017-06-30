@@ -482,3 +482,393 @@ open iOSImagesExtractor.xcworkspace
 ```
 
 参考：[如何从Images.xcassets中获取LaunchImage的图片](https://www.ianisme.com/ios/1825.html)
+
+## 36.禁止手机睡眠
+
+```objective-c
+[UIApplication sharedApplication].idleTimerDisabled = YES;
+```
+
+## 37.隐藏某行cell
+
+```
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+// 如果是你需要隐藏的那一行，返回高度为0
+    if(indexPath.row == YouWantToHideRow)
+        return 0; 
+    return 44;
+}
+ 
+// 然后再你需要隐藏cell的时候调用
+[self.tableView beginUpdates];
+[self.tableView endUpdates];
+```
+
+## 38.去除数组中重复的对象
+
+```
+NSArray *newArr = [oldArr valueForKeyPath:@“@distinctUnionOfObjects.self"];
+```
+
+## 39.UITextView中打开或禁用复制，剪切，选择，全选等功能
+
+```
+// 继承UITextView重写这个方法
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+// 返回NO为禁用，YES为开启
+    // 粘贴
+    if (action == @selector(paste:)) return NO;
+    // 剪切
+    if (action == @selector(cut:)) return NO;
+    // 复制
+    if (action == @selector(copy:)) return NO;
+    // 选择
+    if (action == @selector(select:)) return NO;
+    // 选中全部
+    if (action == @selector(selectAll:)) return NO;
+    // 删除
+    if (action == @selector(delete:)) return NO;
+    // 分享
+    if (action == @selector(share)) return NO;
+    return [super canPerformAction:action withSender:sender];
+}
+```
+
+## 40.为一个view添加虚线边框
+
+```objective-c
+CAShapeLayer *border = [CAShapeLayer layer];
+border.strokeColor = [UIColor colorWithRed:67/255.0f green:37/255.0f blue:83/255.0f alpha:1].CGColor;
+border.fillColor = nil;
+border.lineDashPattern = @[@4, @2];
+border.path = [UIBezierPath bezierPathWithRect:view.bounds].CGPath;
+border.frame = view.bounds;
+[view.layer addSublayer:border];
+```
+
+## 41.修改cell.imageView的大小
+
+```objective-c
+UIImage *icon = [UIImage imageNamed:@""];
+CGSize itemSize = CGSizeMake(30, 30);
+UIGraphicsBeginImageContextWithOptions(itemSize, NO ,0.0);
+CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+[icon drawInRect:imageRect];
+cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+UIGraphicsEndImageContext();
+```
+
+## 42.在指定的宽度下，让UILabel自动设置最佳font
+
+```
+label.adjustsFontSizeToFitWidth = YES;
+```
+
+## 43.统一收起键盘
+
+```
+[[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+```
+
+## 44.判断图片类型
+
+```
+//通过图片Data数据第一个字节 来获取图片扩展名
+- (NSString *)contentTypeForImageData:(NSData *)data
+{
+    uint8_t c;
+    [data getBytes:&c length:1];
+    switch (c)
+    {
+        case 0xFF:
+            return @"jpeg";
+ 
+        case 0x89:
+            return @"png";
+ 
+        case 0x47:
+            return @"gif";
+ 
+        case 0x49:
+        case 0x4D:
+            return @"tiff";
+ 
+        case 0x52:
+        if ([data length] < 12) {
+            return nil;
+        }
+        NSString *testString = [[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding];
+        if ([testString hasPrefix:@"RIFF"]
+            && [testString hasSuffix:@"WEBP"])
+        {
+            return @"webp";
+        }
+        return nil;
+    }
+    return nil;
+}
+```
+
+## 45.获取设备mac地址
+
+```
++ (NSString *)macAddress {
+    int                 mib[6];
+    size_t              len;
+    char                *buf;
+    unsigned char       *ptr;
+    struct if_msghdr    *ifm;
+    struct sockaddr_dl  *sdl;
+ 
+    mib[0] = CTL_NET;
+    mib[1] = AF_ROUTE;
+    mib[2] = 0;
+    mib[3] = AF_LINK;
+    mib[4] = NET_RT_IFLIST;
+ 
+    if((mib[5] = if_nametoindex("en0")) == 0) {
+        printf("Error: if_nametoindex error\n");
+        return NULL;
+    }
+ 
+    if(sysctl(mib, 6, NULL, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 1\n");
+        return NULL;
+    }
+ 
+    if((buf = malloc(len)) == NULL) {
+        printf("Could not allocate memory. Rrror!\n");
+        return NULL;
+    }
+ 
+    if(sysctl(mib, 6, buf, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 2");
+        return NULL;
+    }
+ 
+    ifm = (struct if_msghdr *)buf;
+    sdl = (struct sockaddr_dl *)(ifm + 1);
+    ptr = (unsigned char *)LLADDR(sdl);
+    NSString *outstring = [NSString stringWithFormat:@"X:X:X:X:X:X",
+                           *ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    free(buf);
+ 
+    return outstring;
+}
+```
+
+## 46.不让控制器的view随着控制器的xib拉伸或压缩
+
+```
+self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+```
+
+## 47.导入自定义字体库
+
+```
+1.找到你想用的字体的 ttf 格式，拖入工程
+2.在工程的plist中增加一行数组，“Fonts provided by application”
+3.为这个key添加一个item，value为你刚才导入的ttf文件名
+4.直接使用即可：label.font = [UIFont fontWithName:@"你刚才导入的ttf文件名" size:20.0]；
+```
+
+## 48.获取到当前正在显示的controller
+
+```
+- (UIViewController *)getVisibleViewControllerFrom:(UIViewController*)vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return [self getVisibleViewControllerFrom:[((UINavigationController*) vc) visibleViewController]];
+    }else if ([vc isKindOfClass:[UITabBarController class]]){
+        return [self getVisibleViewControllerFrom:[((UITabBarController*) vc) selectedViewController]];
+    } else {
+        if (vc.presentedViewController) {
+            return [self getVisibleViewControllerFrom:vc.presentedViewController];
+        } else {
+            return vc;
+        }
+    }
+}
+```
+
+## 49.为imageView添加倒影
+
+```
+CGRect frame = self.frame;
+    frame.origin.y += (frame.size.height + 1);
+ 
+    UIImageView *reflectionImageView = [[UIImageView alloc] initWithFrame:frame];
+    self.clipsToBounds = TRUE;
+    reflectionImageView.contentMode = self.contentMode;
+    [reflectionImageView setImage:self.image];
+    reflectionImageView.transform = CGAffineTransformMakeScale(1.0, -1.0);
+ 
+    CALayer *reflectionLayer = [reflectionImageView layer];
+ 
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.bounds = reflectionLayer.bounds;
+    gradientLayer.position = CGPointMake(reflectionLayer.bounds.size.width / 2, reflectionLayer.bounds.size.height * 0.5);
+    gradientLayer.colors = [NSArray arrayWithObjects:
+                            (id)[[UIColor clearColor] CGColor],
+                            (id)[[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3] CGColor], nil];
+ 
+    gradientLayer.startPoint = CGPointMake(0.5,0.5);
+    gradientLayer.endPoint = CGPointMake(0.5,1.0);
+    reflectionLayer.mask = gradientLayer;
+ 
+    [self.superview addSubview:reflectionImageView];
+```
+
+## 50.画水印
+
+```
+// 画水印
+- (void) setImage:(UIImage *)image withWaterMark:(UIImage *)mark inRect:(CGRect)rect
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0)
+    {
+        UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, 0.0);
+    }
+    //原图
+    [image drawInRect:self.bounds];
+    //水印图
+    [mark drawInRect:rect];
+    UIImage *newPic = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.image = newPic;
+}
+```
+
+## 51.获取一个视频的第一帧图片
+
+```
+    NSURL *url = [NSURL URLWithString:filepath];
+    AVURLAsset *asset1 = [[AVURLAsset alloc] initWithURL:url options:nil];
+    AVAssetImageGenerator *generate1 = [[AVAssetImageGenerator alloc] initWithAsset:asset1];
+    generate1.appliesPreferredTrackTransform = YES;
+    NSError *err = NULL;
+    CMTime time = CMTimeMake(1, 2);
+    CGImageRef oneRef = [generate1 copyCGImageAtTime:time actualTime:NULL error:&err];
+    UIImage *one = [[UIImage alloc] initWithCGImage:oneRef];
+ 
+    return one;
+```
+
+## 52.获取视频的时长
+
+```
++ (NSInteger)getVideoTimeByUrlString:(NSString *)urlString {
+    NSURL *videoUrl = [NSURL URLWithString:urlString];
+    AVURLAsset *avUrl = [AVURLAsset assetWithURL:videoUrl];
+    CMTime time = [avUrl duration];
+    int seconds = ceil(time.value/time.timescale);
+    return seconds;
+}
+```
+
+## 53.当tableView占不满一屏时，去除下边多余的单元格
+
+```
+self.tableView.tableHeaderView = [UIView new];
+self.tableView.tableFooterView = [UIView new];
+```
+
+## 54.isKindOfClass和isMemberOfClass的区别
+
+```
+isKindOfClass可以判断某个对象是否属于某个类，或者这个类的子类。
+isMemberOfClass更加精准，它只能判断这个对象类型是否为这个类(不能判断子类)
+```
+
+## 55.某个字体的高度
+
+```
+font.lineHeight
+```
+
+## 56.删除NSUserDefaults所有记录
+
+```
+//方法一
+  NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+ [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];   
+ //方法二  
+- (void)resetDefaults {   
+  NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+     NSDictionary * dict = [defs dictionaryRepresentation];
+     for (id key in dict) {
+          [defs removeObjectForKey:key];
+     }
+      [defs synchronize];
+ }
+// 方法三
+[[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
+```
+
+## 57.UILabel设置文字描边
+
+```
+子类化UILabel，重写drawTextInRect方法
+- (void)drawTextInRect:(CGRect)rect
+{
+    CGContextRef c = UIGraphicsGetCurrentContext();
+    // 设置描边宽度
+    CGContextSetLineWidth(c, 1);
+    CGContextSetLineJoin(c, kCGLineJoinRound);
+    CGContextSetTextDrawingMode(c, kCGTextStroke);
+    // 描边颜色
+    self.textColor = [UIColor redColor];
+    [super drawTextInRect:rect];
+    // 文本颜色
+    self.textColor = [UIColor yellowColor];
+    CGContextSetTextDrawingMode(c, kCGTextFill);
+    [super drawTextInRect:rect];
+}
+```
+
+## 58.layoutSubviews方法什么时候调用？
+
+```
+1、init方法不会调用
+2、addSubview方法等时候会调用
+3、bounds改变的时候调用
+4、scrollView滚动的时候会调用scrollView的layoutSubviews方法(所以不建议在scrollView的layoutSubviews方法中做复杂逻辑)
+5、旋转设备的时候调用
+6、子视图被移除的时候调用
+```
+
+[http://blog.logichigh.com/2011/03/16/when-does-layoutsubviews-get-called/](http://blog.logichigh.com/2011/03/16/when-does-layoutsubviews-get-called/)
+
+## 59.摇一摇
+
+```
+1、打开摇一摇功能
+    [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
+2、让需要摇动的控制器成为第一响应者
+[self becomeFirstResponder];
+3、实现以下方法
+ 
+// 开始摇动
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+// 取消摇动
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
+// 摇动结束
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+```
+
+## 60.tableViewCell分割线顶到头
+
+```
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setSeparatorInset:UIEdgeInsetsZero];
+    [cell setLayoutMargins:UIEdgeInsetsZero];
+    cell.preservesSuperviewLayoutMargins = NO;
+}
+ 
+- (void)viewDidLayoutSubviews {
+    [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    [self.tableView setLayoutMargins:UIEdgeInsetsZero];
+}
+```
+

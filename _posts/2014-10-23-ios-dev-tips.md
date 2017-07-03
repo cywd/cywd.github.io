@@ -872,3 +872,60 @@ font.lineHeight
 }
 ```
 
+## 61.判断一个字符串是否包含另一个字符串的另外一种方法
+
+```objective-c
+[str1 rangeOfString:str2].length != 0 ? @"包含" : @"不包含";
+```
+
+## 62.没有用到类的成员变量的，都写成类方法
+
+## 63.category可以用来调试
+
+```
+// 除了隐藏私有方法外，我主要用它截住函数。 
+// 例1：测试时我想知道TableViewCell有没有释放，就可以这样写 
+@implementation UITableViewCell(dealloc) 
+-(void)dealloc 
+{ 
+   NSLog(@"%@",NSStringFromSelector(_cmd)); 
+    NSArray *array = allSubviews(self); 		// allSubviews是cookBook里的函数，可以取一个view的所有subView ,在这个文档后面也有
+    NSLog(@"%@",array); 
+
+    [super dealloc]; 
+} 
+@end 
+// 其它的类也可以这样写，你随便输出什么 
+// 例2：我调试程序，觉得table的大小变了，想找到在哪改变的，这样做：
+ @implementation UITableView(setframe) 
+-(void)setFrame:(CGRect)frame 
+{ 
+   NSLog(%"%@",self); 
+    [super setFrame: frame]; 
+} 
+@end 
+```
+
+## 64.设置圆角和阴影要分层
+
+```objective-c
+CALayer *shadowLayer = [CALayer layer];
+shadowLayer.shadowColor = [UIColor blackColor].CGColor;
+shadowLayer.shadowOffset = CGSizeMake(0, 0);
+shadowLayer.shadowRadius = 5;
+shadowLayer.shadowOpacity = 1;
+shadowLayer.frame = self.bounds;
+shadowLayer.backgroundColor = [UIColor clearColor ].CGColor;
+shadowLayer.cornerRadius = 5;
+shadowLayer.borderColor = [UIColor whiteColor].CGColor;
+shadowLayer.borderWidth = 2.0;
+[self.layer addSublayer:shadowLayer];
+
+CALayer *borderLayer = [CALayer layer];
+borderLayer.cornerRadius = 5;
+borderLayer.masksToBounds = YES;
+borderLayer.frame = shadowLayer.bounds;
+[shadowLayer addSublayer:borderLayer];
+
+```
+

@@ -929,3 +929,17 @@ borderLayer.frame = shadowLayer.bounds;
 
 ```
 
+## 65.`_cmd`
+
+```
+表示该方法的selector，可以赋值给SEL类型的变量，可以做为参数传递。 
+例如一个显示消息的方法： 
+-(void)ShowNotifyWithString:(NSString *)notifyString fromMethod:(SEL) originalMethod; 
+originalMethod就是调用这个方法的selector。 
+调用： 
+NSString *stmp = @"test"; 
+[self ShowNotifyWithString:stmp fromMethod:_cmd]; 
+如何记录当前方法名称： 
+NSLog(NSStringFromSelector(_cmd));
+```
+

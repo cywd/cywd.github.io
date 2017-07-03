@@ -33,6 +33,11 @@ kramdown:
 
 permalink: /:year/:month/:day/:title
 
+
+# pygments: true
+# safe: true
+# auto: true
+
 #
 ###################################
 # Site Owner configuration

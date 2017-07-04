@@ -1,7 +1,7 @@
 ---
 layout: post
-title: (Writing)值得思考的一些东西
-excerpt: ""
+title: 值得思考的一些东西
+excerpt: "总是有一些人，一些事需要去好好的想一想"
 categories: []
 tags: []
 date: 2017-07-03

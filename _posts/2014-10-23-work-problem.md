@@ -175,3 +175,24 @@ PCH 添加
 ## 18.真机调试提示`.app: resource fork, Finder information, or similar detritus not allowed`
 
 分别进入工程目录与DerivedData目录；执行 "xattr -rc ."；解决
+
+## 19.iOS使用到OC与C++混编的时候出现Expected unqualified-id
+
+```
+Expected unqualified-id 
+```
+
+解决方法：
+
+修改你的.pch(项目头文件) 
+
+将所有的import与define的代码全部放在**#ifdef OBJC**与**#endif** 之间
+
+```
+#ifdef __OBJC__
+
+// some ......
+
+#endif // OC的头文件
+```
+

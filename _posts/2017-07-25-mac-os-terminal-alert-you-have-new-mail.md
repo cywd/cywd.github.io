@@ -2,7 +2,7 @@
 layout: post
 title: mac os 终端提示 you have new mail
 excerpt: ""
-categories: []
+categories: [Terminal]
 tags: []
 date: 2017-07-25
 comments: true

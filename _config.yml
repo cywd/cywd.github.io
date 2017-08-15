@@ -46,7 +46,7 @@ permalink: /:year/:month/:day/:title
 owner:
   name: Cyrill
   avatar: cyrill.jpg
-  job: "iOS"
+  job: "iOS/Python"
   bio: "Try everything, coding you up!!!"
   email: lichunyang@outlook.com
   disqus-shortname:

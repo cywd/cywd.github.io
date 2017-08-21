@@ -78,6 +78,7 @@ extension UIButton:SelfAware{
     public static func awake() {
         
     }
+}
 ```
 
 # 参考

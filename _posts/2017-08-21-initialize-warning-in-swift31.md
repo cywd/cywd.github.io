@@ -24,9 +24,9 @@ Method 'initialize()' defines Objective-C class method 'initialize', which is no
 
 1.
 
-```
 Define the following Swift code. The purpose is to provide a simple entry point for any class that you would like to imbue with behaviour akin to initialize() - this can now be done simply by conforming to SelfAware. It also provides a single function to run this behaviour for every conforming class.
 
+```
 /// 定义 `protocol`
 public protocol SelfAware: class {
     static func awake()
@@ -46,14 +46,13 @@ class NothingToSeeHere{
         types.deallocate(capacity: typeCount)
     }
 }
-
 ```
 
 2.
 
-```
 That's all good and well, but we still need a way to actually run the function we defined, i.e. NothingToSeeHere.harmlessFunction(), on application start up. Previously, this answer suggested using Objective-C code to do this. However, it seems that we can do what we need using only Swift. For macOS or other platforms where UIApplication is not available, a variation of the following will be needed.
 
+```
 /// 执行单例
 extension UIApplication {
     private static let runOnce:Void = {
@@ -71,16 +70,14 @@ extension UIApplication {
 
 3.
 
-```
-
 We now have an entry point at application start up, and a way to hook into this from classes of your choice. All that is left to do: instead of implementing initialize(), conform to SelfAware and implement the defined method, awake().
 
+```
 /// 将类设置为代理并在代理中实现运行时代吗
 extension UIButton:SelfAware{
     public static func awake() {
         
     }
-
 ```
 
 # 参考

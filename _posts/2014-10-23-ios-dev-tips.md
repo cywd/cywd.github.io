@@ -694,30 +694,30 @@ self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutores
 
 ## 49.为imageView添加倒影
 
-```
+```objective-c
 CGRect frame = self.frame;
-    frame.origin.y += (frame.size.height + 1);
- 
-    UIImageView *reflectionImageView = [[UIImageView alloc] initWithFrame:frame];
-    self.clipsToBounds = TRUE;
-    reflectionImageView.contentMode = self.contentMode;
-    [reflectionImageView setImage:self.image];
-    reflectionImageView.transform = CGAffineTransformMakeScale(1.0, -1.0);
- 
-    CALayer *reflectionLayer = [reflectionImageView layer];
- 
-    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.bounds = reflectionLayer.bounds;
-    gradientLayer.position = CGPointMake(reflectionLayer.bounds.size.width / 2, reflectionLayer.bounds.size.height * 0.5);
-    gradientLayer.colors = [NSArray arrayWithObjects:
-                            (id)[[UIColor clearColor] CGColor],
-                            (id)[[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3] CGColor], nil];
- 
-    gradientLayer.startPoint = CGPointMake(0.5,0.5);
-    gradientLayer.endPoint = CGPointMake(0.5,1.0);
-    reflectionLayer.mask = gradientLayer;
- 
-    [self.superview addSubview:reflectionImageView];
+frame.origin.y += (frame.size.height + 1);
+
+UIImageView *reflectionImageView = [[UIImageView alloc] initWithFrame:frame];
+self.clipsToBounds = TRUE;
+reflectionImageView.contentMode = self.contentMode;
+[reflectionImageView setImage:self.image];
+reflectionImageView.transform = CGAffineTransformMakeScale(1.0, -1.0);
+
+CALayer *reflectionLayer = [reflectionImageView layer];
+
+CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+gradientLayer.bounds = reflectionLayer.bounds;
+gradientLayer.position = CGPointMake(reflectionLayer.bounds.size.width / 2, reflectionLayer.bounds.size.height * 0.5);
+gradientLayer.colors = [NSArray arrayWithObjects:
+                      (id)[[UIColor clearColor] CGColor],
+                      (id)[[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3] CGColor], nil];
+
+gradientLayer.startPoint = CGPointMake(0.5,0.5);
+gradientLayer.endPoint = CGPointMake(0.5,1.0);
+reflectionLayer.mask = gradientLayer;
+
+[self.superview addSubview:reflectionImageView];
 ```
 
 ## 50.画水印
@@ -743,16 +743,16 @@ CGRect frame = self.frame;
 ## 51.获取一个视频的第一帧图片
 
 ```
-    NSURL *url = [NSURL URLWithString:filepath];
-    AVURLAsset *asset1 = [[AVURLAsset alloc] initWithURL:url options:nil];
-    AVAssetImageGenerator *generate1 = [[AVAssetImageGenerator alloc] initWithAsset:asset1];
-    generate1.appliesPreferredTrackTransform = YES;
-    NSError *err = NULL;
-    CMTime time = CMTimeMake(1, 2);
-    CGImageRef oneRef = [generate1 copyCGImageAtTime:time actualTime:NULL error:&err];
-    UIImage *one = [[UIImage alloc] initWithCGImage:oneRef];
- 
-    return one;
+NSURL *url = [NSURL URLWithString:filepath];
+AVURLAsset *asset1 = [[AVURLAsset alloc] initWithURL:url options:nil];
+AVAssetImageGenerator *generate1 = [[AVAssetImageGenerator alloc] initWithAsset:asset1];
+generate1.appliesPreferredTrackTransform = YES;
+NSError *err = NULL;
+CMTime time = CMTimeMake(1, 2);
+CGImageRef oneRef = [generate1 copyCGImageAtTime:time actualTime:NULL error:&err];
+UIImage *one = [[UIImage alloc] initWithCGImage:oneRef];
+
+return one;
 ```
 
 ## 52.获取视频的时长
@@ -777,8 +777,8 @@ self.tableView.tableFooterView = [UIView new];
 ## 54.isKindOfClass和isMemberOfClass的区别
 
 ```
-isKindOfClass可以判断某个对象是否属于某个类，或者这个类的子类。
-isMemberOfClass更加精准，它只能判断这个对象类型是否为这个类(不能判断子类)
+isKindOfClass 可以判断某个对象是否属于某个类，或者这个类的子类。
+isMemberOfClass 更加精准，它只能判断这个对象类型是否为这个类(不能判断子类)
 ```
 
 ## 55.某个字体的高度
@@ -789,27 +789,27 @@ font.lineHeight
 
 ## 56.删除NSUserDefaults所有记录
 
-```
-//方法一
-  NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
- [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];   
- //方法二  
+```objective-c
+// 方法一
+NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+[[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];   
+// 方法二  
 - (void)resetDefaults {   
-  NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
-     NSDictionary * dict = [defs dictionaryRepresentation];
-     for (id key in dict) {
-          [defs removeObjectForKey:key];
-     }
-      [defs synchronize];
- }
+	NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+	NSDictionary * dict = [defs dictionaryRepresentation];
+	for (id key in dict) {
+		[defs removeObjectForKey:key];
+	}
+	[defs synchronize];
+}
 // 方法三
 [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
 ```
 
 ## 57.UILabel设置文字描边
 
-```
-子类化UILabel，重写drawTextInRect方法
+```objective-c
+// 子类化UILabel，重写drawTextInRect方法
 - (void)drawTextInRect:(CGRect)rect
 {
     CGContextRef c = UIGraphicsGetCurrentContext();
@@ -842,12 +842,12 @@ font.lineHeight
 
 ## 59.摇一摇
 
-```
-1、打开摇一摇功能
-    [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
-2、让需要摇动的控制器成为第一响应者
+```objective-c
+// 1、打开摇一摇功能
+[UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
+// 2、让需要摇动的控制器成为第一响应者
 [self becomeFirstResponder];
-3、实现以下方法
+// 3、实现以下方法
  
 // 开始摇动
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
@@ -859,7 +859,7 @@ font.lineHeight
 
 ## 60.tableViewCell分割线顶到头
 
-```
+```objective-c
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell setSeparatorInset:UIEdgeInsetsZero];
     [cell setLayoutMargins:UIEdgeInsetsZero];

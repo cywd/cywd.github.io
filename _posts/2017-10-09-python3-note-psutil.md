@@ -45,16 +45,22 @@ pip3 install psutil
 
 ```
 import psutil
-查看cpu所有信息
->>> psutil.cpu_times()
+# 返回系统CPU运行时间的元组，时间为秒。
+>>> psutil.cpu_times(precpu=False)
+# linux
 scputimes(user=11677.09, nice=57.93, system=148675.58, idle=2167147.79, iowait=260828.48, irq=7876.28, softirq=0.0, steal=3694.59, guest=0.0, guest_nice=0.0)
+# mac
+scputimes(user=11395.62, nice=0.0, system=5876.26, idle=67855.91)
 ```
 
 ##### 显示cpu所有逻辑信息
 
 ```
 >>> psutil.cpu_times(percpu=True)
+# linux
 [scputimes(user=11684.17, nice=57.93, system=148683.01, idle=2168982.08, iowait=260833.18, irq=7882.35, softirq=0.0, steal=3697.3, guest=0.0, guest_nice=0.0)]
+# mac
+[scputimes(user=4080.14, nice=0.0, system=2318.3, idle=15042.66), scputimes(user=1731.44, nice=0.0, system=863.43, idle=18845.4), scputimes(user=3914.96, nice=0.0, system=1862.18, idle=15663.15), scputimes(user=1751.7, nice=0.0, system=875.31, idle=18813.27)]
 ```
 
 ##### 查看用户的cpu时间比
@@ -78,6 +84,16 @@ scputimes(user=11677.09, nice=57.93, system=148675.58, idle=2167147.79, iowait=2
 1
 ```
 
+##### 查看cpu使用率百分比
+
+```python
+psutil.cpu_percent(interval=None, percpu=False)
+# 返回一个浮点书，代表当前cpu的利用率的百分比，包括sy+user. 当interval为0或者None时，表示的是interval时间内的sys的利用率。
+# 当percpu为True返回是每一个cpu的利用率。
+# mac
+scputimes(user=7.2, nice=0.0, system=4.7, idle=88.1)
+```
+
 #### 2.查看系统内存
 
 ```
@@ -86,6 +102,8 @@ scputimes(user=11677.09, nice=57.93, system=148675.58, idle=2167147.79, iowait=2
 >>> mem
 #系统内存的所有信息
 svmem(total=1040662528, available=175054848, percent=83.2, used=965718016, free=74944512, active=566755328, inactive=59457536, buffers=9342976, cached=90767360)
+# mac
+svmem(total=8589934592, available=2400677888, percent=72.1, used=6985986048, free=24387584, active=2570063872, inactive=2376290304, wired=2039631872)
 ```
 
 ##### 系统总计内存

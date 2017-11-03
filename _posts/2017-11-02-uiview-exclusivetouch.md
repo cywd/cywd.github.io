@@ -21,11 +21,8 @@ comments: true
 ## 使用
 
 可以通过 `[[UIView appearance] setExclusiveTouch:YES]; `这样调用。
-
 `UIImageView` ，`UILabel`等，都可以添加手势，响应方式和`UIButton`相同。
-
 全局设置响应区域的点击手势的互斥，是有效的。
-
 但使用此方法时，在`iOS 8.0 ~ iOS 8.2`（目前仅在该版本下发现问题）下会引起崩溃。
 
 ## 用途

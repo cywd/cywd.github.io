@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "iOS开发的一些Tips"
 excerpt: "iOS开发的一些Tips，记录下便于日后查看"
@@ -40,7 +39,7 @@ self.layer.allowsEdgeAntialiasing = YES;
 
 ![引用网上的图](/img/article/tips/3.jpg)
 
-## 4.统计项目中代码行数  
+## 4.统计项目中代码行数(shell)  
 
 终端cd到相应目录，执行
 
@@ -272,13 +271,13 @@ exit(0)
 
 ## 25. Objective-C中的_cmd
 
-Objective-C的编译器在编译后会在每个方法中加两个隐藏的参数:
+`Objective-C`的编译器在编译后会在每个方法中加两个隐藏的参数:
 
-一个是_cmd，当前方法的一个SEL指针。
+一个是`_cmd`，当前方法的一个`SEL`指针，即该方法的`selector`。
 
-另一个就是用的比较多的self，指向当前对象的一个指针。
+另一个就是用的比较多的`self`，指向当前对象的一个指针。
 
-_cmd可以赋值给SEL类型的变量，可以做为参数传递。
+`_cmd`可以赋值给SEL类型的变量，可以做为参数传递。
 
 example:
 
@@ -929,17 +928,43 @@ borderLayer.frame = shadowLayer.bounds;
 
 ```
 
-## 65.`_cmd`
+## 65.关于时间的一些宏
+
+**正确创建dispatch_time_t**
 
 ```
-表示该方法的selector，可以赋值给SEL类型的变量，可以做为参数传递。 
-例如一个显示消息的方法： 
--(void)ShowNotifyWithString:(NSString *)notifyString fromMethod:(SEL) originalMethod; 
-originalMethod就是调用这个方法的selector。 
-调用： 
-NSString *stmp = @"test"; 
-[self ShowNotifyWithString:stmp fromMethod:_cmd]; 
-如何记录当前方法名称： 
-NSLog(NSStringFromSelector(_cmd));
+dispatch_time_t dispatch_time ( dispatch_time_t when, int64_t delta );
+```
+
+第一个参数一般是**DISPATCH_TIME_NOW**，表示从现在开始。
+
+那么第二个参数就是真正的延时的具体时间。
+
+这里要特别注意的是，**delta**参数是“**纳秒**！”，就是说，延时1秒的话，delta应该是“1000000000”=。=，太长了，所以理所当然系统提供了常量，如下：
+
+```
+#define NSEC_PER_SEC 1000000000ull
+#define USEC_PER_SEC 1000000ull
+#define NSEC_PER_USEC 1000ull
+
+NSEC：纳秒。
+USEC：微秒。
+SEC：秒
+PER：每
+
+
+所以：
+
+NSEC_PER_SEC，每秒有多少纳秒。
+USEC_PER_SEC，每秒有多少毫秒。（注意是指在纳秒的基础上）
+NSEC_PER_USEC，每毫秒有多少纳秒。
+
+所以，延时1秒可以写成如下几种：
+
+dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
+dispatch_time(DISPATCH_TIME_NOW, 1000 * USEC_PER_SEC);
+dispatch_time(DISPATCH_TIME_NOW, USEC_PER_SEC * NSEC_PER_USEC);
+
+最后一个“USEC_PER_SEC * NSEC_PER_USEC”，翻译过来就是“每秒的毫秒数乘以每毫秒的纳秒数”，也就是“每秒的纳秒数”，所以，延时500毫秒之类的，也就不难了吧~
 ```
 

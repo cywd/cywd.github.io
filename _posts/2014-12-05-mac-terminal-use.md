@@ -34,7 +34,7 @@ ctrl + p // 向上移动一行 (可以代替上箭头)
 
 ```
 sudo －s  // 为了防止误操作破坏系统，再用户状态下时没有权限操作系统重要文件的，所以先要取得root权限 
-ps   // 显示进程当前状态 
+ps   // 显示进程当前状态  ps u
 kill // 终止进程
 date // 显示系统的当前日期和时间
 time // 统计程序的执行时间 
@@ -43,28 +43,29 @@ who  // 列出当前登录的所有用户
 whoami // 显示当前正进行操作的用户名 
 tty  // 显示终端或伪终端的名称 
 stty // 显示或重置控制键定义 
-du   // 查询磁盘使用情况 
+du   // 查询磁盘使用情况  du -k subdir
 w    // 显示当前系统活动的总信息
 env  // 显示当前所有设置过的环境变量 
 uname // 显示操作系统的有关信息
 clear // 清除屏幕或窗口内容
-alias // 给某个命令定义别名 
-unalias // 取消对某个别名的定义 
+alias // 给某个命令定义别名  alias del=rm -i
+unalias // 取消对某个别名的定义  unalias del
 history // 列出最近执行过的几条命令及编号 
 pwd     // 显示当前目录的路径名 
 touch   // 更新文件的访问和修改时间
-dircmp  // 比较两个目录的内容
-diff    // 比较并显示两个文件的差异
-cat 文件名 // 显示或连接文件 
-pg     // 分页格式化显示文件内容
-more   // 分屏显示文件内容 
-od     // 显示非文本文件的内容 
-head   // 显示文件的最初几行
-tail   // 显示文件的最后几行
-cut    // 显示文件每行中的某些域
+dircmp  // 比较两个目录的内容 emp: dircmp dir1 dir2
+diff    // 比较并显示两个文件的差异 diff file1 file2
+cat 文件名 // 显示或连接文件  cat filename
+pg     // 分页格式化显示文件内容 pg filename
+more   // 分屏显示文件内容  more filename
+od     // 显示非文本文件的内容  od -c filename
+head   // 显示文件的最初几行  head -20 filename
+tail   // 显示文件的最后几行  tail -15 filename
+cut    // 显示文件每行中的某些域  cut -f1,7 -d: /etc/passwd
 file   // 显示文件类型
-open   // 使用默认的程序打开文件
-r	   // 重复执行最近执行过的 某条命令
+open   // 使用默认的程序打开文件 open -a AppName fileName
+ln     // 显示文件类型  file filename
+r	   // 重复执行最近执行过的 某条命令  r -2
 ls 参数 目录名 // 列出文件 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件
 cd 目录名     // 跳到目录 
 chmod 参数 权限 文件  // 更改文件权限 参数 -R 表示对目录进行递归操作
@@ -73,7 +74,13 @@ rm 文件名     // 删除文件
 rmdir 空文件夹 // 删除空文件夹 
 rm -r 文件夹名 // 删除文件夹及其子文件 -r 表示递归  -f表示强制
 mv 文件       // 移动文件
+mvdir dir1 dir2 // 移动或重命名一个目录
 cp 参数 源文件 目标文件 // 拷贝文件  参数 -R 表示对目录进行递归操作
+grep  // 在文件中按模式查找 grep "^[a-zA-Z]" filename
+uniq  // 去掉文件中的重复行 uniq file1 file2
+wc // 统计文件的字符数、词数和行数 wc filename
+uname	// 显示操作系统的有关信息	uname -a
+df	// 显示文件系统的总空间和可用空间	df /tmp
 ```
 
 ## mac相关的一些操作

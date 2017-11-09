@@ -196,3 +196,8 @@ Expected unqualified-id 
 #endif // OC的头文件
 ```
 
+## 20.免费App ID真机调试报错`The maximum number of apps for free development profiles has been reached.`
+
+苹果免费App ID只能运行2个应用程序,当调试第三个的时候就会报这个错误,必须把之前的应用程序删除,才能调试新的。
+
+可以在移动端删除或者`command+shift+2`，进入Device，选择你的设备，删除已安装的程序。

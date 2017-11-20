@@ -167,7 +167,11 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 + (Class)layerClass;   // default is [CALayer class]. Used when creating the underlying layer for the view.
 #endif
 
-//初始化方法并且给一个frame
+
+
+// 当从代码实例化UIView的时候，initWithFrame会执行；
+// 当从文件加载UIView的时候，initWithCoder会执行。
+// 初始化方法并且给一个frame
 - (instancetype)initWithFrame:(CGRect)frame;          // default initializer
 
 - (nullable instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
@@ -181,7 +185,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIView : UIResponder <NSCoding, UIAppeara
 
 
 #if UIKIT_DEFINE_AS_PROPERTIES
-@property(nonatomic,readonly) BOOL canBecomeFocused NS_AVAILABLE_IOS(9_0); // NO by default
+@property(nonatomic,readonly) BOOL canBecomeFocused NS_AVAILABLE_IOS(9_0); // NO by default //是否能被设置为高亮
 #else
 - (BOOL)canBecomeFocused NS_AVAILABLE_IOS(9_0); // NO by default
 #endif
@@ -320,6 +324,7 @@ CGRect rc = [self.view convertRect:btn.frame fromView:btn.superview];
 //控件的frame，约束发生改变的时候就会调用，一般在这里重写布局子控件的位置和尺寸
 //重写了这个方法后一定要调用[super layoutSubviews]
 - (void)layoutSubviews;    // override point. called by layoutIfNeeded automatically. As of iOS 6.0, when constraints-based layout is used the base implementation applies the constraints-based layout, otherwise it does nothing.
+/*
 layoutSubviews在以下情况下会被调用：
 1、init初始化不会触发layoutSubviews ,  但 initWithFrame 进行初始化时，当rect的值不为CGRectZero时,也会触发.
 2、addSubview会触发layoutSubviews.
@@ -332,19 +337,38 @@ layoutSubviews在以下情况下会被调用：
 [3]、setNeedsLayout在receiver标上一个需要被重新布局的标记，在系统runloop的下一个周期自动调用layoutSubviews
 [4]、layoutIfNeeded方法如其名，UIKit会判断该receiver是否需要layout
 [5]、layoutIfNeeded遍历的不是superview链，应该是subviews链
+*/
 
-/*
- -layoutMargins returns a set of insets from the edge of the view's bounds that denote a default spacing for laying out content.
- If preservesSuperviewLayoutMargins is YES, margins cascade down the view tree, adjusting for geometry offsets, so that setting the left value of layoutMargins on a superview will affect the left value of layoutMargins for subviews positioned close to the left edge of their superview's bounds
- If your view subclass uses layoutMargins in its layout or drawing, override -layoutMarginsDidChange in order to refresh your view if the margins change.
+/* -layoutMargins returns a set of insets from the edge of the view's bounds that denote a default spacing for laying out content.
+ If preservesSuperviewLayoutMargins is YES, margins cascade down the view tree, adjusting for geometry offsets, so that setting
+ the left value of layoutMargins on a superview will affect the left value of layoutMargins for subviews positioned close to the
+ left edge of their superview's bounds
+   If your view subclass uses layoutMargins in its layout or drawing, override -layoutMarginsDidChange in order to refresh your 
+ view if the margins change.
+   On iOS 11.0 and later, please support both user interface layout directions by setting the directionalLayoutMargins property
+ instead of the layoutMargins property. After setting the directionalLayoutMargins property, the values in the left and right
+ fields of the layoutMargins property will depend on the user interface layout direction.
  */
 //iOS8之后可以用 可以使用layoutMargins定义view之间的间距 这个属性只对autolayout布局生效
 @property (nonatomic) UIEdgeInsets layoutMargins NS_AVAILABLE_IOS(8_0);
+
+/* directionalLayoutMargins.leading is used on the left when the user interface direction is LTR and on the right for RTL.
+ Vice versa for directionalLayoutMargins.trailing.
+ */
+@property (nonatomic) NSDirectionalEdgeInsets directionalLayoutMargins API_AVAILABLE(ios(11.0),tvos(11.0));
+
 //这个属性默认是NO 如果把它设置为YES layoutMargins会根据屏幕中相关view的布局而改变
 @property (nonatomic) BOOL preservesSuperviewLayoutMargins NS_AVAILABLE_IOS(8_0); // default is NO - set to enable pass-through or cascading behavior of margins from this view’s parent to its children
 
+@property (nonatomic) BOOL insetsLayoutMarginsFromSafeArea API_AVAILABLE(ios(11.0),tvos(11.0));  // Default: YES // 默认按照safeArea insets
+
 //在改变view的layoutMargins这个属性时，会触发这个方法，我们在自己的view里面可以重写这个方法来捕获layoutMargins的变化。我们可以在这个方法中触发drawing和layout的update
 - (void)layoutMarginsDidChange NS_AVAILABLE_IOS(8_0);
+
+/*safeAreaInsets 也就是 iPhoneX 的安全区域*/
+@property (nonatomic,readonly) UIEdgeInsets safeAreaInsets API_AVAILABLE(ios(11.0),tvos(11.0));
+/*当safeAreaInsets改变时会调用*/
+- (void)safeAreaInsetsDidChange API_AVAILABLE(ios(11.0),tvos(11.0));
 
 /* The edges of this guide are constrained to equal the edges of the view inset by the layoutMargins
  */
@@ -352,13 +376,18 @@ layoutSubviews在以下情况下会被调用：
 
 /// This content guide provides a layout area that you can use to place text and related content whose width should generally be constrained to a size that is easy for the user to read. This guide provides a centered region that you can place content within to get this behavior for this view.
 @property (nonatomic, readonly, strong) UILayoutGuide *readableContentGuide  NS_AVAILABLE_IOS(9_0);
+
+/* The top of the safeAreaLayoutGuide indicates the unobscured top edge of the view (e.g, not behind
+ the status bar or navigation bar, if present). Similarly for the other edges.
+ */
+@property(nonatomic,readonly,strong) UILayoutGuide *safeAreaLayoutGuide API_AVAILABLE(ios(11.0),tvos(11.0));
 @end
 
 @interface UIView(UIViewRendering)
-
+/*
 drawRect是对receiver的重绘
 setNeedDisplay在receiver标上一个需要被重新绘图的标记，在下一个draw周期自动重绘，iphone device的刷新频率是60hz，也就是1/60秒后重绘
-
+*/
 //渲染 重写此方法 执行重绘 
 - (void)drawRect:(CGRect)rect;
 //需要重新渲染 标记为需要重绘 异步调用drawRect
@@ -374,26 +403,28 @@ setNeedDisplay在receiver标上一个需要被重新绘图的标记，在下一�
 //透明度(0.0~1.0)
 @property(nonatomic)                 CGFloat          alpha;                      // animatable. default is 1.0
 //YES:不透明 NO:透明 
+/*
  决定该消息接收者(UIView instance)是否让其视图不透明,用处在于给绘图系统提供一个性能优化开关。
 insertDemoTwo.opaque = NO;
 该值为YES, 那么绘图在绘制该视图的时候把整个视图当作不透明对待。优化绘图过程并提升系统性能；为了性能方面的考量，默认被置为YES。
 该值为NO,，不去做优化操作。 
 一个不透明视图需要整个边界里面的内容都是不透明。基于这个原因，opaque设置为YES，要求对应的alpha必须为1.0。如果一个UIView实例opaque被设置为YES, 而同时它又没有完全填充它的边界(bounds),或者它包含了整个或部分的透明的内容视图，那么将会导致未知的结果。 
 因此，如果视图部分或全部支持透明，那么你必须把opaque这个值设置为NO.
+*/
 @property(nonatomic,getter=isOpaque) BOOL              opaque;                     // default is YES. opaque views must fill their entire bounds or the results are undefined. the active CGContext in drawRect: will not have been cleared and may have non-zeroed pixels
 
-//YES:自动的清除之前的渲染(绘制前是否清屏)  NO:不自动清除   default is YES
+/*YES:自动的清除之前的渲染(绘制前是否清屏)  NO:不自动清除   default is YES
 insertDemoOne.clearsContextBeforeDrawing = YES;
-提高描画性能（特别是在滚动过程）的另一个方法是将视图的clearsContextBeforeDrawing属性设置为NO。当这个属性被设置为YES时，UIKIt会在调用drawRect:方法之前，把即将被该方法更新的区域填充为透明的黑色。将这个属性设置为NO可以取消相应的填充操作，而由应用程序负责完全重画传给drawRect:方法的更新矩形中的部。这样的优化在滚动过程中通常是一个好的折衷。
+提高描画性能（特别是在滚动过程）的另一个方法是将视图的clearsContextBeforeDrawing属性设置为NO。当这个属性被设置为YES时，UIKIt会在调用drawRect:方法之前，把即将被该方法更新的区域填充为透明的黑色。将这个属性设置为NO可以取消相应的填充操作，而由应用程序负责完全重画传给drawRect:方法的更新矩形中的部。这样的优化在滚动过程中通常是一个好的折衷。*/
 @property(nonatomic)                 BOOL              clearsContextBeforeDrawing; // default is YES. ignored for opaque views. for non-opaque views causes the active CGContext in drawRect: to be pre-filled with transparent pixels
 //YES:隐藏 NO:显示
 @property(nonatomic,getter=isHidden) BOOL              hidden;                     // default is NO. doesn't check superviews
 //内容模式主要用于指定控件内容（注意不是子控件）如何填充，一般UIImageView经常使用，默认为UIViewContentModeScaleToFill
 @property(nonatomic)                 UIViewContentMode     contentMode;                // default is UIViewContentModeScaleToFill
-//http://blog.csdn.net/andyddd/article/details/7574885//视图拉伸和缩略 （0.0-1.0之间）iOS6.0弃用 被-[UIImage resizableImageWithCapInsets:]代替  imageDemo.image = [UIImage imageNamed:@"demo.png"];
+/*http://blog.csdn.net/andyddd/article/details/7574885//视图拉伸和缩略 （0.0-1.0之间）iOS6.0弃用 被-[UIImage resizableImageWithCapInsets:]代替  imageDemo.image = [UIImage imageNamed:@"demo.png"];
  [imageDemo setContentStretch:CGRectMake(50.0/100.0, 75.0/150.0, 10.0/100.0, 10.0/150.0)];
 当demo.png大于imageDemo的大小时，就缩小。
-当demo.png小于imageDemo的大小时，就放大。
+当demo.png小于imageDemo的大小时，就放大。*/
 @property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle { {0,0} {1,1} }. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
 //遮罩View
 @property(nonatomic,retain)          UIView          *maskView NS_AVAILABLE_IOS(8_0);
@@ -577,6 +608,7 @@ UILongPressGestureRecognizer – “长按”手势。使用1指或多指触摸�
 
     Animates the transition to the motion effect's values using the present UIView animation
     context. */
+  /*
 当你打开装有iOS7以上的iPhone主屏，默认的背景是一幅蓝色的星空图片。当上下左右翻转iPhone时，有趣的效果将会出现，星空背景也会沿着各个方向发生位移，这与主屏上的各个App Icon形成了一种独特的视差效果。
 //UIMotionEffect 
 1. UIInterpolatingMotionEffect
@@ -596,6 +628,7 @@ UIInterpolatingMotionEffect是UIMotionEffect的子类，虽然扩展也不复杂
     xEffect.maximumRelativeValue = [NSNumber numberWithFloat:40.0];
     [targetView addMotionEffect:xEffect];
 参考自http://www.cocoachina.com/ios/20150121/10967.html
+*/
 - (void)addMotionEffect:(UIMotionEffect *)effect NS_AVAILABLE_IOS(7_0);
 
 /*! Stops applying `effect` to the receiver. Any affected presentation values will animate to
@@ -915,11 +948,13 @@ UIKIT_EXTERN const CGSize UILayoutFittingExpandedSize NS_AVAILABLE_IOS(6_0);
  The snapshot will appear to be empty since the change in alpha will be captured by the snapshot. If you need to animate the view during layout, animate the snapshot instead.
 
 * Creating snapshots from existing snapshots (as a method to duplicate, crop or create a resizable variant) is supported. In cases where many snapshots are needed, creating a snapshot from a common superview and making subsequent snapshots from it can be more performant. Please keep in mind that if 'afterUpdates' is YES, the original snapshot is committed and any changes made to it, not the view originally snapshotted, will be included.
- */http://www.csdn123.com/html/topnews201408/58/1858.htm
+ */
+/*
+http://www.csdn123.com/html/topnews201408/58/1858.htm
 http://rralun.blog.163.com/blog/static/1039042962014929111334870/
 http://www.cocoachina.com/ios/20141222/10713.html
 // 这个方法能够高效的将当前显示的view截取成一个新的view.你可以用这个截取的view用来显示.例如,也许你只想用一张截图来做动画,
-毕竟用原始的view做动画代价太高.因为是截取了已经存在的内容,这个方法只能反应出这个被截取的view当前的状态信息,而不能反应这个被截取的view以后要显示的信息.然而,不管怎么样,调用这个方法都会比将view做成截图来加载效率更高.
+毕竟用原始的view做动画代价太高.因为是截取了已经存在的内容,这个方法只能反应出这个被截取的view当前的状态信息,而不能反应这个被截取的view以后要显示的信息.然而,不管怎么样,调用这个方法都会比将view做成截图来加载效率更高.*/
 - (UIView *)snapshotViewAfterScreenUpdates:(BOOL)afterUpdates NS_AVAILABLE_IOS(7_0);
 //缩放一个view默认是从中心点进行缩放的
 - (UIView *)resizableSnapshotViewFromRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates withCapInsets:(UIEdgeInsets)capInsets NS_AVAILABLE_IOS(7_0);  // Resizable snapshots will default to stretching the center

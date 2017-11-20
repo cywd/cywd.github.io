@@ -968,3 +968,8 @@ dispatch_time(DISPATCH_TIME_NOW, USEC_PER_SEC * NSEC_PER_USEC);
 最后一个“USEC_PER_SEC * NSEC_PER_USEC”，翻译过来就是“每秒的毫秒数乘以每毫秒的纳秒数”，也就是“每秒的纳秒数”，所以，延时500毫秒之类的，也就不难了吧~
 ```
 
+## 66.UITabBarControllerd的viewcontrollers预加载
+
+`UITabBarController`作为`ViewController`容器的时候，`TabBarController`显示后，只会默认load `TabBarController`的第一个`ViewController`（或者`selectedViewController`）的`View`.
+
+如果需要一开始就加载所有的`viewController`.可以调用`loadViewIfNeeded`.或者强制调用下 `loadVIew`

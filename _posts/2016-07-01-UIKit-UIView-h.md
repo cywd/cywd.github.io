@@ -16,7 +16,7 @@ comments: true
 //  UIView.h
 //  UIKit
 //
-//  Copyright (c) 2005-2016 Apple Inc. All rights reserved.
+//  Copyright (c) 2005-2017 Apple Inc. All rights reserved.
 //
 
 //基础框架入口
@@ -100,6 +100,10 @@ typedef NS_OPTIONS(NSUInteger, UIViewAnimationOptions) {
     UIViewAnimationOptionTransitionCrossDissolve   = 5 << 20,
     UIViewAnimationOptionTransitionFlipFromTop     = 6 << 20,
     UIViewAnimationOptionTransitionFlipFromBottom  = 7 << 20,
+  
+    UIViewAnimationOptionPreferredFramesPerSecondDefault     = 0 << 24,
+    UIViewAnimationOptionPreferredFramesPerSecond60          = 3 << 24,
+    UIViewAnimationOptionPreferredFramesPerSecond30          = 7 << 24,
 } NS_ENUM_AVAILABLE_IOS(4_0);
 
 typedef NS_OPTIONS(NSUInteger, UIViewKeyframeAnimationOptions) {
@@ -389,7 +393,7 @@ insertDemoOne.clearsContextBeforeDrawing = YES;
  [imageDemo setContentStretch:CGRectMake(50.0/100.0, 75.0/150.0, 10.0/100.0, 10.0/150.0)];
 当demo.png大于imageDemo的大小时，就缩小。
 当demo.png小于imageDemo的大小时，就放大。
-@property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle {{0,0} {1,1}}. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
+@property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle {{0,0} {1,1} }. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
 //遮罩View
 @property(nonatomic,retain)          UIView          *maskView NS_AVAILABLE_IOS(8_0);
 

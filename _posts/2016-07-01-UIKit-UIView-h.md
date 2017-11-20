@@ -12,7 +12,7 @@ comments: true
 * TOC
 {:toc}
 
-```c
+```objective-c
 //
 //  UIView.h
 //  UIKit
@@ -510,7 +510,7 @@ insertDemoOne.clearsContextBeforeDrawing = YES;
 
 @interface UIView(UIViewAnimationWithBlocks)
 //动画效果处理块 duration动画时间 delay延迟时间 options动画参数 animations动画效果块 可以设置属性如下：frame bounds center 
-transform alpha backgroundColor contentStretch  completion完成后需要做的操作
+//transform alpha backgroundColor contentStretch  completion完成后需要做的操作
 + (void)animateWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(4_0);
 //没有延迟时间 没有动画参数 options默认为0
 + (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(4_0); // delay = 0.0, options = 0
@@ -518,14 +518,16 @@ transform alpha backgroundColor contentStretch  completion完成后需要做的�
 + (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations NS_AVAILABLE_IOS(4_0); // delay = 0.0, options = 0, completion = NULL
 
 /* Performs `animations` using a timing curve described by the motion of a spring. When `dampingRatio` is 1, the animation will smoothly decelerate to its final model values without oscillating. Damping ratios less than 1 will oscillate more and more before coming to a complete stop. You can use the initial spring velocity to specify how fast the object at the end of the simulated spring was moving before it was attached. It's a unit coordinate system, where 1 is defined as travelling the total animation distance in a second. So if you're changing an object's position by 200pt in this animation, and you want the animation to behave as if the object was moving at 100pt/s before the animation started, you'd pass 0.5. You'll typically want to pass 0 for the velocity. */
-参考 http://www.tuicool.com/articles/ZR7nYv  http://www.woshipm.com/ucd/85600.html
+//参考 http://www.tuicool.com/articles/ZR7nYv  http://www.woshipm.com/ucd/85600.html
 // Spring(弹簧) Animation的API 比一般动画多了两个参数 usingSpringWithDamping(范围为0.0f~1.0f)，数值越小弹簧的震动的效果越明显
-initialSpringVelocity 表示初始速度，数值越大一开始移动越快
+// initialSpringVelocity 表示初始速度，数值越大一开始移动越快
+// dampingRatio 设置弹簧的阻尼比例
+// velocity 设置弹簧的最初速度
 + (void)animateWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay usingSpringWithDamping:(CGFloat)dampingRatio initialSpringVelocity:(CGFloat)velocity options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(7_0);
 
 
 
-//** [UIView transitionWithView:_redView
+/* [UIView transitionWithView:_redView
                           duration:2.0
                            options:UIViewAnimationOptionTransitionCurlDown
                         animations:^{
@@ -533,7 +535,7 @@ initialSpringVelocity 表示初始速度，数值越大一开始移动越快
             [_redView addSubview:_blackView];
         } completion:^(BOOL finished) {
      _redView.backgroundColor = [UIColor brownColor];
-        }];***//
+        }];***/
 //国度动画效果块
 + (void)transitionWithView:(UIView *)view duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(4_0);
 
@@ -548,7 +550,7 @@ initialSpringVelocity 表示初始速度，数值越大一开始移动越快
 @end
 
 @interface UIView (UIViewKeyframeAnimations)
-***********
+/***********
 [UIViewanimateKeyframesWithDuration:2.0delay:0options:UIViewKeyframeAnimationOptionRepeatanimations:^{
 
         _blackView.frame = CGRectMake(30, 30, 50, 50);
@@ -564,8 +566,14 @@ initialSpringVelocity 表示初始速度，数值越大一开始移动越快
 
     }];
 
-
-//为当前视图创建一个可以用于设置基本关键帧动画的block对象
+*/
+  
+//为当前视图创建一个可以用于设置基本关键帧动画的block对象从IOS7开始使用
+//这里说一下参数，第一个frameStartTime其实是个倍数从0到1，假设一个动画持续的时间是2秒
+//设置frameStartTime为0.5，那么后面设置的动画，将会在整体动画执行1秒后开始执行
+//第二个参数frameDuration同第一个，是指动画持续时间
+//第四个是一个block对象，里面就是你设置的所要执行的动画，无参数和返回值
+//这个方法可以结合  + (Class)layerClass 使用
 + (void)animateKeyframesWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(UIViewKeyframeAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL finished))completion NS_AVAILABLE_IOS(7_0);
 
 //指定一个关键帧的单个贞的时间和动画 iOS7后可用 
@@ -578,6 +586,7 @@ frameDuration是指动画持续时间
 @interface UIView (UIViewGestureRecognizers)
 
 @property(nonatomic,copy) NSArray *gestureRecognizers NS_AVAILABLE_IOS(3_2);//手势识别器
+/*
 UIKit 中UIGestureRecognizer类的子类系列如下：
 UITapGestureRecognizer – “轻击”手势。可以配置为“单击”和“连击”的识别。
 UIPinchGestureRecognizer –“捏合”手势。该手势通常用于缩放视图或改变可视组件的大小。
@@ -585,6 +594,7 @@ UIPanGestureRecognizer – “平移”手势。识别拖拽或移动动作。
 UISwipeGestureRecognizer – “轻扫”手势。当用户从屏幕上划过时识别为该手势。可以指定该动作的方向（上、下、左、右）。
 UIRotationGestureRecognizer – “转动”手势。用户两指在屏幕上做相对环形运动。
 UILongPressGestureRecognizer – “长按”手势。使用1指或多指触摸屏幕并保持一定时间。
+*/
 //给VIew添加一个手势
 - (void)addGestureRecognizer:(UIGestureRecognizer*)gestureRecognizer NS_AVAILABLE_IOS(3_2);
 //移除VIew的手势
@@ -593,10 +603,12 @@ UILongPressGestureRecognizer – “长按”手势。使用1指或多指触摸�
 // called when the recognizer attempts to transition out of UIGestureRecognizerStatePossible if a touch hit-tested to this view will be cancelled as a result of gesture recognition
 // returns YES by default. return NO to cause the gesture recognizer to transition to UIGestureRecognizerStateFailed
 // subclasses may override to prevent recognition of particular gestures. for example, UISlider prevents swipes parallel to the slider that start in the thumb
+/*
 手势识别处理方式在gesture recognizer视图转出《UIGestureRecognizerStatePossible》状态时调用，
 如果返回NO,则转换到《UIGestureRecognizerStateFailed》;
 如果返回YES,则继续识别触摸序列.(默认情况下为YES)。
 [insertDemoOne gestureRecognizerShouldBegin:demoGesture];
+*/
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer NS_AVAILABLE_IOS(6_0);
 
 @end
@@ -824,7 +836,8 @@ UIKIT_EXTERN const CGFloat UIViewNoIntrinsicMetric NS_AVAILABLE_IOS(6_0); // -1
 - (UILayoutPriority)contentCompressionResistancePriorityForAxis:(UILayoutConstraintAxis)axis NS_AVAILABLE_IOS(6_0);
 //设置缩小的视图的轴线
 - (void)setContentCompressionResistancePriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis NS_AVAILABLE_IOS(6_0);
-上面最后四个API主要是通过修改水平或者垂直方向的优先级来实现视图是基于水平缩小(放大)还是垂直缩小(放大)。当我们的视图需要根据内部内容进行调整大小时，我们应该使用上述方法为当前视图设置初始值。而不应该重写这几个方法。
+/*
+上面最后四个API主要是通过修改水平或者垂直方向的优先级来实现视图是基于水平缩小(放大)还是垂直缩小(放大)。当我们的视图需要根据内部内容进行调整大小时，我们应该使用上述方法为当前视图设置初始值。而不应该重写这几个方法。*/
 @end
 
 // Size To Fit
@@ -959,6 +972,7 @@ http://www.cocoachina.com/ios/20141222/10713.html
 //缩放一个view默认是从中心点进行缩放的
 - (UIView *)resizableSnapshotViewFromRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates withCapInsets:(UIEdgeInsets)capInsets NS_AVAILABLE_IOS(7_0);  // Resizable snapshots will default to stretching the center
 // Use this method to render a snapshot of the view hierarchy into the current context. Returns NO if the snapshot is missing image data, YES if the snapshot is complete. Calling this method from layoutSubviews while the current transaction is committing will capture what is currently displayed regardless if afterUpdates is YES.
+// 它允许你截取一个UIView或者其子类中的内容
 - (BOOL)drawViewHierarchyInRect:(CGRect)rect afterScreenUpdates:(BOOL)afterUpdates NS_AVAILABLE_IOS(7_0);
 //屏幕快照
 @end

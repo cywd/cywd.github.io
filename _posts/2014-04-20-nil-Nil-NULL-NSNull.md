@@ -110,7 +110,7 @@ struct stStruct = NULL;
 + (NSNull *)null;
 ```
 
-### 作用：通常表示集合中的空值.
+### 作用：用来表示空值的 Objective-C 对象(通常表示集合中的空值.)
 
 ### 例子
 
@@ -126,3 +126,7 @@ NSArray *array = [NSArray arrayWithObjects:[[NSObject alloc] init], nil,  [[NSOb
 
 那么数组到第二个位置就会结束。打印`[array count]`的话会显示1而不是4,
 所以`[NSNull null]`通常可以作为一个数组的占位符，从而使数组的count计算准确。
+
+## 5.总结
+
+不管是 `NULL`、`nil` 还是 `Nil`，它们本质上是一样的，都是 `(void *)0`，只是写法不同。这样做的意义是为了区分不同的数据类型，虽然它们值相同，但我们需要理解它们之间的字面意义并用于不同场景，让代码更加明确，增加可读性。

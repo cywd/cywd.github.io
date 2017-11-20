@@ -4,13 +4,14 @@ title: "UIKit/UIView.h"
 excerpt: "UIKit/UIView.h"
 categories: [OC]
 tags: [UIView, OC]
-date: 2013-12-01 
+date: 2016-07-01 
 modified: 
 comments: true
 ---
 
 * TOC
 {:toc}
+
 ```c
 //
 //  UIView.h
@@ -393,7 +394,7 @@ insertDemoOne.clearsContextBeforeDrawing = YES;
  [imageDemo setContentStretch:CGRectMake(50.0/100.0, 75.0/150.0, 10.0/100.0, 10.0/150.0)];
 当demo.png大于imageDemo的大小时，就缩小。
 当demo.png小于imageDemo的大小时，就放大。
-@property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle {{0,0} {1,1} }. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
+@property(nonatomic)                 CGRect            contentStretch NS_DEPRECATED_IOS(3_0,6_0); // animatable. default is unit rectangle { {0,0} {1,1} }. Now deprecated: please use -[UIImage resizableImageWithCapInsets:] to achieve the same effect.
 //遮罩View
 @property(nonatomic,retain)          UIView          *maskView NS_AVAILABLE_IOS(8_0);
 

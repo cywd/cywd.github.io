@@ -201,3 +201,9 @@ Expected unqualified-id 
 苹果免费App ID只能运行2个应用程序,当调试第三个的时候就会报这个错误,必须把之前的应用程序删除,才能调试新的。
 
 可以在移动端删除或者`command+shift+2`，进入Device，选择你的设备，删除已安装的程序。
+
+## 21.objc_msgSend 报错`Too many arguments to function call, expected 0, have 3`
+
+查到一种解决方案是选中项目 - `Project` - `Build Settings` - `ENABLE_STRICT_OBJC_MSGSEND`  将其设置为 `NO` 即可
+
+

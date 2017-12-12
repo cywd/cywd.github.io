@@ -28,7 +28,7 @@ FBShimmering
 
 *`FBShimmeringView`*  // 实现了`FBShimmering` 协议，主要是修改其图层`FBShimmeringLayer`，对外提供了`contentView`。
 
-*`FBShimmeringLayer`*  // 实现了`FBShimmering` 协议，是实现整个动画效果的核心部分。
+*`FBShimmeringLayer`*  // 实现了`FBShimmering` 协议，是实现整个动画效果的核心部分。包含了两个`layer`，一个是包含内容的`contentLayer`，另一个便是用户蒙层闪光效果的`maskLayer`。
 
 # 源码分析
 
@@ -528,6 +528,9 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
 
 #pragma mark - Internal
 
+/*
+清除蒙版
+*/
 - (void)_clearMask
 {
   if (nil == _maskLayer) {
@@ -635,39 +638,49 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
     return;
   }
 
+  // 保证 layout
   // ensure layout
   [self layoutIfNeeded];
-
+  
+  // 判断动画是否已失效
   BOOL disableActions = [CATransaction disableActions];
   if (!_shimmering) {
     if (disableActions) {
+      // 假如不播放动画且动画已失效，清除maskLayer
       // simply remove mask
       [self _clearMask];
     } else {
+      // 结束滑行
       // end slide
       CFTimeInterval slideEndTime = 0;
 
+      // 根据key获取动画
       CAAnimation *slideAnimation = [_maskLayer animationForKey:kFBShimmerSlideAnimationKey];
       if (slideAnimation != nil) {
 
+        // 获取滑动的总时间
         // determine total time sliding
         CFTimeInterval now = CACurrentMediaTime();
         CFTimeInterval slideTotalDuration = now - slideAnimation.beginTime;
-
+		
+        // 根据已播放时间和总体时间求出剩余时间
         // determine time offset into current slide
         CFTimeInterval slideTimeOffset = fmod(slideTotalDuration, slideAnimation.duration);
 
+        // 结束动画
         // transition to non-repeating slide
         CAAnimation *finishAnimation = shimmer_slide_finish(slideAnimation);
 
+        // 结束动画的开始时间
         // adjust begin time to now - offset
         finishAnimation.beginTime = now - slideTimeOffset;
-
+		
+        // 设定结束时间，并添加结束动画
         // note slide end time and begin
         slideEndTime = finishAnimation.beginTime + slideAnimation.duration;
         [_maskLayer addAnimation:finishAnimation forKey:kFBShimmerSlideAnimationKey];
       }
-
+	  // 在结束动画播放完毕后播放淡入动画（这里需要注意的是，淡入淡出动画都是对maskLayer的子layer fadeLayer起作用）
       // fade in text at slideEndTime
       CABasicAnimation *fadeInAnimation = fade_animation(_maskLayer.fadeLayer, 1.0, _shimmeringEndFadeDuration);
       fadeInAnimation.delegate = self;
@@ -675,10 +688,12 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
       fadeInAnimation.beginTime = slideEndTime;
       [_maskLayer.fadeLayer addAnimation:fadeInAnimation forKey:kFBFadeAnimationKey];
 
+      // 淡入淡出动画的开始时间为位移动画的结束时间(这一步只做数据展示，对整体动画没影响)
       // expose end time for synchronization
       _shimmeringFadeTime = slideEndTime;
     }
   } else {
+    // 淡出
     // fade out text, optionally animated
     CABasicAnimation *fadeOutAnimation = nil;
     if (_shimmeringBeginFadeDuration > 0.0 && !disableActions) {
@@ -694,6 +709,7 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
       [CATransaction setDisableActions:innerDisableActions];
     }
 
+    // 开始滑动动画
     // begin slide animation
     CAAnimation *slideAnimation = [_maskLayer animationForKey:kFBShimmerSlideAnimationKey];
     

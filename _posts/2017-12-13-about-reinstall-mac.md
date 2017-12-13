@@ -20,6 +20,22 @@ comments: true
 
 # 新系统配置开发环境
 
+## 最先的一些配置
+
+打开"安全性与隐私"中"任何来源"选项.
+
+```
+sudo spctl --master-disable
+```
+
+显示所有隐藏文件
+
+```
+defaults write com.apple.finder AppleShowAllFiles YES
+```
+
+
+
 ## Xcode
 
 这个不多说，第一个毫无疑问。App Store 下载即可。就是时间比较久。
@@ -81,6 +97,14 @@ github上找。不多说。
 ### Reveal 4
 
 可以去 史蒂芬周 的 博客 找。个人硬盘备份。
+
+### Dash
+
+史蒂芬周博客找
+
+### ifunboxmac
+
+[官网](http://www.i-funbox.com/en_download.html)下载
 
 ### MindNode
 

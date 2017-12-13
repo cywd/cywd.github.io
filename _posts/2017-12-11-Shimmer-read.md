@@ -2,7 +2,7 @@
 layout: post
 title: Shimmer解读
 excerpt: ""
-categories: ["iOS"]
+categories: ["iOS", "源码阅读"]
 tags: ["iOS", "源码阅读"]
 date: 2017-12-11
 comments: true

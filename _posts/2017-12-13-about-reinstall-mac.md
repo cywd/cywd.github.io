@@ -149,6 +149,66 @@ sudo make install
 which wget #Should output: /usr/local/bin/wge
 ```
 
+
+
+配色、主题和插件
+
+配色采用[solarized](http://ethanschoonover.com/solarized)
+
+打开iTerm2的偏好设置，Profiles -> Colors 选择 Solarized Dark。
+
+主题采用`agnoster`
+
+```
+vi ~/.zshrc
+```
+
+打开后找到`ZSH_THEME="robbyrussell"`修改为`ZSH_THEME="agnoster"`
+
+这个时候会出现乱码 `？`
+
+不要担心，是因为没有配套的字体。
+
+Powerline字体下载安装
+
+clone到随便的位置，cd到fonts目录，执行 install.sh。这样字体就都安装了。
+
+```shell
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+```
+
+接着可以到iTerm2偏好设置中，找到修改字体的选项，修改字体为后缀带有powerline的字体。`？`是不是没有了。
+
+接着安装插件，注意插件有很多，不过安装的插件越多程序反应会越慢。
+
+这里我们只安装一个插件 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting.git)
+
+执行
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+接着再次
+
+```Shell
+vi ~/.zshrc
+```
+
+打开后找到
+
+```shell
+plugins=( [已有插件]  zsh-syntax-highlighting )
+```
+
+source 一下 使其生效。
+
+```
+source ~/.zshrc
+```
+
 ## Homebrew
 
 [官网](https://brew.sh)
@@ -164,8 +224,6 @@ which wget #Should output: /usr/local/bin/wge
 ```Shell
 brew install tree
 ```
-
-
 
 ## Git
 

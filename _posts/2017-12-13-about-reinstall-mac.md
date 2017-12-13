@@ -267,7 +267,31 @@ git config --global alias.p push
 
 ## CocoaPods
 
-占位
+安装rvm
+
+```
+curl -L https://get.rvm.io | bash -s stable
+```
+
+安装rails
+
+```
+sudo gem install rails
+```
+
+安装CocoaPods
+
+```
+sudo gem install -n /usr/local/bin cocoapods
+```
+
+然后
+
+```
+pod setup
+```
+
+
 
 ## Python3
 

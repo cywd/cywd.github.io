@@ -23,6 +23,7 @@ Xcode->homebrew->RVM->Ruby->CocoaPods
 ## 2.安装及问题
 
 查看gcc版本
+
 `gcc --version`
 
 ### 安装homebrew
@@ -32,12 +33,15 @@ Xcode->homebrew->RVM->Ruby->CocoaPods
 如果出现问题请：
 
 homebrew 修复问题
+
 `brew doctor`
 
 homebrew升级
+
 `brew update`
 
 更新连接
+
 `brew install autoconf`
 
 ### 安装rvm
@@ -45,6 +49,7 @@ homebrew升级
 `curl -L  https://get.rvm.io | bash -s stable`
 
 安装ralis
+
 `gem install rails`
 
 ruby的版本号过低
@@ -57,27 +62,35 @@ activesupport requires Ruby version >= 2.2.2.
 ### ruby
 
 查看ruby的版本
+
 `ruby -v`
-// 查看已经安装的ruby版本
+
+查看已经安装的ruby版本
+
 `rvm list`
 
-// 查看所有可用的ruby
+查看所有可用的ruby
+
 `rvm list known`
 
-// 设置默认ruby
+设置默认ruby
+
 `rvm 2.3.0 --default`
 
-//移除ruby原生源
+移除ruby原生源
+
 ` gem source -r https://rubygems.org/`
 
- //添加ruby社区源
+添加ruby社区源
+
 ` gem source -a https://gems.ruby-china.org/`
 
 查看源
 
 `gem sources -l`
 
-// 更新rvm文档
+更新rvm文档
+
 `rvm docs generate-ri`
 
 
@@ -93,15 +106,18 @@ ERROR:  While executing gem ... (TypeError)
     no implicit conversion of nil into String
 ```
 
-
 请更新gem
+
 `sudo gem update --system`
 
 `sudo gem install cocoa pods`
+
 `sudo gem install -n /usr/local/bin cocoapods`
+
 `pod setup`
 
-// 查看pod版本
+查看pod版本
+
 `pod --version`
 
 ## 关于pod setup 特别慢的问题
@@ -118,6 +134,7 @@ ERROR:  While executing gem ... (TypeError)
 关于cocoapods的使用
 
 不更新Specs的pod install 速度会快
+
 `pod install --verbose --no-repo-update`
 
 

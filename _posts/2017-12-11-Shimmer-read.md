@@ -410,6 +410,7 @@ static CAAnimation *shimmer_slide_finish(CAAnimation *a)
 {
   self = [super init];
   if (nil != self) {
+    // 默认配置
     // default configuration
     _shimmeringPauseDuration = 0.4;
     _shimmeringSpeed = 230.0;

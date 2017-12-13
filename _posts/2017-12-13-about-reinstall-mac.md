@@ -130,12 +130,23 @@ xcode-select --install
 
 然后会有提示。点击安装就可以。
 
-而`wget`可以在安装`Homebrew`时，选择默认安装。
-
-也可以通过`homebrew`安装
+而`wget`可以通过`homebrew`安装
 
 ```shell
 brew install wget
+```
+
+或者
+
+```shell
+curl -O http://ftp.gnu.org/gnu/wget/wget-1.13.4.tar.gz
+
+tar xzvf wget-1.13.4.tar.gz
+cd wget-1.13.4
+./configure --with-ssl=openssl
+sudo make
+sudo make install
+which wget #Should output: /usr/local/bin/wge
 ```
 
 ## Homebrew

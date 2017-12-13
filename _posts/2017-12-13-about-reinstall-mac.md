@@ -159,6 +159,14 @@ which wget #Should output: /usr/local/bin/wge
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+安装 tree
+
+```Shell
+brew install tree
+```
+
+
+
 ## Git
 
 安装`command line tools`就有了。当然也可以自己安装。

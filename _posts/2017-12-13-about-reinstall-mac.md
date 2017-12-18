@@ -301,6 +301,12 @@ pod setup
 brew install Python3
 ```
 
+## mysql
+
+[官网](https://www.mysql.com)
+
+
+
 ## 各种编辑器
 
 ### Sublime

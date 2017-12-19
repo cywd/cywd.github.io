@@ -206,4 +206,9 @@ Expected unqualified-id 
 
 查到一种解决方案是选中项目 - `Project` - `Build Settings` - `ENABLE_STRICT_OBJC_MSGSEND`  将其设置为 `NO` 即可
 
+## 22.ios真机调试错误`Reason: no suitable image found. Did find:xxxxxxxx`
+
+原因是：因为你的证书在上一次安装到现在安装失败这段时间里证书被重置过，那么两次的签名就不一样了，而你的Bundle identifier ID又是同一个，所以这次安装会失败。
+
+解决：把手机上相应的APP删除，并把项目 clean下，然后重新运行，就可以成功运行了。
 

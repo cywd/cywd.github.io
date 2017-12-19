@@ -38,15 +38,15 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ## Xcode
 
-这个不多说，第一个毫无疑问。App Store 下载即可。就是时间比较久。
+这个不多说，第一个安装毫无疑问。`App Store` 下载即可。就是时间比较久。
 
 ## 一些常用软件
 
-由于`Xcode`比较大安装比较慢，期间我会安装一写常用的软件
+由于`Xcode`比较大安装比较慢，期间我会安装一些常用的软件
 
 ### QQ 微信
 
-不多说，可以从官网或者App Store 下载。
+不多说，可以从官网或者`App Store` 下载。
 
 ### Paste 2
 
@@ -54,11 +54,11 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ### App Icon Gear
 
-生成 1x 2x 3x 图片 和 Launch Image 。 开发时会用到。
+生成` 1x 2x 3x `图片 和` Launch Image `。 开发时会用到。
 
 ### Status Barred
 
-去掉带状态条的截屏图片中的 状态条。
+去掉带状态条的截屏图片中的状态条。
 
 ### Sip
 
@@ -66,7 +66,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ### IconKit
 
-生成 iOS Mac 的 应用图标。平时要求不太严格的时候还挺好用的。要求严格找设计吧。
+生成 `iOS Mac` 的 应用图标。平时要求不太严格的时候还挺好用的。要求严格找设计吧。
 
 ### Keynote Numbers Pages
 
@@ -78,6 +78,8 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ### 有道词典
 
+用来查单词
+
 ### 网易云音乐
 
 超级好的歌单和评论。
@@ -88,19 +90,19 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ### 蓝灯
 
-github上找。不多说。
+`github`上找。不多说。
 
 ### Typora
 
-网上搜。用来写Markdown，个人用着还习惯。
+网上搜。用来写`Markdown`，个人用着还习惯。
 
 ### Reveal 4
 
-可以去 史蒂芬周 的 博客 找。个人硬盘备份。
+可以去 [史蒂芬周的博客](http://www.sdifen.com) 找。个人硬盘备份。
 
 ### Dash
 
-史蒂芬周博客找
+[史蒂芬周的博客](http://www.sdifen.com) 找
 
 ### ifunboxmac
 
@@ -116,19 +118,21 @@ github上找。不多说。
 
 ### Photoshop AI
 
+偶尔用来切个图
+
 ## iTerm2 + oh my zsh
 
 谁用谁知道。
 
 先安装`iTerm2`
 
-[官网](http://www.iterm2.com)
+[iTerm2官网](http://www.iterm2.com)
 
 [下载](http://www.iterm2.com/downloads.html)
 
 安装`oh my zsh`
 
-[官网](http://ohmyz.sh)
+[oh my zsh官网](http://ohmyz.sh)
 
 `curl` 
 
@@ -179,7 +183,7 @@ which wget #Should output: /usr/local/bin/wge
 
 配色采用[solarized](http://ethanschoonover.com/solarized)
 
-打开iTerm2的偏好设置，Profiles -> Colors 选择 Solarized Dark。
+打开`iTerm2`的偏好设置，`Profiles -> Colors` 选择 `Solarized Dark`。
 
 主题采用`agnoster`
 
@@ -193,9 +197,9 @@ vi ~/.zshrc
 
 不要担心，是因为没有配套的字体。
 
-Powerline字体下载安装
+`Powerline`字体下载安装
 
-clone到随便的位置，cd到fonts目录，执行 install.sh。这样字体就都安装了。
+`clone`到随便的位置，`cd`到`fonts`目录，执行 `install.sh`。这样字体就都安装了。
 
 ```shell
 git clone https://github.com/powerline/fonts.git
@@ -203,7 +207,7 @@ cd fonts
 ./install.sh
 ```
 
-接着可以到iTerm2偏好设置中，找到修改字体的选项，修改字体为后缀带有powerline的字体。`？`是不是没有了。
+接着可以到`iTerm2`偏好设置中，找到修改字体的选项，修改字体为后缀带有`powerline`的字体。`？`是不是没有了。
 
 接着安装插件，注意插件有很多，不过安装的插件越多程序反应会越慢。
 
@@ -215,7 +219,7 @@ cd fonts
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-接着再次
+接着再
 
 ```Shell
 vi ~/.zshrc
@@ -243,7 +247,7 @@ source ~/.zshrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-安装 tree
+安装 `tree`
 
 ```Shell
 brew install tree
@@ -267,19 +271,19 @@ git config --global alias.p push
 
 ## CocoaPods
 
-安装rvm
+安装`rvm`
 
 ```
 curl -L https://get.rvm.io | bash -s stable
 ```
 
-安装rails
+安装`rails`
 
 ```
 sudo gem install rails
 ```
 
-安装CocoaPods
+安装`CocoaPods`
 
 ```
 sudo gem install -n /usr/local/bin cocoapods
@@ -305,9 +309,44 @@ brew install Python3
 
 [官网](https://www.mysql.com)
 
-Mac OS X系统的MySQL的版本：MySQL Community Server (GPL)，在下载页面提供有两种格式的文件下载,一种为tar.gz格式，另一种为dmg格式，这里推荐dmg格式。
+`Mac OS `系统的`MySQL`的版本：`MySQL Community Server (GPL)`，在下载页面提供有两种格式的文件下载,一种为`tar.gz`格式，另一种为`dmg`格式，这里推荐`dmg`格式。
 
+一路安装。中间会有个弹框，请记住里面的密码 （是`mysql root `账户默认的密码）
 
+安装好以后，去系统的偏好设置里找到`mysql`，开启`mysql`服务。
+
+此时我们在命令行输入`mysql -u root -p`命令会提示`commod not found`，我们还需要将`mysq`l加入系统环境变量。
+
+```shell
+cd ~/
+# 分别打开.zshrc 和 .profile
+vim ./.zshrc 
+vim ./.profile
+```
+
+添加 
+
+```Shell
+# Add Mysql to PATH for scripting.
+export PATH="$PATH:/usr/local/mysql/bin" 
+```
+
+source 一下 使其生效
+
+```Shell
+source ~/.profile
+source ~/.zshrc 
+```
+
+现在你就可以通过`mysql -u root -p`登录`mysql`了，会让你输入密码，就是之前记下来那一串。
+
+登陆成功后，可以更改密码
+
+```
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('你想要设置的新密码');
+```
+
+也可以使用` homebrew`安装 `mysql`，这里就不说了。
 
 ## 各种编辑器
 

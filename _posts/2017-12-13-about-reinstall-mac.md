@@ -305,6 +305,8 @@ brew install Python3
 
 [官网](https://www.mysql.com)
 
+Mac OS X系统的MySQL的版本：MySQL Community Server (GPL)，在下载页面提供有两种格式的文件下载,一种为tar.gz格式，另一种为dmg格式，这里推荐dmg格式。
+
 
 
 ## 各种编辑器

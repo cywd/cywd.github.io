@@ -14,7 +14,7 @@ comments: true
 
 # 结构分析
 
-源代码都放在了SwiftJSON.swift这一个文件里。
+源代码都放在了`SwiftyJSON.swift`这一个文件里。
 
 ## 结构
 

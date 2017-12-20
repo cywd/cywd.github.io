@@ -4,7 +4,7 @@ title: 关于重新安装Mac
 excerpt: "由于在升级系统的时候意外断电黑屏，导致系统故障，遂重装系统，本文主要记录下，重装系统及新系统需要做的事情。"
 categories: ["Mac"]
 tags: ["Mac"]
-date: 2017-12-13
+date: 2017-12-10
 comments: true
 ---
 

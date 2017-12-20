@@ -12,7 +12,7 @@ comments: true
 {:toc}
 ---
 
-# 结构分析
+# 分析
 
 源代码都放在了`SwiftyJSON.swift`这一个文件里。
 
@@ -71,9 +71,67 @@ comments: true
 
 `class`默认使用`internal`
 
+## `JSON`的类型
+
+```swift
+public enum Type: Int {
+	case number
+	case string
+	case bool
+	case array
+	case dictionary
+	case null
+	case unknown
+}
+```
+
+### `number`
+
+用来表示一个数字，对应`Swift`中的数值类型，如`Int` `double`等
+
+### `string`
+
+用以表示一个字符串，对应`Swift`中的`String`
+
+### `bool`
+
+用以表示布尔值，对应`Swift`中的`Bool`
+
+### `array`
+
+用以表示一个有序的值的集合，对应`Swift`中的`Array`
+
+### `dictionary`
+
+用以表示一个无序的“名称/值”对的集合，对应`Swift`中的 `Dictionary`
+
+### `null`
+
+用以表示空，对应`Swift`中的`nil`
+
+### `unknow`
+
+用以表示未知类型
+
+## `JSONSerialization`
+
+`JSONSerialization`是苹果用于序列化/反序列化`JSON`数据的类，其可以实现JSON的二进制数据`Data`和`Any`对象的相互转化。由于`Data`并不一定能反序列化为`Any`对象，所以需要进行错误处理。由于得到的是`Any`类型，所以当实际使用的时候，还必须进行多次的转型和判断。
+
+```Swift
+do {
+  let object: Any = try JSONSerialization.jsonObject(with: data, options: [])
+} catch {
+  print("解析失败")
+}
+```
+
+现在在的`JSON`解析库基本都是基于`JSONSerialization`
 
 
-# 源码分析
+
+
+
+# 源码
 
 ```Swift
 //  SwiftyJSON.swift

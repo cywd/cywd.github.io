@@ -40,50 +40,26 @@ layout: default
   </article>
 </div>
 
-<!-- JiaThis Button BEGIN -->
-<!-- 
-<div class="jiathis_style">
-	<a class="jiathis_button_qzone"></a>
-	<a class="jiathis_button_tsina"></a>
-	<a class="jiathis_button_tqq"></a>
-	<a class="jiathis_button_weixin"></a>
-	<a class="jiathis_button_renren"></a>
-	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-</div>
-<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
- -->
-<!-- JiaThis Button END -->
-
-<!--
-<div class="share-buttons">
-  <h6>Share on: </h6>
-  <ul>
-    <li>
-      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
-    </li>
-    <li>
-      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
-    </li>
-    <li>
-      <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
-    </li>
-    <li>
-      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
-    </li>
-  </ul>
-</div><!~~ end share-buttons ~~>
- -->
 
 {% if page.comments == true %}
 <!-- {% include disqus.html %} -->
 
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2128860"></script>
-<!-- UY END -->
+<!--这里使用了gitment，感谢-->
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        // id: '', // 可选。默认为 location.href
+        owner: 'cywd',
+        repo: 'cywd.github.io',
+        oauth: {
+            client_id: 'eea37193acb231476066',
+            client_secret: 'b06ec9125454c7efc2ef9a81389aac65ddebf37c',
+        },
+    })
+    gitment.render('container')
+</script>
 
 {% endif %}
 

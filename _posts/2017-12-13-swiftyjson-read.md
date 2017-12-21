@@ -197,7 +197,7 @@ fileprivate var rawBool: Bool = false
 
 `JSONSerialization`是苹果用于序列化/反序列化`JSON`数据的类，其可以实现JSON的二进制数据`Data`和`Any`对象的相互转化。由于`Data`并不一定能反序列化为`Any`对象，所以需要进行错误处理。由于得到的是`Any`类型，所以当实际使用的时候，还必须进行多次的转型和判断。
 
-```Swift
+```swift
 do {
   let object: Any = try JSONSerialization.jsonObject(with: data, options: [])
 } catch {
@@ -224,7 +224,7 @@ JSON字符串String
 
 具体的初始化方法分析如下：
 
-```Swift
+```swift
 /**
  Creates a JSON using the object.
 
@@ -260,7 +260,7 @@ public init(data: Data, options opt: JSONSerialization.ReadingOptions = []) thro
 
 #### 任意类型Any
 
-```Swift
+```swift
 /**
  Creates a JSON object
  - note: this does not parse a `String` into JSON, instead use `init(parseJSON: String)`
@@ -287,7 +287,7 @@ public init(_ object: Any) {
 
 #### `JSON`字符串`String`
 
-```Swift
+```swift
 /**
  Parses the JSON string into a JSON object
 
@@ -319,7 +319,7 @@ public init(parseJSON jsonString: String) {
 
 # 源码
 
-```Swift
+```swift
 //  SwiftyJSON.swift
 //
 //  Copyright (c) 2014 - 2017 Ruoyu Fu, Pinglin Tang

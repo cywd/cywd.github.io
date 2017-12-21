@@ -221,7 +221,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 接着再
 
-```Shell
+```shell
 vi ~/.zshrc
 ```
 
@@ -249,7 +249,7 @@ source ~/.zshrc
 
 安装 `tree`
 
-```Shell
+```shell
 brew install tree
 ```
 
@@ -326,14 +326,14 @@ vim ./.profile
 
 添加 
 
-```Shell
+```shell
 # Add Mysql to PATH for scripting.
 export PATH="$PATH:/usr/local/mysql/bin" 
 ```
 
 source 一下 使其生效
 
-```Shell
+```shell
 source ~/.profile
 source ~/.zshrc 
 ```

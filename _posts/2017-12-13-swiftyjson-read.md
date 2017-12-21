@@ -256,7 +256,7 @@ public init(data: Data, options opt: JSONSerialization.ReadingOptions = []) thro
 }
 ```
 
-调用系统的`JSONSerialization`对`Data`进行解析，然后执行基本初始化方法`init(data: object)`。
+调用系统的`JSONSerialization`对`Data`进行解析，然后执行基本初始化方法`fileprivate init(jsonObject: Any)`。
 
 #### 任意类型Any
 

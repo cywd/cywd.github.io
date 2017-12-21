@@ -16,6 +16,8 @@ comments: true
 
 源代码都放在了`SwiftyJSON.swift`这一个文件里。
 
+
+
 ## 结构
 
 ```
@@ -25,6 +27,21 @@ comments: true
 4.以RowValue的形式把JSON数据转化为用户想要的数据类型
 5.运算符重载实现JSON数据的比较
 ```
+
+
+
+## 流程
+
+```
+1.假设我们从服务器拿到了{"description":"test"} 的一个二进制数据Data
+2.把Data通过JSONSerialization反序列化后，如果没有错误发生，将得到一个Any对象，此时我们并不知道它里面具体是什么
+3.把Any对象递归的解包之后，就得到了unwrapedObject，即字典
+{"description":"test"}
+4.根据unwrapedObject的类型，对结构体的type和rowValue赋值，以方便后续的使用
+5.以object对type和rowValue进行封装，方便外部对JSON结构体数据的使用
+```
+
+
 
 ## 注释
 
@@ -71,9 +88,86 @@ comments: true
 
 `class`默认使用`internal`
 
-## `JSON`的类型
+
+
+## 错误
+
+这些是已经过时的
 
 ```swift
+/// Error domain
+@available(*, deprecated, message: "ErrorDomain is deprecated. Use `SwiftyJSONError.errorDomain` instead.", renamed: "SwiftyJSONError.errorDomain")
+public let ErrorDomain: String = "SwiftyJSONErrorDomain"
+
+/// Error code
+@available(*, deprecated, message: "ErrorUnsupportedType is deprecated. Use `SwiftyJSONError.unsupportedType` instead.", renamed: "SwiftyJSONError.unsupportedType")
+public let ErrorUnsupportedType: Int = 999
+@available(*, deprecated, message: "ErrorIndexOutOfBounds is deprecated. Use `SwiftyJSONError.indexOutOfBounds` instead.", renamed: "SwiftyJSONError.indexOutOfBounds")
+public let ErrorIndexOutOfBounds: Int = 900
+@available(*, deprecated, message: "ErrorWrongType is deprecated. Use `SwiftyJSONError.wrongType` instead.", renamed: "SwiftyJSONError.wrongType")
+public let ErrorWrongType: Int = 901
+@available(*, deprecated, message: "ErrorNotExist is deprecated. Use `SwiftyJSONError.notExist` instead.", renamed: "SwiftyJSONError.notExist")
+public let ErrorNotExist: Int = 500
+@available(*, deprecated, message: "ErrorInvalidJSON is deprecated. Use `SwiftyJSONError.invalidJSON` instead.", renamed: "SwiftyJSONError.invalidJSON")
+public let ErrorInvalidJSON: Int = 490
+```
+
+现在的是这样
+
+```swift
+// SwiftyJSON 错误
+public enum SwiftyJSONError: Int, Swift.Error {
+    case unsupportedType = 999
+    case indexOutOfBounds = 900
+    case elementTooDeep = 902
+    case wrongType = 901
+    case notExist = 500
+    case invalidJSON = 490
+}
+
+// SwiftyJSON 错误 extension
+extension SwiftyJSONError: CustomNSError {
+
+    /// return the error domain of SwiftyJSONError
+    public static var errorDomain: String { return "com.swiftyjson.SwiftyJSON" }
+
+    /// return the error code of SwiftyJSONError
+    public var errorCode: Int { return self.rawValue }
+
+    /// return the userInfo of SwiftyJSONError
+    public var errorUserInfo: [String: Any] {
+        switch self {
+        case .unsupportedType:
+            return [NSLocalizedDescriptionKey: "It is an unsupported type."]
+        case .indexOutOfBounds:
+            return [NSLocalizedDescriptionKey: "Array Index is out of bounds."]
+        case .wrongType:
+            return [NSLocalizedDescriptionKey: "Couldn't merge, because the JSONs differ in type on top level."]
+        case .notExist:
+            return [NSLocalizedDescriptionKey: "Dictionary key does not exist."]
+        case .invalidJSON:
+            return [NSLocalizedDescriptionKey: "JSON is invalid."]
+        case .elementTooDeep:
+            return [NSLocalizedDescriptionKey: "Element too deep. Increase maxObjectDepth and make sure there is no reference loop."]
+        }
+    }
+}
+```
+
+可以看到这里只有`get`属性。
+
+
+
+## `SwiftyJSON`中`JSON`的类型
+
+```swift
+// MARK: - JSON Type
+
+/**
+JSON's type definitions.
+
+See http://www.json.org
+*/
 public enum Type: Int {
 	case number
 	case string
@@ -85,33 +179,19 @@ public enum Type: Int {
 }
 ```
 
-### `number`
+与`type`对应的`rawValue`，用于存储进行过类型转换后的最终结果。在`JSON`结构体里面。
 
-用来表示一个数字，对应`Swift`中的数值类型，如`Int` `double`等
+```swift
+/// Private object
+fileprivate var rawArray: [Any] = []
+fileprivate var rawDictionary: [String: Any] = [:]
+fileprivate var rawString: String = ""
+fileprivate var rawNumber: NSNumber = 0
+fileprivate var rawNull: NSNull = NSNull()
+fileprivate var rawBool: Bool = false
+```
 
-### `string`
 
-用以表示一个字符串，对应`Swift`中的`String`
-
-### `bool`
-
-用以表示布尔值，对应`Swift`中的`Bool`
-
-### `array`
-
-用以表示一个有序的值的集合，对应`Swift`中的`Array`
-
-### `dictionary`
-
-用以表示一个无序的“名称/值”对的集合，对应`Swift`中的 `Dictionary`
-
-### `null`
-
-用以表示空，对应`Swift`中的`nil`
-
-### `unknow`
-
-用以表示未知类型
 
 ## `JSONSerialization`
 
@@ -126,6 +206,114 @@ do {
 ```
 
 现在的`JSON`解析库基本都是基于`JSONSerialization`
+
+## `JSON`结构体
+
+### 初始化
+
+从输入源考虑，有以下几种情况：
+
+```
+二进制数据Data
+JSON字符串String
+任意类型Any
+```
+
+虽然有多种可能的输入源，但是最终的逻辑是一样的，即通过一个解析后的`Any`对象，生成一个`JSON`结构体。我们可以把最终生成`JSON`结构体的逻辑封装成一个指定初始化方法(`Designated Initializer`)，其他的所有初始化方法则是对输入进行相应的处理后，再代理给指定初始化方法。(严格来说，指定初始化方法是作用于`Class`，相对于`Convenience Initializers`来说的，但是其思想同样可以用于`Struct`)
+
+
+具体的初始化方法分析如下：
+
+```Swift
+/**
+ Creates a JSON using the object.
+
+ - parameter jsonObject:  The object must have the following properties: All objects are NSString/String, NSNumber/Int/Float/Double/Bool, NSArray/Array, NSDictionary/Dictionary, or NSNull; All dictionary keys are NSStrings/String; NSNumbers are not NaN or infinity.
+
+ - returns: The created JSON
+ */
+fileprivate init(jsonObject: Any) {
+    self.object = jsonObject
+}
+```
+
+使用这个私有方法初始化，通过参数`jsonObject`创建`JOSN`结构体实例并初始化`object`属性。`self.object = jsonObject`会去调用`object`的`set`方法。
+
+#### 二进制数据`Data`
+
+```swift
+/**
+ Creates a JSON using the data.
+
+ - parameter data: The NSData used to convert to json.Top level object in data is an NSArray or NSDictionary
+ - parameter opt: The JSON serialization reading options. `[]` by default.
+
+ - returns: The created JSON
+ */
+public init(data: Data, options opt: JSONSerialization.ReadingOptions = []) throws {
+    let object: Any = try JSONSerialization.jsonObject (with: data, options: opt)
+    self.init(jsonObject: object)
+}
+```
+
+调用系统的`JSONSerialization`对`Data`进行解析，然后执行基本初始化方法`init(data: object)`。
+
+#### 任意类型Any
+
+```Swift
+/**
+ Creates a JSON object
+ - note: this does not parse a `String` into JSON, instead use `init(parseJSON: String)`
+
+ - parameter object: the object
+
+ - returns: the created JSON object
+ */
+public init(_ object: Any) {
+    switch object {
+    case let object as Data:
+        do {
+            try self.init(data: object)
+        } catch {
+            self.init(jsonObject: NSNull())
+        }
+    default:
+        self.init(jsonObject: object)
+    }
+}
+```
+
+因为此`Any`不一定是`JSONSerialization`解析后的Any，还有可能是`Data`类型。所以进行判断，如果是Data则执行基本初始化方法`public init(data: Data, options opt: JSONSerialization.ReadingOptions = [])`，否则执行基本初始化方法`fileprivate init(jsonObject: Any)`
+
+#### `JSON`字符串`String`
+
+```Swift
+/**
+ Parses the JSON string into a JSON object
+
+ - parameter json: the JSON string
+
+ - returns: the created JSON object
+*/
+public init(parseJSON jsonString: String) {
+    if let data = jsonString.data(using: .utf8) {
+        self.init(data)
+    } else {
+        self.init(NSNull())
+    }
+}
+```
+
+通过字符串创建`Data`，再执行方法`public init(_ object: Any)`，如果创建失败，则通过指定初始化方法构造一个空`JSON`
+
+### 合并(`Merge`)
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+占位
+
+这里继续
+
 
 
 

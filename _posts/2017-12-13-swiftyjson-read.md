@@ -492,12 +492,160 @@ public static var nullJSON: JSON { return null }
 public static var null: JSON { return JSON(NSNull()) }
 ```
 
+## 面向协议
+
+对于`JSON`来说，最外层需要是`Dictionary`或者`Array`，也就是说是集合类型，所以可以把`JSON`结构体扩展为`Swift`的集合类型，即实现`Swift.Collection`协议。因为`JSON`结构体的内部数据可能为多种类型，要扩展为集合，就要先定义一种统一的索引方式。而作为索引，其本身必须是可比较的，也就是必须实现`Comparable`协议。
+
+
+### `Index`和`Comparable`
+
+```swift
+public enum Index<T: Any>: Comparable {
+    case array(Int)
+    case dictionary(DictionaryIndex<String, T>)
+    case null
+
+    static public func == (lhs: Index, rhs: Index) -> Bool {
+        switch (lhs, rhs) {
+        case (.array(let left), .array(let right)):
+            return left == right
+        case (.dictionary(let left), .dictionary(let right)):
+            return left == right
+        case (.null, .null): return true
+        default:
+            return false
+        }
+    }
+
+    static public func < (lhs: Index, rhs: Index) -> Bool {
+        switch (lhs, rhs) {
+        case (.array(let left), .array(let right)):
+            return left < right
+        case (.dictionary(let left), .dictionary(let right)):
+            return left < right
+        default:
+            return false
+        }
+    }
+}
+```
+
+对于`JSON`结构体来说，我们定义了7种类型，但是作为索引，只需要针对`.array`、`.dictionary`和`.null`，其他类型本身就是一个实体，没有索引的概念(`.string`本身是有索引的，不过我们不需要把字符串给拆成字符)。所以声明一个枚举，把上述三种情况统一为一个`Index`，并实现`Comparable`协议。
+`Comparable`协议实际就是重载比较运算符，如`==` 、`<`等，让两个同类型的实例可以进行比较，协议的概念和实现的逻辑都比较简单：
+
+```swift
+static public func == (lhs: Index, rhs: Index) -> Bool {
+    switch (lhs, rhs) {
+    case (.array(let left), .array(let right)):
+        return left == right
+    case (.dictionary(let left), .dictionary(let right)):
+        return left == right
+    case (.null, .null): return true
+    default:
+        return false
+    }
+}
+
+static public func < (lhs: Index, rhs: Index) -> Bool {
+    switch (lhs, rhs) {
+    case (.array(let left), .array(let right)):
+        return left < right
+    case (.dictionary(let left), .dictionary(let right)):
+        return left < right
+    default:
+        return false
+    }
+}
+```
+
+### `Collection`
+
+`Collection`协议可以为实现该协议的类型提供几乎全部集合常用的特性，如通过下标获取集合元素，`for…in`遍历集合元素，`count isEmpty indices`等常用属性，元素操作、距离、切片、迭代器等常用方法。
+
+
+遵守`Collection`协议至少必须满足以下三点：
+
+```
+startIndex和endIndex属性用来定义元素的起始
+subscript特性用来通过下标获取集合内部元素
+index(after:)方法用来确定元素的排列顺序
+```
+
+理解起来也很清晰明了，一个集合通过`subscript`特性把索引和内部的元素绑定，并且确定了起始位置的索引和其他索引的后继，那么这个集合内部的元素就已经全部确定且可知的了。
+
+而由于`Array`和`Dictionary`都已经是集合类型了，我们定义的`Index`只是通过枚举对几种情况进行了统一，那么实现协议的时候也只需要对`Index`类型进行判断，然后调用`Array`和`Dictionary`本身的相关实现即可：
+
+```swift
+public typealias JSONIndex = Index<JSON>
+public typealias JSONRawIndex = Index<Any>
+
+extension JSON: Swift.Collection {
+
+    public typealias Index = JSONRawIndex
+
+    public var startIndex: Index {
+        switch type {
+        case .array:
+            return .array(rawArray.startIndex)
+        case .dictionary:
+            return .dictionary(rawDictionary.startIndex)
+        default:
+            return .null
+        }
+    }
+
+    public var endIndex: Index {
+        switch type {
+        case .array:
+            return .array(rawArray.endIndex)
+        case .dictionary:
+            return .dictionary(rawDictionary.endIndex)
+        default:
+            return .null
+        }
+    }
+
+    public func index(after i: Index) -> Index {
+        switch i {
+        case .array(let idx):
+            return .array(rawArray.index(after: idx))
+        case .dictionary(let idx):
+            return .dictionary(rawDictionary.index(after: idx))
+        default:
+            return .null
+        }
+    }
+
+    public subscript (position: Index) -> (String, JSON) {
+        switch position {
+        case .array(let idx):
+            return (String(idx), JSON(self.rawArray[idx]))
+        case .dictionary(let idx):
+            let (key, value) = self.rawDictionary[idx]
+            return (key, JSON(value))
+        default:
+            return ("", JSON.null)
+        }
+    }
+}
+```
+
+### 下标
+
+// -----------------------------
+
+占位
+
+// -----------------------------
+
 
 
 
 # 源码
 
-```swift
+[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+
+​```swift
 //  SwiftyJSON.swift
 //
 //  Copyright (c) 2014 - 2017 Ruoyu Fu, Pinglin Tang
@@ -553,10 +701,10 @@ extension SwiftyJSONError: CustomNSError {
 
     /// return the error domain of SwiftyJSONError
     public static var errorDomain: String { return "com.swiftyjson.SwiftyJSON" }
-
+    
     /// return the error code of SwiftyJSONError
     public var errorCode: Int { return self.rawValue }
-
+    
     /// return the userInfo of SwiftyJSONError
     public var errorUserInfo: [String: Any] {
         switch self {
@@ -605,32 +753,32 @@ public struct JSON {
 	
 	 - returns: The created JSON
 	 */
-    public init(data: Data, options opt: JSONSerialization.ReadingOptions = []) throws {
-        let object: Any = try JSONSerialization.jsonObject(with: data, options: opt)
-        self.init(jsonObject: object)
-    }
-
-    /**
+	public init(data: Data, options opt: JSONSerialization.ReadingOptions = []) throws {
+	    let object: Any = try JSONSerialization.jsonObject(with: data, options: opt)
+	    self.init(jsonObject: object)
+	}
+	
+	/**
 	 Creates a JSON object
 	 - note: this does not parse a `String` into JSON, instead use `init(parseJSON: String)`
 	
 	 - parameter object: the object
-
+	
 	 - returns: the created JSON object
 	 */
-    public init(_ object: Any) {
-        switch object {
-        case let object as Data:
-            do {
-                try self.init(data: object)
-            } catch {
-                self.init(jsonObject: NSNull())
-            }
-        default:
-            self.init(jsonObject: object)
-        }
-    }
-
+	public init(_ object: Any) {
+	    switch object {
+	    case let object as Data:
+	        do {
+	            try self.init(data: object)
+	        } catch {
+	            self.init(jsonObject: NSNull())
+	        }
+	    default:
+	        self.init(jsonObject: object)
+	    }
+	}
+	
 	/**
 	 Parses the JSON string into a JSON object
 	
@@ -645,7 +793,7 @@ public struct JSON {
 			self.init(NSNull())
 		}
 	}
-
+	
 	/**
 	 Creates a JSON from JSON string
 	
@@ -653,12 +801,12 @@ public struct JSON {
 	
 	 - returns: The created JSON
 	 */
-    @available(*, deprecated, message: "Use instead `init(parseJSON: )`")
-    public static func parse(_ json: String) -> JSON {
-        return json.data(using: String.Encoding.utf8)
-            .flatMap { try? JSON(data: $0) } ?? JSON(NSNull())
-    }
-
+	@available(*, deprecated, message: "Use instead `init(parseJSON: )`")
+	public static func parse(_ json: String) -> JSON {
+	    return json.data(using: String.Encoding.utf8)
+	        .flatMap { try? JSON(data: $0) } ?? JSON(NSNull())
+	}
+	
 	/**
 	 Creates a JSON using the object.
 	
@@ -666,22 +814,22 @@ public struct JSON {
 	
 	 - returns: The created JSON
 	 */
-    fileprivate init(jsonObject: Any) {
-        self.object = jsonObject
-    }
-
+	fileprivate init(jsonObject: Any) {
+	    self.object = jsonObject
+	}
+	
 	/**
 	 Merges another JSON into this JSON, whereas primitive values which are not present in this JSON are getting added,
 	 present values getting overwritten, array values getting appended and nested JSONs getting merged the same way.
- 
+	 
 	 - parameter other: The JSON which gets merged into this JSON
 	
 	 - throws `ErrorWrongType` if the other JSONs differs in type on the top level.
 	 */
-    public mutating func merge(with other: JSON) throws {
-        try self.merge(with: other, typecheck: true)
-    }
-
+	public mutating func merge(with other: JSON) throws {
+	    try self.merge(with: other, typecheck: true)
+	}
+	
 	/**
 	 Merges another JSON into this JSON and returns a new JSON, whereas primitive values which are not present in this JSON are getting added,
 	 present values getting overwritten, array values getting appended and nested JSONS getting merged the same way.
@@ -692,15 +840,15 @@ public struct JSON {
 	
 	 - returns: New merged JSON
 	 */
-    public func merged(with other: JSON) throws -> JSON {
-        var merged = self
-        try merged.merge(with: other, typecheck: true)
-        return merged
-    }
-
-    /**
-     Private woker function which does the actual merging
-     Typecheck is set to true for the first recursion level to prevent total override of the source JSON
+	public func merged(with other: JSON) throws -> JSON {
+	    var merged = self
+	    try merged.merge(with: other, typecheck: true)
+	    return merged
+	}
+	
+	/**
+	 Private woker function which does the actual merging
+	 Typecheck is set to true for the first recursion level to prevent total override of the source JSON
  	*/
  	fileprivate mutating func merge(with other: JSON, typecheck: Bool) throws {
         if self.type == other.type {
@@ -722,7 +870,7 @@ public struct JSON {
             }
         }
     }
-
+    
     /// Private object
     fileprivate var rawArray: [Any] = []
     fileprivate var rawDictionary: [String: Any] = [:]
@@ -730,13 +878,13 @@ public struct JSON {
     fileprivate var rawNumber: NSNumber = 0
     fileprivate var rawNull: NSNull = NSNull()
     fileprivate var rawBool: Bool = false
-
+    
     /// JSON type, fileprivate setter
     public fileprivate(set) var type: Type = .null
-
+    
     /// Error in JSON, fileprivate setter
     public fileprivate(set) var error: SwiftyJSONError?
-
+    
     /// Object in JSON
     public var object: Any {
         get {
@@ -785,7 +933,7 @@ public struct JSON {
             }
         }
     }
-
+    
     /// The static null JSON
     @available(*, unavailable, renamed:"null")
     public static var nullJSON: JSON { return null }
@@ -814,7 +962,7 @@ public enum Index<T: Any>: Comparable {
     case array(Int)
     case dictionary(DictionaryIndex<String, T>)
     case null
-
+    
     static public func == (lhs: Index, rhs: Index) -> Bool {
         switch (lhs, rhs) {
         case (.array(let left), .array(let right)):
@@ -826,7 +974,7 @@ public enum Index<T: Any>: Comparable {
             return false
         }
     }
-
+    
     static public func < (lhs: Index, rhs: Index) -> Bool {
         switch (lhs, rhs) {
         case (.array(let left), .array(let right)):
@@ -856,7 +1004,7 @@ extension JSON: Swift.Collection {
             return .null
         }
     }
-
+    
     public var endIndex: Index {
         switch type {
         case .array:
@@ -867,7 +1015,7 @@ extension JSON: Swift.Collection {
             return .null
         }
     }
-
+    
     public func index(after i: Index) -> Index {
         switch i {
         case .array(let idx):
@@ -878,7 +1026,7 @@ extension JSON: Swift.Collection {
             return .null
         }
     }
-
+    
     public subscript (position: Index) -> (String, JSON) {
         switch position {
         case .array(let idx):
@@ -896,11 +1044,11 @@ extension JSON: Swift.Collection {
 
 /**
  *  To mark both String and Int can be used in subscript.
- */
-public enum JSONKey {
+    */
+    public enum JSONKey {
     case index(Int)
     case key(String)
-}
+    }
 
 public protocol JSONSubscriptType {
     var jsonKey: JSONKey { get }
@@ -943,7 +1091,7 @@ extension JSON {
             }
         }
     }
-
+    
     /// If `type` is `.dictionary`, return json whose object is `dictionary[key]` , otherwise return null json with error.
     fileprivate subscript(key key: String) -> JSON {
         get {
@@ -965,7 +1113,7 @@ extension JSON {
             }
         }
     }
-
+    
     /// If `sub` is `Int`, return `subscript(index:)`; If `sub` is `String`,  return `subscript(key:)`.
     fileprivate subscript(sub sub: JSONSubscriptType) -> JSON {
         get {
@@ -981,62 +1129,62 @@ extension JSON {
             }
         }
     }
-
-	/**
-	 Find a json in the complex data structures by using array of Int and/or String as path.
-	
-	 Example:
-	 `
-	 let json = JSON[data]
-	 let path = [9,"list","person","name"]
-	 let name = json[path]
-	 `
-	
-	 The same as: let name = json[9]["list"]["person"]["name"]
-	
-	 - parameter path: The target json's path.
-	
-	 - returns: Return a json found by the path or a null json with error
-	 */
-	public subscript(path: [JSONSubscriptType]) -> JSON {
-	    get {
-	        return path.reduce(self) { $0[sub: $1] }
-	    }
-	    set {
-	        switch path.count {
-	        case 0:
-	            return
-	        case 1:
-	            self[sub:path[0]].object = newValue.object
-	        default:
-	            var aPath = path
-	            aPath.remove(at: 0)
-	            var nextJSON = self[sub: path[0]]
-	            nextJSON[aPath] = newValue
-	            self[sub: path[0]] = nextJSON
-	        }
-	    }
-	}
-	
-	/**
-	 Find a json in the complex data structures by using array of Int and/or String as path.
-	
-	 - parameter path: The target json's path. Example:
-	
-	 let name = json[9,"list","person","name"]
-	
-	 The same as: let name = json[9]["list"]["person"]["name"]
-	
-	 - returns: Return a json found by the path or a null json with error
-	 */
-	public subscript(path: JSONSubscriptType...) -> JSON {
-	    get {
-	        return self[path]
-	    }
-	    set {
-	        self[path] = newValue
-	    }
-	}
+    
+    /**
+     Find a json in the complex data structures by using array of Int and/or String as path.
+    
+     Example:
+     `
+     let json = JSON[data]
+     let path = [9,"list","person","name"]
+     let name = json[path]
+     `
+    
+     The same as: let name = json[9]["list"]["person"]["name"]
+    
+     - parameter path: The target json's path.
+    
+     - returns: Return a json found by the path or a null json with error
+     */
+    public subscript(path: [JSONSubscriptType]) -> JSON {
+        get {
+            return path.reduce(self) { $0[sub: $1] }
+        }
+        set {
+            switch path.count {
+            case 0:
+                return
+            case 1:
+                self[sub:path[0]].object = newValue.object
+            default:
+                var aPath = path
+                aPath.remove(at: 0)
+                var nextJSON = self[sub: path[0]]
+                nextJSON[aPath] = newValue
+                self[sub: path[0]] = nextJSON
+            }
+        }
+    }
+    
+    /**
+     Find a json in the complex data structures by using array of Int and/or String as path.
+    
+     - parameter path: The target json's path. Example:
+    
+     let name = json[9,"list","person","name"]
+    
+     The same as: let name = json[9]["list"]["person"]["name"]
+    
+     - returns: Return a json found by the path or a null json with error
+     */
+    public subscript(path: JSONSubscriptType...) -> JSON {
+        get {
+            return self[path]
+        }
+        set {
+            self[path] = newValue
+        }
+    }
 }
 
 // MARK: - LiteralConvertible
@@ -1959,3 +2107,5 @@ public enum writingOptionsKeys {
 
 
 
+
+```

@@ -296,8 +296,6 @@ public init(parseJSON jsonString: String) {
 
 方法中使用了`mutating`关键字，其作用是使得方法可以修改调用该方法的实例本身，即`self`。
 
-### 逻辑
-
 #### 基本方法
 
 ```swift
@@ -376,6 +374,8 @@ public func merged(with other: JSON) throws -> JSON {
 如果`typecheck`为真说明是第一次调用，也就是说两个结构体的最外层结构是不相同的，那么无法合并，抛出定义好的`NSError`错误
 
 如果`typecheck`为假说明是遍历字典时递归调用的，也就是说两个结构体的最外层结构是一样，只不过里层的结构不同，那么把里面的数据直接替换为新的数据
+
+
 
 
 # 源码

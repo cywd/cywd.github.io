@@ -16,8 +16,6 @@ comments: true
 
 源代码都放在了`SwiftyJSON.swift`这一个文件里。
 
-
-
 ## 结构
 
 ```
@@ -27,8 +25,6 @@ comments: true
 4.以RowValue的形式把JSON数据转化为用户想要的数据类型
 5.运算符重载实现JSON数据的比较
 ```
-
-
 
 ## 流程
 
@@ -41,54 +37,46 @@ comments: true
 5.以object对type和rowValue进行封装，方便外部对JSON结构体数据的使用
 ```
 
-
-
 ## 注释
 
-|          类型           |                    描述                    |
-| :-------------------: | :--------------------------------------: |
-|          //           |                 普通的单行注释                  |
-|         /* */         |                 可嵌套的多行注释                 |
-|      // MARK: -       |                   分割线                    |
-| // TODO: \| // FIXME: |              添加todo\|fixme               |
-|          ///          |  Xcode会添加该注释内容到Quick Help的Description字段  |
-|        /** */         | 和///类似，且可以通过添加parameter、returns等字段为函数的使用提供更多的信息 |
-
-
+|            类型             |                    描述                    |
+| :-----------------------: | :--------------------------------------: |
+|           `//`            |                 普通的单行注释                  |
+|          `/* */`          |                 可嵌套的多行注释                 |
+|       `// MARK: -`        |                   分割线                    |
+| `// TODO:` \|` // FIXME:` |              添加todo\|fixme               |
+|           `///`           |  Xcode会添加该注释内容到Quick Help的Description字段  |
+|         `/** */`          | 和///类似，且可以通过添加parameter、returns等字段为函数的使用提供更多的信息 |
 
 ## 访问权限
 
 ### 对于`func`
 
-|     类型      |   文件内   | 模块(Module)内 |   其他模块   |
-| :---------: | :-----: | :---------: | :------: |
-|    open     | 可访问和重载  |   可访问和重载    |  可访问和重载  |
-|   public    | 可访问和重载  |   可访问和重载    | 可访问,不可重载 |
-|  internal   | 可访问和重载  |   可访问和重载    | 不可访问和重载  |
-| fileprivate | 可访问和重载  |   不可访问和重载   | 不可访问和重载  |
-|   private   | 不可访问和重载 |   不可访问和重载   | 不可访问和重载  |
+|      类型       |   文件内   | 模块(Module)内 |   其他模块   |
+| :-----------: | :-----: | :---------: | :------: |
+|    `open`     | 可访问和重载  |   可访问和重载    |  可访问和重载  |
+|   `public`    | 可访问和重载  |   可访问和重载    | 可访问,不可重载 |
+|  `internal`   | 可访问和重载  |   可访问和重载    | 不可访问和重载  |
+| `fileprivate` | 可访问和重载  |   不可访问和重载   | 不可访问和重载  |
+|   `private`   | 不可访问和重载 |   不可访问和重载   | 不可访问和重载  |
 
-`final`修饰的`func`在任何地方都不能被重载（overwrite）
+`final`修饰的`func`在任何地方都不能被重载（`overwrite`）
 
 `func`默认使用`internal`
 
-
-
 ### 对于`class`
 
-|     类型      |  文件内   | 模块(Module)内 |   其他模块   |
-| :---------: | :----: | :---------: | :------: |
-|    open     | 可访问和继承 |   可访问和继承    |  可访问和继承  |
-|   public    | 可访问和继承 |   可访问和继承    | 可访问,不可继承 |
-|  internal   | 可访问和继承 |   可访问和继承    | 不可访问和继承  |
-| fileprivate | 可访问和继承 |   不可访问和继承   | 不可访问和继承  |
-|   private   | 可访问和继承 |   不可访问和继承   | 不可访问和继承  |
+|      类型       |  文件内   | 模块(`Module`)内 |   其他模块   |
+| :-----------: | :----: | :-----------: | :------: |
+|    `open`     | 可访问和继承 |    可访问和继承     |  可访问和继承  |
+|   `public`    | 可访问和继承 |    可访问和继承     | 可访问,不可继承 |
+|  `internal`   | 可访问和继承 |    可访问和继承     | 不可访问和继承  |
+| `fileprivate` | 可访问和继承 |    不可访问和继承    | 不可访问和继承  |
+|   `private`   | 可访问和继承 |    不可访问和继承    | 不可访问和继承  |
 
 `final`修饰的`class`在任何地方都不能被继承
 
 `class`默认使用`internal`
-
-
 
 ## 错误
 
@@ -156,8 +144,6 @@ extension SwiftyJSONError: CustomNSError {
 
 可以看到这里只有`get`属性。
 
-
-
 ## `SwiftyJSON`中`JSON`的类型
 
 ```swift
@@ -190,8 +176,6 @@ fileprivate var rawNumber: NSNumber = 0
 fileprivate var rawNull: NSNull = NSNull()
 fileprivate var rawBool: Bool = false
 ```
-
-
 
 ## `JSONSerialization`
 
@@ -283,7 +267,7 @@ public init(_ object: Any) {
 }
 ```
 
-因为此`Any`不一定是`JSONSerialization`解析后的Any，还有可能是`Data`类型。所以进行判断，如果是Data则执行基本初始化方法`public init(data: Data, options opt: JSONSerialization.ReadingOptions = [])`，否则执行基本初始化方法`fileprivate init(jsonObject: Any)`
+因为此`Any`不一定是`JSONSerialization`解析后的`Any`，还有可能是`Data`类型。所以进行判断，如果是`Data`则执行基本初始化方法`public init(data: Data, options opt: JSONSerialization.ReadingOptions = [])`，否则执行基本初始化方法`fileprivate init(jsonObject: Any)`
 
 #### `JSON`字符串`String`
 
@@ -308,13 +292,90 @@ public init(parseJSON jsonString: String) {
 
 ### 合并(`Merge`)
 
-//------------------------------------------------------------------------------------------------------------------------------
+除了初始化外，还提供了合并两个`JSON`结构体的方法。
 
-占位
+方法中使用了`mutating`关键字，其作用是使得方法可以修改调用该方法的实例本身，即`self`。
 
-这里继续
+### 逻辑
 
+#### 基本方法
 
+```swift
+/**
+ Private woker function which does the actual merging
+ Typecheck is set to true for the first recursion level to prevent total override of the source JSON
+*/
+fileprivate mutating func merge(with other: JSON, typecheck: Bool) throws {
+    if self.type == other.type {
+        switch self.type {
+        case .dictionary:
+            for (key, _) in other {
+                try self[key].merge(with: other[key], typecheck: false)
+            }
+        case .array:
+            self = JSON(self.arrayValue + other.arrayValue)
+        default:
+            self = other
+        }
+    } else {
+        if typecheck {
+            throw SwiftyJSONError.wrongType
+        } else {
+            self = other
+        }
+    }
+}
+```
+
+方法中使用了`mutating`关键字，其作用是使得方法可以修改调用该方法的实例本身，即`self`
+
+如果是除字典和数据外的类型，直接替换为新的数据
+
+如果是数组，把两个数组的内容合并
+
+如果是字典，遍历字典，如果`key`相同，递归的调用合并方法把对应的`value`进行合并，并附加一个标志`typecheck`
+
+#### 两个结构体的type相同
+
+```swift
+/**
+ Merges another JSON into this JSON, whereas primitive values which are not present in this JSON are getting added,
+ present values getting overwritten, array values getting appended and nested JSONs getting merged the same way.
+
+ - parameter other: The JSON which gets merged into this JSON
+
+ - throws `ErrorWrongType` if the other JSONs differs in type on the top level.
+ */
+public mutating func merge(with other: JSON) throws {
+    try self.merge(with: other, typecheck: true)
+}
+```
+
+调用私有的基本合并方法
+
+#### 两个结构体的type不同
+
+```swift
+/**
+ Merges another JSON into this JSON and returns a new JSON, whereas primitive values which are not present in this JSON are getting added,
+ present values getting overwritten, array values getting appended and nested JSONS getting merged the same way.
+
+ - parameter other: The JSON which gets merged into this JSON
+
+ - throws `ErrorWrongType` if the other JSONs differs in type on the top level.
+
+ - returns: New merged JSON
+ */
+public func merged(with other: JSON) throws -> JSON {
+    var merged = self
+    try merged.merge(with: other, typecheck: true)
+    return merged
+}
+```
+
+如果`typecheck`为真说明是第一次调用，也就是说两个结构体的最外层结构是不相同的，那么无法合并，抛出定义好的`NSError`错误
+
+如果`typecheck`为假说明是遍历字典时递归调用的，也就是说两个结构体的最外层结构是一样，只不过里层的结构不同，那么把里面的数据直接替换为新的数据
 
 
 # 源码

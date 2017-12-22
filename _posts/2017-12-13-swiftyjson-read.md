@@ -375,6 +375,123 @@ public func merged(with other: JSON) throws -> JSON {
 
 如果`typecheck`为假说明是遍历字典时递归调用的，也就是说两个结构体的最外层结构是一样，只不过里层的结构不同，那么把里面的数据直接替换为新的数据
 
+### `Private object`
+
+```swift
+/// Private object
+fileprivate var rawArray: [Any] = []
+fileprivate var rawDictionary: [String: Any] = [:]
+fileprivate var rawString: String = ""
+fileprivate var rawNumber: NSNumber = 0
+fileprivate var rawNull: NSNull = NSNull()
+fileprivate var rawBool: Bool = false
+
+/// JSON type, fileprivate setter
+public fileprivate(set) var type: Type = .null
+
+/// Error in JSON, fileprivate setter
+public fileprivate(set) var error: SwiftyJSONError?
+
+```
+
+### `Object`
+
+```swift
+/// Object in JSON
+public var object: Any {
+    get {
+        switch self.type {
+        case .array:
+            return self.rawArray
+        case .dictionary:
+            return self.rawDictionary
+        case .string:
+            return self.rawString
+        case .number:
+            return self.rawNumber
+        case .bool:
+            return self.rawBool
+        default:
+            return self.rawNull
+        }
+    }
+    set {
+        error = nil
+        switch unwrap(newValue) {
+        case let number as NSNumber:
+            if number.isBool {
+                type = .bool
+                self.rawBool = number.boolValue
+            } else {
+                type = .number
+                self.rawNumber = number
+            }
+        case let string as String:
+            type = .string
+            self.rawString = string
+        case _ as NSNull:
+            type = .null
+        case nil:
+            type = .null
+        case let array as [Any]:
+            type = .array
+            self.rawArray = array
+        case let dictionary as [String: Any]:
+            type = .dictionary
+            self.rawDictionary = dictionary
+        default:
+            type = .unknown
+            error = SwiftyJSONError.unsupportedType
+        }
+    }
+}
+```
+
+#### get
+
+根据`type`来判断该返回什么
+
+#### set
+
+把`Any`对象递归的解包之后，就得到了`unwrapedObject`
+
+根据`unwrapedObject`的类型，对结构体的`type`和`rowValue`赋值，以方便后续的使用
+
+以`object`对`type`和`rowValue`进行封装，方便外部对`JSON`结构体数据的使用
+
+#### unwrap
+
+```swift
+/// Private method to unwarp an object recursively
+private func unwrap(_ object: Any) -> Any {
+    switch object {
+    case let json as JSON:
+        return unwrap(json.object)
+    case let array as [Any]:
+        return array.map(unwrap)
+    case let dictionary as [String: Any]:
+        var unwrappedDic = dictionary
+        for (k, v) in dictionary {
+            unwrappedDic[k] = unwrap(v)
+        }
+        return unwrappedDic
+    default:
+        return object
+    }
+}
+```
+
+把`Any`对象递归解包
+
+### 一些定义
+
+```swift
+/// The static null JSON
+@available(*, unavailable, renamed:"null")
+public static var nullJSON: JSON { return null }
+public static var null: JSON { return JSON(NSNull()) }
+```
+
 
 
 

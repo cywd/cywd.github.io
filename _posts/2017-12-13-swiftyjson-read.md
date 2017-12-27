@@ -12,6 +12,10 @@ comments: true
 {:toc}
 ---
 
+# 简介
+
+[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)是用`swift`写的一个`JSON`解析库。使用起来很方便，对开发者很友好。
+
 # 分析
 
 源代码都放在了`SwiftyJSON.swift`这一个文件里。
@@ -728,7 +732,7 @@ public subscript(path: JSONSubscriptType...) -> JSON {
 }
 
 ```
-#### Raw
+### Raw
 
 ```swift
 // MARK: - Raw

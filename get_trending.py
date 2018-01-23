@@ -15,7 +15,6 @@ folder_path = ""
 def git_add():
     cmd = ['git', 'add', '.']
     p = subprocess.Popen(cmd, cwd="./")
-    print("pwd")
     p.wait()
 
 

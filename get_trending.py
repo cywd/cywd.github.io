@@ -8,7 +8,7 @@ import os, sys, re, subprocess, random
 url = 'http://trending.codehub-app.com/v2/trending/'
 folder = "json"
 filename = "treding.json"
-file_path = "./" + folder + filename
+file_path = "./" + folder + "/" + filename
 folder_path = ""
 
 

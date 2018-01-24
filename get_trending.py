@@ -2,32 +2,32 @@
 # coding:utf-8
 
 import urllib.request
-import os, sys, re, subprocess, random
+import os
+import subprocess
 
-
-url = 'http://trending.codehub-app.com/v2/trending/'
-folder = "json"
-filename = "treding.json"
-file_path = "./" + folder + "/" + filename
-folder_path = ""
+url_str = 'http://trending.codehub-app.com/v2/trending/'
+foldername = "json"
+filename = "trending.json"
+folder_path = "./" + foldername
+file_path = folder_path + "/" + filename
 
 
 def git_add():
     cmd = ['git', 'add', '.']
-    p = subprocess.Popen(cmd, cwd="./")
+    p = subprocess.Popen(cmd, cwd=folder_path)
     p.wait()
 
 
 def git_commit():
-    centext = "'upload git trending '"
+    centext = "'refresh git trending'"
     cmd = ['git', 'commit', '-m', centext]
-    p = subprocess.Popen(cmd, cwd="./")
+    p = subprocess.Popen(cmd, cwd=folder_path)
     p.wait()
 
 
 def git_push():
     cmd = ['git', 'push', '-u', 'origin', 'master']
-    p = subprocess.Popen(cmd, cwd="./")
+    p = subprocess.Popen(cmd, cwd=folder_path)
     p.wait()
 
 
@@ -36,8 +36,8 @@ def file_handle():
     git_commit()
     git_push()
 
-def url_open(url):
 
+def url_open(url):
     if not ('http' in url):
         url = 'http://' + url
 
@@ -49,8 +49,7 @@ def url_open(url):
 
 
 def save_file():
-
-    req = urllib.request.urlopen(url)
+    req = urllib.request.urlopen(url_str)
     json = req.read()
 
     with open(file_path, 'wb') as f:
@@ -60,14 +59,13 @@ def save_file():
     file_handle()
 
 
-
-def treding():
-    if not os.path.exists(folder):
-        os.mkdir(folder)  # 新建文件夹
-        print('成功创建文件夹', folder)
+def trending():
+    if not os.path.exists(foldername):
+        os.mkdir(foldername)  # 新建文件夹
+        print('成功创建文件夹', foldername)
 
     save_file()
 
 
 if __name__ == '__main__':
-    treding()
+    trending()

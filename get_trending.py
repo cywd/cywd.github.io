@@ -49,13 +49,15 @@ def url_open(url):
 
 
 def save_file():
-    req = urllib.request.urlopen(url_str)
-    json = req.read()
-
+    print("开始请求")
+    json = url_open(url_str)
+    print("得到json数据，准备写入文件")
     with open(file_path, 'wb') as f:
         f.write(json)
         f.close()
+        print("成功写入文件")
 
+    print("准备提交github")
     file_handle()
 
 

@@ -1,1 +1,13 @@
 /Users/cyrill/Documents/GitHub/cywd.github.io
+[master 49d8907] 'refresh git trending'
+ 1 file changed, 1 insertion(+)
+ create mode 100644 json/log
+fatal: could not read Username for 'https://github.com': Device not configured
+/Users/cyrill/Documents/GitHub/cywd.github.io/json
+begin request
+url is :http://trending.codehub-app.com/v2/trending/
+get json data, ready write to file 'trending.json'
+write file success
+prepare to do 'git add'
+prepare to do 'git commit'
+prepare to do 'git push'

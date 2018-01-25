@@ -8,26 +8,29 @@ import subprocess
 url_str = 'http://trending.codehub-app.com/v2/trending/'
 foldername = "json"
 filename = "trending.json"
-folder_path = "./" + foldername + "/"
-file_path = folder_path + filename
+# folder_path = "./" + foldername + "/"
+file_path = "./" + filename
 
 
 def git_add():
+    print("prepare to do 'git add'")
     cmd = ['git', 'add', '.']
-    p = subprocess.Popen(cmd, cwd=folder_path)
+    p = subprocess.Popen(cmd, cwd="./")
     p.wait()
 
 
 def git_commit():
+    print("prepare to do 'git commit'")
     centext = "'refresh git trending'"
     cmd = ['git', 'commit', '-m', centext]
-    p = subprocess.Popen(cmd, cwd=folder_path)
+    p = subprocess.Popen(cmd, cwd="./")
     p.wait()
 
 
 def git_push():
+    print("prepare to do 'git push'")
     cmd = ['git', 'push', '-u', 'origin', 'master']
-    p = subprocess.Popen(cmd, cwd=folder_path)
+    p = subprocess.Popen(cmd, cwd="./")
     p.wait()
 
 
@@ -49,22 +52,25 @@ def url_open(url):
 
 
 def save_file():
-    print("开始请求")
+    print("begin request")
     json = url_open(url_str)
-    print("得到json数据，准备写入文件")
+    print("get json data, ready write to file 'trending.json'")
     with open(file_path, 'wb') as f:
         f.write(json)
         f.close()
-        print("成功写入文件")
+        print("write file success")
 
-    print("准备提交github")
     file_handle()
 
 
 def trending():
     if not os.path.exists(foldername):
-        os.mkdir(foldername)  # 新建文件夹
-        print('成功创建文件夹', foldername)
+        os.mkdir(foldername)  
+        print('create folder success', foldername)
+
+    os.chdir(foldername)
+    folder_top = os.getcwd()
+    print(folder_top)
     save_file()
 
 

@@ -1,5 +1,5 @@
 # !/usr/bin/env python3
-# coding:utf-8
+# -*- coding: utf-8 -*-
 
 import urllib.request
 import os
@@ -8,8 +8,8 @@ import subprocess
 url_str = 'http://trending.codehub-app.com/v2/trending/'
 foldername = "json"
 filename = "trending.json"
-folder_path = "./" + foldername
-file_path = folder_path + "/" + filename
+folder_path = "./" + foldername + "/"
+file_path = folder_path + filename
 
 
 def git_add():
@@ -65,7 +65,6 @@ def trending():
     if not os.path.exists(foldername):
         os.mkdir(foldername)  # 新建文件夹
         print('成功创建文件夹', foldername)
-
     save_file()
 
 

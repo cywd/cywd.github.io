@@ -1,0 +1,19 @@
+/Users/cyrill/Documents/GitHub/cywd.github.io/json
+开始请求
+url is :http://trending.codehub-app.com/v2/trending/
+Traceback (most recent call last):
+  File "/Users/cyrill/Documents/GitHub/cywd.github.io/get_trending.py", line 76, in <module>
+    trending()
+  File "/Users/cyrill/Documents/GitHub/cywd.github.io/get_trending.py", line 72, in trending
+    save_file()
+  File "/Users/cyrill/Documents/GitHub/cywd.github.io/get_trending.py", line 53, in save_file
+    json = url_open(url_str)
+  File "/Users/cyrill/Documents/GitHub/cywd.github.io/get_trending.py", line 48, in url_open
+    return response.read()
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 462, in read
+    s = self._safe_read(self.length)
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 612, in _safe_read
+    chunk = self.fp.read(min(amt, MAXAMOUNT))
+  File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt

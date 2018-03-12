@@ -16,7 +16,7 @@ comments: true
 ## 一些快捷键
 
 ```
-crtl + l // 清屏
+crtl + l // 清屏 Ctrl + L
 ctrl + a // 移到行首
 ctrl + e // 移到行尾
 ctrl + y // 插入最近删除的单词或语句
@@ -28,6 +28,7 @@ ctrl + b // 向后一个字符 （左箭头）
 ctrl + d // 删除当前光标字符
 ctrl + n // 向下移动一行 (可以代替下箭头)
 ctrl + p // 向上移动一行 (可以代替上箭头)
+ctrl + h // 退格 删除前一个字符
 ```
 
 ## 一些命令
@@ -113,7 +114,7 @@ bash  // 切换到bash
 ## iTerm2
 
 ```shell
-Ctrl + w        // 删除前一个单词
+Ctrl + J	// 相当于return或者回车
 Command + r     // 清除屏幕上的内容
 Command + t/w   // 打开/关闭 tab
 Command + 数字   // 切换到第 n 个 tab

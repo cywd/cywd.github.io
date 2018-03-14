@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 当生日当天收到女朋友送的HHKB，是什么感觉
+title: 我家来了一个HHKB
 excerpt: ""
 categories: []
 tags: []
@@ -12,3 +12,6 @@ comments: true
 {:toc}
 ---
 
+过生日，女友送了个HHKB，就这样，之前的半价大F吃灰了。
+
+接着挖坑，半价大F的坑还没填完（还没填完就吃灰了。。。），这又挖了个大坑。。。

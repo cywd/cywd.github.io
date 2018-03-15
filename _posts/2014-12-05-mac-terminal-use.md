@@ -63,14 +63,15 @@ od     // 显示非文本文件的内容  od -c filename
 head   // 显示文件的最初几行  head -20 filename
 tail   // 显示文件的最后几行  tail -15 filename
 cut    // 显示文件每行中的某些域  cut -f1,7 -d: /etc/passwd
-file   // 显示文件类型
+file   // 显示文件类型 file filename
 open   // 使用默认的程序打开文件 open -a AppName fileName
-ln     // 显示文件类型  file filename
+ln     // 链接文件 ln -s file1 file2
+paste  // 横向链接文件 paste file1 file2
 r	   // 重复执行最近执行过的 某条命令  r -2
 ls 参数 目录名 // 列出文件 参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件
 cd 目录名     // 跳到目录 
-chmod 参数 权限 文件  // 更改文件权限 参数 -R 表示对目录进行递归操作
-mkdir 目录名  // 新建文件夹
+chmod 参数 权限 文件  // 更改文件权限 参数 -R 表示对目录进行递归操作，rwx 读写课之行 124 二进制
+mkdir 目录名  // 建立新目录
 rm 文件名     // 删除文件
 rmdir 空文件夹 // 删除空文件夹 
 rm -r 文件夹名 // 删除文件夹及其子文件 -r 表示递归  -f表示强制

@@ -18,7 +18,7 @@ comments: true
 
 ## 正文
 
-关于怎么在`GitHub`建立自己的博客就不说了，我这边是用的Jekyll搭建博客。
+关于怎么在`GitHub`建立自己的博客就不说了，我这边是用的`Jekyll`搭建博客。
 
 我的域名是在阿里云上注册购买的，[disqus](http://disqus.com/) 也有很多人推荐的。
 

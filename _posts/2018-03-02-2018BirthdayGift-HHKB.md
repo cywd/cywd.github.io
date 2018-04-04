@@ -2,8 +2,8 @@
 layout: post
 title: 我家来了一个HHKB
 excerpt: ""
-categories: []
-tags: []
+categories: [外设]
+tags: [外设, 键盘]
 date: 2018-03-02
 comments: true
 ---

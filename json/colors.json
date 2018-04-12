@@ -1171,6 +1171,10 @@
         "color": null,
         "url": "https://github.com/trending?l=Scilab"
     },
+    "sed": {
+        "color": "#64b970",
+        "url": "https://github.com/trending?l=sed"
+    },
     "Self": {
         "color": "#0579aa",
         "url": "https://github.com/trending?l=Self"

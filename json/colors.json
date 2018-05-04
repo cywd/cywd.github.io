@@ -515,6 +515,10 @@
         "color": null,
         "url": "https://github.com/trending?l=HCL"
     },
+    "HiveQL": {
+        "color": "#dce200",
+        "url": "https://github.com/trending?l=HiveQL"
+    },
     "HLSL": {
         "color": null,
         "url": "https://github.com/trending?l=HLSL"
@@ -1054,6 +1058,10 @@
     "Python console": {
         "color": null,
         "url": "https://github.com/trending?l=Python-console"
+    },
+    "q": {
+        "color": "#0040cd",
+        "url": "https://github.com/trending?l=q"
     },
     "QMake": {
         "color": null,

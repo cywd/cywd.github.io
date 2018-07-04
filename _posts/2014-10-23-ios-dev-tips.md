@@ -52,7 +52,7 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 在宏里面, ##的作用:连接2个标识符
 
 ```objective-c
-#define method(name) - (void)load##name {}method(abc)  
+#define method(name) - (void)load##name {}  
 //- (void)loadabc {}   method(abc)  
 //- (void)loadddd {}   method(ddd)  
 //- (void)loadttt {}   method(ttt) 
@@ -61,7 +61,8 @@ find . "(" -name ".m" -or -name ".mm" -or -name ".cpp" -or -name ".h" -or -name 
 在宏里面, #的作用:给右边的标识符加上双引号""
 
 ```c
-#define test(name) @#nametest(abc) // @"abc"
+#define test(name) @#name
+// test(abc) @"abc"
 ```
 
 ## 6.忽略未使用变量的警告
@@ -973,3 +974,23 @@ dispatch_time(DISPATCH_TIME_NOW, USEC_PER_SEC * NSEC_PER_USEC);
 `UITabBarController`作为`ViewController`容器的时候，`TabBarController`显示后，只会默认load `TabBarController`的第一个`ViewController`（或者`selectedViewController`）的`View`.
 
 如果需要一开始就加载所有的`viewController`.可以调用`loadViewIfNeeded`.或者强制调用下 `loadVIew`
+
+## 67.Undeclared selector warning 警告处理
+
+比如调用_lookup: 这个私有方法，这时会报警告 Undeclared selector '_lookup:'，怎么去掉这个警告呢
+
+### 第一种 忽略这个警告
+
+```objective-c
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL sel = @selector(lookup:);
+#pragma clang diagnostic pop
+```
+
+### 第二种 使用‘sel_registerName’
+
+```objective-c
+SEL sel = sel_registerName(lookup:);
+```
+

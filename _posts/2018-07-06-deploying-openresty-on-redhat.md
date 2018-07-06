@@ -76,4 +76,4 @@ export OPENRESTY_NGINX="/home/openresty/nginx/sbin.nginx"
 
 `openssl`的版本更替中，API的改动非常大，版本兼容有问题，`OpenResty`需要的`openssl`版本，一定要匹配。
 
-我这里是` openresty-1.13.6.2` 和 `openssl-1.0.2g`
+我这里是` openresty-1.13.6.2` 和 `openssl-1.0.2g`。

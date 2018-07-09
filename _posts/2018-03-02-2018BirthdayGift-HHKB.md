@@ -30,3 +30,16 @@ comments: true
 
 目前加号和减号经常性按错，尤其是打中文选字翻页的时候。
 
+晒图
+
+![1](/img/article/HHKB/1.jpg)
+
+![2](/img/article/HHKB/2.jpg)
+
+![3](/img/article/HHKB/3.jpg)
+
+![4](/img/article/HHKB/4.jpg)
+
+![5](/img/article/HHKB/5.jpg)
+
+![6](/img/article/HHKB/6.jpg)

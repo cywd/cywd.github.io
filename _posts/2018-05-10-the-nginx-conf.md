@@ -13,7 +13,7 @@ comments: true
 ---
 
 ```nginx
-# 定义Nginx运行的用户和用户组 默认事nginx
+# 定义Nginx运行的用户和用户组 默认是nginx
 user www www;
 
 # nginx进程数，建议设置为等于CPU总核心数。

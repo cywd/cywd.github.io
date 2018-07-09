@@ -16,4 +16,35 @@ HHKB一直是信仰。
 
 大F也心水好久（由于国行价格虚高，隧入手半价大F）
 
-占楼，更新日期不定
+茶轴
+
+晒图
+
+![1.jpg](/img/article/CoolerMasterKeyboard/1.jpg)
+
+![2.jpg](/img/article/CoolerMasterKeyboard/2.jpg)
+
+![3](/img/article/CoolerMasterKeyboard/3.jpg)
+
+![4](/img/article/CoolerMasterKeyboard/4.jpg)
+
+跟之前旧手机黑莓9900合影
+
+![5](/img/article/CoolerMasterKeyboard/5.jpg)
+
+![6](/img/article/CoolerMasterKeyboard/6.jpg)
+
+![7](/img/article/CoolerMasterKeyboard/7.jpg)
+
+后来我换了套键帽
+
+![8](/img/article/CoolerMasterKeyboard/8.jpg)
+
+![9](/img/article/CoolerMasterKeyboard/9.jpg)
+
+![10](/img/article/CoolerMasterKeyboard/10.jpg)
+
+
+
+
+

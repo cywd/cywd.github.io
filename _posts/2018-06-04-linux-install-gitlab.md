@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在Linux安装部署GitLab
-excerpt: ""
+excerpt: "用于公司的代码管理"
 categories: [Linux, Git]
 tags: [GitLab, Linux]
 date: 2018-06-04

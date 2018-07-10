@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MAC终端的一些使用"
-excerpt: "MAC终端的一些使用"
+excerpt: "MAC终端的一些使用和快捷键"
 categories: [Mac, Terminal]
 tags: [Mac, Terminal]
 date: 2014-12-05 

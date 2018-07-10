@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS开发的一些Tips"
-excerpt: "iOS开发的一些Tips，记录下便于日后查看"
+excerpt: "iOS开发的一些小技巧和小知识，记录下便于日后记不清的时候查看"
 categories: [OC, Tips]
 tags: [OC, Tips]
 date: 2014-10-23 

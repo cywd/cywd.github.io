@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "assign, copy, retain, nonatomic, strong, weak属性"
-excerpt: "assign, copy, retain, nonatomic, strong, weak属性"
+excerpt: "assign, copy, retain, nonatomic, strong, weak属性的区别和用法"
 categories: [OC]
 tags: [OC]
 date: 2014-05-11 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "@private @public @protected @package"
-excerpt: "@private @public @protected @package"
+excerpt: "@private @public @protected @package的解释和区别"
 categories: [OC]
 tags: [OC]
 date: 2014-05-10 

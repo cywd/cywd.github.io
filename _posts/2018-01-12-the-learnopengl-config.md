@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LearnOpenGL 环境配置
-excerpt: "Xcode/GLFW/GLAD"
+excerpt: "Xcode/GLFW/GLAD 的配置去学习OpenGL"
 categories: [OpenGL]
 tags: [OpenGL]
 date: 2018-01-12

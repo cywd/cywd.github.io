@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linux下自制SSL证书
-excerpt: "Linux下自制SSL证书"
+title: Linux下自制HTTPS证书
+excerpt: "Linux下自签证书，用于单向认证，双向认证"
 categories: ["Linux", "OpenResty", "SSL"]
 tags: ["Linux", "OpenResty", "SSL"]
 date: 2018-07-09

@@ -49,8 +49,6 @@ compiler: gcc -I. -I.. -I../include  -fPIC -DOPENSSL_PIC -DZLIB_SHARED -DZLIB -D
 OPENSSLDIR: "/usr/local/ssl"
 ```
 
-
-
 # 制作证书
 
 ## 准备目录
@@ -74,8 +72,6 @@ mkdir ssl
 ```shell
 cd ssl/
 ```
-
-
 
 ## 制作CA证书
 
@@ -194,8 +190,6 @@ KeyIdentifier [
 证书已添加到密钥库中
 ```
 
-
-
 ## 制作服务端证书
 
 ### 1.创建服务端证书密钥 server.key
@@ -299,8 +293,6 @@ keytool -importkeystore -v -srckeystore  server.p12 -srcstoretype pkcs12 -srcsto
 [正在存储server.keystore]
 ```
 
-
-
 ## 制作client客户端证书
 
 ### 1.创建客户端证书密钥文件 client.key
@@ -380,30 +372,141 @@ Enter Export Password: ← 输入创建p12的密码
 Verifying - Enter Export Password: ← 确认创建p12的密码
 ```
 
-
-
 # 解释
 
-| 名称       | 解释                                                         |
-| ---------- | ------------------------------------------------------------ |
-| key        | 通常指私钥                                                   |
-| csr        | 是`Certificate Signing Request`的缩写，即证书签名请求，这不是证书，可以简单理解成公钥，生成证书时要把这个提交给权威的证书颁发机构。 |
-| crt        | 即 `certificate`的缩写，即证书。                             |
-| p12        | 个人信息交换语法标准， 包含私钥、公钥及其证书， 密钥库和私钥用相同密码进行保护 |
-| JKS        | 存放密钥的容器。`.jks .keystore .truststore`等               |
-| Keytool    | 是一个`Java`数据证书的管理工具 ,`Keytool`将密钥（key）和证书（certificates）存在一个称为`keystore`的文件中。 |
-| KeyStore   | 服务器的密钥存储库，存服务器的公钥私钥证书。用于服务器认证服务端。包含两种数据： 1.密钥实体（Key entity）——密钥（secret key）又或者是私钥和配对公钥（采用非对称加密）   2. 可信任的证书实体（trusted certificate entries）——只包含公钥 |
-| TrustStore | 服务器的信任密钥存储库，存`CA`公钥。用于客户端认证服务器。   |
-| X.509      | 是一种证书格式.对`X.509`证书来说，认证者总是`CA`或由`CA`指定的人，一份`X.509`证书是一些标准字段的集合，这些字段包含有关用户或设备及其相应公钥的信息。 |
+## SSL
 
-`X.509`的证书文件，一般以`.crt`结尾，根据该文件的内容编码格式，可以分为以下二种格式：
+`Secure Sockets Layer`,现在应该叫`"TLS"`,但由于习惯问题,我们还是叫`"SSL"`比较多.`http`协议默认情况下是不加密内容的,这样就很可能在内容传播的时候被别人监听到,对于安全性要求较高的场合,必须要加密,`https`就是带加密的`http`协议,而`https`的加密是基于`SSL`的,它执行的是一个比较下层的加密,也就是说,在加密前,你的服务器程序在干嘛,加密后也一样在干嘛,不用动,这个加密对用户和开发者来说都是透明的.
 
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-| PEM  | `Privacy Enhanced Mail`,打开看文本格式,以"-----BEGIN..."开头, "-----END..."结尾,内容是`BASE64`编码.` Apache`和`*NIX`服务器偏向于使用这种编码格式. |
-| DER  | `Distinguished Encoding Rules`,打开看是二进制格式,不可读.`Java`和`Windows`服务器偏向于使用这种编码格式 |
+## X.509
 
+这是一种证书标准,主要定义了证书中应该包含哪些内容.其详情可以参考`RFC5280`,`SSL`使用的就是这种证书标准.
 
+## PEM
+
+`Privacy Enhanced Mail`,打开看文本格式,以`"-----BEGIN..."`开头, `"-----END..."`结尾,内容是`BASE64`编码. 查看`PEM`格式证书的信息:
+
+```shell
+openssl x509 -in server.pem -text -noout 
+```
+
+`Apache`和`*NIX`服务器偏向于使用这种编码格式.
+
+## DER
+
+`Distinguished Encoding Rules`,打开看是二进制格式,不可读. 查看`DER`格式证书的信息:
+
+```shell
+openssl x509 -in server.der -inform der -text -noout 
+```
+
+`Java`和`Windows`服务器偏向于使用这种编码格式.
+
+## CRT
+
+`CRT`应该是`certificate`的三个字母,其实还是证书的意思,常见于`*NIX`系统,有可能是`PEM`编码,也有可能是`DER`编码,大多数应该是`PEM`编码,相信你已经知道怎么辨别.
+
+## CER
+
+还是`certificate`,还是证书,常见于`Windows`系统,同样的,可能是`PEM`编码,也可能是`DER`编码,大多数应该是`DER`编码.
+
+## KEY
+
+通常用来存放一个公钥或者私钥,并非`X.509`证书,编码同样的,可能是`PEM`,也可能是`DER`. 查看`KEY`的办法:
+
+```shell
+openssl rsa -in server.key -text -noout 
+```
+
+如果是`DER`格式的话,同理应该这样了:
+
+```shell
+openssl rsa -in server.key -text -noout -inform der
+```
+
+## CSR
+
+`Certificate Signing Request`,即证书签名请求,这个并不是证书,而是向权威证书颁发机构获得签名证书的申请,其核心内容是一个公钥(当然还附带了一些别的信息),在生成这个申请的时候,同时也会生成一个私钥,私钥要自己保管好.做过`iOS APP`的朋友都应该知道是怎么向苹果申请开发者证书的吧. 查看的办法:
+
+```shell
+openssl req -noout -text -in server.csr 
+```
+
+如果是DER格式的话:
+
+```shell
+openssl req -noout -text -in server.csr -inform der
+```
+
+## PFX/P12
+
+`predecessor of PKCS#12`,对`*nix`服务器来说,一般`CRT`和`KEY`是分开存放在不同文件中的,但`Windows`的`IIS`则将它们存在一个`PFX`文件中,(因此这个文件包含了证书及私钥)这样会不会不安全？应该不会,`PFX`通常会有一个"提取密码",你想把里面的东西读取出来的话,它就要求你提供提取密码,`PFX`使用的时`DER`编码,如何把`PFX`转换为`PEM`编码？
+
+```shell
+openssl pkcs12 -in server.pfx -out server.pem -nodes
+```
+
+这个时候会提示你输入提取代码. `server.pem`就是可读的文本.
+生成`pfx`的命令类似这样:
+
+```shell
+openssl pkcs12 -export -in server.crt -inkey privateKey.key -out server.pfx -certfile ca.crt
+```
+
+其中`ca.crt`是`CA`(权威证书颁发机构)的根证书,有的话也通过`-certfile`参数一起带进去.这么看来`,PFX`其实是个证书密钥库.
+
+## Keytool
+
+是一个`Java`数据证书的管理工具 ,`Keytool`将密钥（`key`）和证书（`certificates`）存在一个称为`keystore`的文件中。 
+
+## KeyStore
+
+服务器的密钥存储库，存服务器的公钥私钥证书。用于服务器认证服务端。包含两种数据： 1.密钥实体（`Key entity`）——密钥（`secret key`）又或者是私钥和配对公钥（采用非对称加密）   2. 可信任的证书实体（`trusted certificate entries`）——只包含公钥
+
+## TrustStore
+
+服务器的信任密钥存储库，存`CA`公钥。用于客户端认证服务器。
+
+## JKS
+
+即`Java Key Storage`,这是`Java`的专利,跟`OpenSSL`关系不大,利用`Java`的一个叫"`keytool`"的工具,可以将`PFX`转为`JK`S,当然了,`keytoo`l也能直接生成`JKS`.
+
+## 证书编码的转换
+
+PEM转为DER 
+
+```shell
+openssl x509 -in server.crt -outform der -out server.der
+```
+
+DER转为PEM 
+
+```shell
+openssl x509 -in server.crt -inform der -outform pem -out server.pem
+```
+
+(提示:要转换`KEY`文件也类似,只不过把`x509`换成`rsa`,要转`CSR`的话,把`x509`换成`req`...)
+
+## 证书格式介绍
+
+PKCS 全称是 Public-Key Cryptography Standards ，是由 RSA 实验室与其它安全系统开发商为促进公钥密码的发展而制订的一系列标准，PKCS 目前共发布过 15 个标准。 常用的有：
+
+1. PKCS#7 Cryptographic Message Syntax Standard
+2. PKCS#10 Certification Request Standard
+3. PKCS#12 Personal Information Exchange Syntax Standard
+
+X.509是常见通用的证书格式。所有的证书都符合为Public Key Infrastructure (PKI) 制定的 ITU-T X509 国际标准。
+
+1. **PKCS#7**常用的后缀是： .P7B .P7C .SPC
+2. **PKCS#12**常用的后缀有： .P12 .PFX
+3. **X.509 DER**编码(ASCII)的后缀是： .DER .CER .CRT
+4. **X.509 PAM**编码(Base64)的后缀是： .PEM .CER .CRT
+5. **.cer/.crt**是用于存放证书，它是2进制形式存放的，不含私钥。
+6. **.pem跟crt/cer**的区别是它以Ascii来表示。
+7. **pfx/p12**用于存放个人证书/私钥，他通常包含保护密码，2进制方式
+8. **p10**是证书请求
+9. **p7r**是CA对证书请求的回复，只用于导入
+10. **p7b**以树状展示证书链(certificate chain)，同时也支持单个证书，不含私钥。
 
 # 参考
 
@@ -412,3 +515,5 @@ Verifying - Enter Export Password: ← 确认创建p12的密码
 [https://www.cnblogs.com/yjmyzz/p/openssl-tutorial.html](https://www.cnblogs.com/yjmyzz/p/openssl-tutorial.html)
 
 [https://blog.csdn.net/fyang2007/article/details/6180361](https://blog.csdn.net/fyang2007/article/details/6180361)
+
+[https://www.chinassl.net/ssltools/convert-ssl.html](https://www.chinassl.net/ssltools/convert-ssl.html)

@@ -213,8 +213,8 @@ Verifying - Enter pass phrase for server.key: ← 确认密码
 
 去除`key`文件口令的命令: 
 
-```
-openssl rsa -inserver.key -out server.key
+```shell
+openssl rsa -in server.key -out server.key
 ```
 
 ### 2.创建服务端证书的申请文件 server.csr

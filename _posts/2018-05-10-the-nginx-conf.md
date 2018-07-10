@@ -228,9 +228,12 @@ http
         
         # ssl
         ssl on; # 开启ssl
-        ssl_certificate /ls/app/nginx/conf/mgmtxiangqiankeys/server.crt; # 服务的证书
-        ssl_certificate_key /ls/app/nginx/conf/mgmtxiangqiankeys/server.key; # 服务端key
-        ssl_client_certificate /ls/app/nginx/conf/mgmtxiangqiankeys/ca.crt; # 客户端证书
+        ssl_certificate /home/test/ssl/server.crt; # 服务的证书
+        ssl_certificate_key /home/test/ssl/server.key; # 服务端key
+        ssl_client_certificate /home/test/ssl/ca.crt; # 客户端证书
+        # 由于nginx的ssl_client_certificate参数只能指定一个客户端公钥，如果增加一个客户端进行通信就要重新配一个server。
+		# n:1的模式是通过CA的级联证书模式实现的，首先自己生成一套CA根级证书，再借助其生成二级证书作为client证书。
+		# 此时client私钥签名不仅可以通过对应的client公钥验证，还可通过根证书的公钥进行验证。
         ssl_session_timeout 5m; # session超时时间
         ssl_verify_client on; # 开户客户端证书验证 
         ssl_protocols SSLv2 SSLv3 TLSv1; #允许SSL协议 

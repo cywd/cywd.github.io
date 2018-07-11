@@ -12,6 +12,8 @@ comments: true
 {:toc}
 ---
 
+# 解释
+
 ```nginx
 # 定义Nginx运行的用户和用户组 默认是nginx
 user www www;
@@ -227,18 +229,45 @@ http
 
         
         # ssl
-        ssl on; # 开启ssl
-        ssl_certificate /home/test/ssl/server.crt; # 服务的证书
-        ssl_certificate_key /home/test/ssl/server.key; # 服务端key
-        ssl_client_certificate /home/test/ssl/ca.crt; # 客户端证书
+        ssl on; # 开启ssl  默认值：ssl off  开启HTTPS。
+        ssl_certificate /home/test/ssl/server.crt; # 服务的证书 为这个虚拟主机指定PEM格式的证书文件，一个文件可以包含其他的证书，同样，密钥也必须是PEM格式，0.6.7版本以后，这里的路径为相对于nginx.conf的路径，而不是编译时的prefix路径。
+        ssl_certificate_key /home/test/ssl/server.key; # 服务端key 为这个虚拟主机指定PEM格式的密钥，0.6.7版本以后，这里的路径为相对于nginx.conf的路径，而不是编译时的prefix路径。
+        ssl_client_certificate /home/test/ssl/ca.crt; # 指出PEM格式的证书认证文件，在检查客户端证书时使用。
         # 由于nginx的ssl_client_certificate参数只能指定一个客户端公钥，如果增加一个客户端进行通信就要重新配一个server。
 		# n:1的模式是通过CA的级联证书模式实现的，首先自己生成一套CA根级证书，再借助其生成二级证书作为client证书。
-		# 此时client私钥签名不仅可以通过对应的client公钥验证，还可通过根证书的公钥进行验证。
-        ssl_session_timeout 5m; # session超时时间
-        ssl_verify_client on; # 开户客户端证书验证 
-        ssl_protocols SSLv2 SSLv3 TLSv1; #允许SSL协议 
+        # 此时client私钥签名不仅可以通过对应的client公钥验证，还可通过根证书的公钥进行验证。
+        
+        
+        # ssl_dhparam file;  # 指出PEM格式并带有Diffie-Hellman参数的文件，用于TLS会话。
+        
+        
+        # ssl_crl file # 指定一个PEM格式的证书吊销列表文件，用于检查客户端证书（0.8.7以后版本）
+        
+        ssl_session_timeout 5m; # 设置客户端能够反复使用储存在缓存中的会话参数时间。即session的超时时间
+        ssl_verify_client on; # 启用客户端证书审核，参数“optional”在客户端主动提出时检查证书(0.8.7与0.7.63版本之前为"ask")。
+        
+        # ssl_verify_depth 1;  # 设置客户证书认证链的长度。 默认1
+        
+        # ssl_session_cache off|none|builtin:size and/or shared:name:size; # 设置储存SSL会话的缓存类型和大小。
+        # off - 强制关闭：nginx告诉客户端这个会话已经不能被再次使用。
+		# none - 非强制关闭：nginx告诉客户端这个会话可以被再次使用，但是nginx实际上并不使用它们，这是为某些使用ssl_session_cache的邮件客户端提供的一种变通方案，可以使用在邮件代理和HTTP服务器中。
+		# builtin - 内建OpenSSL缓存，仅能用在一个工作进程中，缓存大小在会话总数中指定，注意：如果要使用这个类型可能会引起内存碎片问题，具体请查看下文中参考文档。
+		#shared - 缓存在所有的工作进程中共享，缓存大小指定单位为字节，1MB缓存大概保存4000个会话，每个共享的缓存必须有自己的名称，相同名称的缓存可以使用在不同的虚拟主机中。
+		# 可以同时使用两个缓存类型，如：
+		# ssl_session_cache  builtin:1000  shared:SSL:10m;
+		# 然而，使用共享缓存而不适用内建缓存将更为有效。
+		# 0.8.34版本之前如果ssl_verify_client设置为'on'或者'optional'时这里必须设置为none或off
+        
+        ssl_protocols SSLv2 SSLv3 TLSv1; # 指定要使用的SSL协议。
         ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP; # 加密算法
-        ssl_prefer_server_ciphers on; # 启动加密算法
+        # 指出允许的密码，密码指定为OpenSSL支持的格式，如：
+		# ssl_ciphers  ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;
+   		# 使用下列命令查看完整格式列表：
+		# openssl ciphers
+        
+        ssl_prefer_server_ciphers on; # 启动加密算法,依赖SSLv3和TLSv1协议的服务器密码将优先于客户端密码。默认是off
+        
+        # ssl_engine; 指定使用的OpenSSL引擎，如Padlock，需要比较新版本的OpenSSL。
         
         
         # 对******进行负载均衡
@@ -365,4 +394,6 @@ http
 
 ```
 
+# 参考
 
+[http://shouce.jb51.net/nginx/OptionalHTTPmodules/SSL.html](http://shouce.jb51.net/nginx/OptionalHTTPmodules/SSL.html)

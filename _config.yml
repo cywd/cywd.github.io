@@ -7,16 +7,18 @@ title: Cyrill
 email: lichunyang@outlook.com
 description: Cyrill
 url: https://cywd.github.io # the base hostname & protocol for your site
-
+keywords: ["blog", "jekyll"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
+timezone:          Asia/Beijing
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
+permalink:         /articles/:year/:month/:day/:title
 
 sass:
   sass_dir: _sass
@@ -30,8 +32,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
-
-permalink: /:year/:month/:day/:title
 
 
 # pygments: true
@@ -79,4 +79,3 @@ owner:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-

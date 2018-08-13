@@ -1,0 +1,16 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Fibrlink
+  link:
+  date: 2017.5 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Software Developer
+
+- name: FutureStar
+  link:
+  date: 2015.10 - 2017.4
+  job: iOS Software Developer
+
+- name: VistaWeek
+  link: http://www.vistaweek.cn
+  date: 2015.3 - 2015.9
+  job: iOS Software Developer

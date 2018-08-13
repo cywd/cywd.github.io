@@ -1,0 +1,11 @@
+- name: FitRefresh
+  descr: "The refresh framework of iOS use Swift4."
+  github: https://github.com/FitClan/FitRefresh
+
+- name: FitHub
+  descr: "FitHub is a GitHub third party client."
+  github: https://github.com/cywd/FitHub
+
+- name: CYPhotoLib
+  descr: "A photo selection framework of iOS use OC."
+  github: https://github.com/cywd/CYPhotoLib

@@ -1,7 +1,6 @@
 /* LAYOUT CSS */
 .cover {
   background-color: $background-color;
-  /*background-color: rgba(0,0,0,0);*/
   position: fixed;
   text-align: center;
   width: 100%;
@@ -18,25 +17,6 @@
     width: 100%;
   }
 }
-
-.gradient {
-   position: fixed;
-  text-align: center;
-  width: 100%;
-  min-height: 400px;
-  /*padding: 30px 15px 20px;*/
-  z-index: 1;
-  @include media-query($small-screen) {
-    background-position: center;
-    padding: 30px;
-  }
-  @include media-query($medium-screen) {
-    height: 100vh;
-    position: initial;
-    width: 100%;
-  }
-}
-
 .cover-card {
   color: $text-color;
   padding: 0 30px;
@@ -97,6 +77,12 @@
     display: inline-block;
     *display: inline;
     zoom: 1;
+    &:after {
+      content: '/';
+    }
+    &:last-child:after {
+      content: '';
+    }
     & a {
       margin-top: 1em;
       text-transform: lowercase;

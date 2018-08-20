@@ -40,7 +40,7 @@ cd openresty-1.13.6.2/
 # --with-pcre= 指定pcre，
 # --add-module= 加模块， 
 # --with-http_ssl_module 支持https
-./configure  --prefix=/home/openresty --with-openssl=../openssl/openssl-1.0.2g --add-module=/home/solft/nginx_http_upstream_check_module/ --with-http_ssl_module
+./configure  --prefix=/home/openresty --with-http_ssl_module --with-openssl=/home/solft/openssl/openssl-1.0.2g --with-pcre=/home/solft/pcre-8.40 --add-module=/home/solft/nginx_http_upstream_check_module
 ```
 
 接着
@@ -69,7 +69,7 @@ export PATH=$PATH:/home/openresty/nginx/sbin
 
 ```shell
 export OPENRESTY_HOME="/home/openresty/"
-export OPENRESTY_NGINX="/home/openresty/nginx/sbin.nginx"
+export OPENRESTY_NGINX="/home/openresty/nginx/sbin/nginx"
 ```
 
 # 3.注意

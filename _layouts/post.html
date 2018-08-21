@@ -27,7 +27,7 @@ layout: default
     <h1 title="{{ page.title }}">{{ page.title }}</h1>
     <span class="post-meta">
       <span class="post-date">
-        {{ page.date | date: "%Y/%-m/%-d" | upcase }}
+        {{ page.date | date: "%Y-%m-%d" | upcase }}
       </span>
       •
       {% include read_time.html %}
@@ -49,8 +49,15 @@ layout: default
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
+
+    var str='{{ page.date | date: "%Y-%m-%d" }} {{ page.title }}';//原始字符串
+    var id = str;//要展示的字符串
+    if(str.length>=45){
+        id=str.substring(0,45)+"...";
+    }
+ 
     var gitment = new Gitment({
-        id: '{{ page.date | date: "%Y/%-m/%-d" }}{{ page.title }}',
+        id: id,
         owner: 'cywd',
         repo: 'cywd.github.io',
         oauth: {

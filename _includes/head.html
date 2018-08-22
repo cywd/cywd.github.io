@@ -20,12 +20,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f5f5">
 
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  {% if page.image.feature %}
+    <meta property="twitter:image" content="{{ site.url }}/img/{{ page.image.feature }}">
+  {% else %}
+    <meta property="twitter:image" content="{{ site.url }}/img/cyrill.jpg">
+  {% endif %}
+
   <!-- Open Graph Tags -->
   <meta property="og:type" content="blog">
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:image" content="{{ site.url }}/img/leonids-logo.png">
+  <meta property="og:image" content="{{ site.url }}/img/cyrill.jpg">
   <title>{{ title }}</title>
 
   <!-- CSS files -->
@@ -36,6 +46,9 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml " | prepend: site.url }}" />
 
   <!-- Icons -->
+  <!-- 16x16 -->
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.jpg">
 
 </head>

@@ -371,6 +371,10 @@
         "color": "#b845fc",
         "url": "https://github.com/trending?l=Fsharp"
     },
+    "F*": {
+        "color": "#572e30",
+        "url": "https://github.com/trending?l=F*"
+    },
     "Factor": {
         "color": "#636746",
         "url": "https://github.com/trending?l=Factor"
@@ -416,7 +420,7 @@
         "url": "https://github.com/trending?l=Frege"
     },
     "Game Maker Language": {
-        "color": "#8fb200",
+        "color": "#71b417",
         "url": "https://github.com/trending?l=Game-Maker-Language"
     },
     "GAMS": {
@@ -779,6 +783,10 @@
         "color": null,
         "url": "https://github.com/trending?l=Modula-2"
     },
+    "Modula-3": {
+        "color": "#223388",
+        "url": "https://github.com/trending?l=Modula-3"
+    },
     "Module Management System": {
         "color": null,
         "url": "https://github.com/trending?l=Module-Management-System"
@@ -1074,6 +1082,10 @@
     "QML": {
         "color": "#44a51c",
         "url": "https://github.com/trending?l=QML"
+    },
+    "Quake": {
+        "color": "#882233",
+        "url": "https://github.com/trending?l=Quake"
     },
     "R": {
         "color": "#198CE7",
@@ -1422,6 +1434,10 @@
     "Yacc": {
         "color": "#4B6C4B",
         "url": "https://github.com/trending?l=Yacc"
+    },
+    "YASnippet": {
+        "color": "#32AB90",
+        "url": "https://github.com/trending?l=YASnippet"
     },
     "Zephir": {
         "color": "#118f9e",

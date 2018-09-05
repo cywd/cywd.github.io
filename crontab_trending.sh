@@ -6,5 +6,5 @@
 
 cd ~/GitHub/cywd.github.io/
 pwd
-/usr/local/bin/python3 ./get_trending.py
+python3 ./get_trending.py
  

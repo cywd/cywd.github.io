@@ -17,6 +17,11 @@ filename = "trending.json"
 # folder_path = "./" + foldername + "/"
 file_path = "./" + filename
 
+def git_pull():
+    print("prepare to do 'git pull")
+    cmd = ['git', 'pull']
+    p = subprocess.Popen(cmd, cwd="./")
+    p.wait()
 
 def git_add():
     print("prepare to do 'git add'")
@@ -41,6 +46,7 @@ def git_push():
 
 
 def file_handle():
+    git_pull()
     git_add()
     git_commit()
     git_push()

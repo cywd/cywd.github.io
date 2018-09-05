@@ -18,7 +18,7 @@ filename = "trending.json"
 file_path = "./" + filename
 
 def git_pull():
-    print("prepare to do 'git pull")
+    print("prepare to do 'git pull'")
     cmd = ['git', 'pull']
     p = subprocess.Popen(cmd, cwd="./")
     p.wait()

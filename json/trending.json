@@ -6,7 +6,7 @@
         },
         "full_name": "alibaba/arthas",
         "forks_count": "223",
-        "stargazers_count": "1,506",
+        "stargazers_count": "1510",
         "language": "Java",
         "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
@@ -17,7 +17,7 @@
         },
         "full_name": "you-dont-need/You-Dont-Need-Momentjs",
         "forks_count": "65",
-        "stargazers_count": "3,798",
+        "stargazers_count": "3803",
         "language": "JavaScript",
         "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
@@ -28,7 +28,7 @@
         },
         "full_name": "zziz/pwc",
         "forks_count": "153",
-        "stargazers_count": "2,671",
+        "stargazers_count": "2676",
         "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     },
     {
@@ -37,7 +37,7 @@
             "login": "trunkmaster"
         },
         "full_name": "trunkmaster/nextspace",
-        "forks_count": "9",
+        "forks_count": "8",
         "stargazers_count": "417",
         "language": "C",
         "repositoryDescription": "NeXTSTEP-like desktop environment for Linux"
@@ -48,8 +48,8 @@
             "login": "donnemartin"
         },
         "full_name": "donnemartin/system-design-primer",
-        "forks_count": "6,429",
-        "stargazers_count": "48,197",
+        "forks_count": "6430",
+        "stargazers_count": "48201",
         "language": "Python",
         "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
     },
@@ -60,7 +60,7 @@
         },
         "full_name": "google/wwwbasic",
         "forks_count": "22",
-        "stargazers_count": "544",
+        "stargazers_count": "545",
         "language": "JavaScript",
         "repositoryDescription": "WWWBasic is an implementation of BASIC (Beginner's All-purpose Symbolic Instruction Code) designed to be easy to run on the Web."
     },
@@ -71,7 +71,7 @@
         },
         "full_name": "SteveLTN/https-portal",
         "forks_count": "131",
-        "stargazers_count": "2,404",
+        "stargazers_count": "2408",
         "language": "Ruby",
         "repositoryDescription": "A fully automated HTTPS server powered by Nginx, Let's Encrypt and Docker."
     },
@@ -82,7 +82,7 @@
         },
         "full_name": "semlinker/awesome-typescript",
         "forks_count": "19",
-        "stargazers_count": "300",
+        "stargazers_count": "304",
         "repositoryDescription": "A collection of awesome TypeScript resources for client-side and server-side development"
     },
     {
@@ -91,8 +91,8 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "2,875",
-        "stargazers_count": "7,916",
+        "forks_count": "2875",
+        "stargazers_count": "7917",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
@@ -103,7 +103,7 @@
         },
         "full_name": "lovoo/NSFWDetector",
         "forks_count": "3",
-        "stargazers_count": "250",
+        "stargazers_count": "251",
         "language": "Swift",
         "repositoryDescription": "A NSFW (aka porn) detector with CoreML"
     },
@@ -113,8 +113,8 @@
             "login": "cjbarber"
         },
         "full_name": "cjbarber/ToolsOfTheTrade",
-        "forks_count": "1,002",
-        "stargazers_count": "12,729",
+        "forks_count": "1002",
+        "stargazers_count": "12729",
         "repositoryDescription": "Tools of The Trade, from Hacker News."
     },
     {
@@ -124,7 +124,7 @@
         },
         "full_name": "wuyouzhuguli/SpringAll",
         "forks_count": "73",
-        "stargazers_count": "345",
+        "stargazers_count": "347",
         "language": "Java",
         "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
     },
@@ -134,8 +134,8 @@
             "login": "ripienaar"
         },
         "full_name": "ripienaar/free-for-dev",
-        "forks_count": "2,210",
-        "stargazers_count": "20,714",
+        "forks_count": "2210",
+        "stargazers_count": "20716",
         "repositoryDescription": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
     },
     {
@@ -144,8 +144,8 @@
             "login": "byoungd"
         },
         "full_name": "byoungd/English-level-up-tips-for-Chinese",
-        "forks_count": "1,490",
-        "stargazers_count": "13,327",
+        "forks_count": "1490",
+        "stargazers_count": "13327",
         "repositoryDescription": "可能是让你受益匪浅的英语进阶指南"
     },
     {
@@ -154,8 +154,8 @@
             "login": "afshinea"
         },
         "full_name": "afshinea/stanford-cs-229-machine-learning",
-        "forks_count": "564",
-        "stargazers_count": "3,124",
+        "forks_count": "565",
+        "stargazers_count": "3127",
         "repositoryDescription": "VIP cheatsheets for Stanford's CS 229 Machine Learning"
     },
     {
@@ -165,7 +165,7 @@
         },
         "full_name": "axa-group/nlp.js",
         "forks_count": "57",
-        "stargazers_count": "1,154",
+        "stargazers_count": "1156",
         "language": "JavaScript",
         "repositoryDescription": "An NLP library built in node over Natural, with entity extraction, sentiment analysis, automatic language identify, and so more"
     },
@@ -186,8 +186,8 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "10,657",
-        "stargazers_count": "36,116",
+        "forks_count": "10657",
+        "stargazers_count": "36116",
         "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
     {
@@ -197,7 +197,7 @@
         },
         "full_name": "Nozbe/WatermelonDB",
         "forks_count": "86",
-        "stargazers_count": "3,397",
+        "stargazers_count": "3397",
         "language": "JavaScript",
         "repositoryDescription": "🍉\nNext-gen database for powerful React and React Native apps that scales to 10,000s of records and remains fast\n⚡️"
     },
@@ -207,8 +207,8 @@
             "login": "Avik-Jain"
         },
         "full_name": "Avik-Jain/100-Days-Of-ML-Code",
-        "forks_count": "2,701",
-        "stargazers_count": "14,589",
+        "forks_count": "2702",
+        "stargazers_count": "14590",
         "repositoryDescription": "100 Days of ML Coding"
     },
     {
@@ -218,7 +218,7 @@
         },
         "full_name": "fluent-project/fluent",
         "forks_count": "111",
-        "stargazers_count": "801",
+        "stargazers_count": "802",
         "language": "C++",
         "repositoryDescription": "A data-driven compute platform"
     },
@@ -229,7 +229,7 @@
         },
         "full_name": "eBay/HeadGazeLib",
         "forks_count": "26",
-        "stargazers_count": "361",
+        "stargazers_count": "362",
         "language": "Swift",
         "repositoryDescription": "A library to empower iOS app control through head gaze without a finger touch"
     },
@@ -240,7 +240,7 @@
         },
         "full_name": "yboetz/motd",
         "forks_count": "14",
-        "stargazers_count": "253",
+        "stargazers_count": "254",
         "language": "Shell",
         "repositoryDescription": "Collection of 'message of the day' scripts"
     },
@@ -262,7 +262,7 @@
         },
         "full_name": "iamkun/dayjs",
         "forks_count": "587",
-        "stargazers_count": "14,552",
+        "stargazers_count": "14552",
         "language": "JavaScript",
         "repositoryDescription": "⏰\nDay.js 2KB immutable date library alternative to Moment.js with the same modern API"
     }

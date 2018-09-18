@@ -110,8 +110,8 @@ def scrape(language, file_path):
                 "login":login
             }
             data["full_name"] = full_name
-            data["forks_count"] = fork
-            data["stargazers_count"] = star
+            data["forks_count"] = fork.replace(',', '')
+            data["stargazers_count"] = star.replace(',', '')
             if (len(language) > 0): 
                 data["language"] = language
 

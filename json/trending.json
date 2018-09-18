@@ -1,30 +1,42 @@
 [
     {
         "name": "arthas",
+        "owner": {
+            "login": "alibaba"
+        },
         "full_name": "alibaba/arthas",
-        "forks_count": "217",
-        "stargazers_count": "1,479",
+        "forks_count": "221",
+        "stargazers_count": "1,491",
         "language": "Java",
         "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
     {
         "name": "You-Dont-Need-Momentjs",
+        "owner": {
+            "login": "you-dont-need"
+        },
         "full_name": "you-dont-need/You-Dont-Need-Momentjs",
         "forks_count": "65",
-        "stargazers_count": "3,789",
+        "stargazers_count": "3,792",
         "language": "JavaScript",
         "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
     {
         "name": "pwc",
+        "owner": {
+            "login": "zziz"
+        },
         "full_name": "zziz/pwc",
         "forks_count": "153",
-        "stargazers_count": "2,656",
+        "stargazers_count": "2,662",
         "language": "",
         "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     },
     {
         "name": "nextspace",
+        "owner": {
+            "login": "trunkmaster"
+        },
         "full_name": "trunkmaster/nextspace",
         "forks_count": "8",
         "stargazers_count": "415",
@@ -33,14 +45,20 @@
     },
     {
         "name": "system-design-primer",
+        "owner": {
+            "login": "donnemartin"
+        },
         "full_name": "donnemartin/system-design-primer",
         "forks_count": "6,428",
-        "stargazers_count": "48,188",
+        "stargazers_count": "48,189",
         "language": "Python",
         "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
     },
     {
         "name": "wwwbasic",
+        "owner": {
+            "login": "google"
+        },
         "full_name": "google/wwwbasic",
         "forks_count": "22",
         "stargazers_count": "541",
@@ -49,30 +67,42 @@
     },
     {
         "name": "https-portal",
+        "owner": {
+            "login": "SteveLTN"
+        },
         "full_name": "SteveLTN/https-portal",
         "forks_count": "131",
-        "stargazers_count": "2,399",
+        "stargazers_count": "2,402",
         "language": "Ruby",
         "repositoryDescription": "A fully automated HTTPS server powered by Nginx, Let's Encrypt and Docker."
     },
     {
         "name": "awesome-typescript",
+        "owner": {
+            "login": "semlinker"
+        },
         "full_name": "semlinker/awesome-typescript",
         "forks_count": "19",
-        "stargazers_count": "292",
+        "stargazers_count": "295",
         "language": "",
         "repositoryDescription": "A collection of awesome TypeScript resources for client-side and server-side development"
     },
     {
         "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
         "full_name": "TheAlgorithms/Python",
         "forks_count": "2,875",
-        "stargazers_count": "7,912",
+        "stargazers_count": "7,915",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "NSFWDetector",
+        "owner": {
+            "login": "lovoo"
+        },
         "full_name": "lovoo/NSFWDetector",
         "forks_count": "3",
         "stargazers_count": "249",
@@ -81,6 +111,9 @@
     },
     {
         "name": "ToolsOfTheTrade",
+        "owner": {
+            "login": "cjbarber"
+        },
         "full_name": "cjbarber/ToolsOfTheTrade",
         "forks_count": "1,002",
         "stargazers_count": "12,725",
@@ -89,14 +122,20 @@
     },
     {
         "name": "SpringAll",
+        "owner": {
+            "login": "wuyouzhuguli"
+        },
         "full_name": "wuyouzhuguli/SpringAll",
-        "forks_count": "70",
-        "stargazers_count": "340",
+        "forks_count": "72",
+        "stargazers_count": "341",
         "language": "Java",
         "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
     },
     {
         "name": "free-for-dev",
+        "owner": {
+            "login": "ripienaar"
+        },
         "full_name": "ripienaar/free-for-dev",
         "forks_count": "2,210",
         "stargazers_count": "20,712",
@@ -105,22 +144,31 @@
     },
     {
         "name": "English-level-up-tips-for-Chinese",
+        "owner": {
+            "login": "byoungd"
+        },
         "full_name": "byoungd/English-level-up-tips-for-Chinese",
         "forks_count": "1,490",
-        "stargazers_count": "13,322",
+        "stargazers_count": "13,323",
         "language": "",
         "repositoryDescription": "可能是让你受益匪浅的英语进阶指南"
     },
     {
         "name": "stanford-cs-229-machine-learning",
+        "owner": {
+            "login": "afshinea"
+        },
         "full_name": "afshinea/stanford-cs-229-machine-learning",
-        "forks_count": "563",
+        "forks_count": "564",
         "stargazers_count": "3,122",
         "language": "",
         "repositoryDescription": "VIP cheatsheets for Stanford's CS 229 Machine Learning"
     },
     {
         "name": "nlp.js",
+        "owner": {
+            "login": "axa-group"
+        },
         "full_name": "axa-group/nlp.js",
         "forks_count": "57",
         "stargazers_count": "1,154",
@@ -129,22 +177,31 @@
     },
     {
         "name": "InboxRecyclerView",
+        "owner": {
+            "login": "saket"
+        },
         "full_name": "saket/InboxRecyclerView",
         "forks_count": "26",
-        "stargazers_count": "596",
+        "stargazers_count": "597",
         "language": "Kotlin",
         "repositoryDescription": "Build expandable descendant navigation, inspired by Google Inbox"
     },
     {
         "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "10,655",
-        "stargazers_count": "36,109",
+        "forks_count": "10,656",
+        "stargazers_count": "36,111",
         "language": "",
         "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
     {
         "name": "WatermelonDB",
+        "owner": {
+            "login": "Nozbe"
+        },
         "full_name": "Nozbe/WatermelonDB",
         "forks_count": "86",
         "stargazers_count": "3,394",
@@ -153,14 +210,20 @@
     },
     {
         "name": "100-Days-Of-ML-Code",
+        "owner": {
+            "login": "Avik-Jain"
+        },
         "full_name": "Avik-Jain/100-Days-Of-ML-Code",
         "forks_count": "2,700",
-        "stargazers_count": "14,587",
+        "stargazers_count": "14,588",
         "language": "",
         "repositoryDescription": "100 Days of ML Coding"
     },
     {
         "name": "fluent",
+        "owner": {
+            "login": "fluent-project"
+        },
         "full_name": "fluent-project/fluent",
         "forks_count": "110",
         "stargazers_count": "799",
@@ -169,14 +232,20 @@
     },
     {
         "name": "HeadGazeLib",
+        "owner": {
+            "login": "eBay"
+        },
         "full_name": "eBay/HeadGazeLib",
         "forks_count": "26",
-        "stargazers_count": "360",
+        "stargazers_count": "361",
         "language": "Swift",
         "repositoryDescription": "A library to empower iOS app control through head gaze without a finger touch"
     },
     {
         "name": "motd",
+        "owner": {
+            "login": "yboetz"
+        },
         "full_name": "yboetz/motd",
         "forks_count": "14",
         "stargazers_count": "252",
@@ -185,6 +254,9 @@
     },
     {
         "name": "Interplanetary-Postal-Service",
+        "owner": {
+            "login": "s-macke"
+        },
         "full_name": "s-macke/Interplanetary-Postal-Service",
         "forks_count": "10",
         "stargazers_count": "496",
@@ -193,9 +265,12 @@
     },
     {
         "name": "dayjs",
+        "owner": {
+            "login": "iamkun"
+        },
         "full_name": "iamkun/dayjs",
         "forks_count": "587",
-        "stargazers_count": "14,548",
+        "stargazers_count": "14,550",
         "language": "JavaScript",
         "repositoryDescription": "⏰\nDay.js 2KB immutable date library alternative to Moment.js with the same modern API"
     }

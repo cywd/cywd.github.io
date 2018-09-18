@@ -96,9 +96,9 @@ def scrape(language, file_path):
             description = i("p.col-9").text()
             hrefurl = i("h3 a").attr("href")
             urllist = hrefurl.split('/')
-            owner = urllist[1]
+            login = urllist[1]
             name = urllist[2]
-            full_name = owner + '/' + name
+            full_name = login + '/' + name
             url = "https://github.com" + hrefurl
             # ownerImg = i("p.repo-list-meta a img").attr("src")
             # print(ownerImg)
@@ -106,6 +106,9 @@ def scrape(language, file_path):
 
             data = {}
             data["name"] = name
+            data["owner"] = {
+                "login":login
+            }
             data["full_name"] = full_name
             data["forks_count"] = fork
             data["stargazers_count"] = star

@@ -3,7 +3,7 @@
         "name": "arthas",
         "full_name": "alibaba/arthas",
         "forks_count": "217",
-        "stargazers_count": "1,478",
+        "stargazers_count": "1,479",
         "language": "Java",
         "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
@@ -43,7 +43,7 @@
         "name": "wwwbasic",
         "full_name": "google/wwwbasic",
         "forks_count": "22",
-        "stargazers_count": "540",
+        "stargazers_count": "541",
         "language": "JavaScript",
         "repositoryDescription": "WWWBasic is an implementation of BASIC (Beginner's All-purpose Symbolic Instruction Code) designed to be easy to run on the Web."
     },

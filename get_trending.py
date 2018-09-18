@@ -7,7 +7,10 @@ import subprocess
 import sys
 import json
 import yaml
+import codecs
+import requests
 from collections import OrderedDict
+from pyquery import PyQuery as pq
 
 # the treading
 url_str = 'http://trending.codehub-app.com/v2/trending/'
@@ -62,15 +65,61 @@ def url_open(url):
     response = request.urlopen(req)
     return response.read()
 
+def scrape(language, file_path):
+
+    HEADERS = {
+        'User-Agent'		: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0',
+        'Accept'			: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Encoding'	: 'gzip,deflate,sdch',
+        'Accept-Language'	: 'zh-CN,zh;q=0.8'
+    }
+    print("begin request")
+    url = 'https://github.com/trending/{language}'.format(language=language)
+    r = requests.get(url, headers=HEADERS)
+    assert r.status_code == 200
+
+    # print(r.encoding)
+
+    d = pq(r.content)
+    items = d('ol.repo-list li')
+
+    # codecs to solve the problem utf-8 codec like chinese
+    with codecs.open(file_path, "w", encoding='utf-8') as f:
+
+        arr = []
+        for item in items:
+            i = pq(item)
+            title = i("h3 a").text()
+            language = i("div.f6 span[itemprop='programmingLanguage']").text()
+            star = i("div.f6 svg.octicon-star").closest("a").text()
+            fork = i("div.f6 svg.octicon-repo-forked").closest("a").text()
+            description = i("p.col-9").text()
+            hrefurl = i("h3 a").attr("href")
+            urllist = hrefurl.split('/')
+            owner = urllist[1]
+            name = urllist[2]
+            full_name = owner + '/' + name
+            url = "https://github.com" + hrefurl
+            # ownerImg = i("p.repo-list-meta a img").attr("src")
+            # print(ownerImg)
+
+
+            data = {}
+            data["name"] = name
+            data["full_name"] = full_name
+            data["forks_count"] = fork
+            data["stargazers_count"] = star
+            data["language"] = language
+            data["repositoryDescription"] = description
+
+            arr.append(data)
+
+        print("get json data, ready write to file 'trending.json'")
+        f.write(json.dumps(arr, indent=4, ensure_ascii=False))
+
 
 def save_file():
-    print("begin request")
-    json = url_open(url_str)
-    print("get json data, ready write to file 'trending.json'")
-    with open(file_path, 'wb') as f:
-        f.write(json)
-        f.close()
-        print("write file success")
+    scrape("", file_path)
 
     getColors()
 

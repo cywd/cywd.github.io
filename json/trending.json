@@ -2,8 +2,8 @@
     {
         "name": "arthas",
         "full_name": "alibaba/arthas",
-        "forks_count": "216",
-        "stargazers_count": "1,475",
+        "forks_count": "217",
+        "stargazers_count": "1,478",
         "language": "Java",
         "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
@@ -11,7 +11,7 @@
         "name": "You-Dont-Need-Momentjs",
         "full_name": "you-dont-need/You-Dont-Need-Momentjs",
         "forks_count": "65",
-        "stargazers_count": "3,788",
+        "stargazers_count": "3,789",
         "language": "JavaScript",
         "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
@@ -35,7 +35,7 @@
         "name": "system-design-primer",
         "full_name": "donnemartin/system-design-primer",
         "forks_count": "6,428",
-        "stargazers_count": "48,187",
+        "stargazers_count": "48,188",
         "language": "Python",
         "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
     },
@@ -51,7 +51,7 @@
         "name": "https-portal",
         "full_name": "SteveLTN/https-portal",
         "forks_count": "131",
-        "stargazers_count": "2,398",
+        "stargazers_count": "2,399",
         "language": "Ruby",
         "repositoryDescription": "A fully automated HTTPS server powered by Nginx, Let's Encrypt and Docker."
     },
@@ -75,7 +75,7 @@
         "name": "NSFWDetector",
         "full_name": "lovoo/NSFWDetector",
         "forks_count": "3",
-        "stargazers_count": "248",
+        "stargazers_count": "249",
         "language": "Swift",
         "repositoryDescription": "A NSFW (aka porn) detector with CoreML"
     },
@@ -91,7 +91,7 @@
         "name": "SpringAll",
         "full_name": "wuyouzhuguli/SpringAll",
         "forks_count": "70",
-        "stargazers_count": "337",
+        "stargazers_count": "340",
         "language": "Java",
         "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
     },
@@ -139,7 +139,7 @@
         "name": "CS-Notes",
         "full_name": "CyC2018/CS-Notes",
         "forks_count": "10,655",
-        "stargazers_count": "36,108",
+        "stargazers_count": "36,109",
         "language": "",
         "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
@@ -147,7 +147,7 @@
         "name": "WatermelonDB",
         "full_name": "Nozbe/WatermelonDB",
         "forks_count": "86",
-        "stargazers_count": "3,393",
+        "stargazers_count": "3,394",
         "language": "JavaScript",
         "repositoryDescription": "🍉\nNext-gen database for powerful React and React Native apps that scales to 10,000s of records and remains fast\n⚡️"
     },
@@ -179,7 +179,7 @@
         "name": "motd",
         "full_name": "yboetz/motd",
         "forks_count": "14",
-        "stargazers_count": "251",
+        "stargazers_count": "252",
         "language": "Shell",
         "repositoryDescription": "Collection of 'message of the day' scripts"
     },
@@ -194,8 +194,8 @@
     {
         "name": "dayjs",
         "full_name": "iamkun/dayjs",
-        "forks_count": "586",
-        "stargazers_count": "14,546",
+        "forks_count": "587",
+        "stargazers_count": "14,548",
         "language": "JavaScript",
         "repositoryDescription": "⏰\nDay.js 2KB immutable date library alternative to Moment.js with the same modern API"
     }

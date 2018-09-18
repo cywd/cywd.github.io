@@ -112,7 +112,10 @@ def scrape(language, file_path):
             data["full_name"] = full_name
             data["forks_count"] = fork
             data["stargazers_count"] = star
-            data["language"] = language
+            if (len(language) > 0): 
+                data["language"] = language
+
+            
             data["repositoryDescription"] = description
 
             arr.append(data)

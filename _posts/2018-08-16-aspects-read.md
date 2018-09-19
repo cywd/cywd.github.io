@@ -16,7 +16,7 @@ comments: true
 
 # Aspects.h
 
-```objective-c
+```objc
 //
 //  Aspects.h
 //  Aspects - A delightful, simple library for aspect oriented programming.
@@ -119,7 +119,7 @@ extern NSString *const AspectErrorDomain;
 
 # Aspects.m
 
-```objective-c
+```objc
 //
 //  Aspects.m
 //  Aspects - A delightful, simple library for aspect oriented programming.

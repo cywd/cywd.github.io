@@ -5,21 +5,10 @@
             "login": "alibaba"
         },
         "full_name": "alibaba/arthas",
-        "forks_count": "272",
-        "stargazers_count": "1974",
+        "forks_count": "336",
+        "stargazers_count": "2401",
         "language": "Java",
         "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
-    },
-    {
-        "name": "You-Dont-Need-Momentjs",
-        "owner": {
-            "login": "you-dont-need"
-        },
-        "full_name": "you-dont-need/You-Dont-Need-Momentjs",
-        "forks_count": "70",
-        "stargazers_count": "4117",
-        "language": "JavaScript",
-        "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
     {
         "name": "pwc",
@@ -27,20 +16,20 @@
             "login": "zziz"
         },
         "full_name": "zziz/pwc",
-        "forks_count": "166",
-        "stargazers_count": "3006",
+        "forks_count": "181",
+        "stargazers_count": "3389",
         "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     },
     {
-        "name": "system-design-primer",
+        "name": "You-Dont-Need-Momentjs",
         "owner": {
-            "login": "donnemartin"
+            "login": "you-dont-need"
         },
-        "full_name": "donnemartin/system-design-primer",
-        "forks_count": "6452",
-        "stargazers_count": "48445",
-        "language": "Python",
-        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
+        "full_name": "you-dont-need/You-Dont-Need-Momentjs",
+        "forks_count": "78",
+        "stargazers_count": "4487",
+        "language": "JavaScript",
+        "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
     {
         "name": "SpringAll",
@@ -48,191 +37,76 @@
             "login": "wuyouzhuguli"
         },
         "full_name": "wuyouzhuguli/SpringAll",
-        "forks_count": "96",
-        "stargazers_count": "514",
+        "forks_count": "140",
+        "stargazers_count": "826",
         "language": "Java",
         "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
     },
     {
-        "name": "awesome-typescript",
+        "name": "grapesjs",
         "owner": {
-            "login": "semlinker"
+            "login": "artf"
         },
-        "full_name": "semlinker/awesome-typescript",
-        "forks_count": "25",
-        "stargazers_count": "415",
-        "repositoryDescription": "A collection of awesome TypeScript resources for client-side and server-side development"
+        "full_name": "artf/grapesjs",
+        "forks_count": "1009",
+        "stargazers_count": "5129",
+        "language": "JavaScript",
+        "repositoryDescription": "Free and Open source Web Builder Framework. Next generation tool for building templates without coding"
     },
     {
-        "name": "Python",
+        "name": "worker-plugin",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "GoogleChromeLabs"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "2895",
-        "stargazers_count": "8060",
+        "full_name": "GoogleChromeLabs/worker-plugin",
+        "forks_count": "",
+        "stargazers_count": "282",
+        "language": "JavaScript",
+        "repositoryDescription": "🐳\nAdds native Web Worker bundling support to Webpack."
+    },
+    {
+        "name": "system-design-primer",
+        "owner": {
+            "login": "donnemartin"
+        },
+        "full_name": "donnemartin/system-design-primer",
+        "forks_count": "6493",
+        "stargazers_count": "48631",
         "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
     },
     {
-        "name": "NSFWDetector",
+        "name": "lyo",
         "owner": {
-            "login": "lovoo"
+            "login": "bokub"
         },
-        "full_name": "lovoo/NSFWDetector",
-        "forks_count": "6",
-        "stargazers_count": "397",
-        "language": "Swift",
-        "repositoryDescription": "A NSFW (aka porn) detector with CoreML"
-    },
-    {
-        "name": "nextspace",
-        "owner": {
-            "login": "trunkmaster"
-        },
-        "full_name": "trunkmaster/nextspace",
-        "forks_count": "11",
-        "stargazers_count": "515",
-        "language": "C",
-        "repositoryDescription": "NeXTSTEP-like desktop environment for Linux"
-    },
-    {
-        "name": "English-level-up-tips-for-Chinese",
-        "owner": {
-            "login": "byoungd"
-        },
-        "full_name": "byoungd/English-level-up-tips-for-Chinese",
-        "forks_count": "1505",
-        "stargazers_count": "13451",
-        "repositoryDescription": "可能是让你受益匪浅的英语进阶指南"
-    },
-    {
-        "name": "ToolsOfTheTrade",
-        "owner": {
-            "login": "cjbarber"
-        },
-        "full_name": "cjbarber/ToolsOfTheTrade",
-        "forks_count": "1010",
-        "stargazers_count": "12826",
-        "repositoryDescription": "Tools of The Trade, from Hacker News."
-    },
-    {
-        "name": "https-portal",
-        "owner": {
-            "login": "SteveLTN"
-        },
-        "full_name": "SteveLTN/https-portal",
-        "forks_count": "133",
-        "stargazers_count": "2489",
-        "language": "Ruby",
-        "repositoryDescription": "A fully automated HTTPS server powered by Nginx, Let's Encrypt and Docker."
-    },
-    {
-        "name": "WatermelonDB",
-        "owner": {
-            "login": "Nozbe"
-        },
-        "full_name": "Nozbe/WatermelonDB",
-        "forks_count": "89",
-        "stargazers_count": "3499",
+        "full_name": "bokub/lyo",
+        "forks_count": "9",
+        "stargazers_count": "325",
         "language": "JavaScript",
-        "repositoryDescription": "🍉\nNext-gen database for powerful React and React Native apps that scales to 10,000s of records and remains fast\n⚡️"
+        "repositoryDescription": "📦\nNode.js to browser - The easy way"
     },
     {
-        "name": "perkeep",
+        "name": "polar-bookshelf",
         "owner": {
-            "login": "perkeep"
+            "login": "burtonator"
         },
-        "full_name": "perkeep/perkeep",
-        "forks_count": "275",
-        "stargazers_count": "3210",
-        "language": "Go",
-        "repositoryDescription": "Perkeep (née Camlistore) is your personal storage system for life: a way of storing, syncing, sharing, modelling and backing up content."
+        "full_name": "burtonator/polar-bookshelf",
+        "forks_count": "16",
+        "stargazers_count": "349",
+        "language": "TypeScript",
+        "repositoryDescription": "Polar is a personal knowledge repository for PDF and web content supporting incremental reading and document annotation."
     },
     {
-        "name": "wwwbasic",
+        "name": "BackgroundLibrary",
         "owner": {
-            "login": "google"
+            "login": "JavaNoober"
         },
-        "full_name": "google/wwwbasic",
-        "forks_count": "32",
-        "stargazers_count": "624",
-        "language": "JavaScript",
-        "repositoryDescription": "WWWBasic is an implementation of BASIC (Beginner's All-purpose Symbolic Instruction Code) designed to be easy to run on the Web."
-    },
-    {
-        "name": "free-for-dev",
-        "owner": {
-            "login": "ripienaar"
-        },
-        "full_name": "ripienaar/free-for-dev",
-        "forks_count": "2214",
-        "stargazers_count": "20805",
-        "repositoryDescription": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
-    },
-    {
-        "name": "proxyee-down",
-        "owner": {
-            "login": "proxyee-down-org"
-        },
-        "full_name": "proxyee-down-org/proxyee-down",
-        "forks_count": "2649",
-        "stargazers_count": "15081",
+        "full_name": "JavaNoober/BackgroundLibrary",
+        "forks_count": "112",
+        "stargazers_count": "865",
         "language": "Java",
-        "repositoryDescription": "http下载工具，基于http代理，支持多连接分块下载"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "10700",
-        "stargazers_count": "36193",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "stanford-cs-229-machine-learning",
-        "owner": {
-            "login": "afshinea"
-        },
-        "full_name": "afshinea/stanford-cs-229-machine-learning",
-        "forks_count": "582",
-        "stargazers_count": "3205",
-        "repositoryDescription": "VIP cheatsheets for Stanford's CS 229 Machine Learning"
-    },
-    {
-        "name": "nlp.js",
-        "owner": {
-            "login": "axa-group"
-        },
-        "full_name": "axa-group/nlp.js",
-        "forks_count": "60",
-        "stargazers_count": "1244",
-        "language": "JavaScript",
-        "repositoryDescription": "An NLP library built in node over Natural, with entity extraction, sentiment analysis, automatic language identify, and so more"
-    },
-    {
-        "name": "dayjs",
-        "owner": {
-            "login": "iamkun"
-        },
-        "full_name": "iamkun/dayjs",
-        "forks_count": "589",
-        "stargazers_count": "14647",
-        "language": "JavaScript",
-        "repositoryDescription": "⏰\nDay.js 2KB immutable date library alternative to Moment.js with the same modern API"
-    },
-    {
-        "name": "SprayingToolkit",
-        "owner": {
-            "login": "byt3bl33d3r"
-        },
-        "full_name": "byt3bl33d3r/SprayingToolkit",
-        "forks_count": "18",
-        "stargazers_count": "127",
-        "language": "Python",
-        "repositoryDescription": "Scripts to make password spraying attacks against Lync/S4B & OWA a lot quicker, less painful and more efficient"
+        "repositoryDescription": "A framework for directly generating shape through Tags, no need to write shape.xml again（通过标签直接生成shape，无需再写shape.xml）"
     },
     {
         "name": "TarsGo",
@@ -240,30 +114,158 @@
             "login": "TarsCloud"
         },
         "full_name": "TarsCloud/TarsGo",
-        "forks_count": "25",
-        "stargazers_count": "231",
+        "forks_count": "41",
+        "stargazers_count": "412",
         "language": "Go",
         "repositoryDescription": "A high performance microservice framework in golang. A linux foundation project."
     },
     {
-        "name": "vue",
+        "name": "taro",
         "owner": {
-            "login": "vuejs"
+            "login": "NervJS"
         },
-        "full_name": "vuejs/vue",
-        "forks_count": "16078",
-        "stargazers_count": "114246",
+        "full_name": "NervJS/taro",
+        "forks_count": "691",
+        "stargazers_count": "8187",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信小程序、H5、React Native 等的应用。"
     },
     {
-        "name": "100-Days-Of-ML-Code",
+        "name": "free-for-dev",
         "owner": {
-            "login": "Avik-Jain"
+            "login": "ripienaar"
         },
-        "full_name": "Avik-Jain/100-Days-Of-ML-Code",
-        "forks_count": "2713",
-        "stargazers_count": "14666",
-        "repositoryDescription": "100 Days of ML Coding"
+        "full_name": "ripienaar/free-for-dev",
+        "forks_count": "2222",
+        "stargazers_count": "20986",
+        "repositoryDescription": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
+    },
+    {
+        "name": "math-as-code",
+        "owner": {
+            "login": "Jam3"
+        },
+        "full_name": "Jam3/math-as-code",
+        "forks_count": "399",
+        "stargazers_count": "6568",
+        "repositoryDescription": "a cheat-sheet for mathematical notation in code form"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "2921",
+        "stargazers_count": "8224",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "xi-editor",
+        "owner": {
+            "login": "xi-editor"
+        },
+        "full_name": "xi-editor/xi-editor",
+        "forks_count": "476",
+        "stargazers_count": "13741",
+        "language": "Rust",
+        "repositoryDescription": "A modern editor with a backend written in Rust. https://xi-editor.github.io/xi-editor"
+    },
+    {
+        "name": "awesome-typescript",
+        "owner": {
+            "login": "semlinker"
+        },
+        "full_name": "semlinker/awesome-typescript",
+        "forks_count": "35",
+        "stargazers_count": "565",
+        "repositoryDescription": "A collection of awesome TypeScript resources for client-side and server-side development"
+    },
+    {
+        "name": "MangaCraft",
+        "owner": {
+            "login": "lllyasviel"
+        },
+        "full_name": "lllyasviel/MangaCraft",
+        "forks_count": "9",
+        "stargazers_count": "242",
+        "repositoryDescription": "The current best semi-automatic manga colorization project on earth."
+    },
+    {
+        "name": "vscodium",
+        "owner": {
+            "login": "VSCodium"
+        },
+        "full_name": "VSCodium/vscodium",
+        "forks_count": "15",
+        "stargazers_count": "879",
+        "language": "Shell",
+        "repositoryDescription": "binary releases of VS Code without MS branding/telemetry/licensing"
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "67692",
+        "stargazers_count": "109831",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "spring-cloud-alibaba",
+        "owner": {
+            "login": "spring-cloud-incubator"
+        },
+        "full_name": "spring-cloud-incubator/spring-cloud-alibaba",
+        "forks_count": "47",
+        "stargazers_count": "284",
+        "language": "Java",
+        "repositoryDescription": "Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware."
+    },
+    {
+        "name": "ToolsOfTheTrade",
+        "owner": {
+            "login": "cjbarber"
+        },
+        "full_name": "cjbarber/ToolsOfTheTrade",
+        "forks_count": "1017",
+        "stargazers_count": "12969",
+        "repositoryDescription": "Tools of The Trade, from Hacker News."
+    },
+    {
+        "name": "NSFWDetector",
+        "owner": {
+            "login": "lovoo"
+        },
+        "full_name": "lovoo/NSFWDetector",
+        "forks_count": "9",
+        "stargazers_count": "535",
+        "language": "Swift",
+        "repositoryDescription": "A NSFW (aka porn) detector with CoreML"
+    },
+    {
+        "name": "vue-element-admin",
+        "owner": {
+            "login": "PanJiaChen"
+        },
+        "full_name": "PanJiaChen/vue-element-admin",
+        "forks_count": "5992",
+        "stargazers_count": "19664",
+        "language": "Vue",
+        "repositoryDescription": "🎉\nA magical vue admin http://panjiachen.github.io/vue-element-admin"
+    },
+    {
+        "name": "dayjs",
+        "owner": {
+            "login": "iamkun"
+        },
+        "full_name": "iamkun/dayjs",
+        "forks_count": "591",
+        "stargazers_count": "14773",
+        "language": "JavaScript",
+        "repositoryDescription": "⏰\nDay.js 2KB immutable date library alternative to Moment.js with the same modern API"
     }
 ]

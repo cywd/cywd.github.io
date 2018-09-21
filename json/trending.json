@@ -1,12 +1,34 @@
 [
     {
+        "name": "os-tutorial",
+        "owner": {
+            "login": "cfenollosa"
+        },
+        "full_name": "cfenollosa/os-tutorial",
+        "forks_count": "460",
+        "stargazers_count": "4140",
+        "language": "C",
+        "repositoryDescription": "How to create an OS from scratch"
+    },
+    {
+        "name": "MMKV",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/MMKV",
+        "forks_count": "90",
+        "stargazers_count": "1139",
+        "language": "C++",
+        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
+    },
+    {
         "name": "math-as-code",
         "owner": {
             "login": "Jam3"
         },
         "full_name": "Jam3/math-as-code",
-        "forks_count": "457",
-        "stargazers_count": "7619",
+        "forks_count": "478",
+        "stargazers_count": "8281",
         "repositoryDescription": "a cheat-sheet for mathematical notation in code form"
     },
     {
@@ -15,54 +37,21 @@
             "login": "apachecn"
         },
         "full_name": "apachecn/awesome-leetcode",
-        "forks_count": "216",
-        "stargazers_count": "1235",
+        "forks_count": "258",
+        "stargazers_count": "1755",
         "language": "Python",
         "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
     },
     {
-        "name": "grapesjs",
+        "name": "ml-coursera-python-assignments",
         "owner": {
-            "login": "artf"
+            "login": "dibgerge"
         },
-        "full_name": "artf/grapesjs",
-        "forks_count": "1032",
-        "stargazers_count": "5649",
-        "language": "JavaScript",
-        "repositoryDescription": "Free and Open source Web Builder Framework. Next generation tool for building templates without coding"
-    },
-    {
-        "name": "arthas",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/arthas",
-        "forks_count": "390",
-        "stargazers_count": "2863",
-        "language": "Java",
-        "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
-    },
-    {
-        "name": "create-react-library",
-        "owner": {
-            "login": "transitive-bullshit"
-        },
-        "full_name": "transitive-bullshit/create-react-library",
-        "forks_count": "43",
-        "stargazers_count": "1055",
-        "language": "JavaScript",
-        "repositoryDescription": "⚡CLI for easily creating reusable react libraries."
-    },
-    {
-        "name": "unit-test-demo",
-        "owner": {
-            "login": "tank0317"
-        },
-        "full_name": "tank0317/unit-test-demo",
-        "forks_count": "38",
-        "stargazers_count": "276",
-        "language": "JavaScript",
-        "repositoryDescription": "一步一步介绍如何给项目添加单元测试"
+        "full_name": "dibgerge/ml-coursera-python-assignments",
+        "forks_count": "144",
+        "stargazers_count": "677",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Python assignments for the machine learning class by andrew ng on coursera with complete submission for grading capability and re-written instructions."
     },
     {
         "name": "vapid",
@@ -70,32 +59,43 @@
             "login": "vapid"
         },
         "full_name": "vapid/vapid",
-        "forks_count": "3",
-        "stargazers_count": "321",
+        "forks_count": "15",
+        "stargazers_count": "640",
         "language": "CSS",
         "repositoryDescription": "A template-driven content management system"
     },
     {
-        "name": "You-Dont-Need-Momentjs",
+        "name": "grapesjs",
         "owner": {
-            "login": "you-dont-need"
+            "login": "artf"
         },
-        "full_name": "you-dont-need/You-Dont-Need-Momentjs",
-        "forks_count": "88",
-        "stargazers_count": "4743",
+        "full_name": "artf/grapesjs",
+        "forks_count": "1045",
+        "stargazers_count": "5945",
         "language": "JavaScript",
-        "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
+        "repositoryDescription": "Free and Open source Web Builder Framework. Next generation tool for building templates without coding"
     },
     {
-        "name": "taro",
+        "name": "hacking_slot_machines",
         "owner": {
-            "login": "NervJS"
+            "login": "tensor8"
         },
-        "full_name": "NervJS/taro",
-        "forks_count": "711",
-        "stargazers_count": "8446",
-        "language": "JavaScript",
-        "repositoryDescription": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信小程序、H5、React Native 等的应用。"
+        "full_name": "tensor8/hacking_slot_machines",
+        "forks_count": "19",
+        "stargazers_count": "300",
+        "language": "C++",
+        "repositoryDescription": "Hacking slot machines. Top of HN for 12 hours straight!"
+    },
+    {
+        "name": "arthas",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/arthas",
+        "forks_count": "433",
+        "stargazers_count": "3121",
+        "language": "Java",
+        "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
     {
         "name": "pwc",
@@ -103,41 +103,20 @@
             "login": "zziz"
         },
         "full_name": "zziz/pwc",
-        "forks_count": "198",
-        "stargazers_count": "3620",
+        "forks_count": "217",
+        "stargazers_count": "3864",
         "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     },
     {
-        "name": "worker-plugin",
+        "name": "reactxp",
         "owner": {
-            "login": "GoogleChromeLabs"
+            "login": "Microsoft"
         },
-        "full_name": "GoogleChromeLabs/worker-plugin",
-        "forks_count": "7",
-        "stargazers_count": "520",
-        "language": "JavaScript",
-        "repositoryDescription": "🐳\nAdds native Web Worker bundling support to Webpack."
-    },
-    {
-        "name": "stanford-cs-229-machine-learning",
-        "owner": {
-            "login": "afshinea"
-        },
-        "full_name": "afshinea/stanford-cs-229-machine-learning",
-        "forks_count": "655",
-        "stargazers_count": "3501",
-        "repositoryDescription": "VIP cheatsheets for Stanford's CS 229 Machine Learning"
-    },
-    {
-        "name": "SpringAll",
-        "owner": {
-            "login": "wuyouzhuguli"
-        },
-        "full_name": "wuyouzhuguli/SpringAll",
-        "forks_count": "160",
-        "stargazers_count": "1021",
-        "language": "Java",
-        "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
+        "full_name": "Microsoft/reactxp",
+        "forks_count": "474",
+        "stargazers_count": "6863",
+        "language": "TypeScript",
+        "repositoryDescription": "Library for cross-platform app development."
     },
     {
         "name": "flutter",
@@ -145,20 +124,43 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "3572",
-        "stargazers_count": "37627",
+        "forks_count": "3596",
+        "stargazers_count": "37823",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "free-for-dev",
+        "name": "underrun",
         "owner": {
-            "login": "ripienaar"
+            "login": "phoboslab"
         },
-        "full_name": "ripienaar/free-for-dev",
-        "forks_count": "2241",
-        "stargazers_count": "21153",
-        "repositoryDescription": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
+        "full_name": "phoboslab/underrun",
+        "forks_count": "17",
+        "stargazers_count": "357",
+        "language": "JavaScript",
+        "repositoryDescription": "Twin stick shooter game in 13kb of JavaScript/WebGL"
+    },
+    {
+        "name": "unit-test-demo",
+        "owner": {
+            "login": "tank0317"
+        },
+        "full_name": "tank0317/unit-test-demo",
+        "forks_count": "59",
+        "stargazers_count": "466",
+        "language": "JavaScript",
+        "repositoryDescription": "一步一步介绍如何给项目添加单元测试"
+    },
+    {
+        "name": "You-Dont-Need-Momentjs",
+        "owner": {
+            "login": "you-dont-need"
+        },
+        "full_name": "you-dont-need/You-Dont-Need-Momentjs",
+        "forks_count": "90",
+        "stargazers_count": "4930",
+        "language": "JavaScript",
+        "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
     {
         "name": "tensorflow",
@@ -166,8 +168,8 @@
             "login": "tensorflow"
         },
         "full_name": "tensorflow/tensorflow",
-        "forks_count": "67730",
-        "stargazers_count": "109968",
+        "forks_count": "67777",
+        "stargazers_count": "110114",
         "language": "C++",
         "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     },
@@ -177,43 +179,54 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "2945",
-        "stargazers_count": "8377",
+        "forks_count": "2964",
+        "stargazers_count": "8542",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "polar-bookshelf",
+        "name": "kit",
         "owner": {
-            "login": "burtonator"
+            "login": "kitlang"
         },
-        "full_name": "burtonator/polar-bookshelf",
-        "forks_count": "21",
-        "stargazers_count": "487",
-        "language": "TypeScript",
-        "repositoryDescription": "Polar is a personal knowledge repository for PDF and web content supporting incremental reading and document annotation."
+        "full_name": "kitlang/kit",
+        "forks_count": "7",
+        "stargazers_count": "431",
+        "language": "Haskell",
+        "repositoryDescription": "Kit: a magical, high performance programming language, designed for game development. Pre-alpha!"
     },
     {
-        "name": "linux",
+        "name": "taro",
         "owner": {
-            "login": "torvalds"
+            "login": "NervJS"
         },
-        "full_name": "torvalds/linux",
-        "forks_count": "23114",
-        "stargazers_count": "63433",
-        "language": "C",
-        "repositoryDescription": "Linux kernel source tree"
+        "full_name": "NervJS/taro",
+        "forks_count": "726",
+        "stargazers_count": "8599",
+        "language": "JavaScript",
+        "repositoryDescription": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信小程序、H5、React Native 等的应用。"
     },
     {
-        "name": "system-design-primer",
+        "name": "reinforcement-learning",
         "owner": {
-            "login": "donnemartin"
+            "login": "dennybritz"
         },
-        "full_name": "donnemartin/system-design-primer",
-        "forks_count": "6522",
-        "stargazers_count": "48762",
-        "language": "Python",
-        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
+        "full_name": "dennybritz/reinforcement-learning",
+        "forks_count": "2680",
+        "stargazers_count": "7977",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Implementation of Reinforcement Learning Algorithms. Python, OpenAI Gym, Tensorflow. Exercises and Solutions to accompany Sutton's Book and David Silver's course."
+    },
+    {
+        "name": "create-react-library",
+        "owner": {
+            "login": "transitive-bullshit"
+        },
+        "full_name": "transitive-bullshit/create-react-library",
+        "forks_count": "45",
+        "stargazers_count": "1214",
+        "language": "JavaScript",
+        "repositoryDescription": "⚡CLI for easily creating reusable react libraries."
     },
     {
         "name": "xi-editor",
@@ -221,53 +234,42 @@
             "login": "xi-editor"
         },
         "full_name": "xi-editor/xi-editor",
-        "forks_count": "478",
-        "stargazers_count": "13900",
+        "forks_count": "482",
+        "stargazers_count": "14038",
         "language": "Rust",
         "repositoryDescription": "A modern editor with a backend written in Rust. https://xi-editor.github.io/xi-editor"
     },
     {
-        "name": "JavaGuide",
+        "name": "idlize",
         "owner": {
-            "login": "Snailclimb"
+            "login": "GoogleChromeLabs"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "1436",
-        "stargazers_count": "5869",
-        "language": "Java",
-        "repositoryDescription": "A core knowledge that most Java programmers need to master"
-    },
-    {
-        "name": "next.js",
-        "owner": {
-            "login": "zeit"
-        },
-        "full_name": "zeit/next.js",
-        "forks_count": "2999",
-        "stargazers_count": "29251",
+        "full_name": "GoogleChromeLabs/idlize",
+        "forks_count": "8",
+        "stargazers_count": "228",
         "language": "JavaScript",
-        "repositoryDescription": "Next.js is a lightweight framework for static and server‑rendered applications."
+        "repositoryDescription": "Helper classes and methods for implementing the idle-until-urgent pattern"
     },
     {
-        "name": "vue-element-admin",
+        "name": "linux",
         "owner": {
-            "login": "PanJiaChen"
+            "login": "torvalds"
         },
-        "full_name": "PanJiaChen/vue-element-admin",
-        "forks_count": "6011",
-        "stargazers_count": "19781",
-        "language": "Vue",
-        "repositoryDescription": "🎉\nA magical vue admin http://panjiachen.github.io/vue-element-admin"
+        "full_name": "torvalds/linux",
+        "forks_count": "23148",
+        "stargazers_count": "63551",
+        "language": "C",
+        "repositoryDescription": "Linux kernel source tree"
     },
     {
-        "name": "TarsGo",
+        "name": "health",
         "owner": {
-            "login": "TarsCloud"
+            "login": "antonioribeiro"
         },
-        "full_name": "TarsCloud/TarsGo",
-        "forks_count": "56",
-        "stargazers_count": "541",
-        "language": "Go",
-        "repositoryDescription": "A high performance microservice framework in golang. A linux foundation project."
+        "full_name": "antonioribeiro/health",
+        "forks_count": "57",
+        "stargazers_count": "533",
+        "language": "PHP",
+        "repositoryDescription": "Laravel Health Panel"
     }
 ]

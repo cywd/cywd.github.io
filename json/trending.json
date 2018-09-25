@@ -1,25 +1,14 @@
 [
     {
-        "name": "ungoogled-chromium",
+        "name": "awesome-algorithm",
         "owner": {
-            "login": "Eloston"
+            "login": "apachecn"
         },
-        "full_name": "Eloston/ungoogled-chromium",
-        "forks_count": "179",
-        "stargazers_count": "4702",
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "448",
+        "stargazers_count": "3004",
         "language": "Python",
-        "repositoryDescription": "Modifications to Google Chromium for removing Google integration and enhancing privacy, control, and transparency"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3110",
-        "stargazers_count": "9902",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
     },
     {
         "name": "os-tutorial",
@@ -27,10 +16,65 @@
             "login": "cfenollosa"
         },
         "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "624",
-        "stargazers_count": "7032",
+        "forks_count": "687",
+        "stargazers_count": "7790",
         "language": "C",
         "repositoryDescription": "How to create an OS from scratch"
+    },
+    {
+        "name": "MMKV",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/MMKV",
+        "forks_count": "187",
+        "stargazers_count": "2541",
+        "language": "C++",
+        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
+    },
+    {
+        "name": "mastering-modular-javascript",
+        "owner": {
+            "login": "mjavascript"
+        },
+        "full_name": "mjavascript/mastering-modular-javascript",
+        "forks_count": "72",
+        "stargazers_count": "1427",
+        "language": "HTML",
+        "repositoryDescription": "📦\nModule thinking, principles, design patterns and best practices."
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3184",
+        "stargazers_count": "10500",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "eagle.js",
+        "owner": {
+            "login": "Zulko"
+        },
+        "full_name": "Zulko/eagle.js",
+        "forks_count": "124",
+        "stargazers_count": "2386",
+        "language": "Vue",
+        "repositoryDescription": "A hackable slideshow framework built with Vue.js"
+    },
+    {
+        "name": "ungoogled-chromium",
+        "owner": {
+            "login": "Eloston"
+        },
+        "full_name": "Eloston/ungoogled-chromium",
+        "forks_count": "192",
+        "stargazers_count": "5241",
+        "language": "Python",
+        "repositoryDescription": "Modifications to Google Chromium for removing Google integration and enhancing privacy, control, and transparency"
     },
     {
         "name": "graphql-editor",
@@ -38,8 +82,8 @@
             "login": "slothking-online"
         },
         "full_name": "slothking-online/graphql-editor",
-        "forks_count": "32",
-        "stargazers_count": "1379",
+        "forks_count": "41",
+        "stargazers_count": "1768",
         "language": "TypeScript",
         "repositoryDescription": "GraphQL editor - visual node editor for GraphQL"
     },
@@ -49,53 +93,21 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "751",
-        "stargazers_count": "3110",
+        "forks_count": "858",
+        "stargazers_count": "3450",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
     },
     {
-        "name": "deep_learning_object_detection",
+        "name": "chattervox",
         "owner": {
-            "login": "hoya012"
+            "login": "brannondorsey"
         },
-        "full_name": "hoya012/deep_learning_object_detection",
-        "forks_count": "190",
-        "stargazers_count": "704",
-        "repositoryDescription": "A paper list of object detection using deep learning."
-    },
-    {
-        "name": "ytdl-webserver",
-        "owner": {
-            "login": "Algram"
-        },
-        "full_name": "Algram/ytdl-webserver",
-        "forks_count": "46",
-        "stargazers_count": "642",
-        "language": "JavaScript",
-        "repositoryDescription": "📻\nWebserver for downloading youtube videos. Ready for docker."
-    },
-    {
-        "name": "pypeln",
-        "owner": {
-            "login": "cgarciae"
-        },
-        "full_name": "cgarciae/pypeln",
-        "forks_count": "4",
-        "stargazers_count": "281",
-        "language": "Python",
-        "repositoryDescription": "Concurrent data pipelines made easy"
-    },
-    {
-        "name": "umbrella",
-        "owner": {
-            "login": "thi-ng"
-        },
-        "full_name": "thi-ng/umbrella",
-        "forks_count": "25",
-        "stargazers_count": "504",
+        "full_name": "brannondorsey/chattervox",
+        "forks_count": "13",
+        "stargazers_count": "361",
         "language": "TypeScript",
-        "repositoryDescription": "⛱\nMono-repository of ~50 TypeScript/ES6 projects for modern web development"
+        "repositoryDescription": "📡\nAn AX.25 packet radio chat protocol with support for digital signatures and binary compression. Like IRC over radio waves. 〰"
     },
     {
         "name": "rxdb",
@@ -103,32 +115,31 @@
             "login": "pubkey"
         },
         "full_name": "pubkey/rxdb",
-        "forks_count": "330",
-        "stargazers_count": "7467",
+        "forks_count": "340",
+        "stargazers_count": "7733",
         "language": "JavaScript",
         "repositoryDescription": "💻\n📱\nA realtime Database for the Web"
     },
     {
-        "name": "health",
+        "name": "deep_learning_object_detection",
         "owner": {
-            "login": "antonioribeiro"
+            "login": "hoya012"
         },
-        "full_name": "antonioribeiro/health",
-        "forks_count": "72",
-        "stargazers_count": "783",
-        "language": "PHP",
-        "repositoryDescription": "Laravel Health Panel"
+        "full_name": "hoya012/deep_learning_object_detection",
+        "forks_count": "257",
+        "stargazers_count": "930",
+        "repositoryDescription": "A paper list of object detection using deep learning."
     },
     {
-        "name": "curl",
+        "name": "pypeln",
         "owner": {
-            "login": "curl"
+            "login": "cgarciae"
         },
-        "full_name": "curl/curl",
-        "forks_count": "2539",
-        "stargazers_count": "9931",
-        "language": "C",
-        "repositoryDescription": "A command line tool and library for transferring data with URL syntax, supporting HTTP, HTTPS, FTP, FTPS, GOPHER, TFTP, SCP, SFTP, SMB, TELNET, DICT, LDAP, LDAPS, FILE, IMAP, SMTP, POP3, RTSP and RTMP. libcurl offers a myriad of powerful features"
+        "full_name": "cgarciae/pypeln",
+        "forks_count": "11",
+        "stargazers_count": "507",
+        "language": "Python",
+        "repositoryDescription": "Concurrent data pipelines made easy"
     },
     {
         "name": "math-as-code",
@@ -136,74 +147,20 @@
             "login": "Jam3"
         },
         "full_name": "Jam3/math-as-code",
-        "forks_count": "502",
-        "stargazers_count": "8751",
+        "forks_count": "513",
+        "stargazers_count": "8939",
         "repositoryDescription": "a cheat-sheet for mathematical notation in code form"
     },
     {
-        "name": "vnote",
+        "name": "arthas",
         "owner": {
-            "login": "tamlok"
+            "login": "alibaba"
         },
-        "full_name": "tamlok/vnote",
-        "forks_count": "271",
-        "stargazers_count": "2883",
-        "language": "C++",
-        "repositoryDescription": "A Vim-inspired note-taking application that knows programmers and Markdown better."
-    },
-    {
-        "name": "MMKV",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/MMKV",
-        "forks_count": "123",
-        "stargazers_count": "1833",
-        "language": "C++",
-        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
-    },
-    {
-        "name": "Danger-zone",
-        "owner": {
-            "login": "woj-ciech"
-        },
-        "full_name": "woj-ciech/Danger-zone",
-        "forks_count": "31",
-        "stargazers_count": "217",
-        "language": "Python",
-        "repositoryDescription": "Correlate data between domains, IPs and email addresses, present it as a graph and store everything into Elasticsearch and JSON files."
-    },
-    {
-        "name": "mlcourse.ai",
-        "owner": {
-            "login": "Yorko"
-        },
-        "full_name": "Yorko/mlcourse.ai",
-        "forks_count": "1719",
-        "stargazers_count": "2171",
-        "language": "Python",
-        "repositoryDescription": "Open Machine Learning course mlcourse.ai, both in English and Russian"
-    },
-    {
-        "name": "powerbank-PBK-ERC20",
-        "owner": {
-            "login": "powerbankofficial"
-        },
-        "full_name": "powerbankofficial/powerbank-PBK-ERC20",
-        "forks_count": "45",
-        "stargazers_count": "356",
-        "repositoryDescription": "Powerbank is an erc20 platform based coin for Mobile phone bill payment&recharging world"
-    },
-    {
-        "name": "xi-editor",
-        "owner": {
-            "login": "xi-editor"
-        },
-        "full_name": "xi-editor/xi-editor",
-        "forks_count": "488",
-        "stargazers_count": "14274",
-        "language": "Rust",
-        "repositoryDescription": "A modern editor with a backend written in Rust. https://xi-editor.github.io/xi-editor"
+        "full_name": "alibaba/arthas",
+        "forks_count": "500",
+        "stargazers_count": "3565",
+        "language": "Java",
+        "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
     {
         "name": "You-Dont-Need-Momentjs",
@@ -211,20 +168,21 @@
             "login": "you-dont-need"
         },
         "full_name": "you-dont-need/You-Dont-Need-Momentjs",
-        "forks_count": "100",
-        "stargazers_count": "5211",
+        "forks_count": "103",
+        "stargazers_count": "5394",
         "language": "JavaScript",
         "repositoryDescription": "List of date-fns or native functions which you can use to replace moment.js + ESLint Plugin"
     },
     {
-        "name": "pwc",
+        "name": "ytdl-webserver",
         "owner": {
-            "login": "zziz"
+            "login": "Algram"
         },
-        "full_name": "zziz/pwc",
-        "forks_count": "234",
-        "stargazers_count": "4137",
-        "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
+        "full_name": "Algram/ytdl-webserver",
+        "forks_count": "62",
+        "stargazers_count": "789",
+        "language": "JavaScript",
+        "repositoryDescription": "📻\nWebserver for downloading youtube videos. Ready for docker."
     },
     {
         "name": "awesome-thesis",
@@ -232,20 +190,52 @@
             "login": "ocean1"
         },
         "full_name": "ocean1/awesome-thesis",
-        "forks_count": "4",
-        "stargazers_count": "102",
+        "forks_count": "16",
+        "stargazers_count": "261",
         "repositoryDescription": "A curated list of practical tips and tricks to help you achieve an awesome CS master thesis [WIP] - contributions are welcome"
     },
     {
-        "name": "create-react-app",
+        "name": "mlcourse.ai",
         "owner": {
-            "login": "facebook"
+            "login": "Yorko"
         },
-        "full_name": "facebook/create-react-app",
-        "forks_count": "11836",
-        "stargazers_count": "55974",
-        "language": "JavaScript",
-        "repositoryDescription": "Create React apps with no build configuration."
+        "full_name": "Yorko/mlcourse.ai",
+        "forks_count": "1731",
+        "stargazers_count": "2318",
+        "language": "Python",
+        "repositoryDescription": "Open Machine Learning course mlcourse.ai, both in English and Russian"
+    },
+    {
+        "name": "plash",
+        "owner": {
+            "login": "ihucos"
+        },
+        "full_name": "ihucos/plash",
+        "forks_count": "5",
+        "stargazers_count": "188",
+        "language": "Python",
+        "repositoryDescription": "Build and run Containers"
+    },
+    {
+        "name": "pwc",
+        "owner": {
+            "login": "zziz"
+        },
+        "full_name": "zziz/pwc",
+        "forks_count": "240",
+        "stargazers_count": "4260",
+        "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
+    },
+    {
+        "name": "ClickHouse",
+        "owner": {
+            "login": "yandex"
+        },
+        "full_name": "yandex/ClickHouse",
+        "forks_count": "765",
+        "stargazers_count": "4936",
+        "language": "C++",
+        "repositoryDescription": "ClickHouse is a free analytic DBMS for big data."
     },
     {
         "name": "tensorflow",
@@ -253,10 +243,21 @@
             "login": "tensorflow"
         },
         "full_name": "tensorflow/tensorflow",
-        "forks_count": "67849",
-        "stargazers_count": "110306",
+        "forks_count": "67890",
+        "stargazers_count": "110395",
         "language": "C++",
         "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "CalendarView",
+        "owner": {
+            "login": "huanghaibin-dev"
+        },
+        "full_name": "huanghaibin-dev/CalendarView",
+        "forks_count": "483",
+        "stargazers_count": "2989",
+        "language": "Java",
+        "repositoryDescription": "Android上一个优雅、万能自定义UI、支持周视图、自定义周起始、性能高效的日历控件，支持热插拔实现的UI定制！支持标记、自定义颜色、农历、自定义月视图各种显示模式等。Canvas绘制，速度快、占用内存低，你真的想不到日历居然还可以如此优雅！An elegant, highly customized and high-performance Calendar Widget on Android."
     },
     {
         "name": "vue",
@@ -264,8 +265,8 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "16147",
-        "stargazers_count": "114706",
+        "forks_count": "16161",
+        "stargazers_count": "114789",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     }

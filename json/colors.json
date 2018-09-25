@@ -1223,6 +1223,10 @@
         "color": "#007eff",
         "url": "https://github.com/trending?l=Slash"
     },
+    "Slice": {
+        "color": "#003fa2",
+        "url": "https://github.com/trending?l=Slice"
+    },
     "Smali": {
         "color": null,
         "url": "https://github.com/trending?l=Smali"

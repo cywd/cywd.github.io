@@ -1,58 +1,14 @@
 [
     {
-        "name": "trix",
-        "owner": {
-            "login": "basecamp"
-        },
-        "full_name": "basecamp/trix",
-        "forks_count": "496",
-        "stargazers_count": "10365",
-        "language": "CoffeeScript",
-        "repositoryDescription": "A rich text editor for everyday writing"
-    },
-    {
-        "name": "os-tutorial",
-        "owner": {
-            "login": "cfenollosa"
-        },
-        "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "813",
-        "stargazers_count": "9124",
-        "language": "C",
-        "repositoryDescription": "How to create an OS from scratch"
-    },
-    {
-        "name": "MMKV",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/MMKV",
-        "forks_count": "314",
-        "stargazers_count": "3895",
-        "language": "C++",
-        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
-    },
-    {
-        "name": "kubespy",
-        "owner": {
-            "login": "pulumi"
-        },
-        "full_name": "pulumi/kubespy",
-        "forks_count": "21",
-        "stargazers_count": "600",
-        "language": "Go",
-        "repositoryDescription": "Tools for observing Kubernetes resources in real time"
-    },
-    {
-        "name": "vscode",
+        "name": "MS-DOS",
         "owner": {
             "login": "Microsoft"
         },
-        "full_name": "Microsoft/vscode",
-        "forks_count": "7763",
-        "stargazers_count": "60400",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
+        "full_name": "Microsoft/MS-DOS",
+        "forks_count": "257",
+        "stargazers_count": "2577",
+        "language": "Assembly",
+        "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
     },
     {
         "name": "30-seconds-of-code",
@@ -60,21 +16,43 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2298",
-        "stargazers_count": "22711",
+        "forks_count": "2368",
+        "stargazers_count": "23560",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful Javascript snippets that you can understand in 30 seconds or less."
     },
     {
-        "name": "awesome-algorithm",
+        "name": "os-tutorial",
         "owner": {
-            "login": "apachecn"
+            "login": "cfenollosa"
         },
-        "full_name": "apachecn/awesome-algorithm",
-        "forks_count": "596",
-        "stargazers_count": "4190",
-        "language": "Python",
-        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
+        "full_name": "cfenollosa/os-tutorial",
+        "forks_count": "837",
+        "stargazers_count": "9400",
+        "language": "C",
+        "repositoryDescription": "How to create an OS from scratch"
+    },
+    {
+        "name": "trix",
+        "owner": {
+            "login": "basecamp"
+        },
+        "full_name": "basecamp/trix",
+        "forks_count": "505",
+        "stargazers_count": "10636",
+        "language": "CoffeeScript",
+        "repositoryDescription": "A rich text editor for everyday writing"
+    },
+    {
+        "name": "MMKV",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/MMKV",
+        "forks_count": "350",
+        "stargazers_count": "4164",
+        "language": "C++",
+        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
     },
     {
         "name": "JavaGuide",
@@ -82,21 +60,21 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "1678",
-        "stargazers_count": "6737",
+        "forks_count": "1751",
+        "stargazers_count": "6984",
         "language": "Java",
         "repositoryDescription": "A core knowledge that most Java programmers need to master"
     },
     {
-        "name": "skip",
+        "name": "JCSprout",
         "owner": {
-            "login": "skiplang"
+            "login": "crossoverJie"
         },
-        "full_name": "skiplang/skip",
-        "forks_count": "26",
-        "stargazers_count": "877",
-        "language": "JavaScript",
-        "repositoryDescription": "A programming language to skip the things you have already computed"
+        "full_name": "crossoverJie/JCSprout",
+        "forks_count": "3573",
+        "stargazers_count": "14306",
+        "language": "Java",
+        "repositoryDescription": "👨‍🎓\nJava Core Sprout : basic, concurrent, algorithm"
     },
     {
         "name": "Python",
@@ -104,10 +82,130 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "3388",
-        "stargazers_count": "11424",
+        "forks_count": "3433",
+        "stargazers_count": "11655",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "awesome-algorithm",
+        "owner": {
+            "login": "apachecn"
+        },
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "634",
+        "stargazers_count": "4420",
+        "language": "Python",
+        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
+    },
+    {
+        "name": "my-mac-os",
+        "owner": {
+            "login": "nikitavoloboev"
+        },
+        "full_name": "nikitavoloboev/my-mac-os",
+        "forks_count": "457",
+        "stargazers_count": "11250",
+        "language": "CSS",
+        "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
+    },
+    {
+        "name": "kubespy",
+        "owner": {
+            "login": "pulumi"
+        },
+        "full_name": "pulumi/kubespy",
+        "forks_count": "25",
+        "stargazers_count": "777",
+        "language": "Go",
+        "repositoryDescription": "Tools for observing Kubernetes resources in real time, powered by Pulumi."
+    },
+    {
+        "name": "Algorithm_Interview_Notes-Chinese",
+        "owner": {
+            "login": "imhuay"
+        },
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "1083",
+        "stargazers_count": "4147",
+        "language": "Python",
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "mastering-modular-javascript",
+        "owner": {
+            "login": "mjavascript"
+        },
+        "full_name": "mjavascript/mastering-modular-javascript",
+        "forks_count": "101",
+        "stargazers_count": "2098",
+        "language": "HTML",
+        "repositoryDescription": "📦\nModule thinking, principles, design patterns and best practices."
+    },
+    {
+        "name": "skip",
+        "owner": {
+            "login": "skiplang"
+        },
+        "full_name": "skiplang/skip",
+        "forks_count": "30",
+        "stargazers_count": "1044",
+        "language": "JavaScript",
+        "repositoryDescription": "A programming language to skip the things you have already computed"
+    },
+    {
+        "name": "fib",
+        "owner": {
+            "login": "drujensen"
+        },
+        "full_name": "drujensen/fib",
+        "forks_count": "65",
+        "stargazers_count": "378",
+        "language": "Ruby",
+        "repositoryDescription": "Performance Benchmark of top Github languages"
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "68046",
+        "stargazers_count": "110829",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "vscode",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/vscode",
+        "forks_count": "7779",
+        "stargazers_count": "60526",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual Studio Code"
+    },
+    {
+        "name": "Neptune",
+        "owner": {
+            "login": "iqiyi"
+        },
+        "full_name": "iqiyi/Neptune",
+        "forks_count": "17",
+        "stargazers_count": "215",
+        "language": "Java",
+        "repositoryDescription": "A flexible, powerful and lightweight plugin framework for Android"
+    },
+    {
+        "name": "my-ios",
+        "owner": {
+            "login": "nikitavoloboev"
+        },
+        "full_name": "nikitavoloboev/my-ios",
+        "forks_count": "18",
+        "stargazers_count": "654",
+        "repositoryDescription": "List of applications and tools that make my iOS experience even more amazing"
     },
     {
         "name": "project-layout",
@@ -115,10 +213,54 @@
             "login": "golang-standards"
         },
         "full_name": "golang-standards/project-layout",
-        "forks_count": "269",
-        "stargazers_count": "3152",
+        "forks_count": "278",
+        "stargazers_count": "3264",
         "language": "Makefile",
         "repositoryDescription": "Standard Go Project Layout"
+    },
+    {
+        "name": "gaga",
+        "owner": {
+            "login": "duckchat"
+        },
+        "full_name": "duckchat/gaga",
+        "forks_count": "68",
+        "stargazers_count": "410",
+        "language": "PHP",
+        "repositoryDescription": "一个安全的私有聊天软件"
+    },
+    {
+        "name": "westore",
+        "owner": {
+            "login": "dntzhang"
+        },
+        "full_name": "dntzhang/westore",
+        "forks_count": "132",
+        "stargazers_count": "1274",
+        "language": "JavaScript",
+        "repositoryDescription": "世界上最小却强大的小程序框架 - 100多行代码搞定全局状态管理、跨页通讯和插件开发"
+    },
+    {
+        "name": "docsite",
+        "owner": {
+            "login": "txd-team"
+        },
+        "full_name": "txd-team/docsite",
+        "forks_count": "29",
+        "stargazers_count": "205",
+        "language": "JavaScript",
+        "repositoryDescription": "An opensource static website generator"
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "16238",
+        "stargazers_count": "115203",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
         "name": "volkswagen",
@@ -127,149 +269,8 @@
         },
         "full_name": "auchenberg/volkswagen",
         "forks_count": "159",
-        "stargazers_count": "8550",
+        "stargazers_count": "8650",
         "language": "JavaScript",
         "repositoryDescription": "🙈\nVolkswagen detects when your tests are being run in a CI server, and makes them pass."
-    },
-    {
-        "name": "tailwindcss",
-        "owner": {
-            "login": "tailwindcss"
-        },
-        "full_name": "tailwindcss/tailwindcss",
-        "forks_count": "336",
-        "stargazers_count": "6856",
-        "language": "CSS",
-        "repositoryDescription": "A utility-first CSS framework for rapid UI development."
-    },
-    {
-        "name": "variables-war",
-        "owner": {
-            "login": "kids-code-games"
-        },
-        "full_name": "kids-code-games/variables-war",
-        "forks_count": "13",
-        "stargazers_count": "250",
-        "language": "HTML",
-        "repositoryDescription": "A code playing cards game where you have to be the first to reach 42 using loops, conditions..."
-    },
-    {
-        "name": "JCSprout",
-        "owner": {
-            "login": "crossoverJie"
-        },
-        "full_name": "crossoverJie/JCSprout",
-        "forks_count": "3475",
-        "stargazers_count": "14088",
-        "language": "Java",
-        "repositoryDescription": "👨‍🎓\nJava Core Sprout : basic, concurrent, algorithm"
-    },
-    {
-        "name": "apify-js",
-        "owner": {
-            "login": "apifytech"
-        },
-        "full_name": "apifytech/apify-js",
-        "forks_count": "40",
-        "stargazers_count": "904",
-        "language": "JavaScript",
-        "repositoryDescription": "Apify SDK: The scalable web crawling and scraping library for JavaScript. Enables development of data extraction and web automation jobs (not only) with headless Chrome and Puppeteer."
-    },
-    {
-        "name": "s-tui",
-        "owner": {
-            "login": "amanusk"
-        },
-        "full_name": "amanusk/s-tui",
-        "forks_count": "34",
-        "stargazers_count": "795",
-        "language": "Python",
-        "repositoryDescription": "Terminal based CPU stress and monitoring utility"
-    },
-    {
-        "name": "Algorithm_Interview_Notes-Chinese",
-        "owner": {
-            "login": "imhuay"
-        },
-        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1038",
-        "stargazers_count": "3982",
-        "language": "Python",
-        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
-    },
-    {
-        "name": "webapp",
-        "owner": {
-            "login": "aeroflotsrc"
-        },
-        "full_name": "aeroflotsrc/webapp",
-        "forks_count": "157",
-        "stargazers_count": "225",
-        "repositoryDescription": "Web application source code Aeroflot"
-    },
-    {
-        "name": "gaga",
-        "owner": {
-            "login": "duckchat"
-        },
-        "full_name": "duckchat/gaga",
-        "forks_count": "54",
-        "stargazers_count": "291",
-        "language": "PHP",
-        "repositoryDescription": "一个安全的私有聊天软件"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "16198",
-        "stargazers_count": "115126",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "68010",
-        "stargazers_count": "110713",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
-    },
-    {
-        "name": "westore",
-        "owner": {
-            "login": "dntzhang"
-        },
-        "full_name": "dntzhang/westore",
-        "forks_count": "129",
-        "stargazers_count": "1156",
-        "language": "JavaScript",
-        "repositoryDescription": "世界上最小却强大的小程序框架 - 100多行代码搞定全局状态管理、跨页通讯和插件开发"
-    },
-    {
-        "name": "my-ios",
-        "owner": {
-            "login": "nikitavoloboev"
-        },
-        "full_name": "nikitavoloboev/my-ios",
-        "forks_count": "16",
-        "stargazers_count": "524",
-        "repositoryDescription": "List of applications and tools that make my iOS experience even more amazing"
-    },
-    {
-        "name": "fib",
-        "owner": {
-            "login": "drujensen"
-        },
-        "full_name": "drujensen/fib",
-        "forks_count": "48",
-        "stargazers_count": "235",
-        "language": "JavaScript",
-        "repositoryDescription": "Performance Benchmark of top Github languages"
     }
 ]

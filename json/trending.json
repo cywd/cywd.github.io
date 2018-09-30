@@ -5,8 +5,8 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/MS-DOS",
-        "forks_count": "257",
-        "stargazers_count": "2577",
+        "forks_count": "444",
+        "stargazers_count": "4524",
         "language": "Assembly",
         "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
     },
@@ -16,87 +16,21 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2368",
-        "stargazers_count": "23560",
+        "forks_count": "2407",
+        "stargazers_count": "24001",
         "language": "JavaScript",
-        "repositoryDescription": "Curated collection of useful Javascript snippets that you can understand in 30 seconds or less."
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
     {
-        "name": "os-tutorial",
+        "name": "solid",
         "owner": {
-            "login": "cfenollosa"
+            "login": "solid"
         },
-        "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "837",
-        "stargazers_count": "9400",
-        "language": "C",
-        "repositoryDescription": "How to create an OS from scratch"
-    },
-    {
-        "name": "trix",
-        "owner": {
-            "login": "basecamp"
-        },
-        "full_name": "basecamp/trix",
-        "forks_count": "505",
-        "stargazers_count": "10636",
-        "language": "CoffeeScript",
-        "repositoryDescription": "A rich text editor for everyday writing"
-    },
-    {
-        "name": "MMKV",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/MMKV",
-        "forks_count": "350",
-        "stargazers_count": "4164",
-        "language": "C++",
-        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "1751",
-        "stargazers_count": "6984",
-        "language": "Java",
-        "repositoryDescription": "A core knowledge that most Java programmers need to master"
-    },
-    {
-        "name": "JCSprout",
-        "owner": {
-            "login": "crossoverJie"
-        },
-        "full_name": "crossoverJie/JCSprout",
-        "forks_count": "3573",
-        "stargazers_count": "14306",
-        "language": "Java",
-        "repositoryDescription": "👨‍🎓\nJava Core Sprout : basic, concurrent, algorithm"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3433",
-        "stargazers_count": "11655",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "awesome-algorithm",
-        "owner": {
-            "login": "apachecn"
-        },
-        "full_name": "apachecn/awesome-algorithm",
-        "forks_count": "634",
-        "stargazers_count": "4420",
-        "language": "Python",
-        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
+        "full_name": "solid/solid",
+        "forks_count": "113",
+        "stargazers_count": "3161",
+        "language": "HTML",
+        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
     },
     {
         "name": "my-mac-os",
@@ -104,32 +38,142 @@
             "login": "nikitavoloboev"
         },
         "full_name": "nikitavoloboev/my-mac-os",
-        "forks_count": "457",
-        "stargazers_count": "11250",
+        "forks_count": "472",
+        "stargazers_count": "11558",
         "language": "CSS",
         "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
     },
     {
-        "name": "kubespy",
+        "name": "JavaGuide",
         "owner": {
-            "login": "pulumi"
+            "login": "Snailclimb"
         },
-        "full_name": "pulumi/kubespy",
-        "forks_count": "25",
-        "stargazers_count": "777",
-        "language": "Go",
-        "repositoryDescription": "Tools for observing Kubernetes resources in real time, powered by Pulumi."
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "1808",
+        "stargazers_count": "7247",
+        "language": "Java",
+        "repositoryDescription": "A core knowledge that most Java programmers need to master"
     },
     {
-        "name": "Algorithm_Interview_Notes-Chinese",
+        "name": "os-tutorial",
         "owner": {
-            "login": "imhuay"
+            "login": "cfenollosa"
         },
-        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1083",
-        "stargazers_count": "4147",
+        "full_name": "cfenollosa/os-tutorial",
+        "forks_count": "861",
+        "stargazers_count": "9633",
+        "language": "C",
+        "repositoryDescription": "How to create an OS from scratch"
+    },
+    {
+        "name": "meedu",
+        "owner": {
+            "login": "Qsnh"
+        },
+        "full_name": "Qsnh/meedu",
+        "forks_count": "61",
+        "stargazers_count": "261",
+        "language": "PHP",
+        "repositoryDescription": "基于Laravel开发的在线点播系统。"
+    },
+    {
+        "name": "scrcpy",
+        "owner": {
+            "login": "Genymobile"
+        },
+        "full_name": "Genymobile/scrcpy",
+        "forks_count": "434",
+        "stargazers_count": "7485",
+        "language": "C",
+        "repositoryDescription": "Display and control your Android device"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3476",
+        "stargazers_count": "11852",
         "language": "Python",
-        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "seaweedfs",
+        "owner": {
+            "login": "chrislusf"
+        },
+        "full_name": "chrislusf/seaweedfs",
+        "forks_count": "837",
+        "stargazers_count": "6068",
+        "language": "Go",
+        "repositoryDescription": "SeaweedFS is a simple and highly scalable distributed file system. There are two objectives: to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface."
+    },
+    {
+        "name": "JCSprout",
+        "owner": {
+            "login": "crossoverJie"
+        },
+        "full_name": "crossoverJie/JCSprout",
+        "forks_count": "3635",
+        "stargazers_count": "14479",
+        "language": "Java",
+        "repositoryDescription": "👨‍🎓\nJava Core Sprout : basic, concurrent, algorithm"
+    },
+    {
+        "name": "remi",
+        "owner": {
+            "login": "dddomodossola"
+        },
+        "full_name": "dddomodossola/remi",
+        "forks_count": "143",
+        "stargazers_count": "1492",
+        "language": "Python",
+        "repositoryDescription": "Python REMote Interface library. Platform independent. In about 100 Kbytes, perfect for your diet."
+    },
+    {
+        "name": "FAutoTest",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/FAutoTest",
+        "forks_count": "29",
+        "stargazers_count": "230",
+        "language": "Python",
+        "repositoryDescription": "A UI automated testing framework for H5 and applets"
+    },
+    {
+        "name": "awesome-algorithm",
+        "owner": {
+            "login": "apachecn"
+        },
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "664",
+        "stargazers_count": "4576",
+        "language": "Python",
+        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
+    },
+    {
+        "name": "trix",
+        "owner": {
+            "login": "basecamp"
+        },
+        "full_name": "basecamp/trix",
+        "forks_count": "507",
+        "stargazers_count": "10798",
+        "language": "CoffeeScript",
+        "repositoryDescription": "A rich text editor for everyday writing"
+    },
+    {
+        "name": "node-solid-server",
+        "owner": {
+            "login": "solid"
+        },
+        "full_name": "solid/node-solid-server",
+        "forks_count": "88",
+        "stargazers_count": "425",
+        "language": "JavaScript",
+        "repositoryDescription": "Solid server on top of the file-system in NodeJS"
     },
     {
         "name": "mastering-modular-javascript",
@@ -137,32 +181,32 @@
             "login": "mjavascript"
         },
         "full_name": "mjavascript/mastering-modular-javascript",
-        "forks_count": "101",
-        "stargazers_count": "2098",
+        "forks_count": "108",
+        "stargazers_count": "2240",
         "language": "HTML",
         "repositoryDescription": "📦\nModule thinking, principles, design patterns and best practices."
     },
     {
-        "name": "skip",
+        "name": "MMKV",
         "owner": {
-            "login": "skiplang"
+            "login": "Tencent"
         },
-        "full_name": "skiplang/skip",
-        "forks_count": "30",
-        "stargazers_count": "1044",
-        "language": "JavaScript",
-        "repositoryDescription": "A programming language to skip the things you have already computed"
+        "full_name": "Tencent/MMKV",
+        "forks_count": "360",
+        "stargazers_count": "4276",
+        "language": "C++",
+        "repositoryDescription": "An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS and Android."
     },
     {
-        "name": "fib",
+        "name": "immer",
         "owner": {
-            "login": "drujensen"
+            "login": "mweststrate"
         },
-        "full_name": "drujensen/fib",
-        "forks_count": "65",
-        "stargazers_count": "378",
-        "language": "Ruby",
-        "repositoryDescription": "Performance Benchmark of top Github languages"
+        "full_name": "mweststrate/immer",
+        "forks_count": "190",
+        "stargazers_count": "7236",
+        "language": "JavaScript",
+        "repositoryDescription": "Create the next immutable state by mutating the current one"
     },
     {
         "name": "tensorflow",
@@ -170,21 +214,10 @@
             "login": "tensorflow"
         },
         "full_name": "tensorflow/tensorflow",
-        "forks_count": "68046",
-        "stargazers_count": "110829",
+        "forks_count": "68063",
+        "stargazers_count": "110900",
         "language": "C++",
         "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
-    },
-    {
-        "name": "vscode",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/vscode",
-        "forks_count": "7779",
-        "stargazers_count": "60526",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
     },
     {
         "name": "Neptune",
@@ -192,64 +225,10 @@
             "login": "iqiyi"
         },
         "full_name": "iqiyi/Neptune",
-        "forks_count": "17",
-        "stargazers_count": "215",
+        "forks_count": "25",
+        "stargazers_count": "314",
         "language": "Java",
         "repositoryDescription": "A flexible, powerful and lightweight plugin framework for Android"
-    },
-    {
-        "name": "my-ios",
-        "owner": {
-            "login": "nikitavoloboev"
-        },
-        "full_name": "nikitavoloboev/my-ios",
-        "forks_count": "18",
-        "stargazers_count": "654",
-        "repositoryDescription": "List of applications and tools that make my iOS experience even more amazing"
-    },
-    {
-        "name": "project-layout",
-        "owner": {
-            "login": "golang-standards"
-        },
-        "full_name": "golang-standards/project-layout",
-        "forks_count": "278",
-        "stargazers_count": "3264",
-        "language": "Makefile",
-        "repositoryDescription": "Standard Go Project Layout"
-    },
-    {
-        "name": "gaga",
-        "owner": {
-            "login": "duckchat"
-        },
-        "full_name": "duckchat/gaga",
-        "forks_count": "68",
-        "stargazers_count": "410",
-        "language": "PHP",
-        "repositoryDescription": "一个安全的私有聊天软件"
-    },
-    {
-        "name": "westore",
-        "owner": {
-            "login": "dntzhang"
-        },
-        "full_name": "dntzhang/westore",
-        "forks_count": "132",
-        "stargazers_count": "1274",
-        "language": "JavaScript",
-        "repositoryDescription": "世界上最小却强大的小程序框架 - 100多行代码搞定全局状态管理、跨页通讯和插件开发"
-    },
-    {
-        "name": "docsite",
-        "owner": {
-            "login": "txd-team"
-        },
-        "full_name": "txd-team/docsite",
-        "forks_count": "29",
-        "stargazers_count": "205",
-        "language": "JavaScript",
-        "repositoryDescription": "An opensource static website generator"
     },
     {
         "name": "vue",
@@ -257,8 +236,8 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "16238",
-        "stargazers_count": "115203",
+        "forks_count": "16251",
+        "stargazers_count": "115286",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
@@ -269,8 +248,30 @@
         },
         "full_name": "auchenberg/volkswagen",
         "forks_count": "159",
-        "stargazers_count": "8650",
+        "stargazers_count": "8757",
         "language": "JavaScript",
         "repositoryDescription": "🙈\nVolkswagen detects when your tests are being run in a CI server, and makes them pass."
+    },
+    {
+        "name": "westore",
+        "owner": {
+            "login": "dntzhang"
+        },
+        "full_name": "dntzhang/westore",
+        "forks_count": "145",
+        "stargazers_count": "1360",
+        "language": "JavaScript",
+        "repositoryDescription": "世界上最小却强大的小程序框架 - 100多行代码搞定全局状态管理、跨页通讯和插件开发"
+    },
+    {
+        "name": "strife",
+        "owner": {
+            "login": "felixangell"
+        },
+        "full_name": "felixangell/strife",
+        "forks_count": "5",
+        "stargazers_count": "135",
+        "language": "Go",
+        "repositoryDescription": "a simple 2d game framework"
     }
 ]

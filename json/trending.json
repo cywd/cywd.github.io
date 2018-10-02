@@ -5,10 +5,21 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/MS-DOS",
-        "forks_count": "618",
-        "stargazers_count": "6139",
+        "forks_count": "811",
+        "stargazers_count": "7666",
         "language": "Assembly",
         "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
+    },
+    {
+        "name": "sourcegraph",
+        "owner": {
+            "login": "sourcegraph"
+        },
+        "full_name": "sourcegraph/sourcegraph",
+        "forks_count": "37",
+        "stargazers_count": "1143",
+        "language": "Go",
+        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
     },
     {
         "name": "solid",
@@ -16,8 +27,8 @@
             "login": "solid"
         },
         "full_name": "solid/solid",
-        "forks_count": "136",
-        "stargazers_count": "3775",
+        "forks_count": "156",
+        "stargazers_count": "4439",
         "language": "HTML",
         "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
     },
@@ -27,8 +38,8 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2449",
-        "stargazers_count": "24524",
+        "forks_count": "2496",
+        "stargazers_count": "25051",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
@@ -38,8 +49,8 @@
             "login": "nikitavoloboev"
         },
         "full_name": "nikitavoloboev/my-mac-os",
-        "forks_count": "482",
-        "stargazers_count": "11875",
+        "forks_count": "491",
+        "stargazers_count": "12312",
         "language": "CSS",
         "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
     },
@@ -49,8 +60,8 @@
             "login": "streamich"
         },
         "full_name": "streamich/libreact",
-        "forks_count": "11",
-        "stargazers_count": "374",
+        "forks_count": "18",
+        "stargazers_count": "820",
         "language": "TypeScript",
         "repositoryDescription": "Collection of useful React components"
     },
@@ -60,21 +71,31 @@
             "login": "cfenollosa"
         },
         "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "887",
-        "stargazers_count": "9886",
+        "forks_count": "901",
+        "stargazers_count": "10142",
         "language": "C",
         "repositoryDescription": "How to create an OS from scratch"
     },
     {
-        "name": "trix",
+        "name": "worker-dom",
         "owner": {
-            "login": "basecamp"
+            "login": "ampproject"
         },
-        "full_name": "basecamp/trix",
-        "forks_count": "515",
-        "stargazers_count": "11046",
-        "language": "CoffeeScript",
-        "repositoryDescription": "A rich text editor for everyday writing"
+        "full_name": "ampproject/worker-dom",
+        "forks_count": "37",
+        "stargazers_count": "1452",
+        "language": "TypeScript",
+        "repositoryDescription": "The same DOM API and Frameworks you know, but in a Web Worker."
+    },
+    {
+        "name": "first-contributions",
+        "owner": {
+            "login": "firstcontributions"
+        },
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "7707",
+        "stargazers_count": "3107",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
         "name": "Python",
@@ -82,21 +103,10 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "3509",
-        "stargazers_count": "12046",
+        "forks_count": "3559",
+        "stargazers_count": "12207",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "molten",
-        "owner": {
-            "login": "Bogdanp"
-        },
-        "full_name": "Bogdanp/molten",
-        "forks_count": "9",
-        "stargazers_count": "413",
-        "language": "Python",
-        "repositoryDescription": "A minimal, extensible, fast and productive framework for building HTTP APIs with Python 3.6 and later."
     },
     {
         "name": "roadrunner",
@@ -104,85 +114,21 @@
             "login": "spiral"
         },
         "full_name": "spiral/roadrunner",
-        "forks_count": "32",
-        "stargazers_count": "932",
+        "forks_count": "40",
+        "stargazers_count": "1115",
         "language": "Go",
         "repositoryDescription": "High-performance PHP application server, load-balancer and process manager written in Golang"
     },
     {
-        "name": "seaweedfs",
+        "name": "mac-ages",
         "owner": {
-            "login": "chrislusf"
+            "login": "hdm"
         },
-        "full_name": "chrislusf/seaweedfs",
-        "forks_count": "845",
-        "stargazers_count": "6259",
-        "language": "Go",
-        "repositoryDescription": "SeaweedFS is a simple and highly scalable distributed file system. There are two objectives: to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface."
-    },
-    {
-        "name": "mastering-modular-javascript",
-        "owner": {
-            "login": "mjavascript"
-        },
-        "full_name": "mjavascript/mastering-modular-javascript",
-        "forks_count": "115",
-        "stargazers_count": "2413",
-        "language": "HTML",
-        "repositoryDescription": "📦\nModule thinking, principles, design patterns and best practices."
-    },
-    {
-        "name": "node-solid-server",
-        "owner": {
-            "login": "solid"
-        },
-        "full_name": "solid/node-solid-server",
-        "forks_count": "100",
-        "stargazers_count": "600",
-        "language": "JavaScript",
-        "repositoryDescription": "Solid server on top of the file-system in NodeJS"
-    },
-    {
-        "name": "Newtoo",
-        "owner": {
-            "login": "FlightBlaze"
-        },
-        "full_name": "FlightBlaze/Newtoo",
-        "forks_count": "9",
-        "stargazers_count": "209",
-        "language": "C++",
-        "repositoryDescription": "Brand new web browser engine"
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "8960",
-        "stargazers_count": "57731",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
-    },
-    {
-        "name": "volkswagen",
-        "owner": {
-            "login": "auchenberg"
-        },
-        "full_name": "auchenberg/volkswagen",
-        "forks_count": "160",
-        "stargazers_count": "8891",
-        "language": "JavaScript",
-        "repositoryDescription": "🙈\nVolkswagen detects when your tests are being run in a CI server, and makes them pass."
-    },
-    {
-        "name": "microgrants",
-        "owner": {
-            "login": "nayafia"
-        },
-        "full_name": "nayafia/microgrants",
-        "forks_count": "17",
-        "stargazers_count": "436",
-        "repositoryDescription": "A list of microgrant programs for your good ideas"
+        "full_name": "hdm/mac-ages",
+        "forks_count": "16",
+        "stargazers_count": "322",
+        "language": "Ruby",
+        "repositoryDescription": "MAC address age tracking"
     },
     {
         "name": "tensorflow",
@@ -190,53 +136,64 @@
             "login": "tensorflow"
         },
         "full_name": "tensorflow/tensorflow",
-        "forks_count": "68084",
-        "stargazers_count": "111004",
+        "forks_count": "68122",
+        "stargazers_count": "111144",
         "language": "C++",
         "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     },
     {
-        "name": "weave",
+        "name": "node-solid-server",
         "owner": {
-            "login": "iov-one"
+            "login": "solid"
         },
-        "full_name": "iov-one/weave",
-        "forks_count": "5",
-        "stargazers_count": "255",
+        "full_name": "solid/node-solid-server",
+        "forks_count": "112",
+        "stargazers_count": "731",
+        "language": "JavaScript",
+        "repositoryDescription": "Solid server on top of the file-system in NodeJS"
+    },
+    {
+        "name": "microgrants",
+        "owner": {
+            "login": "nayafia"
+        },
+        "full_name": "nayafia/microgrants",
+        "forks_count": "23",
+        "stargazers_count": "579",
+        "repositoryDescription": "A list of microgrant programs for your good ideas"
+    },
+    {
+        "name": "trix",
+        "owner": {
+            "login": "basecamp"
+        },
+        "full_name": "basecamp/trix",
+        "forks_count": "519",
+        "stargazers_count": "11178",
+        "language": "CoffeeScript",
+        "repositoryDescription": "A rich text editor for everyday writing"
+    },
+    {
+        "name": "mastering-modular-javascript",
+        "owner": {
+            "login": "mjavascript"
+        },
+        "full_name": "mjavascript/mastering-modular-javascript",
+        "forks_count": "119",
+        "stargazers_count": "2550",
+        "language": "HTML",
+        "repositoryDescription": "📦\nModule thinking, principles, design patterns and best practices."
+    },
+    {
+        "name": "micromdm",
+        "owner": {
+            "login": "micromdm"
+        },
+        "full_name": "micromdm/micromdm",
+        "forks_count": "76",
+        "stargazers_count": "584",
         "language": "Go",
-        "repositoryDescription": "Easy-to-use framework to build Tendermint ABCI applications"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "1831",
-        "stargazers_count": "7338",
-        "language": "Java",
-        "repositoryDescription": "A core knowledge that most Java programmers need to master"
-    },
-    {
-        "name": "awesome-algorithm",
-        "owner": {
-            "login": "apachecn"
-        },
-        "full_name": "apachecn/awesome-algorithm",
-        "forks_count": "679",
-        "stargazers_count": "4658",
-        "language": "Python",
-        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
-    },
-    {
-        "name": "kubernetes-the-hard-way",
-        "owner": {
-            "login": "kelseyhightower"
-        },
-        "full_name": "kelseyhightower/kubernetes-the-hard-way",
-        "forks_count": "1856",
-        "stargazers_count": "11608",
-        "repositoryDescription": "Bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts."
+        "repositoryDescription": "Mobile Device Management server"
     },
     {
         "name": "vscode",
@@ -244,31 +201,75 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/vscode",
-        "forks_count": "7807",
-        "stargazers_count": "60660",
+        "forks_count": "7837",
+        "stargazers_count": "60777",
         "language": "TypeScript",
         "repositoryDescription": "Visual Studio Code"
     },
     {
-        "name": "vue",
+        "name": "lvovich",
         "owner": {
-            "login": "vuejs"
+            "login": "nodkz"
         },
-        "full_name": "vuejs/vue",
-        "forks_count": "16270",
-        "stargazers_count": "115337",
+        "full_name": "nodkz/lvovich",
+        "forks_count": "4",
+        "stargazers_count": "216",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "Склонение названий городов, определения пола по ФИО, склонения имен по падежам"
     },
     {
-        "name": "Gradients",
+        "name": "create-react-app",
         "owner": {
-            "login": "cruisediary"
+            "login": "facebook"
         },
-        "full_name": "cruisediary/Gradients",
+        "full_name": "facebook/create-react-app",
+        "forks_count": "12002",
+        "stargazers_count": "56529",
+        "language": "JavaScript",
+        "repositoryDescription": "Create React apps with no build configuration."
+    },
+    {
+        "name": "slang",
+        "owner": {
+            "login": "kylestetz"
+        },
+        "full_name": "kylestetz/slang",
         "forks_count": "5",
-        "stargazers_count": "89",
-        "language": "Swift",
-        "repositoryDescription": "🌔\nA curated collection of splendid 180+ gradients made in swift"
+        "stargazers_count": "186",
+        "language": "JavaScript",
+        "repositoryDescription": "🎤\na simple audio programming language implemented in JS"
+    },
+    {
+        "name": "seaweedfs",
+        "owner": {
+            "login": "chrislusf"
+        },
+        "full_name": "chrislusf/seaweedfs",
+        "forks_count": "850",
+        "stargazers_count": "6358",
+        "language": "Go",
+        "repositoryDescription": "SeaweedFS is a simple and highly scalable distributed file system. There are two objectives: to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface."
+    },
+    {
+        "name": "node-vulkan",
+        "owner": {
+            "login": "maierfelix"
+        },
+        "full_name": "maierfelix/node-vulkan",
+        "forks_count": "3",
+        "stargazers_count": "139",
+        "language": "C++",
+        "repositoryDescription": "Vulkan bindings for JavaScript"
+    },
+    {
+        "name": "molten",
+        "owner": {
+            "login": "Bogdanp"
+        },
+        "full_name": "Bogdanp/molten",
+        "forks_count": "13",
+        "stargazers_count": "515",
+        "language": "Python",
+        "repositoryDescription": "A minimal, extensible, fast and productive framework for building HTTP APIs with Python 3.6 and later."
     }
 ]

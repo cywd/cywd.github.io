@@ -5,10 +5,21 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/MS-DOS",
-        "forks_count": "811",
-        "stargazers_count": "7666",
+        "forks_count": "939",
+        "stargazers_count": "8570",
         "language": "Assembly",
         "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
+    },
+    {
+        "name": "ferret",
+        "owner": {
+            "login": "MontFerret"
+        },
+        "full_name": "MontFerret/ferret",
+        "forks_count": "32",
+        "stargazers_count": "988",
+        "language": "Go",
+        "repositoryDescription": "Declarative web scraping"
     },
     {
         "name": "sourcegraph",
@@ -16,21 +27,10 @@
             "login": "sourcegraph"
         },
         "full_name": "sourcegraph/sourcegraph",
-        "forks_count": "37",
-        "stargazers_count": "1143",
+        "forks_count": "64",
+        "stargazers_count": "1935",
         "language": "Go",
         "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
-    },
-    {
-        "name": "solid",
-        "owner": {
-            "login": "solid"
-        },
-        "full_name": "solid/solid",
-        "forks_count": "156",
-        "stargazers_count": "4439",
-        "language": "HTML",
-        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
     },
     {
         "name": "30-seconds-of-code",
@@ -38,10 +38,42 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2496",
-        "stargazers_count": "25051",
+        "forks_count": "2544",
+        "stargazers_count": "25518",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+    },
+    {
+        "name": "quick-SQL-cheatsheet",
+        "owner": {
+            "login": "enochtangg"
+        },
+        "full_name": "enochtangg/quick-SQL-cheatsheet",
+        "forks_count": "36",
+        "stargazers_count": "395",
+        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
+    },
+    {
+        "name": "solid",
+        "owner": {
+            "login": "solid"
+        },
+        "full_name": "solid/solid",
+        "forks_count": "167",
+        "stargazers_count": "4790",
+        "language": "HTML",
+        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
+    },
+    {
+        "name": "fastai",
+        "owner": {
+            "login": "fastai"
+        },
+        "full_name": "fastai/fastai",
+        "forks_count": "2854",
+        "stargazers_count": "7966",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "The fastai deep learning library, plus lessons and and tutorials"
     },
     {
         "name": "my-mac-os",
@@ -49,8 +81,8 @@
             "login": "nikitavoloboev"
         },
         "full_name": "nikitavoloboev/my-mac-os",
-        "forks_count": "491",
-        "stargazers_count": "12312",
+        "forks_count": "501",
+        "stargazers_count": "12600",
         "language": "CSS",
         "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
     },
@@ -60,8 +92,8 @@
             "login": "streamich"
         },
         "full_name": "streamich/libreact",
-        "forks_count": "18",
-        "stargazers_count": "820",
+        "forks_count": "23",
+        "stargazers_count": "1089",
         "language": "TypeScript",
         "repositoryDescription": "Collection of useful React components"
     },
@@ -71,21 +103,10 @@
             "login": "cfenollosa"
         },
         "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "901",
-        "stargazers_count": "10142",
+        "forks_count": "919",
+        "stargazers_count": "10353",
         "language": "C",
         "repositoryDescription": "How to create an OS from scratch"
-    },
-    {
-        "name": "worker-dom",
-        "owner": {
-            "login": "ampproject"
-        },
-        "full_name": "ampproject/worker-dom",
-        "forks_count": "37",
-        "stargazers_count": "1452",
-        "language": "TypeScript",
-        "repositoryDescription": "The same DOM API and Frameworks you know, but in a Web Worker."
     },
     {
         "name": "first-contributions",
@@ -93,20 +114,31 @@
             "login": "firstcontributions"
         },
         "full_name": "firstcontributions/first-contributions",
-        "forks_count": "7707",
-        "stargazers_count": "3107",
+        "forks_count": "7845",
+        "stargazers_count": "3215",
         "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
-        "name": "Python",
+        "name": "slang",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "kylestetz"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3559",
-        "stargazers_count": "12207",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "full_name": "kylestetz/slang",
+        "forks_count": "10",
+        "stargazers_count": "361",
+        "language": "JavaScript",
+        "repositoryDescription": "🎤\na simple audio programming language implemented in JS"
+    },
+    {
+        "name": "scrcpy",
+        "owner": {
+            "login": "Genymobile"
+        },
+        "full_name": "Genymobile/scrcpy",
+        "forks_count": "448",
+        "stargazers_count": "7795",
+        "language": "C",
+        "repositoryDescription": "Display and control your Android device"
     },
     {
         "name": "roadrunner",
@@ -114,53 +146,87 @@
             "login": "spiral"
         },
         "full_name": "spiral/roadrunner",
-        "forks_count": "40",
-        "stargazers_count": "1115",
+        "forks_count": "43",
+        "stargazers_count": "1272",
         "language": "Go",
         "repositoryDescription": "High-performance PHP application server, load-balancer and process manager written in Golang"
     },
     {
-        "name": "mac-ages",
+        "name": "create-react-app",
         "owner": {
-            "login": "hdm"
+            "login": "facebook"
         },
-        "full_name": "hdm/mac-ages",
-        "forks_count": "16",
-        "stargazers_count": "322",
-        "language": "Ruby",
-        "repositoryDescription": "MAC address age tracking"
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "68122",
-        "stargazers_count": "111144",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
-    },
-    {
-        "name": "node-solid-server",
-        "owner": {
-            "login": "solid"
-        },
-        "full_name": "solid/node-solid-server",
-        "forks_count": "112",
-        "stargazers_count": "731",
+        "full_name": "facebook/create-react-app",
+        "forks_count": "12039",
+        "stargazers_count": "56650",
         "language": "JavaScript",
-        "repositoryDescription": "Solid server on top of the file-system in NodeJS"
+        "repositoryDescription": "Create React apps with no build configuration."
     },
     {
-        "name": "microgrants",
+        "name": "nebular",
         "owner": {
-            "login": "nayafia"
+            "login": "akveo"
         },
-        "full_name": "nayafia/microgrants",
-        "forks_count": "23",
-        "stargazers_count": "579",
-        "repositoryDescription": "A list of microgrant programs for your good ideas"
+        "full_name": "akveo/nebular",
+        "forks_count": "527",
+        "stargazers_count": "2309",
+        "language": "TypeScript",
+        "repositoryDescription": "Angular 6 Components, Auth and Security"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3600",
+        "stargazers_count": "12329",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "hacktoberfest",
+        "owner": {
+            "login": "lingonsaft"
+        },
+        "full_name": "lingonsaft/hacktoberfest",
+        "forks_count": "381",
+        "stargazers_count": "91",
+        "language": "HTML",
+        "repositoryDescription": "Hacktoberfest 2018"
+    },
+    {
+        "name": "vscode",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/vscode",
+        "forks_count": "7860",
+        "stargazers_count": "60872",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual Studio Code"
+    },
+    {
+        "name": "cosmos",
+        "owner": {
+            "login": "OpenGenus"
+        },
+        "full_name": "OpenGenus/cosmos",
+        "forks_count": "2376",
+        "stargazers_count": "9923",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Algorithms that run our universe | Your personal library of every algorithm and data structure code that you will ever encounter | Ask us anything at our forum"
+    },
+    {
+        "name": "pytorch",
+        "owner": {
+            "login": "pytorch"
+        },
+        "full_name": "pytorch/pytorch",
+        "forks_count": "4605",
+        "stargazers_count": "19276",
+        "language": "C++",
+        "repositoryDescription": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
     },
     {
         "name": "trix",
@@ -168,8 +234,8 @@
             "login": "basecamp"
         },
         "full_name": "basecamp/trix",
-        "forks_count": "519",
-        "stargazers_count": "11178",
+        "forks_count": "525",
+        "stargazers_count": "11299",
         "language": "CoffeeScript",
         "repositoryDescription": "A rich text editor for everyday writing"
     },
@@ -179,97 +245,31 @@
             "login": "mjavascript"
         },
         "full_name": "mjavascript/mastering-modular-javascript",
-        "forks_count": "119",
-        "stargazers_count": "2550",
+        "forks_count": "124",
+        "stargazers_count": "2655",
         "language": "HTML",
         "repositoryDescription": "📦\nModule thinking, principles, design patterns and best practices."
     },
     {
-        "name": "micromdm",
+        "name": "tensorflow",
         "owner": {
-            "login": "micromdm"
+            "login": "tensorflow"
         },
-        "full_name": "micromdm/micromdm",
-        "forks_count": "76",
-        "stargazers_count": "584",
-        "language": "Go",
-        "repositoryDescription": "Mobile Device Management server"
-    },
-    {
-        "name": "vscode",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/vscode",
-        "forks_count": "7837",
-        "stargazers_count": "60777",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
-    },
-    {
-        "name": "lvovich",
-        "owner": {
-            "login": "nodkz"
-        },
-        "full_name": "nodkz/lvovich",
-        "forks_count": "4",
-        "stargazers_count": "216",
-        "language": "JavaScript",
-        "repositoryDescription": "Склонение названий городов, определения пола по ФИО, склонения имен по падежам"
-    },
-    {
-        "name": "create-react-app",
-        "owner": {
-            "login": "facebook"
-        },
-        "full_name": "facebook/create-react-app",
-        "forks_count": "12002",
-        "stargazers_count": "56529",
-        "language": "JavaScript",
-        "repositoryDescription": "Create React apps with no build configuration."
-    },
-    {
-        "name": "slang",
-        "owner": {
-            "login": "kylestetz"
-        },
-        "full_name": "kylestetz/slang",
-        "forks_count": "5",
-        "stargazers_count": "186",
-        "language": "JavaScript",
-        "repositoryDescription": "🎤\na simple audio programming language implemented in JS"
-    },
-    {
-        "name": "seaweedfs",
-        "owner": {
-            "login": "chrislusf"
-        },
-        "full_name": "chrislusf/seaweedfs",
-        "forks_count": "850",
-        "stargazers_count": "6358",
-        "language": "Go",
-        "repositoryDescription": "SeaweedFS is a simple and highly scalable distributed file system. There are two objectives: to store billions of files! to serve the files fast! SeaweedFS implements an object store with O(1) disk seek, and an optional Filer with POSIX interface."
-    },
-    {
-        "name": "node-vulkan",
-        "owner": {
-            "login": "maierfelix"
-        },
-        "full_name": "maierfelix/node-vulkan",
-        "forks_count": "3",
-        "stargazers_count": "139",
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "68159",
+        "stargazers_count": "111203",
         "language": "C++",
-        "repositoryDescription": "Vulkan bindings for JavaScript"
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     },
     {
-        "name": "molten",
+        "name": "mac-ages",
         "owner": {
-            "login": "Bogdanp"
+            "login": "hdm"
         },
-        "full_name": "Bogdanp/molten",
-        "forks_count": "13",
-        "stargazers_count": "515",
-        "language": "Python",
-        "repositoryDescription": "A minimal, extensible, fast and productive framework for building HTTP APIs with Python 3.6 and later."
+        "full_name": "hdm/mac-ages",
+        "forks_count": "18",
+        "stargazers_count": "401",
+        "language": "Ruby",
+        "repositoryDescription": "MAC address age tracking"
     }
 ]

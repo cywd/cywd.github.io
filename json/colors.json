@@ -1439,6 +1439,10 @@
         "color": "#4B6C4B",
         "url": "https://github.com/trending?l=Yacc"
     },
+    "YARA": {
+        "color": "#220000",
+        "url": "https://github.com/trending?l=YARA"
+    },
     "YASnippet": {
         "color": "#32AB90",
         "url": "https://github.com/trending?l=YASnippet"

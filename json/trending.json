@@ -5,10 +5,21 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1320",
-        "stargazers_count": "5027",
+        "forks_count": "1430",
+        "stargazers_count": "5421",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "brigadier",
+        "owner": {
+            "login": "Mojang"
+        },
+        "full_name": "Mojang/brigadier",
+        "forks_count": "49",
+        "stargazers_count": "675",
+        "language": "Java",
+        "repositoryDescription": "Brigadier is a command parser & dispatcher, designed and developed for Minecraft: Java Edition."
     },
     {
         "name": "awesome-vscode",
@@ -16,8 +27,8 @@
             "login": "viatsko"
         },
         "full_name": "viatsko/awesome-vscode",
-        "forks_count": "392",
-        "stargazers_count": "7729",
+        "forks_count": "404",
+        "stargazers_count": "8096",
         "language": "JavaScript",
         "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
     },
@@ -27,10 +38,21 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/MS-DOS",
-        "forks_count": "1196",
-        "stargazers_count": "9950",
+        "forks_count": "1260",
+        "stargazers_count": "10227",
         "language": "Assembly",
         "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
+    },
+    {
+        "name": "md-page",
+        "owner": {
+            "login": "oscarmorrison"
+        },
+        "full_name": "oscarmorrison/md-page",
+        "forks_count": "11",
+        "stargazers_count": "324",
+        "language": "JavaScript",
+        "repositoryDescription": "📝\ncreate a webpage with just markdown"
     },
     {
         "name": "CS-Notes",
@@ -38,150 +60,9 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "11098",
-        "stargazers_count": "37323",
+        "forks_count": "11147",
+        "stargazers_count": "37492",
         "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "30-seconds-of-code",
-        "owner": {
-            "login": "30-seconds"
-        },
-        "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2661",
-        "stargazers_count": "26442",
-        "language": "JavaScript",
-        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
-    },
-    {
-        "name": "quick-SQL-cheatsheet",
-        "owner": {
-            "login": "enochtangg"
-        },
-        "full_name": "enochtangg/quick-SQL-cheatsheet",
-        "forks_count": "112",
-        "stargazers_count": "1396",
-        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
-    },
-    {
-        "name": "infer",
-        "owner": {
-            "login": "dotnet"
-        },
-        "full_name": "dotnet/infer",
-        "forks_count": "34",
-        "stargazers_count": "234",
-        "language": "C#",
-        "repositoryDescription": "Infer.NET is a framework for running Bayesian inference in graphical models"
-    },
-    {
-        "name": "ferret",
-        "owner": {
-            "login": "MontFerret"
-        },
-        "full_name": "MontFerret/ferret",
-        "forks_count": "63",
-        "stargazers_count": "1784",
-        "language": "Go",
-        "repositoryDescription": "Declarative web scraping"
-    },
-    {
-        "name": "first-contributions",
-        "owner": {
-            "login": "firstcontributions"
-        },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "8219",
-        "stargazers_count": "3400",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
-    },
-    {
-        "name": "clashX",
-        "owner": {
-            "login": "yichengchen"
-        },
-        "full_name": "yichengchen/clashX",
-        "forks_count": "64",
-        "stargazers_count": "644",
-        "language": "Swift",
-        "repositoryDescription": "A rule based custom proxy with GUI for Mac base on clash."
-    },
-    {
-        "name": "sourcegraph",
-        "owner": {
-            "login": "sourcegraph"
-        },
-        "full_name": "sourcegraph/sourcegraph",
-        "forks_count": "113",
-        "stargazers_count": "2630",
-        "language": "Go",
-        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
-    },
-    {
-        "name": "sotawhat",
-        "owner": {
-            "login": "chiphuyen"
-        },
-        "full_name": "chiphuyen/sotawhat",
-        "forks_count": "37",
-        "stargazers_count": "312",
-        "language": "Python",
-        "repositoryDescription": "Returns latest research results by crawling arxiv papers and summarizing abstracts. Helps you stay afloat with so many new papers everyday."
-    },
-    {
-        "name": "my-mac-os",
-        "owner": {
-            "login": "nikitavoloboev"
-        },
-        "full_name": "nikitavoloboev/my-mac-os",
-        "forks_count": "528",
-        "stargazers_count": "13050",
-        "language": "CSS",
-        "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3685",
-        "stargazers_count": "12691",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "solid",
-        "owner": {
-            "login": "solid"
-        },
-        "full_name": "solid/solid",
-        "forks_count": "188",
-        "stargazers_count": "5263",
-        "language": "HTML",
-        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
-    },
-    {
-        "name": "os-tutorial",
-        "owner": {
-            "login": "cfenollosa"
-        },
-        "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "958",
-        "stargazers_count": "10716",
-        "language": "C",
-        "repositoryDescription": "How to create an OS from scratch"
-    },
-    {
-        "name": "hacktoberfest",
-        "owner": {
-            "login": "lingonsaft"
-        },
-        "full_name": "lingonsaft/hacktoberfest",
-        "forks_count": "700",
-        "stargazers_count": "172",
-        "language": "HTML",
-        "repositoryDescription": "Hacktoberfest 2018. Don't forget to spread love and if you like give us a\n⭐️"
     },
     {
         "name": "weave",
@@ -189,76 +70,54 @@
             "login": "iov-one"
         },
         "full_name": "iov-one/weave",
-        "forks_count": "8",
-        "stargazers_count": "764",
+        "forks_count": "10",
+        "stargazers_count": "977",
         "language": "Go",
         "repositoryDescription": "Easy-to-use framework to build Tendermint ABCI applications"
     },
     {
-        "name": "fastai",
+        "name": "DataFixerUpper",
         "owner": {
-            "login": "fastai"
+            "login": "Mojang"
         },
-        "full_name": "fastai/fastai",
-        "forks_count": "2924",
-        "stargazers_count": "8349",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "The fastai deep learning library, plus lessons and and tutorials"
+        "full_name": "Mojang/DataFixerUpper",
+        "forks_count": "11",
+        "stargazers_count": "214",
+        "language": "Java",
+        "repositoryDescription": "A set of utilities designed for incremental building, merging and optimization of data transformations."
     },
     {
-        "name": "ekill",
+        "name": "30-seconds-of-code",
         "owner": {
-            "login": "rhardih"
+            "login": "30-seconds"
         },
-        "full_name": "rhardih/ekill",
-        "forks_count": "8",
-        "stargazers_count": "477",
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "2681",
+        "stargazers_count": "26623",
         "language": "JavaScript",
-        "repositoryDescription": "Chrome extension to nuke annoying elements in a web page"
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
     {
-        "name": "tensorflow",
+        "name": "solid",
         "owner": {
-            "login": "tensorflow"
+            "login": "solid"
         },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "68247",
-        "stargazers_count": "111405",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+        "full_name": "solid/solid",
+        "forks_count": "197",
+        "stargazers_count": "5416",
+        "language": "HTML",
+        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
     },
     {
-        "name": "create-react-app",
+        "name": "trigonoparty",
         "owner": {
-            "login": "facebook"
+            "login": "ramesaliyev"
         },
-        "full_name": "facebook/create-react-app",
-        "forks_count": "12133",
-        "stargazers_count": "56881",
+        "full_name": "ramesaliyev/trigonoparty",
+        "forks_count": "7",
+        "stargazers_count": "177",
         "language": "JavaScript",
-        "repositoryDescription": "Create React apps with no build configuration."
-    },
-    {
-        "name": "libreact",
-        "owner": {
-            "login": "streamich"
-        },
-        "full_name": "streamich/libreact",
-        "forks_count": "32",
-        "stargazers_count": "1412",
-        "language": "TypeScript",
-        "repositoryDescription": "Collection of useful React components"
-    },
-    {
-        "name": "byob",
-        "owner": {
-            "login": "malwaredllc"
-        },
-        "full_name": "malwaredllc/byob",
-        "forks_count": "283",
-        "stargazers_count": "1986",
-        "language": "Python",
-        "repositoryDescription": "BYOB (Build Your Own Botnet)"
+        "repositoryDescription": "Simple Trigonometry Visualisation with Pure JavaScript."
     },
     {
         "name": "Hello-world",
@@ -266,9 +125,150 @@
             "login": "Hacktoberfest-2018"
         },
         "full_name": "Hacktoberfest-2018/Hello-world",
-        "forks_count": "320",
-        "stargazers_count": "66",
-        "language": "HTML",
+        "forks_count": "458",
+        "stargazers_count": "139",
+        "language": "Jupyter Notebook",
         "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
+    },
+    {
+        "name": "first-contributions",
+        "owner": {
+            "login": "firstcontributions"
+        },
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "8364",
+        "stargazers_count": "3462",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+    },
+    {
+        "name": "ekill",
+        "owner": {
+            "login": "rhardih"
+        },
+        "full_name": "rhardih/ekill",
+        "forks_count": "10",
+        "stargazers_count": "601",
+        "language": "JavaScript",
+        "repositoryDescription": "Chrome extension to nuke annoying elements in a web page"
+    },
+    {
+        "name": "sysget",
+        "owner": {
+            "login": "emilengler"
+        },
+        "full_name": "emilengler/sysget",
+        "forks_count": "11",
+        "stargazers_count": "153",
+        "language": "C++",
+        "repositoryDescription": "One package manager to rule them all"
+    },
+    {
+        "name": "ferret",
+        "owner": {
+            "login": "MontFerret"
+        },
+        "full_name": "MontFerret/ferret",
+        "forks_count": "69",
+        "stargazers_count": "1920",
+        "language": "Go",
+        "repositoryDescription": "Declarative web scraping"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3694",
+        "stargazers_count": "12814",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "clashX",
+        "owner": {
+            "login": "yichengchen"
+        },
+        "full_name": "yichengchen/clashX",
+        "forks_count": "72",
+        "stargazers_count": "753",
+        "language": "Swift",
+        "repositoryDescription": "A rule based custom proxy with GUI for Mac base on clash."
+    },
+    {
+        "name": "infer",
+        "owner": {
+            "login": "dotnet"
+        },
+        "full_name": "dotnet/infer",
+        "forks_count": "51",
+        "stargazers_count": "340",
+        "language": "C#",
+        "repositoryDescription": "Infer.NET is a framework for running Bayesian inference in graphical models"
+    },
+    {
+        "name": "sourcegraph",
+        "owner": {
+            "login": "sourcegraph"
+        },
+        "full_name": "sourcegraph/sourcegraph",
+        "forks_count": "118",
+        "stargazers_count": "2739",
+        "language": "Go",
+        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
+    },
+    {
+        "name": "quick-SQL-cheatsheet",
+        "owner": {
+            "login": "enochtangg"
+        },
+        "full_name": "enochtangg/quick-SQL-cheatsheet",
+        "forks_count": "122",
+        "stargazers_count": "1500",
+        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
+    },
+    {
+        "name": "island",
+        "owner": {
+            "login": "oasisfeng"
+        },
+        "full_name": "oasisfeng/island",
+        "forks_count": "7",
+        "stargazers_count": "105",
+        "language": "Java",
+        "repositoryDescription": "Island for Android"
+    },
+    {
+        "name": "my-mac-os",
+        "owner": {
+            "login": "nikitavoloboev"
+        },
+        "full_name": "nikitavoloboev/my-mac-os",
+        "forks_count": "535",
+        "stargazers_count": "13138",
+        "language": "CSS",
+        "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
+    },
+    {
+        "name": "nsfw",
+        "owner": {
+            "login": "Axosoft"
+        },
+        "full_name": "Axosoft/nsfw",
+        "forks_count": "37",
+        "stargazers_count": "397",
+        "language": "C++",
+        "repositoryDescription": "A super fast and scaleable file watcher that provides a consistent interface on Linux, OSX and Windows"
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "68279",
+        "stargazers_count": "111458",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     }
 ]

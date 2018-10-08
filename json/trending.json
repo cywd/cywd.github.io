@@ -1,12 +1,23 @@
 [
     {
+        "name": "awesome-vscode",
+        "owner": {
+            "login": "viatsko"
+        },
+        "full_name": "viatsko/awesome-vscode",
+        "forks_count": "428",
+        "stargazers_count": "8755",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
+    },
+    {
         "name": "Algorithm_Interview_Notes-Chinese",
         "owner": {
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1430",
-        "stargazers_count": "5421",
+        "forks_count": "1554",
+        "stargazers_count": "5837",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
     },
@@ -16,21 +27,21 @@
             "login": "Mojang"
         },
         "full_name": "Mojang/brigadier",
-        "forks_count": "49",
-        "stargazers_count": "675",
+        "forks_count": "97",
+        "stargazers_count": "1135",
         "language": "Java",
         "repositoryDescription": "Brigadier is a command parser & dispatcher, designed and developed for Minecraft: Java Edition."
     },
     {
-        "name": "awesome-vscode",
+        "name": "rete",
         "owner": {
-            "login": "viatsko"
+            "login": "retejs"
         },
-        "full_name": "viatsko/awesome-vscode",
-        "forks_count": "404",
-        "stargazers_count": "8096",
+        "full_name": "retejs/rete",
+        "forks_count": "122",
+        "stargazers_count": "2048",
         "language": "JavaScript",
-        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
+        "repositoryDescription": "JavaScript framework for visual programming and creating node editor"
     },
     {
         "name": "MS-DOS",
@@ -38,53 +49,10 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/MS-DOS",
-        "forks_count": "1260",
-        "stargazers_count": "10227",
+        "forks_count": "1324",
+        "stargazers_count": "10609",
         "language": "Assembly",
         "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
-    },
-    {
-        "name": "md-page",
-        "owner": {
-            "login": "oscarmorrison"
-        },
-        "full_name": "oscarmorrison/md-page",
-        "forks_count": "11",
-        "stargazers_count": "324",
-        "language": "JavaScript",
-        "repositoryDescription": "📝\ncreate a webpage with just markdown"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "11147",
-        "stargazers_count": "37492",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "weave",
-        "owner": {
-            "login": "iov-one"
-        },
-        "full_name": "iov-one/weave",
-        "forks_count": "10",
-        "stargazers_count": "977",
-        "language": "Go",
-        "repositoryDescription": "Easy-to-use framework to build Tendermint ABCI applications"
-    },
-    {
-        "name": "DataFixerUpper",
-        "owner": {
-            "login": "Mojang"
-        },
-        "full_name": "Mojang/DataFixerUpper",
-        "forks_count": "11",
-        "stargazers_count": "214",
-        "language": "Java",
-        "repositoryDescription": "A set of utilities designed for incremental building, merging and optimization of data transformations."
     },
     {
         "name": "30-seconds-of-code",
@@ -92,32 +60,107 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2681",
-        "stargazers_count": "26623",
+        "forks_count": "2715",
+        "stargazers_count": "27020",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
     {
-        "name": "solid",
+        "name": "nvtop",
         "owner": {
-            "login": "solid"
+            "login": "Syllo"
         },
-        "full_name": "solid/solid",
-        "forks_count": "197",
-        "stargazers_count": "5416",
-        "language": "HTML",
-        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
+        "full_name": "Syllo/nvtop",
+        "forks_count": "15",
+        "stargazers_count": "510",
+        "language": "C",
+        "repositoryDescription": "NVIDIA GPUs htop like monitoring tool"
     },
     {
-        "name": "trigonoparty",
+        "name": "interviews",
         "owner": {
-            "login": "ramesaliyev"
+            "login": "kdn251"
         },
-        "full_name": "ramesaliyev/trigonoparty",
-        "forks_count": "7",
-        "stargazers_count": "177",
-        "language": "JavaScript",
-        "repositoryDescription": "Simple Trigonometry Visualisation with Pure JavaScript."
+        "full_name": "kdn251/interviews",
+        "forks_count": "5195",
+        "stargazers_count": "27333",
+        "language": "Java",
+        "repositoryDescription": "Everything you need to know to get the job."
+    },
+    {
+        "name": "ferret",
+        "owner": {
+            "login": "MontFerret"
+        },
+        "full_name": "MontFerret/ferret",
+        "forks_count": "76",
+        "stargazers_count": "2173",
+        "language": "Go",
+        "repositoryDescription": "Declarative web scraping"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "11213",
+        "stargazers_count": "37695",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
+    },
+    {
+        "name": "sourcegraph",
+        "owner": {
+            "login": "sourcegraph"
+        },
+        "full_name": "sourcegraph/sourcegraph",
+        "forks_count": "131",
+        "stargazers_count": "2963",
+        "language": "Go",
+        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "1982",
+        "stargazers_count": "7828",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "DataFixerUpper",
+        "owner": {
+            "login": "Mojang"
+        },
+        "full_name": "Mojang/DataFixerUpper",
+        "forks_count": "32",
+        "stargazers_count": "415",
+        "language": "Java",
+        "repositoryDescription": "A set of utilities designed for incremental building, merging and optimization of data transformations."
+    },
+    {
+        "name": "quick-SQL-cheatsheet",
+        "owner": {
+            "login": "enochtangg"
+        },
+        "full_name": "enochtangg/quick-SQL-cheatsheet",
+        "forks_count": "138",
+        "stargazers_count": "1701",
+        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
+    },
+    {
+        "name": "infer",
+        "owner": {
+            "login": "dotnet"
+        },
+        "full_name": "dotnet/infer",
+        "forks_count": "78",
+        "stargazers_count": "507",
+        "language": "C#",
+        "repositoryDescription": "Infer.NET is a framework for running Bayesian inference in graphical models"
     },
     {
         "name": "Hello-world",
@@ -125,20 +168,21 @@
             "login": "Hacktoberfest-2018"
         },
         "full_name": "Hacktoberfest-2018/Hello-world",
-        "forks_count": "458",
-        "stargazers_count": "139",
-        "language": "Jupyter Notebook",
+        "forks_count": "616",
+        "stargazers_count": "234",
+        "language": "Java",
         "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
     },
     {
-        "name": "first-contributions",
+        "name": "Python",
         "owner": {
-            "login": "firstcontributions"
+            "login": "TheAlgorithms"
         },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "8364",
-        "stargazers_count": "3462",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3722",
+        "stargazers_count": "12962",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "ekill",
@@ -146,8 +190,8 @@
             "login": "rhardih"
         },
         "full_name": "rhardih/ekill",
-        "forks_count": "10",
-        "stargazers_count": "601",
+        "forks_count": "13",
+        "stargazers_count": "759",
         "language": "JavaScript",
         "repositoryDescription": "Chrome extension to nuke annoying elements in a web page"
     },
@@ -157,75 +201,64 @@
             "login": "emilengler"
         },
         "full_name": "emilengler/sysget",
-        "forks_count": "11",
-        "stargazers_count": "153",
+        "forks_count": "15",
+        "stargazers_count": "294",
         "language": "C++",
         "repositoryDescription": "One package manager to rule them all"
     },
     {
-        "name": "ferret",
+        "name": "symphony",
         "owner": {
-            "login": "MontFerret"
+            "login": "b3log"
         },
-        "full_name": "MontFerret/ferret",
-        "forks_count": "69",
-        "stargazers_count": "1920",
-        "language": "Go",
-        "repositoryDescription": "Declarative web scraping"
+        "full_name": "b3log/symphony",
+        "forks_count": "1571",
+        "stargazers_count": "5342",
+        "language": "Java",
+        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
     },
     {
-        "name": "Python",
+        "name": "first-contributions",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "firstcontributions"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3694",
-        "stargazers_count": "12814",
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "8489",
+        "stargazers_count": "3532",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+    },
+    {
+        "name": "aiortc",
+        "owner": {
+            "login": "jlaine"
+        },
+        "full_name": "jlaine/aiortc",
+        "forks_count": "41",
+        "stargazers_count": "365",
         "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "repositoryDescription": "WebRTC and ORTC implementation for Python using asyncio"
     },
     {
-        "name": "clashX",
+        "name": "solid",
         "owner": {
-            "login": "yichengchen"
+            "login": "solid"
         },
-        "full_name": "yichengchen/clashX",
-        "forks_count": "72",
-        "stargazers_count": "753",
-        "language": "Swift",
-        "repositoryDescription": "A rule based custom proxy with GUI for Mac base on clash."
+        "full_name": "solid/solid",
+        "forks_count": "203",
+        "stargazers_count": "5553",
+        "language": "HTML",
+        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
     },
     {
-        "name": "infer",
+        "name": "Porcupine",
         "owner": {
-            "login": "dotnet"
+            "login": "Picovoice"
         },
-        "full_name": "dotnet/infer",
-        "forks_count": "51",
-        "stargazers_count": "340",
-        "language": "C#",
-        "repositoryDescription": "Infer.NET is a framework for running Bayesian inference in graphical models"
-    },
-    {
-        "name": "sourcegraph",
-        "owner": {
-            "login": "sourcegraph"
-        },
-        "full_name": "sourcegraph/sourcegraph",
-        "forks_count": "118",
-        "stargazers_count": "2739",
-        "language": "Go",
-        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
-    },
-    {
-        "name": "quick-SQL-cheatsheet",
-        "owner": {
-            "login": "enochtangg"
-        },
-        "full_name": "enochtangg/quick-SQL-cheatsheet",
-        "forks_count": "122",
-        "stargazers_count": "1500",
-        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
+        "full_name": "Picovoice/Porcupine",
+        "forks_count": "76",
+        "stargazers_count": "809",
+        "language": "C",
+        "repositoryDescription": "On-device wake word detection engine powered by deep learning."
     },
     {
         "name": "island",
@@ -233,42 +266,9 @@
             "login": "oasisfeng"
         },
         "full_name": "oasisfeng/island",
-        "forks_count": "7",
-        "stargazers_count": "105",
+        "forks_count": "17",
+        "stargazers_count": "232",
         "language": "Java",
         "repositoryDescription": "Island for Android"
-    },
-    {
-        "name": "my-mac-os",
-        "owner": {
-            "login": "nikitavoloboev"
-        },
-        "full_name": "nikitavoloboev/my-mac-os",
-        "forks_count": "535",
-        "stargazers_count": "13138",
-        "language": "CSS",
-        "repositoryDescription": "List of applications and tools that make my macOS experience even more amazing"
-    },
-    {
-        "name": "nsfw",
-        "owner": {
-            "login": "Axosoft"
-        },
-        "full_name": "Axosoft/nsfw",
-        "forks_count": "37",
-        "stargazers_count": "397",
-        "language": "C++",
-        "repositoryDescription": "A super fast and scaleable file watcher that provides a consistent interface on Linux, OSX and Windows"
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "68279",
-        "stargazers_count": "111458",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     }
 ]

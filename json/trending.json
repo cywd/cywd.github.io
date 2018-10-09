@@ -5,8 +5,8 @@
             "login": "viatsko"
         },
         "full_name": "viatsko/awesome-vscode",
-        "forks_count": "428",
-        "stargazers_count": "8755",
+        "forks_count": "455",
+        "stargazers_count": "9527",
         "language": "JavaScript",
         "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
     },
@@ -16,43 +16,10 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1554",
-        "stargazers_count": "5837",
+        "forks_count": "1642",
+        "stargazers_count": "6188",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
-    },
-    {
-        "name": "brigadier",
-        "owner": {
-            "login": "Mojang"
-        },
-        "full_name": "Mojang/brigadier",
-        "forks_count": "97",
-        "stargazers_count": "1135",
-        "language": "Java",
-        "repositoryDescription": "Brigadier is a command parser & dispatcher, designed and developed for Minecraft: Java Edition."
-    },
-    {
-        "name": "rete",
-        "owner": {
-            "login": "retejs"
-        },
-        "full_name": "retejs/rete",
-        "forks_count": "122",
-        "stargazers_count": "2048",
-        "language": "JavaScript",
-        "repositoryDescription": "JavaScript framework for visual programming and creating node editor"
-    },
-    {
-        "name": "MS-DOS",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/MS-DOS",
-        "forks_count": "1324",
-        "stargazers_count": "10609",
-        "language": "Assembly",
-        "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
     },
     {
         "name": "30-seconds-of-code",
@@ -60,8 +27,8 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2715",
-        "stargazers_count": "27020",
+        "forks_count": "2756",
+        "stargazers_count": "27392",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
@@ -71,161 +38,10 @@
             "login": "Syllo"
         },
         "full_name": "Syllo/nvtop",
-        "forks_count": "15",
-        "stargazers_count": "510",
+        "forks_count": "19",
+        "stargazers_count": "876",
         "language": "C",
         "repositoryDescription": "NVIDIA GPUs htop like monitoring tool"
-    },
-    {
-        "name": "interviews",
-        "owner": {
-            "login": "kdn251"
-        },
-        "full_name": "kdn251/interviews",
-        "forks_count": "5195",
-        "stargazers_count": "27333",
-        "language": "Java",
-        "repositoryDescription": "Everything you need to know to get the job."
-    },
-    {
-        "name": "ferret",
-        "owner": {
-            "login": "MontFerret"
-        },
-        "full_name": "MontFerret/ferret",
-        "forks_count": "76",
-        "stargazers_count": "2173",
-        "language": "Go",
-        "repositoryDescription": "Declarative web scraping"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "11213",
-        "stargazers_count": "37695",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "sourcegraph",
-        "owner": {
-            "login": "sourcegraph"
-        },
-        "full_name": "sourcegraph/sourcegraph",
-        "forks_count": "131",
-        "stargazers_count": "2963",
-        "language": "Go",
-        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "1982",
-        "stargazers_count": "7828",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "DataFixerUpper",
-        "owner": {
-            "login": "Mojang"
-        },
-        "full_name": "Mojang/DataFixerUpper",
-        "forks_count": "32",
-        "stargazers_count": "415",
-        "language": "Java",
-        "repositoryDescription": "A set of utilities designed for incremental building, merging and optimization of data transformations."
-    },
-    {
-        "name": "quick-SQL-cheatsheet",
-        "owner": {
-            "login": "enochtangg"
-        },
-        "full_name": "enochtangg/quick-SQL-cheatsheet",
-        "forks_count": "138",
-        "stargazers_count": "1701",
-        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
-    },
-    {
-        "name": "infer",
-        "owner": {
-            "login": "dotnet"
-        },
-        "full_name": "dotnet/infer",
-        "forks_count": "78",
-        "stargazers_count": "507",
-        "language": "C#",
-        "repositoryDescription": "Infer.NET is a framework for running Bayesian inference in graphical models"
-    },
-    {
-        "name": "Hello-world",
-        "owner": {
-            "login": "Hacktoberfest-2018"
-        },
-        "full_name": "Hacktoberfest-2018/Hello-world",
-        "forks_count": "616",
-        "stargazers_count": "234",
-        "language": "Java",
-        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3722",
-        "stargazers_count": "12962",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "ekill",
-        "owner": {
-            "login": "rhardih"
-        },
-        "full_name": "rhardih/ekill",
-        "forks_count": "13",
-        "stargazers_count": "759",
-        "language": "JavaScript",
-        "repositoryDescription": "Chrome extension to nuke annoying elements in a web page"
-    },
-    {
-        "name": "sysget",
-        "owner": {
-            "login": "emilengler"
-        },
-        "full_name": "emilengler/sysget",
-        "forks_count": "15",
-        "stargazers_count": "294",
-        "language": "C++",
-        "repositoryDescription": "One package manager to rule them all"
-    },
-    {
-        "name": "symphony",
-        "owner": {
-            "login": "b3log"
-        },
-        "full_name": "b3log/symphony",
-        "forks_count": "1571",
-        "stargazers_count": "5342",
-        "language": "Java",
-        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
-    },
-    {
-        "name": "first-contributions",
-        "owner": {
-            "login": "firstcontributions"
-        },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "8489",
-        "stargazers_count": "3532",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
         "name": "aiortc",
@@ -233,42 +49,225 @@
             "login": "jlaine"
         },
         "full_name": "jlaine/aiortc",
-        "forks_count": "41",
-        "stargazers_count": "365",
+        "forks_count": "55",
+        "stargazers_count": "658",
         "language": "Python",
         "repositoryDescription": "WebRTC and ORTC implementation for Python using asyncio"
     },
     {
-        "name": "solid",
+        "name": "MS-DOS",
         "owner": {
-            "login": "solid"
+            "login": "Microsoft"
         },
-        "full_name": "solid/solid",
-        "forks_count": "203",
-        "stargazers_count": "5553",
-        "language": "HTML",
-        "repositoryDescription": "Solid - Re-decentralizing the web (project directory)"
+        "full_name": "Microsoft/MS-DOS",
+        "forks_count": "1376",
+        "stargazers_count": "10875",
+        "language": "Assembly",
+        "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
     },
     {
-        "name": "Porcupine",
+        "name": "bpftrace",
         "owner": {
-            "login": "Picovoice"
+            "login": "iovisor"
         },
-        "full_name": "Picovoice/Porcupine",
-        "forks_count": "76",
-        "stargazers_count": "809",
-        "language": "C",
-        "repositoryDescription": "On-device wake word detection engine powered by deep learning."
+        "full_name": "iovisor/bpftrace",
+        "forks_count": "13",
+        "stargazers_count": "328",
+        "language": "C++",
+        "repositoryDescription": "High-level tracing language for Linux eBPF"
     },
     {
-        "name": "island",
+        "name": "brigadier",
         "owner": {
-            "login": "oasisfeng"
+            "login": "Mojang"
         },
-        "full_name": "oasisfeng/island",
-        "forks_count": "17",
-        "stargazers_count": "232",
+        "full_name": "Mojang/brigadier",
+        "forks_count": "133",
+        "stargazers_count": "1404",
         "language": "Java",
-        "repositoryDescription": "Island for Android"
+        "repositoryDescription": "Brigadier is a command parser & dispatcher, designed and developed for Minecraft: Java Edition."
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "2037",
+        "stargazers_count": "8071",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "interviews",
+        "owner": {
+            "login": "kdn251"
+        },
+        "full_name": "kdn251/interviews",
+        "forks_count": "5233",
+        "stargazers_count": "27576",
+        "language": "Java",
+        "repositoryDescription": "Everything you need to know to get the job."
+    },
+    {
+        "name": "tiptap",
+        "owner": {
+            "login": "heyscrumpy"
+        },
+        "full_name": "heyscrumpy/tiptap",
+        "forks_count": "36",
+        "stargazers_count": "1012",
+        "language": "JavaScript",
+        "repositoryDescription": "A rich-text editor for Vue.js"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "9086",
+        "stargazers_count": "58332",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3750",
+        "stargazers_count": "13152",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "biscuit",
+        "owner": {
+            "login": "mit-pdos"
+        },
+        "full_name": "mit-pdos/biscuit",
+        "forks_count": "7",
+        "stargazers_count": "207",
+        "language": "Go",
+        "repositoryDescription": "Biscuit research OS"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "11272",
+        "stargazers_count": "37843",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
+    },
+    {
+        "name": "Hello-world",
+        "owner": {
+            "login": "Hacktoberfest-2018"
+        },
+        "full_name": "Hacktoberfest-2018/Hello-world",
+        "forks_count": "818",
+        "stargazers_count": "322",
+        "language": "Java",
+        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
+    },
+    {
+        "name": "ferret",
+        "owner": {
+            "login": "MontFerret"
+        },
+        "full_name": "MontFerret/ferret",
+        "forks_count": "83",
+        "stargazers_count": "2345",
+        "language": "Go",
+        "repositoryDescription": "Declarative web scraping"
+    },
+    {
+        "name": "graphql-engine",
+        "owner": {
+            "login": "hasura"
+        },
+        "full_name": "hasura/graphql-engine",
+        "forks_count": "170",
+        "stargazers_count": "4305",
+        "language": "JavaScript",
+        "repositoryDescription": "Blazing fast, instant realtime GraphQL APIs on Postgres with fine grained access control, also trigger webhooks on database events."
+    },
+    {
+        "name": "quick-SQL-cheatsheet",
+        "owner": {
+            "login": "enochtangg"
+        },
+        "full_name": "enochtangg/quick-SQL-cheatsheet",
+        "forks_count": "154",
+        "stargazers_count": "1853",
+        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
+    },
+    {
+        "name": "symphony",
+        "owner": {
+            "login": "b3log"
+        },
+        "full_name": "b3log/symphony",
+        "forks_count": "1638",
+        "stargazers_count": "5459",
+        "language": "Java",
+        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
+    },
+    {
+        "name": "bifurcan",
+        "owner": {
+            "login": "lacuna"
+        },
+        "full_name": "lacuna/bifurcan",
+        "forks_count": "18",
+        "stargazers_count": "364",
+        "language": "Java",
+        "repositoryDescription": "impure functional data structures"
+    },
+    {
+        "name": "sourcegraph",
+        "owner": {
+            "login": "sourcegraph"
+        },
+        "full_name": "sourcegraph/sourcegraph",
+        "forks_count": "138",
+        "stargazers_count": "3116",
+        "language": "Go",
+        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
+    },
+    {
+        "name": "first-contributions",
+        "owner": {
+            "login": "firstcontributions"
+        },
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "8662",
+        "stargazers_count": "3599",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+    },
+    {
+        "name": "DataFixerUpper",
+        "owner": {
+            "login": "Mojang"
+        },
+        "full_name": "Mojang/DataFixerUpper",
+        "forks_count": "54",
+        "stargazers_count": "548",
+        "language": "Java",
+        "repositoryDescription": "A set of utilities designed for incremental building, merging and optimization of data transformations."
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "16344",
+        "stargazers_count": "115931",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     }
 ]

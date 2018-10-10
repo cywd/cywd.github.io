@@ -252,7 +252,7 @@
         "url": "https://github.com/trending?l=Coq"
     },
     "Crystal": {
-        "color": "#776791",
+        "color": "#000100",
         "url": "https://github.com/trending?l=Crystal"
     },
     "Csound": {
@@ -1223,6 +1223,10 @@
         "color": "#007eff",
         "url": "https://github.com/trending?l=Slash"
     },
+    "Slice": {
+        "color": "#003fa2",
+        "url": "https://github.com/trending?l=Slice"
+    },
     "Smali": {
         "color": null,
         "url": "https://github.com/trending?l=Smali"
@@ -1434,6 +1438,10 @@
     "Yacc": {
         "color": "#4B6C4B",
         "url": "https://github.com/trending?l=Yacc"
+    },
+    "YARA": {
+        "color": "#220000",
+        "url": "https://github.com/trending?l=YARA"
     },
     "YASnippet": {
         "color": "#32AB90",

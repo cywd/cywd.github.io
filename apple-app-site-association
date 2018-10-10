@@ -3,7 +3,7 @@
         "apps": [],
         "details": [{
             "appID": "JXJV99SFC3.com.cy.SuperDemo",
-            "paths": ["*"]
+            "paths": ["/wwdc/news/","*"]
         }]
     }
 }

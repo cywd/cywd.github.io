@@ -1,9 +1,50 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [{
-            "appID": "JXJV99SFC3.com.cy.SuperDemo",
-            "paths": ["/wwdc/news/","*"]
-        }]
-    }
+	"applinks": {
+		"apps": [],
+		"details": [
+			{
+				"appID": "JXJV99SFC3.com.cy.SuperDemo",
+				"paths": [
+					"/fall??/*",
+					"/videos/*",
+					"/wwdc??/*",
+					"/wwdc/more",
+					"/wwdc/news",
+					"/wwdc/schedule",
+					"/wwdc/schedule*",
+					"/wwdc/videos"
+				]
+			},
+			{
+				"appID": "9JA89QQLNQ.developer.apple.wwdc-Release",
+				"paths": [
+					"/fall??/*",
+					"/videos/play/app-store-connect*",
+					"/videos/play/developer-stories*",
+					"/videos/play/enterprise*",
+					"/videos/play/insights*",
+					"/videos/play/tech-talks*",
+					"/videos/play/wwdc*",
+					"/wwdc??/*",
+					"/wwdc/more",
+					"/wwdc/news",
+					"/wwdc/schedule",
+					"/wwdc/schedule*",
+					"/wwdc/videos"
+				]
+			},
+			{
+				"appID": "BVNY5T73P8.com.apple.Playgrounds",
+				"paths": [
+					"/ul/sp0/*"
+				]
+			}
+		]
+	},
+	"activitycontinuation": {
+		"apps": [
+			"JXJV99SFC3.com.cy.SuperDemo",
+			"9JA89QQLNQ.developer.apple.wwdc-Release"
+		]
+	}
 }

@@ -5,236 +5,21 @@
             "login": "ballercat"
         },
         "full_name": "ballercat/walt",
-        "forks_count": "98",
-        "stargazers_count": "2878",
+        "forks_count": "102",
+        "stargazers_count": "3245",
         "language": "JavaScript",
         "repositoryDescription": "⚡️\nWalt is a JavaScript-like syntax for WebAssembly text format\n⚡️"
     },
     {
-        "name": "interviews",
+        "name": "muze",
         "owner": {
-            "login": "kdn251"
+            "login": "chartshq"
         },
-        "full_name": "kdn251/interviews",
-        "forks_count": "5404",
-        "stargazers_count": "28185",
-        "language": "Java",
-        "repositoryDescription": "Everything you need to know to get the job."
-    },
-    {
-        "name": "awesome-spider",
-        "owner": {
-            "login": "facert"
-        },
-        "full_name": "facert/awesome-spider",
-        "forks_count": "1251",
-        "stargazers_count": "4298",
-        "repositoryDescription": "爬虫集合"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "2205",
-        "stargazers_count": "8591",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "awesome-vscode",
-        "owner": {
-            "login": "viatsko"
-        },
-        "full_name": "viatsko/awesome-vscode",
-        "forks_count": "501",
-        "stargazers_count": "10377",
+        "full_name": "chartshq/muze",
+        "forks_count": "9",
+        "stargazers_count": "462",
         "language": "JavaScript",
-        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
-    },
-    {
-        "name": "Algorithm_Interview_Notes-Chinese",
-        "owner": {
-            "login": "imhuay"
-        },
-        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1830",
-        "stargazers_count": "6769",
-        "language": "Python",
-        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
-    },
-    {
-        "name": "pgFormatter",
-        "owner": {
-            "login": "darold"
-        },
-        "full_name": "darold/pgFormatter",
-        "forks_count": "33",
-        "stargazers_count": "577",
-        "language": "Perl",
-        "repositoryDescription": "A PostgreSQL SQL syntax beautifier that can work as a console program or as a CGI. On-line demo site at http://sqlformat.darold.net/"
-    },
-    {
-        "name": "flatbush",
-        "owner": {
-            "login": "mourner"
-        },
-        "full_name": "mourner/flatbush",
-        "forks_count": "23",
-        "stargazers_count": "632",
-        "language": "JavaScript",
-        "repositoryDescription": "A very fast static spatial index for 2D points and rectangles in JavaScript"
-    },
-    {
-        "name": "30-seconds-of-code",
-        "owner": {
-            "login": "30-seconds"
-        },
-        "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2818",
-        "stargazers_count": "27913",
-        "language": "JavaScript",
-        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
-    },
-    {
-        "name": "boltons",
-        "owner": {
-            "login": "mahmoud"
-        },
-        "full_name": "mahmoud/boltons",
-        "forks_count": "220",
-        "stargazers_count": "4238",
-        "language": "Python",
-        "repositoryDescription": "🔩\nLike builtins, but boltons. Constructs/recipes/snippets that would be handy in the standard library. Nothing like Michael Bolton."
-    },
-    {
-        "name": "Hello-world",
-        "owner": {
-            "login": "Hacktoberfest-2018"
-        },
-        "full_name": "Hacktoberfest-2018/Hello-world",
-        "forks_count": "1264",
-        "stargazers_count": "458",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
-    },
-    {
-        "name": "MS-DOS",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/MS-DOS",
-        "forks_count": "1457",
-        "stargazers_count": "11300",
-        "language": "Assembly",
-        "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
-    },
-    {
-        "name": "ferret",
-        "owner": {
-            "login": "MontFerret"
-        },
-        "full_name": "MontFerret/ferret",
-        "forks_count": "97",
-        "stargazers_count": "2675",
-        "language": "Go",
-        "repositoryDescription": "Declarative web scraping"
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "9143",
-        "stargazers_count": "58721",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3816",
-        "stargazers_count": "13475",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "web-develop",
-        "owner": {
-            "login": "SFLAQiu"
-        },
-        "full_name": "SFLAQiu/web-develop",
-        "forks_count": "31",
-        "stargazers_count": "487",
-        "repositoryDescription": "《大话WEB开发》WEB开发相关经验总结分享\n💌\n⭐️\n😘"
-    },
-    {
-        "name": "quick-SQL-cheatsheet",
-        "owner": {
-            "login": "enochtangg"
-        },
-        "full_name": "enochtangg/quick-SQL-cheatsheet",
-        "forks_count": "186",
-        "stargazers_count": "2165",
-        "repositoryDescription": "A quick reminder of all SQL queries and examples on how to use them."
-    },
-    {
-        "name": "tiptap",
-        "owner": {
-            "login": "heyscrumpy"
-        },
-        "full_name": "heyscrumpy/tiptap",
-        "forks_count": "48",
-        "stargazers_count": "1404",
-        "language": "JavaScript",
-        "repositoryDescription": "A rich-text editor for Vue.js"
-    },
-    {
-        "name": "penrose",
-        "owner": {
-            "login": "penrose"
-        },
-        "full_name": "penrose/penrose",
-        "forks_count": "21",
-        "stargazers_count": "640",
-        "language": "JavaScript",
-        "repositoryDescription": "a language-based platform for creating beautiful mathematical diagrams"
-    },
-    {
-        "name": "SpriteKitWatchFace",
-        "owner": {
-            "login": "steventroughtonsmith"
-        },
-        "full_name": "steventroughtonsmith/SpriteKitWatchFace",
-        "forks_count": "22",
-        "stargazers_count": "183",
-        "language": "Objective-C",
-        "repositoryDescription": "SpriteKit-based faux analog watch face example for watchOS"
-    },
-    {
-        "name": "symphony",
-        "owner": {
-            "login": "b3log"
-        },
-        "full_name": "b3log/symphony",
-        "forks_count": "1789",
-        "stargazers_count": "5650",
-        "language": "Java",
-        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
-    },
-    {
-        "name": "first-contributions",
-        "owner": {
-            "login": "firstcontributions"
-        },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "8964",
-        "stargazers_count": "3712",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+        "repositoryDescription": "Composable data visualisation library for web with a data-first approach"
     },
     {
         "name": "Logan",
@@ -242,31 +27,249 @@
             "login": "Meituan-Dianping"
         },
         "full_name": "Meituan-Dianping/Logan",
-        "forks_count": "13",
-        "stargazers_count": "200",
+        "forks_count": "46",
+        "stargazers_count": "568",
         "language": "C",
         "repositoryDescription": "Logan is a lightweight case logging system based on mobile platform."
     },
     {
-        "name": "self-attention-gan",
+        "name": "Python",
         "owner": {
-            "login": "brain-research"
+            "login": "TheAlgorithms"
         },
-        "full_name": "brain-research/self-attention-gan",
-        "forks_count": "15",
-        "stargazers_count": "143",
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3882",
+        "stargazers_count": "13812",
         "language": "Python",
-        "repositoryDescription": ""
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "vue",
+        "name": "awesome-spider",
         "owner": {
-            "login": "vuejs"
+            "login": "facert"
         },
-        "full_name": "vuejs/vue",
-        "forks_count": "16384",
-        "stargazers_count": "116153",
+        "full_name": "facert/awesome-spider",
+        "forks_count": "1288",
+        "stargazers_count": "4616",
+        "repositoryDescription": "爬虫集合"
+    },
+    {
+        "name": "os-tutorial",
+        "owner": {
+            "login": "cfenollosa"
+        },
+        "full_name": "cfenollosa/os-tutorial",
+        "forks_count": "1035",
+        "stargazers_count": "11410",
+        "language": "C",
+        "repositoryDescription": "How to create an OS from scratch"
+    },
+    {
+        "name": "camelot",
+        "owner": {
+            "login": "socialcopsdev"
+        },
+        "full_name": "socialcopsdev/camelot",
+        "forks_count": "15",
+        "stargazers_count": "455",
+        "language": "Python",
+        "repositoryDescription": "Camelot: PDF Table Extraction for Humans"
+    },
+    {
+        "name": "interviews",
+        "owner": {
+            "login": "kdn251"
+        },
+        "full_name": "kdn251/interviews",
+        "forks_count": "5454",
+        "stargazers_count": "28451",
+        "language": "Java",
+        "repositoryDescription": "Everything you need to know to get the job."
+    },
+    {
+        "name": "Algorithm_Interview_Notes-Chinese",
+        "owner": {
+            "login": "imhuay"
+        },
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "1905",
+        "stargazers_count": "7015",
+        "language": "Python",
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "Advanced-React",
+        "owner": {
+            "login": "wesbos"
+        },
+        "full_name": "wesbos/Advanced-React",
+        "forks_count": "147",
+        "stargazers_count": "562",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "Starter Files and Solutions for Full Stack Advanced React and GraphQL"
+    },
+    {
+        "name": "30-seconds-of-code",
+        "owner": {
+            "login": "30-seconds"
+        },
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "2851",
+        "stargazers_count": "28159",
+        "language": "JavaScript",
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+    },
+    {
+        "name": "Hello-world",
+        "owner": {
+            "login": "Hacktoberfest-2018"
+        },
+        "full_name": "Hacktoberfest-2018/Hello-world",
+        "forks_count": "1574",
+        "stargazers_count": "557",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
+    },
+    {
+        "name": "awesome-vscode",
+        "owner": {
+            "login": "viatsko"
+        },
+        "full_name": "viatsko/awesome-vscode",
+        "forks_count": "514",
+        "stargazers_count": "10596",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "2270",
+        "stargazers_count": "8787",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "percollate",
+        "owner": {
+            "login": "danburzo"
+        },
+        "full_name": "danburzo/percollate",
+        "forks_count": "8",
+        "stargazers_count": "253",
+        "language": "JavaScript",
+        "repositoryDescription": "🌐\n→\n📖\nA command-line tool to grab web pages as beautifully formatted PDFs"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "9169",
+        "stargazers_count": "58877",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
+    },
+    {
+        "name": "accu",
+        "owner": {
+            "login": "mohanson"
+        },
+        "full_name": "mohanson/accu",
+        "forks_count": "35",
+        "stargazers_count": "183",
+        "language": "Python",
+        "repositoryDescription": "Mohanson's Blog"
+    },
+    {
+        "name": "vscode",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/vscode",
+        "forks_count": "8031",
+        "stargazers_count": "61612",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual Studio Code"
+    },
+    {
+        "name": "pinpoint",
+        "owner": {
+            "login": "naver"
+        },
+        "full_name": "naver/pinpoint",
+        "forks_count": "2260",
+        "stargazers_count": "7254",
+        "language": "Java",
+        "repositoryDescription": "Pinpoint is an open source APM (Application Performance Management) tool for large-scale distributed systems written in Java."
+    },
+    {
+        "name": "MS-DOS",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/MS-DOS",
+        "forks_count": "1481",
+        "stargazers_count": "11448",
+        "language": "Assembly",
+        "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
+    },
+    {
+        "name": "awesome-algorithm",
+        "owner": {
+            "login": "apachecn"
+        },
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "814",
+        "stargazers_count": "5328",
+        "language": "Python",
+        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "68460",
+        "stargazers_count": "111875",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "symphony",
+        "owner": {
+            "login": "b3log"
+        },
+        "full_name": "b3log/symphony",
+        "forks_count": "1842",
+        "stargazers_count": "5742",
+        "language": "Java",
+        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
+    },
+    {
+        "name": "react-native-testing-library",
+        "owner": {
+            "login": "callstack"
+        },
+        "full_name": "callstack/react-native-testing-library",
+        "forks_count": "3",
+        "stargazers_count": "212",
+        "language": "JavaScript",
+        "repositoryDescription": "Simple React Native testing utilities helping you write better tests with less effort"
+    },
+    {
+        "name": "Panels",
+        "owner": {
+            "login": "antoniocasero"
+        },
+        "full_name": "antoniocasero/Panels",
+        "forks_count": "15",
+        "stargazers_count": "259",
+        "language": "Swift",
+        "repositoryDescription": "Panels is a framework to easily add sliding panels to your application"
     }
 ]

@@ -5,10 +5,21 @@
             "login": "open-source-for-science"
         },
         "full_name": "open-source-for-science/TensorFlow-Course",
-        "forks_count": "32",
-        "stargazers_count": "586",
+        "forks_count": "74",
+        "stargazers_count": "1450",
         "language": "Python",
         "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
+    },
+    {
+        "name": "photoprism",
+        "owner": {
+            "login": "photoprism"
+        },
+        "full_name": "photoprism/photoprism",
+        "forks_count": "22",
+        "stargazers_count": "775",
+        "language": "Go",
+        "repositoryDescription": "Personal photo management powered by Go and Google TensorFlow"
     },
     {
         "name": "awesome-piracy",
@@ -16,10 +27,31 @@
             "login": "Igglybuff"
         },
         "full_name": "Igglybuff/awesome-piracy",
-        "forks_count": "57",
-        "stargazers_count": "674",
+        "forks_count": "94",
+        "stargazers_count": "1164",
         "language": "Shell",
         "repositoryDescription": "A curated list of awesome warez and piracy links"
+    },
+    {
+        "name": "weekly",
+        "owner": {
+            "login": "ruanyf"
+        },
+        "full_name": "ruanyf/weekly",
+        "forks_count": "18",
+        "stargazers_count": "600",
+        "repositoryDescription": "技术分享周刊，每周五发布"
+    },
+    {
+        "name": "graphql.js",
+        "owner": {
+            "login": "f"
+        },
+        "full_name": "f/graphql.js",
+        "forks_count": "36",
+        "stargazers_count": "1155",
+        "language": "JavaScript",
+        "repositoryDescription": "A Simple and Isomorphic GraphQL Client for JavaScript"
     },
     {
         "name": "Hello-world",
@@ -27,8 +59,8 @@
             "login": "Hacktoberfest-2018"
         },
         "full_name": "Hacktoberfest-2018/Hello-world",
-        "forks_count": "2444",
-        "stargazers_count": "813",
+        "forks_count": "2836",
+        "stargazers_count": "972",
         "language": "Jupyter Notebook",
         "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
     },
@@ -38,173 +70,10 @@
             "login": "syncsynchalt"
         },
         "full_name": "syncsynchalt/illustrated-tls",
-        "forks_count": "53",
-        "stargazers_count": "1024",
+        "forks_count": "74",
+        "stargazers_count": "1337",
         "language": "Go",
         "repositoryDescription": "The Illustrated TLS Connection: Every byte explained"
-    },
-    {
-        "name": "graphql.js",
-        "owner": {
-            "login": "f"
-        },
-        "full_name": "f/graphql.js",
-        "forks_count": "32",
-        "stargazers_count": "795",
-        "language": "JavaScript",
-        "repositoryDescription": "A Simple and Isomorphic GraphQL Client for JavaScript"
-    },
-    {
-        "name": "percollate",
-        "owner": {
-            "login": "danburzo"
-        },
-        "full_name": "danburzo/percollate",
-        "forks_count": "24",
-        "stargazers_count": "784",
-        "language": "JavaScript",
-        "repositoryDescription": "🌐\n→\n📖\nA command-line tool to grab web pages as beautifully formatted PDFs"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "3935",
-        "stargazers_count": "14156",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "os-tutorial",
-        "owner": {
-            "login": "cfenollosa"
-        },
-        "full_name": "cfenollosa/os-tutorial",
-        "forks_count": "1083",
-        "stargazers_count": "11712",
-        "language": "C",
-        "repositoryDescription": "How to create an OS from scratch"
-    },
-    {
-        "name": "camelot",
-        "owner": {
-            "login": "socialcopsdev"
-        },
-        "full_name": "socialcopsdev/camelot",
-        "forks_count": "40",
-        "stargazers_count": "933",
-        "language": "Python",
-        "repositoryDescription": "Camelot: PDF Table Extraction for Humans"
-    },
-    {
-        "name": "responder",
-        "owner": {
-            "login": "kennethreitz"
-        },
-        "full_name": "kennethreitz/responder",
-        "forks_count": "51",
-        "stargazers_count": "604",
-        "language": "Python",
-        "repositoryDescription": "a familiar HTTP Service Framework for Python"
-    },
-    {
-        "name": "photoprism",
-        "owner": {
-            "login": "photoprism"
-        },
-        "full_name": "photoprism/photoprism",
-        "forks_count": "6",
-        "stargazers_count": "191",
-        "language": "Go",
-        "repositoryDescription": "Personal photo management powered by Go and Google TensorFlow"
-    },
-    {
-        "name": "warp",
-        "owner": {
-            "login": "dgiagio"
-        },
-        "full_name": "dgiagio/warp",
-        "forks_count": "17",
-        "stargazers_count": "710",
-        "language": "Rust",
-        "repositoryDescription": "Create self-contained single binary applications"
-    },
-    {
-        "name": "weekly",
-        "owner": {
-            "login": "ruanyf"
-        },
-        "full_name": "ruanyf/weekly",
-        "forks_count": "5",
-        "stargazers_count": "213",
-        "repositoryDescription": "技术分享周刊，每周五发布"
-    },
-    {
-        "name": "interviews",
-        "owner": {
-            "login": "kdn251"
-        },
-        "full_name": "kdn251/interviews",
-        "forks_count": "5500",
-        "stargazers_count": "28689",
-        "language": "Java",
-        "repositoryDescription": "Everything you need to know to get the job."
-    },
-    {
-        "name": "mmdetection",
-        "owner": {
-            "login": "open-mmlab"
-        },
-        "full_name": "open-mmlab/mmdetection",
-        "forks_count": "113",
-        "stargazers_count": "858",
-        "language": "Python",
-        "repositoryDescription": "Open MMLab Detection Toolbox"
-    },
-    {
-        "name": "first-contributions",
-        "owner": {
-            "login": "firstcontributions"
-        },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "9437",
-        "stargazers_count": "3836",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
-    },
-    {
-        "name": "awesome-vscode",
-        "owner": {
-            "login": "viatsko"
-        },
-        "full_name": "viatsko/awesome-vscode",
-        "forks_count": "526",
-        "stargazers_count": "10843",
-        "language": "JavaScript",
-        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
-    },
-    {
-        "name": "Algorithm_Interview_Notes-Chinese",
-        "owner": {
-            "login": "imhuay"
-        },
-        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "1982",
-        "stargazers_count": "7219",
-        "language": "Python",
-        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
-    },
-    {
-        "name": "Advanced-React",
-        "owner": {
-            "login": "wesbos"
-        },
-        "full_name": "wesbos/Advanced-React",
-        "forks_count": "193",
-        "stargazers_count": "777",
-        "language": "JavaScript",
-        "repositoryDescription": "Starter Files and Solutions for Full Stack Advanced React and GraphQL"
     },
     {
         "name": "30-seconds-of-code",
@@ -212,43 +81,131 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2878",
-        "stargazers_count": "28371",
+        "forks_count": "2905",
+        "stargazers_count": "28645",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
     {
-        "name": "MS-DOS",
+        "name": "tink",
         "owner": {
-            "login": "Microsoft"
+            "login": "google"
         },
-        "full_name": "Microsoft/MS-DOS",
-        "forks_count": "1536",
-        "stargazers_count": "11630",
-        "language": "Assembly",
-        "repositoryDescription": "The original sources of MS-DOS 1.25 and 2.0, for reference purposes"
+        "full_name": "google/tink",
+        "forks_count": "460",
+        "stargazers_count": "6370",
+        "language": "Java",
+        "repositoryDescription": "Tink is a multi-language, cross-platform library that provides cryptographic APIs that are secure, easy to use correctly, and hard(er) to misuse."
     },
     {
-        "name": "mmcv",
+        "name": "Python",
         "owner": {
-            "login": "open-mmlab"
+            "login": "TheAlgorithms"
         },
-        "full_name": "open-mmlab/mmcv",
-        "forks_count": "20",
-        "stargazers_count": "231",
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "3996",
+        "stargazers_count": "14408",
         "language": "Python",
-        "repositoryDescription": "Open MMLab Computer Vision Foundation"
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "carbon",
+        "name": "percollate",
         "owner": {
-            "login": "dawnlabs"
+            "login": "danburzo"
         },
-        "full_name": "dawnlabs/carbon",
-        "forks_count": "690",
-        "stargazers_count": "15389",
+        "full_name": "danburzo/percollate",
+        "forks_count": "31",
+        "stargazers_count": "1048",
         "language": "JavaScript",
-        "repositoryDescription": "🎨\nCreate and share beautiful images of your source code"
+        "repositoryDescription": "🌐\n→\n📖\nA command-line tool to turn web pages into beautifully formatted PDFs"
+    },
+    {
+        "name": "oatpp",
+        "owner": {
+            "login": "oatpp"
+        },
+        "full_name": "oatpp/oatpp",
+        "forks_count": "14",
+        "stargazers_count": "368",
+        "language": "C++",
+        "repositoryDescription": "Light, zero-dependency framework. Create bleedingly-fast web-services. Organic. Pure C++"
+    },
+    {
+        "name": "Algorithm_Interview_Notes-Chinese",
+        "owner": {
+            "login": "imhuay"
+        },
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "2037",
+        "stargazers_count": "7422",
+        "language": "Python",
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "os-tutorial",
+        "owner": {
+            "login": "cfenollosa"
+        },
+        "full_name": "cfenollosa/os-tutorial",
+        "forks_count": "1106",
+        "stargazers_count": "11931",
+        "language": "C",
+        "repositoryDescription": "How to create an OS from scratch"
+    },
+    {
+        "name": "interviews",
+        "owner": {
+            "login": "kdn251"
+        },
+        "full_name": "kdn251/interviews",
+        "forks_count": "5538",
+        "stargazers_count": "28863",
+        "language": "Java",
+        "repositoryDescription": "Everything you need to know to get the job."
+    },
+    {
+        "name": "awesome-vscode",
+        "owner": {
+            "login": "viatsko"
+        },
+        "full_name": "viatsko/awesome-vscode",
+        "forks_count": "531",
+        "stargazers_count": "11017",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
+    },
+    {
+        "name": "responder",
+        "owner": {
+            "login": "kennethreitz"
+        },
+        "full_name": "kennethreitz/responder",
+        "forks_count": "59",
+        "stargazers_count": "769",
+        "language": "Python",
+        "repositoryDescription": "a familiar HTTP Service Framework for Python"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "2360",
+        "stargazers_count": "9036",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "MVVMHabit",
+        "owner": {
+            "login": "goldze"
+        },
+        "full_name": "goldze/MVVMHabit",
+        "forks_count": "315",
+        "stargazers_count": "1481",
+        "language": "Java",
+        "repositoryDescription": "基于谷歌最新AAC架构，MVVM设计模式的一套快速开发库，整合Okhttp+RxJava+Retrofit+Glide等主流模块，满足日常开发需求。使用该框架可以快速开发一个健壮、易维护的Android应用。"
     },
     {
         "name": "developer-roadmap",
@@ -256,19 +213,62 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "9197",
-        "stargazers_count": "59051",
+        "forks_count": "9212",
+        "stargazers_count": "59189",
         "repositoryDescription": "Roadmap to becoming a web developer in 2018"
     },
     {
-        "name": "tensorflow",
+        "name": "mmdetection",
         "owner": {
-            "login": "tensorflow"
+            "login": "open-mmlab"
         },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "68521",
-        "stargazers_count": "111985",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+        "full_name": "open-mmlab/mmdetection",
+        "forks_count": "136",
+        "stargazers_count": "990",
+        "language": "Python",
+        "repositoryDescription": "Open MMLab Detection Toolbox"
+    },
+    {
+        "name": "carbon",
+        "owner": {
+            "login": "dawnlabs"
+        },
+        "full_name": "dawnlabs/carbon",
+        "forks_count": "699",
+        "stargazers_count": "15531",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nCreate and share beautiful images of your source code"
+    },
+    {
+        "name": "first-contributions",
+        "owner": {
+            "login": "firstcontributions"
+        },
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "9610",
+        "stargazers_count": "3886",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+    },
+    {
+        "name": "Advanced-React",
+        "owner": {
+            "login": "wesbos"
+        },
+        "full_name": "wesbos/Advanced-React",
+        "forks_count": "220",
+        "stargazers_count": "904",
+        "language": "JavaScript",
+        "repositoryDescription": "Starter Files and Solutions for Full Stack Advanced React and GraphQL"
+    },
+    {
+        "name": "spresso-search",
+        "owner": {
+            "login": "JoshuaScript"
+        },
+        "full_name": "JoshuaScript/spresso-search",
+        "forks_count": "7",
+        "stargazers_count": "140",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual metasearch engine built with React, Redux, Express and TypeScript"
     }
 ]

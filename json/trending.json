@@ -5,10 +5,32 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "268",
-        "stargazers_count": "5205",
+        "forks_count": "354",
+        "stargazers_count": "6463",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
+    },
+    {
+        "name": "trfl",
+        "owner": {
+            "login": "deepmind"
+        },
+        "full_name": "deepmind/trfl",
+        "forks_count": "93",
+        "stargazers_count": "838",
+        "language": "Python",
+        "repositoryDescription": "TensorFlow Reinforcement Learning"
+    },
+    {
+        "name": "TensorFlow-Course",
+        "owner": {
+            "login": "open-source-for-science"
+        },
+        "full_name": "open-source-for-science/TensorFlow-Course",
+        "forks_count": "293",
+        "stargazers_count": "3238",
+        "language": "Python",
+        "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
     },
     {
         "name": "git-flight-rules",
@@ -16,8 +38,8 @@
             "login": "k88hudson"
         },
         "full_name": "k88hudson/git-flight-rules",
-        "forks_count": "1365",
-        "stargazers_count": "23064",
+        "forks_count": "1421",
+        "stargazers_count": "23756",
         "repositoryDescription": "Flight rules for git"
     },
     {
@@ -26,85 +48,21 @@
             "login": "segmentio"
         },
         "full_name": "segmentio/evergreen",
-        "forks_count": "165",
-        "stargazers_count": "4479",
+        "forks_count": "189",
+        "stargazers_count": "5090",
         "language": "JavaScript",
         "repositoryDescription": "🌲\nEvergreen React UI Framework by Segment"
     },
     {
-        "name": "awesome-piracy",
+        "name": "tencent-ml-images",
         "owner": {
-            "login": "Igglybuff"
+            "login": "Tencent"
         },
-        "full_name": "Igglybuff/awesome-piracy",
-        "forks_count": "149",
-        "stargazers_count": "2142",
-        "repositoryDescription": "A curated list of awesome warez and piracy links"
-    },
-    {
-        "name": "photoprism",
-        "owner": {
-            "login": "photoprism"
-        },
-        "full_name": "photoprism/photoprism",
-        "forks_count": "56",
-        "stargazers_count": "1802",
-        "language": "Go",
-        "repositoryDescription": "Personal photo management powered by Go and Google TensorFlow"
-    },
-    {
-        "name": "TensorFlow-Course",
-        "owner": {
-            "login": "open-source-for-science"
-        },
-        "full_name": "open-source-for-science/TensorFlow-Course",
-        "forks_count": "133",
-        "stargazers_count": "2535",
+        "full_name": "Tencent/tencent-ml-images",
+        "forks_count": "82",
+        "stargazers_count": "493",
         "language": "Python",
-        "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
-    },
-    {
-        "name": "Hello-world",
-        "owner": {
-            "login": "Hacktoberfest-2018"
-        },
-        "full_name": "Hacktoberfest-2018/Hello-world",
-        "forks_count": "3689",
-        "stargazers_count": "1321",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
-    },
-    {
-        "name": "responder",
-        "owner": {
-            "login": "kennethreitz"
-        },
-        "full_name": "kennethreitz/responder",
-        "forks_count": "76",
-        "stargazers_count": "1141",
-        "language": "Python",
-        "repositoryDescription": "a familiar HTTP Service Framework for Python"
-    },
-    {
-        "name": "polar-bookshelf",
-        "owner": {
-            "login": "burtonator"
-        },
-        "full_name": "burtonator/polar-bookshelf",
-        "forks_count": "40",
-        "stargazers_count": "1082",
-        "language": "TypeScript",
-        "repositoryDescription": "Polar is a personal knowledge repository for PDF and web content supporting incremental reading and document annotation."
-    },
-    {
-        "name": "weekly",
-        "owner": {
-            "login": "ruanyf"
-        },
-        "full_name": "ruanyf/weekly",
-        "forks_count": "40",
-        "stargazers_count": "1142",
-        "repositoryDescription": "技术分享周刊，每周五发布"
+        "repositoryDescription": "Largest multi-label image database; ResNet-101 model; 80.73% top-1 acc on ImageNet"
     },
     {
         "name": "mole",
@@ -112,107 +70,52 @@
             "login": "davrodpin"
         },
         "full_name": "davrodpin/mole",
-        "forks_count": "17",
-        "stargazers_count": "250",
+        "forks_count": "31",
+        "stargazers_count": "588",
         "language": "Go",
         "repositoryDescription": "cli app to create ssh tunnels"
     },
     {
-        "name": "php-terminal-nes-emulator",
+        "name": "awesome-piracy",
         "owner": {
-            "login": "hasegawa-tomoki"
+            "login": "Igglybuff"
         },
-        "full_name": "hasegawa-tomoki/php-terminal-nes-emulator",
-        "forks_count": "13",
-        "stargazers_count": "261",
-        "language": "PHP",
-        "repositoryDescription": "A PHP terminal NES emulator"
+        "full_name": "Igglybuff/awesome-piracy",
+        "forks_count": "171",
+        "stargazers_count": "2474",
+        "repositoryDescription": "A curated list of awesome warez and piracy links"
     },
     {
-        "name": "DeepMimic",
+        "name": "omi",
         "owner": {
-            "login": "xbpeng"
+            "login": "Tencent"
         },
-        "full_name": "xbpeng/DeepMimic",
-        "forks_count": "54",
-        "stargazers_count": "370",
-        "language": "C++",
-        "repositoryDescription": "Motion imitation with deep reinforcement learning."
+        "full_name": "Tencent/omi",
+        "forks_count": "284",
+        "stargazers_count": "2207",
+        "language": "JavaScript",
+        "repositoryDescription": "Next generation web framework in 4KB javascript(Web Components + JSX + Proxy + Path Updating)"
     },
     {
-        "name": "mmdetection",
+        "name": "weekly",
         "owner": {
-            "login": "open-mmlab"
+            "login": "ruanyf"
         },
-        "full_name": "open-mmlab/mmdetection",
-        "forks_count": "181",
-        "stargazers_count": "1248",
+        "full_name": "ruanyf/weekly",
+        "forks_count": "47",
+        "stargazers_count": "1428",
+        "repositoryDescription": "技术分享周刊，每周五发布"
+    },
+    {
+        "name": "BERT-pytorch",
+        "owner": {
+            "login": "codertimo"
+        },
+        "full_name": "codertimo/BERT-pytorch",
+        "forks_count": "62",
+        "stargazers_count": "368",
         "language": "Python",
-        "repositoryDescription": "Open MMLab Detection Toolbox"
-    },
-    {
-        "name": "percollate",
-        "owner": {
-            "login": "danburzo"
-        },
-        "full_name": "danburzo/percollate",
-        "forks_count": "44",
-        "stargazers_count": "1482",
-        "language": "JavaScript",
-        "repositoryDescription": "🌐\n→\n📖\nA command-line tool to turn web pages into beautifully formatted PDFs"
-    },
-    {
-        "name": "interviews",
-        "owner": {
-            "login": "kdn251"
-        },
-        "full_name": "kdn251/interviews",
-        "forks_count": "5613",
-        "stargazers_count": "29195",
-        "language": "Java",
-        "repositoryDescription": "Everything you need to know to get the job."
-    },
-    {
-        "name": "30-seconds-of-code",
-        "owner": {
-            "login": "30-seconds"
-        },
-        "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2942",
-        "stargazers_count": "29086",
-        "language": "JavaScript",
-        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
-    },
-    {
-        "name": "awesome-vscode",
-        "owner": {
-            "login": "viatsko"
-        },
-        "full_name": "viatsko/awesome-vscode",
-        "forks_count": "543",
-        "stargazers_count": "11356",
-        "language": "JavaScript",
-        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "9251",
-        "stargazers_count": "59502",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
-    },
-    {
-        "name": "awesome",
-        "owner": {
-            "login": "sindresorhus"
-        },
-        "full_name": "sindresorhus/awesome",
-        "forks_count": "12508",
-        "stargazers_count": "94431",
-        "repositoryDescription": "😎\nCurated list of awesome lists"
+        "repositoryDescription": "Google AI 2018 BERT pytorch implementation"
     },
     {
         "name": "Python",
@@ -220,21 +123,43 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "4068",
-        "stargazers_count": "14725",
+        "forks_count": "4145",
+        "stargazers_count": "14932",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "gridsome",
+        "name": "libSSH-Authentication-Bypass",
         "owner": {
-            "login": "gridsome"
+            "login": "blacknbunny"
         },
-        "full_name": "gridsome/gridsome",
-        "forks_count": "7",
-        "stargazers_count": "394",
-        "language": "JavaScript",
-        "repositoryDescription": "⚡️\n[ALPHA] Build blazing fast websites with Vue.js & GraphQL"
+        "full_name": "blacknbunny/libSSH-Authentication-Bypass",
+        "forks_count": "57",
+        "stargazers_count": "225",
+        "language": "Python",
+        "repositoryDescription": "Spawn to shell without any credentials by using CVE-2018-10933"
+    },
+    {
+        "name": "photoprism",
+        "owner": {
+            "login": "photoprism"
+        },
+        "full_name": "photoprism/photoprism",
+        "forks_count": "62",
+        "stargazers_count": "1985",
+        "language": "Go",
+        "repositoryDescription": "Personal photo management powered by Go and Google TensorFlow"
+    },
+    {
+        "name": "vscode",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/vscode",
+        "forks_count": "8146",
+        "stargazers_count": "62158",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual Studio Code"
     },
     {
         "name": "first-contributions",
@@ -242,20 +167,96 @@
             "login": "firstcontributions"
         },
         "full_name": "firstcontributions/first-contributions",
-        "forks_count": "9958",
-        "stargazers_count": "3999",
+        "forks_count": "10198",
+        "stargazers_count": "4057",
         "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
-        "name": "JavaGuide",
+        "name": "Hello-world",
         "owner": {
-            "login": "Snailclimb"
+            "login": "IntelAISociety"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "2432",
-        "stargazers_count": "9310",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "full_name": "IntelAISociety/Hello-world",
+        "forks_count": "3829",
+        "stargazers_count": "1394",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
+    },
+    {
+        "name": "Formality",
+        "owner": {
+            "login": "MaiaVictor"
+        },
+        "full_name": "MaiaVictor/Formality",
+        "forks_count": "8",
+        "stargazers_count": "281",
+        "language": "Rust",
+        "repositoryDescription": "An efficient programming language and proof assistant."
+    },
+    {
+        "name": "scrcpy",
+        "owner": {
+            "login": "Genymobile"
+        },
+        "full_name": "Genymobile/scrcpy",
+        "forks_count": "481",
+        "stargazers_count": "8357",
+        "language": "C",
+        "repositoryDescription": "Display and control your Android device"
+    },
+    {
+        "name": "30-seconds-of-code",
+        "owner": {
+            "login": "30-seconds"
+        },
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "2951",
+        "stargazers_count": "29243",
+        "language": "JavaScript",
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+    },
+    {
+        "name": "gridsome",
+        "owner": {
+            "login": "gridsome"
+        },
+        "full_name": "gridsome/gridsome",
+        "forks_count": "14",
+        "stargazers_count": "551",
+        "language": "JavaScript",
+        "repositoryDescription": "⚡️\n[WIP] Build blazing fast websites with Vue.js & GraphQL"
+    },
+    {
+        "name": "responder",
+        "owner": {
+            "login": "kennethreitz"
+        },
+        "full_name": "kennethreitz/responder",
+        "forks_count": "86",
+        "stargazers_count": "1295",
+        "language": "Python",
+        "repositoryDescription": "a familiar HTTP Service Framework for Python"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "9278",
+        "stargazers_count": "59640",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
+    },
+    {
+        "name": "polar-bookshelf",
+        "owner": {
+            "login": "burtonator"
+        },
+        "full_name": "burtonator/polar-bookshelf",
+        "forks_count": "44",
+        "stargazers_count": "1215",
+        "language": "TypeScript",
+        "repositoryDescription": "Polar is a personal knowledge repository for PDF and web content supporting incremental reading and document annotation."
     },
     {
         "name": "tensorflow",
@@ -263,8 +264,8 @@
             "login": "tensorflow"
         },
         "full_name": "tensorflow/tensorflow",
-        "forks_count": "68641",
-        "stargazers_count": "112236",
+        "forks_count": "68692",
+        "stargazers_count": "112337",
         "language": "C++",
         "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     }

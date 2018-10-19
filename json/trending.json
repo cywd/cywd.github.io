@@ -5,21 +5,21 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "354",
-        "stargazers_count": "6463",
+        "forks_count": "423",
+        "stargazers_count": "7505",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
-        "name": "trfl",
+        "name": "graph_nets",
         "owner": {
             "login": "deepmind"
         },
-        "full_name": "deepmind/trfl",
-        "forks_count": "93",
-        "stargazers_count": "838",
+        "full_name": "deepmind/graph_nets",
+        "forks_count": "53",
+        "stargazers_count": "768",
         "language": "Python",
-        "repositoryDescription": "TensorFlow Reinforcement Learning"
+        "repositoryDescription": "Build Graph Nets in Tensorflow"
     },
     {
         "name": "TensorFlow-Course",
@@ -27,10 +27,21 @@
             "login": "open-source-for-science"
         },
         "full_name": "open-source-for-science/TensorFlow-Course",
-        "forks_count": "293",
-        "stargazers_count": "3238",
+        "forks_count": "405",
+        "stargazers_count": "3876",
         "language": "Python",
         "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
+    },
+    {
+        "name": "freeCodeCamp",
+        "owner": {
+            "login": "freeCodeCamp"
+        },
+        "full_name": "freeCodeCamp/freeCodeCamp",
+        "forks_count": "16784",
+        "stargazers_count": "295300",
+        "language": "JavaScript",
+        "repositoryDescription": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
     },
     {
         "name": "git-flight-rules",
@@ -38,52 +49,9 @@
             "login": "k88hudson"
         },
         "full_name": "k88hudson/git-flight-rules",
-        "forks_count": "1421",
-        "stargazers_count": "23756",
+        "forks_count": "1461",
+        "stargazers_count": "24269",
         "repositoryDescription": "Flight rules for git"
-    },
-    {
-        "name": "evergreen",
-        "owner": {
-            "login": "segmentio"
-        },
-        "full_name": "segmentio/evergreen",
-        "forks_count": "189",
-        "stargazers_count": "5090",
-        "language": "JavaScript",
-        "repositoryDescription": "🌲\nEvergreen React UI Framework by Segment"
-    },
-    {
-        "name": "tencent-ml-images",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/tencent-ml-images",
-        "forks_count": "82",
-        "stargazers_count": "493",
-        "language": "Python",
-        "repositoryDescription": "Largest multi-label image database; ResNet-101 model; 80.73% top-1 acc on ImageNet"
-    },
-    {
-        "name": "mole",
-        "owner": {
-            "login": "davrodpin"
-        },
-        "full_name": "davrodpin/mole",
-        "forks_count": "31",
-        "stargazers_count": "588",
-        "language": "Go",
-        "repositoryDescription": "cli app to create ssh tunnels"
-    },
-    {
-        "name": "awesome-piracy",
-        "owner": {
-            "login": "Igglybuff"
-        },
-        "full_name": "Igglybuff/awesome-piracy",
-        "forks_count": "171",
-        "stargazers_count": "2474",
-        "repositoryDescription": "A curated list of awesome warez and piracy links"
     },
     {
         "name": "omi",
@@ -91,20 +59,41 @@
             "login": "Tencent"
         },
         "full_name": "Tencent/omi",
-        "forks_count": "284",
-        "stargazers_count": "2207",
+        "forks_count": "300",
+        "stargazers_count": "2624",
         "language": "JavaScript",
         "repositoryDescription": "Next generation web framework in 4KB javascript(Web Components + JSX + Proxy + Path Updating)"
     },
     {
-        "name": "weekly",
+        "name": "trfl",
         "owner": {
-            "login": "ruanyf"
+            "login": "deepmind"
         },
-        "full_name": "ruanyf/weekly",
-        "forks_count": "47",
-        "stargazers_count": "1428",
-        "repositoryDescription": "技术分享周刊，每周五发布"
+        "full_name": "deepmind/trfl",
+        "forks_count": "118",
+        "stargazers_count": "1215",
+        "language": "Python",
+        "repositoryDescription": "TensorFlow Reinforcement Learning"
+    },
+    {
+        "name": "first-contributions",
+        "owner": {
+            "login": "firstcontributions"
+        },
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "10674",
+        "stargazers_count": "4139",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+    },
+    {
+        "name": "awesome-piracy",
+        "owner": {
+            "login": "Igglybuff"
+        },
+        "full_name": "Igglybuff/awesome-piracy",
+        "forks_count": "185",
+        "stargazers_count": "2754",
+        "repositoryDescription": "A curated list of awesome warez and piracy links"
     },
     {
         "name": "BERT-pytorch",
@@ -112,10 +101,64 @@
             "login": "codertimo"
         },
         "full_name": "codertimo/BERT-pytorch",
-        "forks_count": "62",
-        "stargazers_count": "368",
+        "forks_count": "100",
+        "stargazers_count": "615",
         "language": "Python",
         "repositoryDescription": "Google AI 2018 BERT pytorch implementation"
+    },
+    {
+        "name": "weekly",
+        "owner": {
+            "login": "ruanyf"
+        },
+        "full_name": "ruanyf/weekly",
+        "forks_count": "58",
+        "stargazers_count": "1671",
+        "repositoryDescription": "技术分享周刊，每周五发布"
+    },
+    {
+        "name": "tencent-ml-images",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/tencent-ml-images",
+        "forks_count": "107",
+        "stargazers_count": "717",
+        "language": "Python",
+        "repositoryDescription": "Largest multi-label image database; ResNet-101 model; 80.73% top-1 acc on ImageNet"
+    },
+    {
+        "name": "evergreen",
+        "owner": {
+            "login": "segmentio"
+        },
+        "full_name": "segmentio/evergreen",
+        "forks_count": "199",
+        "stargazers_count": "5280",
+        "language": "JavaScript",
+        "repositoryDescription": "🌲\nEvergreen React UI Framework by Segment"
+    },
+    {
+        "name": "tableflip",
+        "owner": {
+            "login": "cloudflare"
+        },
+        "full_name": "cloudflare/tableflip",
+        "forks_count": "14",
+        "stargazers_count": "304",
+        "language": "Go",
+        "repositoryDescription": "Graceful process restarts in Go"
+    },
+    {
+        "name": "mole",
+        "owner": {
+            "login": "davrodpin"
+        },
+        "full_name": "davrodpin/mole",
+        "forks_count": "38",
+        "stargazers_count": "763",
+        "language": "Go",
+        "repositoryDescription": "cli app to create ssh tunnels"
     },
     {
         "name": "Python",
@@ -123,21 +166,10 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "4145",
-        "stargazers_count": "14932",
+        "forks_count": "4182",
+        "stargazers_count": "15084",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "libSSH-Authentication-Bypass",
-        "owner": {
-            "login": "blacknbunny"
-        },
-        "full_name": "blacknbunny/libSSH-Authentication-Bypass",
-        "forks_count": "57",
-        "stargazers_count": "225",
-        "language": "Python",
-        "repositoryDescription": "Spawn to shell without any credentials by using CVE-2018-10933"
     },
     {
         "name": "photoprism",
@@ -145,8 +177,8 @@
             "login": "photoprism"
         },
         "full_name": "photoprism/photoprism",
-        "forks_count": "62",
-        "stargazers_count": "1985",
+        "forks_count": "70",
+        "stargazers_count": "2141",
         "language": "Go",
         "repositoryDescription": "Personal photo management powered by Go and Google TensorFlow"
     },
@@ -156,53 +188,63 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/vscode",
-        "forks_count": "8146",
-        "stargazers_count": "62158",
+        "forks_count": "8185",
+        "stargazers_count": "62284",
         "language": "TypeScript",
         "repositoryDescription": "Visual Studio Code"
     },
     {
-        "name": "first-contributions",
+        "name": "pwc",
         "owner": {
-            "login": "firstcontributions"
+            "login": "zziz"
         },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "10198",
-        "stargazers_count": "4057",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+        "full_name": "zziz/pwc",
+        "forks_count": "427",
+        "stargazers_count": "5333",
+        "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     },
     {
-        "name": "Hello-world",
+        "name": "libSSH-Authentication-Bypass",
         "owner": {
-            "login": "IntelAISociety"
+            "login": "blacknbunny"
         },
-        "full_name": "IntelAISociety/Hello-world",
-        "forks_count": "3829",
-        "stargazers_count": "1394",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Add any Program in any language you like or add a hello world Program\n❣️\nif you like give us\n⭐️"
+        "full_name": "blacknbunny/libSSH-Authentication-Bypass",
+        "forks_count": "77",
+        "stargazers_count": "349",
+        "language": "Python",
+        "repositoryDescription": "Spawn to shell without any credentials by using CVE-2018-10933"
     },
     {
-        "name": "Formality",
+        "name": "coding-interview-university",
         "owner": {
-            "login": "MaiaVictor"
+            "login": "jwasham"
         },
-        "full_name": "MaiaVictor/Formality",
-        "forks_count": "8",
-        "stargazers_count": "281",
-        "language": "Rust",
-        "repositoryDescription": "An efficient programming language and proof assistant."
+        "full_name": "jwasham/coding-interview-university",
+        "forks_count": "20242",
+        "stargazers_count": "69895",
+        "repositoryDescription": "A complete computer science study plan to become a software engineer."
     },
     {
-        "name": "scrcpy",
+        "name": "JavaGuide",
         "owner": {
-            "login": "Genymobile"
+            "login": "Snailclimb"
         },
-        "full_name": "Genymobile/scrcpy",
-        "forks_count": "481",
-        "stargazers_count": "8357",
-        "language": "C",
-        "repositoryDescription": "Display and control your Android device"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "2504",
+        "stargazers_count": "9546",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "graphpack",
+        "owner": {
+            "login": "glennreyes"
+        },
+        "full_name": "glennreyes/graphpack",
+        "forks_count": "1",
+        "stargazers_count": "172",
+        "language": "JavaScript",
+        "repositoryDescription": "☄️\nA minimalistic zero-config GraphQL server."
     },
     {
         "name": "30-seconds-of-code",
@@ -210,63 +252,20 @@
             "login": "30-seconds"
         },
         "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "2951",
-        "stargazers_count": "29243",
+        "forks_count": "2971",
+        "stargazers_count": "29354",
         "language": "JavaScript",
         "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     },
     {
-        "name": "gridsome",
+        "name": "bootstrap",
         "owner": {
-            "login": "gridsome"
+            "login": "twbs"
         },
-        "full_name": "gridsome/gridsome",
-        "forks_count": "14",
-        "stargazers_count": "551",
-        "language": "JavaScript",
-        "repositoryDescription": "⚡️\n[WIP] Build blazing fast websites with Vue.js & GraphQL"
-    },
-    {
-        "name": "responder",
-        "owner": {
-            "login": "kennethreitz"
-        },
-        "full_name": "kennethreitz/responder",
-        "forks_count": "86",
-        "stargazers_count": "1295",
-        "language": "Python",
-        "repositoryDescription": "a familiar HTTP Service Framework for Python"
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "9278",
-        "stargazers_count": "59640",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2018"
-    },
-    {
-        "name": "polar-bookshelf",
-        "owner": {
-            "login": "burtonator"
-        },
-        "full_name": "burtonator/polar-bookshelf",
-        "forks_count": "44",
-        "stargazers_count": "1215",
-        "language": "TypeScript",
-        "repositoryDescription": "Polar is a personal knowledge repository for PDF and web content supporting incremental reading and document annotation."
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "68692",
-        "stargazers_count": "112337",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+        "full_name": "twbs/bootstrap",
+        "forks_count": "62694",
+        "stargazers_count": "128144",
+        "language": "CSS",
+        "repositoryDescription": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web."
     }
 ]

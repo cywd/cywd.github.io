@@ -5,8 +5,8 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "584",
-        "stargazers_count": "9434",
+        "forks_count": "681",
+        "stargazers_count": "10743",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
@@ -16,20 +16,9 @@
             "login": "bharathgs"
         },
         "full_name": "bharathgs/Awesome-pytorch-list",
-        "forks_count": "515",
-        "stargazers_count": "2666",
+        "forks_count": "604",
+        "stargazers_count": "3179",
         "repositoryDescription": "A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc."
-    },
-    {
-        "name": "graph_nets",
-        "owner": {
-            "login": "deepmind"
-        },
-        "full_name": "deepmind/graph_nets",
-        "forks_count": "106",
-        "stargazers_count": "1379",
-        "language": "Python",
-        "repositoryDescription": "Build Graph Nets in Tensorflow"
     },
     {
         "name": "soar",
@@ -37,43 +26,31 @@
             "login": "XiaoMi"
         },
         "full_name": "XiaoMi/soar",
-        "forks_count": "42",
-        "stargazers_count": "321",
+        "forks_count": "134",
+        "stargazers_count": "885",
         "language": "Go",
         "repositoryDescription": "SQL Optimizer And Rewriter"
     },
     {
-        "name": "meow_hash",
+        "name": "awesome-actions",
         "owner": {
-            "login": "cmuratori"
+            "login": "sdras"
         },
-        "full_name": "cmuratori/meow_hash",
-        "forks_count": "7",
-        "stargazers_count": "421",
-        "language": "C",
-        "repositoryDescription": "Official version of the Meow hash, an extremely fast non-cryptographic hash"
+        "full_name": "sdras/awesome-actions",
+        "forks_count": "20",
+        "stargazers_count": "832",
+        "repositoryDescription": "A curated list of awesome actions to use on GitHub"
     },
     {
-        "name": "mio",
+        "name": "graph_nets",
         "owner": {
-            "login": "mandreyel"
+            "login": "deepmind"
         },
-        "full_name": "mandreyel/mio",
-        "forks_count": "21",
-        "stargazers_count": "456",
-        "language": "C++",
-        "repositoryDescription": "Cross-platform header-only C++11 library for memory mapped file IO"
-    },
-    {
-        "name": "omi",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/omi",
-        "forks_count": "325",
-        "stargazers_count": "3293",
-        "language": "JavaScript",
-        "repositoryDescription": "Next generation web framework in 4kb JavaScript (Web Components + JSX + Proxy + Store + Path Updating)"
+        "full_name": "deepmind/graph_nets",
+        "forks_count": "123",
+        "stargazers_count": "1572",
+        "language": "Python",
+        "repositoryDescription": "Build Graph Nets in Tensorflow"
     },
     {
         "name": "git-flight-rules",
@@ -81,9 +58,20 @@
             "login": "k88hudson"
         },
         "full_name": "k88hudson/git-flight-rules",
-        "forks_count": "1495",
-        "stargazers_count": "24839",
+        "forks_count": "1526",
+        "stargazers_count": "25205",
         "repositoryDescription": "Flight rules for git"
+    },
+    {
+        "name": "meow_hash",
+        "owner": {
+            "login": "cmuratori"
+        },
+        "full_name": "cmuratori/meow_hash",
+        "forks_count": "11",
+        "stargazers_count": "598",
+        "language": "C",
+        "repositoryDescription": "Official version of the Meow hash, an extremely fast non-cryptographic hash"
     },
     {
         "name": "TensorFlow-Course",
@@ -91,21 +79,21 @@
             "login": "open-source-for-science"
         },
         "full_name": "open-source-for-science/TensorFlow-Course",
-        "forks_count": "496",
-        "stargazers_count": "4402",
+        "forks_count": "538",
+        "stargazers_count": "4674",
         "language": "Python",
         "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
     },
     {
-        "name": "graphpack",
+        "name": "omi",
         "owner": {
-            "login": "glennreyes"
+            "login": "Tencent"
         },
-        "full_name": "glennreyes/graphpack",
-        "forks_count": "13",
-        "stargazers_count": "609",
+        "full_name": "Tencent/omi",
+        "forks_count": "341",
+        "stargazers_count": "3682",
         "language": "JavaScript",
-        "repositoryDescription": "☄️\nA minimalistic zero-config GraphQL server."
+        "repositoryDescription": "Next generation web framework in 4kb JavaScript (Web Components + JSX + Proxy + Store + Path Updating)"
     },
     {
         "name": "freeCodeCamp",
@@ -113,10 +101,21 @@
             "login": "freeCodeCamp"
         },
         "full_name": "freeCodeCamp/freeCodeCamp",
-        "forks_count": "17607",
-        "stargazers_count": "295454",
+        "forks_count": "17869",
+        "stargazers_count": "295554",
         "language": "JavaScript",
         "repositoryDescription": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
+    },
+    {
+        "name": "mio",
+        "owner": {
+            "login": "mandreyel"
+        },
+        "full_name": "mandreyel/mio",
+        "forks_count": "24",
+        "stargazers_count": "549",
+        "language": "C++",
+        "repositoryDescription": "Cross-platform header-only C++11 library for memory mapped file IO"
     },
     {
         "name": "croc",
@@ -124,21 +123,21 @@
             "login": "schollz"
         },
         "full_name": "schollz/croc",
-        "forks_count": "45",
-        "stargazers_count": "683",
+        "forks_count": "52",
+        "stargazers_count": "993",
         "language": "Go",
         "repositoryDescription": "Easily and securely send things from one computer to another\n🐊\n📦"
     },
     {
-        "name": "data-science-complete-tutorial",
+        "name": "graphpack",
         "owner": {
-            "login": "zekelabs"
+            "login": "glennreyes"
         },
-        "full_name": "zekelabs/data-science-complete-tutorial",
-        "forks_count": "45",
-        "stargazers_count": "220",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Notebooks to learn data science - Videos https://www.edyoda.com/resources/videolisting/1416/"
+        "full_name": "glennreyes/graphpack",
+        "forks_count": "17",
+        "stargazers_count": "794",
+        "language": "JavaScript",
+        "repositoryDescription": "☄️\nA minimalistic zero-config GraphQL server."
     },
     {
         "name": "awesome-piracy",
@@ -146,20 +145,20 @@
             "login": "Igglybuff"
         },
         "full_name": "Igglybuff/awesome-piracy",
-        "forks_count": "214",
-        "stargazers_count": "3029",
+        "forks_count": "229",
+        "stargazers_count": "3205",
         "repositoryDescription": "A curated list of awesome warez and piracy links"
     },
     {
-        "name": "dst",
+        "name": "data-science-complete-tutorial",
         "owner": {
-            "login": "dave"
+            "login": "zekelabs"
         },
-        "full_name": "dave/dst",
-        "forks_count": "5",
-        "stargazers_count": "186",
-        "language": "Go",
-        "repositoryDescription": "Decorated Syntax Tree - manipulate Go source with perfect fidelity."
+        "full_name": "zekelabs/data-science-complete-tutorial",
+        "forks_count": "59",
+        "stargazers_count": "346",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Notebooks to learn data science - Videos https://www.edyoda.com/resources/videolisting/1416/"
     },
     {
         "name": "Python",
@@ -167,10 +166,42 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "4252",
-        "stargazers_count": "15337",
+        "forks_count": "4284",
+        "stargazers_count": "15483",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "dst",
+        "owner": {
+            "login": "dave"
+        },
+        "full_name": "dave/dst",
+        "forks_count": "7",
+        "stargazers_count": "281",
+        "language": "Go",
+        "repositoryDescription": "Decorated Syntax Tree - manipulate Go source with perfect fidelity."
+    },
+    {
+        "name": "esp8266_honeypot",
+        "owner": {
+            "login": "gbafana25"
+        },
+        "full_name": "gbafana25/esp8266_honeypot",
+        "forks_count": "9",
+        "stargazers_count": "183",
+        "language": "Python",
+        "repositoryDescription": "THE ESP8266 HONEYPOT: A PROJECT TO TRAP SCRIPT KIDDIES EVERYWHRE!!"
+    },
+    {
+        "name": "free-programming-books",
+        "owner": {
+            "login": "EbookFoundation"
+        },
+        "full_name": "EbookFoundation/free-programming-books",
+        "forks_count": "28502",
+        "stargazers_count": "112709",
+        "repositoryDescription": "📚\nFreely available programming books"
     },
     {
         "name": "first-contributions",
@@ -178,8 +209,8 @@
             "login": "firstcontributions"
         },
         "full_name": "firstcontributions/first-contributions",
-        "forks_count": "11111",
-        "stargazers_count": "4226",
+        "forks_count": "11255",
+        "stargazers_count": "4276",
         "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
@@ -188,8 +219,8 @@
             "login": "segmentio"
         },
         "full_name": "segmentio/evergreen",
-        "forks_count": "206",
-        "stargazers_count": "5522",
+        "forks_count": "212",
+        "stargazers_count": "5680",
         "language": "JavaScript",
         "repositoryDescription": "🌲\nEvergreen React UI Framework by Segment"
     },
@@ -199,53 +230,10 @@
             "login": "deepmind"
         },
         "full_name": "deepmind/trfl",
-        "forks_count": "151",
-        "stargazers_count": "1447",
+        "forks_count": "157",
+        "stargazers_count": "1544",
         "language": "Python",
         "repositoryDescription": "TensorFlow Reinforcement Learning"
-    },
-    {
-        "name": "coding-interview-university",
-        "owner": {
-            "login": "jwasham"
-        },
-        "full_name": "jwasham/coding-interview-university",
-        "forks_count": "20283",
-        "stargazers_count": "70042",
-        "repositoryDescription": "A complete computer science study plan to become a software engineer."
-    },
-    {
-        "name": "react",
-        "owner": {
-            "login": "facebook"
-        },
-        "full_name": "facebook/react",
-        "forks_count": "20443",
-        "stargazers_count": "113579",
-        "language": "JavaScript",
-        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "2540",
-        "stargazers_count": "9680",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "tableflip",
-        "owner": {
-            "login": "cloudflare"
-        },
-        "full_name": "cloudflare/tableflip",
-        "forks_count": "16",
-        "stargazers_count": "496",
-        "language": "Go",
-        "repositoryDescription": "Graceful process restarts in Go"
     },
     {
         "name": "vue",
@@ -253,20 +241,31 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "16522",
-        "stargazers_count": "116928",
+        "forks_count": "16544",
+        "stargazers_count": "117021",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "Metis",
+        "name": "tensorflow",
         "owner": {
-            "login": "Tencent"
+            "login": "tensorflow"
         },
-        "full_name": "Tencent/Metis",
-        "forks_count": "26",
-        "stargazers_count": "124",
-        "language": "Python",
-        "repositoryDescription": "Metis is a learnware platform in the field of AIOps."
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "68809",
+        "stargazers_count": "112610",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "percollate",
+        "owner": {
+            "login": "danburzo"
+        },
+        "full_name": "danburzo/percollate",
+        "forks_count": "60",
+        "stargazers_count": "1963",
+        "language": "JavaScript",
+        "repositoryDescription": "🌐\n→\n📖\nA command-line tool to turn web pages into beautifully formatted PDFs"
     }
 ]

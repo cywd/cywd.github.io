@@ -5,9 +5,30 @@
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "953",
-        "stargazers_count": "4046",
+        "forks_count": "1242",
+        "stargazers_count": "5123",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为15个章节，近20万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "Algojammer",
+        "owner": {
+            "login": "ChrisKnott"
+        },
+        "full_name": "ChrisKnott/Algojammer",
+        "forks_count": "17",
+        "stargazers_count": "729",
+        "language": "C++",
+        "repositoryDescription": "An experimental code editor for writing algorithms"
+    },
+    {
+        "name": "A-to-Z-Resources-for-Students",
+        "owner": {
+            "login": "dipakkr"
+        },
+        "full_name": "dipakkr/A-to-Z-Resources-for-Students",
+        "forks_count": "838",
+        "stargazers_count": "1463",
+        "repositoryDescription": "Curated list of resources for college students Show your\n❤️\nby giving a\n⭐️"
     },
     {
         "name": "the-platform",
@@ -15,8 +36,8 @@
             "login": "palmerhq"
         },
         "full_name": "palmerhq/the-platform",
-        "forks_count": "28",
-        "stargazers_count": "1653",
+        "forks_count": "39",
+        "stargazers_count": "2092",
         "language": "JavaScript",
         "repositoryDescription": "Web. Components.\n😂"
     },
@@ -26,52 +47,10 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1105",
-        "stargazers_count": "14830",
+        "forks_count": "1134",
+        "stargazers_count": "15203",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
-    },
-    {
-        "name": "A-to-Z-Resources-for-Students",
-        "owner": {
-            "login": "dipakkr"
-        },
-        "full_name": "dipakkr/A-to-Z-Resources-for-Students",
-        "forks_count": "727",
-        "stargazers_count": "960",
-        "repositoryDescription": "Curated list of resources for college students Show your\n❤️\nby giving a\n⭐️"
-    },
-    {
-        "name": "monica",
-        "owner": {
-            "login": "monicahq"
-        },
-        "full_name": "monicahq/monica",
-        "forks_count": "628",
-        "stargazers_count": "5401",
-        "language": "PHP",
-        "repositoryDescription": "Personal CRM. Remember everything about your friends and family."
-    },
-    {
-        "name": "gotop",
-        "owner": {
-            "login": "cjbassi"
-        },
-        "full_name": "cjbassi/gotop",
-        "forks_count": "66",
-        "stargazers_count": "2088",
-        "language": "Go",
-        "repositoryDescription": "A terminal based graphical activity monitor inspired by gtop and vtop"
-    },
-    {
-        "name": "first-contributions",
-        "owner": {
-            "login": "firstcontributions"
-        },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "12514",
-        "stargazers_count": "4527",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
         "name": "dive",
@@ -79,161 +58,10 @@
             "login": "wagoodman"
         },
         "full_name": "wagoodman/dive",
-        "forks_count": "33",
-        "stargazers_count": "1196",
+        "forks_count": "38",
+        "stargazers_count": "1553",
         "language": "Go",
         "repositoryDescription": "A tool for exploring each layer in a docker image"
-    },
-    {
-        "name": "Awesome-pytorch-list",
-        "owner": {
-            "login": "bharathgs"
-        },
-        "full_name": "bharathgs/Awesome-pytorch-list",
-        "forks_count": "724",
-        "stargazers_count": "3785",
-        "repositoryDescription": "A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc."
-    },
-    {
-        "name": "TensorFlow-Course",
-        "owner": {
-            "login": "open-source-for-science"
-        },
-        "full_name": "open-source-for-science/TensorFlow-Course",
-        "forks_count": "785",
-        "stargazers_count": "5915",
-        "language": "Python",
-        "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
-    },
-    {
-        "name": "freeCodeCamp",
-        "owner": {
-            "login": "freeCodeCamp"
-        },
-        "full_name": "freeCodeCamp/freeCodeCamp",
-        "forks_count": "19572",
-        "stargazers_count": "295921",
-        "language": "JavaScript",
-        "repositoryDescription": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
-    },
-    {
-        "name": "vue-hooks",
-        "owner": {
-            "login": "yyx990803"
-        },
-        "full_name": "yyx990803/vue-hooks",
-        "forks_count": "5",
-        "stargazers_count": "300",
-        "language": "HTML",
-        "repositoryDescription": "Experimental React hooks implementation in Vue"
-    },
-    {
-        "name": "up",
-        "owner": {
-            "login": "akavel"
-        },
-        "full_name": "akavel/up",
-        "forks_count": "60",
-        "stargazers_count": "2948",
-        "language": "Go",
-        "repositoryDescription": "Ultimate Plumber is a tool for writing Linux pipes with instant live preview"
-    },
-    {
-        "name": "33-js-concepts",
-        "owner": {
-            "login": "stephentian"
-        },
-        "full_name": "stephentian/33-js-concepts",
-        "forks_count": "329",
-        "stargazers_count": "3045",
-        "language": "JavaScript",
-        "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
-    },
-    {
-        "name": "Make-a-Pull-Request",
-        "owner": {
-            "login": "rishabh-bansal"
-        },
-        "full_name": "rishabh-bansal/Make-a-Pull-Request",
-        "forks_count": "2785",
-        "stargazers_count": "417",
-        "repositoryDescription": "Make a Pull Request"
-    },
-    {
-        "name": "awesome-react-hooks",
-        "owner": {
-            "login": "rehooks"
-        },
-        "full_name": "rehooks/awesome-react-hooks",
-        "forks_count": "25",
-        "stargazers_count": "581",
-        "repositoryDescription": "Awesome React Hooks"
-    },
-    {
-        "name": "Hello-World",
-        "owner": {
-            "login": "Omkar-Ajnadkar"
-        },
-        "full_name": "Omkar-Ajnadkar/Hello-World",
-        "forks_count": "1469",
-        "stargazers_count": "269",
-        "language": "Assembly",
-        "repositoryDescription": "Hello World in all possible programmnig languages"
-    },
-    {
-        "name": "machine-learning-yearning-cn",
-        "owner": {
-            "login": "AcceptedDoge"
-        },
-        "full_name": "AcceptedDoge/machine-learning-yearning-cn",
-        "forks_count": "223",
-        "stargazers_count": "1005",
-        "language": "CSS",
-        "repositoryDescription": "MACHINE LEARNING YEARNING BY ANDREW NG"
-    },
-    {
-        "name": "darknet",
-        "owner": {
-            "login": "pjreddie"
-        },
-        "full_name": "pjreddie/darknet",
-        "forks_count": "5498",
-        "stargazers_count": "10193",
-        "language": "C",
-        "repositoryDescription": "Convolutional Neural Networks"
-    },
-    {
-        "name": "transparent_latent_gan",
-        "owner": {
-            "login": "SummitKwan"
-        },
-        "full_name": "SummitKwan/transparent_latent_gan",
-        "forks_count": "35",
-        "stargazers_count": "401",
-        "language": "Python",
-        "repositoryDescription": "Use supervised learning to illuminate the latent space of GAN for controlled generation and edit"
-    },
-    {
-        "name": "maskrcnn-benchmark",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/maskrcnn-benchmark",
-        "forks_count": "204",
-        "stargazers_count": "1944",
-        "language": "Python",
-        "repositoryDescription": "Fast, modular reference implementation of Instance Segmentation and Object Detection algorithms in PyTorch."
-    },
-    {
-        "name": "soar",
-        "owner": {
-            "login": "XiaoMi"
-        },
-        "full_name": "XiaoMi/soar",
-        "forks_count": "279",
-        "stargazers_count": "2375",
-        "language": "Go",
-        "repositoryDescription": "SQL Optimizer And Rewriter"
     },
     {
         "name": "DeepCreamPy",
@@ -241,21 +69,139 @@
             "login": "deeppomf"
         },
         "full_name": "deeppomf/DeepCreamPy",
-        "forks_count": "27",
-        "stargazers_count": "413",
+        "forks_count": "57",
+        "stargazers_count": "783",
         "language": "Python",
         "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
     },
     {
-        "name": "gobasic",
+        "name": "up",
         "owner": {
-            "login": "skx"
+            "login": "akavel"
         },
-        "full_name": "skx/gobasic",
-        "forks_count": "10",
-        "stargazers_count": "145",
+        "full_name": "akavel/up",
+        "forks_count": "66",
+        "stargazers_count": "3226",
         "language": "Go",
-        "repositoryDescription": "A BASIC interpreter written in golang."
+        "repositoryDescription": "Ultimate Plumber is a tool for writing Linux pipes with instant live preview"
+    },
+    {
+        "name": "monica",
+        "owner": {
+            "login": "monicahq"
+        },
+        "full_name": "monicahq/monica",
+        "forks_count": "640",
+        "stargazers_count": "5673",
+        "language": "PHP",
+        "repositoryDescription": "Personal CRM. Remember everything about your friends and family."
+    },
+    {
+        "name": "33-js-concepts",
+        "owner": {
+            "login": "stephentian"
+        },
+        "full_name": "stephentian/33-js-concepts",
+        "forks_count": "370",
+        "stargazers_count": "3287",
+        "language": "JavaScript",
+        "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
+    },
+    {
+        "name": "gotop",
+        "owner": {
+            "login": "cjbassi"
+        },
+        "full_name": "cjbassi/gotop",
+        "forks_count": "74",
+        "stargazers_count": "2330",
+        "language": "Go",
+        "repositoryDescription": "A terminal based graphical activity monitor inspired by gtop and vtop"
+    },
+    {
+        "name": "graph-cli",
+        "owner": {
+            "login": "mcastorina"
+        },
+        "full_name": "mcastorina/graph-cli",
+        "forks_count": "2",
+        "stargazers_count": "221",
+        "language": "Python",
+        "repositoryDescription": "Flexible command line tool to create graphs from CSV data"
+    },
+    {
+        "name": "Awesome-pytorch-list",
+        "owner": {
+            "login": "bharathgs"
+        },
+        "full_name": "bharathgs/Awesome-pytorch-list",
+        "forks_count": "770",
+        "stargazers_count": "3953",
+        "repositoryDescription": "A comprehensive list of pytorch related content on github,such as different models,implementations,helper libraries,tutorials etc."
+    },
+    {
+        "name": "awesome-react-hooks",
+        "owner": {
+            "login": "rehooks"
+        },
+        "full_name": "rehooks/awesome-react-hooks",
+        "forks_count": "29",
+        "stargazers_count": "777",
+        "repositoryDescription": "Awesome React Hooks"
+    },
+    {
+        "name": "maskrcnn-benchmark",
+        "owner": {
+            "login": "facebookresearch"
+        },
+        "full_name": "facebookresearch/maskrcnn-benchmark",
+        "forks_count": "236",
+        "stargazers_count": "2113",
+        "language": "Python",
+        "repositoryDescription": "Fast, modular reference implementation of Instance Segmentation and Object Detection algorithms in PyTorch."
+    },
+    {
+        "name": "AndroidAutoSize",
+        "owner": {
+            "login": "JessYanCoding"
+        },
+        "full_name": "JessYanCoding/AndroidAutoSize",
+        "forks_count": "481",
+        "stargazers_count": "4168",
+        "language": "Java",
+        "repositoryDescription": "🔥\nA low-cost Android screen adaptation solution (今日头条屏幕适配方案终极版，一个极低成本的 Android 屏幕适配方案)."
+    },
+    {
+        "name": "TensorFlow-Course",
+        "owner": {
+            "login": "open-source-for-science"
+        },
+        "full_name": "open-source-for-science/TensorFlow-Course",
+        "forks_count": "815",
+        "stargazers_count": "6062",
+        "language": "Python",
+        "repositoryDescription": "Simple and ready-to-use tutorials for TensorFlow"
+    },
+    {
+        "name": "soar",
+        "owner": {
+            "login": "XiaoMi"
+        },
+        "full_name": "XiaoMi/soar",
+        "forks_count": "294",
+        "stargazers_count": "2535",
+        "language": "Go",
+        "repositoryDescription": "SQL Optimizer And Rewriter"
+    },
+    {
+        "name": "first-contributions",
+        "owner": {
+            "login": "firstcontributions"
+        },
+        "full_name": "firstcontributions/first-contributions",
+        "forks_count": "12755",
+        "stargazers_count": "4576",
+        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
         "name": "react-hanger",
@@ -263,9 +209,64 @@
             "login": "kitze"
         },
         "full_name": "kitze/react-hanger",
-        "forks_count": "5",
-        "stargazers_count": "165",
+        "forks_count": "10",
+        "stargazers_count": "336",
         "language": "JavaScript",
         "repositoryDescription": "A small collection of useful hooks for React 16.7"
+    },
+    {
+        "name": "vue-hooks",
+        "owner": {
+            "login": "yyx990803"
+        },
+        "full_name": "yyx990803/vue-hooks",
+        "forks_count": "10",
+        "stargazers_count": "466",
+        "language": "HTML",
+        "repositoryDescription": "Experimental React hooks implementation in Vue"
+    },
+    {
+        "name": "FloatingPanel",
+        "owner": {
+            "login": "SCENEE"
+        },
+        "full_name": "SCENEE/FloatingPanel",
+        "forks_count": "35",
+        "stargazers_count": "787",
+        "language": "Swift",
+        "repositoryDescription": "A clean and easy-to-use floating panel UI component for iOS"
+    },
+    {
+        "name": "FPSSample",
+        "owner": {
+            "login": "Unity-Technologies"
+        },
+        "full_name": "Unity-Technologies/FPSSample",
+        "forks_count": "226",
+        "stargazers_count": "1175",
+        "language": "C#",
+        "repositoryDescription": "A first person multiplayer shooter example project in Unity"
+    },
+    {
+        "name": "omi",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/omi",
+        "forks_count": "399",
+        "stargazers_count": "4680",
+        "language": "JavaScript",
+        "repositoryDescription": "Next generation web framework in 4kb JavaScript (Web Components + JSX + Proxy + Store + Path Updating)"
+    },
+    {
+        "name": "machine-learning-yearning-cn",
+        "owner": {
+            "login": "AcceptedDoge"
+        },
+        "full_name": "AcceptedDoge/machine-learning-yearning-cn",
+        "forks_count": "247",
+        "stargazers_count": "1127",
+        "language": "CSS",
+        "repositoryDescription": "MACHINE LEARNING YEARNING BY ANDREW NG"
     }
 ]

@@ -1,89 +1,13 @@
 [
     {
-        "name": "DeepCreamPy",
-        "owner": {
-            "login": "deeppomf"
-        },
-        "full_name": "deeppomf/DeepCreamPy",
-        "forks_count": "112",
-        "stargazers_count": "1936",
-        "language": "Python",
-        "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
-    },
-    {
         "name": "DeepLearning-500-questions",
         "owner": {
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "1436",
-        "stargazers_count": "5890",
+        "forks_count": "1572",
+        "stargazers_count": "6405",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为15个章节，近20万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "Algojammer",
-        "owner": {
-            "login": "ChrisKnott"
-        },
-        "full_name": "ChrisKnott/Algojammer",
-        "forks_count": "45",
-        "stargazers_count": "1416",
-        "language": "C++",
-        "repositoryDescription": "An experimental code editor for writing algorithms"
-    },
-    {
-        "name": "A-to-Z-Resources-for-Students",
-        "owner": {
-            "login": "dipakkr"
-        },
-        "full_name": "dipakkr/A-to-Z-Resources-for-Students",
-        "forks_count": "952",
-        "stargazers_count": "2024",
-        "repositoryDescription": "Curated list of resources for college students Show your\n❤️\nby giving a\n⭐️"
-    },
-    {
-        "name": "azul",
-        "owner": {
-            "login": "maps4print"
-        },
-        "full_name": "maps4print/azul",
-        "forks_count": "21",
-        "stargazers_count": "1039",
-        "language": "Rust",
-        "repositoryDescription": "Desktop GUI Framework"
-    },
-    {
-        "name": "QNNPACK",
-        "owner": {
-            "login": "pytorch"
-        },
-        "full_name": "pytorch/QNNPACK",
-        "forks_count": "42",
-        "stargazers_count": "376",
-        "language": "C",
-        "repositoryDescription": "Quantized Neural Network PACKage - mobile-optimized implementation of quantized neural network operators"
-    },
-    {
-        "name": "the-platform",
-        "owner": {
-            "login": "palmerhq"
-        },
-        "full_name": "palmerhq/the-platform",
-        "forks_count": "44",
-        "stargazers_count": "2450",
-        "language": "JavaScript",
-        "repositoryDescription": "Web. Components.\n😂"
-    },
-    {
-        "name": "33-js-concepts",
-        "owner": {
-            "login": "leonardomso"
-        },
-        "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1174",
-        "stargazers_count": "15545",
-        "language": "JavaScript",
-        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
         "name": "pennywise",
@@ -91,32 +15,107 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/pennywise",
-        "forks_count": "15",
-        "stargazers_count": "394",
+        "forks_count": "38",
+        "stargazers_count": "875",
         "language": "JavaScript",
         "repositoryDescription": "Cross-platform application to open anything in a floating window"
     },
     {
-        "name": "vespene",
+        "name": "jobs-done",
         "owner": {
-            "login": "vespene-io"
+            "login": "skidding"
         },
-        "full_name": "vespene-io/vespene",
-        "forks_count": "43",
-        "stargazers_count": "329",
+        "full_name": "skidding/jobs-done",
+        "forks_count": "23",
+        "stargazers_count": "490",
+        "language": "JavaScript",
+        "repositoryDescription": "Ritual app for ending the work day inspired by Deep Work"
+    },
+    {
+        "name": "DeepCreamPy",
+        "owner": {
+            "login": "deeppomf"
+        },
+        "full_name": "deeppomf/DeepCreamPy",
+        "forks_count": "136",
+        "stargazers_count": "2405",
         "language": "Python",
-        "repositoryDescription": "A modern continuous integration, deployment, and self-service automation platform"
+        "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
+    },
+    {
+        "name": "A-to-Z-Resources-for-Students",
+        "owner": {
+            "login": "dipakkr"
+        },
+        "full_name": "dipakkr/A-to-Z-Resources-for-Students",
+        "forks_count": "1062",
+        "stargazers_count": "2401",
+        "repositoryDescription": "Curated list of resources for college students Show your\n❤️\nby giving a\n⭐️"
+    },
+    {
+        "name": "Algojammer",
+        "owner": {
+            "login": "ChrisKnott"
+        },
+        "full_name": "ChrisKnott/Algojammer",
+        "forks_count": "50",
+        "stargazers_count": "1756",
+        "language": "C++",
+        "repositoryDescription": "An experimental code editor for writing algorithms"
     },
     {
         "name": "33-js-concepts",
         "owner": {
-            "login": "stephentian"
+            "login": "leonardomso"
         },
-        "full_name": "stephentian/33-js-concepts",
-        "forks_count": "392",
-        "stargazers_count": "3548",
+        "full_name": "leonardomso/33-js-concepts",
+        "forks_count": "1214",
+        "stargazers_count": "15863",
         "language": "JavaScript",
-        "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
+        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
+    },
+    {
+        "name": "nlp_course",
+        "owner": {
+            "login": "yandexdataschool"
+        },
+        "full_name": "yandexdataschool/nlp_course",
+        "forks_count": "74",
+        "stargazers_count": "461",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "YSDA course in Natural Language Processing"
+    },
+    {
+        "name": "Learn_Data_Science_in_3_Months",
+        "owner": {
+            "login": "llSourcell"
+        },
+        "full_name": "llSourcell/Learn_Data_Science_in_3_Months",
+        "forks_count": "155",
+        "stargazers_count": "527",
+        "repositoryDescription": "This is the Curriculum for \"Learn Data Science in 3 Months\" By Siraj Raval on Youtube"
+    },
+    {
+        "name": "carlo",
+        "owner": {
+            "login": "GoogleChromeLabs"
+        },
+        "full_name": "GoogleChromeLabs/carlo",
+        "forks_count": "7",
+        "stargazers_count": "276",
+        "language": "JavaScript",
+        "repositoryDescription": "Web rendering surface for Node applications"
+    },
+    {
+        "name": "hashbrown",
+        "owner": {
+            "login": "Amanieu"
+        },
+        "full_name": "Amanieu/hashbrown",
+        "forks_count": "5",
+        "stargazers_count": "319",
+        "language": "Rust",
+        "repositoryDescription": "Rust port of Google's SwissTable hash map"
     },
     {
         "name": "react-use",
@@ -124,42 +123,10 @@
             "login": "streamich"
         },
         "full_name": "streamich/react-use",
-        "forks_count": "14",
-        "stargazers_count": "415",
+        "forks_count": "19",
+        "stargazers_count": "640",
         "language": "TypeScript",
         "repositoryDescription": "React Hooks — future of React\n👍\nreact-use"
-    },
-    {
-        "name": "dive",
-        "owner": {
-            "login": "wagoodman"
-        },
-        "full_name": "wagoodman/dive",
-        "forks_count": "44",
-        "stargazers_count": "1790",
-        "language": "Go",
-        "repositoryDescription": "A tool for exploring each layer in a docker image"
-    },
-    {
-        "name": "React-Fiber-Architecture",
-        "owner": {
-            "login": "SaeedMalikx"
-        },
-        "full_name": "SaeedMalikx/React-Fiber-Architecture",
-        "forks_count": "16",
-        "stargazers_count": "440",
-        "repositoryDescription": "Understanding the structure of React Fiber( walk through and pseudo-code)"
-    },
-    {
-        "name": "irondb",
-        "owner": {
-            "login": "gruns"
-        },
-        "full_name": "gruns/irondb",
-        "forks_count": "23",
-        "stargazers_count": "914",
-        "language": "JavaScript",
-        "repositoryDescription": "🔩\nA relentless key-value store for the browser."
     },
     {
         "name": "haunted",
@@ -167,21 +134,43 @@
             "login": "matthewp"
         },
         "full_name": "matthewp/haunted",
-        "forks_count": "3",
-        "stargazers_count": "226",
+        "forks_count": "7",
+        "stargazers_count": "431",
         "language": "JavaScript",
         "repositoryDescription": "React's Hooks API implemented for web components"
     },
     {
-        "name": "vergeml",
+        "name": "westore",
         "owner": {
-            "login": "vergeml"
+            "login": "Tencent"
         },
-        "full_name": "vergeml/vergeml",
-        "forks_count": "9",
-        "stargazers_count": "241",
-        "language": "Python",
-        "repositoryDescription": "Machine Learning Environment - alpha version"
+        "full_name": "Tencent/westore",
+        "forks_count": "199",
+        "stargazers_count": "1970",
+        "language": "JavaScript",
+        "repositoryDescription": "微信小程序解决方案 - 1KB javascript 覆盖状态管理、跨页通讯、插件开发和云数据库开发"
+    },
+    {
+        "name": "azul",
+        "owner": {
+            "login": "maps4print"
+        },
+        "full_name": "maps4print/azul",
+        "forks_count": "24",
+        "stargazers_count": "1230",
+        "language": "Rust",
+        "repositoryDescription": "Desktop GUI Framework"
+    },
+    {
+        "name": "33-js-concepts",
+        "owner": {
+            "login": "stephentian"
+        },
+        "full_name": "stephentian/33-js-concepts",
+        "forks_count": "413",
+        "stargazers_count": "3718",
+        "language": "JavaScript",
+        "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
     },
     {
         "name": "up",
@@ -189,54 +178,10 @@
             "login": "akavel"
         },
         "full_name": "akavel/up",
-        "forks_count": "69",
-        "stargazers_count": "3421",
+        "forks_count": "75",
+        "stargazers_count": "3589",
         "language": "Go",
         "repositoryDescription": "Ultimate Plumber is a tool for writing Linux pipes with instant live preview"
-    },
-    {
-        "name": "fuxploider",
-        "owner": {
-            "login": "almandin"
-        },
-        "full_name": "almandin/fuxploider",
-        "forks_count": "121",
-        "stargazers_count": "684",
-        "language": "Python",
-        "repositoryDescription": "File upload vulnerability scanner and exploitation tool."
-    },
-    {
-        "name": "graph-cli",
-        "owner": {
-            "login": "mcastorina"
-        },
-        "full_name": "mcastorina/graph-cli",
-        "forks_count": "10",
-        "stargazers_count": "375",
-        "language": "Python",
-        "repositoryDescription": "Flexible command line tool to create graphs from CSV data"
-    },
-    {
-        "name": "Pixel",
-        "owner": {
-            "login": "muukii"
-        },
-        "full_name": "muukii/Pixel",
-        "forks_count": "9",
-        "stargazers_count": "160",
-        "language": "Swift",
-        "repositoryDescription": "A image editor and engine using CoreImage"
-    },
-    {
-        "name": "monica",
-        "owner": {
-            "login": "monicahq"
-        },
-        "full_name": "monicahq/monica",
-        "forks_count": "652",
-        "stargazers_count": "5803",
-        "language": "PHP",
-        "repositoryDescription": "Personal CRM. Remember everything about your friends and family."
     },
     {
         "name": "first-contributions",
@@ -244,30 +189,85 @@
             "login": "firstcontributions"
         },
         "full_name": "firstcontributions/first-contributions",
-        "forks_count": "12943",
-        "stargazers_count": "4616",
+        "forks_count": "13186",
+        "stargazers_count": "4670",
         "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
     },
     {
-        "name": "tensorflow",
+        "name": "the-platform",
         "owner": {
-            "login": "tensorflow"
+            "login": "palmerhq"
         },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "69114",
-        "stargazers_count": "113247",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+        "full_name": "palmerhq/the-platform",
+        "forks_count": "48",
+        "stargazers_count": "2597",
+        "language": "JavaScript",
+        "repositoryDescription": "Web. Components.\n😂"
     },
     {
-        "name": "gotop",
+        "name": "dive",
         "owner": {
-            "login": "cjbassi"
+            "login": "wagoodman"
         },
-        "full_name": "cjbassi/gotop",
-        "forks_count": "75",
-        "stargazers_count": "2458",
+        "full_name": "wagoodman/dive",
+        "forks_count": "52",
+        "stargazers_count": "1967",
         "language": "Go",
-        "repositoryDescription": "A terminal based graphical activity monitor inspired by gtop and vtop"
+        "repositoryDescription": "A tool for exploring each layer in a docker image"
+    },
+    {
+        "name": "dinero.js",
+        "owner": {
+            "login": "sarahdayan"
+        },
+        "full_name": "sarahdayan/dinero.js",
+        "forks_count": "67",
+        "stargazers_count": "1946",
+        "language": "JavaScript",
+        "repositoryDescription": "💸\nAn immutable library to create, calculate and format money."
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "16721",
+        "stargazers_count": "117789",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "arthas",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/arthas",
+        "forks_count": "786",
+        "stargazers_count": "5143",
+        "language": "Java",
+        "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
+    },
+    {
+        "name": "fuxploider",
+        "owner": {
+            "login": "almandin"
+        },
+        "full_name": "almandin/fuxploider",
+        "forks_count": "127",
+        "stargazers_count": "816",
+        "language": "Python",
+        "repositoryDescription": "File upload vulnerability scanner and exploitation tool."
+    },
+    {
+        "name": "irondb",
+        "owner": {
+            "login": "gruns"
+        },
+        "full_name": "gruns/irondb",
+        "forks_count": "25",
+        "stargazers_count": "1034",
+        "language": "JavaScript",
+        "repositoryDescription": "🔩\nA relentless key-value store for the browser."
     }
 ]

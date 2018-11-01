@@ -1,13 +1,68 @@
 [
     {
+        "name": "bert",
+        "owner": {
+            "login": "google-research"
+        },
+        "full_name": "google-research/bert",
+        "forks_count": "388",
+        "stargazers_count": "2976",
+        "language": "Python",
+        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
+    },
+    {
         "name": "DeepLearning-500-questions",
         "owner": {
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "1572",
-        "stargazers_count": "6405",
+        "forks_count": "1903",
+        "stargazers_count": "7477",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为15个章节，近20万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "carlo",
+        "owner": {
+            "login": "GoogleChromeLabs"
+        },
+        "full_name": "GoogleChromeLabs/carlo",
+        "forks_count": "25",
+        "stargazers_count": "1066",
+        "language": "JavaScript",
+        "repositoryDescription": "Web rendering surface for Node applications"
+    },
+    {
+        "name": "howler.js",
+        "owner": {
+            "login": "goldfire"
+        },
+        "full_name": "goldfire/howler.js",
+        "forks_count": "1252",
+        "stargazers_count": "11575",
+        "language": "JavaScript",
+        "repositoryDescription": "Javascript audio library for the modern web."
+    },
+    {
+        "name": "adanet",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/adanet",
+        "forks_count": "108",
+        "stargazers_count": "917",
+        "language": "Python",
+        "repositoryDescription": "Fast and flexible AutoML with learning guarantees."
+    },
+    {
+        "name": "dive",
+        "owner": {
+            "login": "wagoodman"
+        },
+        "full_name": "wagoodman/dive",
+        "forks_count": "57",
+        "stargazers_count": "2274",
+        "language": "Go",
+        "repositoryDescription": "A tool for exploring each layer in a docker image"
     },
     {
         "name": "pennywise",
@@ -15,21 +70,10 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/pennywise",
-        "forks_count": "38",
-        "stargazers_count": "875",
+        "forks_count": "45",
+        "stargazers_count": "1171",
         "language": "JavaScript",
         "repositoryDescription": "Cross-platform application to open anything in a floating window"
-    },
-    {
-        "name": "jobs-done",
-        "owner": {
-            "login": "skidding"
-        },
-        "full_name": "skidding/jobs-done",
-        "forks_count": "23",
-        "stargazers_count": "490",
-        "language": "JavaScript",
-        "repositoryDescription": "Ritual app for ending the work day inspired by Deep Work"
     },
     {
         "name": "DeepCreamPy",
@@ -37,8 +81,8 @@
             "login": "deeppomf"
         },
         "full_name": "deeppomf/DeepCreamPy",
-        "forks_count": "136",
-        "stargazers_count": "2405",
+        "forks_count": "148",
+        "stargazers_count": "2653",
         "language": "Python",
         "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
     },
@@ -48,20 +92,9 @@
             "login": "dipakkr"
         },
         "full_name": "dipakkr/A-to-Z-Resources-for-Students",
-        "forks_count": "1062",
-        "stargazers_count": "2401",
+        "forks_count": "1106",
+        "stargazers_count": "2629",
         "repositoryDescription": "Curated list of resources for college students Show your\n❤️\nby giving a\n⭐️"
-    },
-    {
-        "name": "Algojammer",
-        "owner": {
-            "login": "ChrisKnott"
-        },
-        "full_name": "ChrisKnott/Algojammer",
-        "forks_count": "50",
-        "stargazers_count": "1756",
-        "language": "C++",
-        "repositoryDescription": "An experimental code editor for writing algorithms"
     },
     {
         "name": "33-js-concepts",
@@ -69,21 +102,21 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1214",
-        "stargazers_count": "15863",
+        "forks_count": "1242",
+        "stargazers_count": "16081",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
-        "name": "nlp_course",
+        "name": "CFDPython",
         "owner": {
-            "login": "yandexdataschool"
+            "login": "barbagroup"
         },
-        "full_name": "yandexdataschool/nlp_course",
-        "forks_count": "74",
-        "stargazers_count": "461",
+        "full_name": "barbagroup/CFDPython",
+        "forks_count": "390",
+        "stargazers_count": "898",
         "language": "Jupyter Notebook",
-        "repositoryDescription": "YSDA course in Natural Language Processing"
+        "repositoryDescription": "A sequence of Jupyter notebooks featuring the \"12 Steps to Navier-Stokes\" http://lorenabarba.com/"
     },
     {
         "name": "Learn_Data_Science_in_3_Months",
@@ -91,75 +124,9 @@
             "login": "llSourcell"
         },
         "full_name": "llSourcell/Learn_Data_Science_in_3_Months",
-        "forks_count": "155",
-        "stargazers_count": "527",
+        "forks_count": "187",
+        "stargazers_count": "697",
         "repositoryDescription": "This is the Curriculum for \"Learn Data Science in 3 Months\" By Siraj Raval on Youtube"
-    },
-    {
-        "name": "carlo",
-        "owner": {
-            "login": "GoogleChromeLabs"
-        },
-        "full_name": "GoogleChromeLabs/carlo",
-        "forks_count": "7",
-        "stargazers_count": "276",
-        "language": "JavaScript",
-        "repositoryDescription": "Web rendering surface for Node applications"
-    },
-    {
-        "name": "hashbrown",
-        "owner": {
-            "login": "Amanieu"
-        },
-        "full_name": "Amanieu/hashbrown",
-        "forks_count": "5",
-        "stargazers_count": "319",
-        "language": "Rust",
-        "repositoryDescription": "Rust port of Google's SwissTable hash map"
-    },
-    {
-        "name": "react-use",
-        "owner": {
-            "login": "streamich"
-        },
-        "full_name": "streamich/react-use",
-        "forks_count": "19",
-        "stargazers_count": "640",
-        "language": "TypeScript",
-        "repositoryDescription": "React Hooks — future of React\n👍\nreact-use"
-    },
-    {
-        "name": "haunted",
-        "owner": {
-            "login": "matthewp"
-        },
-        "full_name": "matthewp/haunted",
-        "forks_count": "7",
-        "stargazers_count": "431",
-        "language": "JavaScript",
-        "repositoryDescription": "React's Hooks API implemented for web components"
-    },
-    {
-        "name": "westore",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/westore",
-        "forks_count": "199",
-        "stargazers_count": "1970",
-        "language": "JavaScript",
-        "repositoryDescription": "微信小程序解决方案 - 1KB javascript 覆盖状态管理、跨页通讯、插件开发和云数据库开发"
-    },
-    {
-        "name": "azul",
-        "owner": {
-            "login": "maps4print"
-        },
-        "full_name": "maps4print/azul",
-        "forks_count": "24",
-        "stargazers_count": "1230",
-        "language": "Rust",
-        "repositoryDescription": "Desktop GUI Framework"
     },
     {
         "name": "33-js-concepts",
@@ -167,53 +134,43 @@
             "login": "stephentian"
         },
         "full_name": "stephentian/33-js-concepts",
-        "forks_count": "413",
-        "stargazers_count": "3718",
+        "forks_count": "444",
+        "stargazers_count": "3889",
         "language": "JavaScript",
         "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
     },
     {
-        "name": "up",
+        "name": "nlp_course",
         "owner": {
-            "login": "akavel"
+            "login": "yandexdataschool"
         },
-        "full_name": "akavel/up",
-        "forks_count": "75",
-        "stargazers_count": "3589",
-        "language": "Go",
-        "repositoryDescription": "Ultimate Plumber is a tool for writing Linux pipes with instant live preview"
+        "full_name": "yandexdataschool/nlp_course",
+        "forks_count": "91",
+        "stargazers_count": "613",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "YSDA course in Natural Language Processing"
     },
     {
-        "name": "first-contributions",
+        "name": "machine-learning-octave",
         "owner": {
-            "login": "firstcontributions"
+            "login": "trekhleb"
         },
-        "full_name": "firstcontributions/first-contributions",
-        "forks_count": "13186",
-        "stargazers_count": "4670",
-        "repositoryDescription": "🚀\n✨\nHelp beginners to contribute to open source projects"
+        "full_name": "trekhleb/machine-learning-octave",
+        "forks_count": "19",
+        "stargazers_count": "182",
+        "language": "Matlab",
+        "repositoryDescription": "🤖\nMatLab/Octave examples of popular machine learning algorithms with code examples and mathematics being explained"
     },
     {
-        "name": "the-platform",
+        "name": "westore",
         "owner": {
-            "login": "palmerhq"
+            "login": "Tencent"
         },
-        "full_name": "palmerhq/the-platform",
-        "forks_count": "48",
-        "stargazers_count": "2597",
+        "full_name": "Tencent/westore",
+        "forks_count": "217",
+        "stargazers_count": "2115",
         "language": "JavaScript",
-        "repositoryDescription": "Web. Components.\n😂"
-    },
-    {
-        "name": "dive",
-        "owner": {
-            "login": "wagoodman"
-        },
-        "full_name": "wagoodman/dive",
-        "forks_count": "52",
-        "stargazers_count": "1967",
-        "language": "Go",
-        "repositoryDescription": "A tool for exploring each layer in a docker image"
+        "repositoryDescription": "微信小程序解决方案 - 1KB javascript 覆盖状态管理、跨页通讯、插件开发和云数据库开发"
     },
     {
         "name": "dinero.js",
@@ -221,21 +178,76 @@
             "login": "sarahdayan"
         },
         "full_name": "sarahdayan/dinero.js",
-        "forks_count": "67",
-        "stargazers_count": "1946",
+        "forks_count": "69",
+        "stargazers_count": "2103",
         "language": "JavaScript",
         "repositoryDescription": "💸\nAn immutable library to create, calculate and format money."
     },
     {
-        "name": "vue",
+        "name": "jobs-done",
         "owner": {
-            "login": "vuejs"
+            "login": "skidding"
         },
-        "full_name": "vuejs/vue",
-        "forks_count": "16721",
-        "stargazers_count": "117789",
+        "full_name": "skidding/jobs-done",
+        "forks_count": "31",
+        "stargazers_count": "634",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "Ritual app for ending the work day inspired by Deep Work"
+    },
+    {
+        "name": "sdns",
+        "owner": {
+            "login": "semihalev"
+        },
+        "full_name": "semihalev/sdns",
+        "forks_count": "9",
+        "stargazers_count": "242",
+        "language": "Go",
+        "repositoryDescription": "Lightweight, fast recursive dns server with dnssec support"
+    },
+    {
+        "name": "ervy",
+        "owner": {
+            "login": "chunqiuyiyu"
+        },
+        "full_name": "chunqiuyiyu/ervy",
+        "forks_count": "4",
+        "stargazers_count": "168",
+        "language": "JavaScript",
+        "repositoryDescription": "Bring charts to terminal."
+    },
+    {
+        "name": "spring-cloud-alibaba",
+        "owner": {
+            "login": "spring-cloud-incubator"
+        },
+        "full_name": "spring-cloud-incubator/spring-cloud-alibaba",
+        "forks_count": "153",
+        "stargazers_count": "880",
+        "language": "Java",
+        "repositoryDescription": "Spring Cloud Alibaba provides a one-stop solution for application development for the distributed solutions of Alibaba middleware."
+    },
+    {
+        "name": "react-use",
+        "owner": {
+            "login": "streamich"
+        },
+        "full_name": "streamich/react-use",
+        "forks_count": "24",
+        "stargazers_count": "770",
+        "language": "TypeScript",
+        "repositoryDescription": "React Hooks — future of React\n👍\nreact-use"
+    },
+    {
+        "name": "Algojammer",
+        "owner": {
+            "login": "ChrisKnott"
+        },
+        "full_name": "ChrisKnott/Algojammer",
+        "forks_count": "55",
+        "stargazers_count": "1887",
+        "language": "C++",
+        "repositoryDescription": "An experimental code editor for writing algorithms"
     },
     {
         "name": "arthas",
@@ -243,31 +255,20 @@
             "login": "alibaba"
         },
         "full_name": "alibaba/arthas",
-        "forks_count": "786",
-        "stargazers_count": "5143",
+        "forks_count": "815",
+        "stargazers_count": "5261",
         "language": "Java",
         "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
     },
     {
-        "name": "fuxploider",
+        "name": "go-mysql-server",
         "owner": {
-            "login": "almandin"
+            "login": "src-d"
         },
-        "full_name": "almandin/fuxploider",
-        "forks_count": "127",
-        "stargazers_count": "816",
-        "language": "Python",
-        "repositoryDescription": "File upload vulnerability scanner and exploitation tool."
-    },
-    {
-        "name": "irondb",
-        "owner": {
-            "login": "gruns"
-        },
-        "full_name": "gruns/irondb",
-        "forks_count": "25",
-        "stargazers_count": "1034",
-        "language": "JavaScript",
-        "repositoryDescription": "🔩\nA relentless key-value store for the browser."
+        "full_name": "src-d/go-mysql-server",
+        "forks_count": "48",
+        "stargazers_count": "316",
+        "language": "Go",
+        "repositoryDescription": "An extensible MySQL server implementation in Go."
     }
 ]

@@ -1,14 +1,14 @@
 [
     {
-        "name": "bert",
+        "name": "DeepLearning-500-questions",
         "owner": {
-            "login": "google-research"
+            "login": "scutan90"
         },
-        "full_name": "google-research/bert",
-        "forks_count": "895",
-        "stargazers_count": "6187",
-        "language": "Python",
-        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "2660",
+        "stargazers_count": "10453",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为15个章节，近20万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
         "name": "fx",
@@ -16,65 +16,31 @@
             "login": "antonmedv"
         },
         "full_name": "antonmedv/fx",
-        "forks_count": "21",
-        "stargazers_count": "889",
+        "forks_count": "38",
+        "stargazers_count": "1693",
         "language": "JavaScript",
         "repositoryDescription": "Command-line JSON processing tool\n🔥"
     },
     {
-        "name": "DeepLearning-500-questions",
+        "name": "spectre",
         "owner": {
-            "login": "scutan90"
+            "login": "picturepan2"
         },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "2435",
-        "stargazers_count": "9663",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为15个章节，近20万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+        "full_name": "picturepan2/spectre",
+        "forks_count": "540",
+        "stargazers_count": "7627",
+        "language": "CSS",
+        "repositoryDescription": "Spectre.css - A Lightweight, Responsive and Modern CSS Framework"
     },
     {
-        "name": "DeepCreamPy",
+        "name": "virtualbox_e1000_0day",
         "owner": {
-            "login": "deeppomf"
+            "login": "MorteNoir1"
         },
-        "full_name": "deeppomf/DeepCreamPy",
-        "forks_count": "464",
-        "stargazers_count": "5231",
-        "language": "Python",
-        "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
-    },
-    {
-        "name": "redbird",
-        "owner": {
-            "login": "OptimalBits"
-        },
-        "full_name": "OptimalBits/redbird",
-        "forks_count": "196",
-        "stargazers_count": "3120",
-        "language": "JavaScript",
-        "repositoryDescription": "A modern reverse proxy for node"
-    },
-    {
-        "name": "DeOldify",
-        "owner": {
-            "login": "jantic"
-        },
-        "full_name": "jantic/DeOldify",
-        "forks_count": "144",
-        "stargazers_count": "3107",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "A Deep Learning based project for colorizing and restoring old images"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "3153",
-        "stargazers_count": "11779",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "full_name": "MorteNoir1/virtualbox_e1000_0day",
+        "forks_count": "132",
+        "stargazers_count": "865",
+        "repositoryDescription": "VirtualBox E1000 Guest-to-Host Escape"
     },
     {
         "name": "eva-icons",
@@ -82,31 +48,32 @@
             "login": "akveo"
         },
         "full_name": "akveo/eva-icons",
-        "forks_count": "54",
-        "stargazers_count": "2010",
+        "forks_count": "57",
+        "stargazers_count": "2393",
         "language": "TypeScript",
         "repositoryDescription": "A pack of more than 480 beautifully crafted Open Source icons. SVG, Sketch, Web Font and Animations support."
     },
     {
-        "name": "git-flight-rules",
+        "name": "awesome-algorithm",
         "owner": {
-            "login": "k88hudson"
+            "login": "apachecn"
         },
-        "full_name": "k88hudson/git-flight-rules",
-        "forks_count": "1746",
-        "stargazers_count": "27403",
-        "repositoryDescription": "Flight rules for git"
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "1079",
+        "stargazers_count": "6628",
+        "language": "Python",
+        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
     },
     {
-        "name": "carlo",
+        "name": "bert",
         "owner": {
-            "login": "GoogleChromeLabs"
+            "login": "google-research"
         },
-        "full_name": "GoogleChromeLabs/carlo",
-        "forks_count": "121",
-        "stargazers_count": "5257",
-        "language": "JavaScript",
-        "repositoryDescription": "Web rendering surface for Node applications"
+        "full_name": "google-research/bert",
+        "forks_count": "956",
+        "stargazers_count": "6457",
+        "language": "Python",
+        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
     },
     {
         "name": "taro",
@@ -114,54 +81,32 @@
             "login": "NervJS"
         },
         "full_name": "NervJS/taro",
-        "forks_count": "900",
-        "stargazers_count": "10261",
+        "forks_count": "927",
+        "stargazers_count": "10496",
         "language": "JavaScript",
         "repositoryDescription": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信小程序/百度智能小程序/支付宝小程序、H5、React Native 等的应用。"
     },
     {
-        "name": "pytorch-pretrained-BERT",
+        "name": "wink",
         "owner": {
-            "login": "huggingface"
+            "login": "writingink"
         },
-        "full_name": "huggingface/pytorch-pretrained-BERT",
-        "forks_count": "73",
-        "stargazers_count": "820",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "PyTorch version of Google AI's BERT model with script to load Google's pre-trained models"
+        "full_name": "writingink/wink",
+        "forks_count": "17",
+        "stargazers_count": "354",
+        "language": "JavaScript",
+        "repositoryDescription": "A Laravel-based publishing platform"
     },
     {
-        "name": "AwesomeXSS",
+        "name": "DeepCreamPy",
         "owner": {
-            "login": "s0md3v"
+            "login": "deeppomf"
         },
-        "full_name": "s0md3v/AwesomeXSS",
-        "forks_count": "144",
-        "stargazers_count": "1011",
-        "language": "JavaScript",
-        "repositoryDescription": "Awesome XSS stuff"
-    },
-    {
-        "name": "free-programming-books-zh_CN",
-        "owner": {
-            "login": "justjavac"
-        },
-        "full_name": "justjavac/free-programming-books-zh_CN",
-        "forks_count": "14116",
-        "stargazers_count": "41276",
-        "language": "JavaScript",
-        "repositoryDescription": "📚\n免费的计算机编程类中文书籍，欢迎投稿"
-    },
-    {
-        "name": "glorious-demo",
-        "owner": {
-            "login": "glorious-codes"
-        },
-        "full_name": "glorious-codes/glorious-demo",
-        "forks_count": "36",
-        "stargazers_count": "1650",
-        "language": "JavaScript",
-        "repositoryDescription": "The easiest way to demonstrate your code in action."
+        "full_name": "deeppomf/DeepCreamPy",
+        "forks_count": "488",
+        "stargazers_count": "5417",
+        "language": "Python",
+        "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
     },
     {
         "name": "funNLP",
@@ -169,21 +114,21 @@
             "login": "fighting41love"
         },
         "full_name": "fighting41love/funNLP",
-        "forks_count": "64",
-        "stargazers_count": "288",
+        "forks_count": "96",
+        "stargazers_count": "474",
         "language": "Python",
         "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌&零件词库、时间抽取、连续英文切割、中文词向量大全、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料。"
     },
     {
-        "name": "api.yike.io",
+        "name": "JavaGuide",
         "owner": {
-            "login": "overtrue"
+            "login": "Snailclimb"
         },
-        "full_name": "overtrue/api.yike.io",
-        "forks_count": "26",
-        "stargazers_count": "173",
-        "language": "PHP",
-        "repositoryDescription": "一刻社区后端 API 源码"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "3194",
+        "stargazers_count": "11950",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
         "name": "clash_for_windows_pkg",
@@ -191,52 +136,30 @@
             "login": "Fndroid"
         },
         "full_name": "Fndroid/clash_for_windows_pkg",
-        "forks_count": "46",
-        "stargazers_count": "440",
+        "forks_count": "63",
+        "stargazers_count": "602",
         "repositoryDescription": "A Windows GUI for Clash"
     },
     {
-        "name": "Python",
+        "name": "enquirer",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "enquirer"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "4734",
-        "stargazers_count": "17266",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "2019_campus_apply",
-        "owner": {
-            "login": "frank-lam"
-        },
-        "full_name": "frank-lam/2019_campus_apply",
-        "forks_count": "384",
-        "stargazers_count": "2185",
-        "repositoryDescription": "🚀\nFull Stack Developer Tutorial，后台技术栈/全栈开发/架构师之路，秋招/春招/校招/面试。 from zero to hero."
-    },
-    {
-        "name": "kubefwd",
-        "owner": {
-            "login": "txn2"
-        },
-        "full_name": "txn2/kubefwd",
+        "full_name": "enquirer/enquirer",
         "forks_count": "12",
-        "stargazers_count": "493",
-        "language": "Go",
-        "repositoryDescription": "Bulk port forwarding Kubernetes services for local development."
+        "stargazers_count": "448",
+        "language": "JavaScript",
+        "repositoryDescription": "Stylish, intuitive and user-friendly prompt system."
     },
     {
-        "name": "ratel",
+        "name": "git-flight-rules",
         "owner": {
-            "login": "ainilili"
+            "login": "k88hudson"
         },
-        "full_name": "ainilili/ratel",
-        "forks_count": "10",
-        "stargazers_count": "171",
-        "language": "Java",
-        "repositoryDescription": "A fighting landlord program that can be played on the command line"
+        "full_name": "k88hudson/git-flight-rules",
+        "forks_count": "1762",
+        "stargazers_count": "27566",
+        "repositoryDescription": "Flight rules for git"
     },
     {
         "name": "awful-ai",
@@ -244,8 +167,8 @@
             "login": "daviddao"
         },
         "full_name": "daviddao/awful-ai",
-        "forks_count": "35",
-        "stargazers_count": "1065",
+        "forks_count": "42",
+        "stargazers_count": "1232",
         "repositoryDescription": "😈\nAwful AI is a curated list to track current scary usages of AI - hoping to raise awareness"
     },
     {
@@ -254,20 +177,97 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1338",
-        "stargazers_count": "17138",
+        "forks_count": "1348",
+        "stargazers_count": "17291",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
-        "name": "JCSprout",
+        "name": "clash",
         "owner": {
-            "login": "crossoverJie"
+            "login": "Dreamacro"
         },
-        "full_name": "crossoverJie/JCSprout",
-        "forks_count": "4282",
-        "stargazers_count": "16281",
-        "language": "Java",
-        "repositoryDescription": "👨‍🎓\nJava Core Sprout : basic, concurrent, algorithm"
+        "full_name": "Dreamacro/clash",
+        "forks_count": "71",
+        "stargazers_count": "973",
+        "language": "Go",
+        "repositoryDescription": "A rule based tunnel in Go."
+    },
+    {
+        "name": "carlo",
+        "owner": {
+            "login": "GoogleChromeLabs"
+        },
+        "full_name": "GoogleChromeLabs/carlo",
+        "forks_count": "130",
+        "stargazers_count": "5408",
+        "language": "JavaScript",
+        "repositoryDescription": "Web rendering surface for Node applications"
+    },
+    {
+        "name": "AwesomeXSS",
+        "owner": {
+            "login": "s0md3v"
+        },
+        "full_name": "s0md3v/AwesomeXSS",
+        "forks_count": "147",
+        "stargazers_count": "1157",
+        "language": "JavaScript",
+        "repositoryDescription": "Awesome XSS stuff"
+    },
+    {
+        "name": "DeOldify",
+        "owner": {
+            "login": "jantic"
+        },
+        "full_name": "jantic/DeOldify",
+        "forks_count": "152",
+        "stargazers_count": "3264",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "A Deep Learning based project for colorizing and restoring old images"
+    },
+    {
+        "name": "redbird",
+        "owner": {
+            "login": "OptimalBits"
+        },
+        "full_name": "OptimalBits/redbird",
+        "forks_count": "198",
+        "stargazers_count": "3271",
+        "language": "JavaScript",
+        "repositoryDescription": "A modern reverse proxy for node"
+    },
+    {
+        "name": "glorious-demo",
+        "owner": {
+            "login": "glorious-codes"
+        },
+        "full_name": "glorious-codes/glorious-demo",
+        "forks_count": "41",
+        "stargazers_count": "1794",
+        "language": "JavaScript",
+        "repositoryDescription": "The easiest way to demonstrate your code in action."
+    },
+    {
+        "name": "free-programming-books-zh_CN",
+        "owner": {
+            "login": "justjavac"
+        },
+        "full_name": "justjavac/free-programming-books-zh_CN",
+        "forks_count": "14144",
+        "stargazers_count": "41402",
+        "language": "JavaScript",
+        "repositoryDescription": "📚\n免费的计算机编程类中文书籍，欢迎投稿"
+    },
+    {
+        "name": "ice",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/ice",
+        "forks_count": "895",
+        "stargazers_count": "9079",
+        "language": "JavaScript",
+        "repositoryDescription": "🚀\n飞冰 - 让前端开发简单而友好，海量可复用物料，配套桌面工具极速构建前端应用，效率提升 100%"
     }
 ]

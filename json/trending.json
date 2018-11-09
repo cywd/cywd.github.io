@@ -1,14 +1,47 @@
 [
     {
+        "name": "rawact",
+        "owner": {
+            "login": "sokra"
+        },
+        "full_name": "sokra/rawact",
+        "forks_count": "14",
+        "stargazers_count": "911",
+        "language": "JavaScript",
+        "repositoryDescription": "[POC] A babel plugin which compiles React.js components into native DOM instructions to eliminate the need for the react library at runtime."
+    },
+    {
+        "name": "enquirer",
+        "owner": {
+            "login": "enquirer"
+        },
+        "full_name": "enquirer/enquirer",
+        "forks_count": "29",
+        "stargazers_count": "1113",
+        "language": "JavaScript",
+        "repositoryDescription": "Stylish, intuitive and user-friendly prompt system."
+    },
+    {
         "name": "DeepLearning-500-questions",
         "owner": {
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "2660",
-        "stargazers_count": "10453",
+        "forks_count": "2779",
+        "stargazers_count": "10863",
         "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为15个章节，近20万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为17个章节，20多万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "spinningup",
+        "owner": {
+            "login": "openai"
+        },
+        "full_name": "openai/spinningup",
+        "forks_count": "62",
+        "stargazers_count": "445",
+        "language": "Python",
+        "repositoryDescription": "Spinning Up in Deep RL"
     },
     {
         "name": "fx",
@@ -16,8 +49,8 @@
             "login": "antonmedv"
         },
         "full_name": "antonmedv/fx",
-        "forks_count": "38",
-        "stargazers_count": "1693",
+        "forks_count": "45",
+        "stargazers_count": "2103",
         "language": "JavaScript",
         "repositoryDescription": "Command-line JSON processing tool\n🔥"
     },
@@ -27,149 +60,10 @@
             "login": "picturepan2"
         },
         "full_name": "picturepan2/spectre",
-        "forks_count": "540",
-        "stargazers_count": "7627",
+        "forks_count": "555",
+        "stargazers_count": "8017",
         "language": "CSS",
         "repositoryDescription": "Spectre.css - A Lightweight, Responsive and Modern CSS Framework"
-    },
-    {
-        "name": "virtualbox_e1000_0day",
-        "owner": {
-            "login": "MorteNoir1"
-        },
-        "full_name": "MorteNoir1/virtualbox_e1000_0day",
-        "forks_count": "132",
-        "stargazers_count": "865",
-        "repositoryDescription": "VirtualBox E1000 Guest-to-Host Escape"
-    },
-    {
-        "name": "eva-icons",
-        "owner": {
-            "login": "akveo"
-        },
-        "full_name": "akveo/eva-icons",
-        "forks_count": "57",
-        "stargazers_count": "2393",
-        "language": "TypeScript",
-        "repositoryDescription": "A pack of more than 480 beautifully crafted Open Source icons. SVG, Sketch, Web Font and Animations support."
-    },
-    {
-        "name": "awesome-algorithm",
-        "owner": {
-            "login": "apachecn"
-        },
-        "full_name": "apachecn/awesome-algorithm",
-        "forks_count": "1079",
-        "stargazers_count": "6628",
-        "language": "Python",
-        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
-    },
-    {
-        "name": "bert",
-        "owner": {
-            "login": "google-research"
-        },
-        "full_name": "google-research/bert",
-        "forks_count": "956",
-        "stargazers_count": "6457",
-        "language": "Python",
-        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
-    },
-    {
-        "name": "taro",
-        "owner": {
-            "login": "NervJS"
-        },
-        "full_name": "NervJS/taro",
-        "forks_count": "927",
-        "stargazers_count": "10496",
-        "language": "JavaScript",
-        "repositoryDescription": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信小程序/百度智能小程序/支付宝小程序、H5、React Native 等的应用。"
-    },
-    {
-        "name": "wink",
-        "owner": {
-            "login": "writingink"
-        },
-        "full_name": "writingink/wink",
-        "forks_count": "17",
-        "stargazers_count": "354",
-        "language": "JavaScript",
-        "repositoryDescription": "A Laravel-based publishing platform"
-    },
-    {
-        "name": "DeepCreamPy",
-        "owner": {
-            "login": "deeppomf"
-        },
-        "full_name": "deeppomf/DeepCreamPy",
-        "forks_count": "488",
-        "stargazers_count": "5417",
-        "language": "Python",
-        "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
-    },
-    {
-        "name": "funNLP",
-        "owner": {
-            "login": "fighting41love"
-        },
-        "full_name": "fighting41love/funNLP",
-        "forks_count": "96",
-        "stargazers_count": "474",
-        "language": "Python",
-        "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌&零件词库、时间抽取、连续英文切割、中文词向量大全、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料。"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "3194",
-        "stargazers_count": "11950",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "clash_for_windows_pkg",
-        "owner": {
-            "login": "Fndroid"
-        },
-        "full_name": "Fndroid/clash_for_windows_pkg",
-        "forks_count": "63",
-        "stargazers_count": "602",
-        "repositoryDescription": "A Windows GUI for Clash"
-    },
-    {
-        "name": "enquirer",
-        "owner": {
-            "login": "enquirer"
-        },
-        "full_name": "enquirer/enquirer",
-        "forks_count": "12",
-        "stargazers_count": "448",
-        "language": "JavaScript",
-        "repositoryDescription": "Stylish, intuitive and user-friendly prompt system."
-    },
-    {
-        "name": "git-flight-rules",
-        "owner": {
-            "login": "k88hudson"
-        },
-        "full_name": "k88hudson/git-flight-rules",
-        "forks_count": "1762",
-        "stargazers_count": "27566",
-        "repositoryDescription": "Flight rules for git"
-    },
-    {
-        "name": "awful-ai",
-        "owner": {
-            "login": "daviddao"
-        },
-        "full_name": "daviddao/awful-ai",
-        "forks_count": "42",
-        "stargazers_count": "1232",
-        "repositoryDescription": "😈\nAwful AI is a curated list to track current scary usages of AI - hoping to raise awareness"
     },
     {
         "name": "33-js-concepts",
@@ -177,43 +71,118 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1348",
-        "stargazers_count": "17291",
+        "forks_count": "1392",
+        "stargazers_count": "17602",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
-        "name": "clash",
+        "name": "eva-icons",
         "owner": {
-            "login": "Dreamacro"
+            "login": "akveo"
         },
-        "full_name": "Dreamacro/clash",
-        "forks_count": "71",
-        "stargazers_count": "973",
+        "full_name": "akveo/eva-icons",
+        "forks_count": "61",
+        "stargazers_count": "2683",
+        "language": "TypeScript",
+        "repositoryDescription": "A pack of more than 480 beautifully crafted Open Source icons. SVG, Sketch, Web Font and Animations support."
+    },
+    {
+        "name": "archiver",
+        "owner": {
+            "login": "mholt"
+        },
+        "full_name": "mholt/archiver",
+        "forks_count": "129",
+        "stargazers_count": "1401",
         "language": "Go",
-        "repositoryDescription": "A rule based tunnel in Go."
+        "repositoryDescription": "Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, .tar.lz4, .tar.sz, and .rar (extract-only) files with Go"
     },
     {
-        "name": "carlo",
+        "name": "podlaskigit",
         "owner": {
-            "login": "GoogleChromeLabs"
+            "login": "maciejkorsan"
         },
-        "full_name": "GoogleChromeLabs/carlo",
-        "forks_count": "130",
-        "stargazers_count": "5408",
-        "language": "JavaScript",
-        "repositoryDescription": "Web rendering surface for Node applications"
+        "full_name": "maciejkorsan/podlaskigit",
+        "forks_count": "9",
+        "stargazers_count": "208",
+        "repositoryDescription": "Podlaskie aliasy dla gitowych komend"
     },
     {
-        "name": "AwesomeXSS",
+        "name": "bert",
         "owner": {
-            "login": "s0md3v"
+            "login": "google-research"
         },
-        "full_name": "s0md3v/AwesomeXSS",
-        "forks_count": "147",
-        "stargazers_count": "1157",
+        "full_name": "google-research/bert",
+        "forks_count": "993",
+        "stargazers_count": "6634",
+        "language": "Python",
+        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
+    },
+    {
+        "name": "Tigo",
+        "owner": {
+            "login": "karldoenitz"
+        },
+        "full_name": "karldoenitz/Tigo",
+        "forks_count": "60",
+        "stargazers_count": "285",
+        "language": "Go",
+        "repositoryDescription": "A go restful framework"
+    },
+    {
+        "name": "virtualbox_e1000_0day",
+        "owner": {
+            "login": "MorteNoir1"
+        },
+        "full_name": "MorteNoir1/virtualbox_e1000_0day",
+        "forks_count": "154",
+        "stargazers_count": "1025",
+        "repositoryDescription": "VirtualBox E1000 Guest-to-Host Escape"
+    },
+    {
+        "name": "33-js-concepts",
+        "owner": {
+            "login": "stephentian"
+        },
+        "full_name": "stephentian/33-js-concepts",
+        "forks_count": "533",
+        "stargazers_count": "4588",
         "language": "JavaScript",
-        "repositoryDescription": "Awesome XSS stuff"
+        "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
+    },
+    {
+        "name": "waveglow",
+        "owner": {
+            "login": "NVIDIA"
+        },
+        "full_name": "NVIDIA/waveglow",
+        "forks_count": "42",
+        "stargazers_count": "307",
+        "language": "Python",
+        "repositoryDescription": "A Flow-based Generative Network for Speech Synthesis"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "3244",
+        "stargazers_count": "12081",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "taro",
+        "owner": {
+            "login": "NervJS"
+        },
+        "full_name": "NervJS/taro",
+        "forks_count": "940",
+        "stargazers_count": "10639",
+        "language": "JavaScript",
+        "repositoryDescription": "多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信小程序/百度智能小程序/支付宝小程序、H5、React Native 等的应用。"
     },
     {
         "name": "DeOldify",
@@ -221,53 +190,85 @@
             "login": "jantic"
         },
         "full_name": "jantic/DeOldify",
-        "forks_count": "152",
-        "stargazers_count": "3264",
+        "forks_count": "165",
+        "stargazers_count": "3409",
         "language": "Jupyter Notebook",
         "repositoryDescription": "A Deep Learning based project for colorizing and restoring old images"
     },
     {
-        "name": "redbird",
+        "name": "gocity",
         "owner": {
-            "login": "OptimalBits"
+            "login": "rodrigo-brito"
         },
-        "full_name": "OptimalBits/redbird",
-        "forks_count": "198",
-        "stargazers_count": "3271",
-        "language": "JavaScript",
-        "repositoryDescription": "A modern reverse proxy for node"
+        "full_name": "rodrigo-brito/gocity",
+        "forks_count": "52",
+        "stargazers_count": "943",
+        "language": "Go",
+        "repositoryDescription": "📊\nCode City metaphor for visualizing Go source code in 3D"
     },
     {
-        "name": "glorious-demo",
+        "name": "DeepCreamPy",
         "owner": {
-            "login": "glorious-codes"
+            "login": "deeppomf"
         },
-        "full_name": "glorious-codes/glorious-demo",
-        "forks_count": "41",
-        "stargazers_count": "1794",
-        "language": "JavaScript",
-        "repositoryDescription": "The easiest way to demonstrate your code in action."
+        "full_name": "deeppomf/DeepCreamPy",
+        "forks_count": "513",
+        "stargazers_count": "5548",
+        "language": "Python",
+        "repositoryDescription": "Decensoring Hentai with Deep Neural Networks"
     },
     {
-        "name": "free-programming-books-zh_CN",
+        "name": "awesome-algorithm",
         "owner": {
-            "login": "justjavac"
+            "login": "apachecn"
         },
-        "full_name": "justjavac/free-programming-books-zh_CN",
-        "forks_count": "14144",
-        "stargazers_count": "41402",
-        "language": "JavaScript",
-        "repositoryDescription": "📚\n免费的计算机编程类中文书籍，欢迎投稿"
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "1100",
+        "stargazers_count": "6759",
+        "language": "Python",
+        "repositoryDescription": "Leetcode 题解 (跟随思路一步一步撸出代码) 及经典算法实现"
     },
     {
-        "name": "ice",
+        "name": "funNLP",
         "owner": {
-            "login": "alibaba"
+            "login": "fighting41love"
         },
-        "full_name": "alibaba/ice",
-        "forks_count": "895",
-        "stargazers_count": "9079",
-        "language": "JavaScript",
-        "repositoryDescription": "🚀\n飞冰 - 让前端开发简单而友好，海量可复用物料，配套桌面工具极速构建前端应用，效率提升 100%"
+        "full_name": "fighting41love/funNLP",
+        "forks_count": "116",
+        "stargazers_count": "608",
+        "language": "Python",
+        "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌&零件词库、时间抽取、连续英文切割、中文词向量大全、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料。"
+    },
+    {
+        "name": "p1xt-guides",
+        "owner": {
+            "login": "P1xt"
+        },
+        "full_name": "P1xt/p1xt-guides",
+        "forks_count": "1033",
+        "stargazers_count": "3666",
+        "repositoryDescription": "Programming curricula"
+    },
+    {
+        "name": "pwn2own2018",
+        "owner": {
+            "login": "saelo"
+        },
+        "full_name": "saelo/pwn2own2018",
+        "forks_count": "54",
+        "stargazers_count": "232",
+        "language": "C",
+        "repositoryDescription": "A Pwn2Own exploit chain"
+    },
+    {
+        "name": "pipelines",
+        "owner": {
+            "login": "kubeflow"
+        },
+        "full_name": "kubeflow/pipelines",
+        "forks_count": "11",
+        "stargazers_count": "160",
+        "language": "Go",
+        "repositoryDescription": "Machine Learning Pipelines for Kubeflow"
     }
 ]

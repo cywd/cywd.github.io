@@ -1,80 +1,25 @@
 [
     {
-        "name": "lux",
+        "name": "XSStrike",
         "owner": {
-            "login": "LUX-Core"
+            "login": "s0md3v"
         },
-        "full_name": "LUX-Core/lux",
-        "forks_count": "21",
-        "stargazers_count": "1190",
-        "language": "C++",
-        "repositoryDescription": "LUX - Hybrid PoW/PoS & Unique PHI2 Algorithm | Masternode | Parallel masternode | Segwit | Smartcontract"
-    },
-    {
-        "name": "enquirer",
-        "owner": {
-            "login": "enquirer"
-        },
-        "full_name": "enquirer/enquirer",
-        "forks_count": "36",
-        "stargazers_count": "1637",
-        "language": "JavaScript",
-        "repositoryDescription": "Stylish, intuitive and user-friendly prompt system."
-    },
-    {
-        "name": "pampy",
-        "owner": {
-            "login": "santinic"
-        },
-        "full_name": "santinic/pampy",
-        "forks_count": "10",
-        "stargazers_count": "410",
+        "full_name": "s0md3v/XSStrike",
+        "forks_count": "471",
+        "stargazers_count": "3346",
         "language": "Python",
-        "repositoryDescription": "Pampy: The Pattern Matching for Python you always dreamed of."
+        "repositoryDescription": "Most advanced XSS detection suite."
     },
     {
-        "name": "eva-icons",
+        "name": "openmct",
         "owner": {
-            "login": "akveo"
+            "login": "nasa"
         },
-        "full_name": "akveo/eva-icons",
-        "forks_count": "82",
-        "stargazers_count": "3217",
-        "language": "TypeScript",
-        "repositoryDescription": "A pack of more than 480 beautifully crafted Open Source icons. SVG, Sketch, Web Font and Animations support."
-    },
-    {
-        "name": "spinningup",
-        "owner": {
-            "login": "openai"
-        },
-        "full_name": "openai/spinningup",
-        "forks_count": "107",
-        "stargazers_count": "900",
-        "language": "Python",
-        "repositoryDescription": "An educational resource to help anyone learn deep reinforcement learning."
-    },
-    {
-        "name": "rawact",
-        "owner": {
-            "login": "sokra"
-        },
-        "full_name": "sokra/rawact",
-        "forks_count": "23",
-        "stargazers_count": "1452",
+        "full_name": "nasa/openmct",
+        "forks_count": "609",
+        "stargazers_count": "6083",
         "language": "JavaScript",
-        "repositoryDescription": "[POC] A babel plugin which compiles React.js components into native DOM instructions to eliminate the need for the react library at runtime."
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "2863",
-        "stargazers_count": "11186",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为17个章节，20多万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+        "repositoryDescription": "A web based mission control framework."
     },
     {
         "name": "ish",
@@ -82,10 +27,54 @@
             "login": "tbodt"
         },
         "full_name": "tbodt/ish",
-        "forks_count": "12",
-        "stargazers_count": "378",
+        "forks_count": "32",
+        "stargazers_count": "1004",
         "language": "C",
         "repositoryDescription": "Linux shell for iOS"
+    },
+    {
+        "name": "lux",
+        "owner": {
+            "login": "LUX-Core"
+        },
+        "full_name": "LUX-Core/lux",
+        "forks_count": "26",
+        "stargazers_count": "1623",
+        "language": "C++",
+        "repositoryDescription": "LUX - Hybrid PoW/PoS & Unique PHI2 Algorithm | Masternode | Parallel masternode | Segwit | Smartcontract"
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "2962",
+        "stargazers_count": "11536",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为17个章节，20多万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "enquirer",
+        "owner": {
+            "login": "enquirer"
+        },
+        "full_name": "enquirer/enquirer",
+        "forks_count": "42",
+        "stargazers_count": "2029",
+        "language": "JavaScript",
+        "repositoryDescription": "Stylish, intuitive and user-friendly prompt system."
+    },
+    {
+        "name": "eva-icons",
+        "owner": {
+            "login": "akveo"
+        },
+        "full_name": "akveo/eva-icons",
+        "forks_count": "91",
+        "stargazers_count": "3595",
+        "language": "TypeScript",
+        "repositoryDescription": "A pack of more than 480 beautifully crafted Open Source icons. SVG, Sketch, Web Font and Animations support."
     },
     {
         "name": "Glider.js",
@@ -93,21 +82,21 @@
             "login": "NickPiscitelli"
         },
         "full_name": "NickPiscitelli/Glider.js",
-        "forks_count": "7",
-        "stargazers_count": "341",
+        "forks_count": "17",
+        "stargazers_count": "630",
         "language": "JavaScript",
         "repositoryDescription": "A blazingly fast, lightweight, dependency free, minimal carousel with momentum scrolling!"
     },
     {
-        "name": "fx",
+        "name": "pampy",
         "owner": {
-            "login": "antonmedv"
+            "login": "santinic"
         },
-        "full_name": "antonmedv/fx",
-        "forks_count": "52",
-        "stargazers_count": "2469",
-        "language": "JavaScript",
-        "repositoryDescription": "Command-line JSON processing tool\n🔥"
+        "full_name": "santinic/pampy",
+        "forks_count": "17",
+        "stargazers_count": "696",
+        "language": "Python",
+        "repositoryDescription": "Pampy: The Pattern Matching for Python you always dreamed of."
     },
     {
         "name": "33-js-concepts",
@@ -115,10 +104,86 @@
             "login": "leonardomso"
         },
         "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1416",
-        "stargazers_count": "17820",
+        "forks_count": "1442",
+        "stargazers_count": "18091",
         "language": "JavaScript",
         "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
+    },
+    {
+        "name": "rawact",
+        "owner": {
+            "login": "sokra"
+        },
+        "full_name": "sokra/rawact",
+        "forks_count": "27",
+        "stargazers_count": "1733",
+        "language": "JavaScript",
+        "repositoryDescription": "[POC] A babel plugin which compiles React.js components into native DOM instructions to eliminate the need for the react library at runtime."
+    },
+    {
+        "name": "33-js-concepts",
+        "owner": {
+            "login": "stephentian"
+        },
+        "full_name": "stephentian/33-js-concepts",
+        "forks_count": "574",
+        "stargazers_count": "4945",
+        "language": "JavaScript",
+        "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
+    },
+    {
+        "name": "fx",
+        "owner": {
+            "login": "antonmedv"
+        },
+        "full_name": "antonmedv/fx",
+        "forks_count": "58",
+        "stargazers_count": "2697",
+        "language": "JavaScript",
+        "repositoryDescription": "Command-line JSON processing tool\n🔥"
+    },
+    {
+        "name": "spinningup",
+        "owner": {
+            "login": "openai"
+        },
+        "full_name": "openai/spinningup",
+        "forks_count": "121",
+        "stargazers_count": "1126",
+        "language": "Python",
+        "repositoryDescription": "An educational resource to help anyone learn deep reinforcement learning."
+    },
+    {
+        "name": "Data-Competition-TopSolution",
+        "owner": {
+            "login": "Smilexuhc"
+        },
+        "full_name": "Smilexuhc/Data-Competition-TopSolution",
+        "forks_count": "57",
+        "stargazers_count": "309",
+        "repositoryDescription": "Data competition Top Solution 数据竞赛top解决方案开源整理"
+    },
+    {
+        "name": "react-beautiful-dnd",
+        "owner": {
+            "login": "atlassian"
+        },
+        "full_name": "atlassian/react-beautiful-dnd",
+        "forks_count": "483",
+        "stargazers_count": "10102",
+        "language": "JavaScript",
+        "repositoryDescription": "Beautiful and accessible drag and drop for lists with React"
+    },
+    {
+        "name": "dayjs",
+        "owner": {
+            "login": "iamkun"
+        },
+        "full_name": "iamkun/dayjs",
+        "forks_count": "650",
+        "stargazers_count": "16172",
+        "language": "JavaScript",
+        "repositoryDescription": "⏰\nDay.js 2KB immutable date library alternative to Moment.js with the same modern API"
     },
     {
         "name": "bert",
@@ -126,32 +191,32 @@
             "login": "google-research"
         },
         "full_name": "google-research/bert",
-        "forks_count": "1027",
-        "stargazers_count": "6820",
+        "forks_count": "1055",
+        "stargazers_count": "7001",
         "language": "Python",
         "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
     },
     {
-        "name": "XSStrike",
+        "name": "redner",
         "owner": {
-            "login": "s0md3v"
+            "login": "BachiLi"
         },
-        "full_name": "s0md3v/XSStrike",
-        "forks_count": "420",
-        "stargazers_count": "1907",
-        "language": "Python",
-        "repositoryDescription": "Most advanced XSS detection suite."
+        "full_name": "BachiLi/redner",
+        "forks_count": "14",
+        "stargazers_count": "259",
+        "language": "PHP",
+        "repositoryDescription": "A differentiable Monte Carlo path tracer"
     },
     {
-        "name": "CrazeeRiderBBC",
+        "name": "JavaGuide",
         "owner": {
-            "login": "KevEdwards"
+            "login": "Snailclimb"
         },
-        "full_name": "KevEdwards/CrazeeRiderBBC",
-        "forks_count": "7",
-        "stargazers_count": "170",
-        "language": "Makefile",
-        "repositoryDescription": "Crazee Rider - BBC Micro"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "3315",
+        "stargazers_count": "12311",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
         "name": "nlp_course",
@@ -159,21 +224,10 @@
             "login": "yandexdataschool"
         },
         "full_name": "yandexdataschool/nlp_course",
-        "forks_count": "184",
-        "stargazers_count": "960",
+        "forks_count": "213",
+        "stargazers_count": "1125",
         "language": "Jupyter Notebook",
         "repositoryDescription": "YSDA course in Natural Language Processing"
-    },
-    {
-        "name": "tztail",
-        "owner": {
-            "login": "thecasualcoder"
-        },
-        "full_name": "thecasualcoder/tztail",
-        "forks_count": "2",
-        "stargazers_count": "102",
-        "language": "Rust",
-        "repositoryDescription": "tztail (TimeZoneTAIL) allows you to view logs in the timezone you want"
     },
     {
         "name": "argo",
@@ -181,96 +235,42 @@
             "login": "argoproj"
         },
         "full_name": "argoproj/argo",
-        "forks_count": "224",
-        "stargazers_count": "1742",
+        "forks_count": "230",
+        "stargazers_count": "1890",
         "language": "Go",
         "repositoryDescription": "Container-native workflows for Kubernetes."
     },
     {
-        "name": "oboe",
+        "name": "30-seconds-of-code",
+        "owner": {
+            "login": "30-seconds"
+        },
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "3256",
+        "stargazers_count": "31868",
+        "language": "JavaScript",
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+    },
+    {
+        "name": "logger",
         "owner": {
             "login": "google"
         },
-        "full_name": "google/oboe",
-        "forks_count": "93",
-        "stargazers_count": "939",
-        "language": "C++",
-        "repositoryDescription": "Oboe is a C++ library which makes it easy to build high-performance audio apps on Android."
-    },
-    {
-        "name": "archiver",
-        "owner": {
-            "login": "mholt"
-        },
-        "full_name": "mholt/archiver",
-        "forks_count": "132",
-        "stargazers_count": "1576",
+        "full_name": "google/logger",
+        "forks_count": "35",
+        "stargazers_count": "372",
         "language": "Go",
-        "repositoryDescription": "Easily create and extract .zip, .tar, .tar.gz, .tar.bz2, .tar.xz, .tar.lz4, .tar.sz, and .rar (extract-only) files with Go"
+        "repositoryDescription": "Cross platform Go logging library."
     },
     {
-        "name": "digispark-usbkey-board",
+        "name": "mindforger",
         "owner": {
-            "login": "chris408"
+            "login": "dvorka"
         },
-        "full_name": "chris408/digispark-usbkey-board",
-        "forks_count": "6",
-        "stargazers_count": "74",
-        "language": "C",
-        "repositoryDescription": "Digispark attiny85 USB key \"rubber ducky\" clone."
-    },
-    {
-        "name": "A-to-Z-Resources-for-Students",
-        "owner": {
-            "login": "dipakkr"
-        },
-        "full_name": "dipakkr/A-to-Z-Resources-for-Students",
-        "forks_count": "1255",
-        "stargazers_count": "3803",
-        "repositoryDescription": "Curated list of resources for college students Show your\n❤️\nby giving a\n⭐️"
-    },
-    {
-        "name": "DeOldify",
-        "owner": {
-            "login": "jantic"
-        },
-        "full_name": "jantic/DeOldify",
-        "forks_count": "176",
-        "stargazers_count": "3561",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "A Deep Learning based project for colorizing and restoring old images"
-    },
-    {
-        "name": "carlo",
-        "owner": {
-            "login": "GoogleChromeLabs"
-        },
-        "full_name": "GoogleChromeLabs/carlo",
-        "forks_count": "138",
-        "stargazers_count": "5675",
-        "language": "JavaScript",
-        "repositoryDescription": "Web rendering surface for Node applications"
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "69463",
-        "stargazers_count": "114203",
+        "full_name": "dvorka/mindforger",
+        "forks_count": "18",
+        "stargazers_count": "413",
         "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
-    },
-    {
-        "name": "react",
-        "owner": {
-            "login": "facebook"
-        },
-        "full_name": "facebook/react",
-        "forks_count": "20775",
-        "stargazers_count": "115215",
-        "language": "JavaScript",
-        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+        "repositoryDescription": "Thinking notebook and Markdown IDE."
     }
 ]

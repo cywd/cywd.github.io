@@ -1,36 +1,14 @@
 [
     {
-        "name": "squoosh",
+        "name": "big-list-of-naughty-strings",
         "owner": {
-            "login": "GoogleChromeLabs"
+            "login": "minimaxir"
         },
-        "full_name": "GoogleChromeLabs/squoosh",
-        "forks_count": "109",
-        "stargazers_count": "2860",
-        "language": "TypeScript",
-        "repositoryDescription": "Make images smaller using best-in-class codecs, right in the browser."
-    },
-    {
-        "name": "lux",
-        "owner": {
-            "login": "LUX-Core"
-        },
-        "full_name": "LUX-Core/lux",
-        "forks_count": "34",
-        "stargazers_count": "3808",
-        "language": "C++",
-        "repositoryDescription": "LUX - Hybrid PoW/PoS & Unique PHI2 Algorithm | Masternode | Parallel masternode | Segwit | Smartcontract | Luxgate | Proof of file storage (Decentralised distributed file storage)"
-    },
-    {
-        "name": "cpp-compilation",
-        "owner": {
-            "login": "green7ea"
-        },
-        "full_name": "green7ea/cpp-compilation",
-        "forks_count": "39",
-        "stargazers_count": "602",
-        "language": "CSS",
-        "repositoryDescription": "A short description of the C++ build process"
+        "full_name": "minimaxir/big-list-of-naughty-strings",
+        "forks_count": "1104",
+        "stargazers_count": "26440",
+        "language": "Python",
+        "repositoryDescription": "The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data."
     },
     {
         "name": "slate",
@@ -38,21 +16,131 @@
             "login": "ianstormtaylor"
         },
         "full_name": "ianstormtaylor/slate",
-        "forks_count": "845",
-        "stargazers_count": "10178",
+        "forks_count": "868",
+        "stargazers_count": "10831",
         "language": "JavaScript",
         "repositoryDescription": "A completely customizable framework for building rich text editors."
     },
     {
-        "name": "scratch-node",
+        "name": "squoosh",
         "owner": {
-            "login": "astefanutti"
+            "login": "GoogleChromeLabs"
         },
-        "full_name": "astefanutti/scratch-node",
-        "forks_count": "8",
-        "stargazers_count": "477",
-        "language": "Dockerfile",
-        "repositoryDescription": "Scratch Node.js Docker Images"
+        "full_name": "GoogleChromeLabs/squoosh",
+        "forks_count": "137",
+        "stargazers_count": "3367",
+        "language": "TypeScript",
+        "repositoryDescription": "Make images smaller using best-in-class codecs, right in the browser."
+    },
+    {
+        "name": "nginxconfig.io",
+        "owner": {
+            "login": "valentinxxx"
+        },
+        "full_name": "valentinxxx/nginxconfig.io",
+        "forks_count": "79",
+        "stargazers_count": "1514",
+        "language": "HTML",
+        "repositoryDescription": "⚙️\nNGiИX config generator generator on steroids\n💉"
+    },
+    {
+        "name": "lorca",
+        "owner": {
+            "login": "zserge"
+        },
+        "full_name": "zserge/lorca",
+        "forks_count": "16",
+        "stargazers_count": "525",
+        "language": "Go",
+        "repositoryDescription": "Build cross-platform modern desktop apps in Go + HTML5"
+    },
+    {
+        "name": "lux",
+        "owner": {
+            "login": "LUX-Core"
+        },
+        "full_name": "LUX-Core/lux",
+        "forks_count": "40",
+        "stargazers_count": "4158",
+        "language": "C++",
+        "repositoryDescription": "LUX - Hybrid PoW/PoS & Unique PHI2 Algorithm | Masternode | Parallel masternode | Segwit | Smartcontract | Luxgate | Proof of file storage (Decentralised distributed file storage)"
+    },
+    {
+        "name": "chartify",
+        "owner": {
+            "login": "spotify"
+        },
+        "full_name": "spotify/chartify",
+        "forks_count": "16",
+        "stargazers_count": "398",
+        "language": "Python",
+        "repositoryDescription": "Python library that makes it easy for data scientists to create charts."
+    },
+    {
+        "name": "golua",
+        "owner": {
+            "login": "Azure"
+        },
+        "full_name": "Azure/golua",
+        "forks_count": "23",
+        "stargazers_count": "630",
+        "language": "Go",
+        "repositoryDescription": "A Lua 5.3 engine implemented in Go"
+    },
+    {
+        "name": "funNLP",
+        "owner": {
+            "login": "fighting41love"
+        },
+        "full_name": "fighting41love/funNLP",
+        "forks_count": "227",
+        "stargazers_count": "949",
+        "language": "Python",
+        "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌&零件词库、时间抽取、连续英文切割、中文词向量大全、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料、中文谣言数据。"
+    },
+    {
+        "name": "q",
+        "owner": {
+            "login": "harelba"
+        },
+        "full_name": "harelba/q",
+        "forks_count": "273",
+        "stargazers_count": "5773",
+        "language": "Python",
+        "repositoryDescription": "q - Run SQL directly on CSV or TSV files"
+    },
+    {
+        "name": "cpp-compilation",
+        "owner": {
+            "login": "green7ea"
+        },
+        "full_name": "green7ea/cpp-compilation",
+        "forks_count": "47",
+        "stargazers_count": "827",
+        "language": "CSS",
+        "repositoryDescription": "A short description of the C++ build process"
+    },
+    {
+        "name": "WaveFunctionCollapse",
+        "owner": {
+            "login": "mxgmn"
+        },
+        "full_name": "mxgmn/WaveFunctionCollapse",
+        "forks_count": "458",
+        "stargazers_count": "10380",
+        "language": "C#",
+        "repositoryDescription": "Bitmap & tilemap generation from a single example with the help of ideas from quantum mechanics."
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "3245",
+        "stargazers_count": "12737",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为17个章节，20多万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
         "name": "tensorspace",
@@ -60,8 +148,8 @@
             "login": "tensorspace-team"
         },
         "full_name": "tensorspace-team/tensorspace",
-        "forks_count": "158",
-        "stargazers_count": "2184",
+        "forks_count": "179",
+        "stargazers_count": "2376",
         "language": "JavaScript",
         "repositoryDescription": "Neural network 3D visualization framework, build interactive and intuitive model in browsers, support pre-trained deep learning models from TensorFlow, Keras, TensorFlow.js"
     },
@@ -71,32 +159,21 @@
             "login": "corretto"
         },
         "full_name": "corretto/corretto-8",
-        "forks_count": "19",
-        "stargazers_count": "468",
+        "forks_count": "33",
+        "stargazers_count": "660",
         "language": "Java",
-        "repositoryDescription": "Corretto 8 (Preview)"
+        "repositoryDescription": "Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK"
     },
     {
-        "name": "DeepLearning-500-questions",
+        "name": "cryptoexchange",
         "owner": {
-            "login": "scutan90"
+            "login": "coingecko"
         },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "3208",
-        "stargazers_count": "12541",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为17个章节，20多万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "WaveFunctionCollapse",
-        "owner": {
-            "login": "mxgmn"
-        },
-        "full_name": "mxgmn/WaveFunctionCollapse",
-        "forks_count": "446",
-        "stargazers_count": "10165",
-        "language": "C#",
-        "repositoryDescription": "Bitmap & tilemap generation from a single example with the help of ideas from quantum mechanics."
+        "full_name": "coingecko/cryptoexchange",
+        "forks_count": "231",
+        "stargazers_count": "312",
+        "language": "Ruby",
+        "repositoryDescription": "Ruby library to query market data from cryptocurrency exchanges (https://www.coingecko.com)"
     },
     {
         "name": "fx",
@@ -104,75 +181,21 @@
             "login": "antonmedv"
         },
         "full_name": "antonmedv/fx",
-        "forks_count": "74",
-        "stargazers_count": "3424",
+        "forks_count": "82",
+        "stargazers_count": "3597",
         "language": "JavaScript",
-        "repositoryDescription": "Command-line JSON viewer\n🔥"
+        "repositoryDescription": "Terminal JSON viewer\n🔥"
     },
     {
-        "name": "q",
+        "name": "vue-lazy-image-loading",
         "owner": {
-            "login": "harelba"
+            "login": "subotkevic"
         },
-        "full_name": "harelba/q",
-        "forks_count": "258",
-        "stargazers_count": "5500",
-        "language": "Python",
-        "repositoryDescription": "q - Run SQL directly on CSV or TSV files"
-    },
-    {
-        "name": "golua",
-        "owner": {
-            "login": "Azure"
-        },
-        "full_name": "Azure/golua",
-        "forks_count": "11",
-        "stargazers_count": "289",
-        "language": "Go",
-        "repositoryDescription": "A Lua 5.3 engine implemented in Go"
-    },
-    {
-        "name": "webtty",
-        "owner": {
-            "login": "maxmcd"
-        },
-        "full_name": "maxmcd/webtty",
-        "forks_count": "50",
-        "stargazers_count": "1223",
-        "language": "Go",
-        "repositoryDescription": "Share a terminal session over WebRTC"
-    },
-    {
-        "name": "ProjectVisBug",
-        "owner": {
-            "login": "GoogleChromeLabs"
-        },
-        "full_name": "GoogleChromeLabs/ProjectVisBug",
-        "forks_count": "43",
-        "stargazers_count": "1138",
+        "full_name": "subotkevic/vue-lazy-image-loading",
+        "forks_count": "1",
+        "stargazers_count": "183",
         "language": "JavaScript",
-        "repositoryDescription": "🎨\nMake any webpage feel like an artboard, download extension here https://chrome.google.com/webstore/detail/cdockenadnadldjbbgcallicgledbeoc"
-    },
-    {
-        "name": "YCBlogs",
-        "owner": {
-            "login": "yangchong211"
-        },
-        "full_name": "yangchong211/YCBlogs",
-        "forks_count": "178",
-        "stargazers_count": "1108",
-        "repositoryDescription": "技术博客笔记大汇总【15年10月到至今】，包括Java基础及深入知识点，Android技术博客，Python，Go学习笔记等等，还包括平时开发中遇到的bug汇总，当然也在工作之余收集了大量的面试题，长期更新维护并且修正，持续完善……开源的文件是markdown格式的！同时也开源了生活博客，从12年起，积累共计47篇[近20万字]，转载请注明出处，谢谢！"
-    },
-    {
-        "name": "sourcekit-lsp",
-        "owner": {
-            "login": "apple"
-        },
-        "full_name": "apple/sourcekit-lsp",
-        "forks_count": "18",
-        "stargazers_count": "500",
-        "language": "Swift",
-        "repositoryDescription": "Language Server Protocol implementation for Swift and C-based languages"
+        "repositoryDescription": "Vue lazy image and background loading plugin."
     },
     {
         "name": "unified",
@@ -180,32 +203,10 @@
             "login": "unifiedjs"
         },
         "full_name": "unifiedjs/unified",
-        "forks_count": "35",
-        "stargazers_count": "943",
+        "forks_count": "38",
+        "stargazers_count": "1089",
         "language": "JavaScript",
         "repositoryDescription": "☔ friendly interface backed by an ecosystem of plugins built for creating and manipulating content"
-    },
-    {
-        "name": "XSStrike",
-        "owner": {
-            "login": "s0md3v"
-        },
-        "full_name": "s0md3v/XSStrike",
-        "forks_count": "536",
-        "stargazers_count": "4726",
-        "language": "Python",
-        "repositoryDescription": "Most advanced XSS detection suite."
-    },
-    {
-        "name": "nlp_course",
-        "owner": {
-            "login": "yandexdataschool"
-        },
-        "full_name": "yandexdataschool/nlp_course",
-        "forks_count": "339",
-        "stargazers_count": "1683",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "YSDA course in Natural Language Processing"
     },
     {
         "name": "react-beautiful-dnd",
@@ -213,63 +214,64 @@
             "login": "atlassian"
         },
         "full_name": "atlassian/react-beautiful-dnd",
-        "forks_count": "514",
-        "stargazers_count": "10782",
+        "forks_count": "522",
+        "stargazers_count": "10925",
         "language": "JavaScript",
         "repositoryDescription": "Beautiful and accessible drag and drop for lists with React"
     },
     {
-        "name": "wavefunctioncollapse",
+        "name": "webtty",
         "owner": {
-            "login": "marian42"
+            "login": "maxmcd"
         },
-        "full_name": "marian42/wavefunctioncollapse",
-        "forks_count": "42",
-        "stargazers_count": "711",
-        "language": "C#",
-        "repositoryDescription": "Walk through an infinite, procedurally generated city"
+        "full_name": "maxmcd/webtty",
+        "forks_count": "55",
+        "stargazers_count": "1371",
+        "language": "Go",
+        "repositoryDescription": "Share a terminal session over WebRTC"
     },
     {
-        "name": "AndroidNote",
+        "name": "vue",
         "owner": {
-            "login": "GcsSloop"
+            "login": "vuejs"
         },
-        "full_name": "GcsSloop/AndroidNote",
-        "forks_count": "1551",
-        "stargazers_count": "6216",
-        "language": "Java",
-        "repositoryDescription": "安卓学习笔记"
+        "full_name": "vuejs/vue",
+        "forks_count": "16980",
+        "stargazers_count": "119176",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "ish",
+        "name": "torchdiffeq",
         "owner": {
-            "login": "tbodt"
+            "login": "rtqichen"
         },
-        "full_name": "tbodt/ish",
-        "forks_count": "65",
-        "stargazers_count": "1796",
-        "language": "C",
-        "repositoryDescription": "Linux shell for iOS"
+        "full_name": "rtqichen/torchdiffeq",
+        "forks_count": "14",
+        "stargazers_count": "385",
+        "language": "Python",
+        "repositoryDescription": "Differentiable ODE solvers with full GPU support and O(1)-memory backpropagation."
     },
     {
-        "name": "awesome",
+        "name": "XSStrike",
         "owner": {
-            "login": "sindresorhus"
+            "login": "s0md3v"
         },
-        "full_name": "sindresorhus/awesome",
-        "forks_count": "12776",
-        "stargazers_count": "96182",
-        "repositoryDescription": "😎\nCurated list of awesome lists"
+        "full_name": "s0md3v/XSStrike",
+        "forks_count": "544",
+        "stargazers_count": "4864",
+        "language": "Python",
+        "repositoryDescription": "Most advanced XSS detection suite."
     },
     {
-        "name": "PHP_imap_open_exploit",
+        "name": "ProjectVisBug",
         "owner": {
-            "login": "Bo0oM"
+            "login": "GoogleChromeLabs"
         },
-        "full_name": "Bo0oM/PHP_imap_open_exploit",
-        "forks_count": "23",
-        "stargazers_count": "177",
-        "language": "PHP",
-        "repositoryDescription": "Bypassing disabled exec functions in PHP via imap_open"
+        "full_name": "GoogleChromeLabs/ProjectVisBug",
+        "forks_count": "52",
+        "stargazers_count": "1261",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nMake any webpage feel like an artboard, download extension here https://chrome.google.com/webstore/detail/cdockenadnadldjbbgcallicgledbeoc"
     }
 ]

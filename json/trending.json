@@ -1,14 +1,14 @@
 [
     {
-        "name": "DoodleMaster",
+        "name": "wayne",
         "owner": {
-            "login": "karanchahal"
+            "login": "Qihoo360"
         },
-        "full_name": "karanchahal/DoodleMaster",
-        "forks_count": "42",
-        "stargazers_count": "1030",
-        "language": "JavaScript",
-        "repositoryDescription": "\"Don't code your UI, Draw it !\""
+        "full_name": "Qihoo360/wayne",
+        "forks_count": "145",
+        "stargazers_count": "797",
+        "language": "TypeScript",
+        "repositoryDescription": "Web UI for Kubernetes multi-clusters"
     },
     {
         "name": "big-list-of-naughty-strings",
@@ -16,21 +16,21 @@
             "login": "minimaxir"
         },
         "full_name": "minimaxir/big-list-of-naughty-strings",
-        "forks_count": "1194",
-        "stargazers_count": "28800",
+        "forks_count": "1208",
+        "stargazers_count": "29350",
         "language": "Python",
         "repositoryDescription": "The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data."
     },
     {
-        "name": "typed-html",
+        "name": "DoodleMaster",
         "owner": {
-            "login": "bodil"
+            "login": "karanchahal"
         },
-        "full_name": "bodil/typed-html",
-        "forks_count": "9",
-        "stargazers_count": "738",
-        "language": "Rust",
-        "repositoryDescription": "Type checked JSX for Rust"
+        "full_name": "karanchahal/DoodleMaster",
+        "forks_count": "63",
+        "stargazers_count": "1552",
+        "language": "JavaScript",
+        "repositoryDescription": "\"Don't code your UI, Draw it !\""
     },
     {
         "name": "nginxconfig.io",
@@ -38,10 +38,32 @@
             "login": "valentinxxx"
         },
         "full_name": "valentinxxx/nginxconfig.io",
-        "forks_count": "94",
-        "stargazers_count": "2505",
+        "forks_count": "106",
+        "stargazers_count": "3071",
         "language": "HTML",
         "repositoryDescription": "⚙️\nNGiИX config generator generator on steroids\n💉"
+    },
+    {
+        "name": "style2paints",
+        "owner": {
+            "login": "lllyasviel"
+        },
+        "full_name": "lllyasviel/style2paints",
+        "forks_count": "799",
+        "stargazers_count": "7028",
+        "language": "JavaScript",
+        "repositoryDescription": "sketch + style = paints\n🎨"
+    },
+    {
+        "name": "self_driving_pi_car",
+        "owner": {
+            "login": "felipessalvatore"
+        },
+        "full_name": "felipessalvatore/self_driving_pi_car",
+        "forks_count": "35",
+        "stargazers_count": "466",
+        "language": "Python",
+        "repositoryDescription": "A deep neural network based self-driving car, that combines Lego Mindstorms NXT with the computational power of a Raspberry Pi 3."
     },
     {
         "name": "hardware-effects",
@@ -49,32 +71,10 @@
             "login": "Kobzol"
         },
         "full_name": "Kobzol/hardware-effects",
-        "forks_count": "17",
-        "stargazers_count": "401",
+        "forks_count": "36",
+        "stargazers_count": "833",
         "language": "C++",
         "repositoryDescription": "Demonstration of various hardware effects."
-    },
-    {
-        "name": "lorca",
-        "owner": {
-            "login": "zserge"
-        },
-        "full_name": "zserge/lorca",
-        "forks_count": "32",
-        "stargazers_count": "1492",
-        "language": "Go",
-        "repositoryDescription": "Build cross-platform modern desktop apps in Go + HTML5"
-    },
-    {
-        "name": "makisu",
-        "owner": {
-            "login": "uber"
-        },
-        "full_name": "uber/makisu",
-        "forks_count": "10",
-        "stargazers_count": "446",
-        "language": "Go",
-        "repositoryDescription": "Fast and flexible Docker image building tool, works on OSX and in containerized environments like Kubernetes."
     },
     {
         "name": "AD-Attack-Defense",
@@ -82,8 +82,8 @@
             "login": "infosecn1nja"
         },
         "full_name": "infosecn1nja/AD-Attack-Defense",
-        "forks_count": "56",
-        "stargazers_count": "334",
+        "forks_count": "91",
+        "stargazers_count": "607",
         "repositoryDescription": "Active Directory Security For Red & Blue Team"
     },
     {
@@ -92,31 +92,54 @@
             "login": "fighting41love"
         },
         "full_name": "fighting41love/funNLP",
-        "forks_count": "339",
-        "stargazers_count": "1574",
+        "forks_count": "388",
+        "stargazers_count": "1858",
         "language": "Python",
         "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌&零件词库、时间抽取、连续英文切割、中文词向量大全、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料、中文谣言数据。"
     },
     {
-        "name": "slate",
+        "name": "lorca",
         "owner": {
-            "login": "ianstormtaylor"
+            "login": "zserge"
         },
-        "full_name": "ianstormtaylor/slate",
-        "forks_count": "899",
-        "stargazers_count": "11535",
-        "language": "JavaScript",
-        "repositoryDescription": "A completely customizable framework for building rich text editors."
+        "full_name": "zserge/lorca",
+        "forks_count": "41",
+        "stargazers_count": "1743",
+        "language": "Go",
+        "repositoryDescription": "Build cross-platform modern desktop apps in Go + HTML5"
     },
     {
-        "name": "CS-Notes",
+        "name": "xstate",
         "owner": {
-            "login": "CyC2018"
+            "login": "davidkpiano"
         },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "12351",
-        "stargazers_count": "40439",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
+        "full_name": "davidkpiano/xstate",
+        "forks_count": "113",
+        "stargazers_count": "3401",
+        "language": "TypeScript",
+        "repositoryDescription": "State machines and statecharts for the modern web."
+    },
+    {
+        "name": "line-sdk-ios-swift",
+        "owner": {
+            "login": "line"
+        },
+        "full_name": "line/line-sdk-ios-swift",
+        "forks_count": "16",
+        "stargazers_count": "235",
+        "language": "Swift",
+        "repositoryDescription": "Provides a modern way of implementing LINE APIs"
+    },
+    {
+        "name": "typed-html",
+        "owner": {
+            "login": "bodil"
+        },
+        "full_name": "bodil/typed-html",
+        "forks_count": "15",
+        "stargazers_count": "944",
+        "language": "Rust",
+        "repositoryDescription": "Type checked JSX for Rust"
     },
     {
         "name": "squoosh",
@@ -124,54 +147,76 @@
             "login": "GoogleChromeLabs"
         },
         "full_name": "GoogleChromeLabs/squoosh",
-        "forks_count": "178",
-        "stargazers_count": "3957",
+        "forks_count": "189",
+        "stargazers_count": "4163",
         "language": "TypeScript",
         "repositoryDescription": "Make images smaller using best-in-class codecs, right in the browser."
     },
     {
-        "name": "byob",
+        "name": "33-js-concepts",
         "owner": {
-            "login": "malwaredllc"
+            "login": "leonardomso"
         },
-        "full_name": "malwaredllc/byob",
-        "forks_count": "465",
-        "stargazers_count": "2715",
-        "language": "Python",
-        "repositoryDescription": "BYOB (Build Your Own Botnet)"
+        "full_name": "leonardomso/33-js-concepts",
+        "forks_count": "1549",
+        "stargazers_count": "19067",
+        "language": "JavaScript",
+        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
-        "name": "wayne",
+        "name": "coderiver",
         "owner": {
-            "login": "Qihoo360"
+            "login": "cachecats"
         },
-        "full_name": "Qihoo360/wayne",
-        "forks_count": "56",
-        "stargazers_count": "249",
-        "language": "TypeScript",
-        "repositoryDescription": "Web UI for Kubernetes multi-clusters"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "3554",
-        "stargazers_count": "13094",
+        "full_name": "cachecats/coderiver",
+        "forks_count": "43",
+        "stargazers_count": "245",
         "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "repositoryDescription": "致力于打造全平台全栈精品开源项目，计划做成包含 pc端（Vue、React）、移动H5（Vue、React）、ReactNative混合开发、Android原生、微信小程序、java后端的全平台型全栈项目，欢迎关注。"
     },
     {
-        "name": "SetSimilaritySearch",
+        "name": "slate",
         "owner": {
-            "login": "ekzhu"
+            "login": "ianstormtaylor"
         },
-        "full_name": "ekzhu/SetSimilaritySearch",
+        "full_name": "ianstormtaylor/slate",
+        "forks_count": "906",
+        "stargazers_count": "11705",
+        "language": "JavaScript",
+        "repositoryDescription": "A completely customizable framework for building rich text editors."
+    },
+    {
+        "name": "imba",
+        "owner": {
+            "login": "somebee"
+        },
+        "full_name": "somebee/imba",
+        "forks_count": "84",
+        "stargazers_count": "2398",
+        "language": "JavaScript",
+        "repositoryDescription": "The new programming language for web apps"
+    },
+    {
+        "name": "funky",
+        "owner": {
+            "login": "bbugyi200"
+        },
+        "full_name": "bbugyi200/funky",
         "forks_count": "11",
-        "stargazers_count": "187",
+        "stargazers_count": "254",
         "language": "Python",
-        "repositoryDescription": "All-pair set similarity search on millions of sets in Python and on a laptop (faster than MinHash LSH)"
+        "repositoryDescription": "Funky takes shell functions to the next level by making them easier to define, more flexible, and more interactive."
+    },
+    {
+        "name": "makisu",
+        "owner": {
+            "login": "uber"
+        },
+        "full_name": "uber/makisu",
+        "forks_count": "13",
+        "stargazers_count": "599",
+        "language": "Go",
+        "repositoryDescription": "Fast and flexible Docker image building tool, works on OSX and in containerized environments like Kubernetes."
     },
     {
         "name": "build-your-own-x",
@@ -179,30 +224,31 @@
             "login": "danistefanovic"
         },
         "full_name": "danistefanovic/build-your-own-x",
-        "forks_count": "2571",
-        "stargazers_count": "39860",
+        "forks_count": "2577",
+        "stargazers_count": "40011",
         "repositoryDescription": "🤓\nBuild your own (insert technology here)"
     },
     {
-        "name": "awesome-burp-extensions",
+        "name": "euclidesdb",
         "owner": {
-            "login": "snoopysecurity"
+            "login": "perone"
         },
-        "full_name": "snoopysecurity/awesome-burp-extensions",
-        "forks_count": "23",
-        "stargazers_count": "167",
-        "repositoryDescription": "A curated list of amazingly awesome Burp Extensions"
+        "full_name": "perone/euclidesdb",
+        "forks_count": "5",
+        "stargazers_count": "168",
+        "language": "C++",
+        "repositoryDescription": "A multi-model machine learning feature embedding database"
     },
     {
-        "name": "vscode",
+        "name": "vue",
         "owner": {
-            "login": "Microsoft"
+            "login": "vuejs"
         },
-        "full_name": "Microsoft/vscode",
-        "forks_count": "8539",
-        "stargazers_count": "64224",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
+        "full_name": "vuejs/vue",
+        "forks_count": "17059",
+        "stargazers_count": "119555",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
         "name": "DeepLearning-500-questions",
@@ -210,64 +256,20 @@
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "3321",
-        "stargazers_count": "13047",
+        "forks_count": "3355",
+        "stargazers_count": "13179",
         "language": "TeX",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
-        "name": "golua",
+        "name": "vs",
         "owner": {
-            "login": "Azure"
+            "login": "anvaka"
         },
-        "full_name": "Azure/golua",
-        "forks_count": "40",
-        "stargazers_count": "1402",
-        "language": "Go",
-        "repositoryDescription": "A Lua 5.3 engine implemented in Go"
-    },
-    {
-        "name": "public-apis",
-        "owner": {
-            "login": "toddmotto"
-        },
-        "full_name": "toddmotto/public-apis",
-        "forks_count": "4541",
-        "stargazers_count": "44218",
-        "language": "Python",
-        "repositoryDescription": "A collective list of public JSON APIs for use in web development."
-    },
-    {
-        "name": "q",
-        "owner": {
-            "login": "harelba"
-        },
-        "full_name": "harelba/q",
-        "forks_count": "286",
-        "stargazers_count": "6138",
-        "language": "Python",
-        "repositoryDescription": "q - Run SQL directly on CSV or TSV files"
-    },
-    {
-        "name": "virtual-scroller",
-        "owner": {
-            "login": "valdrinkoshi"
-        },
-        "full_name": "valdrinkoshi/virtual-scroller",
-        "forks_count": "34",
-        "stargazers_count": "887",
+        "full_name": "anvaka/vs",
+        "forks_count": "13",
+        "stargazers_count": "158",
         "language": "JavaScript",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "bert",
-        "owner": {
-            "login": "google-research"
-        },
-        "full_name": "google-research/bert",
-        "forks_count": "1229",
-        "stargazers_count": "7640",
-        "language": "Python",
-        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
+        "repositoryDescription": "Visualization of Google's autocomplete"
     }
 ]

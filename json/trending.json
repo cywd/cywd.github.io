@@ -5,8 +5,8 @@
             "login": "GitSquared"
         },
         "full_name": "GitSquared/edex-ui",
-        "forks_count": "58",
-        "stargazers_count": "1770",
+        "forks_count": "101",
+        "stargazers_count": "2828",
         "language": "JavaScript",
         "repositoryDescription": "A science fiction desktop running everywhere. Awesome."
     },
@@ -16,43 +16,21 @@
             "login": "developit"
         },
         "full_name": "developit/htm",
-        "forks_count": "16",
-        "stargazers_count": "1542",
+        "forks_count": "23",
+        "stargazers_count": "2113",
         "language": "JavaScript",
         "repositoryDescription": "Hyperscript Tagged Markup: JSX alternative using standard tagged templates, with compiler support."
     },
     {
-        "name": "nginxconfig.io",
+        "name": "goboy",
         "owner": {
-            "login": "valentinxxx"
+            "login": "Humpheh"
         },
-        "full_name": "valentinxxx/nginxconfig.io",
-        "forks_count": "134",
-        "stargazers_count": "3874",
-        "language": "HTML",
-        "repositoryDescription": "⚙️\nNGiИX config generator generator on steroids\n💉"
-    },
-    {
-        "name": "nivo",
-        "owner": {
-            "login": "plouc"
-        },
-        "full_name": "plouc/nivo",
-        "forks_count": "170",
-        "stargazers_count": "3478",
-        "language": "JavaScript",
-        "repositoryDescription": "nivo provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries"
-    },
-    {
-        "name": "swup",
-        "owner": {
-            "login": "gmrchk"
-        },
-        "full_name": "gmrchk/swup",
-        "forks_count": "41",
-        "stargazers_count": "1171",
-        "language": "JavaScript",
-        "repositoryDescription": "Complete, flexible, easy to use page transition library."
+        "full_name": "Humpheh/goboy",
+        "forks_count": "27",
+        "stargazers_count": "833",
+        "language": "Go",
+        "repositoryDescription": "Multi-platform Nintendo Game Boy Color emulator written in go"
     },
     {
         "name": "amp",
@@ -60,21 +38,120 @@
             "login": "jmacdonald"
         },
         "full_name": "jmacdonald/amp",
-        "forks_count": "37",
-        "stargazers_count": "1197",
+        "forks_count": "40",
+        "stargazers_count": "1480",
         "language": "Rust",
         "repositoryDescription": "A complete text editor for your terminal."
     },
     {
-        "name": "style2paints",
+        "name": "carlo",
         "owner": {
-            "login": "lllyasviel"
+            "login": "GoogleChromeLabs"
         },
-        "full_name": "lllyasviel/style2paints",
-        "forks_count": "834",
-        "stargazers_count": "7600",
+        "full_name": "GoogleChromeLabs/carlo",
+        "forks_count": "183",
+        "stargazers_count": "6808",
         "language": "JavaScript",
-        "repositoryDescription": "sketch + style = paints\n🎨"
+        "repositoryDescription": "Web rendering surface for Node applications"
+    },
+    {
+        "name": "evilginx2",
+        "owner": {
+            "login": "kgretzky"
+        },
+        "full_name": "kgretzky/evilginx2",
+        "forks_count": "167",
+        "stargazers_count": "1229",
+        "language": "Go",
+        "repositoryDescription": "Standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication"
+    },
+    {
+        "name": "nivo",
+        "owner": {
+            "login": "plouc"
+        },
+        "full_name": "plouc/nivo",
+        "forks_count": "172",
+        "stargazers_count": "3721",
+        "language": "JavaScript",
+        "repositoryDescription": "nivo provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries"
+    },
+    {
+        "name": "TorchCraftAI",
+        "owner": {
+            "login": "TorchCraft"
+        },
+        "full_name": "TorchCraft/TorchCraftAI",
+        "forks_count": "55",
+        "stargazers_count": "299",
+        "language": "C++",
+        "repositoryDescription": "A platform that lets you build agents to learn to play StarCraft: Brood War."
+    },
+    {
+        "name": "clean-code-ruby",
+        "owner": {
+            "login": "uohzxela"
+        },
+        "full_name": "uohzxela/clean-code-ruby",
+        "forks_count": "37",
+        "stargazers_count": "477",
+        "language": "Ruby",
+        "repositoryDescription": "🛁\nClean Code concepts adapted for Ruby"
+    },
+    {
+        "name": "litemall",
+        "owner": {
+            "login": "linlinjava"
+        },
+        "full_name": "linlinjava/litemall",
+        "forks_count": "666",
+        "stargazers_count": "1959",
+        "language": "Java",
+        "repositoryDescription": "又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端"
+    },
+    {
+        "name": "nginxconfig.io",
+        "owner": {
+            "login": "valentinxxx"
+        },
+        "full_name": "valentinxxx/nginxconfig.io",
+        "forks_count": "143",
+        "stargazers_count": "4078",
+        "language": "HTML",
+        "repositoryDescription": "⚙️\nNGiИX config generator generator on steroids\n💉"
+    },
+    {
+        "name": "twizzy-landing",
+        "owner": {
+            "login": "kitze"
+        },
+        "full_name": "kitze/twizzy-landing",
+        "forks_count": "16",
+        "stargazers_count": "252",
+        "language": "JavaScript",
+        "repositoryDescription": "The landing page for Twizzy, built with React 16.7"
+    },
+    {
+        "name": "autopprof",
+        "owner": {
+            "login": "rakyll"
+        },
+        "full_name": "rakyll/autopprof",
+        "forks_count": "8",
+        "stargazers_count": "355",
+        "language": "Go",
+        "repositoryDescription": "Pprof made easy at development time for Go"
+    },
+    {
+        "name": "wasmer",
+        "owner": {
+            "login": "wasmerio"
+        },
+        "full_name": "wasmerio/wasmer",
+        "forks_count": "10",
+        "stargazers_count": "442",
+        "language": "Rust",
+        "repositoryDescription": "High-Performance WebAssembly JIT interpreter"
     },
     {
         "name": "big-list-of-naughty-strings",
@@ -82,21 +159,97 @@
             "login": "minimaxir"
         },
         "full_name": "minimaxir/big-list-of-naughty-strings",
-        "forks_count": "1244",
-        "stargazers_count": "29856",
+        "forks_count": "1250",
+        "stargazers_count": "30033",
         "language": "Python",
         "repositoryDescription": "The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data."
     },
     {
-        "name": "blb",
+        "name": "vue",
         "owner": {
-            "login": "westerndigitalcorporation"
+            "login": "vuejs"
         },
-        "full_name": "westerndigitalcorporation/blb",
-        "forks_count": "15",
-        "stargazers_count": "417",
-        "language": "Go",
-        "repositoryDescription": "Blb is a distributed object storage system designed for use on bare metal in cluster computing environments."
+        "full_name": "vuejs/vue",
+        "forks_count": "17121",
+        "stargazers_count": "119933",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "wayne",
+        "owner": {
+            "login": "Qihoo360"
+        },
+        "full_name": "Qihoo360/wayne",
+        "forks_count": "225",
+        "stargazers_count": "1355",
+        "language": "TypeScript",
+        "repositoryDescription": "Web UI for Kubernetes multi-clusters"
+    },
+    {
+        "name": "CMSScan",
+        "owner": {
+            "login": "ajinabraham"
+        },
+        "full_name": "ajinabraham/CMSScan",
+        "forks_count": "34",
+        "stargazers_count": "427",
+        "language": "CSS",
+        "repositoryDescription": "CMS Scanner: Scan Wordpress, Drupal, Joomla, vBulletin websites for Security issues"
+    },
+    {
+        "name": "style2paints",
+        "owner": {
+            "login": "lllyasviel"
+        },
+        "full_name": "lllyasviel/style2paints",
+        "forks_count": "851",
+        "stargazers_count": "7739",
+        "language": "JavaScript",
+        "repositoryDescription": "sketch + style = paints\n🎨"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "12503",
+        "stargazers_count": "40844",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
+    },
+    {
+        "name": "bert-as-service",
+        "owner": {
+            "login": "hanxiao"
+        },
+        "full_name": "hanxiao/bert-as-service",
+        "forks_count": "68",
+        "stargazers_count": "468",
+        "language": "Python",
+        "repositoryDescription": "Mapping a variable-length sentence to a fixed-length vector using pretrained BERT model"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "3705",
+        "stargazers_count": "13514",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "serverless-boilerplate",
+        "owner": {
+            "login": "harijoe"
+        },
+        "full_name": "harijoe/serverless-boilerplate",
+        "forks_count": "4",
+        "stargazers_count": "139",
+        "language": "JavaScript",
+        "repositoryDescription": "Minimal yet super-functional serverless boilerplate"
     },
     {
         "name": "33-js-concepts",
@@ -104,8 +257,8 @@
             "login": "stephentian"
         },
         "full_name": "stephentian/33-js-concepts",
-        "forks_count": "773",
-        "stargazers_count": "5959",
+        "forks_count": "791",
+        "stargazers_count": "6077",
         "language": "JavaScript",
         "repositoryDescription": "📜\n每个 JavaScript 工程师都应懂的33个概念 @leonardomso"
     },
@@ -115,162 +268,9 @@
             "login": "karanchahal"
         },
         "full_name": "karanchahal/DoodleMaster",
-        "forks_count": "76",
-        "stargazers_count": "1960",
+        "forks_count": "81",
+        "stargazers_count": "2085",
         "language": "JavaScript",
         "repositoryDescription": "\"Don't code your UI, Draw it !\""
-    },
-    {
-        "name": "wayne",
-        "owner": {
-            "login": "Qihoo360"
-        },
-        "full_name": "Qihoo360/wayne",
-        "forks_count": "202",
-        "stargazers_count": "1216",
-        "language": "TypeScript",
-        "repositoryDescription": "Web UI for Kubernetes multi-clusters"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "17100",
-        "stargazers_count": "119804",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
-    },
-    {
-        "name": "funNLP",
-        "owner": {
-            "login": "fighting41love"
-        },
-        "full_name": "fighting41love/funNLP",
-        "forks_count": "438",
-        "stargazers_count": "2135",
-        "language": "Python",
-        "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌&零件词库、时间抽取、连续英文切割、中文词向量大全、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料、中文谣言数据。"
-    },
-    {
-        "name": "coderiver",
-        "owner": {
-            "login": "cachecats"
-        },
-        "full_name": "cachecats/coderiver",
-        "forks_count": "87",
-        "stargazers_count": "593",
-        "language": "Java",
-        "repositoryDescription": "致力于打造全平台全栈精品开源项目，计划做成包含 pc端（Vue、React）、移动H5（Vue、React）、ReactNative混合开发、Android原生、微信小程序、java后端的全平台型全栈项目，欢迎关注。"
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "69860",
-        "stargazers_count": "115049",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
-    },
-    {
-        "name": "concurrency-glossary",
-        "owner": {
-            "login": "slikts"
-        },
-        "full_name": "slikts/concurrency-glossary",
-        "forks_count": "6",
-        "stargazers_count": "167",
-        "language": "HTML",
-        "repositoryDescription": "🦑\nInformal definitions of terms used in concurrency modeling"
-    },
-    {
-        "name": "bert",
-        "owner": {
-            "login": "google-research"
-        },
-        "full_name": "google-research/bert",
-        "forks_count": "1314",
-        "stargazers_count": "7953",
-        "language": "Python",
-        "repositoryDescription": "TensorFlow code and pre-trained models for BERT"
-    },
-    {
-        "name": "squoosh",
-        "owner": {
-            "login": "GoogleChromeLabs"
-        },
-        "full_name": "GoogleChromeLabs/squoosh",
-        "forks_count": "202",
-        "stargazers_count": "4417",
-        "language": "TypeScript",
-        "repositoryDescription": "Make images smaller using best-in-class codecs, right in the browser."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "12464",
-        "stargazers_count": "40739",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "litemall",
-        "owner": {
-            "login": "linlinjava"
-        },
-        "full_name": "linlinjava/litemall",
-        "forks_count": "628",
-        "stargazers_count": "1759",
-        "language": "Java",
-        "repositoryDescription": "又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端"
-    },
-    {
-        "name": "33-js-concepts",
-        "owner": {
-            "login": "leonardomso"
-        },
-        "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1598",
-        "stargazers_count": "19404",
-        "language": "JavaScript",
-        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
-    },
-    {
-        "name": "hardware-effects",
-        "owner": {
-            "login": "Kobzol"
-        },
-        "full_name": "Kobzol/hardware-effects",
-        "forks_count": "47",
-        "stargazers_count": "1165",
-        "language": "C++",
-        "repositoryDescription": "Demonstration of various hardware effects."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "3659",
-        "stargazers_count": "13411",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "imba",
-        "owner": {
-            "login": "somebee"
-        },
-        "full_name": "somebee/imba",
-        "forks_count": "96",
-        "stargazers_count": "2690",
-        "language": "JavaScript",
-        "repositoryDescription": "The new programming language for web apps"
     }
 ]

@@ -5,8 +5,8 @@
             "login": "firecracker-microvm"
         },
         "full_name": "firecracker-microvm/firecracker",
-        "forks_count": "56",
-        "stargazers_count": "1792",
+        "forks_count": "135",
+        "stargazers_count": "3733",
         "language": "Rust",
         "repositoryDescription": "Secure and fast microVMs for serverless computing."
     },
@@ -16,10 +16,31 @@
             "login": "wagoodman"
         },
         "full_name": "wagoodman/dive",
-        "forks_count": "206",
-        "stargazers_count": "8618",
+        "forks_count": "225",
+        "stargazers_count": "9357",
         "language": "Go",
         "repositoryDescription": "A tool for exploring each layer in a docker image"
+    },
+    {
+        "name": "aminal",
+        "owner": {
+            "login": "liamg"
+        },
+        "full_name": "liamg/aminal",
+        "forks_count": "24",
+        "stargazers_count": "931",
+        "language": "Go",
+        "repositoryDescription": "Golang terminal emulator from scratch"
+    },
+    {
+        "name": "stanford-cs-230-deep-learning",
+        "owner": {
+            "login": "afshinea"
+        },
+        "full_name": "afshinea/stanford-cs-230-deep-learning",
+        "forks_count": "126",
+        "stargazers_count": "686",
+        "repositoryDescription": "VIP cheatsheets for Stanford's CS 230 Deep Learning"
     },
     {
         "name": "learnGitBranching",
@@ -27,8 +48,8 @@
             "login": "pcottle"
         },
         "full_name": "pcottle/learnGitBranching",
-        "forks_count": "2340",
-        "stargazers_count": "8230",
+        "forks_count": "2376",
+        "stargazers_count": "8703",
         "language": "JavaScript",
         "repositoryDescription": "An interactive git visualization to challenge and educate!"
     },
@@ -38,10 +59,43 @@
             "login": "jofpin"
         },
         "full_name": "jofpin/trape",
-        "forks_count": "346",
-        "stargazers_count": "2038",
+        "forks_count": "383",
+        "stargazers_count": "2490",
         "language": "Python",
-        "repositoryDescription": "People tracker on the Internet: OSINT analysis and research tool."
+        "repositoryDescription": "People tracker on the Internet: OSINT analysis and research tool by Jose Pino"
+    },
+    {
+        "name": "d2l-zh",
+        "owner": {
+            "login": "diveintodeeplearning"
+        },
+        "full_name": "diveintodeeplearning/d2l-zh",
+        "forks_count": "1129",
+        "stargazers_count": "3866",
+        "language": "Python",
+        "repositoryDescription": "《动手学深度学习》"
+    },
+    {
+        "name": "Me_Bot",
+        "owner": {
+            "login": "Spandan-Madan"
+        },
+        "full_name": "Spandan-Madan/Me_Bot",
+        "forks_count": "31",
+        "stargazers_count": "373",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Build a bot that speaks like you!"
+    },
+    {
+        "name": "gandissect",
+        "owner": {
+            "login": "CSAILVision"
+        },
+        "full_name": "CSAILVision/gandissect",
+        "forks_count": "31",
+        "stargazers_count": "371",
+        "language": "Python",
+        "repositoryDescription": "Pytorch-based tools for visualizing and understanding the neurons of a GAN. https://gandissect.csail.mit.edu/"
     },
     {
         "name": "edex-ui",
@@ -49,173 +103,10 @@
             "login": "GitSquared"
         },
         "full_name": "GitSquared/edex-ui",
-        "forks_count": "184",
-        "stargazers_count": "4460",
+        "forks_count": "193",
+        "stargazers_count": "4790",
         "language": "JavaScript",
         "repositoryDescription": "A science fiction terminal emulator designed for large touchscreens that runs on all major OSs."
-    },
-    {
-        "name": "ncc",
-        "owner": {
-            "login": "zeit"
-        },
-        "full_name": "zeit/ncc",
-        "forks_count": "16",
-        "stargazers_count": "696",
-        "language": "JavaScript",
-        "repositoryDescription": "Node.js Compiler Collection"
-    },
-    {
-        "name": "goro",
-        "owner": {
-            "login": "MagicalTux"
-        },
-        "full_name": "MagicalTux/goro",
-        "forks_count": "14",
-        "stargazers_count": "347",
-        "language": "PHP",
-        "repositoryDescription": "PHP in Go"
-    },
-    {
-        "name": "progress-estimator",
-        "owner": {
-            "login": "bvaughn"
-        },
-        "full_name": "bvaughn/progress-estimator",
-        "forks_count": "16",
-        "stargazers_count": "704",
-        "language": "JavaScript",
-        "repositoryDescription": "Logs a progress bar and estimation for how long a Promise will take to complete"
-    },
-    {
-        "name": "http3-explained",
-        "owner": {
-            "login": "bagder"
-        },
-        "full_name": "bagder/http3-explained",
-        "forks_count": "18",
-        "stargazers_count": "333",
-        "repositoryDescription": "A document describing the HTTP/3 and QUIC protocols"
-    },
-    {
-        "name": "zstd",
-        "owner": {
-            "login": "facebook"
-        },
-        "full_name": "facebook/zstd",
-        "forks_count": "746",
-        "stargazers_count": "8691",
-        "language": "C",
-        "repositoryDescription": "Zstandard - Fast real-time compression algorithm"
-    },
-    {
-        "name": "practical-cryptography-for-developers-book",
-        "owner": {
-            "login": "nakov"
-        },
-        "full_name": "nakov/practical-cryptography-for-developers-book",
-        "forks_count": "54",
-        "stargazers_count": "803",
-        "language": "CSS",
-        "repositoryDescription": "Practical Cryptography for Developers: Hashes, MAC, Key Derivation, DHKE, Symmetric and Asymmetric Ciphers, Elliptic Curves, Digital Signatures"
-    },
-    {
-        "name": "nnn",
-        "owner": {
-            "login": "jarun"
-        },
-        "full_name": "jarun/nnn",
-        "forks_count": "95",
-        "stargazers_count": "3061",
-        "language": "C",
-        "repositoryDescription": "🐬\nThe fastest terminal file manager ever written."
-    },
-    {
-        "name": "QuickDraw",
-        "owner": {
-            "login": "1991viet"
-        },
-        "full_name": "1991viet/QuickDraw",
-        "forks_count": "83",
-        "stargazers_count": "436",
-        "language": "Python",
-        "repositoryDescription": "Implementation of Quickdraw - an online game developed by Google"
-    },
-    {
-        "name": "nginxconfig.io",
-        "owner": {
-            "login": "valentinxxx"
-        },
-        "full_name": "valentinxxx/nginxconfig.io",
-        "forks_count": "172",
-        "stargazers_count": "4761",
-        "language": "HTML",
-        "repositoryDescription": "⚙️\nNGiИX config generator generator on steroids\n💉"
-    },
-    {
-        "name": "cms.js",
-        "owner": {
-            "login": "chrisdiana"
-        },
-        "full_name": "chrisdiana/cms.js",
-        "forks_count": "246",
-        "stargazers_count": "2623",
-        "language": "JavaScript",
-        "repositoryDescription": "Client-Side JavaScript Site Generator"
-    },
-    {
-        "name": "event-stream",
-        "owner": {
-            "login": "dominictarr"
-        },
-        "full_name": "dominictarr/event-stream",
-        "forks_count": "127",
-        "stargazers_count": "1870",
-        "language": "JavaScript",
-        "repositoryDescription": "EventStream is like functional programming meets IO"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "12698",
-        "stargazers_count": "41391",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "17198",
-        "stargazers_count": "120334",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
-    },
-    {
-        "name": "htm",
-        "owner": {
-            "login": "developit"
-        },
-        "full_name": "developit/htm",
-        "forks_count": "42",
-        "stargazers_count": "2804",
-        "language": "JavaScript",
-        "repositoryDescription": "Hyperscript Tagged Markup: JSX alternative using standard tagged templates, with compiler support."
-    },
-    {
-        "name": "litemall",
-        "owner": {
-            "login": "linlinjava"
-        },
-        "full_name": "linlinjava/litemall",
-        "forks_count": "736",
-        "stargazers_count": "2329",
-        "language": "Java",
-        "repositoryDescription": "又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端"
     },
     {
         "name": "NES.css",
@@ -223,53 +114,158 @@
             "login": "BcRikko"
         },
         "full_name": "BcRikko/NES.css",
-        "forks_count": "27",
-        "stargazers_count": "416",
+        "forks_count": "41",
+        "stargazers_count": "754",
         "language": "CSS",
         "repositoryDescription": "NES-style CSS Framework | ファミコン風CSSフレームワーク"
     },
     {
-        "name": "react",
+        "name": "daizhigev20",
         "owner": {
-            "login": "facebook"
+            "login": "garychowcmu"
         },
-        "full_name": "facebook/react",
-        "forks_count": "21064",
-        "stargazers_count": "116389",
+        "full_name": "garychowcmu/daizhigev20",
+        "forks_count": "120",
+        "stargazers_count": "396",
+        "repositoryDescription": "殆知阁古代文献"
+    },
+    {
+        "name": "d2l-en",
+        "owner": {
+            "login": "diveintodeeplearning"
+        },
+        "full_name": "diveintodeeplearning/d2l-en",
+        "forks_count": "65",
+        "stargazers_count": "289",
+        "language": "Python",
+        "repositoryDescription": "Dive into Deep Learning (CV chapters coming soon)"
+    },
+    {
+        "name": "ncc",
+        "owner": {
+            "login": "zeit"
+        },
+        "full_name": "zeit/ncc",
+        "forks_count": "20",
+        "stargazers_count": "937",
         "language": "JavaScript",
-        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+        "repositoryDescription": "Node.js Compiler Collection"
     },
     {
-        "name": "awesome-flutter",
+        "name": "CS-Notes",
         "owner": {
-            "login": "Solido"
+            "login": "CyC2018"
         },
-        "full_name": "Solido/awesome-flutter",
-        "forks_count": "930",
-        "stargazers_count": "8611",
-        "language": "Dart",
-        "repositoryDescription": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "12753",
+        "stargazers_count": "41566",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
     {
-        "name": "goboy",
+        "name": "http3-explained",
         "owner": {
-            "login": "Humpheh"
+            "login": "bagder"
         },
-        "full_name": "Humpheh/goboy",
-        "forks_count": "56",
-        "stargazers_count": "1565",
-        "language": "Go",
-        "repositoryDescription": "Multi-platform Nintendo Game Boy Color emulator written in Go"
+        "full_name": "bagder/http3-explained",
+        "forks_count": "46",
+        "stargazers_count": "526",
+        "repositoryDescription": "A document describing the HTTP/3 and QUIC protocols"
     },
     {
-        "name": "eva-icons",
+        "name": "ckb",
         "owner": {
-            "login": "akveo"
+            "login": "nervosnetwork"
         },
-        "full_name": "akveo/eva-icons",
-        "forks_count": "143",
-        "stargazers_count": "4923",
-        "language": "TypeScript",
-        "repositoryDescription": "A pack of more than 480 beautifully crafted Open Source icons. SVG, Sketch, Web Font and Animations support."
+        "full_name": "nervosnetwork/ckb",
+        "forks_count": "18",
+        "stargazers_count": "192",
+        "language": "Rust",
+        "repositoryDescription": "Nervos CKB is a public permissionless blockchain, the common knowledge layer of Nervos network."
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "17227",
+        "stargazers_count": "120485",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "awesome",
+        "owner": {
+            "login": "sindresorhus"
+        },
+        "full_name": "sindresorhus/awesome",
+        "forks_count": "12894",
+        "stargazers_count": "97065",
+        "repositoryDescription": "😎\nCurated list of awesome lists"
+    },
+    {
+        "name": "github-drama",
+        "owner": {
+            "login": "nikolas"
+        },
+        "full_name": "nikolas/github-drama",
+        "forks_count": "50",
+        "stargazers_count": "849",
+        "repositoryDescription": "\"locked and limited conversation to collaborators\""
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "3831",
+        "stargazers_count": "13937",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "70091",
+        "stargazers_count": "115476",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "progress-estimator",
+        "owner": {
+            "login": "bvaughn"
+        },
+        "full_name": "bvaughn/progress-estimator",
+        "forks_count": "18",
+        "stargazers_count": "850",
+        "language": "JavaScript",
+        "repositoryDescription": "Logs a progress bar and estimation for how long a Promise will take to complete"
+    },
+    {
+        "name": "SubEthaEdit",
+        "owner": {
+            "login": "subethaedit"
+        },
+        "full_name": "subethaedit/SubEthaEdit",
+        "forks_count": "8",
+        "stargazers_count": "190",
+        "language": "Objective-C",
+        "repositoryDescription": "General purpose plain text editor for macOS. Widely known for its live collaboration feature."
+    },
+    {
+        "name": "goro",
+        "owner": {
+            "login": "MagicalTux"
+        },
+        "full_name": "MagicalTux/goro",
+        "forks_count": "17",
+        "stargazers_count": "490",
+        "language": "PHP",
+        "repositoryDescription": "PHP in Go"
     }
 ]

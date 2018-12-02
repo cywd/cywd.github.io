@@ -5,21 +5,41 @@
             "login": "BcRikko"
         },
         "full_name": "BcRikko/NES.css",
-        "forks_count": "388",
-        "stargazers_count": "5081",
+        "forks_count": "426",
+        "stargazers_count": "5450",
         "language": "CSS",
         "repositoryDescription": "NES-style CSS Framework | ファミコン風CSSフレームワーク"
     },
     {
-        "name": "wtfpython-cn",
+        "name": "CS-Notes",
         "owner": {
-            "login": "leisurelicht"
+            "login": "CyC2018"
         },
-        "full_name": "leisurelicht/wtfpython-cn",
-        "forks_count": "192",
-        "stargazers_count": "1436",
-        "language": "Python",
-        "repositoryDescription": "wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译"
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "12962",
+        "stargazers_count": "42151",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
+    },
+    {
+        "name": "programmers-introduction-to-mathematics",
+        "owner": {
+            "login": "pim-book"
+        },
+        "full_name": "pim-book/programmers-introduction-to-mathematics",
+        "forks_count": "15",
+        "stargazers_count": "318",
+        "language": "JavaScript",
+        "repositoryDescription": "Code for A Programmer's Introduction to Mathematics"
+    },
+    {
+        "name": "i-am-chinese-the-dragonfly-must-go-on",
+        "owner": {
+            "login": "ithinco"
+        },
+        "full_name": "ithinco/i-am-chinese-the-dragonfly-must-go-on",
+        "forks_count": "9",
+        "stargazers_count": "326",
+        "repositoryDescription": "A response to “We are Google employees, Google must drop DragonFly”"
     },
     {
         "name": "css-animation-101",
@@ -27,117 +47,10 @@
             "login": "cssanimation"
         },
         "full_name": "cssanimation/css-animation-101",
-        "forks_count": "57",
-        "stargazers_count": "1576",
+        "forks_count": "68",
+        "stargazers_count": "1791",
         "language": "CSS",
         "repositoryDescription": "Learn how to bring animation to your web projects"
-    },
-    {
-        "name": "spectrum",
-        "owner": {
-            "login": "withspectrum"
-        },
-        "full_name": "withspectrum/spectrum",
-        "forks_count": "410",
-        "stargazers_count": "5230",
-        "language": "JavaScript",
-        "repositoryDescription": "Simple, powerful online communities."
-    },
-    {
-        "name": "firecracker",
-        "owner": {
-            "login": "firecracker-microvm"
-        },
-        "full_name": "firecracker-microvm/firecracker",
-        "forks_count": "207",
-        "stargazers_count": "5101",
-        "language": "Rust",
-        "repositoryDescription": "Secure and fast microVMs for serverless computing."
-    },
-    {
-        "name": "srslte-docker-emulated",
-        "owner": {
-            "login": "pgorczak"
-        },
-        "full_name": "pgorczak/srslte-docker-emulated",
-        "forks_count": "12",
-        "stargazers_count": "198",
-        "language": "Dockerfile",
-        "repositoryDescription": "Minimal end-to-end LTE. Dockerized and emulated radio over shared memory."
-    },
-    {
-        "name": "tabulator",
-        "owner": {
-            "login": "olifolkerd"
-        },
-        "full_name": "olifolkerd/tabulator",
-        "forks_count": "204",
-        "stargazers_count": "1410",
-        "language": "JavaScript",
-        "repositoryDescription": "Interactive Tables and Data Grids for JavaScript"
-    },
-    {
-        "name": "stanford-cs-230-deep-learning",
-        "owner": {
-            "login": "afshinea"
-        },
-        "full_name": "afshinea/stanford-cs-230-deep-learning",
-        "forks_count": "292",
-        "stargazers_count": "1778",
-        "repositoryDescription": "VIP cheatsheets for Stanford's CS 230 Deep Learning"
-    },
-    {
-        "name": "dive",
-        "owner": {
-            "login": "wagoodman"
-        },
-        "full_name": "wagoodman/dive",
-        "forks_count": "255",
-        "stargazers_count": "10281",
-        "language": "Go",
-        "repositoryDescription": "A tool for exploring each layer in a docker image"
-    },
-    {
-        "name": "objectbox-go",
-        "owner": {
-            "login": "objectbox"
-        },
-        "full_name": "objectbox/objectbox-go",
-        "forks_count": "6",
-        "stargazers_count": "331",
-        "language": "Go",
-        "repositoryDescription": "ObjectBox Go - persisting your Go structs/objects superfast and simple"
-    },
-    {
-        "name": "fuzz.txt",
-        "owner": {
-            "login": "Bo0oM"
-        },
-        "full_name": "Bo0oM/fuzz.txt",
-        "forks_count": "73",
-        "stargazers_count": "422",
-        "repositoryDescription": "Potentially dangerous files"
-    },
-    {
-        "name": "kindle_free_books",
-        "owner": {
-            "login": "crazyandcoder"
-        },
-        "full_name": "crazyandcoder/kindle_free_books",
-        "forks_count": "57",
-        "stargazers_count": "220",
-        "repositoryDescription": "免费的Kindle电子书资源，不定期更新..."
-    },
-    {
-        "name": "d2l-zh",
-        "owner": {
-            "login": "diveintodeeplearning"
-        },
-        "full_name": "diveintodeeplearning/d2l-zh",
-        "forks_count": "1317",
-        "stargazers_count": "4765",
-        "language": "Python",
-        "repositoryDescription": "《动手学深度学习》"
     },
     {
         "name": "kbd-audio",
@@ -145,10 +58,65 @@
             "login": "ggerganov"
         },
         "full_name": "ggerganov/kbd-audio",
-        "forks_count": "48",
-        "stargazers_count": "608",
+        "forks_count": "59",
+        "stargazers_count": "840",
         "language": "C++",
         "repositoryDescription": "Tools for capturing and analysing keyboard input paired with microphone capture"
+    },
+    {
+        "name": "wtfpython-cn",
+        "owner": {
+            "login": "leisurelicht"
+        },
+        "full_name": "leisurelicht/wtfpython-cn",
+        "forks_count": "215",
+        "stargazers_count": "1599",
+        "language": "Python",
+        "repositoryDescription": "wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译"
+    },
+    {
+        "name": "dust3d",
+        "owner": {
+            "login": "huxingyi"
+        },
+        "full_name": "huxingyi/dust3d",
+        "forks_count": "18",
+        "stargazers_count": "458",
+        "language": "C++",
+        "repositoryDescription": "🐪\nDust3D is a cross-platform open-source 3D modeling software. Auto UV unwrapping, auto rigging with PBR Material support, pose and motion authoring all in one."
+    },
+    {
+        "name": "dive",
+        "owner": {
+            "login": "wagoodman"
+        },
+        "full_name": "wagoodman/dive",
+        "forks_count": "262",
+        "stargazers_count": "10449",
+        "language": "Go",
+        "repositoryDescription": "A tool for exploring each layer in a docker image"
+    },
+    {
+        "name": "firecracker",
+        "owner": {
+            "login": "firecracker-microvm"
+        },
+        "full_name": "firecracker-microvm/firecracker",
+        "forks_count": "222",
+        "stargazers_count": "5266",
+        "language": "Rust",
+        "repositoryDescription": "Secure and fast microVMs for serverless computing."
+    },
+    {
+        "name": "spectrum",
+        "owner": {
+            "login": "withspectrum"
+        },
+        "full_name": "withspectrum/spectrum",
+        "forks_count": "417",
+        "stargazers_count": "5357",
+        "language": "JavaScript",
+        "repositoryDescription": "Simple, powerful online communities."
     },
     {
         "name": "learnGitBranching",
@@ -156,65 +124,21 @@
             "login": "pcottle"
         },
         "full_name": "pcottle/learnGitBranching",
-        "forks_count": "2415",
-        "stargazers_count": "9285",
+        "forks_count": "2431",
+        "stargazers_count": "9400",
         "language": "JavaScript",
         "repositoryDescription": "An interactive git visualization to challenge and educate!"
     },
     {
-        "name": "edex-ui",
+        "name": "tabulator",
         "owner": {
-            "login": "GitSquared"
+            "login": "olifolkerd"
         },
-        "full_name": "GitSquared/edex-ui",
-        "forks_count": "219",
-        "stargazers_count": "5324",
+        "full_name": "olifolkerd/tabulator",
+        "forks_count": "208",
+        "stargazers_count": "1531",
         "language": "JavaScript",
-        "repositoryDescription": "A science fiction terminal emulator designed for large touchscreens that runs on all major OSs."
-    },
-    {
-        "name": "SIMD-Visualiser",
-        "owner": {
-            "login": "piotte13"
-        },
-        "full_name": "piotte13/SIMD-Visualiser",
-        "forks_count": "11",
-        "stargazers_count": "219",
-        "language": "JavaScript",
-        "repositoryDescription": "A tool to graphically visualize SIMD code"
-    },
-    {
-        "name": "khaiii",
-        "owner": {
-            "login": "kakao"
-        },
-        "full_name": "kakao/khaiii",
-        "forks_count": "59",
-        "stargazers_count": "451",
-        "language": "C++",
-        "repositoryDescription": "Kakao Hangul Analyzer III"
-    },
-    {
-        "name": "progress-estimator",
-        "owner": {
-            "login": "bvaughn"
-        },
-        "full_name": "bvaughn/progress-estimator",
-        "forks_count": "23",
-        "stargazers_count": "1239",
-        "language": "JavaScript",
-        "repositoryDescription": "Logs a progress bar and estimation for how long a Promise will take to complete"
-    },
-    {
-        "name": "LibrePCB",
-        "owner": {
-            "login": "LibrePCB"
-        },
-        "full_name": "LibrePCB/LibrePCB",
-        "forks_count": "60",
-        "stargazers_count": "442",
-        "language": "C++",
-        "repositoryDescription": "A powerful, innovative and intuitive EDA tool for everyone!"
+        "repositoryDescription": "Interactive Tables and Data Grids for JavaScript"
     },
     {
         "name": "JavaGuide",
@@ -222,21 +146,85 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "3959",
-        "stargazers_count": "14307",
+        "forks_count": "3988",
+        "stargazers_count": "14394",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "bypass-paywalls-firefox",
+        "name": "stanford-cs-230-deep-learning",
         "owner": {
-            "login": "iamadamdev"
+            "login": "afshinea"
         },
-        "full_name": "iamadamdev/bypass-paywalls-firefox",
-        "forks_count": "27",
-        "stargazers_count": "215",
+        "full_name": "afshinea/stanford-cs-230-deep-learning",
+        "forks_count": "309",
+        "stargazers_count": "1861",
+        "repositoryDescription": "VIP cheatsheets for Stanford's CS 230 Deep Learning"
+    },
+    {
+        "name": "d2l-zh",
+        "owner": {
+            "login": "diveintodeeplearning"
+        },
+        "full_name": "diveintodeeplearning/d2l-zh",
+        "forks_count": "1337",
+        "stargazers_count": "4842",
+        "language": "Python",
+        "repositoryDescription": "《动手学深度学习》"
+    },
+    {
+        "name": "pdftilecut",
+        "owner": {
+            "login": "oxplot"
+        },
+        "full_name": "oxplot/pdftilecut",
+        "forks_count": "1",
+        "stargazers_count": "161",
+        "language": "Go",
+        "repositoryDescription": "pdftilecut lets you sub-divide a PDF page(s) into smaller pages so you can print them on small form printers."
+    },
+    {
+        "name": "edex-ui",
+        "owner": {
+            "login": "GitSquared"
+        },
+        "full_name": "GitSquared/edex-ui",
+        "forks_count": "220",
+        "stargazers_count": "5416",
         "language": "JavaScript",
-        "repositoryDescription": "Bypass Paywalls for Firefox"
+        "repositoryDescription": "A science fiction terminal emulator designed for large touchscreens that runs on all major OSs."
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "70230",
+        "stargazers_count": "115750",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "kindle_free_books",
+        "owner": {
+            "login": "crazyandcoder"
+        },
+        "full_name": "crazyandcoder/kindle_free_books",
+        "forks_count": "62",
+        "stargazers_count": "300",
+        "repositoryDescription": "免费的Kindle电子书资源，不定期更新..."
+    },
+    {
+        "name": "progress-estimator",
+        "owner": {
+            "login": "bvaughn"
+        },
+        "full_name": "bvaughn/progress-estimator",
+        "forks_count": "24",
+        "stargazers_count": "1312",
+        "language": "JavaScript",
+        "repositoryDescription": "Logs a progress bar and estimation for how long a Promise will take to complete"
     },
     {
         "name": "vue",
@@ -244,31 +232,42 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "17271",
-        "stargazers_count": "120799",
+        "forks_count": "17279",
+        "stargazers_count": "120859",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "Cyanea",
+        "name": "overreacted.io",
         "owner": {
-            "login": "jaredrummler"
+            "login": "gaearon"
         },
-        "full_name": "jaredrummler/Cyanea",
-        "forks_count": "14",
-        "stargazers_count": "277",
-        "language": "Kotlin",
-        "repositoryDescription": "A theme engine for Android"
+        "full_name": "gaearon/overreacted.io",
+        "forks_count": "7",
+        "stargazers_count": "162",
+        "language": "JavaScript",
+        "repositoryDescription": "ignore me"
     },
     {
-        "name": "aminal",
+        "name": "responder",
         "owner": {
-            "login": "liamg"
+            "login": "kennethreitz"
         },
-        "full_name": "liamg/aminal",
-        "forks_count": "33",
-        "stargazers_count": "1490",
-        "language": "Go",
-        "repositoryDescription": "Golang terminal emulator from scratch"
+        "full_name": "kennethreitz/responder",
+        "forks_count": "151",
+        "stargazers_count": "2204",
+        "language": "Python",
+        "repositoryDescription": "a familiar HTTP Service Framework for Python"
+    },
+    {
+        "name": "30-seconds-of-code",
+        "owner": {
+            "login": "30-seconds"
+        },
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "3430",
+        "stargazers_count": "33279",
+        "language": "JavaScript",
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
     }
 ]

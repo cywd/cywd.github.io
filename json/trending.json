@@ -1,24 +1,14 @@
 [
     {
-        "name": "i-am-chinese-the-dragonfly-must-go-on",
+        "name": "PhysX-3.4",
         "owner": {
-            "login": "ithinco"
+            "login": "NVIDIAGameWorks"
         },
-        "full_name": "ithinco/i-am-chinese-the-dragonfly-must-go-on",
-        "forks_count": "31",
-        "stargazers_count": "1003",
-        "repositoryDescription": "A response to “We are Google employees, Google must drop DragonFly”"
-    },
-    {
-        "name": "NES.css",
-        "owner": {
-            "login": "BcRikko"
-        },
-        "full_name": "BcRikko/NES.css",
-        "forks_count": "458",
-        "stargazers_count": "5955",
-        "language": "CSS",
-        "repositoryDescription": "NES-style CSS Framework | ファミコン風CSSフレームワーク"
+        "full_name": "NVIDIAGameWorks/PhysX-3.4",
+        "forks_count": "70",
+        "stargazers_count": "1342",
+        "language": "C++",
+        "repositoryDescription": "NVIDIA PhysX SDK 3.4"
     },
     {
         "name": "overreacted.io",
@@ -26,32 +16,21 @@
             "login": "gaearon"
         },
         "full_name": "gaearon/overreacted.io",
-        "forks_count": "24",
-        "stargazers_count": "609",
+        "forks_count": "44",
+        "stargazers_count": "1177",
         "language": "JavaScript",
         "repositoryDescription": "Personal blog by Dan Abramov."
     },
     {
-        "name": "programmers-introduction-to-mathematics",
+        "name": "NES.css",
         "owner": {
-            "login": "pim-book"
+            "login": "BcRikko"
         },
-        "full_name": "pim-book/programmers-introduction-to-mathematics",
-        "forks_count": "49",
-        "stargazers_count": "724",
-        "language": "JavaScript",
-        "repositoryDescription": "Code for A Programmer's Introduction to Mathematics"
-    },
-    {
-        "name": "kbd-audio",
-        "owner": {
-            "login": "ggerganov"
-        },
-        "full_name": "ggerganov/kbd-audio",
-        "forks_count": "99",
-        "stargazers_count": "1228",
-        "language": "C++",
-        "repositoryDescription": "Tools for capturing and analysing keyboard input paired with microphone capture"
+        "full_name": "BcRikko/NES.css",
+        "forks_count": "502",
+        "stargazers_count": "6388",
+        "language": "CSS",
+        "repositoryDescription": "NES-style CSS Framework | ファミコン風CSSフレームワーク"
     },
     {
         "name": "CS-Notes",
@@ -59,9 +38,74 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "13054",
-        "stargazers_count": "42485",
+        "forks_count": "13159",
+        "stargazers_count": "42832",
         "repositoryDescription": "📚\nComputer Science Learning Notes"
+    },
+    {
+        "name": "mcfly",
+        "owner": {
+            "login": "cantino"
+        },
+        "full_name": "cantino/mcfly",
+        "forks_count": "7",
+        "stargazers_count": "434",
+        "language": "Rust",
+        "repositoryDescription": "Fly through your shell history. Great Scott!"
+    },
+    {
+        "name": "SEAL",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/SEAL",
+        "forks_count": "26",
+        "stargazers_count": "387",
+        "language": "C++",
+        "repositoryDescription": "Simple Encrypted Arithmetic Library (SEAL) is an easy-to-use but powerful homomorphic encryption library written in C++. It supports both the BFV and the CKKS encryption schemes."
+    },
+    {
+        "name": "i-am-chinese-the-dragonfly-must-go-on",
+        "owner": {
+            "login": "ithinco"
+        },
+        "full_name": "ithinco/i-am-chinese-the-dragonfly-must-go-on",
+        "forks_count": "41",
+        "stargazers_count": "1334",
+        "repositoryDescription": "A response to “We are Google employees, Google must drop DragonFly”"
+    },
+    {
+        "name": "Ethr",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/Ethr",
+        "forks_count": "20",
+        "stargazers_count": "427",
+        "language": "Go",
+        "repositoryDescription": "Ethr is a Network Performance Measurement Tool for TCP, UDP & HTTP."
+    },
+    {
+        "name": "PySyft",
+        "owner": {
+            "login": "OpenMined"
+        },
+        "full_name": "OpenMined/PySyft",
+        "forks_count": "528",
+        "stargazers_count": "2095",
+        "language": "Python",
+        "repositoryDescription": "A library for encrypted, privacy preserving deep learning"
+    },
+    {
+        "name": "programmers-introduction-to-mathematics",
+        "owner": {
+            "login": "pim-book"
+        },
+        "full_name": "pim-book/programmers-introduction-to-mathematics",
+        "forks_count": "62",
+        "stargazers_count": "1042",
+        "language": "JavaScript",
+        "repositoryDescription": "Code for A Programmer's Introduction to Mathematics"
     },
     {
         "name": "dive",
@@ -69,32 +113,10 @@
             "login": "wagoodman"
         },
         "full_name": "wagoodman/dive",
-        "forks_count": "281",
-        "stargazers_count": "10806",
+        "forks_count": "291",
+        "stargazers_count": "11076",
         "language": "Go",
         "repositoryDescription": "A tool for exploring each layer in a docker image"
-    },
-    {
-        "name": "boden",
-        "owner": {
-            "login": "AshampooSystems"
-        },
-        "full_name": "AshampooSystems/boden",
-        "forks_count": "9",
-        "stargazers_count": "354",
-        "language": "C++",
-        "repositoryDescription": "Truly native C++ cross-platform framework for Android and iOS development"
-    },
-    {
-        "name": "css-animation-101",
-        "owner": {
-            "login": "cssanimation"
-        },
-        "full_name": "cssanimation/css-animation-101",
-        "forks_count": "81",
-        "stargazers_count": "2106",
-        "language": "CSS",
-        "repositoryDescription": "Learn how to bring animation to your web projects"
     },
     {
         "name": "wtfpython-cn",
@@ -102,54 +124,21 @@
             "login": "leisurelicht"
         },
         "full_name": "leisurelicht/wtfpython-cn",
-        "forks_count": "256",
-        "stargazers_count": "1871",
+        "forks_count": "292",
+        "stargazers_count": "2124",
         "language": "Python",
         "repositoryDescription": "wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译"
     },
     {
-        "name": "projectManage",
+        "name": "kbd-audio",
         "owner": {
-            "login": "a54552239"
+            "login": "ggerganov"
         },
-        "full_name": "a54552239/projectManage",
-        "forks_count": "32",
-        "stargazers_count": "246",
-        "language": "Vue",
-        "repositoryDescription": "基于Vue.js实现的项目管理系统"
-    },
-    {
-        "name": "arthas",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/arthas",
-        "forks_count": "1081",
-        "stargazers_count": "6671",
-        "language": "Java",
-        "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
-    },
-    {
-        "name": "firecracker",
-        "owner": {
-            "login": "firecracker-microvm"
-        },
-        "full_name": "firecracker-microvm/firecracker",
-        "forks_count": "234",
-        "stargazers_count": "5485",
-        "language": "Rust",
-        "repositoryDescription": "Secure and fast microVMs for serverless computing."
-    },
-    {
-        "name": "nginxconfig.io",
-        "owner": {
-            "login": "valentinxxx"
-        },
-        "full_name": "valentinxxx/nginxconfig.io",
-        "forks_count": "197",
-        "stargazers_count": "5235",
-        "language": "HTML",
-        "repositoryDescription": "⚙️\nNGiИX config generator generator on steroids\n💉"
+        "full_name": "ggerganov/kbd-audio",
+        "forks_count": "118",
+        "stargazers_count": "1448",
+        "language": "C++",
+        "repositoryDescription": "Tools for capturing and analysing keyboard input paired with microphone capture"
     },
     {
         "name": "wtfpython",
@@ -157,42 +146,32 @@
             "login": "satwikkansal"
         },
         "full_name": "satwikkansal/wtfpython",
-        "forks_count": "828",
-        "stargazers_count": "9532",
+        "forks_count": "852",
+        "stargazers_count": "9749",
         "language": "Python",
         "repositoryDescription": "A collection of surprising Python snippets and lesser-known features."
     },
     {
-        "name": "GTRS",
+        "name": "css-animation-101",
         "owner": {
-            "login": "mthbernardes"
+            "login": "cssanimation"
         },
-        "full_name": "mthbernardes/GTRS",
-        "forks_count": "41",
-        "stargazers_count": "243",
-        "language": "Shell",
-        "repositoryDescription": "GTRS - Google Translator Reverse Shell"
+        "full_name": "cssanimation/css-animation-101",
+        "forks_count": "91",
+        "stargazers_count": "2311",
+        "language": "CSS",
+        "repositoryDescription": "Learn how to bring animation to your web projects"
     },
     {
-        "name": "kindle_free_books",
+        "name": "forgJs",
         "owner": {
-            "login": "crazyandcoder"
+            "login": "oussamahamdaoui"
         },
-        "full_name": "crazyandcoder/kindle_free_books",
-        "forks_count": "84",
-        "stargazers_count": "467",
-        "repositoryDescription": "免费的Kindle电子书资源，不定期更新..."
-    },
-    {
-        "name": "yugabyte-db",
-        "owner": {
-            "login": "YugaByte"
-        },
-        "full_name": "YugaByte/yugabyte-db",
-        "forks_count": "78",
-        "stargazers_count": "763",
-        "language": "C",
-        "repositoryDescription": "YugaByte DB is a transactional, high-performance database for building distributed cloud services. It supports Cassandra-compatible and Redis-compatible APIs, with PostgreSQL in Beta."
+        "full_name": "oussamahamdaoui/forgJs",
+        "forks_count": "12",
+        "stargazers_count": "217",
+        "language": "JavaScript",
+        "repositoryDescription": "ForgJs is a javascript lightweight object validator. Go check the Quick start section and start coding with love"
     },
     {
         "name": "JavaGuide",
@@ -200,10 +179,65 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "4036",
-        "stargazers_count": "14538",
+        "forks_count": "4081",
+        "stargazers_count": "14703",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "firecracker",
+        "owner": {
+            "login": "firecracker-microvm"
+        },
+        "full_name": "firecracker-microvm/firecracker",
+        "forks_count": "253",
+        "stargazers_count": "5649",
+        "language": "Rust",
+        "repositoryDescription": "Secure and fast microVMs for serverless computing."
+    },
+    {
+        "name": "skycfg",
+        "owner": {
+            "login": "stripe"
+        },
+        "full_name": "stripe/skycfg",
+        "forks_count": "5",
+        "stargazers_count": "183",
+        "language": "Go",
+        "repositoryDescription": "Skycfg is an extension library for the Starlark language that adds support for constructing Protocol Buffer messages."
+    },
+    {
+        "name": "swift-snapshot-testing",
+        "owner": {
+            "login": "pointfreeco"
+        },
+        "full_name": "pointfreeco/swift-snapshot-testing",
+        "forks_count": "23",
+        "stargazers_count": "336",
+        "language": "Swift",
+        "repositoryDescription": "📸\nDelightful Swift snapshot testing."
+    },
+    {
+        "name": "arthas",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/arthas",
+        "forks_count": "1101",
+        "stargazers_count": "6811",
+        "language": "Java",
+        "repositoryDescription": "Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas"
+    },
+    {
+        "name": "screenshoteer",
+        "owner": {
+            "login": "vladocar"
+        },
+        "full_name": "vladocar/screenshoteer",
+        "forks_count": "5",
+        "stargazers_count": "206",
+        "language": "JavaScript",
+        "repositoryDescription": "Make website screenshots and mobile emulations from the command line."
     },
     {
         "name": "learnGitBranching",
@@ -211,42 +245,10 @@
             "login": "pcottle"
         },
         "full_name": "pcottle/learnGitBranching",
-        "forks_count": "2450",
-        "stargazers_count": "9569",
+        "forks_count": "2457",
+        "stargazers_count": "9693",
         "language": "JavaScript",
         "repositoryDescription": "An interactive git visualization to challenge and educate!"
-    },
-    {
-        "name": "stanford-cs-230-deep-learning",
-        "owner": {
-            "login": "afshinea"
-        },
-        "full_name": "afshinea/stanford-cs-230-deep-learning",
-        "forks_count": "327",
-        "stargazers_count": "2010",
-        "repositoryDescription": "VIP cheatsheets for Stanford's CS 230 Deep Learning"
-    },
-    {
-        "name": "tabulator",
-        "owner": {
-            "login": "olifolkerd"
-        },
-        "full_name": "olifolkerd/tabulator",
-        "forks_count": "211",
-        "stargazers_count": "1679",
-        "language": "JavaScript",
-        "repositoryDescription": "Interactive Tables and Data Grids for JavaScript"
-    },
-    {
-        "name": "dust3d",
-        "owner": {
-            "login": "huxingyi"
-        },
-        "full_name": "huxingyi/dust3d",
-        "forks_count": "22",
-        "stargazers_count": "587",
-        "language": "C++",
-        "repositoryDescription": "🐪\nDust3D is a cross-platform open-source 3D modeling software. Auto UV unwrapping, auto rigging with PBR Material support, pose and motion authoring all in one."
     },
     {
         "name": "vue",
@@ -254,20 +256,20 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "17300",
-        "stargazers_count": "120956",
+        "forks_count": "17314",
+        "stargazers_count": "121067",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "d2l-zh",
+        "name": "DeepLearning-500-questions",
         "owner": {
-            "login": "diveintodeeplearning"
+            "login": "scutan90"
         },
-        "full_name": "diveintodeeplearning/d2l-zh",
-        "forks_count": "1359",
-        "stargazers_count": "4957",
-        "language": "Python",
-        "repositoryDescription": "《动手学深度学习》"
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "3649",
+        "stargazers_count": "14101",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     }
 ]

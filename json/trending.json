@@ -1,36 +1,34 @@
 [
     {
+        "name": "MSEdge",
+        "owner": {
+            "login": "MicrosoftEdge"
+        },
+        "full_name": "MicrosoftEdge/MSEdge",
+        "forks_count": "13",
+        "stargazers_count": "841",
+        "repositoryDescription": "Microsoft Edge"
+    },
+    {
         "name": "flutter",
         "owner": {
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "4452",
-        "stargazers_count": "44085",
+        "forks_count": "4502",
+        "stargazers_count": "44548",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "laravel-websockets",
+        "name": "CS-Notes",
         "owner": {
-            "login": "beyondcode"
+            "login": "CyC2018"
         },
-        "full_name": "beyondcode/laravel-websockets",
-        "forks_count": "35",
-        "stargazers_count": "963",
-        "language": "PHP",
-        "repositoryDescription": "Websockets for Laravel. Done right."
-    },
-    {
-        "name": "NES.css",
-        "owner": {
-            "login": "nostalgic-css"
-        },
-        "full_name": "nostalgic-css/NES.css",
-        "forks_count": "551",
-        "stargazers_count": "7033",
-        "language": "CSS",
-        "repositoryDescription": "NES-style CSS Framework | ファミコン風CSSフレームワーク"
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "13316",
+        "stargazers_count": "43528",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
     {
         "name": "Ethr",
@@ -38,32 +36,10 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/Ethr",
-        "forks_count": "50",
-        "stargazers_count": "1193",
+        "forks_count": "73",
+        "stargazers_count": "1615",
         "language": "Go",
         "repositoryDescription": "Ethr is a Network Performance Measurement Tool for TCP, UDP & HTTP."
-    },
-    {
-        "name": "wpf",
-        "owner": {
-            "login": "dotnet"
-        },
-        "full_name": "dotnet/wpf",
-        "forks_count": "99",
-        "stargazers_count": "1758",
-        "language": "C#",
-        "repositoryDescription": "WPF is a .NET Core UI framework for building Windows desktop applications."
-    },
-    {
-        "name": "JAViewer",
-        "owner": {
-            "login": "SplashCodes"
-        },
-        "full_name": "SplashCodes/JAViewer",
-        "forks_count": "389",
-        "stargazers_count": "2344",
-        "language": "Java",
-        "repositoryDescription": "更优雅的驾车体验"
     },
     {
         "name": "wtfpython",
@@ -71,31 +47,43 @@
             "login": "satwikkansal"
         },
         "full_name": "satwikkansal/wtfpython",
-        "forks_count": "907",
-        "stargazers_count": "10402",
+        "forks_count": "935",
+        "stargazers_count": "10680",
         "language": "Python",
         "repositoryDescription": "A collection of surprising Python snippets and lesser-known features."
     },
     {
-        "name": "next",
+        "name": "puppeteer",
         "owner": {
-            "login": "atlas-engineer"
+            "login": "GoogleChrome"
         },
-        "full_name": "atlas-engineer/next",
-        "forks_count": "85",
-        "stargazers_count": "2016",
-        "language": "Common Lisp",
-        "repositoryDescription": "Next Browser - Be Productive."
+        "full_name": "GoogleChrome/puppeteer",
+        "forks_count": "3584",
+        "stargazers_count": "42242",
+        "language": "JavaScript",
+        "repositoryDescription": "Headless Chrome Node API"
     },
     {
-        "name": "portabletext",
+        "name": "NES.css",
         "owner": {
-            "login": "portabletext"
+            "login": "nostalgic-css"
         },
-        "full_name": "portabletext/portabletext",
-        "forks_count": "3",
-        "stargazers_count": "284",
-        "repositoryDescription": "Portable Text is a JSON based rich text specification for modern content editing platforms."
+        "full_name": "nostalgic-css/NES.css",
+        "forks_count": "574",
+        "stargazers_count": "7272",
+        "language": "CSS",
+        "repositoryDescription": "NES-style CSS Framework | ファミコン風CSSフレームワーク"
+    },
+    {
+        "name": "JAViewer",
+        "owner": {
+            "login": "SplashCodes"
+        },
+        "full_name": "SplashCodes/JAViewer",
+        "forks_count": "428",
+        "stargazers_count": "2572",
+        "language": "Java",
+        "repositoryDescription": "更优雅的驾车体验"
     },
     {
         "name": "wtfpython-cn",
@@ -103,119 +91,32 @@
             "login": "leisurelicht"
         },
         "full_name": "leisurelicht/wtfpython-cn",
-        "forks_count": "369",
-        "stargazers_count": "2627",
+        "forks_count": "402",
+        "stargazers_count": "2846",
         "language": "Python",
         "repositoryDescription": "wtfpython的中文翻译/施工结束/ 能力有限，欢迎帮我改进翻译"
     },
     {
-        "name": "winforms",
+        "name": "LeetCodeAnimation",
         "owner": {
-            "login": "dotnet"
+            "login": "MisterBooo"
         },
-        "full_name": "dotnet/winforms",
-        "forks_count": "73",
-        "stargazers_count": "1156",
-        "language": "C#",
-        "repositoryDescription": "Windows Forms is a .NET Core UI framework for building Windows desktop applications."
-    },
-    {
-        "name": "screenshoteer",
-        "owner": {
-            "login": "vladocar"
-        },
-        "full_name": "vladocar/screenshoteer",
-        "forks_count": "29",
-        "stargazers_count": "801",
-        "language": "JavaScript",
-        "repositoryDescription": "Make website screenshots and mobile emulations from the command line."
-    },
-    {
-        "name": "ncc",
-        "owner": {
-            "login": "zeit"
-        },
-        "full_name": "zeit/ncc",
-        "forks_count": "30",
-        "stargazers_count": "1608",
-        "language": "JavaScript",
-        "repositoryDescription": "Node.js Compiler Collection"
-    },
-    {
-        "name": "css-animation-101",
-        "owner": {
-            "login": "cssanimation"
-        },
-        "full_name": "cssanimation/css-animation-101",
-        "forks_count": "116",
-        "stargazers_count": "2734",
-        "language": "CSS",
-        "repositoryDescription": "Learn how to bring animation to your web projects"
-    },
-    {
-        "name": "dive",
-        "owner": {
-            "login": "wagoodman"
-        },
-        "full_name": "wagoodman/dive",
-        "forks_count": "310",
-        "stargazers_count": "11490",
-        "language": "Go",
-        "repositoryDescription": "A tool for exploring each layer in a docker image"
-    },
-    {
-        "name": "flutter-desktop-embedding",
-        "owner": {
-            "login": "google"
-        },
-        "full_name": "google/flutter-desktop-embedding",
-        "forks_count": "115",
-        "stargazers_count": "2105",
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "13",
+        "stargazers_count": "267",
         "language": "C++",
-        "repositoryDescription": "Desktop implementations of the Flutter embedding API"
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "compose-on-kubernetes",
+        "name": "material-angular-dashboard",
         "owner": {
-            "login": "docker"
+            "login": "CreativeIT"
         },
-        "full_name": "docker/compose-on-kubernetes",
-        "forks_count": "13",
-        "stargazers_count": "277",
-        "language": "Go",
-        "repositoryDescription": "Deploy applications described in Compose onto Kubernetes clusters"
-    },
-    {
-        "name": "awesome-styleguides",
-        "owner": {
-            "login": "streamich"
-        },
-        "full_name": "streamich/awesome-styleguides",
-        "forks_count": "13",
-        "stargazers_count": "373",
-        "repositoryDescription": "A curated list of UI styleguides —\n😎\n💄"
-    },
-    {
-        "name": "sourcegraph",
-        "owner": {
-            "login": "sourcegraph"
-        },
-        "full_name": "sourcegraph/sourcegraph",
-        "forks_count": "39",
-        "stargazers_count": "734",
-        "language": "Go",
-        "repositoryDescription": "Code search and intelligence, self-hosted and scalable"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "17351",
-        "stargazers_count": "121323",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "full_name": "CreativeIT/material-angular-dashboard",
+        "forks_count": "12",
+        "stargazers_count": "299",
+        "language": "TypeScript",
+        "repositoryDescription": "Material Angular Admin Template"
     },
     {
         "name": "JavaGuide",
@@ -223,32 +124,75 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "4174",
-        "stargazers_count": "15007",
+        "forks_count": "4244",
+        "stargazers_count": "15173",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "mcfly",
+        "name": "ncc",
         "owner": {
-            "login": "cantino"
+            "login": "zeit"
         },
-        "full_name": "cantino/mcfly",
-        "forks_count": "13",
-        "stargazers_count": "869",
-        "language": "Rust",
-        "repositoryDescription": "Fly through your shell history. Great Scott!"
+        "full_name": "zeit/ncc",
+        "forks_count": "31",
+        "stargazers_count": "1793",
+        "language": "JavaScript",
+        "repositoryDescription": "Node.js Compiler Collection"
     },
     {
-        "name": "crossplane",
+        "name": "awesome-styleguides",
         "owner": {
-            "login": "crossplaneio"
+            "login": "streamich"
         },
-        "full_name": "crossplaneio/crossplane",
-        "forks_count": "24",
-        "stargazers_count": "565",
-        "language": "Go",
-        "repositoryDescription": "An Open Source Multicloud Control Plane"
+        "full_name": "streamich/awesome-styleguides",
+        "forks_count": "21",
+        "stargazers_count": "555",
+        "repositoryDescription": "A curated list of UI styleguides —\n😎\n💄"
+    },
+    {
+        "name": "laravel-websockets",
+        "owner": {
+            "login": "beyondcode"
+        },
+        "full_name": "beyondcode/laravel-websockets",
+        "forks_count": "45",
+        "stargazers_count": "1134",
+        "language": "PHP",
+        "repositoryDescription": "Websockets for Laravel. Done right."
+    },
+    {
+        "name": "screenshoteer",
+        "owner": {
+            "login": "vladocar"
+        },
+        "full_name": "vladocar/screenshoteer",
+        "forks_count": "34",
+        "stargazers_count": "971",
+        "language": "JavaScript",
+        "repositoryDescription": "Make website screenshots and mobile emulations from the command line."
+    },
+    {
+        "name": "wpf",
+        "owner": {
+            "login": "dotnet"
+        },
+        "full_name": "dotnet/wpf",
+        "forks_count": "112",
+        "stargazers_count": "1919",
+        "language": "C#",
+        "repositoryDescription": "WPF is a .NET Core UI framework for building Windows desktop applications."
+    },
+    {
+        "name": "ranking",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/ranking",
+        "forks_count": "30",
+        "stargazers_count": "306",
+        "language": "Python",
+        "repositoryDescription": "Learning to Rank in TensorFlow"
     },
     {
         "name": "gt",
@@ -256,20 +200,75 @@
             "login": "rstudio"
         },
         "full_name": "rstudio/gt",
-        "forks_count": "4",
-        "stargazers_count": "177",
+        "forks_count": "11",
+        "stargazers_count": "323",
         "language": "R",
         "repositoryDescription": "Easily generate information-rich, publication-quality tables from R"
     },
     {
-        "name": "onnxruntime",
+        "name": "awesome-flutter",
         "owner": {
-            "login": "Microsoft"
+            "login": "Solido"
         },
-        "full_name": "Microsoft/onnxruntime",
-        "forks_count": "33",
-        "stargazers_count": "254",
-        "language": "C++",
-        "repositoryDescription": "ONNX Runtime"
+        "full_name": "Solido/awesome-flutter",
+        "forks_count": "1011",
+        "stargazers_count": "9267",
+        "language": "Dart",
+        "repositoryDescription": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "3726",
+        "stargazers_count": "14382",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "17357",
+        "stargazers_count": "121441",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "dive",
+        "owner": {
+            "login": "wagoodman"
+        },
+        "full_name": "wagoodman/dive",
+        "forks_count": "316",
+        "stargazers_count": "11628",
+        "language": "Go",
+        "repositoryDescription": "A tool for exploring each layer in a docker image"
+    },
+    {
+        "name": "compose-on-kubernetes",
+        "owner": {
+            "login": "docker"
+        },
+        "full_name": "docker/compose-on-kubernetes",
+        "forks_count": "15",
+        "stargazers_count": "410",
+        "language": "Go",
+        "repositoryDescription": "Deploy applications described in Compose onto Kubernetes clusters"
+    },
+    {
+        "name": "ArgusAPM",
+        "owner": {
+            "login": "Qihoo360"
+        },
+        "full_name": "Qihoo360/ArgusAPM",
+        "forks_count": "53",
+        "stargazers_count": "556",
+        "language": "Java",
+        "repositoryDescription": "Powerful, comprehensive (Android) application performance management platform. 360移动性能监控平台"
     }
 ]

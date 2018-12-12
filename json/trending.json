@@ -5,76 +5,10 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "97",
-        "stargazers_count": "1724",
+        "forks_count": "429",
+        "stargazers_count": "4278",
         "language": "Jupyter Notebook",
         "repositoryDescription": "A practical approach to learning machine learning."
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "199",
-        "stargazers_count": "2413",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "certmagic",
-        "owner": {
-            "login": "mholt"
-        },
-        "full_name": "mholt/certmagic",
-        "forks_count": "11",
-        "stargazers_count": "668",
-        "language": "Go",
-        "repositoryDescription": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal"
-    },
-    {
-        "name": "jsPDF",
-        "owner": {
-            "login": "MrRio"
-        },
-        "full_name": "MrRio/jsPDF",
-        "forks_count": "2834",
-        "stargazers_count": "14200",
-        "language": "JavaScript",
-        "repositoryDescription": "Client-side JavaScript PDF generation for everyone."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "4465",
-        "stargazers_count": "15891",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "loguru",
-        "owner": {
-            "login": "Delgan"
-        },
-        "full_name": "Delgan/loguru",
-        "forks_count": "28",
-        "stargazers_count": "1226",
-        "language": "Python",
-        "repositoryDescription": "Python logging made (stupidly) simple"
-    },
-    {
-        "name": "jax",
-        "owner": {
-            "login": "google"
-        },
-        "full_name": "google/jax",
-        "forks_count": "51",
-        "stargazers_count": "1715",
-        "language": "Python",
-        "repositoryDescription": "GPU- and TPU-backed NumPy with differentiation and JIT compilation."
     },
     {
         "name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
@@ -82,32 +16,32 @@
             "login": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         },
         "full_name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-        "forks_count": "399",
-        "stargazers_count": "2697",
-        "language": "Assembly",
+        "forks_count": "495",
+        "stargazers_count": "3687",
+        "language": "Python",
         "repositoryDescription": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     },
     {
-        "name": "open-location-code",
+        "name": "loki",
         "owner": {
-            "login": "google"
+            "login": "grafana"
         },
-        "full_name": "google/open-location-code",
-        "forks_count": "240",
-        "stargazers_count": "2049",
-        "language": "JavaScript",
-        "repositoryDescription": "Open Location Code is a library to generate short codes that can be used like street addresses, for places where street addresses don't exist."
+        "full_name": "grafana/loki",
+        "forks_count": "17",
+        "stargazers_count": "810",
+        "language": "Go",
+        "repositoryDescription": "Like Prometheus, but for logs."
     },
     {
-        "name": "flutter",
+        "name": "LeetCodeAnimation",
         "owner": {
-            "login": "flutter"
+            "login": "MisterBooo"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "4622",
-        "stargazers_count": "45570",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "234",
+        "stargazers_count": "2986",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
         "name": "quicklink",
@@ -115,87 +49,21 @@
             "login": "GoogleChromeLabs"
         },
         "full_name": "GoogleChromeLabs/quicklink",
-        "forks_count": "6",
-        "stargazers_count": "307",
+        "forks_count": "19",
+        "stargazers_count": "771",
         "language": "JavaScript",
         "repositoryDescription": "⚡️\nFaster subsequent page-loads by prefetching in-viewport links during idle time"
     },
     {
-        "name": "weixin_crawler",
+        "name": "jsPDF",
         "owner": {
-            "login": "wonderfulsuccess"
+            "login": "MrRio"
         },
-        "full_name": "wonderfulsuccess/weixin_crawler",
-        "forks_count": "106",
-        "stargazers_count": "524",
-        "language": "Python",
-        "repositoryDescription": "高效微信公众号历史文章和阅读数据爬虫powered by scrapy"
-    },
-    {
-        "name": "Ethr",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/Ethr",
-        "forks_count": "114",
-        "stargazers_count": "2415",
-        "language": "Go",
-        "repositoryDescription": "Ethr is a Network Performance Measurement Tool for TCP, UDP & HTTP."
-    },
-    {
-        "name": "wtfpython",
-        "owner": {
-            "login": "satwikkansal"
-        },
-        "full_name": "satwikkansal/wtfpython",
-        "forks_count": "994",
-        "stargazers_count": "11436",
-        "language": "Python",
-        "repositoryDescription": "A collection of surprising Python snippets and lesser-known features."
-    },
-    {
-        "name": "terminus",
-        "owner": {
-            "login": "Eugeny"
-        },
-        "full_name": "Eugeny/terminus",
-        "forks_count": "145",
-        "stargazers_count": "4204",
-        "language": "TypeScript",
-        "repositoryDescription": "A terminal for a more modern age"
-    },
-    {
-        "name": "docker_practice",
-        "owner": {
-            "login": "yeasy"
-        },
-        "full_name": "yeasy/docker_practice",
-        "forks_count": "3382",
-        "stargazers_count": "10627",
-        "language": "Go",
-        "repositoryDescription": "Learn and understand Docker technologies, with real DevOps practice!"
-    },
-    {
-        "name": "rendora",
-        "owner": {
-            "login": "rendora"
-        },
-        "full_name": "rendora/rendora",
-        "forks_count": "3",
-        "stargazers_count": "228",
-        "language": "Go",
-        "repositoryDescription": "A dynamic renderer to provide zero-conf server-side rendering to web crawlers in order to effortlessly improve SEO for modern javascript websites"
-    },
-    {
-        "name": "AirConnect",
-        "owner": {
-            "login": "philippe44"
-        },
-        "full_name": "philippe44/AirConnect",
-        "forks_count": "41",
-        "stargazers_count": "732",
-        "language": "C",
-        "repositoryDescription": "Use AirPlay to stream to UPnP/Sonos & Chromecast devices"
+        "full_name": "MrRio/jsPDF",
+        "forks_count": "2854",
+        "stargazers_count": "14530",
+        "language": "JavaScript",
+        "repositoryDescription": "Client-side JavaScript PDF generation for everyone."
     },
     {
         "name": "jellyfin",
@@ -203,10 +71,174 @@
             "login": "jellyfin"
         },
         "full_name": "jellyfin/jellyfin",
-        "forks_count": "7",
-        "stargazers_count": "237",
+        "forks_count": "19",
+        "stargazers_count": "550",
         "language": "C#",
         "repositoryDescription": "The Free Software Media Browser"
+    },
+    {
+        "name": "certmagic",
+        "owner": {
+            "login": "mholt"
+        },
+        "full_name": "mholt/certmagic",
+        "forks_count": "19",
+        "stargazers_count": "986",
+        "language": "Go",
+        "repositoryDescription": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal"
+    },
+    {
+        "name": "docker_practice",
+        "owner": {
+            "login": "yeasy"
+        },
+        "full_name": "yeasy/docker_practice",
+        "forks_count": "3406",
+        "stargazers_count": "10921",
+        "language": "Go",
+        "repositoryDescription": "Learn and understand Docker technologies, with real DevOps practice!"
+    },
+    {
+        "name": "ikos",
+        "owner": {
+            "login": "NASA-SW-VnV"
+        },
+        "full_name": "NASA-SW-VnV/ikos",
+        "forks_count": "25",
+        "stargazers_count": "402",
+        "language": "C++",
+        "repositoryDescription": "Static analyzer for C/C++ based on the theory of Abstract Interpretation."
+    },
+    {
+        "name": "loguru",
+        "owner": {
+            "login": "Delgan"
+        },
+        "full_name": "Delgan/loguru",
+        "forks_count": "34",
+        "stargazers_count": "1499",
+        "language": "Python",
+        "repositoryDescription": "Python logging made (stupidly) simple"
+    },
+    {
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "4644",
+        "stargazers_count": "45811",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "containers-roadmap",
+        "owner": {
+            "login": "aws"
+        },
+        "full_name": "aws/containers-roadmap",
+        "forks_count": "6",
+        "stargazers_count": "292",
+        "repositoryDescription": "This is the public roadmap for AWS container services (ECS, ECR, Fargate, and EKS)."
+    },
+    {
+        "name": "mpx",
+        "owner": {
+            "login": "didi"
+        },
+        "full_name": "didi/mpx",
+        "forks_count": "32",
+        "stargazers_count": "436",
+        "language": "JavaScript",
+        "repositoryDescription": "An enhanced miniprogram framework with data reactivity and deep optimizition."
+    },
+    {
+        "name": "ethr",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/ethr",
+        "forks_count": "120",
+        "stargazers_count": "2657",
+        "language": "Go",
+        "repositoryDescription": "Ethr is a Network Performance Measurement Tool for TCP, UDP & HTTP."
+    },
+    {
+        "name": "incubator-dubbo",
+        "owner": {
+            "login": "apache"
+        },
+        "full_name": "apache/incubator-dubbo",
+        "forks_count": "15800",
+        "stargazers_count": "23268",
+        "language": "Java",
+        "repositoryDescription": "Apache Dubbo (incubating) is a high-performance, java based, open source RPC framework."
+    },
+    {
+        "name": "google-research",
+        "owner": {
+            "login": "google-research"
+        },
+        "full_name": "google-research/google-research",
+        "forks_count": "85",
+        "stargazers_count": "844",
+        "language": "Python",
+        "repositoryDescription": "Google AI Research"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "4519",
+        "stargazers_count": "16070",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "jax",
+        "owner": {
+            "login": "google"
+        },
+        "full_name": "google/jax",
+        "forks_count": "58",
+        "stargazers_count": "1909",
+        "language": "Python",
+        "repositoryDescription": "GPU- and TPU-backed NumPy with differentiation and JIT compilation."
+    },
+    {
+        "name": "forgJs",
+        "owner": {
+            "login": "oussamahamdaoui"
+        },
+        "full_name": "oussamahamdaoui/forgJs",
+        "forks_count": "37",
+        "stargazers_count": "1014",
+        "language": "JavaScript",
+        "repositoryDescription": "ForgJs is a javascript lightweight object validator. Go check the Quick start section and start coding with love"
+    },
+    {
+        "name": "wtfpython",
+        "owner": {
+            "login": "satwikkansal"
+        },
+        "full_name": "satwikkansal/wtfpython",
+        "forks_count": "1004",
+        "stargazers_count": "11614",
+        "language": "Python",
+        "repositoryDescription": "A collection of surprising Python snippets and lesser-known features."
+    },
+    {
+        "name": "Debucsser",
+        "owner": {
+            "login": "lucagez"
+        },
+        "full_name": "lucagez/Debucsser",
+        "forks_count": "5",
+        "stargazers_count": "191",
+        "language": "JavaScript",
+        "repositoryDescription": "CSS debugging tool with an unpronounceable name"
     },
     {
         "name": "DeepLearning-500-questions",
@@ -214,63 +246,30 @@
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "3847",
-        "stargazers_count": "14812",
+        "forks_count": "3898",
+        "stargazers_count": "14953",
         "language": "TeX",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
-        "name": "sharp",
+        "name": "QMUI_Android",
         "owner": {
-            "login": "lovell"
+            "login": "Tencent"
         },
-        "full_name": "lovell/sharp",
-        "forks_count": "616",
-        "stargazers_count": "10658",
-        "language": "JavaScript",
-        "repositoryDescription": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images. Uses the libvips library."
+        "full_name": "Tencent/QMUI_Android",
+        "forks_count": "1136",
+        "stargazers_count": "6095",
+        "language": "Java",
+        "repositoryDescription": "提高 Android UI 开发效率的 UI 库"
     },
     {
-        "name": "dive",
+        "name": "How-to-Grow-Neat-Software-Architecture-out-of-Jupyter-Notebooks",
         "owner": {
-            "login": "wagoodman"
+            "login": "guillaume-chevalier"
         },
-        "full_name": "wagoodman/dive",
-        "forks_count": "340",
-        "stargazers_count": "12066",
-        "language": "Go",
-        "repositoryDescription": "A tool for exploring each layer in a docker image"
-    },
-    {
-        "name": "awesome-flutter",
-        "owner": {
-            "login": "Solido"
-        },
-        "full_name": "Solido/awesome-flutter",
-        "forks_count": "1054",
-        "stargazers_count": "9819",
-        "language": "Dart",
-        "repositoryDescription": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "13485",
-        "stargazers_count": "44064",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "17411",
-        "stargazers_count": "121786",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "full_name": "guillaume-chevalier/How-to-Grow-Neat-Software-Architecture-out-of-Jupyter-Notebooks",
+        "forks_count": "5",
+        "stargazers_count": "183",
+        "repositoryDescription": "Growing the code out of your notebooks - the right way."
     }
 ]

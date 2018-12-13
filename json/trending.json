@@ -1,47 +1,36 @@
 [
     {
-        "name": "practicalAI",
-        "owner": {
-            "login": "GokuMohandas"
-        },
-        "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "429",
-        "stargazers_count": "4278",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "A practical approach to learning machine learning."
-    },
-    {
-        "name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-        "owner": {
-            "login": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-        },
-        "full_name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-        "forks_count": "495",
-        "stargazers_count": "3687",
-        "language": "Python",
-        "repositoryDescription": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-    },
-    {
         "name": "loki",
         "owner": {
             "login": "grafana"
         },
         "full_name": "grafana/loki",
-        "forks_count": "17",
-        "stargazers_count": "810",
+        "forks_count": "39",
+        "stargazers_count": "2117",
         "language": "Go",
         "repositoryDescription": "Like Prometheus, but for logs."
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "practicalAI",
         "owner": {
-            "login": "MisterBooo"
+            "login": "GokuMohandas"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "234",
-        "stargazers_count": "2986",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "606",
+        "stargazers_count": "5489",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "A practical approach to learning machine learning."
+    },
+    {
+        "name": "devhub",
+        "owner": {
+            "login": "devhubapp"
+        },
+        "full_name": "devhubapp/devhub",
+        "forks_count": "45",
+        "stargazers_count": "1017",
+        "language": "TypeScript",
+        "repositoryDescription": "DevHub: TweetDeck for GitHub - Android, iOS and Web\n👉"
     },
     {
         "name": "quicklink",
@@ -49,54 +38,43 @@
             "login": "GoogleChromeLabs"
         },
         "full_name": "GoogleChromeLabs/quicklink",
-        "forks_count": "19",
-        "stargazers_count": "771",
+        "forks_count": "41",
+        "stargazers_count": "1605",
         "language": "JavaScript",
         "repositoryDescription": "⚡️\nFaster subsequent page-loads by prefetching in-viewport links during idle time"
     },
     {
-        "name": "jsPDF",
+        "name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
         "owner": {
-            "login": "MrRio"
+            "login": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
         },
-        "full_name": "MrRio/jsPDF",
-        "forks_count": "2854",
-        "stargazers_count": "14530",
-        "language": "JavaScript",
-        "repositoryDescription": "Client-side JavaScript PDF generation for everyone."
+        "full_name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "forks_count": "549",
+        "stargazers_count": "4359",
+        "language": "Python",
+        "repositoryDescription": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     },
     {
-        "name": "jellyfin",
+        "name": "LeetCodeAnimation",
         "owner": {
-            "login": "jellyfin"
+            "login": "MisterBooo"
         },
-        "full_name": "jellyfin/jellyfin",
-        "forks_count": "19",
-        "stargazers_count": "550",
-        "language": "C#",
-        "repositoryDescription": "The Free Software Media Browser"
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "287",
+        "stargazers_count": "3526",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "certmagic",
+        "name": "dgl",
         "owner": {
-            "login": "mholt"
+            "login": "dmlc"
         },
-        "full_name": "mholt/certmagic",
-        "forks_count": "19",
-        "stargazers_count": "986",
-        "language": "Go",
-        "repositoryDescription": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal"
-    },
-    {
-        "name": "docker_practice",
-        "owner": {
-            "login": "yeasy"
-        },
-        "full_name": "yeasy/docker_practice",
-        "forks_count": "3406",
-        "stargazers_count": "10921",
-        "language": "Go",
-        "repositoryDescription": "Learn and understand Docker technologies, with real DevOps practice!"
+        "full_name": "dmlc/dgl",
+        "forks_count": "69",
+        "stargazers_count": "764",
+        "language": "Python",
+        "repositoryDescription": "Python package built to ease deep learning on graph, on top of existing DL frameworks."
     },
     {
         "name": "ikos",
@@ -104,21 +82,10 @@
             "login": "NASA-SW-VnV"
         },
         "full_name": "NASA-SW-VnV/ikos",
-        "forks_count": "25",
-        "stargazers_count": "402",
+        "forks_count": "38",
+        "stargazers_count": "687",
         "language": "C++",
         "repositoryDescription": "Static analyzer for C/C++ based on the theory of Abstract Interpretation."
-    },
-    {
-        "name": "loguru",
-        "owner": {
-            "login": "Delgan"
-        },
-        "full_name": "Delgan/loguru",
-        "forks_count": "34",
-        "stargazers_count": "1499",
-        "language": "Python",
-        "repositoryDescription": "Python logging made (stupidly) simple"
     },
     {
         "name": "flutter",
@@ -126,64 +93,42 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "4644",
-        "stargazers_count": "45811",
+        "forks_count": "4676",
+        "stargazers_count": "46074",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "containers-roadmap",
+        "name": "pwc",
         "owner": {
-            "login": "aws"
+            "login": "zziz"
         },
-        "full_name": "aws/containers-roadmap",
-        "forks_count": "6",
-        "stargazers_count": "292",
-        "repositoryDescription": "This is the public roadmap for AWS container services (ECS, ECR, Fargate, and EKS)."
+        "full_name": "zziz/pwc",
+        "forks_count": "646",
+        "stargazers_count": "6475",
+        "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     },
     {
-        "name": "mpx",
+        "name": "jsPDF",
         "owner": {
-            "login": "didi"
+            "login": "MrRio"
         },
-        "full_name": "didi/mpx",
-        "forks_count": "32",
-        "stargazers_count": "436",
+        "full_name": "MrRio/jsPDF",
+        "forks_count": "2860",
+        "stargazers_count": "14719",
         "language": "JavaScript",
-        "repositoryDescription": "An enhanced miniprogram framework with data reactivity and deep optimizition."
+        "repositoryDescription": "Client-side JavaScript PDF generation for everyone."
     },
     {
-        "name": "ethr",
+        "name": "certmagic",
         "owner": {
-            "login": "Microsoft"
+            "login": "mholt"
         },
-        "full_name": "Microsoft/ethr",
-        "forks_count": "120",
-        "stargazers_count": "2657",
+        "full_name": "mholt/certmagic",
+        "forks_count": "25",
+        "stargazers_count": "1190",
         "language": "Go",
-        "repositoryDescription": "Ethr is a Network Performance Measurement Tool for TCP, UDP & HTTP."
-    },
-    {
-        "name": "incubator-dubbo",
-        "owner": {
-            "login": "apache"
-        },
-        "full_name": "apache/incubator-dubbo",
-        "forks_count": "15800",
-        "stargazers_count": "23268",
-        "language": "Java",
-        "repositoryDescription": "Apache Dubbo (incubating) is a high-performance, java based, open source RPC framework."
-    },
-    {
-        "name": "google-research",
-        "owner": {
-            "login": "google-research"
-        },
-        "full_name": "google-research/google-research",
-        "forks_count": "85",
-        "stargazers_count": "844",
-        "language": "Python",
-        "repositoryDescription": "Google AI Research"
+        "repositoryDescription": "Automatic HTTPS for any Go program: fully-managed TLS certificate issuance and renewal"
     },
     {
         "name": "JavaGuide",
@@ -191,76 +136,31 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "4519",
-        "stargazers_count": "16070",
+        "forks_count": "4569",
+        "stargazers_count": "16208",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "jax",
+        "name": "docker_practice",
         "owner": {
-            "login": "google"
+            "login": "yeasy"
         },
-        "full_name": "google/jax",
-        "forks_count": "58",
-        "stargazers_count": "1909",
-        "language": "Python",
-        "repositoryDescription": "GPU- and TPU-backed NumPy with differentiation and JIT compilation."
+        "full_name": "yeasy/docker_practice",
+        "forks_count": "3424",
+        "stargazers_count": "11083",
+        "language": "Go",
+        "repositoryDescription": "Learn and understand Docker technologies, with real DevOps practice!"
     },
     {
-        "name": "forgJs",
+        "name": "containers-roadmap",
         "owner": {
-            "login": "oussamahamdaoui"
+            "login": "aws"
         },
-        "full_name": "oussamahamdaoui/forgJs",
-        "forks_count": "37",
-        "stargazers_count": "1014",
-        "language": "JavaScript",
-        "repositoryDescription": "ForgJs is a javascript lightweight object validator. Go check the Quick start section and start coding with love"
-    },
-    {
-        "name": "wtfpython",
-        "owner": {
-            "login": "satwikkansal"
-        },
-        "full_name": "satwikkansal/wtfpython",
-        "forks_count": "1004",
-        "stargazers_count": "11614",
-        "language": "Python",
-        "repositoryDescription": "A collection of surprising Python snippets and lesser-known features."
-    },
-    {
-        "name": "Debucsser",
-        "owner": {
-            "login": "lucagez"
-        },
-        "full_name": "lucagez/Debucsser",
-        "forks_count": "5",
-        "stargazers_count": "191",
-        "language": "JavaScript",
-        "repositoryDescription": "CSS debugging tool with an unpronounceable name"
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "3898",
-        "stargazers_count": "14953",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "QMUI_Android",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/QMUI_Android",
-        "forks_count": "1136",
-        "stargazers_count": "6095",
-        "language": "Java",
-        "repositoryDescription": "提高 Android UI 开发效率的 UI 库"
+        "full_name": "aws/containers-roadmap",
+        "forks_count": "10",
+        "stargazers_count": "440",
+        "repositoryDescription": "This is the public roadmap for AWS container services (ECS, ECR, Fargate, and EKS)."
     },
     {
         "name": "How-to-Grow-Neat-Software-Architecture-out-of-Jupyter-Notebooks",
@@ -268,8 +168,107 @@
             "login": "guillaume-chevalier"
         },
         "full_name": "guillaume-chevalier/How-to-Grow-Neat-Software-Architecture-out-of-Jupyter-Notebooks",
-        "forks_count": "5",
-        "stargazers_count": "183",
+        "forks_count": "16",
+        "stargazers_count": "335",
         "repositoryDescription": "Growing the code out of your notebooks - the right way."
+    },
+    {
+        "name": "miaosha",
+        "owner": {
+            "login": "qiurunze123"
+        },
+        "full_name": "qiurunze123/miaosha",
+        "forks_count": "26",
+        "stargazers_count": "312",
+        "language": "Java",
+        "repositoryDescription": "😮\n😮\n秒杀系统设计与实现.互联网工程师进阶与分析\n🙋\n🐓"
+    },
+    {
+        "name": "Debucsser",
+        "owner": {
+            "login": "lucagez"
+        },
+        "full_name": "lucagez/Debucsser",
+        "forks_count": "14",
+        "stargazers_count": "339",
+        "language": "JavaScript",
+        "repositoryDescription": "CSS debugging tool with an unpronounceable name"
+    },
+    {
+        "name": "google-research",
+        "owner": {
+            "login": "google-research"
+        },
+        "full_name": "google-research/google-research",
+        "forks_count": "92",
+        "stargazers_count": "995",
+        "language": "Python",
+        "repositoryDescription": "Google AI Research"
+    },
+    {
+        "name": "FFPopup",
+        "owner": {
+            "login": "JonyFang"
+        },
+        "full_name": "JonyFang/FFPopup",
+        "forks_count": "7",
+        "stargazers_count": "155",
+        "language": "Objective-C",
+        "repositoryDescription": "🎉\nPresenting custom views as a popup in iOS."
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "3927",
+        "stargazers_count": "15084",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "loguru",
+        "owner": {
+            "login": "Delgan"
+        },
+        "full_name": "Delgan/loguru",
+        "forks_count": "39",
+        "stargazers_count": "1645",
+        "language": "Python",
+        "repositoryDescription": "Python logging made (stupidly) simple"
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "17444",
+        "stargazers_count": "122031",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "30-seconds-of-code",
+        "owner": {
+            "login": "30-seconds"
+        },
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "3559",
+        "stargazers_count": "34137",
+        "language": "JavaScript",
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+    },
+    {
+        "name": "gotenberg",
+        "owner": {
+            "login": "thecodingmachine"
+        },
+        "full_name": "thecodingmachine/gotenberg",
+        "forks_count": "19",
+        "stargazers_count": "519",
+        "language": "Go",
+        "repositoryDescription": "A Docker-powered stateless API for converting HTML, Markdown and Office documents to PDF"
     }
 ]

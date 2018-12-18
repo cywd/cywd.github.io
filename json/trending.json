@@ -5,9 +5,42 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "280",
-        "stargazers_count": "2769",
+        "forks_count": "368",
+        "stargazers_count": "4201",
         "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
+    },
+    {
+        "name": "practicalAI",
+        "owner": {
+            "login": "GokuMohandas"
+        },
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "1006",
+        "stargazers_count": "8206",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "A practical approach to learning machine learning."
+    },
+    {
+        "name": "bloomrpc",
+        "owner": {
+            "login": "uw-labs"
+        },
+        "full_name": "uw-labs/bloomrpc",
+        "forks_count": "10",
+        "stargazers_count": "694",
+        "language": "TypeScript",
+        "repositoryDescription": "GUI Client for GRPC Services"
+    },
+    {
+        "name": "sandspiel",
+        "owner": {
+            "login": "MaxBittker"
+        },
+        "full_name": "MaxBittker/sandspiel",
+        "forks_count": "39",
+        "stargazers_count": "939",
+        "language": "Rust",
+        "repositoryDescription": "Creative cellular automata browser game"
     },
     {
         "name": "lihang-code",
@@ -15,8 +48,8 @@
             "login": "fengdu78"
         },
         "full_name": "fengdu78/lihang-code",
-        "forks_count": "491",
-        "stargazers_count": "1522",
+        "forks_count": "605",
+        "stargazers_count": "1946",
         "language": "Jupyter Notebook",
         "repositoryDescription": "《统计学习方法》的代码实现"
     },
@@ -26,8 +59,8 @@
             "login": "macrozheng"
         },
         "full_name": "macrozheng/mall",
-        "forks_count": "410",
-        "stargazers_count": "1134",
+        "forks_count": "519",
+        "stargazers_count": "1511",
         "language": "Java",
         "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
     },
@@ -37,65 +70,10 @@
             "login": "facebookresearch"
         },
         "full_name": "facebookresearch/pytext",
-        "forks_count": "144",
-        "stargazers_count": "2431",
+        "forks_count": "169",
+        "stargazers_count": "2797",
         "language": "Python",
         "repositoryDescription": "A natural language modeling framework based on PyTorch"
-    },
-    {
-        "name": "practicalAI",
-        "owner": {
-            "login": "GokuMohandas"
-        },
-        "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "936",
-        "stargazers_count": "7661",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "A practical approach to learning machine learning."
-    },
-    {
-        "name": "sandspiel",
-        "owner": {
-            "login": "MaxBittker"
-        },
-        "full_name": "MaxBittker/sandspiel",
-        "forks_count": "16",
-        "stargazers_count": "515",
-        "language": "Rust",
-        "repositoryDescription": "Creative cellular automata browser game"
-    },
-    {
-        "name": "miaosha",
-        "owner": {
-            "login": "qiurunze123"
-        },
-        "full_name": "qiurunze123/miaosha",
-        "forks_count": "191",
-        "stargazers_count": "1471",
-        "language": "Java",
-        "repositoryDescription": "😮\n😮\n秒杀系统设计与实现.互联网工程师进阶与分析\n🙋\n🐓"
-    },
-    {
-        "name": "react-jsonschema-form",
-        "owner": {
-            "login": "mozilla-services"
-        },
-        "full_name": "mozilla-services/react-jsonschema-form",
-        "forks_count": "856",
-        "stargazers_count": "5131",
-        "language": "JavaScript",
-        "repositoryDescription": "A React component for building Web forms from JSON Schema."
-    },
-    {
-        "name": "pampy",
-        "owner": {
-            "login": "santinic"
-        },
-        "full_name": "santinic/pampy",
-        "forks_count": "44",
-        "stargazers_count": "1907",
-        "language": "Python",
-        "repositoryDescription": "Pampy: The Pattern Matching for Python you always dreamed of."
     },
     {
         "name": "LeetCodeAnimation",
@@ -103,21 +81,10 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "440",
-        "stargazers_count": "4790",
+        "forks_count": "481",
+        "stargazers_count": "5093",
         "language": "C++",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-        "owner": {
-            "login": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-        },
-        "full_name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-        "forks_count": "645",
-        "stargazers_count": "5799",
-        "language": "Python",
-        "repositoryDescription": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     },
     {
         "name": "quicklink",
@@ -125,21 +92,120 @@
             "login": "GoogleChromeLabs"
         },
         "full_name": "GoogleChromeLabs/quicklink",
-        "forks_count": "85",
-        "stargazers_count": "3157",
+        "forks_count": "97",
+        "stargazers_count": "3483",
         "language": "JavaScript",
         "repositoryDescription": "⚡️\nFaster subsequent page-loads by prefetching in-viewport links during idle time"
     },
     {
-        "name": "devhub",
+        "name": "vpn-at-home",
         "owner": {
-            "login": "devhubapp"
+            "login": "ezaquarii"
         },
-        "full_name": "devhubapp/devhub",
-        "forks_count": "97",
-        "stargazers_count": "2692",
-        "language": "TypeScript",
-        "repositoryDescription": "DevHub: TweetDeck for GitHub - Android, iOS and Web\n👉"
+        "full_name": "ezaquarii/vpn-at-home",
+        "forks_count": "25",
+        "stargazers_count": "473",
+        "language": "Python",
+        "repositoryDescription": "1-click, self-hosted OpenVPN deployment and management app."
+    },
+    {
+        "name": "carbon",
+        "owner": {
+            "login": "dawnlabs"
+        },
+        "full_name": "dawnlabs/carbon",
+        "forks_count": "796",
+        "stargazers_count": "16904",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nCreate and share beautiful images of your source code"
+    },
+    {
+        "name": "confluo",
+        "owner": {
+            "login": "ucbrise"
+        },
+        "full_name": "ucbrise/confluo",
+        "forks_count": "86",
+        "stargazers_count": "597",
+        "language": "C++",
+        "repositoryDescription": "Real-time Monitoring and Analysis of Data Streams"
+    },
+    {
+        "name": "goldpinger",
+        "owner": {
+            "login": "bloomberg"
+        },
+        "full_name": "bloomberg/goldpinger",
+        "forks_count": "12",
+        "stargazers_count": "368",
+        "language": "Go",
+        "repositoryDescription": "Debugging tool for Kubernetes which tests and displays connectivity between nodes in the cluster."
+    },
+    {
+        "name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "owner": {
+            "login": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        },
+        "full_name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "forks_count": "661",
+        "stargazers_count": "6035",
+        "language": "Python",
+        "repositoryDescription": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+        "name": "Trill",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/Trill",
+        "forks_count": "21",
+        "stargazers_count": "267",
+        "language": "C#",
+        "repositoryDescription": "Trill is a single-node query processor for temporal or streaming data."
+    },
+    {
+        "name": "rallax.js",
+        "owner": {
+            "login": "ChrisCavs"
+        },
+        "full_name": "ChrisCavs/rallax.js",
+        "forks_count": "15",
+        "stargazers_count": "291",
+        "language": "JavaScript",
+        "repositoryDescription": "Dead simple parallax scrolling."
+    },
+    {
+        "name": "cs229t",
+        "owner": {
+            "login": "percyliang"
+        },
+        "full_name": "percyliang/cs229t",
+        "forks_count": "46",
+        "stargazers_count": "244",
+        "language": "TeX",
+        "repositoryDescription": "Statistical Learning Theory (CS229T) Lecture Notes"
+    },
+    {
+        "name": "miaosha",
+        "owner": {
+            "login": "qiurunze123"
+        },
+        "full_name": "qiurunze123/miaosha",
+        "forks_count": "214",
+        "stargazers_count": "1677",
+        "language": "Java",
+        "repositoryDescription": "😮\n😮\n秒杀系统设计与实现.互联网工程师进阶与分析\n🙋\n🐓"
+    },
+    {
+        "name": "pampy",
+        "owner": {
+            "login": "santinic"
+        },
+        "full_name": "santinic/pampy",
+        "forks_count": "52",
+        "stargazers_count": "2114",
+        "language": "Python",
+        "repositoryDescription": "Pampy: The Pattern Matching for Python you always dreamed of."
     },
     {
         "name": "loki",
@@ -147,42 +213,21 @@
             "login": "grafana"
         },
         "full_name": "grafana/loki",
-        "forks_count": "87",
-        "stargazers_count": "3203",
+        "forks_count": "94",
+        "stargazers_count": "3408",
         "language": "Go",
         "repositoryDescription": "Like Prometheus, but for logs."
     },
     {
-        "name": "vue-go-example",
+        "name": "react-jsonschema-form",
         "owner": {
-            "login": "ndabAP"
+            "login": "mozilla-services"
         },
-        "full_name": "ndabAP/vue-go-example",
-        "forks_count": "11",
-        "stargazers_count": "268",
+        "full_name": "mozilla-services/react-jsonschema-form",
+        "forks_count": "861",
+        "stargazers_count": "5314",
         "language": "JavaScript",
-        "repositoryDescription": "Vue.js and Go example project"
-    },
-    {
-        "name": "FAQGURU",
-        "owner": {
-            "login": "FAQGURU"
-        },
-        "full_name": "FAQGURU/FAQGURU",
-        "forks_count": "88",
-        "stargazers_count": "1041",
-        "repositoryDescription": "A list of interview questions. This repository is everything you need to prepare for your technical interview.\n🎒\n🚀\n🎉"
-    },
-    {
-        "name": "33-js-concepts",
-        "owner": {
-            "login": "leonardomso"
-        },
-        "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1880",
-        "stargazers_count": "22171",
-        "language": "JavaScript",
-        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
+        "repositoryDescription": "A React component for building Web forms from JSON Schema."
     },
     {
         "name": "JavaGuide",
@@ -190,85 +235,42 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "4710",
-        "stargazers_count": "16692",
+        "forks_count": "4764",
+        "stargazers_count": "16835",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "Learning-from-data",
+        "name": "vue-go-example",
         "owner": {
-            "login": "Doraemonzzz"
+            "login": "ndabAP"
         },
-        "full_name": "Doraemonzzz/Learning-from-data",
-        "forks_count": "47",
-        "stargazers_count": "196",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "记录Learning from data一书中的习题解答"
-    },
-    {
-        "name": "javascript-algorithms",
-        "owner": {
-            "login": "trekhleb"
-        },
-        "full_name": "trekhleb/javascript-algorithms",
-        "forks_count": "5315",
-        "stargazers_count": "40517",
+        "full_name": "ndabAP/vue-go-example",
+        "forks_count": "21",
+        "stargazers_count": "424",
         "language": "JavaScript",
-        "repositoryDescription": "📝\nAlgorithms and data structures implemented in JavaScript with explanations and links to further readings"
+        "repositoryDescription": "Vue.js and Go example project"
     },
     {
-        "name": "flutter",
+        "name": "33-js-concepts",
         "owner": {
-            "login": "flutter"
+            "login": "leonardomso"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "4755",
-        "stargazers_count": "46589",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "leonardomso/33-js-concepts",
+        "forks_count": "1899",
+        "stargazers_count": "22323",
+        "language": "JavaScript",
+        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
-        "name": "Dank",
+        "name": "freeCodeCamp",
         "owner": {
-            "login": "saket"
+            "login": "freeCodeCamp"
         },
-        "full_name": "saket/Dank",
-        "forks_count": "39",
-        "stargazers_count": "299",
-        "language": "Java",
-        "repositoryDescription": "Here lies the greatest Reddit app that was never released"
-    },
-    {
-        "name": "coding-interview-university",
-        "owner": {
-            "login": "jwasham"
-        },
-        "full_name": "jwasham/coding-interview-university",
-        "forks_count": "21023",
-        "stargazers_count": "72219",
-        "repositoryDescription": "A complete computer science study plan to become a software engineer."
-    },
-    {
-        "name": "jax",
-        "owner": {
-            "login": "google"
-        },
-        "full_name": "google/jax",
-        "forks_count": "88",
-        "stargazers_count": "2365",
-        "language": "Python",
-        "repositoryDescription": "GPU- and TPU-backed NumPy with differentiation and JIT compilation."
-    },
-    {
-        "name": "awesome-flutter",
-        "owner": {
-            "login": "Solido"
-        },
-        "full_name": "Solido/awesome-flutter",
-        "forks_count": "1110",
-        "stargazers_count": "10397",
-        "language": "Dart",
-        "repositoryDescription": "An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more."
+        "full_name": "freeCodeCamp/freeCodeCamp",
+        "forks_count": "20629",
+        "stargazers_count": "296563",
+        "language": "JavaScript",
+        "repositoryDescription": "The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
     }
 ]

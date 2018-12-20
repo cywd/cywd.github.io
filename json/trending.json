@@ -5,42 +5,9 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "432",
-        "stargazers_count": "5254",
+        "forks_count": "493",
+        "stargazers_count": "6036",
         "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
-    },
-    {
-        "name": "practicalAI",
-        "owner": {
-            "login": "GokuMohandas"
-        },
-        "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1071",
-        "stargazers_count": "8737",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "A practical approach to learning machine learning."
-    },
-    {
-        "name": "goldpinger",
-        "owner": {
-            "login": "bloomberg"
-        },
-        "full_name": "bloomberg/goldpinger",
-        "forks_count": "26",
-        "stargazers_count": "769",
-        "language": "Go",
-        "repositoryDescription": "Debugging tool for Kubernetes which tests and displays connectivity between nodes in the cluster."
-    },
-    {
-        "name": "lihang-code",
-        "owner": {
-            "login": "fengdu78"
-        },
-        "full_name": "fengdu78/lihang-code",
-        "forks_count": "691",
-        "stargazers_count": "2242",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "《统计学习方法》的代码实现"
     },
     {
         "name": "FAQGURU",
@@ -48,174 +15,20 @@
             "login": "FAQGURU"
         },
         "full_name": "FAQGURU/FAQGURU",
-        "forks_count": "126",
-        "stargazers_count": "1513",
+        "forks_count": "167",
+        "stargazers_count": "2004",
         "repositoryDescription": "🎒\n🚀\n🎉\nA list of interview questions. This repository is everything you need to prepare for your technical interview."
     },
     {
-        "name": "mall",
+        "name": "practicalAI",
         "owner": {
-            "login": "macrozheng"
+            "login": "GokuMohandas"
         },
-        "full_name": "macrozheng/mall",
-        "forks_count": "582",
-        "stargazers_count": "1763",
-        "language": "Java",
-        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
-    },
-    {
-        "name": "pytext",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/pytext",
-        "forks_count": "190",
-        "stargazers_count": "3027",
-        "language": "Python",
-        "repositoryDescription": "A natural language modeling framework based on PyTorch"
-    },
-    {
-        "name": "quicklink",
-        "owner": {
-            "login": "GoogleChromeLabs"
-        },
-        "full_name": "GoogleChromeLabs/quicklink",
-        "forks_count": "103",
-        "stargazers_count": "3717",
-        "language": "JavaScript",
-        "repositoryDescription": "⚡️\nFaster subsequent page-loads by prefetching in-viewport links during idle time"
-    },
-    {
-        "name": "exp-httpclient",
-        "owner": {
-            "login": "bradfitz"
-        },
-        "full_name": "bradfitz/exp-httpclient",
-        "forks_count": "6",
-        "stargazers_count": "256",
-        "language": "Go",
-        "repositoryDescription": "experimental new HTTP client API for #golang (WIP)"
-    },
-    {
-        "name": "rallax.js",
-        "owner": {
-            "login": "ChrisCavs"
-        },
-        "full_name": "ChrisCavs/rallax.js",
-        "forks_count": "18",
-        "stargazers_count": "526",
-        "language": "JavaScript",
-        "repositoryDescription": "Dead simple parallax scrolling."
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "510",
-        "stargazers_count": "5285",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "bloomrpc",
-        "owner": {
-            "login": "uw-labs"
-        },
-        "full_name": "uw-labs/bloomrpc",
-        "forks_count": "15",
-        "stargazers_count": "889",
-        "language": "TypeScript",
-        "repositoryDescription": "GUI Client for GRPC Services"
-    },
-    {
-        "name": "confluo",
-        "owner": {
-            "login": "ucbrise"
-        },
-        "full_name": "ucbrise/confluo",
-        "forks_count": "106",
-        "stargazers_count": "775",
-        "language": "C++",
-        "repositoryDescription": "Real-time Monitoring and Analysis of Data Streams"
-    },
-    {
-        "name": "carbon",
-        "owner": {
-            "login": "dawnlabs"
-        },
-        "full_name": "dawnlabs/carbon",
-        "forks_count": "805",
-        "stargazers_count": "17085",
-        "language": "JavaScript",
-        "repositoryDescription": "🎨\nCreate and share beautiful images of your source code"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "4812",
-        "stargazers_count": "16992",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "Trill",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/Trill",
-        "forks_count": "27",
-        "stargazers_count": "439",
-        "language": "C#",
-        "repositoryDescription": "Trill is a single-node query processor for temporal or streaming data."
-    },
-    {
-        "name": "flutter",
-        "owner": {
-            "login": "flutter"
-        },
-        "full_name": "flutter/flutter",
-        "forks_count": "4791",
-        "stargazers_count": "46890",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
-    },
-    {
-        "name": "sandspiel",
-        "owner": {
-            "login": "MaxBittker"
-        },
-        "full_name": "MaxBittker/sandspiel",
-        "forks_count": "50",
-        "stargazers_count": "1103",
-        "language": "Rust",
-        "repositoryDescription": "Creative cellular automata browser game"
-    },
-    {
-        "name": "miaosha",
-        "owner": {
-            "login": "qiurunze123"
-        },
-        "full_name": "qiurunze123/miaosha",
-        "forks_count": "239",
-        "stargazers_count": "1836",
-        "language": "Java",
-        "repositoryDescription": "😮\n😮\n秒杀系统设计与实现.互联网工程师进阶与分析\n🙋\n🐓"
-    },
-    {
-        "name": "MagazineLayout",
-        "owner": {
-            "login": "airbnb"
-        },
-        "full_name": "airbnb/MagazineLayout",
-        "forks_count": "5",
-        "stargazers_count": "176",
-        "language": "Swift",
-        "repositoryDescription": "A collection view layout capable of laying out views in vertically scrolling grids and lists."
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "1132",
+        "stargazers_count": "9153",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "A practical approach to learning machine learning."
     },
     {
         "name": "nodebestpractices",
@@ -223,32 +36,196 @@
             "login": "i0natan"
         },
         "full_name": "i0natan/nodebestpractices",
-        "forks_count": "1356",
-        "stargazers_count": "19411",
+        "forks_count": "1383",
+        "stargazers_count": "19791",
         "language": "JavaScript",
         "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
     },
     {
-        "name": "vpn-at-home",
+        "name": "PyTorch_Tutorial",
         "owner": {
-            "login": "ezaquarii"
+            "login": "tensor-yu"
         },
-        "full_name": "ezaquarii/vpn-at-home",
-        "forks_count": "33",
-        "stargazers_count": "610",
+        "full_name": "tensor-yu/PyTorch_Tutorial",
+        "forks_count": "86",
+        "stargazers_count": "318",
         "language": "Python",
-        "repositoryDescription": "1-click, self-hosted OpenVPN deployment and management app."
+        "repositoryDescription": "《Pytorch模型训练实用教程》中配套代码"
     },
     {
-        "name": "SwiftHub",
+        "name": "opsmop",
         "owner": {
-            "login": "khoren93"
+            "login": "opsmop"
         },
-        "full_name": "khoren93/SwiftHub",
-        "forks_count": "33",
-        "stargazers_count": "405",
+        "full_name": "opsmop/opsmop",
+        "forks_count": "38",
+        "stargazers_count": "570",
+        "language": "Python",
+        "repositoryDescription": "Next generation config management and app deployment"
+    },
+    {
+        "name": "guide-to-kotlin",
+        "owner": {
+            "login": "Zhuinden"
+        },
+        "full_name": "Zhuinden/guide-to-kotlin",
+        "forks_count": "12",
+        "stargazers_count": "349",
+        "repositoryDescription": "This tutorial assumes all you know is Java, but you want to learn Kotlin."
+    },
+    {
+        "name": "MagazineLayout",
+        "owner": {
+            "login": "airbnb"
+        },
+        "full_name": "airbnb/MagazineLayout",
+        "forks_count": "13",
+        "stargazers_count": "426",
         "language": "Swift",
-        "repositoryDescription": "Github iOS client written in RxSwift and MVVM clean architecture"
+        "repositoryDescription": "A collection view layout capable of laying out views in vertically scrolling grids and lists."
+    },
+    {
+        "name": "awesome-python-applications",
+        "owner": {
+            "login": "mahmoud"
+        },
+        "full_name": "mahmoud/awesome-python-applications",
+        "forks_count": "83",
+        "stargazers_count": "405",
+        "language": "Python",
+        "repositoryDescription": "💿\nFree software that works great, which also happens to be open-source Python."
+    },
+    {
+        "name": "mall",
+        "owner": {
+            "login": "macrozheng"
+        },
+        "full_name": "macrozheng/mall",
+        "forks_count": "655",
+        "stargazers_count": "1969",
+        "language": "Java",
+        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
+    },
+    {
+        "name": "rallax.js",
+        "owner": {
+            "login": "ChrisCavs"
+        },
+        "full_name": "ChrisCavs/rallax.js",
+        "forks_count": "21",
+        "stargazers_count": "762",
+        "language": "JavaScript",
+        "repositoryDescription": "Dead simple parallax scrolling."
+    },
+    {
+        "name": "lihang-code",
+        "owner": {
+            "login": "fengdu78"
+        },
+        "full_name": "fengdu78/lihang-code",
+        "forks_count": "746",
+        "stargazers_count": "2437",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "《统计学习方法》的代码实现"
+    },
+    {
+        "name": "quicklink",
+        "owner": {
+            "login": "GoogleChromeLabs"
+        },
+        "full_name": "GoogleChromeLabs/quicklink",
+        "forks_count": "110",
+        "stargazers_count": "3920",
+        "language": "JavaScript",
+        "repositoryDescription": "⚡️\nFaster subsequent page-loads by prefetching in-viewport links during idle time"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "534",
+        "stargazers_count": "5475",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "coolqlcool",
+        "owner": {
+            "login": "dinubs"
+        },
+        "full_name": "dinubs/coolqlcool",
+        "forks_count": "15",
+        "stargazers_count": "278",
+        "language": "JavaScript",
+        "repositoryDescription": "Nextjs server to query websites with GraphQL"
+    },
+    {
+        "name": "react-developer-roadmap",
+        "owner": {
+            "login": "adam-golab"
+        },
+        "full_name": "adam-golab/react-developer-roadmap",
+        "forks_count": "883",
+        "stargazers_count": "10102",
+        "language": "JavaScript",
+        "repositoryDescription": "Roadmap to becoming a React developer in 2018"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "4867",
+        "stargazers_count": "17143",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "4807",
+        "stargazers_count": "47038",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "confluo",
+        "owner": {
+            "login": "ucbrise"
+        },
+        "full_name": "ucbrise/confluo",
+        "forks_count": "126",
+        "stargazers_count": "931",
+        "language": "C++",
+        "repositoryDescription": "Real-time Monitoring and Analysis of Data Streams"
+    },
+    {
+        "name": "miaosha",
+        "owner": {
+            "login": "qiurunze123"
+        },
+        "full_name": "qiurunze123/miaosha",
+        "forks_count": "260",
+        "stargazers_count": "1978",
+        "language": "Java",
+        "repositoryDescription": "😮\n😮\n秒杀系统设计与实现.互联网工程师进阶与分析\n🙋\n🐓"
+    },
+    {
+        "name": "pytext",
+        "owner": {
+            "login": "facebookresearch"
+        },
+        "full_name": "facebookresearch/pytext",
+        "forks_count": "207",
+        "stargazers_count": "3178",
+        "language": "Python",
+        "repositoryDescription": "A natural language modeling framework based on PyTorch"
     },
     {
         "name": "vue",
@@ -256,20 +233,42 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "17527",
-        "stargazers_count": "122589",
+        "forks_count": "17541",
+        "stargazers_count": "122712",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nA progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "loki",
+        "name": "goldpinger",
         "owner": {
-            "login": "grafana"
+            "login": "bloomberg"
         },
-        "full_name": "grafana/loki",
-        "forks_count": "101",
-        "stargazers_count": "3540",
+        "full_name": "bloomberg/goldpinger",
+        "forks_count": "31",
+        "stargazers_count": "917",
         "language": "Go",
-        "repositoryDescription": "Like Prometheus, but for logs."
+        "repositoryDescription": "Debugging tool for Kubernetes which tests and displays connectivity between nodes in the cluster."
+    },
+    {
+        "name": "mu",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/mu",
+        "forks_count": "25",
+        "stargazers_count": "191",
+        "language": "Python",
+        "repositoryDescription": "Project mu Documentation"
+    },
+    {
+        "name": "exp-httpclient",
+        "owner": {
+            "login": "bradfitz"
+        },
+        "full_name": "bradfitz/exp-httpclient",
+        "forks_count": "10",
+        "stargazers_count": "374",
+        "language": "Go",
+        "repositoryDescription": "experimental new HTTP client API for #golang (WIP)"
     }
 ]

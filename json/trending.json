@@ -1,36 +1,24 @@
 [
     {
+        "name": "ds-cheatsheets",
+        "owner": {
+            "login": "FavioVazquez"
+        },
+        "full_name": "FavioVazquez/ds-cheatsheets",
+        "forks_count": "83",
+        "stargazers_count": "691",
+        "repositoryDescription": "List of Data Science Cheatsheets to rule the world"
+    },
+    {
         "name": "awesome-python-applications",
         "owner": {
             "login": "mahmoud"
         },
         "full_name": "mahmoud/awesome-python-applications",
-        "forks_count": "300",
-        "stargazers_count": "2038",
+        "forks_count": "342",
+        "stargazers_count": "2362",
         "language": "Python",
         "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
-    },
-    {
-        "name": "nevergrad",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/nevergrad",
-        "forks_count": "64",
-        "stargazers_count": "993",
-        "language": "Python",
-        "repositoryDescription": "A Python toolbox for performing gradient-free optimization"
-    },
-    {
-        "name": "wav2letter",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/wav2letter",
-        "forks_count": "234",
-        "stargazers_count": "2114",
-        "language": "C++",
-        "repositoryDescription": "Facebook AI Research Automatic Speech Recognition Toolkit"
     },
     {
         "name": "the-book-of-secret-knowledge",
@@ -38,31 +26,20 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "559",
-        "stargazers_count": "6869",
+        "forks_count": "568",
+        "stargazers_count": "7164",
         "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
     },
     {
-        "name": "HelloGitHub",
+        "name": "wav2letter",
         "owner": {
-            "login": "521xueweihan"
+            "login": "facebookresearch"
         },
-        "full_name": "521xueweihan/HelloGitHub",
-        "forks_count": "803",
-        "stargazers_count": "7460",
-        "language": "Python",
-        "repositoryDescription": "GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目\n⭐️"
-    },
-    {
-        "name": "homemade-machine-learning",
-        "owner": {
-            "login": "trekhleb"
-        },
-        "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "25",
-        "stargazers_count": "318",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
+        "full_name": "facebookresearch/wav2letter",
+        "forks_count": "268",
+        "stargazers_count": "2333",
+        "language": "C++",
+        "repositoryDescription": "Facebook AI Research Automatic Speech Recognition Toolkit"
     },
     {
         "name": "practicalAI",
@@ -70,97 +47,10 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1256",
-        "stargazers_count": "9756",
+        "forks_count": "1292",
+        "stargazers_count": "9967",
         "language": "Jupyter Notebook",
         "repositoryDescription": "A practical approach to learning machine learning."
-    },
-    {
-        "name": "MagazineLayout",
-        "owner": {
-            "login": "airbnb"
-        },
-        "full_name": "airbnb/MagazineLayout",
-        "forks_count": "24",
-        "stargazers_count": "805",
-        "language": "Swift",
-        "repositoryDescription": "A collection view layout capable of laying out views in vertically scrolling grids and lists."
-    },
-    {
-        "name": "flashlight",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/flashlight",
-        "forks_count": "11",
-        "stargazers_count": "220",
-        "language": "C++",
-        "repositoryDescription": "A C++ standalone library for training neural networks"
-    },
-    {
-        "name": "nodebestpractices",
-        "owner": {
-            "login": "i0natan"
-        },
-        "full_name": "i0natan/nodebestpractices",
-        "forks_count": "1434",
-        "stargazers_count": "20487",
-        "language": "JavaScript",
-        "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
-    },
-    {
-        "name": "htm",
-        "owner": {
-            "login": "developit"
-        },
-        "full_name": "developit/htm",
-        "forks_count": "60",
-        "stargazers_count": "3853",
-        "language": "JavaScript",
-        "repositoryDescription": "Hyperscript Tagged Markup: JSX alternative using standard tagged templates, with compiler support."
-    },
-    {
-        "name": "x-deeplearning",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/x-deeplearning",
-        "forks_count": "280",
-        "stargazers_count": "1319",
-        "language": "C++",
-        "repositoryDescription": "An industrial deep learning framework for high-dimension sparse data"
-    },
-    {
-        "name": "33-js-concepts",
-        "owner": {
-            "login": "leonardomso"
-        },
-        "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "1957",
-        "stargazers_count": "22740",
-        "language": "JavaScript",
-        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
-    },
-    {
-        "name": "FAQGURU",
-        "owner": {
-            "login": "FAQGURU"
-        },
-        "full_name": "FAQGURU/FAQGURU",
-        "forks_count": "233",
-        "stargazers_count": "2711",
-        "repositoryDescription": "🎒\n🚀\n🎉\nA list of interview questions. This repository is everything you need to prepare for your technical interview."
-    },
-    {
-        "name": "tools",
-        "owner": {
-            "login": "ghost123gg"
-        },
-        "full_name": "ghost123gg/tools",
-        "forks_count": "",
-        "stargazers_count": "341",
-        "language": "Python",
-        "repositoryDescription": "A Python Crawler Framework"
     },
     {
         "name": "advanced-java",
@@ -168,8 +58,8 @@
             "login": "doocs"
         },
         "full_name": "doocs/advanced-java",
-        "forks_count": "141",
-        "stargazers_count": "619",
+        "forks_count": "171",
+        "stargazers_count": "803",
         "language": "Java",
         "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
@@ -179,21 +69,120 @@
             "login": "BoostIO"
         },
         "full_name": "BoostIO/Boostnote",
-        "forks_count": "992",
-        "stargazers_count": "10866",
+        "forks_count": "998",
+        "stargazers_count": "11052",
         "language": "JavaScript",
         "repositoryDescription": "A markdown editor for developers on Mac, Windows and Linux."
     },
     {
-        "name": "javascript-algorithms",
+        "name": "netcap",
+        "owner": {
+            "login": "dreadl0ck"
+        },
+        "full_name": "dreadl0ck/netcap",
+        "forks_count": "13",
+        "stargazers_count": "259",
+        "language": "Go",
+        "repositoryDescription": "A framework for secure and scalable network traffic analysis"
+    },
+    {
+        "name": "tools",
+        "owner": {
+            "login": "ghost123gg"
+        },
+        "full_name": "ghost123gg/tools",
+        "forks_count": "3",
+        "stargazers_count": "513",
+        "language": "Python",
+        "repositoryDescription": "A Python Crawler Framework"
+    },
+    {
+        "name": "swc",
+        "owner": {
+            "login": "swc-project"
+        },
+        "full_name": "swc-project/swc",
+        "forks_count": "8",
+        "stargazers_count": "558",
+        "language": "JavaScript",
+        "repositoryDescription": "Super-fast alternative for babel"
+    },
+    {
+        "name": "nodebestpractices",
+        "owner": {
+            "login": "i0natan"
+        },
+        "full_name": "i0natan/nodebestpractices",
+        "forks_count": "1440",
+        "stargazers_count": "20634",
+        "language": "JavaScript",
+        "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
+    },
+    {
+        "name": "HelloGitHub",
+        "owner": {
+            "login": "521xueweihan"
+        },
+        "full_name": "521xueweihan/HelloGitHub",
+        "forks_count": "812",
+        "stargazers_count": "7598",
+        "language": "Python",
+        "repositoryDescription": "GitHub 上好玩、容易上手的项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目\n⭐️"
+    },
+    {
+        "name": "redix",
+        "owner": {
+            "login": "alash3al"
+        },
+        "full_name": "alash3al/redix",
+        "forks_count": "7",
+        "stargazers_count": "325",
+        "language": "Go",
+        "repositoryDescription": "a persistent real-time key-value store, with the same redis protocol with powerful features"
+    },
+    {
+        "name": "nevergrad",
+        "owner": {
+            "login": "facebookresearch"
+        },
+        "full_name": "facebookresearch/nevergrad",
+        "forks_count": "73",
+        "stargazers_count": "1131",
+        "language": "Python",
+        "repositoryDescription": "A Python toolbox for performing gradient-free optimization"
+    },
+    {
+        "name": "flashlight",
+        "owner": {
+            "login": "facebookresearch"
+        },
+        "full_name": "facebookresearch/flashlight",
+        "forks_count": "21",
+        "stargazers_count": "355",
+        "language": "C++",
+        "repositoryDescription": "A C++ standalone library for machine learning"
+    },
+    {
+        "name": "homemade-machine-learning",
         "owner": {
             "login": "trekhleb"
         },
-        "full_name": "trekhleb/javascript-algorithms",
-        "forks_count": "5390",
-        "stargazers_count": "40962",
+        "full_name": "trekhleb/homemade-machine-learning",
+        "forks_count": "36",
+        "stargazers_count": "443",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
+    },
+    {
+        "name": "33-js-concepts",
+        "owner": {
+            "login": "leonardomso"
+        },
+        "full_name": "leonardomso/33-js-concepts",
+        "forks_count": "1968",
+        "stargazers_count": "22829",
         "language": "JavaScript",
-        "repositoryDescription": "📝\nAlgorithms and data structures implemented in JavaScript with explanations and links to further readings"
+        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
     },
     {
         "name": "mall",
@@ -201,10 +190,20 @@
             "login": "macrozheng"
         },
         "full_name": "macrozheng/mall",
-        "forks_count": "763",
-        "stargazers_count": "2378",
+        "forks_count": "783",
+        "stargazers_count": "2477",
         "language": "Java",
         "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
+    },
+    {
+        "name": "FAQGURU",
+        "owner": {
+            "login": "FAQGURU"
+        },
+        "full_name": "FAQGURU/FAQGURU",
+        "forks_count": "239",
+        "stargazers_count": "2816",
+        "repositoryDescription": "🎒\n🚀\n🎉\nA list of interview questions. This repository is everything you need to prepare for your technical interview."
     },
     {
         "name": "codelf",
@@ -212,32 +211,21 @@
             "login": "unbug"
         },
         "full_name": "unbug/codelf",
-        "forks_count": "328",
-        "stargazers_count": "4274",
+        "forks_count": "337",
+        "stargazers_count": "4372",
         "language": "HTML",
         "repositoryDescription": "Best GitHub stars, repositories tagger and organizer. Search over projects from Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project, GitLab to find real-world usage variable names"
     },
     {
-        "name": "PhysX",
+        "name": "react-developer-roadmap",
         "owner": {
-            "login": "NVIDIAGameWorks"
+            "login": "adam-golab"
         },
-        "full_name": "NVIDIAGameWorks/PhysX",
-        "forks_count": "39",
-        "stargazers_count": "293",
-        "language": "C++",
-        "repositoryDescription": "NVIDIA PhysX SDK"
-    },
-    {
-        "name": "pytext",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/pytext",
-        "forks_count": "235",
-        "stargazers_count": "3433",
-        "language": "Python",
-        "repositoryDescription": "A natural language modeling framework based on PyTorch"
+        "full_name": "adam-golab/react-developer-roadmap",
+        "forks_count": "897",
+        "stargazers_count": "10360",
+        "language": "JavaScript",
+        "repositoryDescription": "Roadmap to becoming a React developer in 2018"
     },
     {
         "name": "flutter",
@@ -245,30 +233,42 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "4842",
-        "stargazers_count": "47288",
+        "forks_count": "4856",
+        "stargazers_count": "47362",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "Chinese-Podcasts",
+        "name": "LeetCodeAnimation",
         "owner": {
-            "login": "alaskasquirrel"
+            "login": "MisterBooo"
         },
-        "full_name": "alaskasquirrel/Chinese-Podcasts",
-        "forks_count": "11",
-        "stargazers_count": "313",
-        "repositoryDescription": "中文播客：Tech, VC, Life, Movie, Design..."
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "563",
+        "stargazers_count": "5808",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "vue",
+        "name": "lihang-code",
         "owner": {
-            "login": "vuejs"
+            "login": "fengdu78"
         },
-        "full_name": "vuejs/vue",
-        "forks_count": "17564",
-        "stargazers_count": "122889",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "full_name": "fengdu78/lihang-code",
+        "forks_count": "837",
+        "stargazers_count": "2734",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "《统计学习方法》的代码实现"
+    },
+    {
+        "name": "Connectivity",
+        "owner": {
+            "login": "rwbutler"
+        },
+        "full_name": "rwbutler/Connectivity",
+        "forks_count": "5",
+        "stargazers_count": "104",
+        "language": "Swift",
+        "repositoryDescription": "Makes Internet connectivity detection more robust by detecting Wi-Fi networks without Internet access."
     }
 ]

@@ -5,8 +5,8 @@
             "login": "ant-design"
         },
         "full_name": "ant-design/ant-design",
-        "forks_count": "13068",
-        "stargazers_count": "38833",
+        "forks_count": "13164",
+        "stargazers_count": "39593",
         "language": "TypeScript",
         "repositoryDescription": "🐜\nA UI Design Language"
     },
@@ -16,10 +16,10 @@
             "login": "Tencent"
         },
         "full_name": "Tencent/matrix",
-        "forks_count": "100",
-        "stargazers_count": "1051",
+        "forks_count": "158",
+        "stargazers_count": "1776",
         "language": "Java",
-        "repositoryDescription": "Matrix is a plugin style, no-intrusion APM system developed by WeChat."
+        "repositoryDescription": "Matrix is a plugin style, non-invasive APM system developed by WeChat."
     },
     {
         "name": "advanced-java",
@@ -27,21 +27,31 @@
             "login": "doocs"
         },
         "full_name": "doocs/advanced-java",
-        "forks_count": "303",
-        "stargazers_count": "1765",
+        "forks_count": "360",
+        "stargazers_count": "2165",
         "language": "Java",
         "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
-        "name": "swc",
+        "name": "the-book-of-secret-knowledge",
         "owner": {
-            "login": "swc-project"
+            "login": "trimstray"
         },
-        "full_name": "swc-project/swc",
-        "forks_count": "29",
-        "stargazers_count": "1924",
-        "language": "JavaScript",
-        "repositoryDescription": "Super-fast alternative for babel written in rust"
+        "full_name": "trimstray/the-book-of-secret-knowledge",
+        "forks_count": "647",
+        "stargazers_count": "8286",
+        "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
+    },
+    {
+        "name": "sherlock",
+        "owner": {
+            "login": "sdushantha"
+        },
+        "full_name": "sdushantha/sherlock",
+        "forks_count": "31",
+        "stargazers_count": "439",
+        "language": "Python",
+        "repositoryDescription": "🔎\nFind usernames across over 75 social networks"
     },
     {
         "name": "ds-cheatsheets",
@@ -49,8 +59,8 @@
             "login": "FavioVazquez"
         },
         "full_name": "FavioVazquez/ds-cheatsheets",
-        "forks_count": "232",
-        "stargazers_count": "1677",
+        "forks_count": "275",
+        "stargazers_count": "2022",
         "repositoryDescription": "List of Data Science Cheatsheets to rule the world"
     },
     {
@@ -59,20 +69,10 @@
             "login": "mahmoud"
         },
         "full_name": "mahmoud/awesome-python-applications",
-        "forks_count": "434",
-        "stargazers_count": "3087",
+        "forks_count": "469",
+        "stargazers_count": "3433",
         "language": "Python",
         "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
-    },
-    {
-        "name": "the-book-of-secret-knowledge",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "625",
-        "stargazers_count": "7876",
-        "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
     },
     {
         "name": "practicalAI",
@@ -80,153 +80,31 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1433",
-        "stargazers_count": "10565",
+        "forks_count": "1495",
+        "stargazers_count": "10870",
         "language": "Jupyter Notebook",
-        "repositoryDescription": "A practical approach to learning machine learning."
+        "repositoryDescription": "📚\nA practical approach to learning machine learning."
     },
     {
-        "name": "Magic-Grid",
+        "name": "GNNPapers",
         "owner": {
-            "login": "e-oj"
+            "login": "thunlp"
         },
-        "full_name": "e-oj/Magic-Grid",
-        "forks_count": "36",
-        "stargazers_count": "797",
-        "language": "JavaScript",
-        "repositoryDescription": "A simple, lightweight Javascript library for dynamic grid layouts."
+        "full_name": "thunlp/GNNPapers",
+        "forks_count": "53",
+        "stargazers_count": "324",
+        "repositoryDescription": "Must-read papers on graph neural network (GNN)"
     },
     {
-        "name": "next",
+        "name": "homemade-machine-learning",
         "owner": {
-            "login": "alibaba-fusion"
+            "login": "trekhleb"
         },
-        "full_name": "alibaba-fusion/next",
-        "forks_count": "27",
-        "stargazers_count": "385",
-        "language": "JavaScript",
-        "repositoryDescription": "A configurable component library for web built on React."
-    },
-    {
-        "name": "HelloGitHub",
-        "owner": {
-            "login": "521xueweihan"
-        },
-        "full_name": "521xueweihan/HelloGitHub",
-        "forks_count": "840",
-        "stargazers_count": "8038",
-        "language": "Python",
-        "repositoryDescription": "分享 GitHub 上有趣、入门级的开源项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目\n⭐️"
-    },
-    {
-        "name": "orbit-db",
-        "owner": {
-            "login": "orbitdb"
-        },
-        "full_name": "orbitdb/orbit-db",
-        "forks_count": "187",
-        "stargazers_count": "2246",
-        "language": "JavaScript",
-        "repositoryDescription": "Peer-to-Peer Databases for the Decentralized Web"
-    },
-    {
-        "name": "Librefox",
-        "owner": {
-            "login": "intika"
-        },
-        "full_name": "intika/Librefox",
-        "forks_count": "12",
-        "stargazers_count": "453",
-        "language": "JavaScript",
-        "repositoryDescription": "Librefox, patching Firefox for an enforced privacy and security"
-    },
-    {
-        "name": "nodebestpractices",
-        "owner": {
-            "login": "i0natan"
-        },
-        "full_name": "i0natan/nodebestpractices",
-        "forks_count": "1474",
-        "stargazers_count": "20977",
-        "language": "JavaScript",
-        "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
-    },
-    {
-        "name": "mall",
-        "owner": {
-            "login": "macrozheng"
-        },
-        "full_name": "macrozheng/mall",
-        "forks_count": "884",
-        "stargazers_count": "2833",
-        "language": "Java",
-        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5011",
-        "stargazers_count": "17584",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "autoComplete.js",
-        "owner": {
-            "login": "TarekRaafat"
-        },
-        "full_name": "TarekRaafat/autoComplete.js",
-        "forks_count": "36",
-        "stargazers_count": "818",
-        "language": "JavaScript",
-        "repositoryDescription": "Simple autocomplete pure vanilla Javascript library."
-    },
-    {
-        "name": "netcap",
-        "owner": {
-            "login": "dreadl0ck"
-        },
-        "full_name": "dreadl0ck/netcap",
-        "forks_count": "33",
-        "stargazers_count": "733",
-        "language": "Go",
-        "repositoryDescription": "A framework for secure and scalable network traffic analysis"
-    },
-    {
-        "name": "pytorch-handbook",
-        "owner": {
-            "login": "zergtant"
-        },
-        "full_name": "zergtant/pytorch-handbook",
-        "forks_count": "2",
-        "stargazers_count": "186",
+        "full_name": "trekhleb/homemade-machine-learning",
+        "forks_count": "83",
+        "stargazers_count": "960",
         "language": "Jupyter Notebook",
-        "repositoryDescription": "pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用PyTorch进行深度学习开发和研究的朋友快速入门，其中包含的Pytorch教程全部通过测试保证可以成功运行"
-    },
-    {
-        "name": "flutter",
-        "owner": {
-            "login": "flutter"
-        },
-        "full_name": "flutter/flutter",
-        "forks_count": "4880",
-        "stargazers_count": "47588",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
-    },
-    {
-        "name": "codelf",
-        "owner": {
-            "login": "unbug"
-        },
-        "full_name": "unbug/codelf",
-        "forks_count": "357",
-        "stargazers_count": "4716",
-        "language": "HTML",
-        "repositoryDescription": "Best GitHub stars, repositories tagger and organizer. Search over projects from Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project, GitLab to find real-world usage variable names"
+        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
     },
     {
         "name": "torchgan",
@@ -234,10 +112,119 @@
             "login": "torchgan"
         },
         "full_name": "torchgan/torchgan",
-        "forks_count": "21",
-        "stargazers_count": "208",
+        "forks_count": "39",
+        "stargazers_count": "426",
         "language": "Jupyter Notebook",
         "repositoryDescription": "Research Framework for easy and efficient training of GANs based on Pytorch"
+    },
+    {
+        "name": "swc",
+        "owner": {
+            "login": "swc-project"
+        },
+        "full_name": "swc-project/swc",
+        "forks_count": "33",
+        "stargazers_count": "2143",
+        "language": "JavaScript",
+        "repositoryDescription": "Super-fast alternative for babel written in rust"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "5065",
+        "stargazers_count": "17735",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "nodebestpractices",
+        "owner": {
+            "login": "i0natan"
+        },
+        "full_name": "i0natan/nodebestpractices",
+        "forks_count": "1482",
+        "stargazers_count": "21152",
+        "language": "JavaScript",
+        "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
+    },
+    {
+        "name": "HelloGitHub",
+        "owner": {
+            "login": "521xueweihan"
+        },
+        "full_name": "521xueweihan/HelloGitHub",
+        "forks_count": "853",
+        "stargazers_count": "8207",
+        "language": "Python",
+        "repositoryDescription": "分享 GitHub 上有趣、入门级的开源项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目\n⭐️"
+    },
+    {
+        "name": "mars",
+        "owner": {
+            "login": "mars-project"
+        },
+        "full_name": "mars-project/mars",
+        "forks_count": "31",
+        "stargazers_count": "307",
+        "language": "Python",
+        "repositoryDescription": "Mars is a tensor-based unified framework for large-scale data computation."
+    },
+    {
+        "name": "Magic-Grid",
+        "owner": {
+            "login": "e-oj"
+        },
+        "full_name": "e-oj/Magic-Grid",
+        "forks_count": "41",
+        "stargazers_count": "965",
+        "language": "JavaScript",
+        "repositoryDescription": "A simple, lightweight Javascript library for dynamic grid layouts."
+    },
+    {
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "4900",
+        "stargazers_count": "47730",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "next",
+        "owner": {
+            "login": "alibaba-fusion"
+        },
+        "full_name": "alibaba-fusion/next",
+        "forks_count": "40",
+        "stargazers_count": "543",
+        "language": "JavaScript",
+        "repositoryDescription": "A configurable component library for web built on React."
+    },
+    {
+        "name": "autoComplete.js",
+        "owner": {
+            "login": "TarekRaafat"
+        },
+        "full_name": "TarekRaafat/autoComplete.js",
+        "forks_count": "39",
+        "stargazers_count": "980",
+        "language": "JavaScript",
+        "repositoryDescription": "Simple autocomplete pure vanilla Javascript library."
+    },
+    {
+        "name": "awesome-golang-security",
+        "owner": {
+            "login": "guardrailsio"
+        },
+        "full_name": "guardrailsio/awesome-golang-security",
+        "forks_count": "2",
+        "stargazers_count": "199",
+        "repositoryDescription": "Awesome golang Security resources"
     },
     {
         "name": "LeetCodeAnimation",
@@ -245,31 +232,42 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "587",
-        "stargazers_count": "6061",
+        "forks_count": "603",
+        "stargazers_count": "6197",
         "language": "C++",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "wav2letter",
+        "name": "mall",
         "owner": {
-            "login": "facebookresearch"
+            "login": "macrozheng"
         },
-        "full_name": "facebookresearch/wav2letter",
-        "forks_count": "349",
-        "stargazers_count": "2680",
-        "language": "C++",
-        "repositoryDescription": "Facebook AI Research Automatic Speech Recognition Toolkit"
+        "full_name": "macrozheng/mall",
+        "forks_count": "916",
+        "stargazers_count": "2961",
+        "language": "Java",
+        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
     },
     {
-        "name": "Boostnote",
+        "name": "vue",
         "owner": {
-            "login": "BoostIO"
+            "login": "vuejs"
         },
-        "full_name": "BoostIO/Boostnote",
-        "forks_count": "1016",
-        "stargazers_count": "11385",
+        "full_name": "vuejs/vue",
+        "forks_count": "17613",
+        "stargazers_count": "123212",
         "language": "JavaScript",
-        "repositoryDescription": "A markdown editor for developers on Mac, Windows and Linux."
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "office-ui-fabric-react",
+        "owner": {
+            "login": "OfficeDev"
+        },
+        "full_name": "OfficeDev/office-ui-fabric-react",
+        "forks_count": "863",
+        "stargazers_count": "3872",
+        "language": "TypeScript",
+        "repositoryDescription": "React components for building experiences for Office and Office 365."
     }
 ]

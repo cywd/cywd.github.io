@@ -5,14 +5,7 @@
 			{
 				"appID": "JXJV99SFC3.developer.cy.superdemo",
 				"paths": [
-					"/fall??/*",
-					"/videos/*",
-					"/wwdc??/*",
-					"/wwdc/more",
-					"/wwdc/news",
-					"/wwdc/schedule",
-					"/wwdc/schedule*",
-					"/wwdc/videos"
+					"/team/more"
 				]
 			},
 			{

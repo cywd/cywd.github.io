@@ -46,5 +46,10 @@
 			"JXJV99SFC3.com.cy.SuperDemo",
 			"9JA89QQLNQ.developer.apple.wwdc-Release"
 		]
-	}
+	},
+        "webcredentials":{
+                "apps": [
+                        "JXJV99SFC3.developer.cy.superdemo"
+                ]
+        }
 }

@@ -1,5 +1,4 @@
-{
-	"applinks": {
+"applinks": {
 		"apps": [],
 		"details": [
 			{
@@ -7,42 +6,17 @@
 				"paths": [
 					"/team/more"
 				]
-			},
-			{
-				"appID": "9JA89QQLNQ.developer.apple.wwdc-Release",
-				"paths": [
-					"/fall??/*",
-					"/videos/play/app-store-connect*",
-					"/videos/play/developer-stories*",
-					"/videos/play/enterprise*",
-					"/videos/play/insights*",
-					"/videos/play/tech-talks*",
-					"/videos/play/wwdc*",
-					"/wwdc??/*",
-					"/wwdc/more",
-					"/wwdc/news",
-					"/wwdc/schedule",
-					"/wwdc/schedule*",
-					"/wwdc/videos"
-				]
-			},
-			{
-				"appID": "BVNY5T73P8.com.apple.Playgrounds",
-				"paths": [
-					"/ul/sp0/*"
-				]
 			}
 		]
 	},
 	"activitycontinuation": {
 		"apps": [
-			"JXJV99SFC3.developer.cy.superdemo",
-			"9JA89QQLNQ.developer.apple.wwdc-Release"
+			"JXJV99SFC3.developer.cy.superdemo"
 		]
 	},
 	"webcredentials":{
-		"apps": [ 
-			"JXJV99SFC3.developer.cy.superdemo" 
+		"apps": [
+			"JXJV99SFC3.developer.cy.superdemo"
 		]
-	}    
+	}
 }

@@ -5,10 +5,32 @@
             "login": "fabiospampinato"
         },
         "full_name": "fabiospampinato/notable",
-        "forks_count": "24",
-        "stargazers_count": "1102",
+        "forks_count": "61",
+        "stargazers_count": "2107",
         "language": "TypeScript",
         "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
+    },
+    {
+        "name": "HistoryOfEverything",
+        "owner": {
+            "login": "2d-inc"
+        },
+        "full_name": "2d-inc/HistoryOfEverything",
+        "forks_count": "59",
+        "stargazers_count": "710",
+        "language": "Dart",
+        "repositoryDescription": "Flutter Launch Timeline Demo"
+    },
+    {
+        "name": "Super-SloMo",
+        "owner": {
+            "login": "avinashpaliwal"
+        },
+        "full_name": "avinashpaliwal/Super-SloMo",
+        "forks_count": "72",
+        "stargazers_count": "596",
+        "language": "Python",
+        "repositoryDescription": "PyTorch implementation of Super SloMo by Jiang et al."
     },
     {
         "name": "lsix",
@@ -16,8 +38,8 @@
             "login": "hackerb9"
         },
         "full_name": "hackerb9/lsix",
-        "forks_count": "35",
-        "stargazers_count": "1110",
+        "forks_count": "45",
+        "stargazers_count": "1530",
         "language": "Shell",
         "repositoryDescription": "Like \"ls\", but for images. Shows thumbnails in terminal using sixel graphics."
     },
@@ -27,42 +49,10 @@
             "login": "trekhleb"
         },
         "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "162",
-        "stargazers_count": "1765",
+        "forks_count": "210",
+        "stargazers_count": "2146",
         "language": "Jupyter Notebook",
         "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
-    },
-    {
-        "name": "ant-design",
-        "owner": {
-            "login": "ant-design"
-        },
-        "full_name": "ant-design/ant-design",
-        "forks_count": "13240",
-        "stargazers_count": "39908",
-        "language": "TypeScript",
-        "repositoryDescription": "🐜\nA UI Design Language"
-    },
-    {
-        "name": "practicalAI",
-        "owner": {
-            "login": "GokuMohandas"
-        },
-        "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1561",
-        "stargazers_count": "11226",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "📚\nA practical approach to learning machine learning."
-    },
-    {
-        "name": "GNNPapers",
-        "owner": {
-            "login": "thunlp"
-        },
-        "full_name": "thunlp/GNNPapers",
-        "forks_count": "111",
-        "stargazers_count": "657",
-        "repositoryDescription": "Must-read papers on graph neural network (GNN)"
     },
     {
         "name": "the-book-of-secret-knowledge",
@@ -70,52 +60,19 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "670",
-        "stargazers_count": "8621",
+        "forks_count": "692",
+        "stargazers_count": "9010",
         "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
     },
     {
-        "name": "awesome-golang-security",
+        "name": "spec",
         "owner": {
-            "login": "guardrailsio"
+            "login": "ulid"
         },
-        "full_name": "guardrailsio/awesome-golang-security",
-        "forks_count": "13",
-        "stargazers_count": "533",
-        "repositoryDescription": "Awesome golang Security resources"
-    },
-    {
-        "name": "matrix",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/matrix",
-        "forks_count": "177",
-        "stargazers_count": "2077",
-        "language": "Java",
-        "repositoryDescription": "Matrix is a plugin style, non-invasive APM system developed by WeChat."
-    },
-    {
-        "name": "sherlock",
-        "owner": {
-            "login": "sdushantha"
-        },
-        "full_name": "sdushantha/sherlock",
-        "forks_count": "45",
-        "stargazers_count": "750",
-        "language": "Python",
-        "repositoryDescription": "🔎\nFind usernames across over 75 social networks"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "404",
-        "stargazers_count": "2447",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+        "full_name": "ulid/spec",
+        "forks_count": "15",
+        "stargazers_count": "521",
+        "repositoryDescription": "The canonical spec for ulid"
     },
     {
         "name": "ds-cheatsheets",
@@ -123,9 +80,20 @@
             "login": "FavioVazquez"
         },
         "full_name": "FavioVazquez/ds-cheatsheets",
-        "forks_count": "316",
-        "stargazers_count": "2306",
+        "forks_count": "376",
+        "stargazers_count": "2620",
         "repositoryDescription": "List of Data Science Cheatsheets to rule the world"
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "454",
+        "stargazers_count": "2756",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
         "name": "awesome-python-applications",
@@ -133,120 +101,96 @@
             "login": "mahmoud"
         },
         "full_name": "mahmoud/awesome-python-applications",
-        "forks_count": "508",
-        "stargazers_count": "3714",
+        "forks_count": "556",
+        "stargazers_count": "3984",
         "language": "Python",
         "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
     },
     {
-        "name": "JavaGuide",
+        "name": "practicalAI",
         "owner": {
-            "login": "Snailclimb"
+            "login": "GokuMohandas"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5129",
-        "stargazers_count": "17908",
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "1595",
+        "stargazers_count": "11465",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "📚\nA practical approach to learning machine learning."
+    },
+    {
+        "name": "matrix",
+        "owner": {
+            "login": "Tencent"
+        },
+        "full_name": "Tencent/matrix",
+        "forks_count": "203",
+        "stargazers_count": "2332",
         "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "repositoryDescription": "Matrix is a plugin style, non-invasive APM system developed by WeChat."
     },
     {
-        "name": "python-cheatsheet",
+        "name": "gitbatch",
         "owner": {
-            "login": "gto76"
+            "login": "isacikgoz"
         },
-        "full_name": "gto76/python-cheatsheet",
-        "forks_count": "49",
-        "stargazers_count": "224",
-        "language": "CSS",
-        "repositoryDescription": "Comprehensive Python Cheatsheet"
+        "full_name": "isacikgoz/gitbatch",
+        "forks_count": "10",
+        "stargazers_count": "297",
+        "language": "Go",
+        "repositoryDescription": "manage your git repositories in one place"
     },
     {
-        "name": "atree",
+        "name": "GNNPapers",
         "owner": {
-            "login": "anvaka"
+            "login": "thunlp"
         },
-        "full_name": "anvaka/atree",
-        "forks_count": "163",
-        "stargazers_count": "1383",
-        "language": "JavaScript",
-        "repositoryDescription": "Just a simple Christmas tree, based on reddit story"
+        "full_name": "thunlp/GNNPapers",
+        "forks_count": "132",
+        "stargazers_count": "899",
+        "repositoryDescription": "Must-read papers on graph neural network (GNN)"
     },
     {
-        "name": "home-assistant",
+        "name": "Best-websites-a-programmer-should-visit",
         "owner": {
-            "login": "home-assistant"
+            "login": "sdmg15"
         },
-        "full_name": "home-assistant/home-assistant",
-        "forks_count": "5768",
-        "stargazers_count": "19813",
+        "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
+        "forks_count": "2654",
+        "stargazers_count": "23923",
+        "repositoryDescription": "🔗\nSome useful websites for programmers."
+    },
+    {
+        "name": "sherlock",
+        "owner": {
+            "login": "sdushantha"
+        },
+        "full_name": "sdushantha/sherlock",
+        "forks_count": "65",
+        "stargazers_count": "964",
         "language": "Python",
-        "repositoryDescription": "🏡\nOpen source home automation that puts local control and privacy first"
+        "repositoryDescription": "🔎\nFind usernames across over 75 social networks"
     },
     {
-        "name": "nodebestpractices",
+        "name": "rrweb",
         "owner": {
-            "login": "i0natan"
+            "login": "rrweb-io"
         },
-        "full_name": "i0natan/nodebestpractices",
-        "forks_count": "1498",
-        "stargazers_count": "21324",
-        "language": "JavaScript",
-        "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
-    },
-    {
-        "name": "wav2letter",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/wav2letter",
-        "forks_count": "381",
-        "stargazers_count": "2908",
-        "language": "C++",
-        "repositoryDescription": "Facebook AI Research Automatic Speech Recognition Toolkit"
-    },
-    {
-        "name": "typed-graphqlify",
-        "owner": {
-            "login": "acro5piano"
-        },
-        "full_name": "acro5piano/typed-graphqlify",
-        "forks_count": "7",
-        "stargazers_count": "259",
+        "full_name": "rrweb-io/rrweb",
+        "forks_count": "19",
+        "stargazers_count": "323",
         "language": "TypeScript",
-        "repositoryDescription": "A TypeScript to GraphQL conversion tool without losing type information. Better TypeScript + GraphQL experience."
+        "repositoryDescription": "record and replay the web"
     },
     {
-        "name": "Magic-Grid",
+        "name": "ant-design",
         "owner": {
-            "login": "e-oj"
+            "login": "ant-design"
         },
-        "full_name": "e-oj/Magic-Grid",
-        "forks_count": "44",
-        "stargazers_count": "1129",
-        "language": "JavaScript",
-        "repositoryDescription": "A simple, lightweight Javascript library for dynamic grid layouts."
-    },
-    {
-        "name": "HelloGitHub",
-        "owner": {
-            "login": "521xueweihan"
-        },
-        "full_name": "521xueweihan/HelloGitHub",
-        "forks_count": "873",
-        "stargazers_count": "8359",
-        "language": "Python",
-        "repositoryDescription": "分享 GitHub 上有趣、入门级的开源项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目\n⭐️"
-    },
-    {
-        "name": "flutter",
-        "owner": {
-            "login": "flutter"
-        },
-        "full_name": "flutter/flutter",
-        "forks_count": "4916",
-        "stargazers_count": "47869",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "ant-design/ant-design",
+        "forks_count": "13279",
+        "stargazers_count": "40088",
+        "language": "TypeScript",
+        "repositoryDescription": "🐜\nA UI Design Language"
     },
     {
         "name": "fiddly",
@@ -254,20 +198,75 @@
             "login": "SaraVieira"
         },
         "full_name": "SaraVieira/fiddly",
-        "forks_count": "10",
-        "stargazers_count": "261",
-        "language": "CSS",
+        "forks_count": "13",
+        "stargazers_count": "470",
+        "language": "JavaScript",
         "repositoryDescription": "Create beautiful and simple HTML pages from your Readme.md files"
     },
     {
-        "name": "autoComplete.js",
+        "name": "swc",
         "owner": {
-            "login": "TarekRaafat"
+            "login": "swc-project"
         },
-        "full_name": "TarekRaafat/autoComplete.js",
-        "forks_count": "44",
-        "stargazers_count": "1127",
+        "full_name": "swc-project/swc",
+        "forks_count": "39",
+        "stargazers_count": "2459",
         "language": "JavaScript",
-        "repositoryDescription": "Simple autocomplete pure vanilla Javascript library."
+        "repositoryDescription": "Super-fast alternative for babel written in rust"
+    },
+    {
+        "name": "liquid",
+        "owner": {
+            "login": "mogenslund"
+        },
+        "full_name": "mogenslund/liquid",
+        "forks_count": "19",
+        "stargazers_count": "456",
+        "language": "Clojure",
+        "repositoryDescription": "Clojure Text Editor, for editing clojure code and markdown. Written entirely in Clojure with inspiration from Emacs and Vim."
+    },
+    {
+        "name": "noah",
+        "owner": {
+            "login": "linux-noah"
+        },
+        "full_name": "linux-noah/noah",
+        "forks_count": "35",
+        "stargazers_count": "1112",
+        "language": "C",
+        "repositoryDescription": "Bash on Ubuntu on macOS"
+    },
+    {
+        "name": "kubernetes",
+        "owner": {
+            "login": "kubernetes"
+        },
+        "full_name": "kubernetes/kubernetes",
+        "forks_count": "16040",
+        "stargazers_count": "46058",
+        "language": "Go",
+        "repositoryDescription": "Production-Grade Container Scheduling and Management"
+    },
+    {
+        "name": "brain.js",
+        "owner": {
+            "login": "BrainJS"
+        },
+        "full_name": "BrainJS/brain.js",
+        "forks_count": "552",
+        "stargazers_count": "7143",
+        "language": "JavaScript",
+        "repositoryDescription": "🤖\nNeural networks in JavaScript"
+    },
+    {
+        "name": "Magic-Grid",
+        "owner": {
+            "login": "e-oj"
+        },
+        "full_name": "e-oj/Magic-Grid",
+        "forks_count": "52",
+        "stargazers_count": "1290",
+        "language": "JavaScript",
+        "repositoryDescription": "A simple, lightweight Javascript library for dynamic grid layouts."
     }
 ]

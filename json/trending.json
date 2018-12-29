@@ -1,12 +1,45 @@
 [
     {
+        "name": "rrweb",
+        "owner": {
+            "login": "rrweb-io"
+        },
+        "full_name": "rrweb-io/rrweb",
+        "forks_count": "46",
+        "stargazers_count": "1043",
+        "language": "TypeScript",
+        "repositoryDescription": "record and replay the web"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "685",
+        "stargazers_count": "7142",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "brain.js",
+        "owner": {
+            "login": "BrainJS"
+        },
+        "full_name": "BrainJS/brain.js",
+        "forks_count": "570",
+        "stargazers_count": "7720",
+        "language": "JavaScript",
+        "repositoryDescription": "🤖\nNeural networks in JavaScript"
+    },
+    {
         "name": "notable",
         "owner": {
             "login": "fabiospampinato"
         },
         "full_name": "fabiospampinato/notable",
-        "forks_count": "61",
-        "stargazers_count": "2107",
+        "forks_count": "83",
+        "stargazers_count": "2603",
         "language": "TypeScript",
         "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
     },
@@ -16,32 +49,21 @@
             "login": "2d-inc"
         },
         "full_name": "2d-inc/HistoryOfEverything",
-        "forks_count": "59",
-        "stargazers_count": "710",
+        "forks_count": "92",
+        "stargazers_count": "1043",
         "language": "Dart",
         "repositoryDescription": "Flutter Launch Timeline Demo"
     },
     {
-        "name": "Super-SloMo",
+        "name": "advanced-java",
         "owner": {
-            "login": "avinashpaliwal"
+            "login": "doocs"
         },
-        "full_name": "avinashpaliwal/Super-SloMo",
-        "forks_count": "72",
-        "stargazers_count": "596",
-        "language": "Python",
-        "repositoryDescription": "PyTorch implementation of Super SloMo by Jiang et al."
-    },
-    {
-        "name": "lsix",
-        "owner": {
-            "login": "hackerb9"
-        },
-        "full_name": "hackerb9/lsix",
-        "forks_count": "45",
-        "stargazers_count": "1530",
-        "language": "Shell",
-        "repositoryDescription": "Like \"ls\", but for images. Shows thumbnails in terminal using sixel graphics."
+        "full_name": "doocs/advanced-java",
+        "forks_count": "518",
+        "stargazers_count": "3067",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
         "name": "homemade-machine-learning",
@@ -49,10 +71,52 @@
             "login": "trekhleb"
         },
         "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "210",
-        "stargazers_count": "2146",
+        "forks_count": "270",
+        "stargazers_count": "2413",
         "language": "Jupyter Notebook",
         "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
+    },
+    {
+        "name": "fish-shell",
+        "owner": {
+            "login": "fish-shell"
+        },
+        "full_name": "fish-shell/fish-shell",
+        "forks_count": "1010",
+        "stargazers_count": "11359",
+        "language": "Shell",
+        "repositoryDescription": "The user-friendly command line shell."
+    },
+    {
+        "name": "Best-websites-a-programmer-should-visit",
+        "owner": {
+            "login": "sdmg15"
+        },
+        "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
+        "forks_count": "2685",
+        "stargazers_count": "24162",
+        "repositoryDescription": "🔗\nSome useful websites for programmers."
+    },
+    {
+        "name": "EmojiPackage",
+        "owner": {
+            "login": "getActivity"
+        },
+        "full_name": "getActivity/EmojiPackage",
+        "forks_count": "50",
+        "stargazers_count": "333",
+        "repositoryDescription": "A rich emoji package resources"
+    },
+    {
+        "name": "Super-SloMo",
+        "owner": {
+            "login": "avinashpaliwal"
+        },
+        "full_name": "avinashpaliwal/Super-SloMo",
+        "forks_count": "91",
+        "stargazers_count": "779",
+        "language": "Python",
+        "repositoryDescription": "PyTorch implementation of Super SloMo by Jiang et al."
     },
     {
         "name": "the-book-of-secret-knowledge",
@@ -60,9 +124,20 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "692",
-        "stargazers_count": "9010",
+        "forks_count": "714",
+        "stargazers_count": "9185",
         "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
+    },
+    {
+        "name": "openage",
+        "owner": {
+            "login": "SFTtech"
+        },
+        "full_name": "SFTtech/openage",
+        "forks_count": "811",
+        "stargazers_count": "8185",
+        "language": "C++",
+        "repositoryDescription": "Free (as in freedom) open source clone of the Age of Empires II engine\n🚀"
     },
     {
         "name": "spec",
@@ -70,8 +145,8 @@
             "login": "ulid"
         },
         "full_name": "ulid/spec",
-        "forks_count": "15",
-        "stargazers_count": "521",
+        "forks_count": "19",
+        "stargazers_count": "708",
         "repositoryDescription": "The canonical spec for ulid"
     },
     {
@@ -80,31 +155,20 @@
             "login": "FavioVazquez"
         },
         "full_name": "FavioVazquez/ds-cheatsheets",
-        "forks_count": "376",
-        "stargazers_count": "2620",
+        "forks_count": "393",
+        "stargazers_count": "2791",
         "repositoryDescription": "List of Data Science Cheatsheets to rule the world"
     },
     {
-        "name": "advanced-java",
+        "name": "MT-Reading-List",
         "owner": {
-            "login": "doocs"
+            "login": "THUNLP-MT"
         },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "454",
-        "stargazers_count": "2756",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "awesome-python-applications",
-        "owner": {
-            "login": "mahmoud"
-        },
-        "full_name": "mahmoud/awesome-python-applications",
-        "forks_count": "556",
-        "stargazers_count": "3984",
-        "language": "Python",
-        "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
+        "full_name": "THUNLP-MT/MT-Reading-List",
+        "forks_count": "34",
+        "stargazers_count": "187",
+        "language": "TeX",
+        "repositoryDescription": "A machine translation reading list maintained by Tsinghua Natural Language Processing Group"
     },
     {
         "name": "practicalAI",
@@ -112,8 +176,8 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1595",
-        "stargazers_count": "11465",
+        "forks_count": "1622",
+        "stargazers_count": "11609",
         "language": "Jupyter Notebook",
         "repositoryDescription": "📚\nA practical approach to learning machine learning."
     },
@@ -123,21 +187,10 @@
             "login": "Tencent"
         },
         "full_name": "Tencent/matrix",
-        "forks_count": "203",
-        "stargazers_count": "2332",
+        "forks_count": "214",
+        "stargazers_count": "2480",
         "language": "Java",
         "repositoryDescription": "Matrix is a plugin style, non-invasive APM system developed by WeChat."
-    },
-    {
-        "name": "gitbatch",
-        "owner": {
-            "login": "isacikgoz"
-        },
-        "full_name": "isacikgoz/gitbatch",
-        "forks_count": "10",
-        "stargazers_count": "297",
-        "language": "Go",
-        "repositoryDescription": "manage your git repositories in one place"
     },
     {
         "name": "GNNPapers",
@@ -145,41 +198,9 @@
             "login": "thunlp"
         },
         "full_name": "thunlp/GNNPapers",
-        "forks_count": "132",
-        "stargazers_count": "899",
-        "repositoryDescription": "Must-read papers on graph neural network (GNN)"
-    },
-    {
-        "name": "Best-websites-a-programmer-should-visit",
-        "owner": {
-            "login": "sdmg15"
-        },
-        "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
-        "forks_count": "2654",
-        "stargazers_count": "23923",
-        "repositoryDescription": "🔗\nSome useful websites for programmers."
-    },
-    {
-        "name": "sherlock",
-        "owner": {
-            "login": "sdushantha"
-        },
-        "full_name": "sdushantha/sherlock",
-        "forks_count": "65",
-        "stargazers_count": "964",
-        "language": "Python",
-        "repositoryDescription": "🔎\nFind usernames across over 75 social networks"
-    },
-    {
-        "name": "rrweb",
-        "owner": {
-            "login": "rrweb-io"
-        },
-        "full_name": "rrweb-io/rrweb",
-        "forks_count": "19",
-        "stargazers_count": "323",
-        "language": "TypeScript",
-        "repositoryDescription": "record and replay the web"
+        "forks_count": "142",
+        "stargazers_count": "1035",
+        "repositoryDescription": "Must-read papers on graph neural networks (GNN)"
     },
     {
         "name": "ant-design",
@@ -187,86 +208,64 @@
             "login": "ant-design"
         },
         "full_name": "ant-design/ant-design",
-        "forks_count": "13279",
-        "stargazers_count": "40088",
+        "forks_count": "13317",
+        "stargazers_count": "40212",
         "language": "TypeScript",
         "repositoryDescription": "🐜\nA UI Design Language"
     },
     {
-        "name": "fiddly",
+        "name": "nodebestpractices",
         "owner": {
-            "login": "SaraVieira"
+            "login": "i0natan"
         },
-        "full_name": "SaraVieira/fiddly",
-        "forks_count": "13",
-        "stargazers_count": "470",
+        "full_name": "i0natan/nodebestpractices",
+        "forks_count": "1520",
+        "stargazers_count": "21601",
         "language": "JavaScript",
-        "repositoryDescription": "Create beautiful and simple HTML pages from your Readme.md files"
+        "repositoryDescription": "The largest Node.JS best practices list (November 2018)"
     },
     {
-        "name": "swc",
+        "name": "awesome-python-applications",
         "owner": {
-            "login": "swc-project"
+            "login": "mahmoud"
         },
-        "full_name": "swc-project/swc",
-        "forks_count": "39",
-        "stargazers_count": "2459",
-        "language": "JavaScript",
-        "repositoryDescription": "Super-fast alternative for babel written in rust"
+        "full_name": "mahmoud/awesome-python-applications",
+        "forks_count": "565",
+        "stargazers_count": "4121",
+        "language": "Python",
+        "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
     },
     {
-        "name": "liquid",
+        "name": "sherlock",
         "owner": {
-            "login": "mogenslund"
+            "login": "sdushantha"
         },
-        "full_name": "mogenslund/liquid",
-        "forks_count": "19",
-        "stargazers_count": "456",
-        "language": "Clojure",
-        "repositoryDescription": "Clojure Text Editor, for editing clojure code and markdown. Written entirely in Clojure with inspiration from Emacs and Vim."
+        "full_name": "sdushantha/sherlock",
+        "forks_count": "75",
+        "stargazers_count": "1096",
+        "language": "Python",
+        "repositoryDescription": "🔎\nFind usernames across social networks"
     },
     {
-        "name": "noah",
+        "name": "lsix",
         "owner": {
-            "login": "linux-noah"
+            "login": "hackerb9"
         },
-        "full_name": "linux-noah/noah",
-        "forks_count": "35",
-        "stargazers_count": "1112",
-        "language": "C",
-        "repositoryDescription": "Bash on Ubuntu on macOS"
+        "full_name": "hackerb9/lsix",
+        "forks_count": "47",
+        "stargazers_count": "1654",
+        "language": "Shell",
+        "repositoryDescription": "Like \"ls\", but for images. Shows thumbnails in terminal using sixel graphics."
     },
     {
-        "name": "kubernetes",
+        "name": "JavaGuide",
         "owner": {
-            "login": "kubernetes"
+            "login": "Snailclimb"
         },
-        "full_name": "kubernetes/kubernetes",
-        "forks_count": "16040",
-        "stargazers_count": "46058",
-        "language": "Go",
-        "repositoryDescription": "Production-Grade Container Scheduling and Management"
-    },
-    {
-        "name": "brain.js",
-        "owner": {
-            "login": "BrainJS"
-        },
-        "full_name": "BrainJS/brain.js",
-        "forks_count": "552",
-        "stargazers_count": "7143",
-        "language": "JavaScript",
-        "repositoryDescription": "🤖\nNeural networks in JavaScript"
-    },
-    {
-        "name": "Magic-Grid",
-        "owner": {
-            "login": "e-oj"
-        },
-        "full_name": "e-oj/Magic-Grid",
-        "forks_count": "52",
-        "stargazers_count": "1290",
-        "language": "JavaScript",
-        "repositoryDescription": "A simple, lightweight Javascript library for dynamic grid layouts."
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "5188",
+        "stargazers_count": "18148",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     }
 ]

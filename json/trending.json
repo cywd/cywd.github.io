@@ -1,12 +1,34 @@
 [
     {
+        "name": "homemade-machine-learning",
+        "owner": {
+            "login": "trekhleb"
+        },
+        "full_name": "trekhleb/homemade-machine-learning",
+        "forks_count": "679",
+        "stargazers_count": "4047",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
+    },
+    {
+        "name": "flair",
+        "owner": {
+            "login": "zalandoresearch"
+        },
+        "full_name": "zalandoresearch/flair",
+        "forks_count": "180",
+        "stargazers_count": "2542",
+        "language": "Python",
+        "repositoryDescription": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
+    },
+    {
         "name": "awesome-interview-questions",
         "owner": {
             "login": "MaximAbramchuck"
         },
         "full_name": "MaximAbramchuck/awesome-interview-questions",
-        "forks_count": "2870",
-        "stargazers_count": "22856",
+        "forks_count": "2916",
+        "stargazers_count": "23554",
         "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
     },
     {
@@ -15,31 +37,32 @@
             "login": "fabiospampinato"
         },
         "full_name": "fabiospampinato/notable",
-        "forks_count": "110",
-        "stargazers_count": "3613",
+        "forks_count": "132",
+        "stargazers_count": "4218",
         "language": "TypeScript",
         "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
     },
     {
-        "name": "iina",
+        "name": "merlin",
         "owner": {
-            "login": "iina"
+            "login": "Ne0nd0g"
         },
-        "full_name": "iina/iina",
-        "forks_count": "1195",
-        "stargazers_count": "15433",
-        "language": "Swift",
-        "repositoryDescription": "The modern video player for macOS."
+        "full_name": "Ne0nd0g/merlin",
+        "forks_count": "175",
+        "stargazers_count": "1487",
+        "language": "Go",
+        "repositoryDescription": "Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang."
     },
     {
-        "name": "awesome-awesome-awesome",
+        "name": "uncaptcha2",
         "owner": {
-            "login": "jonatasbaldin"
+            "login": "ecthros"
         },
-        "full_name": "jonatasbaldin/awesome-awesome-awesome",
-        "forks_count": "29",
-        "stargazers_count": "749",
-        "repositoryDescription": "Awesome list of repositories of awesome lists\n🤷‍♀️"
+        "full_name": "ecthros/uncaptcha2",
+        "forks_count": "56",
+        "stargazers_count": "596",
+        "language": "Python",
+        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
     },
     {
         "name": "rrweb",
@@ -47,10 +70,107 @@
             "login": "rrweb-io"
         },
         "full_name": "rrweb-io/rrweb",
-        "forks_count": "65",
-        "stargazers_count": "1755",
+        "forks_count": "74",
+        "stargazers_count": "2178",
         "language": "TypeScript",
         "repositoryDescription": "record and replay the web"
+    },
+    {
+        "name": "iina",
+        "owner": {
+            "login": "iina"
+        },
+        "full_name": "iina/iina",
+        "forks_count": "1206",
+        "stargazers_count": "15789",
+        "language": "Swift",
+        "repositoryDescription": "The modern video player for macOS."
+    },
+    {
+        "name": "cim",
+        "owner": {
+            "login": "crossoverJie"
+        },
+        "full_name": "crossoverJie/cim",
+        "forks_count": "200",
+        "stargazers_count": "560",
+        "language": "Java",
+        "repositoryDescription": "📲\ncim(cross IM) 适用于开发者的即时通讯系统"
+    },
+    {
+        "name": "rockstar",
+        "owner": {
+            "login": "dylanbeattie"
+        },
+        "full_name": "dylanbeattie/rockstar",
+        "forks_count": "121",
+        "stargazers_count": "5073",
+        "language": "Ruby",
+        "repositoryDescription": "The Rockstar programming language specification"
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "599",
+        "stargazers_count": "3594",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "746",
+        "stargazers_count": "7779",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "GitHubDaily",
+        "owner": {
+            "login": "GitHubDaily"
+        },
+        "full_name": "GitHubDaily/GitHubDaily",
+        "forks_count": "30",
+        "stargazers_count": "423",
+        "repositoryDescription": "GitHubDaily 分享内容定期整理与分类。欢迎推荐、自荐项目，让更多人知道你的项目。"
+    },
+    {
+        "name": "sherlock",
+        "owner": {
+            "login": "TheYahya"
+        },
+        "full_name": "TheYahya/sherlock",
+        "forks_count": "106",
+        "stargazers_count": "1611",
+        "language": "Python",
+        "repositoryDescription": "🔎\nFind usernames across social networks"
+    },
+    {
+        "name": "Deep-Learning-Papers-Reading-Roadmap",
+        "owner": {
+            "login": "floodsung"
+        },
+        "full_name": "floodsung/Deep-Learning-Papers-Reading-Roadmap",
+        "forks_count": "4685",
+        "stargazers_count": "21017",
+        "language": "Python",
+        "repositoryDescription": "Deep Learning papers reading roadmap for anyone who are eager to learn this amazing tech!"
+    },
+    {
+        "name": "Best-websites-a-programmer-should-visit",
+        "owner": {
+            "login": "sdmg15"
+        },
+        "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
+        "forks_count": "2746",
+        "stargazers_count": "24795",
+        "repositoryDescription": "🔗\nSome useful websites for programmers."
     },
     {
         "name": "inter",
@@ -59,147 +179,9 @@
         },
         "full_name": "rsms/inter",
         "forks_count": "109",
-        "stargazers_count": "5922",
+        "stargazers_count": "6112",
         "language": "Python",
         "repositoryDescription": "The Inter UI font family"
-    },
-    {
-        "name": "rockstar",
-        "owner": {
-            "login": "dylanbeattie"
-        },
-        "full_name": "dylanbeattie/rockstar",
-        "forks_count": "114",
-        "stargazers_count": "4826",
-        "language": "Ruby",
-        "repositoryDescription": "The Rockstar programming language specification"
-    },
-    {
-        "name": "GitHubDaily",
-        "owner": {
-            "login": "GitHubDaily"
-        },
-        "full_name": "GitHubDaily/GitHubDaily",
-        "forks_count": "13",
-        "stargazers_count": "189",
-        "repositoryDescription": "GitHubDaily 分享内容定期整理与分类。欢迎推荐、自荐项目，让更多人知道你的项目。"
-    },
-    {
-        "name": "react-typescript-cheatsheet",
-        "owner": {
-            "login": "sw-yx"
-        },
-        "full_name": "sw-yx/react-typescript-cheatsheet",
-        "forks_count": "116",
-        "stargazers_count": "2637",
-        "repositoryDescription": "a cheatsheet for react users using typescript with react for the first (or nth!) time"
-    },
-    {
-        "name": "homemade-machine-learning",
-        "owner": {
-            "login": "trekhleb"
-        },
-        "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "355",
-        "stargazers_count": "2843",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
-    },
-    {
-        "name": "Best-websites-a-programmer-should-visit",
-        "owner": {
-            "login": "sdmg15"
-        },
-        "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
-        "forks_count": "2732",
-        "stargazers_count": "24590",
-        "repositoryDescription": "🔗\nSome useful websites for programmers."
-    },
-    {
-        "name": "merlin",
-        "owner": {
-            "login": "Ne0nd0g"
-        },
-        "full_name": "Ne0nd0g/merlin",
-        "forks_count": "157",
-        "stargazers_count": "1002",
-        "language": "PowerShell",
-        "repositoryDescription": "Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang."
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "721",
-        "stargazers_count": "7532",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "MT-Reading-List",
-        "owner": {
-            "login": "THUNLP-MT"
-        },
-        "full_name": "THUNLP-MT/MT-Reading-List",
-        "forks_count": "76",
-        "stargazers_count": "531",
-        "language": "TeX",
-        "repositoryDescription": "A machine translation reading list maintained by Tsinghua Natural Language Processing Group"
-    },
-    {
-        "name": "home-assistant",
-        "owner": {
-            "login": "home-assistant"
-        },
-        "full_name": "home-assistant/home-assistant",
-        "forks_count": "5814",
-        "stargazers_count": "20128",
-        "language": "Python",
-        "repositoryDescription": "🏡\nOpen source home automation that puts local control and privacy first"
-    },
-    {
-        "name": "the-book-of-secret-knowledge",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "747",
-        "stargazers_count": "9514",
-        "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "568",
-        "stargazers_count": "3347",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "Deep-Learning-Papers-Reading-Roadmap",
-        "owner": {
-            "login": "floodsung"
-        },
-        "full_name": "floodsung/Deep-Learning-Papers-Reading-Roadmap",
-        "forks_count": "4652",
-        "stargazers_count": "20817",
-        "language": "Python",
-        "repositoryDescription": "Deep Learning papers reading roadmap for anyone who are eager to learn this amazing tech!"
-    },
-    {
-        "name": "deep_learning_object_detection",
-        "owner": {
-            "login": "hoya012"
-        },
-        "full_name": "hoya012/deep_learning_object_detection",
-        "forks_count": "725",
-        "stargazers_count": "2550",
-        "repositoryDescription": "A paper list of object detection using deep learning."
     },
     {
         "name": "practicalAI",
@@ -207,21 +189,30 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1670",
-        "stargazers_count": "11912",
+        "forks_count": "1700",
+        "stargazers_count": "12093",
         "language": "Jupyter Notebook",
         "repositoryDescription": "📚\nA practical approach to learning machine learning."
     },
     {
-        "name": "HistoryOfEverything",
+        "name": "awesome-awesome-awesome",
         "owner": {
-            "login": "2d-inc"
+            "login": "jonatasbaldin"
         },
-        "full_name": "2d-inc/HistoryOfEverything",
-        "forks_count": "113",
-        "stargazers_count": "1376",
-        "language": "Dart",
-        "repositoryDescription": "Flutter Launch Timeline Demo"
+        "full_name": "jonatasbaldin/awesome-awesome-awesome",
+        "forks_count": "35",
+        "stargazers_count": "938",
+        "repositoryDescription": "Awesome list of repositories of awesome lists\n🤷‍♀️"
+    },
+    {
+        "name": "react-typescript-cheatsheet",
+        "owner": {
+            "login": "sw-yx"
+        },
+        "full_name": "sw-yx/react-typescript-cheatsheet",
+        "forks_count": "123",
+        "stargazers_count": "2809",
+        "repositoryDescription": "a cheatsheet for react users using typescript with react for the first (or nth!) time"
     },
     {
         "name": "developer-roadmap",
@@ -229,40 +220,52 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10118",
-        "stargazers_count": "63889",
+        "forks_count": "10139",
+        "stargazers_count": "64047",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
-        "name": "sherlock",
+        "name": "flutter-desktop-embedding",
         "owner": {
-            "login": "sdushantha"
+            "login": "google"
         },
-        "full_name": "sdushantha/sherlock",
-        "forks_count": "93",
-        "stargazers_count": "1354",
-        "language": "Python",
-        "repositoryDescription": "🔎\nFind usernames across social networks"
+        "full_name": "google/flutter-desktop-embedding",
+        "forks_count": "150",
+        "stargazers_count": "2920",
+        "language": "C++",
+        "repositoryDescription": "Desktop implementations of the Flutter embedding API"
     },
     {
-        "name": "brain.js",
+        "name": "MT-Reading-List",
         "owner": {
-            "login": "BrainJS"
+            "login": "THUNLP-MT"
         },
-        "full_name": "BrainJS/brain.js",
-        "forks_count": "588",
-        "stargazers_count": "8113",
+        "full_name": "THUNLP-MT/MT-Reading-List",
+        "forks_count": "108",
+        "stargazers_count": "686",
+        "language": "TeX",
+        "repositoryDescription": "A machine translation reading list maintained by Tsinghua Natural Language Processing Group"
+    },
+    {
+        "name": "Motrix",
+        "owner": {
+            "login": "agalwood"
+        },
+        "full_name": "agalwood/Motrix",
+        "forks_count": "32",
+        "stargazers_count": "587",
         "language": "JavaScript",
-        "repositoryDescription": "🤖\nNeural networks in JavaScript"
+        "repositoryDescription": "A full-featured download manger."
     },
     {
-        "name": "awesome",
+        "name": "HistoryOfEverything",
         "owner": {
-            "login": "sindresorhus"
+            "login": "2d-inc"
         },
-        "full_name": "sindresorhus/awesome",
-        "forks_count": "13154",
-        "stargazers_count": "98920",
-        "repositoryDescription": "😎\nCurated list of awesome lists"
+        "full_name": "2d-inc/HistoryOfEverything",
+        "forks_count": "129",
+        "stargazers_count": "1525",
+        "language": "Dart",
+        "repositoryDescription": "Flutter Launch Timeline Demo"
     }
 ]

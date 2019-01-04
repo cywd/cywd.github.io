@@ -1,12 +1,23 @@
 [
     {
+        "name": "fbt",
+        "owner": {
+            "login": "facebookincubator"
+        },
+        "full_name": "facebookincubator/fbt",
+        "forks_count": "31",
+        "stargazers_count": "1304",
+        "language": "JavaScript",
+        "repositoryDescription": "A JavaScript Internationalization Framework"
+    },
+    {
         "name": "homemade-machine-learning",
         "owner": {
             "login": "trekhleb"
         },
         "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "878",
-        "stargazers_count": "4921",
+        "forks_count": "1042",
+        "stargazers_count": "5631",
         "language": "Jupyter Notebook",
         "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
     },
@@ -16,9 +27,20 @@
             "login": "jeffgerickson"
         },
         "full_name": "jeffgerickson/algorithms",
-        "forks_count": "145",
-        "stargazers_count": "1107",
+        "forks_count": "210",
+        "stargazers_count": "1660",
         "repositoryDescription": "Bug-tracking for Jeff's algorithms book, notes, etc."
+    },
+    {
+        "name": "jetpack",
+        "owner": {
+            "login": "KidkArolis"
+        },
+        "full_name": "KidkArolis/jetpack",
+        "forks_count": "7",
+        "stargazers_count": "550",
+        "language": "JavaScript",
+        "repositoryDescription": "🚀\nJetpack – webpack made more convenient."
     },
     {
         "name": "learn-json-web-tokens",
@@ -26,21 +48,43 @@
             "login": "dwyl"
         },
         "full_name": "dwyl/learn-json-web-tokens",
-        "forks_count": "179",
-        "stargazers_count": "2351",
+        "forks_count": "190",
+        "stargazers_count": "2770",
         "language": "JavaScript",
         "repositoryDescription": "🔐\nLearn how to use JSON Web Token (JWT) to secure your next Web App! (Tutorial/Example with Tests!!)"
     },
     {
-        "name": "flair",
+        "name": "uncaptcha2",
         "owner": {
-            "login": "zalandoresearch"
+            "login": "ecthros"
         },
-        "full_name": "zalandoresearch/flair",
-        "forks_count": "201",
-        "stargazers_count": "3190",
+        "full_name": "ecthros/uncaptcha2",
+        "forks_count": "107",
+        "stargazers_count": "1256",
         "language": "Python",
-        "repositoryDescription": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
+        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "829",
+        "stargazers_count": "8376",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "dragonboat",
+        "owner": {
+            "login": "lni"
+        },
+        "full_name": "lni/dragonboat",
+        "forks_count": "27",
+        "stargazers_count": "331",
+        "language": "Go",
+        "repositoryDescription": "Dragonboat is a feature complete and high performance multi-group Raft library in Go."
     },
     {
         "name": "awesome-interview-questions",
@@ -48,8 +92,8 @@
             "login": "MaximAbramchuck"
         },
         "full_name": "MaximAbramchuck/awesome-interview-questions",
-        "forks_count": "2949",
-        "stargazers_count": "24001",
+        "forks_count": "2984",
+        "stargazers_count": "24294",
         "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
     },
     {
@@ -58,76 +102,10 @@
             "login": "fabiospampinato"
         },
         "full_name": "fabiospampinato/notable",
-        "forks_count": "147",
-        "stargazers_count": "4613",
+        "forks_count": "157",
+        "stargazers_count": "4884",
         "language": "TypeScript",
         "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
-    },
-    {
-        "name": "sherlock",
-        "owner": {
-            "login": "TheYahya"
-        },
-        "full_name": "TheYahya/sherlock",
-        "forks_count": "132",
-        "stargazers_count": "1964",
-        "language": "Python",
-        "repositoryDescription": "🔎\nFind usernames across social networks"
-    },
-    {
-        "name": "cim",
-        "owner": {
-            "login": "crossoverJie"
-        },
-        "full_name": "crossoverJie/cim",
-        "forks_count": "276",
-        "stargazers_count": "871",
-        "language": "Java",
-        "repositoryDescription": "📲\ncim(cross IM) 适用于开发者的即时通讯系统"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "647",
-        "stargazers_count": "3888",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "792",
-        "stargazers_count": "8072",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "countly-server",
-        "owner": {
-            "login": "Countly"
-        },
-        "full_name": "Countly/countly-server",
-        "forks_count": "721",
-        "stargazers_count": "3254",
-        "language": "JavaScript",
-        "repositoryDescription": "Countly helps you get insights from your application. Available self-hosted or on private cloud."
-    },
-    {
-        "name": "uncaptcha2",
-        "owner": {
-            "login": "ecthros"
-        },
-        "full_name": "ecthros/uncaptcha2",
-        "forks_count": "77",
-        "stargazers_count": "893",
-        "language": "Python",
-        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
     },
     {
         "name": "rrweb",
@@ -135,54 +113,53 @@
             "login": "rrweb-io"
         },
         "full_name": "rrweb-io/rrweb",
-        "forks_count": "85",
-        "stargazers_count": "2431",
+        "forks_count": "93",
+        "stargazers_count": "2710",
         "language": "TypeScript",
         "repositoryDescription": "record and replay the web"
     },
     {
-        "name": "Motrix",
+        "name": "flair",
         "owner": {
-            "login": "agalwood"
+            "login": "zalandoresearch"
         },
-        "full_name": "agalwood/Motrix",
-        "forks_count": "39",
-        "stargazers_count": "835",
-        "language": "JavaScript",
-        "repositoryDescription": "A full-featured download manger."
+        "full_name": "zalandoresearch/flair",
+        "forks_count": "213",
+        "stargazers_count": "3443",
+        "language": "Python",
+        "repositoryDescription": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
     },
     {
-        "name": "MarbleMarcher",
+        "name": "advanced-java",
         "owner": {
-            "login": "HackerPoet"
+            "login": "doocs"
         },
-        "full_name": "HackerPoet/MarbleMarcher",
-        "forks_count": "12",
-        "stargazers_count": "300",
-        "language": "C++",
-        "repositoryDescription": "A Fractal Physics Game"
+        "full_name": "doocs/advanced-java",
+        "forks_count": "683",
+        "stargazers_count": "4112",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
-        "name": "binctr",
+        "name": "sherlock",
         "owner": {
-            "login": "genuinetools"
+            "login": "TheYahya"
         },
-        "full_name": "genuinetools/binctr",
-        "forks_count": "62",
-        "stargazers_count": "2098",
-        "language": "Go",
-        "repositoryDescription": "Fully static, unprivileged, self-contained, containers as executable binaries."
+        "full_name": "TheYahya/sherlock",
+        "forks_count": "152",
+        "stargazers_count": "2182",
+        "language": "Python",
+        "repositoryDescription": "🔎\nFind usernames across social networks"
     },
     {
-        "name": "iina",
+        "name": "CS-Notes",
         "owner": {
-            "login": "iina"
+            "login": "CyC2018"
         },
-        "full_name": "iina/iina",
-        "forks_count": "1211",
-        "stargazers_count": "15981",
-        "language": "Swift",
-        "repositoryDescription": "The modern video player for macOS."
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "14002",
+        "stargazers_count": "45643",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
     {
         "name": "practicalAI",
@@ -190,31 +167,21 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1727",
-        "stargazers_count": "12273",
+        "forks_count": "1756",
+        "stargazers_count": "12459",
         "language": "Jupyter Notebook",
         "repositoryDescription": "📚\nA practical approach to learning machine learning."
     },
     {
-        "name": "Best-websites-a-programmer-should-visit",
+        "name": "countly-server",
         "owner": {
-            "login": "sdmg15"
+            "login": "Countly"
         },
-        "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
-        "forks_count": "2761",
-        "stargazers_count": "24965",
-        "repositoryDescription": "🔗\nSome useful websites for programmers."
-    },
-    {
-        "name": "flutter",
-        "owner": {
-            "login": "flutter"
-        },
-        "full_name": "flutter/flutter",
-        "forks_count": "4989",
-        "stargazers_count": "48578",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "Countly/countly-server",
+        "forks_count": "727",
+        "stargazers_count": "3444",
+        "language": "JavaScript",
+        "repositoryDescription": "Countly helps you get insights from your application. Available self-hosted or on private cloud."
     },
     {
         "name": "JavaGuide",
@@ -222,10 +189,43 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5303",
-        "stargazers_count": "18532",
+        "forks_count": "5352",
+        "stargazers_count": "18708",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "fibre",
+        "owner": {
+            "login": "portsmouth"
+        },
+        "full_name": "portsmouth/fibre",
+        "forks_count": "9",
+        "stargazers_count": "299",
+        "language": "JavaScript",
+        "repositoryDescription": "WebGL 3d dynamical systems visualization"
+    },
+    {
+        "name": "30-seconds-of-code",
+        "owner": {
+            "login": "30-seconds"
+        },
+        "full_name": "30-seconds/30-seconds-of-code",
+        "forks_count": "3767",
+        "stargazers_count": "35690",
+        "language": "JavaScript",
+        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+    },
+    {
+        "name": "grin",
+        "owner": {
+            "login": "mimblewimble"
+        },
+        "full_name": "mimblewimble/grin",
+        "forks_count": "507",
+        "stargazers_count": "3093",
+        "language": "Rust",
+        "repositoryDescription": "Minimal implementation of the MimbleWimble protocol."
     },
     {
         "name": "developer-roadmap",
@@ -233,40 +233,40 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10161",
-        "stargazers_count": "64207",
+        "forks_count": "10183",
+        "stargazers_count": "64364",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
-        "name": "awesome-python-applications",
+        "name": "flutter",
         "owner": {
-            "login": "mahmoud"
+            "login": "flutter"
         },
-        "full_name": "mahmoud/awesome-python-applications",
-        "forks_count": "645",
-        "stargazers_count": "4593",
-        "language": "Python",
-        "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
+        "full_name": "flutter/flutter",
+        "forks_count": "5007",
+        "stargazers_count": "48725",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "merlin",
+        "name": "iina",
         "owner": {
-            "login": "Ne0nd0g"
+            "login": "iina"
         },
-        "full_name": "Ne0nd0g/merlin",
-        "forks_count": "180",
-        "stargazers_count": "1625",
-        "language": "Go",
-        "repositoryDescription": "Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang."
+        "full_name": "iina/iina",
+        "forks_count": "1221",
+        "stargazers_count": "16146",
+        "language": "Swift",
+        "repositoryDescription": "The modern video player for macOS."
     },
     {
-        "name": "the-book-of-secret-knowledge",
+        "name": "pwc",
         "owner": {
-            "login": "trimstray"
+            "login": "zziz"
         },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "756",
-        "stargazers_count": "9775",
-        "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
+        "full_name": "zziz/pwc",
+        "forks_count": "820",
+        "stargazers_count": "7475",
+        "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
     }
 ]

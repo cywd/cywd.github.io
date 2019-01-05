@@ -1,12 +1,23 @@
 [
     {
+        "name": "uncaptcha2",
+        "owner": {
+            "login": "ecthros"
+        },
+        "full_name": "ecthros/uncaptcha2",
+        "forks_count": "156",
+        "stargazers_count": "1976",
+        "language": "Python",
+        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
+    },
+    {
         "name": "fbt",
         "owner": {
             "login": "facebookincubator"
         },
         "full_name": "facebookincubator/fbt",
-        "forks_count": "31",
-        "stargazers_count": "1304",
+        "forks_count": "44",
+        "stargazers_count": "1736",
         "language": "JavaScript",
         "repositoryDescription": "A JavaScript Internationalization Framework"
     },
@@ -16,31 +27,32 @@
             "login": "trekhleb"
         },
         "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "1042",
-        "stargazers_count": "5631",
+        "forks_count": "1123",
+        "stargazers_count": "5990",
         "language": "Jupyter Notebook",
         "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
     },
     {
-        "name": "algorithms",
+        "name": "12306",
         "owner": {
-            "login": "jeffgerickson"
+            "login": "testerSunshine"
         },
-        "full_name": "jeffgerickson/algorithms",
-        "forks_count": "210",
-        "stargazers_count": "1660",
-        "repositoryDescription": "Bug-tracking for Jeff's algorithms book, notes, etc."
+        "full_name": "testerSunshine/12306",
+        "forks_count": "366",
+        "stargazers_count": "1047",
+        "language": "Python",
+        "repositoryDescription": "12306智能刷票，订票"
     },
     {
-        "name": "jetpack",
+        "name": "gaia",
         "owner": {
-            "login": "KidkArolis"
+            "login": "gaia-pipeline"
         },
-        "full_name": "KidkArolis/jetpack",
-        "forks_count": "7",
-        "stargazers_count": "550",
-        "language": "JavaScript",
-        "repositoryDescription": "🚀\nJetpack – webpack made more convenient."
+        "full_name": "gaia-pipeline/gaia",
+        "forks_count": "102",
+        "stargazers_count": "2830",
+        "language": "Go",
+        "repositoryDescription": "Build powerful pipelines in any programming language."
     },
     {
         "name": "learn-json-web-tokens",
@@ -48,32 +60,21 @@
             "login": "dwyl"
         },
         "full_name": "dwyl/learn-json-web-tokens",
-        "forks_count": "190",
-        "stargazers_count": "2770",
+        "forks_count": "198",
+        "stargazers_count": "3006",
         "language": "JavaScript",
         "repositoryDescription": "🔐\nLearn how to use JSON Web Token (JWT) to secure your next Web App! (Tutorial/Example with Tests!!)"
     },
     {
-        "name": "uncaptcha2",
+        "name": "crev",
         "owner": {
-            "login": "ecthros"
+            "login": "dpc"
         },
-        "full_name": "ecthros/uncaptcha2",
-        "forks_count": "107",
-        "stargazers_count": "1256",
-        "language": "Python",
-        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "829",
-        "stargazers_count": "8376",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "full_name": "dpc/crev",
+        "forks_count": "12",
+        "stargazers_count": "432",
+        "language": "Rust",
+        "repositoryDescription": "Scalable, social, Code REView and recommendation system that we desperately need"
     },
     {
         "name": "dragonboat",
@@ -81,85 +82,31 @@
             "login": "lni"
         },
         "full_name": "lni/dragonboat",
-        "forks_count": "27",
-        "stargazers_count": "331",
+        "forks_count": "37",
+        "stargazers_count": "531",
         "language": "Go",
         "repositoryDescription": "Dragonboat is a feature complete and high performance multi-group Raft library in Go."
     },
     {
-        "name": "awesome-interview-questions",
+        "name": "jetpack",
         "owner": {
-            "login": "MaximAbramchuck"
+            "login": "KidkArolis"
         },
-        "full_name": "MaximAbramchuck/awesome-interview-questions",
-        "forks_count": "2984",
-        "stargazers_count": "24294",
-        "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
+        "full_name": "KidkArolis/jetpack",
+        "forks_count": "10",
+        "stargazers_count": "746",
+        "language": "JavaScript",
+        "repositoryDescription": "🚀\nJetpack – webpack made more convenient."
     },
     {
-        "name": "notable",
+        "name": "algorithms",
         "owner": {
-            "login": "fabiospampinato"
+            "login": "jeffgerickson"
         },
-        "full_name": "fabiospampinato/notable",
-        "forks_count": "157",
-        "stargazers_count": "4884",
-        "language": "TypeScript",
-        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
-    },
-    {
-        "name": "rrweb",
-        "owner": {
-            "login": "rrweb-io"
-        },
-        "full_name": "rrweb-io/rrweb",
-        "forks_count": "93",
-        "stargazers_count": "2710",
-        "language": "TypeScript",
-        "repositoryDescription": "record and replay the web"
-    },
-    {
-        "name": "flair",
-        "owner": {
-            "login": "zalandoresearch"
-        },
-        "full_name": "zalandoresearch/flair",
-        "forks_count": "213",
-        "stargazers_count": "3443",
-        "language": "Python",
-        "repositoryDescription": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "683",
-        "stargazers_count": "4112",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "sherlock",
-        "owner": {
-            "login": "TheYahya"
-        },
-        "full_name": "TheYahya/sherlock",
-        "forks_count": "152",
-        "stargazers_count": "2182",
-        "language": "Python",
-        "repositoryDescription": "🔎\nFind usernames across social networks"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "14002",
-        "stargazers_count": "45643",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
+        "full_name": "jeffgerickson/algorithms",
+        "forks_count": "234",
+        "stargazers_count": "1849",
+        "repositoryDescription": "Bug-tracking for Jeff's algorithms book, notes, etc."
     },
     {
         "name": "practicalAI",
@@ -167,21 +114,42 @@
             "login": "GokuMohandas"
         },
         "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1756",
-        "stargazers_count": "12459",
+        "forks_count": "1786",
+        "stargazers_count": "12622",
         "language": "Jupyter Notebook",
         "repositoryDescription": "📚\nA practical approach to learning machine learning."
     },
     {
-        "name": "countly-server",
+        "name": "awesome-interview-questions",
         "owner": {
-            "login": "Countly"
+            "login": "MaximAbramchuck"
         },
-        "full_name": "Countly/countly-server",
-        "forks_count": "727",
-        "stargazers_count": "3444",
+        "full_name": "MaximAbramchuck/awesome-interview-questions",
+        "forks_count": "3000",
+        "stargazers_count": "24460",
+        "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
+    },
+    {
+        "name": "string-similarity",
+        "owner": {
+            "login": "aceakash"
+        },
+        "full_name": "aceakash/string-similarity",
+        "forks_count": "24",
+        "stargazers_count": "559",
         "language": "JavaScript",
-        "repositoryDescription": "Countly helps you get insights from your application. Available self-hosted or on private cloud."
+        "repositoryDescription": "Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance."
+    },
+    {
+        "name": "Menu",
+        "owner": {
+            "login": "TwoLivesLeft"
+        },
+        "full_name": "TwoLivesLeft/Menu",
+        "forks_count": "9",
+        "stargazers_count": "239",
+        "language": "Swift",
+        "repositoryDescription": "The iOS Menu"
     },
     {
         "name": "JavaGuide",
@@ -189,10 +157,32 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5352",
-        "stargazers_count": "18708",
+        "forks_count": "5390",
+        "stargazers_count": "18837",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "react-with-gesture",
+        "owner": {
+            "login": "drcmda"
+        },
+        "full_name": "drcmda/react-with-gesture",
+        "forks_count": "24",
+        "stargazers_count": "477",
+        "language": "JavaScript",
+        "repositoryDescription": "👇\nBread n butter utility for component-tied mouse/touch gestures in React"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "845",
+        "stargazers_count": "8510",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
         "name": "fibre",
@@ -200,73 +190,85 @@
             "login": "portsmouth"
         },
         "full_name": "portsmouth/fibre",
-        "forks_count": "9",
-        "stargazers_count": "299",
+        "forks_count": "11",
+        "stargazers_count": "422",
         "language": "JavaScript",
         "repositoryDescription": "WebGL 3d dynamical systems visualization"
     },
     {
-        "name": "30-seconds-of-code",
+        "name": "notable",
         "owner": {
-            "login": "30-seconds"
+            "login": "fabiospampinato"
         },
-        "full_name": "30-seconds/30-seconds-of-code",
-        "forks_count": "3767",
-        "stargazers_count": "35690",
-        "language": "JavaScript",
-        "repositoryDescription": "Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less."
+        "full_name": "fabiospampinato/notable",
+        "forks_count": "166",
+        "stargazers_count": "5017",
+        "language": "TypeScript",
+        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
     },
     {
-        "name": "grin",
+        "name": "edge-connect",
         "owner": {
-            "login": "mimblewimble"
+            "login": "knazeri"
         },
-        "full_name": "mimblewimble/grin",
-        "forks_count": "507",
-        "stargazers_count": "3093",
-        "language": "Rust",
-        "repositoryDescription": "Minimal implementation of the MimbleWimble protocol."
+        "full_name": "knazeri/edge-connect",
+        "forks_count": "37",
+        "stargazers_count": "168",
+        "language": "Python",
+        "repositoryDescription": "EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning. https://arxiv.org/abs/1901.00212"
     },
     {
-        "name": "developer-roadmap",
+        "name": "CS-Notes",
         "owner": {
-            "login": "kamranahmedse"
+            "login": "CyC2018"
         },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10183",
-        "stargazers_count": "64364",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "14033",
+        "stargazers_count": "45773",
+        "repositoryDescription": "📚\nComputer Science Learning Notes"
     },
     {
-        "name": "flutter",
+        "name": "advanced-java",
         "owner": {
-            "login": "flutter"
+            "login": "doocs"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "5007",
-        "stargazers_count": "48725",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "doocs/advanced-java",
+        "forks_count": "711",
+        "stargazers_count": "4241",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
-        "name": "iina",
+        "name": "rrweb",
         "owner": {
-            "login": "iina"
+            "login": "rrweb-io"
         },
-        "full_name": "iina/iina",
-        "forks_count": "1221",
-        "stargazers_count": "16146",
-        "language": "Swift",
-        "repositoryDescription": "The modern video player for macOS."
+        "full_name": "rrweb-io/rrweb",
+        "forks_count": "101",
+        "stargazers_count": "2840",
+        "language": "TypeScript",
+        "repositoryDescription": "record and replay the web"
     },
     {
-        "name": "pwc",
+        "name": "matrixprofile-ts",
         "owner": {
-            "login": "zziz"
+            "login": "target"
         },
-        "full_name": "zziz/pwc",
-        "forks_count": "820",
-        "stargazers_count": "7475",
-        "repositoryDescription": "Papers with code. Sorted by stars. Updated weekly."
+        "full_name": "target/matrixprofile-ts",
+        "forks_count": "18",
+        "stargazers_count": "226",
+        "language": "Python",
+        "repositoryDescription": "A Python library for detecting patterns and anomalies in massive datasets using the Matrix Profile"
+    },
+    {
+        "name": "flair",
+        "owner": {
+            "login": "zalandoresearch"
+        },
+        "full_name": "zalandoresearch/flair",
+        "forks_count": "217",
+        "stargazers_count": "3566",
+        "language": "Python",
+        "repositoryDescription": "A very simple framework for state-of-the-art Natural Language Processing (NLP)"
     }
 ]

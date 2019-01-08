@@ -1451,6 +1451,10 @@
         "color": "#118f9e",
         "url": "https://github.com/trending?l=Zephir"
     },
+    "Zig": {
+        "color": "#ec915c",
+        "url": "https://github.com/trending?l=Zig"
+    },
     "Zimpl": {
         "color": null,
         "url": "https://github.com/trending?l=Zimpl"

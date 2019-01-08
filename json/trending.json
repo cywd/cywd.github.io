@@ -5,10 +5,31 @@
             "login": "FiloSottile"
         },
         "full_name": "FiloSottile/mkcert",
-        "forks_count": "432",
-        "stargazers_count": "12934",
+        "forks_count": "476",
+        "stargazers_count": "14234",
         "language": "Go",
         "repositoryDescription": "A simple zero-config tool to make locally trusted development certificates with any names you'd like."
+    },
+    {
+        "name": "mit-deep-learning",
+        "owner": {
+            "login": "lexfridman"
+        },
+        "full_name": "lexfridman/mit-deep-learning",
+        "forks_count": "279",
+        "stargazers_count": "1502",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Tutorials, assignments, and competitions for MIT Deep Learning related courses."
+    },
+    {
+        "name": "pizza-dough",
+        "owner": {
+            "login": "hendricius"
+        },
+        "full_name": "hendricius/pizza-dough",
+        "forks_count": "52",
+        "stargazers_count": "1116",
+        "repositoryDescription": "This recipe is dedicated to helping you make the best possible pizza dough for Neapolitan pizza."
     },
     {
         "name": "trilium",
@@ -16,21 +37,10 @@
             "login": "zadam"
         },
         "full_name": "zadam/trilium",
-        "forks_count": "35",
-        "stargazers_count": "1480",
+        "forks_count": "70",
+        "stargazers_count": "2213",
         "language": "JavaScript",
         "repositoryDescription": "Build your personal knowledge base with Trilium Notes"
-    },
-    {
-        "name": "build-your-own-mint",
-        "owner": {
-            "login": "yyx990803"
-        },
-        "full_name": "yyx990803/build-your-own-mint",
-        "forks_count": "44",
-        "stargazers_count": "1065",
-        "language": "HTML",
-        "repositoryDescription": "Build your own personal finance analytics using Plaid, Google Sheets and CircleCI."
     },
     {
         "name": "12306",
@@ -38,65 +48,10 @@
             "login": "testerSunshine"
         },
         "full_name": "testerSunshine/12306",
-        "forks_count": "544",
-        "stargazers_count": "1652",
+        "forks_count": "695",
+        "stargazers_count": "2183",
         "language": "Python",
         "repositoryDescription": "12306智能刷票，订票"
-    },
-    {
-        "name": "uncaptcha2",
-        "owner": {
-            "login": "ecthros"
-        },
-        "full_name": "ecthros/uncaptcha2",
-        "forks_count": "228",
-        "stargazers_count": "2984",
-        "language": "Python",
-        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
-    },
-    {
-        "name": "tilt",
-        "owner": {
-            "login": "windmilleng"
-        },
-        "full_name": "windmilleng/tilt",
-        "forks_count": "20",
-        "stargazers_count": "1177",
-        "language": "Go",
-        "repositoryDescription": "Local Kubernetes development with no stress"
-    },
-    {
-        "name": "homemade-machine-learning",
-        "owner": {
-            "login": "trekhleb"
-        },
-        "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "1230",
-        "stargazers_count": "6598",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
-    },
-    {
-        "name": "walle-web",
-        "owner": {
-            "login": "meolu"
-        },
-        "full_name": "meolu/walle-web",
-        "forks_count": "1670",
-        "stargazers_count": "5446",
-        "language": "Python",
-        "repositoryDescription": "walle - 瓦力 开源项目代码部署平台"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5533",
-        "stargazers_count": "19282",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
         "name": "ChinaMobilePhoneNumberRegex",
@@ -104,149 +59,20 @@
             "login": "VincentSit"
         },
         "full_name": "VincentSit/ChinaMobilePhoneNumberRegex",
-        "forks_count": "72",
-        "stargazers_count": "828",
+        "forks_count": "105",
+        "stargazers_count": "1288",
         "repositoryDescription": "Regular expressions that match the mobile phone number in mainland China. / 一组匹配中国大陆手机号码的正则表达式。"
     },
     {
-        "name": "Modlishka",
+        "name": "homemade-machine-learning",
         "owner": {
-            "login": "drk1wi"
+            "login": "trekhleb"
         },
-        "full_name": "drk1wi/Modlishka",
-        "forks_count": "50",
-        "stargazers_count": "467",
-        "language": "Go",
-        "repositoryDescription": "Modlishka. Reverse Proxy. Phishing NG."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "14134",
-        "stargazers_count": "46134",
-        "repositoryDescription": "📚\nComputer Science Learning Notes"
-    },
-    {
-        "name": "fbt",
-        "owner": {
-            "login": "facebookincubator"
-        },
-        "full_name": "facebookincubator/fbt",
-        "forks_count": "56",
-        "stargazers_count": "2163",
-        "language": "JavaScript",
-        "repositoryDescription": "A JavaScript Internationalization Framework"
-    },
-    {
-        "name": "deeptraffic",
-        "owner": {
-            "login": "lexfridman"
-        },
-        "full_name": "lexfridman/deeptraffic",
-        "forks_count": "59",
-        "stargazers_count": "577",
-        "language": "JavaScript",
-        "repositoryDescription": "DeepTraffic is a deep reinforcement learning competition, part of the MIT Deep Learning series."
-    },
-    {
-        "name": "tinyalloc",
-        "owner": {
-            "login": "thi-ng"
-        },
-        "full_name": "thi-ng/tinyalloc",
-        "forks_count": "12",
-        "stargazers_count": "311",
-        "language": "C",
-        "repositoryDescription": "malloc / free replacement for unmanaged, linear memory situations (e.g. WASM, embedded devices...)"
-    },
-    {
-        "name": "dotfiles",
-        "owner": {
-            "login": "lewagon"
-        },
-        "full_name": "lewagon/dotfiles",
-        "forks_count": "4422",
-        "stargazers_count": "3947",
-        "language": "Shell",
-        "repositoryDescription": "Default configuration for Le Wagon's students"
-    },
-    {
-        "name": "string-similarity",
-        "owner": {
-            "login": "aceakash"
-        },
-        "full_name": "aceakash/string-similarity",
-        "forks_count": "34",
-        "stargazers_count": "963",
-        "language": "JavaScript",
-        "repositoryDescription": "Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance."
-    },
-    {
-        "name": "Flutter-CuriosityApp",
-        "owner": {
-            "login": "xumaohuai"
-        },
-        "full_name": "xumaohuai/Flutter-CuriosityApp",
-        "forks_count": "16",
-        "stargazers_count": "231",
-        "language": "Dart",
-        "repositoryDescription": "Flutter高仿好奇心日报"
-    },
-    {
-        "name": "codelf",
-        "owner": {
-            "login": "unbug"
-        },
-        "full_name": "unbug/codelf",
-        "forks_count": "398",
-        "stargazers_count": "5488",
-        "language": "JavaScript",
-        "repositoryDescription": "Best GitHub stars, repositories tagger and organizer. Search over projects from Github, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project, GitLab to find real-world usage variable names"
-    },
-    {
-        "name": "Menu",
-        "owner": {
-            "login": "TwoLivesLeft"
-        },
-        "full_name": "TwoLivesLeft/Menu",
-        "forks_count": "20",
-        "stargazers_count": "645",
-        "language": "Swift",
-        "repositoryDescription": "The iOS Menu"
-    },
-    {
-        "name": "react-with-gesture",
-        "owner": {
-            "login": "drcmda"
-        },
-        "full_name": "drcmda/react-with-gesture",
-        "forks_count": "27",
-        "stargazers_count": "802",
-        "language": "JavaScript",
-        "repositoryDescription": "👇\nBread n butter utility for component-tied mouse/touch gestures in React"
-    },
-    {
-        "name": "awesome-interview-questions",
-        "owner": {
-            "login": "MaximAbramchuck"
-        },
-        "full_name": "MaximAbramchuck/awesome-interview-questions",
-        "forks_count": "3050",
-        "stargazers_count": "24832",
-        "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
-    },
-    {
-        "name": "Biu-blog",
-        "owner": {
-            "login": "CommanderXL"
-        },
-        "full_name": "CommanderXL/Biu-blog",
-        "forks_count": "21",
-        "stargazers_count": "205",
-        "repositoryDescription": "个人博客"
+        "full_name": "trekhleb/homemade-machine-learning",
+        "forks_count": "1310",
+        "stargazers_count": "7011",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
     },
     {
         "name": "LeetCodeAnimation",
@@ -254,20 +80,194 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "880",
-        "stargazers_count": "8790",
+        "forks_count": "938",
+        "stargazers_count": "9152",
         "language": "C++",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "Here",
+        "name": "uncaptcha2",
         "owner": {
-            "login": "caijinyc"
+            "login": "ecthros"
         },
-        "full_name": "caijinyc/Here",
-        "forks_count": "39",
-        "stargazers_count": "399",
+        "full_name": "ecthros/uncaptcha2",
+        "forks_count": "257",
+        "stargazers_count": "3332",
+        "language": "Python",
+        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
+    },
+    {
+        "name": "build-your-own-mint",
+        "owner": {
+            "login": "yyx990803"
+        },
+        "full_name": "yyx990803/build-your-own-mint",
+        "forks_count": "65",
+        "stargazers_count": "1406",
+        "language": "HTML",
+        "repositoryDescription": "Build your own personal finance analytics using Plaid, Google Sheets and CircleCI."
+    },
+    {
+        "name": "nefarious-linkedin",
+        "owner": {
+            "login": "dandrews"
+        },
+        "full_name": "dandrews/nefarious-linkedin",
+        "forks_count": "18",
+        "stargazers_count": "334",
         "language": "JavaScript",
-        "repositoryDescription": "Here Music 一个使用 Electron + React 开发的音乐客户端"
+        "repositoryDescription": "A look at how LinkedIn spies on its users."
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "5615",
+        "stargazers_count": "19509",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "awesome-interview-questions",
+        "owner": {
+            "login": "MaximAbramchuck"
+        },
+        "full_name": "MaximAbramchuck/awesome-interview-questions",
+        "forks_count": "3080",
+        "stargazers_count": "25073",
+        "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
+    },
+    {
+        "name": "walle-web",
+        "owner": {
+            "login": "meolu"
+        },
+        "full_name": "meolu/walle-web",
+        "forks_count": "1704",
+        "stargazers_count": "5678",
+        "language": "Python",
+        "repositoryDescription": "walle - 瓦力 开源项目代码部署平台"
+    },
+    {
+        "name": "practicalAI",
+        "owner": {
+            "login": "GokuMohandas"
+        },
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "1871",
+        "stargazers_count": "13107",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "📚\nA practical approach to learning machine learning."
+    },
+    {
+        "name": "tilt",
+        "owner": {
+            "login": "windmilleng"
+        },
+        "full_name": "windmilleng/tilt",
+        "forks_count": "24",
+        "stargazers_count": "1368",
+        "language": "Go",
+        "repositoryDescription": "Local Kubernetes development with no stress"
+    },
+    {
+        "name": "CopyTranslator",
+        "owner": {
+            "login": "elliottzheng"
+        },
+        "full_name": "elliottzheng/CopyTranslator",
+        "forks_count": "69",
+        "stargazers_count": "529",
+        "language": "Python",
+        "repositoryDescription": "Foreign paper reading and translation assistant based on copy and translate.(Latest: v0.0.7-Kylin-RC1)"
+    },
+    {
+        "name": "fbt",
+        "owner": {
+            "login": "facebookincubator"
+        },
+        "full_name": "facebookincubator/fbt",
+        "forks_count": "58",
+        "stargazers_count": "2359",
+        "language": "JavaScript",
+        "repositoryDescription": "A JavaScript Internationalization Framework"
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "816",
+        "stargazers_count": "4666",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+    },
+    {
+        "name": "conference-app-2019",
+        "owner": {
+            "login": "DroidKaigi"
+        },
+        "full_name": "DroidKaigi/conference-app-2019",
+        "forks_count": "88",
+        "stargazers_count": "199",
+        "language": "Kotlin",
+        "repositoryDescription": "The Official Conference App for DroidKaigi 2019 Tokyo"
+    },
+    {
+        "name": "vuese",
+        "owner": {
+            "login": "vuese"
+        },
+        "full_name": "vuese/vuese",
+        "forks_count": "22",
+        "stargazers_count": "572",
+        "language": "TypeScript",
+        "repositoryDescription": "🤗\nYour vue SFC is your document - Parsing Vue SFC and generating documentation."
+    },
+    {
+        "name": "dragonboat",
+        "owner": {
+            "login": "lni"
+        },
+        "full_name": "lni/dragonboat",
+        "forks_count": "68",
+        "stargazers_count": "939",
+        "language": "Go",
+        "repositoryDescription": "Dragonboat is a feature complete and high performance multi-group Raft library in Go."
+    },
+    {
+        "name": "deeptraffic",
+        "owner": {
+            "login": "lexfridman"
+        },
+        "full_name": "lexfridman/deeptraffic",
+        "forks_count": "75",
+        "stargazers_count": "739",
+        "language": "JavaScript",
+        "repositoryDescription": "DeepTraffic is a deep reinforcement learning competition, part of the MIT Deep Learning series."
+    },
+    {
+        "name": "toBeTopJavaer",
+        "owner": {
+            "login": "hollischuang"
+        },
+        "full_name": "hollischuang/toBeTopJavaer",
+        "forks_count": "31",
+        "stargazers_count": "240",
+        "repositoryDescription": "To Be Top Javaer - Java工程师成神之路"
+    },
+    {
+        "name": "notable",
+        "owner": {
+            "login": "fabiospampinato"
+        },
+        "full_name": "fabiospampinato/notable",
+        "forks_count": "187",
+        "stargazers_count": "5429",
+        "language": "TypeScript",
+        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
     }
 ]

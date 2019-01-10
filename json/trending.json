@@ -1,14 +1,79 @@
 [
     {
+        "name": "hexyl",
+        "owner": {
+            "login": "sharkdp"
+        },
+        "full_name": "sharkdp/hexyl",
+        "forks_count": "40",
+        "stargazers_count": "2107",
+        "language": "Rust",
+        "repositoryDescription": "A command-line hex viewer"
+    },
+    {
+        "name": "An-English-Guide-for-Programmers",
+        "owner": {
+            "login": "yujiangshui"
+        },
+        "full_name": "yujiangshui/An-English-Guide-for-Programmers",
+        "forks_count": "117",
+        "stargazers_count": "1692",
+        "repositoryDescription": "专为程序员编写的英语学习指南。v1.0"
+    },
+    {
+        "name": "fescar",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/fescar",
+        "forks_count": "176",
+        "stargazers_count": "820",
+        "language": "Java",
+        "repositoryDescription": "fescar is an easy-to-use, high-performance, java based, open source distributed transaction solution."
+    },
+    {
         "name": "pkuseg-python",
         "owner": {
             "login": "lancopku"
         },
         "full_name": "lancopku/pkuseg-python",
-        "forks_count": "166",
-        "stargazers_count": "1106",
+        "forks_count": "255",
+        "stargazers_count": "1805",
         "language": "Python",
-        "repositoryDescription": "python版本：高准确度中文分词工具，简单易用，跟现有开源工具相比大幅提高了分词的准确率。"
+        "repositoryDescription": "python版本：领域细分的中文分词工具，简单易用，跟现有开源工具相比提高了分词的准确率。"
+    },
+    {
+        "name": "12306",
+        "owner": {
+            "login": "testerSunshine"
+        },
+        "full_name": "testerSunshine/12306",
+        "forks_count": "947",
+        "stargazers_count": "3163",
+        "language": "Python",
+        "repositoryDescription": "12306智能刷票，订票"
+    },
+    {
+        "name": "flutter-common-widgets-app",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/flutter-common-widgets-app",
+        "forks_count": "58",
+        "stargazers_count": "708",
+        "language": "Dart",
+        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 130+ 组件的中文文档与 demo 演示"
+    },
+    {
+        "name": "CSS-Inspiration",
+        "owner": {
+            "login": "chokcoco"
+        },
+        "full_name": "chokcoco/CSS-Inspiration",
+        "forks_count": "77",
+        "stargazers_count": "796",
+        "language": "JavaScript",
+        "repositoryDescription": "CSS Inspiration，在这里找到写 CSS 的灵感！"
     },
     {
         "name": "mkcert",
@@ -16,8 +81,8 @@
             "login": "FiloSottile"
         },
         "full_name": "FiloSottile/mkcert",
-        "forks_count": "514",
-        "stargazers_count": "14999",
+        "forks_count": "526",
+        "stargazers_count": "15443",
         "language": "Go",
         "repositoryDescription": "A simple zero-config tool to make locally trusted development certificates with any names you'd like."
     },
@@ -27,74 +92,10 @@
             "login": "alash3al"
         },
         "full_name": "alash3al/sqler",
-        "forks_count": "11",
-        "stargazers_count": "679",
+        "forks_count": "27",
+        "stargazers_count": "1085",
         "language": "Go",
         "repositoryDescription": "write APIs using direct SQL queries with no hassle, let's rethink about SQL"
-    },
-    {
-        "name": "mit-deep-learning",
-        "owner": {
-            "login": "lexfridman"
-        },
-        "full_name": "lexfridman/mit-deep-learning",
-        "forks_count": "327",
-        "stargazers_count": "2083",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Tutorials, assignments, and competitions for MIT Deep Learning related courses."
-    },
-    {
-        "name": "12306",
-        "owner": {
-            "login": "testerSunshine"
-        },
-        "full_name": "testerSunshine/12306",
-        "forks_count": "824",
-        "stargazers_count": "2700",
-        "language": "Python",
-        "repositoryDescription": "12306智能刷票，订票"
-    },
-    {
-        "name": "ChinaMobilePhoneNumberRegex",
-        "owner": {
-            "login": "VincentSit"
-        },
-        "full_name": "VincentSit/ChinaMobilePhoneNumberRegex",
-        "forks_count": "161",
-        "stargazers_count": "1796",
-        "repositoryDescription": "Regular expressions that match the mobile phone number in mainland China. / 一组匹配中国大陆手机号码的正则表达式。"
-    },
-    {
-        "name": "pizza-dough",
-        "owner": {
-            "login": "hendricius"
-        },
-        "full_name": "hendricius/pizza-dough",
-        "forks_count": "66",
-        "stargazers_count": "1554",
-        "repositoryDescription": "This recipe is dedicated to helping you make the best possible pizza dough for Neapolitan pizza."
-    },
-    {
-        "name": "trilium",
-        "owner": {
-            "login": "zadam"
-        },
-        "full_name": "zadam/trilium",
-        "forks_count": "85",
-        "stargazers_count": "2642",
-        "language": "JavaScript",
-        "repositoryDescription": "Build your personal knowledge base with Trilium Notes"
-    },
-    {
-        "name": "homemade-machine-learning",
-        "owner": {
-            "login": "trekhleb"
-        },
-        "full_name": "trekhleb/homemade-machine-learning",
-        "forks_count": "1378",
-        "stargazers_count": "7329",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
     },
     {
         "name": "markdeck",
@@ -102,43 +103,149 @@
             "login": "arnehilmann"
         },
         "full_name": "arnehilmann/markdeck",
-        "forks_count": "15",
-        "stargazers_count": "393",
+        "forks_count": "26",
+        "stargazers_count": "753",
         "language": "CSS",
         "repositoryDescription": "presentations as code - author cool slide decks, text-only, offline-ready, collaborative"
     },
     {
-        "name": "avo",
+        "name": "advanced-java",
         "owner": {
-            "login": "mmcloughlin"
+            "login": "doocs"
         },
-        "full_name": "mmcloughlin/avo",
-        "forks_count": "5",
-        "stargazers_count": "293",
-        "language": "Go",
-        "repositoryDescription": "Generate x86 Assembly with Go"
+        "full_name": "doocs/advanced-java",
+        "forks_count": "907",
+        "stargazers_count": "5149",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "dad-jokes",
         "owner": {
-            "login": "MisterBooo"
+            "login": "wesbos"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "975",
-        "stargazers_count": "9403",
+        "full_name": "wesbos/dad-jokes",
+        "forks_count": "75",
+        "stargazers_count": "624",
+        "repositoryDescription": "dad jokes"
+    },
+    {
+        "name": "MarbleMarcher",
+        "owner": {
+            "login": "HackerPoet"
+        },
+        "full_name": "HackerPoet/MarbleMarcher",
+        "forks_count": "43",
+        "stargazers_count": "879",
         "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "repositoryDescription": "A Fractal Physics Game"
     },
     {
-        "name": "nefarious-linkedin",
+        "name": "mit-deep-learning",
         "owner": {
-            "login": "dandrews"
+            "login": "lexfridman"
         },
-        "full_name": "dandrews/nefarious-linkedin",
-        "forks_count": "26",
-        "stargazers_count": "584",
+        "full_name": "lexfridman/mit-deep-learning",
+        "forks_count": "350",
+        "stargazers_count": "2296",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Tutorials, assignments, and competitions for MIT Deep Learning related courses."
+    },
+    {
+        "name": "liquid-swipe",
+        "owner": {
+            "login": "Cuberto"
+        },
+        "full_name": "Cuberto/liquid-swipe",
+        "forks_count": "32",
+        "stargazers_count": "261",
+        "language": "Swift",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "ChinaMobilePhoneNumberRegex",
+        "owner": {
+            "login": "VincentSit"
+        },
+        "full_name": "VincentSit/ChinaMobilePhoneNumberRegex",
+        "forks_count": "184",
+        "stargazers_count": "2033",
+        "repositoryDescription": "Regular expressions that match the mobile phone number in mainland China. / 一组匹配中国大陆手机号码的正则表达式。"
+    },
+    {
+        "name": "homemade-machine-learning",
+        "owner": {
+            "login": "trekhleb"
+        },
+        "full_name": "trekhleb/homemade-machine-learning",
+        "forks_count": "1425",
+        "stargazers_count": "7544",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "🤖\nPython examples of popular machine learning algorithms with interactive Jupyter demos and math being explained"
+    },
+    {
+        "name": "Gasyori100knock",
+        "owner": {
+            "login": "yoyoyo-yo"
+        },
+        "full_name": "yoyoyo-yo/Gasyori100knock",
+        "forks_count": "18",
+        "stargazers_count": "342",
+        "language": "Python",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "10304",
+        "stargazers_count": "65244",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+    },
+    {
+        "name": "trilium",
+        "owner": {
+            "login": "zadam"
+        },
+        "full_name": "zadam/trilium",
+        "forks_count": "99",
+        "stargazers_count": "2855",
         "language": "JavaScript",
-        "repositoryDescription": "A look at how LinkedIn spies on its users."
+        "repositoryDescription": "Build your personal knowledge base with Trilium Notes"
+    },
+    {
+        "name": "CopyTranslator",
+        "owner": {
+            "login": "elliottzheng"
+        },
+        "full_name": "elliottzheng/CopyTranslator",
+        "forks_count": "90",
+        "stargazers_count": "823",
+        "language": "Python",
+        "repositoryDescription": "Foreign paper reading and translation assistant based on copy and translate.(Latest: v0.0.7-Kylin-RC1)"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "5723",
+        "stargazers_count": "19888",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "pizza-dough",
+        "owner": {
+            "login": "hendricius"
+        },
+        "full_name": "hendricius/pizza-dough",
+        "forks_count": "72",
+        "stargazers_count": "1751",
+        "repositoryDescription": "This recipe is dedicated to helping you make the best possible pizza dough for Neapolitan pizza."
     },
     {
         "name": "walle-web",
@@ -146,8 +253,8 @@
             "login": "meolu"
         },
         "full_name": "meolu/walle-web",
-        "forks_count": "1729",
-        "stargazers_count": "5915",
+        "forks_count": "1749",
+        "stargazers_count": "6108",
         "language": "Python",
         "repositoryDescription": "walle - 瓦力 开源项目代码部署平台"
     },
@@ -157,116 +264,8 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "829",
-        "stargazers_count": "10512",
+        "forks_count": "844",
+        "stargazers_count": "10689",
         "repositoryDescription": "💫\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5671",
-        "stargazers_count": "19713",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "uncaptcha2",
-        "owner": {
-            "login": "ecthros"
-        },
-        "full_name": "ecthros/uncaptcha2",
-        "forks_count": "268",
-        "stargazers_count": "3551",
-        "language": "Python",
-        "repositoryDescription": "defeating the latest version of ReCaptcha with 91% accuracy"
-    },
-    {
-        "name": "Flutter-CuriosityApp",
-        "owner": {
-            "login": "xumaohuai"
-        },
-        "full_name": "xumaohuai/Flutter-CuriosityApp",
-        "forks_count": "110",
-        "stargazers_count": "535",
-        "language": "Dart",
-        "repositoryDescription": "Flutter高仿好奇心日报"
-    },
-    {
-        "name": "An-English-Guide-for-Programmers",
-        "owner": {
-            "login": "yujiangshui"
-        },
-        "full_name": "yujiangshui/An-English-Guide-for-Programmers",
-        "forks_count": "17",
-        "stargazers_count": "227",
-        "repositoryDescription": "专为程序员编写的英语学习指南。v1.0"
-    },
-    {
-        "name": "awesome-interview-questions",
-        "owner": {
-            "login": "MaximAbramchuck"
-        },
-        "full_name": "MaximAbramchuck/awesome-interview-questions",
-        "forks_count": "3097",
-        "stargazers_count": "25251",
-        "repositoryDescription": "A curated awesome list of lists of interview questions. Feel free to contribute!\n🎓"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "854",
-        "stargazers_count": "4837",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "MarbleMarcher",
-        "owner": {
-            "login": "HackerPoet"
-        },
-        "full_name": "HackerPoet/MarbleMarcher",
-        "forks_count": "31",
-        "stargazers_count": "613",
-        "language": "C++",
-        "repositoryDescription": "A Fractal Physics Game"
-    },
-    {
-        "name": "practicalAI",
-        "owner": {
-            "login": "GokuMohandas"
-        },
-        "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1888",
-        "stargazers_count": "13270",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "📚\nA practical approach to learning machine learning."
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "17788",
-        "stargazers_count": "124381",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
-    },
-    {
-        "name": "build-your-own-mint",
-        "owner": {
-            "login": "yyx990803"
-        },
-        "full_name": "yyx990803/build-your-own-mint",
-        "forks_count": "71",
-        "stargazers_count": "1557",
-        "language": "HTML",
-        "repositoryDescription": "Build your own personal finance analytics using Plaid, Google Sheets and CircleCI."
     }
 ]

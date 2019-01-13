@@ -5,10 +5,21 @@
             "login": "juliangarnier"
         },
         "full_name": "juliangarnier/anime",
-        "forks_count": "1922",
-        "stargazers_count": "25942",
+        "forks_count": "1937",
+        "stargazers_count": "26343",
         "language": "JavaScript",
         "repositoryDescription": "JavaScript animation engine"
+    },
+    {
+        "name": "nsfw_data_scrapper",
+        "owner": {
+            "login": "alexkimxyz"
+        },
+        "full_name": "alexkimxyz/nsfw_data_scrapper",
+        "forks_count": "79",
+        "stargazers_count": "286",
+        "language": "Shell",
+        "repositoryDescription": "Collection of scripts to aggregate image data for the purposes of training an NSFW Image Classifier"
     },
     {
         "name": "developer-roadmap",
@@ -16,52 +27,9 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10451",
-        "stargazers_count": "66768",
+        "forks_count": "10489",
+        "stargazers_count": "67014",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
-    },
-    {
-        "name": "A-Programmers-Guide-to-English",
-        "owner": {
-            "login": "yujiangshui"
-        },
-        "full_name": "yujiangshui/A-Programmers-Guide-to-English",
-        "forks_count": "254",
-        "stargazers_count": "3092",
-        "repositoryDescription": "专为程序员编写的英语学习指南。v1.0"
-    },
-    {
-        "name": "fescar",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/fescar",
-        "forks_count": "483",
-        "stargazers_count": "2230",
-        "language": "Java",
-        "repositoryDescription": "Fescar is an easy-to-use, high-performance, java based, open source distributed transaction solution."
-    },
-    {
-        "name": "hexyl",
-        "owner": {
-            "login": "sharkdp"
-        },
-        "full_name": "sharkdp/hexyl",
-        "forks_count": "61",
-        "stargazers_count": "3024",
-        "language": "Rust",
-        "repositoryDescription": "A command-line hex viewer"
-    },
-    {
-        "name": "mkcert",
-        "owner": {
-            "login": "FiloSottile"
-        },
-        "full_name": "FiloSottile/mkcert",
-        "forks_count": "552",
-        "stargazers_count": "15970",
-        "language": "Go",
-        "repositoryDescription": "A simple zero-config tool to make locally trusted development certificates with any names you'd like."
     },
     {
         "name": "CSS-Inspiration",
@@ -69,21 +37,20 @@
             "login": "chokcoco"
         },
         "full_name": "chokcoco/CSS-Inspiration",
-        "forks_count": "131",
-        "stargazers_count": "1654",
+        "forks_count": "143",
+        "stargazers_count": "1928",
         "language": "JavaScript",
         "repositoryDescription": "CSS Inspiration，在这里找到写 CSS 的灵感！"
     },
     {
-        "name": "flutter-go",
+        "name": "A-Programmers-Guide-to-English",
         "owner": {
-            "login": "alibaba"
+            "login": "yujiangshui"
         },
-        "full_name": "alibaba/flutter-go",
-        "forks_count": "121",
-        "stargazers_count": "1466",
-        "language": "Dart",
-        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 130+ 组件的中文文档与 demo 演示"
+        "full_name": "yujiangshui/A-Programmers-Guide-to-English",
+        "forks_count": "279",
+        "stargazers_count": "3334",
+        "repositoryDescription": "专为程序员编写的英语学习指南。v1.0"
     },
     {
         "name": "12306",
@@ -91,21 +58,21 @@
             "login": "testerSunshine"
         },
         "full_name": "testerSunshine/12306",
-        "forks_count": "1118",
-        "stargazers_count": "3704",
+        "forks_count": "1172",
+        "stargazers_count": "3864",
         "language": "Python",
         "repositoryDescription": "12306智能刷票，订票"
     },
     {
-        "name": "little-virtual-computer",
+        "name": "flutter-go",
         "owner": {
-            "login": "jsdf"
+            "login": "alibaba"
         },
-        "full_name": "jsdf/little-virtual-computer",
-        "forks_count": "8",
-        "stargazers_count": "326",
-        "language": "JavaScript",
-        "repositoryDescription": "Learn how computers work by simulating them in Javascript"
+        "full_name": "alibaba/flutter-go",
+        "forks_count": "132",
+        "stargazers_count": "1638",
+        "language": "Dart",
+        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 130+ 组件的中文文档与 demo 演示"
     },
     {
         "name": "awesome-mac",
@@ -113,10 +80,54 @@
             "login": "jaywcjlove"
         },
         "full_name": "jaywcjlove/awesome-mac",
-        "forks_count": "2865",
-        "stargazers_count": "23993",
+        "forks_count": "2875",
+        "stargazers_count": "24149",
         "language": "JavaScript",
         "repositoryDescription": " Now we have become very big, Different from the original idea. Collect premium software in various categories."
+    },
+    {
+        "name": "mkcert",
+        "owner": {
+            "login": "FiloSottile"
+        },
+        "full_name": "FiloSottile/mkcert",
+        "forks_count": "558",
+        "stargazers_count": "16127",
+        "language": "Go",
+        "repositoryDescription": "A simple zero-config tool to make locally trusted development certificates with any names you'd like."
+    },
+    {
+        "name": "little-virtual-computer",
+        "owner": {
+            "login": "jsdf"
+        },
+        "full_name": "jsdf/little-virtual-computer",
+        "forks_count": "12",
+        "stargazers_count": "472",
+        "language": "JavaScript",
+        "repositoryDescription": "Learn how computers work by simulating them in Javascript"
+    },
+    {
+        "name": "hexyl",
+        "owner": {
+            "login": "sharkdp"
+        },
+        "full_name": "sharkdp/hexyl",
+        "forks_count": "64",
+        "stargazers_count": "3178",
+        "language": "Rust",
+        "repositoryDescription": "A command-line hex viewer"
+    },
+    {
+        "name": "fescar",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/fescar",
+        "forks_count": "509",
+        "stargazers_count": "2349",
+        "language": "Java",
+        "repositoryDescription": "Fescar is an easy-to-use, high-performance, java based, open source distributed transaction solution."
     },
     {
         "name": "the-book-of-secret-knowledge",
@@ -124,9 +135,30 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "882",
-        "stargazers_count": "11079",
+        "forks_count": "891",
+        "stargazers_count": "11212",
         "repositoryDescription": "A collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more. Especially for System and Network Administrators, DevOps, Pentesters or Security Researchers."
+    },
+    {
+        "name": "sayit",
+        "owner": {
+            "login": "anvaka"
+        },
+        "full_name": "anvaka/sayit",
+        "forks_count": "13",
+        "stargazers_count": "287",
+        "language": "JavaScript",
+        "repositoryDescription": "Visualization of related subreddits"
+    },
+    {
+        "name": "GitHubDaily",
+        "owner": {
+            "login": "GitHubDaily"
+        },
+        "full_name": "GitHubDaily/GitHubDaily",
+        "forks_count": "67",
+        "stargazers_count": "867",
+        "repositoryDescription": "GitHubDaily 分享内容定期整理与分类。欢迎推荐、自荐项目，让更多人知道你的项目。"
     },
     {
         "name": "trilium",
@@ -134,87 +166,21 @@
             "login": "zadam"
         },
         "full_name": "zadam/trilium",
-        "forks_count": "120",
-        "stargazers_count": "3221",
+        "forks_count": "125",
+        "stargazers_count": "3352",
         "language": "JavaScript",
         "repositoryDescription": "Build your personal knowledge base with Trilium Notes"
     },
     {
-        "name": "transformer-xl",
+        "name": "Toshi",
         "owner": {
-            "login": "kimiyoung"
+            "login": "toshi-search"
         },
-        "full_name": "kimiyoung/transformer-xl",
-        "forks_count": "33",
-        "stargazers_count": "340",
-        "language": "Python",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "tf2_course",
-        "owner": {
-            "login": "ageron"
-        },
-        "full_name": "ageron/tf2_course",
-        "forks_count": "49",
-        "stargazers_count": "324",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Notebooks for my \"Deep Learning with TensorFlow 2 and Keras\" course"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "5834",
-        "stargazers_count": "20215",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "sourcekit-lsp",
-        "owner": {
-            "login": "apple"
-        },
-        "full_name": "apple/sourcekit-lsp",
-        "forks_count": "41",
-        "stargazers_count": "1217",
-        "language": "Swift",
-        "repositoryDescription": "Language Server Protocol implementation for Swift and C-based languages"
-    },
-    {
-        "name": "RxFFmpeg",
-        "owner": {
-            "login": "microshow"
-        },
-        "full_name": "microshow/RxFFmpeg",
-        "forks_count": "22",
-        "stargazers_count": "227",
-        "language": "Java",
-        "repositoryDescription": "RxFFmpeg 是基于 ( FFmpeg 4.0 + X264 + mp3lame + fdk-aac ) 编译的适用于 Android 平台的音视频编辑、视频剪辑的快速处理框架，包含以下功能（视频拼接，转码，压缩，裁剪，片头片尾，分离音视频，变速，添加静态贴纸和gif动态贴纸，添加字幕，添加滤镜，添加背景音乐，加速减速视频，倒放音视频，音频裁剪，变声，混音，图片合成视频，视频解码图片等主流特色功能"
-    },
-    {
-        "name": "workstation",
-        "owner": {
-            "login": "mikadosoftware"
-        },
-        "full_name": "mikadosoftware/workstation",
-        "forks_count": "15",
-        "stargazers_count": "332",
-        "language": "Emacs Lisp",
-        "repositoryDescription": "Docker based portable Workstation"
-    },
-    {
-        "name": "practicalAI",
-        "owner": {
-            "login": "GokuMohandas"
-        },
-        "full_name": "GokuMohandas/practicalAI",
-        "forks_count": "1947",
-        "stargazers_count": "13610",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "📚\nA practical approach to learning machine learning."
+        "full_name": "toshi-search/Toshi",
+        "forks_count": "14",
+        "stargazers_count": "487",
+        "language": "Rust",
+        "repositoryDescription": "A full-text search engine in rust"
     },
     {
         "name": "py_regular_expressions",
@@ -222,52 +188,85 @@
             "login": "learnbyexample"
         },
         "full_name": "learnbyexample/py_regular_expressions",
-        "forks_count": "20",
-        "stargazers_count": "114",
+        "forks_count": "32",
+        "stargazers_count": "222",
         "language": "Python",
         "repositoryDescription": "Learn Python Regular Expressions step by step from beginner to advanced levels"
     },
     {
-        "name": "static-site-boilerplate",
+        "name": "swift-sh",
         "owner": {
-            "login": "ericalli"
+            "login": "mxcl"
         },
-        "full_name": "ericalli/static-site-boilerplate",
-        "forks_count": "18",
-        "stargazers_count": "515",
+        "full_name": "mxcl/swift-sh",
+        "forks_count": "3",
+        "stargazers_count": "161",
+        "language": "Swift",
+        "repositoryDescription": "Swift scripting with easy, zero-conf dependency imports."
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "14345",
+        "stargazers_count": "46738",
+        "repositoryDescription": "📚\n面试必备基础知识"
+    },
+    {
+        "name": "practicalAI",
+        "owner": {
+            "login": "GokuMohandas"
+        },
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "1962",
+        "stargazers_count": "13713",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "📚\nA practical approach to learning machine learning."
+    },
+    {
+        "name": "react",
+        "owner": {
+            "login": "facebook"
+        },
+        "full_name": "facebook/react",
+        "forks_count": "21663",
+        "stargazers_count": "119661",
         "language": "JavaScript",
-        "repositoryDescription": "A better workflow for building modern static websites."
+        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "syncd",
         "owner": {
-            "login": "MisterBooo"
+            "login": "dreamans"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "1037",
-        "stargazers_count": "9793",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "full_name": "dreamans/syncd",
+        "forks_count": "5",
+        "stargazers_count": "93",
+        "language": "Go",
+        "repositoryDescription": "syncd是一款开源的代码部署工具，它具有简单、高效、易用等特点，可以提高团队的工作效率."
     },
     {
-        "name": "pkuseg-python",
+        "name": "mit-deep-learning",
         "owner": {
-            "login": "lancopku"
+            "login": "lexfridman"
         },
-        "full_name": "lancopku/pkuseg-python",
-        "forks_count": "302",
-        "stargazers_count": "2176",
-        "language": "Python",
-        "repositoryDescription": "python版本：领域细分的中文分词工具，简单易用，跟现有开源工具相比提高了分词的准确率。"
+        "full_name": "lexfridman/mit-deep-learning",
+        "forks_count": "393",
+        "stargazers_count": "2566",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Tutorials, assignments, and competitions for MIT Deep Learning related courses."
     },
     {
-        "name": "dad-jokes",
+        "name": "JavaGuide",
         "owner": {
-            "login": "wesbos"
+            "login": "Snailclimb"
         },
-        "full_name": "wesbos/dad-jokes",
-        "forks_count": "92",
-        "stargazers_count": "872",
-        "repositoryDescription": "dad jokes"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "5852",
+        "stargazers_count": "20287",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     }
 ]

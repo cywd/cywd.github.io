@@ -5,129 +5,10 @@
             "login": "alexkimxyz"
         },
         "full_name": "alexkimxyz/nsfw_data_scrapper",
-        "forks_count": "801",
-        "stargazers_count": "3064",
+        "forks_count": "976",
+        "stargazers_count": "3795",
         "language": "Shell",
         "repositoryDescription": "Collection of scripts to aggregate image data for the purposes of training an NSFW Image Classifier"
-    },
-    {
-        "name": "earth-reverse-engineering",
-        "owner": {
-            "login": "retroplasma"
-        },
-        "full_name": "retroplasma/earth-reverse-engineering",
-        "forks_count": "62",
-        "stargazers_count": "1147",
-        "language": "JavaScript",
-        "repositoryDescription": "WIP"
-    },
-    {
-        "name": "12306",
-        "owner": {
-            "login": "testerSunshine"
-        },
-        "full_name": "testerSunshine/12306",
-        "forks_count": "1478",
-        "stargazers_count": "4872",
-        "language": "Python",
-        "repositoryDescription": "12306智能刷票，订票"
-    },
-    {
-        "name": "nodebestpractices",
-        "owner": {
-            "login": "i0natan"
-        },
-        "full_name": "i0natan/nodebestpractices",
-        "forks_count": "1671",
-        "stargazers_count": "23238",
-        "language": "JavaScript",
-        "repositoryDescription": "The largest Node.js best practices list (January 2019)"
-    },
-    {
-        "name": "chezmoi",
-        "owner": {
-            "login": "twpayne"
-        },
-        "full_name": "twpayne/chezmoi",
-        "forks_count": "13",
-        "stargazers_count": "808",
-        "language": "Go",
-        "repositoryDescription": "Manage your dotfiles securely across multiple machines."
-    },
-    {
-        "name": "anime",
-        "owner": {
-            "login": "juliangarnier"
-        },
-        "full_name": "juliangarnier/anime",
-        "forks_count": "1985",
-        "stargazers_count": "27371",
-        "language": "JavaScript",
-        "repositoryDescription": "JavaScript animation engine"
-    },
-    {
-        "name": "A-Programmers-Guide-to-English",
-        "owner": {
-            "login": "yujiangshui"
-        },
-        "full_name": "yujiangshui/A-Programmers-Guide-to-English",
-        "forks_count": "361",
-        "stargazers_count": "4108",
-        "repositoryDescription": "专为程序员编写的英语学习指南。v1.0"
-    },
-    {
-        "name": "alasql",
-        "owner": {
-            "login": "agershun"
-        },
-        "full_name": "agershun/alasql",
-        "forks_count": "375",
-        "stargazers_count": "3452",
-        "language": "JavaScript",
-        "repositoryDescription": "AlaSQL.js - JavaScript SQL database for browser and Node.js. Handles both traditional relational tables and nested JSON data (NoSQL). Export, store, and import data from localStorage, IndexedDB, or Excel."
-    },
-    {
-        "name": "mit-deep-learning",
-        "owner": {
-            "login": "lexfridman"
-        },
-        "full_name": "lexfridman/mit-deep-learning",
-        "forks_count": "510",
-        "stargazers_count": "2962",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Tutorials, assignments, and competitions for MIT Deep Learning related courses."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "6018",
-        "stargazers_count": "20801",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "flutter-go",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/flutter-go",
-        "forks_count": "184",
-        "stargazers_count": "2400",
-        "language": "Dart",
-        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10566",
-        "stargazers_count": "67689",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
         "name": "py12306",
@@ -135,109 +16,85 @@
             "login": "pjialin"
         },
         "full_name": "pjialin/py12306",
-        "forks_count": "271",
-        "stargazers_count": "1089",
+        "forks_count": "371",
+        "stargazers_count": "1610",
         "language": "Python",
         "repositoryDescription": "🚂\n12306 购票助手，支持分布式，多账号，多任务购票以及 Web 页面管理"
     },
     {
-        "name": "project_alias",
+        "name": "nuclear",
         "owner": {
-            "login": "bjoernkarmann"
+            "login": "nukeop"
         },
-        "full_name": "bjoernkarmann/project_alias",
-        "forks_count": "7",
-        "stargazers_count": "364",
-        "language": "Python",
-        "repositoryDescription": "Alias is a teachable “parasite” that is designed to give users more control over their smart assistants, both when it comes to customisation and privacy. Through a simple app the user can train Alias to react on a custom wake-word/sound, and once trained, Alias can take control over your home assistant by activating it for you."
-    },
-    {
-        "name": "fff",
-        "owner": {
-            "login": "dylanaraps"
-        },
-        "full_name": "dylanaraps/fff",
-        "forks_count": "56",
-        "stargazers_count": "1820",
-        "language": "Shell",
-        "repositoryDescription": "🚀\nfucking fast file-manager (written in bash)"
-    },
-    {
-        "name": "Bagel",
-        "owner": {
-            "login": "yagiz"
-        },
-        "full_name": "yagiz/Bagel",
-        "forks_count": "21",
-        "stargazers_count": "407",
-        "language": "Swift",
-        "repositoryDescription": "a little native network debugging tool for iOS"
-    },
-    {
-        "name": "mall",
-        "owner": {
-            "login": "macrozheng"
-        },
-        "full_name": "macrozheng/mall",
-        "forks_count": "1460",
-        "stargazers_count": "4559",
-        "language": "Java",
-        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
-    },
-    {
-        "name": "awesome-python-applications",
-        "owner": {
-            "login": "mahmoud"
-        },
-        "full_name": "mahmoud/awesome-python-applications",
-        "forks_count": "845",
-        "stargazers_count": "5619",
-        "language": "Python",
-        "repositoryDescription": "💿\nFree software that works great, and also happens to be open-source Python."
-    },
-    {
-        "name": "CSS-Inspiration",
-        "owner": {
-            "login": "chokcoco"
-        },
-        "full_name": "chokcoco/CSS-Inspiration",
-        "forks_count": "192",
-        "stargazers_count": "2585",
+        "full_name": "nukeop/nuclear",
+        "forks_count": "81",
+        "stargazers_count": "1212",
         "language": "JavaScript",
-        "repositoryDescription": "CSS Inspiration，在这里找到写 CSS 的灵感！"
+        "repositoryDescription": "Popcorn Time for music"
     },
     {
-        "name": "33-js-concepts",
+        "name": "shiny",
         "owner": {
-            "login": "leonardomso"
+            "login": "rikschennink"
         },
-        "full_name": "leonardomso/33-js-concepts",
-        "forks_count": "2164",
-        "stargazers_count": "24493",
+        "full_name": "rikschennink/shiny",
+        "forks_count": "9",
+        "stargazers_count": "564",
         "language": "JavaScript",
-        "repositoryDescription": "📜\n33 concepts every JavaScript developer should know."
+        "repositoryDescription": "🌟\nShiny reflections for mobile websites"
     },
     {
-        "name": "advanced-java",
+        "name": "12306",
         "owner": {
-            "login": "doocs"
+            "login": "testerSunshine"
         },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "1050",
-        "stargazers_count": "5841",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+        "full_name": "testerSunshine/12306",
+        "forks_count": "1580",
+        "stargazers_count": "5246",
+        "language": "Python",
+        "repositoryDescription": "12306智能刷票，订票"
     },
     {
-        "name": "Toshi",
+        "name": "A-Programmers-Guide-to-English",
         "owner": {
-            "login": "toshi-search"
+            "login": "yujiangshui"
         },
-        "full_name": "toshi-search/Toshi",
-        "forks_count": "34",
-        "stargazers_count": "1492",
-        "language": "Rust",
-        "repositoryDescription": "A full-text search engine in rust"
+        "full_name": "yujiangshui/A-Programmers-Guide-to-English",
+        "forks_count": "409",
+        "stargazers_count": "4508",
+        "repositoryDescription": "专为程序员编写的英语学习指南 v1.1"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "10625",
+        "stargazers_count": "68049",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+    },
+    {
+        "name": "nodebestpractices",
+        "owner": {
+            "login": "i0natan"
+        },
+        "full_name": "i0natan/nodebestpractices",
+        "forks_count": "1707",
+        "stargazers_count": "23542",
+        "language": "JavaScript",
+        "repositoryDescription": "The largest Node.js best practices list (January 2019)"
+    },
+    {
+        "name": "anime",
+        "owner": {
+            "login": "juliangarnier"
+        },
+        "full_name": "juliangarnier/anime",
+        "forks_count": "1999",
+        "stargazers_count": "27676",
+        "language": "JavaScript",
+        "repositoryDescription": "JavaScript animation engine"
     },
     {
         "name": "deep-learning-ocean",
@@ -245,8 +102,8 @@
             "login": "osforscience"
         },
         "full_name": "osforscience/deep-learning-ocean",
-        "forks_count": "55",
-        "stargazers_count": "452",
+        "forks_count": "73",
+        "stargazers_count": "752",
         "language": "Python",
         "repositoryDescription": "📡\nAll You Need to Know About Deep Learning - A kick-starter"
     },
@@ -256,20 +113,163 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "1101",
-        "stargazers_count": "10244",
+        "forks_count": "1131",
+        "stargazers_count": "10499",
         "language": "C++",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "awesome-mac",
+        "name": "act",
         "owner": {
-            "login": "jaywcjlove"
+            "login": "nektos"
         },
-        "full_name": "jaywcjlove/awesome-mac",
-        "forks_count": "2933",
-        "stargazers_count": "24636",
+        "full_name": "nektos/act",
+        "forks_count": "8",
+        "stargazers_count": "317",
+        "language": "Go",
+        "repositoryDescription": "Run your GitHub Actions locally"
+    },
+    {
+        "name": "earth-reverse-engineering",
+        "owner": {
+            "login": "retroplasma"
+        },
+        "full_name": "retroplasma/earth-reverse-engineering",
+        "forks_count": "81",
+        "stargazers_count": "1399",
         "language": "JavaScript",
-        "repositoryDescription": " Now we have become very big, Different from the original idea. Collect premium software in various categories."
+        "repositoryDescription": "WIP"
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "1087",
+        "stargazers_count": "6090",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+    },
+    {
+        "name": "project_alias",
+        "owner": {
+            "login": "bjoernkarmann"
+        },
+        "full_name": "bjoernkarmann/project_alias",
+        "forks_count": "18",
+        "stargazers_count": "607",
+        "language": "Python",
+        "repositoryDescription": "Alias is a teachable “parasite” that is designed to give users more control over their smart assistants, both when it comes to customisation and privacy. Through a simple app the user can train Alias to react on a custom wake-word/sound, and once trained, Alias can take control over your home assistant by activating it for you."
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "6073",
+        "stargazers_count": "21003",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "mit-deep-learning",
+        "owner": {
+            "login": "lexfridman"
+        },
+        "full_name": "lexfridman/mit-deep-learning",
+        "forks_count": "557",
+        "stargazers_count": "3171",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Tutorials, assignments, and competitions for MIT Deep Learning related courses."
+    },
+    {
+        "name": "BitVision",
+        "owner": {
+            "login": "shobrook"
+        },
+        "full_name": "shobrook/BitVision",
+        "forks_count": "20",
+        "stargazers_count": "279",
+        "language": "JavaScript",
+        "repositoryDescription": "Bitcoin forecasting, trading, and charting software that works entirely in the terminal"
+    },
+    {
+        "name": "flutter-go",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/flutter-go",
+        "forks_count": "202",
+        "stargazers_count": "2614",
+        "language": "Dart",
+        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
+    },
+    {
+        "name": "CSS-Inspiration",
+        "owner": {
+            "login": "chokcoco"
+        },
+        "full_name": "chokcoco/CSS-Inspiration",
+        "forks_count": "202",
+        "stargazers_count": "2778",
+        "language": "JavaScript",
+        "repositoryDescription": "CSS Inspiration，在这里找到写 CSS 的灵感！"
+    },
+    {
+        "name": "chezmoi",
+        "owner": {
+            "login": "twpayne"
+        },
+        "full_name": "twpayne/chezmoi",
+        "forks_count": "16",
+        "stargazers_count": "994",
+        "language": "Go",
+        "repositoryDescription": "Manage your dotfiles securely across multiple machines."
+    },
+    {
+        "name": "alasql",
+        "owner": {
+            "login": "agershun"
+        },
+        "full_name": "agershun/alasql",
+        "forks_count": "386",
+        "stargazers_count": "3631",
+        "language": "JavaScript",
+        "repositoryDescription": "AlaSQL.js - JavaScript SQL database for browser and Node.js. Handles both traditional relational tables and nested JSON data (NoSQL). Export, store, and import data from localStorage, IndexedDB, or Excel."
+    },
+    {
+        "name": "practicalAI",
+        "owner": {
+            "login": "GokuMohandas"
+        },
+        "full_name": "GokuMohandas/practicalAI",
+        "forks_count": "2037",
+        "stargazers_count": "14123",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "📚\nA practical approach to learning machine learning."
+    },
+    {
+        "name": "openedge",
+        "owner": {
+            "login": "baidu"
+        },
+        "full_name": "baidu/openedge",
+        "forks_count": "91",
+        "stargazers_count": "594",
+        "language": "Go",
+        "repositoryDescription": "Extend cloud computing, data and service seamlessly to edge devices."
+    },
+    {
+        "name": "deno",
+        "owner": {
+            "login": "denoland"
+        },
+        "full_name": "denoland/deno",
+        "forks_count": "1411",
+        "stargazers_count": "29582",
+        "language": "TypeScript",
+        "repositoryDescription": "A secure JavaScript / TypeScript runtime on V8"
     }
 ]

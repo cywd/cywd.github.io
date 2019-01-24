@@ -6,4 +6,6 @@ cywd.github.io
 
 ## new post
 ## 新建文章
+```
 rake post title=""
+```

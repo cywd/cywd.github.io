@@ -1,14 +1,14 @@
 [
     {
-        "name": "websocketd",
+        "name": "tinykaboom",
         "owner": {
-            "login": "joewalnes"
+            "login": "ssloy"
         },
-        "full_name": "joewalnes/websocketd",
-        "forks_count": "665",
-        "stargazers_count": "11652",
-        "language": "Go",
-        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
+        "full_name": "ssloy/tinykaboom",
+        "forks_count": "20",
+        "stargazers_count": "811",
+        "language": "C++",
+        "repositoryDescription": "A brief computer graphics / rendering course"
     },
     {
         "name": "the-practical-linux-hardening-guide",
@@ -16,19 +16,42 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-practical-linux-hardening-guide",
-        "forks_count": "186",
-        "stargazers_count": "4547",
+        "forks_count": "199",
+        "stargazers_count": "5006",
         "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
     },
     {
-        "name": "open-source-cs",
+        "name": "ink",
         "owner": {
-            "login": "ForrestKnight"
+            "login": "vadimdemedes"
         },
-        "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "318",
-        "stargazers_count": "2607",
-        "repositoryDescription": "Video discussing this curriculum:"
+        "full_name": "vadimdemedes/ink",
+        "forks_count": "158",
+        "stargazers_count": "7219",
+        "language": "JavaScript",
+        "repositoryDescription": "🌈\nReact for interactive command-line apps"
+    },
+    {
+        "name": "websocketd",
+        "owner": {
+            "login": "joewalnes"
+        },
+        "full_name": "joewalnes/websocketd",
+        "forks_count": "670",
+        "stargazers_count": "12056",
+        "language": "Go",
+        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
+    },
+    {
+        "name": "flink",
+        "owner": {
+            "login": "apache"
+        },
+        "full_name": "apache/flink",
+        "forks_count": "3680",
+        "stargazers_count": "6460",
+        "language": "Java",
+        "repositoryDescription": "Apache Flink"
     },
     {
         "name": "professional-programming",
@@ -36,160 +59,31 @@
             "login": "charlax"
         },
         "full_name": "charlax/professional-programming",
-        "forks_count": "691",
-        "stargazers_count": "8740",
+        "forks_count": "722",
+        "stargazers_count": "9088",
         "language": "Shell",
         "repositoryDescription": "A collection of full-stack resources for programmers."
     },
     {
-        "name": "swerv_eh1",
+        "name": "open-source-cs",
         "owner": {
-            "login": "westerndigitalcorporation"
+            "login": "ForrestKnight"
         },
-        "full_name": "westerndigitalcorporation/swerv_eh1",
-        "forks_count": "26",
-        "stargazers_count": "303",
-        "language": "SystemVerilog",
-        "repositoryDescription": "A directory of Western Digital’s RISC-V SweRV Cores"
+        "full_name": "ForrestKnight/open-source-cs",
+        "forks_count": "345",
+        "stargazers_count": "2856",
+        "repositoryDescription": "Video discussing this curriculum:"
     },
     {
-        "name": "developer-roadmap",
+        "name": "programmer-job-blacklist",
         "owner": {
-            "login": "kamranahmedse"
+            "login": "shengxinjing"
         },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10946",
-        "stargazers_count": "70371",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
-    },
-    {
-        "name": "awesome-mobile-web-development",
-        "owner": {
-            "login": "myshov"
-        },
-        "full_name": "myshov/awesome-mobile-web-development",
-        "forks_count": "11",
-        "stargazers_count": "325",
-        "repositoryDescription": "All that you need to create a great mobile web experience"
-    },
-    {
-        "name": "facil.io",
-        "owner": {
-            "login": "boazsegev"
-        },
-        "full_name": "boazsegev/facil.io",
-        "forks_count": "40",
-        "stargazers_count": "766",
-        "language": "C",
-        "repositoryDescription": "Your high performance web application C framework"
-    },
-    {
-        "name": "hotkey",
-        "owner": {
-            "login": "github"
-        },
-        "full_name": "github/hotkey",
-        "forks_count": "11",
-        "stargazers_count": "557",
-        "language": "JavaScript",
-        "repositoryDescription": "Global DOM element activation"
-    },
-    {
-        "name": "ml-feynman-experience",
-        "owner": {
-            "login": "leandromineti"
-        },
-        "full_name": "leandromineti/ml-feynman-experience",
-        "forks_count": "8",
-        "stargazers_count": "150",
-        "repositoryDescription": "A collection of statistical models implemented with Python on Google Colab"
-    },
-    {
-        "name": "Apollo-11",
-        "owner": {
-            "login": "chrislgarry"
-        },
-        "full_name": "chrislgarry/Apollo-11",
-        "forks_count": "3686",
-        "stargazers_count": "28881",
-        "language": "Assembly",
-        "repositoryDescription": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules."
-    },
-    {
-        "name": "revery",
-        "owner": {
-            "login": "revery-ui"
-        },
-        "full_name": "revery-ui/revery",
-        "forks_count": "65",
-        "stargazers_count": "2673",
-        "language": "OCaml",
-        "repositoryDescription": "⚡️\nNative, high-performance, cross-platform desktop apps - built with Reason!"
-    },
-    {
-        "name": "cloudquery",
-        "owner": {
-            "login": "cloudfetch"
-        },
-        "full_name": "cloudfetch/cloudquery",
-        "forks_count": "63",
-        "stargazers_count": "1362",
-        "language": "JavaScript",
-        "repositoryDescription": "Turn any website to serverless API (support SPA!)"
-    },
-    {
-        "name": "HyperDL-Tutorial",
-        "owner": {
-            "login": "zeusees"
-        },
-        "full_name": "zeusees/HyperDL-Tutorial",
-        "forks_count": "85",
-        "stargazers_count": "362",
-        "repositoryDescription": "深度学习教程整理 | 干货"
-    },
-    {
-        "name": "react-fiber-implement",
-        "owner": {
-            "login": "tranbathanhtung"
-        },
-        "full_name": "tranbathanhtung/react-fiber-implement",
-        "forks_count": "5",
-        "stargazers_count": "215",
-        "language": "JavaScript",
-        "repositoryDescription": "re-implement react fiber"
-    },
-    {
-        "name": "fx",
-        "owner": {
-            "login": "antonmedv"
-        },
-        "full_name": "antonmedv/fx",
-        "forks_count": "157",
-        "stargazers_count": "5955",
-        "language": "JavaScript",
-        "repositoryDescription": "Command-line tool and terminal JSON viewer\n🔥"
-    },
-    {
-        "name": "CopyTranslator",
-        "owner": {
-            "login": "elliottzheng"
-        },
-        "full_name": "elliottzheng/CopyTranslator",
-        "forks_count": "207",
-        "stargazers_count": "1909",
-        "language": "Python",
-        "repositoryDescription": "Foreign language reading and translation assistant based on copy and translate.(Latest: v0.0.7-Kylin-RC1)"
-    },
-    {
-        "name": "tinyraytracer",
-        "owner": {
-            "login": "ssloy"
-        },
-        "full_name": "ssloy/tinyraytracer",
-        "forks_count": "70",
-        "stargazers_count": "2003",
-        "language": "C++",
-        "repositoryDescription": "A brief computer graphics / rendering course"
+        "full_name": "shengxinjing/programmer-job-blacklist",
+        "forks_count": "752",
+        "stargazers_count": "10543",
+        "language": "Shell",
+        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊"
     },
     {
         "name": "funNLP",
@@ -197,52 +91,53 @@
             "login": "fighting41love"
         },
         "full_name": "fighting41love/funNLP",
-        "forks_count": "908",
-        "stargazers_count": "4340",
+        "forks_count": "951",
+        "stargazers_count": "4628",
         "language": "Python",
         "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、各种中文词向量、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料、中文谣言数据、百度中文问答数据集、句子相似度匹配算法集合、bert资源、文本生成&摘要相关工具、cocoNLP信息抽取工具、国内电话号码正则匹配、清华大学XLORE:中英文跨语言百科知识图谱、清华大学人工智能技术…"
     },
     {
-        "name": "CS-Notes",
+        "name": "FEBS-Vue",
         "owner": {
-            "login": "CyC2018"
+            "login": "wuyouzhuguli"
         },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "14854",
-        "stargazers_count": "48193",
-        "repositoryDescription": "📚\n技术面试必备基础知识"
+        "full_name": "wuyouzhuguli/FEBS-Vue",
+        "forks_count": "51",
+        "stargazers_count": "271",
+        "language": "Vue",
+        "repositoryDescription": "SpringBoot，Shiro，JWT，Vue & Ant Design 前后端分离权限管理系统，预览地址（小油管，初次加载较慢）："
     },
     {
-        "name": "flutter",
+        "name": "developer-roadmap",
         "owner": {
-            "login": "flutter"
+            "login": "kamranahmedse"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "5397",
-        "stargazers_count": "51683",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "10967",
+        "stargazers_count": "70526",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
-        "name": "Path-Creator",
+        "name": "hotkey",
         "owner": {
-            "login": "SebLague"
+            "login": "github"
         },
-        "full_name": "SebLague/Path-Creator",
-        "forks_count": "32",
-        "stargazers_count": "180",
-        "language": "C#",
-        "repositoryDescription": "Path creation asset for Unity game development"
+        "full_name": "github/hotkey",
+        "forks_count": "15",
+        "stargazers_count": "752",
+        "language": "JavaScript",
+        "repositoryDescription": "Global DOM element activation"
     },
     {
-        "name": "deep-learning-drizzle",
+        "name": "Apollo-11",
         "owner": {
-            "login": "kmario23"
+            "login": "chrislgarry"
         },
-        "full_name": "kmario23/deep-learning-drizzle",
-        "forks_count": "22",
-        "stargazers_count": "202",
-        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
+        "full_name": "chrislgarry/Apollo-11",
+        "forks_count": "3692",
+        "stargazers_count": "28986",
+        "language": "Assembly",
+        "repositoryDescription": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules."
     },
     {
         "name": "Dress",
@@ -250,20 +145,128 @@
             "login": "komeiji-satori"
         },
         "full_name": "komeiji-satori/Dress",
-        "forks_count": "687",
-        "stargazers_count": "5467",
+        "forks_count": "721",
+        "stargazers_count": "5673",
         "language": "Ruby",
         "repositoryDescription": "好耶 是女装"
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "awesome-mobile-web-development",
         "owner": {
-            "login": "MisterBooo"
+            "login": "myshov"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "1310",
-        "stargazers_count": "11831",
+        "full_name": "myshov/awesome-mobile-web-development",
+        "forks_count": "15",
+        "stargazers_count": "500",
+        "repositoryDescription": "All that you need to create a great mobile web experience"
+    },
+    {
+        "name": "polarphp",
+        "owner": {
+            "login": "polarphp"
+        },
+        "full_name": "polarphp/polarphp",
+        "forks_count": "30",
+        "stargazers_count": "439",
         "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "repositoryDescription": "a runtime container of PHP programming language"
+    },
+    {
+        "name": "mintable",
+        "owner": {
+            "login": "kevinschaich"
+        },
+        "full_name": "kevinschaich/mintable",
+        "forks_count": "6",
+        "stargazers_count": "231",
+        "language": "JavaScript",
+        "repositoryDescription": "Roll-your own Mint clone for managing personal finances using the Google Sheets and Plaid APIs."
+    },
+    {
+        "name": "fx",
+        "owner": {
+            "login": "antonmedv"
+        },
+        "full_name": "antonmedv/fx",
+        "forks_count": "164",
+        "stargazers_count": "6111",
+        "language": "JavaScript",
+        "repositoryDescription": "Command-line tool and terminal JSON viewer\n🔥"
+    },
+    {
+        "name": "tinyraytracer",
+        "owner": {
+            "login": "ssloy"
+        },
+        "full_name": "ssloy/tinyraytracer",
+        "forks_count": "75",
+        "stargazers_count": "2124",
+        "language": "C++",
+        "repositoryDescription": "A brief computer graphics / rendering course"
+    },
+    {
+        "name": "HyperDL-Tutorial",
+        "owner": {
+            "login": "zeusees"
+        },
+        "full_name": "zeusees/HyperDL-Tutorial",
+        "forks_count": "122",
+        "stargazers_count": "513",
+        "repositoryDescription": "深度学习教程整理 | 干货"
+    },
+    {
+        "name": "revery",
+        "owner": {
+            "login": "revery-ui"
+        },
+        "full_name": "revery-ui/revery",
+        "forks_count": "70",
+        "stargazers_count": "2840",
+        "language": "OCaml",
+        "repositoryDescription": "⚡️\nNative, high-performance, cross-platform desktop apps - built with Reason!"
+    },
+    {
+        "name": "x-spreadsheet",
+        "owner": {
+            "login": "myliang"
+        },
+        "full_name": "myliang/x-spreadsheet",
+        "forks_count": "10",
+        "stargazers_count": "281",
+        "language": "JavaScript",
+        "repositoryDescription": "a javascript spreadsheet for web"
+    },
+    {
+        "name": "flutter-go",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/flutter-go",
+        "forks_count": "390",
+        "stargazers_count": "4470",
+        "language": "Dart",
+        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
+    },
+    {
+        "name": "ios-developer-tools",
+        "owner": {
+            "login": "LeoMobileDeveloper"
+        },
+        "full_name": "LeoMobileDeveloper/ios-developer-tools",
+        "forks_count": "26",
+        "stargazers_count": "257",
+        "language": "Swift",
+        "repositoryDescription": "A collection of tools that an iOS developer should know."
+    },
+    {
+        "name": "facil.io",
+        "owner": {
+            "login": "boazsegev"
+        },
+        "full_name": "boazsegev/facil.io",
+        "forks_count": "45",
+        "stargazers_count": "880",
+        "language": "C",
+        "repositoryDescription": "Your high performance web application C framework"
     }
 ]

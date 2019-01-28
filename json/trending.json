@@ -1,25 +1,24 @@
 [
     {
-        "name": "professional-programming",
+        "name": "websocketd",
         "owner": {
-            "login": "charlax"
+            "login": "joewalnes"
         },
-        "full_name": "charlax/professional-programming",
-        "forks_count": "419",
-        "stargazers_count": "5879",
-        "language": "Shell",
-        "repositoryDescription": "A collection of full-stack resources for programmers."
+        "full_name": "joewalnes/websocketd",
+        "forks_count": "665",
+        "stargazers_count": "11652",
+        "language": "Go",
+        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
     },
     {
-        "name": "vscode-browser-preview",
+        "name": "the-practical-linux-hardening-guide",
         "owner": {
-            "login": "auchenberg"
+            "login": "trimstray"
         },
-        "full_name": "auchenberg/vscode-browser-preview",
-        "forks_count": "18",
-        "stargazers_count": "888",
-        "language": "TypeScript",
-        "repositoryDescription": "A real browser preview inside your editor that you can debug."
+        "full_name": "trimstray/the-practical-linux-hardening-guide",
+        "forks_count": "186",
+        "stargazers_count": "4547",
+        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
     },
     {
         "name": "open-source-cs",
@@ -27,74 +26,31 @@
             "login": "ForrestKnight"
         },
         "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "175",
-        "stargazers_count": "1359",
-        "repositoryDescription": ""
+        "forks_count": "318",
+        "stargazers_count": "2607",
+        "repositoryDescription": "Video discussing this curriculum:"
     },
     {
-        "name": "tinyraytracer",
+        "name": "professional-programming",
         "owner": {
-            "login": "ssloy"
+            "login": "charlax"
         },
-        "full_name": "ssloy/tinyraytracer",
-        "forks_count": "51",
-        "stargazers_count": "1449",
-        "language": "C++",
-        "repositoryDescription": "A brief computer graphics / rendering course"
-    },
-    {
-        "name": "Dress",
-        "owner": {
-            "login": "komeiji-satori"
-        },
-        "full_name": "komeiji-satori/Dress",
-        "forks_count": "480",
-        "stargazers_count": "3870",
-        "language": "Ruby",
-        "repositoryDescription": "好耶 是女装"
-    },
-    {
-        "name": "kubernetes-failure-stories",
-        "owner": {
-            "login": "hjacobs"
-        },
-        "full_name": "hjacobs/kubernetes-failure-stories",
-        "forks_count": "29",
-        "stargazers_count": "1106",
-        "repositoryDescription": "Compilation of public failure/horror stories related to Kubernetes"
-    },
-    {
-        "name": "deep-learning-ocean",
-        "owner": {
-            "login": "osforscience"
-        },
-        "full_name": "osforscience/deep-learning-ocean",
-        "forks_count": "286",
-        "stargazers_count": "2192",
-        "language": "Python",
-        "repositoryDescription": "📡\nAll You Need to Know About Deep Learning - A kick-starter"
-    },
-    {
-        "name": "nsfw_data_scrapper",
-        "owner": {
-            "login": "alexkimxyz"
-        },
-        "full_name": "alexkimxyz/nsfw_data_scrapper",
-        "forks_count": "1516",
-        "stargazers_count": "5613",
+        "full_name": "charlax/professional-programming",
+        "forks_count": "691",
+        "stargazers_count": "8740",
         "language": "Shell",
-        "repositoryDescription": "Collection of scripts to aggregate image data for the purposes of training an NSFW Image Classifier"
+        "repositoryDescription": "A collection of full-stack resources for programmers."
     },
     {
-        "name": "Aiolos",
+        "name": "swerv_eh1",
         "owner": {
-            "login": "IdeasOnCanvas"
+            "login": "westerndigitalcorporation"
         },
-        "full_name": "IdeasOnCanvas/Aiolos",
-        "forks_count": "18",
-        "stargazers_count": "488",
-        "language": "Swift",
-        "repositoryDescription": "A floating panel for your iOS Apps"
+        "full_name": "westerndigitalcorporation/swerv_eh1",
+        "forks_count": "26",
+        "stargazers_count": "303",
+        "language": "SystemVerilog",
+        "repositoryDescription": "A directory of Western Digital’s RISC-V SweRV Cores"
     },
     {
         "name": "developer-roadmap",
@@ -102,97 +58,105 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10832",
-        "stargazers_count": "69532",
+        "forks_count": "10946",
+        "stargazers_count": "70371",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
-        "name": "Musish",
+        "name": "awesome-mobile-web-development",
         "owner": {
-            "login": "Musish"
+            "login": "myshov"
         },
-        "full_name": "Musish/Musish",
-        "forks_count": "52",
-        "stargazers_count": "1068",
-        "language": "JavaScript",
-        "repositoryDescription": "Apple Music...ish"
+        "full_name": "myshov/awesome-mobile-web-development",
+        "forks_count": "11",
+        "stargazers_count": "325",
+        "repositoryDescription": "All that you need to create a great mobile web experience"
     },
     {
-        "name": "funNLP",
+        "name": "facil.io",
         "owner": {
-            "login": "fighting41love"
+            "login": "boazsegev"
         },
-        "full_name": "fighting41love/funNLP",
-        "forks_count": "777",
-        "stargazers_count": "3451",
-        "language": "Python",
-        "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、各种中文词向量、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料、中文谣言数据、百度中文问答数据集、句子相似度匹配算法集合、bert资源、文本生成&摘要相关工具、cocoNLP信息抽取工具"
-    },
-    {
-        "name": "quinn",
-        "owner": {
-            "login": "djc"
-        },
-        "full_name": "djc/quinn",
-        "forks_count": "32",
-        "stargazers_count": "544",
-        "language": "Rust",
-        "repositoryDescription": "Futures-based QUIC implementation in Rust"
-    },
-    {
-        "name": "typescript-eslint",
-        "owner": {
-            "login": "typescript-eslint"
-        },
-        "full_name": "typescript-eslint/typescript-eslint",
-        "forks_count": "19",
-        "stargazers_count": "1288",
-        "language": "JavaScript",
-        "repositoryDescription": "✨\nMonorepo for all the tooling which enables ESLint to support TypeScript"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "1266",
-        "stargazers_count": "6858",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "shiny",
-        "owner": {
-            "login": "rikschennink"
-        },
-        "full_name": "rikschennink/shiny",
-        "forks_count": "57",
-        "stargazers_count": "2425",
-        "language": "JavaScript",
-        "repositoryDescription": "🌟\nShiny reflections for mobile websites"
-    },
-    {
-        "name": "Awesome-Game-Networking",
-        "owner": {
-            "login": "MFatihMAR"
-        },
-        "full_name": "MFatihMAR/Awesome-Game-Networking",
+        "full_name": "boazsegev/facil.io",
         "forks_count": "40",
-        "stargazers_count": "792",
-        "language": "C++",
-        "repositoryDescription": "A Curated List of Game Network Programming Resources"
+        "stargazers_count": "766",
+        "language": "C",
+        "repositoryDescription": "Your high performance web application C framework"
     },
     {
-        "name": "Bagel",
+        "name": "hotkey",
         "owner": {
-            "login": "yagiz"
+            "login": "github"
         },
-        "full_name": "yagiz/Bagel",
-        "forks_count": "59",
-        "stargazers_count": "1530",
-        "language": "Swift",
-        "repositoryDescription": "a little native network debugging tool for iOS"
+        "full_name": "github/hotkey",
+        "forks_count": "11",
+        "stargazers_count": "557",
+        "language": "JavaScript",
+        "repositoryDescription": "Global DOM element activation"
+    },
+    {
+        "name": "ml-feynman-experience",
+        "owner": {
+            "login": "leandromineti"
+        },
+        "full_name": "leandromineti/ml-feynman-experience",
+        "forks_count": "8",
+        "stargazers_count": "150",
+        "repositoryDescription": "A collection of statistical models implemented with Python on Google Colab"
+    },
+    {
+        "name": "Apollo-11",
+        "owner": {
+            "login": "chrislgarry"
+        },
+        "full_name": "chrislgarry/Apollo-11",
+        "forks_count": "3686",
+        "stargazers_count": "28881",
+        "language": "Assembly",
+        "repositoryDescription": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules."
+    },
+    {
+        "name": "revery",
+        "owner": {
+            "login": "revery-ui"
+        },
+        "full_name": "revery-ui/revery",
+        "forks_count": "65",
+        "stargazers_count": "2673",
+        "language": "OCaml",
+        "repositoryDescription": "⚡️\nNative, high-performance, cross-platform desktop apps - built with Reason!"
+    },
+    {
+        "name": "cloudquery",
+        "owner": {
+            "login": "cloudfetch"
+        },
+        "full_name": "cloudfetch/cloudquery",
+        "forks_count": "63",
+        "stargazers_count": "1362",
+        "language": "JavaScript",
+        "repositoryDescription": "Turn any website to serverless API (support SPA!)"
+    },
+    {
+        "name": "HyperDL-Tutorial",
+        "owner": {
+            "login": "zeusees"
+        },
+        "full_name": "zeusees/HyperDL-Tutorial",
+        "forks_count": "85",
+        "stargazers_count": "362",
+        "repositoryDescription": "深度学习教程整理 | 干货"
+    },
+    {
+        "name": "react-fiber-implement",
+        "owner": {
+            "login": "tranbathanhtung"
+        },
+        "full_name": "tranbathanhtung/react-fiber-implement",
+        "forks_count": "5",
+        "stargazers_count": "215",
+        "language": "JavaScript",
+        "repositoryDescription": "re-implement react fiber"
     },
     {
         "name": "fx",
@@ -200,43 +164,53 @@
             "login": "antonmedv"
         },
         "full_name": "antonmedv/fx",
-        "forks_count": "135",
-        "stargazers_count": "5475",
+        "forks_count": "157",
+        "stargazers_count": "5955",
         "language": "JavaScript",
         "repositoryDescription": "Command-line tool and terminal JSON viewer\n🔥"
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "CopyTranslator",
         "owner": {
-            "login": "MisterBooo"
+            "login": "elliottzheng"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "1231",
-        "stargazers_count": "11315",
-        "language": "C++",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "react-spring",
-        "owner": {
-            "login": "react-spring"
-        },
-        "full_name": "react-spring/react-spring",
-        "forks_count": "425",
-        "stargazers_count": "9744",
-        "language": "JavaScript",
-        "repositoryDescription": "✌️\nA spring physics based React animation library"
-    },
-    {
-        "name": "py12306",
-        "owner": {
-            "login": "pjialin"
-        },
-        "full_name": "pjialin/py12306",
-        "forks_count": "683",
-        "stargazers_count": "2951",
+        "full_name": "elliottzheng/CopyTranslator",
+        "forks_count": "207",
+        "stargazers_count": "1909",
         "language": "Python",
-        "repositoryDescription": "🚂\n12306 购票助手，支持分布式，多账号，多任务购票以及 Web 页面管理"
+        "repositoryDescription": "Foreign language reading and translation assistant based on copy and translate.(Latest: v0.0.7-Kylin-RC1)"
+    },
+    {
+        "name": "tinyraytracer",
+        "owner": {
+            "login": "ssloy"
+        },
+        "full_name": "ssloy/tinyraytracer",
+        "forks_count": "70",
+        "stargazers_count": "2003",
+        "language": "C++",
+        "repositoryDescription": "A brief computer graphics / rendering course"
+    },
+    {
+        "name": "funNLP",
+        "owner": {
+            "login": "fighting41love"
+        },
+        "full_name": "fighting41love/funNLP",
+        "forks_count": "908",
+        "stargazers_count": "4340",
+        "language": "Python",
+        "repositoryDescription": "中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、各种中文词向量、公司名字大全、古诗词库、IT词库、财经词库、成语词库、地名词库、历史名人词库、诗词词库、医学词库、饮食词库、法律词库、汽车词库、动物词库、中文聊天语料、中文谣言数据、百度中文问答数据集、句子相似度匹配算法集合、bert资源、文本生成&摘要相关工具、cocoNLP信息抽取工具、国内电话号码正则匹配、清华大学XLORE:中英文跨语言百科知识图谱、清华大学人工智能技术…"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "14854",
+        "stargazers_count": "48193",
+        "repositoryDescription": "📚\n技术面试必备基础知识"
     },
     {
         "name": "flutter",
@@ -244,31 +218,52 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "5312",
-        "stargazers_count": "50992",
+        "forks_count": "5397",
+        "stargazers_count": "51683",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "JavaGuide",
+        "name": "Path-Creator",
         "owner": {
-            "login": "Snailclimb"
+            "login": "SebLague"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "6366",
-        "stargazers_count": "21800",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "full_name": "SebLague/Path-Creator",
+        "forks_count": "32",
+        "stargazers_count": "180",
+        "language": "C#",
+        "repositoryDescription": "Path creation asset for Unity game development"
     },
     {
-        "name": "konfig",
+        "name": "deep-learning-drizzle",
         "owner": {
-            "login": "lalamove"
+            "login": "kmario23"
         },
-        "full_name": "lalamove/konfig",
-        "forks_count": "6",
-        "stargazers_count": "165",
-        "language": "Go",
-        "repositoryDescription": "Composable, observable and performant config handling for Go for the distributed processing era"
+        "full_name": "kmario23/deep-learning-drizzle",
+        "forks_count": "22",
+        "stargazers_count": "202",
+        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
+    },
+    {
+        "name": "Dress",
+        "owner": {
+            "login": "komeiji-satori"
+        },
+        "full_name": "komeiji-satori/Dress",
+        "forks_count": "687",
+        "stargazers_count": "5467",
+        "language": "Ruby",
+        "repositoryDescription": "好耶 是女装"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "1310",
+        "stargazers_count": "11831",
+        "language": "C++",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     }
 ]

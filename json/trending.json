@@ -1,57 +1,56 @@
 [
     {
-        "name": "x-spreadsheet",
-        "owner": {
-            "login": "myliang"
-        },
-        "full_name": "myliang/x-spreadsheet",
-        "forks_count": "56",
-        "stargazers_count": "1629",
-        "language": "JavaScript",
-        "repositoryDescription": "a javascript spreadsheet for web"
-    },
-    {
-        "name": "giffun",
-        "owner": {
-            "login": "guolindev"
-        },
-        "full_name": "guolindev/giffun",
-        "forks_count": "131",
-        "stargazers_count": "798",
-        "language": "Java",
-        "repositoryDescription": "一款开源的GIF在线分享App，乐趣就要和世界分享。"
-    },
-    {
-        "name": "ink",
-        "owner": {
-            "login": "vadimdemedes"
-        },
-        "full_name": "vadimdemedes/ink",
-        "forks_count": "175",
-        "stargazers_count": "7787",
-        "language": "JavaScript",
-        "repositoryDescription": "🌈\nReact for interactive command-line apps"
-    },
-    {
         "name": "programmer-job-blacklist",
         "owner": {
             "login": "shengxinjing"
         },
         "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "786",
-        "stargazers_count": "11135",
+        "forks_count": "838",
+        "stargazers_count": "11940",
         "language": "Shell",
         "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
     },
     {
-        "name": "the-practical-linux-hardening-guide",
+        "name": "x-spreadsheet",
         "owner": {
-            "login": "trimstray"
+            "login": "myliang"
         },
-        "full_name": "trimstray/the-practical-linux-hardening-guide",
-        "forks_count": "223",
-        "stargazers_count": "5548",
-        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
+        "full_name": "myliang/x-spreadsheet",
+        "forks_count": "108",
+        "stargazers_count": "2353",
+        "language": "JavaScript",
+        "repositoryDescription": "a javascript spreadsheet for web"
+    },
+    {
+        "name": "awesome-podcasts",
+        "owner": {
+            "login": "rShetty"
+        },
+        "full_name": "rShetty/awesome-podcasts",
+        "forks_count": "286",
+        "stargazers_count": "5428",
+        "repositoryDescription": "Collection of awesome podcasts"
+    },
+    {
+        "name": "interview",
+        "owner": {
+            "login": "aylei"
+        },
+        "full_name": "aylei/interview",
+        "forks_count": "45",
+        "stargazers_count": "584",
+        "repositoryDescription": "写在19年初的后端社招面试经历\n🤑"
+    },
+    {
+        "name": "aresdb",
+        "owner": {
+            "login": "uber"
+        },
+        "full_name": "uber/aresdb",
+        "forks_count": "24",
+        "stargazers_count": "564",
+        "language": "Go",
+        "repositoryDescription": ""
     },
     {
         "name": "apprise",
@@ -59,8 +58,8 @@
             "login": "caronc"
         },
         "full_name": "caronc/apprise",
-        "forks_count": "16",
-        "stargazers_count": "662",
+        "forks_count": "29",
+        "stargazers_count": "1128",
         "language": "Python",
         "repositoryDescription": "Apprise - Push Notifications that work with just about every platform!"
     },
@@ -70,32 +69,10 @@
             "login": "didi"
         },
         "full_name": "didi/chameleon",
-        "forks_count": "61",
-        "stargazers_count": "927",
+        "forks_count": "82",
+        "stargazers_count": "1334",
         "language": "JavaScript",
         "repositoryDescription": "真正专注于让一套代码运行多端的开发框架，提供标准的MVVM架构开发模式统一各类终端"
-    },
-    {
-        "name": "brumadinho_location",
-        "owner": {
-            "login": "dieegom"
-        },
-        "full_name": "dieegom/brumadinho_location",
-        "forks_count": "104",
-        "stargazers_count": "528",
-        "language": "Python",
-        "repositoryDescription": "Criamos uma primeira versão de uma ferramenta para colocar latitude e longitude dos desaparecidos e, com base no fluxo de rejeitos, estimar a possível localização da pessoa."
-    },
-    {
-        "name": "tinykaboom",
-        "owner": {
-            "login": "ssloy"
-        },
-        "full_name": "ssloy/tinykaboom",
-        "forks_count": "30",
-        "stargazers_count": "1252",
-        "language": "C++",
-        "repositoryDescription": "A brief computer graphics / rendering course"
     },
     {
         "name": "professional-programming",
@@ -103,31 +80,74 @@
             "login": "charlax"
         },
         "full_name": "charlax/professional-programming",
-        "forks_count": "757",
-        "stargazers_count": "9518",
+        "forks_count": "787",
+        "stargazers_count": "9863",
         "language": "Shell",
         "repositoryDescription": "A collection of full-stack resources for programmers."
     },
     {
-        "name": "techlead",
+        "name": "the-practical-linux-hardening-guide",
         "owner": {
-            "login": "phodal"
+            "login": "trimstray"
         },
-        "full_name": "phodal/techlead",
-        "forks_count": "27",
-        "stargazers_count": "428",
-        "repositoryDescription": "Path to Tech Lead: How to be a tech lead ? 迈向 Tech Lead 之路"
+        "full_name": "trimstray/the-practical-linux-hardening-guide",
+        "forks_count": "242",
+        "stargazers_count": "5898",
+        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
     },
     {
-        "name": "haskell-trainings",
+        "name": "giffun",
         "owner": {
-            "login": "google"
+            "login": "guolindev"
         },
-        "full_name": "google/haskell-trainings",
-        "forks_count": "25",
-        "stargazers_count": "489",
-        "language": "TeX",
-        "repositoryDescription": "Haskell 101 and 102: slides and codelabs"
+        "full_name": "guolindev/giffun",
+        "forks_count": "186",
+        "stargazers_count": "1111",
+        "language": "Java",
+        "repositoryDescription": "一款开源的GIF在线分享App，乐趣就要和世界分享。"
+    },
+    {
+        "name": "Dress",
+        "owner": {
+            "login": "komeiji-satori"
+        },
+        "full_name": "komeiji-satori/Dress",
+        "forks_count": "806",
+        "stargazers_count": "6237",
+        "language": "Ruby",
+        "repositoryDescription": "好耶 是女装"
+    },
+    {
+        "name": "simpledet",
+        "owner": {
+            "login": "TuSimple"
+        },
+        "full_name": "TuSimple/simpledet",
+        "forks_count": "73",
+        "stargazers_count": "545",
+        "language": "Python",
+        "repositoryDescription": "A Simple and Versatile Framework for Object Detection and Instance Recognition"
+    },
+    {
+        "name": "open-source-cs",
+        "owner": {
+            "login": "ForrestKnight"
+        },
+        "full_name": "ForrestKnight/open-source-cs",
+        "forks_count": "430",
+        "stargazers_count": "3380",
+        "repositoryDescription": "Video discussing this curriculum:"
+    },
+    {
+        "name": "import-http",
+        "owner": {
+            "login": "egoist"
+        },
+        "full_name": "egoist/import-http",
+        "forks_count": "6",
+        "stargazers_count": "428",
+        "language": "JavaScript",
+        "repositoryDescription": "Import modules from URL instead of local node_modules"
     },
     {
         "name": "flink",
@@ -135,8 +155,8 @@
             "login": "apache"
         },
         "full_name": "apache/flink",
-        "forks_count": "3745",
-        "stargazers_count": "6760",
+        "forks_count": "3791",
+        "stargazers_count": "7000",
         "language": "Java",
         "repositoryDescription": "Apache Flink"
     },
@@ -146,108 +166,64 @@
             "login": "joewalnes"
         },
         "full_name": "joewalnes/websocketd",
-        "forks_count": "680",
-        "stargazers_count": "12372",
+        "forks_count": "692",
+        "stargazers_count": "12622",
         "language": "Go",
         "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
     },
     {
-        "name": "symphony",
+        "name": "ink",
         "owner": {
-            "login": "b3log"
+            "login": "vadimdemedes"
         },
-        "full_name": "b3log/symphony",
-        "forks_count": "3155",
-        "stargazers_count": "10034",
-        "language": "Java",
-        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
-    },
-    {
-        "name": "Dress",
-        "owner": {
-            "login": "komeiji-satori"
-        },
-        "full_name": "komeiji-satori/Dress",
-        "forks_count": "765",
-        "stargazers_count": "5924",
-        "language": "Ruby",
-        "repositoryDescription": "好耶 是女装"
-    },
-    {
-        "name": "open-source-cs",
-        "owner": {
-            "login": "ForrestKnight"
-        },
-        "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "383",
-        "stargazers_count": "3091",
-        "repositoryDescription": "Video discussing this curriculum:"
-    },
-    {
-        "name": "yodaos",
-        "owner": {
-            "login": "yodaos-project"
-        },
-        "full_name": "yodaos-project/yodaos",
-        "forks_count": "56",
-        "stargazers_count": "386",
-        "language": "Python",
-        "repositoryDescription": "AI OS for Web Community"
-    },
-    {
-        "name": "hotkey",
-        "owner": {
-            "login": "github"
-        },
-        "full_name": "github/hotkey",
-        "forks_count": "17",
-        "stargazers_count": "971",
+        "full_name": "vadimdemedes/ink",
+        "forks_count": "176",
+        "stargazers_count": "8024",
         "language": "JavaScript",
-        "repositoryDescription": "Global DOM element activation"
+        "repositoryDescription": "🌈\nReact for interactive command-line apps"
     },
     {
-        "name": "FEBS-Vue",
+        "name": "Intranet_Penetration_Tips",
         "owner": {
-            "login": "wuyouzhuguli"
+            "login": "Ridter"
         },
-        "full_name": "wuyouzhuguli/FEBS-Vue",
-        "forks_count": "75",
-        "stargazers_count": "467",
-        "language": "Vue",
-        "repositoryDescription": "SpringBoot，Shiro，JWT，Vue & Ant Design 前后端分离权限管理系统，预览地址（小油管，初次加载较慢）："
+        "full_name": "Ridter/Intranet_Penetration_Tips",
+        "forks_count": "60",
+        "stargazers_count": "307",
+        "repositoryDescription": "2018年初整理的一些内网渗透TIPS，后面更新的慢，所以公开出来希望跟小伙伴们一起更新维护~"
     },
     {
-        "name": "rtv",
+        "name": "nsfw_data_scrapper",
         "owner": {
-            "login": "michael-lazar"
+            "login": "alexkimxyz"
         },
-        "full_name": "michael-lazar/rtv",
-        "forks_count": "186",
-        "stargazers_count": "3617",
+        "full_name": "alexkimxyz/nsfw_data_scrapper",
+        "forks_count": "1904",
+        "stargazers_count": "6945",
+        "language": "Shell",
+        "repositoryDescription": "Collection of scripts to aggregate image data for the purposes of training an NSFW Image Classifier"
+    },
+    {
+        "name": "system-design-primer",
+        "owner": {
+            "login": "donnemartin"
+        },
+        "full_name": "donnemartin/system-design-primer",
+        "forks_count": "8087",
+        "stargazers_count": "55915",
         "language": "Python",
-        "repositoryDescription": "Browse Reddit from your terminal"
+        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
     },
     {
-        "name": "flutter-go",
+        "name": "brumadinho_location",
         "owner": {
-            "login": "alibaba"
+            "login": "dieegom"
         },
-        "full_name": "alibaba/flutter-go",
-        "forks_count": "410",
-        "stargazers_count": "4652",
-        "language": "Dart",
-        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
-    },
-    {
-        "name": "revery",
-        "owner": {
-            "login": "revery-ui"
-        },
-        "full_name": "revery-ui/revery",
-        "forks_count": "71",
-        "stargazers_count": "3016",
-        "language": "OCaml",
-        "repositoryDescription": "⚡️\nNative, high-performance, cross-platform desktop apps - built with Reason!"
+        "full_name": "dieegom/brumadinho_location",
+        "forks_count": "152",
+        "stargazers_count": "720",
+        "language": "Python",
+        "repositoryDescription": "Criamos uma primeira versão de uma ferramenta para colocar latitude e longitude dos desaparecidos e, com base no fluxo de rejeitos, estimar a possível localização da pessoa."
     },
     {
         "name": "developer-roadmap",
@@ -255,18 +231,41 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "10994",
-        "stargazers_count": "70688",
+        "forks_count": "11027",
+        "stargazers_count": "70871",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
-        "name": "awesome-mobile-web-development",
+        "name": "symphony",
         "owner": {
-            "login": "myshov"
+            "login": "b3log"
         },
-        "full_name": "myshov/awesome-mobile-web-development",
-        "forks_count": "24",
-        "stargazers_count": "676",
-        "repositoryDescription": "All that you need to create a great mobile web experience"
+        "full_name": "b3log/symphony",
+        "forks_count": "3213",
+        "stargazers_count": "10203",
+        "language": "Java",
+        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
+    },
+    {
+        "name": "tinykaboom",
+        "owner": {
+            "login": "ssloy"
+        },
+        "full_name": "ssloy/tinykaboom",
+        "forks_count": "37",
+        "stargazers_count": "1425",
+        "language": "C++",
+        "repositoryDescription": "A brief computer graphics / rendering course"
+    },
+    {
+        "name": "XRouter",
+        "owner": {
+            "login": "hubrioAU"
+        },
+        "full_name": "hubrioAU/XRouter",
+        "forks_count": "6",
+        "stargazers_count": "248",
+        "language": "Swift",
+        "repositoryDescription": "A simple routing library for iOS projects."
     }
 ]

@@ -5,21 +5,10 @@
             "login": "shengxinjing"
         },
         "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "838",
-        "stargazers_count": "11940",
+        "forks_count": "887",
+        "stargazers_count": "13103",
         "language": "Shell",
         "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
-    },
-    {
-        "name": "x-spreadsheet",
-        "owner": {
-            "login": "myliang"
-        },
-        "full_name": "myliang/x-spreadsheet",
-        "forks_count": "108",
-        "stargazers_count": "2353",
-        "language": "JavaScript",
-        "repositoryDescription": "a javascript spreadsheet for web"
     },
     {
         "name": "awesome-podcasts",
@@ -27,106 +16,9 @@
             "login": "rShetty"
         },
         "full_name": "rShetty/awesome-podcasts",
-        "forks_count": "286",
-        "stargazers_count": "5428",
+        "forks_count": "344",
+        "stargazers_count": "6464",
         "repositoryDescription": "Collection of awesome podcasts"
-    },
-    {
-        "name": "interview",
-        "owner": {
-            "login": "aylei"
-        },
-        "full_name": "aylei/interview",
-        "forks_count": "45",
-        "stargazers_count": "584",
-        "repositoryDescription": "写在19年初的后端社招面试经历\n🤑"
-    },
-    {
-        "name": "aresdb",
-        "owner": {
-            "login": "uber"
-        },
-        "full_name": "uber/aresdb",
-        "forks_count": "24",
-        "stargazers_count": "564",
-        "language": "Go",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "apprise",
-        "owner": {
-            "login": "caronc"
-        },
-        "full_name": "caronc/apprise",
-        "forks_count": "29",
-        "stargazers_count": "1128",
-        "language": "Python",
-        "repositoryDescription": "Apprise - Push Notifications that work with just about every platform!"
-    },
-    {
-        "name": "chameleon",
-        "owner": {
-            "login": "didi"
-        },
-        "full_name": "didi/chameleon",
-        "forks_count": "82",
-        "stargazers_count": "1334",
-        "language": "JavaScript",
-        "repositoryDescription": "真正专注于让一套代码运行多端的开发框架，提供标准的MVVM架构开发模式统一各类终端"
-    },
-    {
-        "name": "professional-programming",
-        "owner": {
-            "login": "charlax"
-        },
-        "full_name": "charlax/professional-programming",
-        "forks_count": "787",
-        "stargazers_count": "9863",
-        "language": "Shell",
-        "repositoryDescription": "A collection of full-stack resources for programmers."
-    },
-    {
-        "name": "the-practical-linux-hardening-guide",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-practical-linux-hardening-guide",
-        "forks_count": "242",
-        "stargazers_count": "5898",
-        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
-    },
-    {
-        "name": "giffun",
-        "owner": {
-            "login": "guolindev"
-        },
-        "full_name": "guolindev/giffun",
-        "forks_count": "186",
-        "stargazers_count": "1111",
-        "language": "Java",
-        "repositoryDescription": "一款开源的GIF在线分享App，乐趣就要和世界分享。"
-    },
-    {
-        "name": "Dress",
-        "owner": {
-            "login": "komeiji-satori"
-        },
-        "full_name": "komeiji-satori/Dress",
-        "forks_count": "806",
-        "stargazers_count": "6237",
-        "language": "Ruby",
-        "repositoryDescription": "好耶 是女装"
-    },
-    {
-        "name": "simpledet",
-        "owner": {
-            "login": "TuSimple"
-        },
-        "full_name": "TuSimple/simpledet",
-        "forks_count": "73",
-        "stargazers_count": "545",
-        "language": "Python",
-        "repositoryDescription": "A Simple and Versatile Framework for Object Detection and Instance Recognition"
     },
     {
         "name": "open-source-cs",
@@ -134,9 +26,95 @@
             "login": "ForrestKnight"
         },
         "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "430",
-        "stargazers_count": "3380",
+        "forks_count": "523",
+        "stargazers_count": "3924",
         "repositoryDescription": "Video discussing this curriculum:"
+    },
+    {
+        "name": "notable",
+        "owner": {
+            "login": "fabiospampinato"
+        },
+        "full_name": "fabiospampinato/notable",
+        "forks_count": "256",
+        "stargazers_count": "7197",
+        "language": "TypeScript",
+        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
+    },
+    {
+        "name": "stanfordnlp",
+        "owner": {
+            "login": "stanfordnlp"
+        },
+        "full_name": "stanfordnlp/stanfordnlp",
+        "forks_count": "34",
+        "stargazers_count": "344",
+        "language": "Python",
+        "repositoryDescription": "Official Stanford NLP Python Library for Many Human Languages"
+    },
+    {
+        "name": "x-spreadsheet",
+        "owner": {
+            "login": "myliang"
+        },
+        "full_name": "myliang/x-spreadsheet",
+        "forks_count": "126",
+        "stargazers_count": "2643",
+        "language": "JavaScript",
+        "repositoryDescription": "a javascript spreadsheet for web"
+    },
+    {
+        "name": "aresdb",
+        "owner": {
+            "login": "uber"
+        },
+        "full_name": "uber/aresdb",
+        "forks_count": "38",
+        "stargazers_count": "875",
+        "language": "Go",
+        "repositoryDescription": "A GPU-powered real-time analytics storage and query engine."
+    },
+    {
+        "name": "the-practical-linux-hardening-guide",
+        "owner": {
+            "login": "trimstray"
+        },
+        "full_name": "trimstray/the-practical-linux-hardening-guide",
+        "forks_count": "254",
+        "stargazers_count": "6194",
+        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
+    },
+    {
+        "name": "professional-programming",
+        "owner": {
+            "login": "charlax"
+        },
+        "full_name": "charlax/professional-programming",
+        "forks_count": "809",
+        "stargazers_count": "10139",
+        "language": "Shell",
+        "repositoryDescription": "A collection of full-stack resources for programmers."
+    },
+    {
+        "name": "interview",
+        "owner": {
+            "login": "aylei"
+        },
+        "full_name": "aylei/interview",
+        "forks_count": "68",
+        "stargazers_count": "865",
+        "repositoryDescription": "写在19年初的后端社招面试经历\n🤑"
+    },
+    {
+        "name": "big-list-of-naughty-strings",
+        "owner": {
+            "login": "minimaxir"
+        },
+        "full_name": "minimaxir/big-list-of-naughty-strings",
+        "forks_count": "1322",
+        "stargazers_count": "31639",
+        "language": "Python",
+        "repositoryDescription": "The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data."
     },
     {
         "name": "import-http",
@@ -144,43 +122,32 @@
             "login": "egoist"
         },
         "full_name": "egoist/import-http",
-        "forks_count": "6",
-        "stargazers_count": "428",
+        "forks_count": "7",
+        "stargazers_count": "659",
         "language": "JavaScript",
         "repositoryDescription": "Import modules from URL instead of local node_modules"
     },
     {
-        "name": "flink",
+        "name": "simpledet",
         "owner": {
-            "login": "apache"
+            "login": "TuSimple"
         },
-        "full_name": "apache/flink",
-        "forks_count": "3791",
-        "stargazers_count": "7000",
-        "language": "Java",
-        "repositoryDescription": "Apache Flink"
+        "full_name": "TuSimple/simpledet",
+        "forks_count": "97",
+        "stargazers_count": "753",
+        "language": "Python",
+        "repositoryDescription": "A Simple and Versatile Framework for Object Detection and Instance Recognition"
     },
     {
-        "name": "websocketd",
+        "name": "BassoonTracker",
         "owner": {
-            "login": "joewalnes"
+            "login": "steffest"
         },
-        "full_name": "joewalnes/websocketd",
-        "forks_count": "692",
-        "stargazers_count": "12622",
-        "language": "Go",
-        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
-    },
-    {
-        "name": "ink",
-        "owner": {
-            "login": "vadimdemedes"
-        },
-        "full_name": "vadimdemedes/ink",
-        "forks_count": "176",
-        "stargazers_count": "8024",
+        "full_name": "steffest/BassoonTracker",
+        "forks_count": "19",
+        "stargazers_count": "379",
         "language": "JavaScript",
-        "repositoryDescription": "🌈\nReact for interactive command-line apps"
+        "repositoryDescription": "Webbased old-school Amiga music tracker in plain old javascript - Plays and edits Amiga Mod files and FastTracker XM files"
     },
     {
         "name": "Intranet_Penetration_Tips",
@@ -188,20 +155,9 @@
             "login": "Ridter"
         },
         "full_name": "Ridter/Intranet_Penetration_Tips",
-        "forks_count": "60",
-        "stargazers_count": "307",
+        "forks_count": "83",
+        "stargazers_count": "504",
         "repositoryDescription": "2018年初整理的一些内网渗透TIPS，后面更新的慢，所以公开出来希望跟小伙伴们一起更新维护~"
-    },
-    {
-        "name": "nsfw_data_scrapper",
-        "owner": {
-            "login": "alexkimxyz"
-        },
-        "full_name": "alexkimxyz/nsfw_data_scrapper",
-        "forks_count": "1904",
-        "stargazers_count": "6945",
-        "language": "Shell",
-        "repositoryDescription": "Collection of scripts to aggregate image data for the purposes of training an NSFW Image Classifier"
     },
     {
         "name": "system-design-primer",
@@ -209,21 +165,32 @@
             "login": "donnemartin"
         },
         "full_name": "donnemartin/system-design-primer",
-        "forks_count": "8087",
-        "stargazers_count": "55915",
+        "forks_count": "8114",
+        "stargazers_count": "56095",
         "language": "Python",
         "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
     },
     {
-        "name": "brumadinho_location",
+        "name": "apprise",
         "owner": {
-            "login": "dieegom"
+            "login": "caronc"
         },
-        "full_name": "dieegom/brumadinho_location",
-        "forks_count": "152",
-        "stargazers_count": "720",
+        "full_name": "caronc/apprise",
+        "forks_count": "32",
+        "stargazers_count": "1320",
         "language": "Python",
-        "repositoryDescription": "Criamos uma primeira versão de uma ferramenta para colocar latitude e longitude dos desaparecidos e, com base no fluxo de rejeitos, estimar a possível localização da pessoa."
+        "repositoryDescription": "Apprise - Push Notifications that work with just about every platform!"
+    },
+    {
+        "name": "vegans",
+        "owner": {
+            "login": "unit8co"
+        },
+        "full_name": "unit8co/vegans",
+        "forks_count": "9",
+        "stargazers_count": "202",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "A library providing various existing GANs in PyTorch."
     },
     {
         "name": "developer-roadmap",
@@ -231,41 +198,74 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11027",
-        "stargazers_count": "70871",
+        "forks_count": "11048",
+        "stargazers_count": "71051",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
     },
     {
-        "name": "symphony",
+        "name": "kunpeng",
         "owner": {
-            "login": "b3log"
+            "login": "opensec-cn"
         },
-        "full_name": "b3log/symphony",
-        "forks_count": "3213",
-        "stargazers_count": "10203",
+        "full_name": "opensec-cn/kunpeng",
+        "forks_count": "33",
+        "stargazers_count": "285",
+        "language": "Go",
+        "repositoryDescription": "kunpeng是一个Golang编写的开源POC检测框架，以动态链接库的形式提供各种语言调用，通过此项目可快速对目标进行安全漏洞检测，比攻击者快一步发现风险漏洞。"
+    },
+    {
+        "name": "chameleon",
+        "owner": {
+            "login": "didi"
+        },
+        "full_name": "didi/chameleon",
+        "forks_count": "87",
+        "stargazers_count": "1504",
+        "language": "JavaScript",
+        "repositoryDescription": "真正专注于让一套代码运行多端的开发框架，提供标准的MVVM架构开发模式统一各类终端"
+    },
+    {
+        "name": "giffun",
+        "owner": {
+            "login": "guolindev"
+        },
+        "full_name": "guolindev/giffun",
+        "forks_count": "218",
+        "stargazers_count": "1266",
         "language": "Java",
-        "repositoryDescription": "🎶\n一款用 Java 实现的现代化社区（论坛/BBS/社交网络/博客）平台。https://hacpai.com"
+        "repositoryDescription": "一款开源的GIF在线分享App，乐趣就要和世界分享。"
     },
     {
-        "name": "tinykaboom",
+        "name": "websocketd",
         "owner": {
-            "login": "ssloy"
+            "login": "joewalnes"
         },
-        "full_name": "ssloy/tinykaboom",
-        "forks_count": "37",
-        "stargazers_count": "1425",
-        "language": "C++",
-        "repositoryDescription": "A brief computer graphics / rendering course"
+        "full_name": "joewalnes/websocketd",
+        "forks_count": "698",
+        "stargazers_count": "12778",
+        "language": "Go",
+        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
     },
     {
-        "name": "XRouter",
+        "name": "react-movable",
         "owner": {
-            "login": "hubrioAU"
+            "login": "tajo"
         },
-        "full_name": "hubrioAU/XRouter",
-        "forks_count": "6",
-        "stargazers_count": "248",
-        "language": "Swift",
-        "repositoryDescription": "A simple routing library for iOS projects."
+        "full_name": "tajo/react-movable",
+        "forks_count": "7",
+        "stargazers_count": "350",
+        "language": "TypeScript",
+        "repositoryDescription": "🔀\nDrag and drop for your React lists and tables. Accessible. Tiny."
+    },
+    {
+        "name": "animated-burgers",
+        "owner": {
+            "login": "march08"
+        },
+        "full_name": "march08/animated-burgers",
+        "forks_count": "1",
+        "stargazers_count": "140",
+        "language": "JavaScript",
+        "repositoryDescription": "Collection of animated burgers for React, also available as HTML+CSS"
     }
 ]

@@ -5,41 +5,21 @@
             "login": "tyroprogrammer"
         },
         "full_name": "tyroprogrammer/learn-react-app",
-        "forks_count": "65",
-        "stargazers_count": "1005",
+        "forks_count": "92",
+        "stargazers_count": "1515",
         "language": "JavaScript",
-        "repositoryDescription": "Application that will help you learn React fundamentals. Install this application locally - there's guided tutorial as well as guided exercises."
+        "repositoryDescription": "Application that will help you learn React fundamentals. Install this application locally - there's tutorial, code snippets and exercises. The main objective of this project is to help you get off the ground with React!"
     },
     {
-        "name": "programmer-job-blacklist",
+        "name": "flexsearch",
         "owner": {
-            "login": "shengxinjing"
+            "login": "nextapps-de"
         },
-        "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "931",
-        "stargazers_count": "13841",
-        "language": "Shell",
-        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
-    },
-    {
-        "name": "open-source-cs",
-        "owner": {
-            "login": "ForrestKnight"
-        },
-        "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "607",
-        "stargazers_count": "4398",
-        "repositoryDescription": "Video discussing this curriculum:"
-    },
-    {
-        "name": "awesome-podcasts",
-        "owner": {
-            "login": "rShetty"
-        },
-        "full_name": "rShetty/awesome-podcasts",
-        "forks_count": "361",
-        "stargazers_count": "6971",
-        "repositoryDescription": "Collection of awesome podcasts"
+        "full_name": "nextapps-de/flexsearch",
+        "forks_count": "13",
+        "stargazers_count": "762",
+        "language": "JavaScript",
+        "repositoryDescription": "Next-Generation full text search library for Browser and Node.js"
     },
     {
         "name": "GuiLite",
@@ -47,203 +27,31 @@
             "login": "idea4good"
         },
         "full_name": "idea4good/GuiLite",
-        "forks_count": "165",
-        "stargazers_count": "1296",
+        "forks_count": "176",
+        "stargazers_count": "1648",
         "language": "C++",
         "repositoryDescription": "✔️\nThe smallest UI framework for all platform -- 5K lines code"
     },
     {
-        "name": "stanfordnlp",
+        "name": "programmer-job-blacklist",
         "owner": {
-            "login": "stanfordnlp"
+            "login": "shengxinjing"
         },
-        "full_name": "stanfordnlp/stanfordnlp",
-        "forks_count": "55",
-        "stargazers_count": "659",
-        "language": "Python",
-        "repositoryDescription": "Official Stanford NLP Python Library for Many Human Languages"
-    },
-    {
-        "name": "notable",
-        "owner": {
-            "login": "fabiospampinato"
-        },
-        "full_name": "fabiospampinato/notable",
-        "forks_count": "269",
-        "stargazers_count": "7451",
-        "language": "TypeScript",
-        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
-    },
-    {
-        "name": "interview",
-        "owner": {
-            "login": "aylei"
-        },
-        "full_name": "aylei/interview",
-        "forks_count": "89",
-        "stargazers_count": "1123",
-        "repositoryDescription": "写在19年初的后端社招面试经历\n🤑"
-    },
-    {
-        "name": "professional-programming",
-        "owner": {
-            "login": "charlax"
-        },
-        "full_name": "charlax/professional-programming",
-        "forks_count": "832",
-        "stargazers_count": "10386",
+        "full_name": "shengxinjing/programmer-job-blacklist",
+        "forks_count": "954",
+        "stargazers_count": "14140",
         "language": "Shell",
-        "repositoryDescription": "A collection of full-stack resources for programmers."
+        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
     },
     {
-        "name": "DoraemonKit",
+        "name": "awesome-podcasts",
         "owner": {
-            "login": "didi"
+            "login": "rShetty"
         },
-        "full_name": "didi/DoraemonKit",
-        "forks_count": "150",
-        "stargazers_count": "1247",
-        "language": "Java",
-        "repositoryDescription": "A full-featured APP ( iOS & Android ) development assistant. You deserve it."
-    },
-    {
-        "name": "x-spreadsheet",
-        "owner": {
-            "login": "myliang"
-        },
-        "full_name": "myliang/x-spreadsheet",
-        "forks_count": "137",
-        "stargazers_count": "2885",
-        "language": "JavaScript",
-        "repositoryDescription": "a javascript spreadsheet for web"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "1476",
-        "stargazers_count": "8003",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "aresdb",
-        "owner": {
-            "login": "uber"
-        },
-        "full_name": "uber/aresdb",
-        "forks_count": "48",
-        "stargazers_count": "1071",
-        "language": "Go",
-        "repositoryDescription": "A GPU-powered real-time analytics storage and query engine."
-    },
-    {
-        "name": "chinese-programmer-wrong-pronunciation",
-        "owner": {
-            "login": "shimohq"
-        },
-        "full_name": "shimohq/chinese-programmer-wrong-pronunciation",
-        "forks_count": "695",
-        "stargazers_count": "7764",
-        "repositoryDescription": "中国程序员容易发音错误的单词"
-    },
-    {
-        "name": "the-practical-linux-hardening-guide",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-practical-linux-hardening-guide",
-        "forks_count": "260",
-        "stargazers_count": "6377",
-        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11076",
-        "stargazers_count": "71206",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
-    },
-    {
-        "name": "animated-burgers",
-        "owner": {
-            "login": "march08"
-        },
-        "full_name": "march08/animated-burgers",
-        "forks_count": "7",
-        "stargazers_count": "314",
-        "language": "JavaScript",
-        "repositoryDescription": "Collection of animated burgers for React, also available as HTML+CSS"
-    },
-    {
-        "name": "GitHubDaily",
-        "owner": {
-            "login": "GitHubDaily"
-        },
-        "full_name": "GitHubDaily/GitHubDaily",
-        "forks_count": "138",
-        "stargazers_count": "1666",
-        "repositoryDescription": "GitHubDaily 分享内容定期整理与分类。欢迎推荐、自荐项目，让更多人知道你的项目。"
-    },
-    {
-        "name": "import-http",
-        "owner": {
-            "login": "egoist"
-        },
-        "full_name": "egoist/import-http",
-        "forks_count": "11",
-        "stargazers_count": "818",
-        "language": "JavaScript",
-        "repositoryDescription": "Import modules from URL instead of local node_modules"
-    },
-    {
-        "name": "apprise",
-        "owner": {
-            "login": "caronc"
-        },
-        "full_name": "caronc/apprise",
-        "forks_count": "38",
-        "stargazers_count": "1480",
-        "language": "Python",
-        "repositoryDescription": "Apprise - Push Notifications that work with just about every platform!"
-    },
-    {
-        "name": "dagger-reflect",
-        "owner": {
-            "login": "JakeWharton"
-        },
-        "full_name": "JakeWharton/dagger-reflect",
-        "forks_count": "6",
-        "stargazers_count": "246",
-        "language": "Java",
-        "repositoryDescription": "A reflection-based implementation of the Dagger dependency injection library."
-    },
-    {
-        "name": "websocketd",
-        "owner": {
-            "login": "joewalnes"
-        },
-        "full_name": "joewalnes/websocketd",
-        "forks_count": "703",
-        "stargazers_count": "12936",
-        "language": "Go",
-        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
-    },
-    {
-        "name": "system-design-primer",
-        "owner": {
-            "login": "donnemartin"
-        },
-        "full_name": "donnemartin/system-design-primer",
-        "forks_count": "8134",
-        "stargazers_count": "56229",
-        "language": "Python",
-        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
+        "full_name": "rShetty/awesome-podcasts",
+        "forks_count": "375",
+        "stargazers_count": "7242",
+        "repositoryDescription": "Collection of awesome podcasts"
     },
     {
         "name": "realworld",
@@ -251,10 +59,42 @@
             "login": "gothinkster"
         },
         "full_name": "gothinkster/realworld",
-        "forks_count": "1459",
-        "stargazers_count": "21953",
+        "forks_count": "1465",
+        "stargazers_count": "22202",
         "language": "JavaScript",
         "repositoryDescription": "\"The mother of all demo apps\" — Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more\n🏅"
+    },
+    {
+        "name": "open-source-cs",
+        "owner": {
+            "login": "ForrestKnight"
+        },
+        "full_name": "ForrestKnight/open-source-cs",
+        "forks_count": "656",
+        "stargazers_count": "4654",
+        "repositoryDescription": "Video discussing this curriculum:"
+    },
+    {
+        "name": "redux-react-hook",
+        "owner": {
+            "login": "facebookincubator"
+        },
+        "full_name": "facebookincubator/redux-react-hook",
+        "forks_count": "22",
+        "stargazers_count": "490",
+        "language": "TypeScript",
+        "repositoryDescription": "React Hook for accessing state and dispatch from a Redux store"
+    },
+    {
+        "name": "heavens_door",
+        "owner": {
+            "login": "amatsuda"
+        },
+        "full_name": "amatsuda/heavens_door",
+        "forks_count": "5",
+        "stargazers_count": "295",
+        "language": "Ruby",
+        "repositoryDescription": "Capybara test scenario recorder for Rails"
     },
     {
         "name": "Intranet_Penetration_Tips",
@@ -262,8 +102,168 @@
             "login": "Ridter"
         },
         "full_name": "Ridter/Intranet_Penetration_Tips",
-        "forks_count": "98",
-        "stargazers_count": "633",
+        "forks_count": "122",
+        "stargazers_count": "805",
         "repositoryDescription": "2018年初整理的一些内网渗透TIPS，后面更新的慢，所以公开出来希望跟小伙伴们一起更新维护~"
+    },
+    {
+        "name": "bbplot",
+        "owner": {
+            "login": "bbc"
+        },
+        "full_name": "bbc/bbplot",
+        "forks_count": "27",
+        "stargazers_count": "246",
+        "language": "R",
+        "repositoryDescription": "R package that helps create and export ggplot2 charts in the style used by the BBC News data team"
+    },
+    {
+        "name": "DoraemonKit",
+        "owner": {
+            "login": "didi"
+        },
+        "full_name": "didi/DoraemonKit",
+        "forks_count": "167",
+        "stargazers_count": "1392",
+        "language": "Java",
+        "repositoryDescription": "A full-featured APP ( iOS & Android ) development assistant. You deserve it."
+    },
+    {
+        "name": "professional-programming",
+        "owner": {
+            "login": "charlax"
+        },
+        "full_name": "charlax/professional-programming",
+        "forks_count": "841",
+        "stargazers_count": "10527",
+        "language": "Shell",
+        "repositoryDescription": "A collection of full-stack resources for programmers."
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "1498",
+        "stargazers_count": "8128",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+    },
+    {
+        "name": "stanfordnlp",
+        "owner": {
+            "login": "stanfordnlp"
+        },
+        "full_name": "stanfordnlp/stanfordnlp",
+        "forks_count": "62",
+        "stargazers_count": "787",
+        "language": "Python",
+        "repositoryDescription": "Official Stanford NLP Python Library for Many Human Languages"
+    },
+    {
+        "name": "x-spreadsheet",
+        "owner": {
+            "login": "myliang"
+        },
+        "full_name": "myliang/x-spreadsheet",
+        "forks_count": "148",
+        "stargazers_count": "3008",
+        "language": "JavaScript",
+        "repositoryDescription": "a javascript spreadsheet for web"
+    },
+    {
+        "name": "interview",
+        "owner": {
+            "login": "aylei"
+        },
+        "full_name": "aylei/interview",
+        "forks_count": "102",
+        "stargazers_count": "1235",
+        "repositoryDescription": "写在19年初的后端社招面试经历\n🤑"
+    },
+    {
+        "name": "websocketd",
+        "owner": {
+            "login": "joewalnes"
+        },
+        "full_name": "joewalnes/websocketd",
+        "forks_count": "704",
+        "stargazers_count": "13046",
+        "language": "Go",
+        "repositoryDescription": "Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets."
+    },
+    {
+        "name": "computer-science",
+        "owner": {
+            "login": "ossu"
+        },
+        "full_name": "ossu/computer-science",
+        "forks_count": "5451",
+        "stargazers_count": "37810",
+        "repositoryDescription": "🎓\nPath to a free self-taught education in Computer Science!"
+    },
+    {
+        "name": "tensorflow",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "71801",
+        "stargazers_count": "119921",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+        "name": "the-practical-linux-hardening-guide",
+        "owner": {
+            "login": "trimstray"
+        },
+        "full_name": "trimstray/the-practical-linux-hardening-guide",
+        "forks_count": "265",
+        "stargazers_count": "6481",
+        "repositoryDescription": "🔥\nThis guide details the planning and the tools involved in creating a secure Linux production systems - work in progress."
+    },
+    {
+        "name": "GitHubDaily",
+        "owner": {
+            "login": "GitHubDaily"
+        },
+        "full_name": "GitHubDaily/GitHubDaily",
+        "forks_count": "141",
+        "stargazers_count": "1770",
+        "repositoryDescription": "GitHubDaily 分享内容定期整理与分类。欢迎推荐、自荐项目，让更多人知道你的项目。"
+    },
+    {
+        "name": "chinese-programmer-wrong-pronunciation",
+        "owner": {
+            "login": "shimohq"
+        },
+        "full_name": "shimohq/chinese-programmer-wrong-pronunciation",
+        "forks_count": "698",
+        "stargazers_count": "7864",
+        "repositoryDescription": "中国程序员容易发音错误的单词"
+    },
+    {
+        "name": "apprise",
+        "owner": {
+            "login": "caronc"
+        },
+        "full_name": "caronc/apprise",
+        "forks_count": "40",
+        "stargazers_count": "1574",
+        "language": "Python",
+        "repositoryDescription": "Apprise - Push Notifications that work with just about every platform!"
+    },
+    {
+        "name": "notable",
+        "owner": {
+            "login": "fabiospampinato"
+        },
+        "full_name": "fabiospampinato/notable",
+        "forks_count": "270",
+        "stargazers_count": "7544",
+        "language": "TypeScript",
+        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
     }
 ]

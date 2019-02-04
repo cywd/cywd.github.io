@@ -1,47 +1,25 @@
 [
     {
-        "name": "RustPython",
-        "owner": {
-            "login": "RustPython"
-        },
-        "full_name": "RustPython/RustPython",
-        "forks_count": "57",
-        "stargazers_count": "1413",
-        "language": "Rust",
-        "repositoryDescription": "A Python Interpreter written in Rust"
-    },
-    {
         "name": "flexsearch",
         "owner": {
             "login": "nextapps-de"
         },
         "full_name": "nextapps-de/flexsearch",
-        "forks_count": "18",
-        "stargazers_count": "1165",
+        "forks_count": "28",
+        "stargazers_count": "1694",
         "language": "JavaScript",
         "repositoryDescription": "Next-Generation full text search library for Browser and Node.js"
     },
     {
-        "name": "nlp-tutorial",
+        "name": "RustPython",
         "owner": {
-            "login": "graykode"
+            "login": "RustPython"
         },
-        "full_name": "graykode/nlp-tutorial",
-        "forks_count": "55",
-        "stargazers_count": "377",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Natural Language Processing Tutorial for Deep Learning Researchers"
-    },
-    {
-        "name": "learn-react-app",
-        "owner": {
-            "login": "tyroprogrammer"
-        },
-        "full_name": "tyroprogrammer/learn-react-app",
-        "forks_count": "108",
-        "stargazers_count": "1737",
-        "language": "JavaScript",
-        "repositoryDescription": "Application that will help you learn React fundamentals. Install this application locally - there's tutorial, code snippets and exercises. The main objective of this project is to help you get off the ground with React!"
+        "full_name": "RustPython/RustPython",
+        "forks_count": "76",
+        "stargazers_count": "1896",
+        "language": "Rust",
+        "repositoryDescription": "A Python Interpreter written in Rust"
     },
     {
         "name": "deep-learning-drizzle",
@@ -49,9 +27,53 @@
             "login": "kmario23"
         },
         "full_name": "kmario23/deep-learning-drizzle",
-        "forks_count": "43",
-        "stargazers_count": "509",
+        "forks_count": "81",
+        "stargazers_count": "868",
         "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
+    },
+    {
+        "name": "nlp-tutorial",
+        "owner": {
+            "login": "graykode"
+        },
+        "full_name": "graykode/nlp-tutorial",
+        "forks_count": "83",
+        "stargazers_count": "664",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Natural Language Processing Tutorial for Deep Learning Researchers"
+    },
+    {
+        "name": "k9s",
+        "owner": {
+            "login": "derailed"
+        },
+        "full_name": "derailed/k9s",
+        "forks_count": "14",
+        "stargazers_count": "359",
+        "language": "Go",
+        "repositoryDescription": "🐶\nKubernetes CLI To Manage Your Clusters In Style!"
+    },
+    {
+        "name": "learn-react-app",
+        "owner": {
+            "login": "tyroprogrammer"
+        },
+        "full_name": "tyroprogrammer/learn-react-app",
+        "forks_count": "126",
+        "stargazers_count": "1962",
+        "language": "JavaScript",
+        "repositoryDescription": "Application that will help you learn React fundamentals. Install this application locally - there's tutorial, code snippets and exercises. The main objective of this project is to help you get off the ground with React!"
+    },
+    {
+        "name": "professional-programming",
+        "owner": {
+            "login": "charlax"
+        },
+        "full_name": "charlax/professional-programming",
+        "forks_count": "872",
+        "stargazers_count": "10855",
+        "language": "Shell",
+        "repositoryDescription": "A collection of full-stack resources for programmers."
     },
     {
         "name": "awesome-podcasts",
@@ -59,19 +81,9 @@
             "login": "rShetty"
         },
         "full_name": "rShetty/awesome-podcasts",
-        "forks_count": "378",
-        "stargazers_count": "7424",
+        "forks_count": "390",
+        "stargazers_count": "7623",
         "repositoryDescription": "Collection of awesome podcasts"
-    },
-    {
-        "name": "open-source-cs",
-        "owner": {
-            "login": "ForrestKnight"
-        },
-        "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "685",
-        "stargazers_count": "4808",
-        "repositoryDescription": "Video discussing this curriculum:"
     },
     {
         "name": "ASCII-generator",
@@ -79,21 +91,107 @@
             "login": "vietnguyen91"
         },
         "full_name": "vietnguyen91/ASCII-generator",
-        "forks_count": "40",
-        "stargazers_count": "238",
+        "forks_count": "52",
+        "stargazers_count": "413",
         "language": "Python",
         "repositoryDescription": "ASCII generator (image to text, image to image, video to video)"
     },
     {
-        "name": "programmer-job-blacklist",
+        "name": "gita",
         "owner": {
-            "login": "shengxinjing"
+            "login": "nosarthur"
         },
-        "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "962",
-        "stargazers_count": "14299",
-        "language": "Shell",
-        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
+        "full_name": "nosarthur/gita",
+        "forks_count": "3",
+        "stargazers_count": "203",
+        "language": "Python",
+        "repositoryDescription": "Manage multiple git repos side by side for sanity"
+    },
+    {
+        "name": "python-cheatsheet",
+        "owner": {
+            "login": "gto76"
+        },
+        "full_name": "gto76/python-cheatsheet",
+        "forks_count": "161",
+        "stargazers_count": "721",
+        "language": "Python",
+        "repositoryDescription": "Comprehensive Python Cheatsheet"
+    },
+    {
+        "name": "public-apis",
+        "owner": {
+            "login": "toddmotto"
+        },
+        "full_name": "toddmotto/public-apis",
+        "forks_count": "4913",
+        "stargazers_count": "47406",
+        "language": "Python",
+        "repositoryDescription": "A collective list of free APIs for use in software and web development."
+    },
+    {
+        "name": "speedometer-pwa",
+        "owner": {
+            "login": "justinribeiro"
+        },
+        "full_name": "justinribeiro/speedometer-pwa",
+        "forks_count": "8",
+        "stargazers_count": "227",
+        "language": "JavaScript",
+        "repositoryDescription": "A tiny no-frills speedometer progressive web app based on Geolocation API, AmbientLightSensor API, and WakeLock API."
+    },
+    {
+        "name": "open-source-cs",
+        "owner": {
+            "login": "ForrestKnight"
+        },
+        "full_name": "ForrestKnight/open-source-cs",
+        "forks_count": "712",
+        "stargazers_count": "4949",
+        "repositoryDescription": "Video discussing this curriculum:"
+    },
+    {
+        "name": "asterius",
+        "owner": {
+            "login": "tweag"
+        },
+        "full_name": "tweag/asterius",
+        "forks_count": "17",
+        "stargazers_count": "667",
+        "language": "WebAssembly",
+        "repositoryDescription": "A Haskell to WebAssembly compiler"
+    },
+    {
+        "name": "react-insta-stories",
+        "owner": {
+            "login": "mohitk05"
+        },
+        "full_name": "mohitk05/react-insta-stories",
+        "forks_count": "5",
+        "stargazers_count": "173",
+        "language": "JavaScript",
+        "repositoryDescription": "A React component for Instagram like stories"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "11124",
+        "stargazers_count": "71508",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+    },
+    {
+        "name": "ink",
+        "owner": {
+            "login": "vadimdemedes"
+        },
+        "full_name": "vadimdemedes/ink",
+        "forks_count": "185",
+        "stargazers_count": "8405",
+        "language": "JavaScript",
+        "repositoryDescription": "🌈\nReact for interactive command-line apps"
     },
     {
         "name": "GuiLite",
@@ -101,8 +199,8 @@
             "login": "idea4good"
         },
         "full_name": "idea4good/GuiLite",
-        "forks_count": "184",
-        "stargazers_count": "1794",
+        "forks_count": "190",
+        "stargazers_count": "1910",
         "language": "C++",
         "repositoryDescription": "✔️\nThe smallest UI framework for all platform -- 5K lines code"
     },
@@ -112,30 +210,9 @@
             "login": "ossu"
         },
         "full_name": "ossu/computer-science",
-        "forks_count": "5469",
-        "stargazers_count": "37927",
+        "forks_count": "5487",
+        "stargazers_count": "38032",
         "repositoryDescription": "🎓\nPath to a free self-taught education in Computer Science!"
-    },
-    {
-        "name": "professional-programming",
-        "owner": {
-            "login": "charlax"
-        },
-        "full_name": "charlax/professional-programming",
-        "forks_count": "857",
-        "stargazers_count": "10646",
-        "language": "Shell",
-        "repositoryDescription": "A collection of full-stack resources for programmers."
-    },
-    {
-        "name": "Consolas",
-        "owner": {
-            "login": "PiotrGrochowski"
-        },
-        "full_name": "PiotrGrochowski/Consolas",
-        "forks_count": "6",
-        "stargazers_count": "122",
-        "repositoryDescription": "The Consolas font since I became a designer of it starting at version 8.0. It's of course open source."
     },
     {
         "name": "realworld",
@@ -143,63 +220,42 @@
             "login": "gothinkster"
         },
         "full_name": "gothinkster/realworld",
-        "forks_count": "1470",
-        "stargazers_count": "22301",
+        "forks_count": "1475",
+        "stargazers_count": "22409",
         "language": "JavaScript",
         "repositoryDescription": "\"The mother of all demo apps\" — Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more\n🏅"
     },
     {
-        "name": "developer-roadmap",
+        "name": "Consolas",
         "owner": {
-            "login": "kamranahmedse"
+            "login": "PiotrGrochowski"
         },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11109",
-        "stargazers_count": "71389",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+        "full_name": "PiotrGrochowski/Consolas",
+        "forks_count": "8",
+        "stargazers_count": "226",
+        "repositoryDescription": "The Consolas font since I became a designer of it starting at version 8.0. It's of course open source."
     },
     {
-        "name": "notable",
+        "name": "programmer-job-blacklist",
         "owner": {
-            "login": "fabiospampinato"
+            "login": "shengxinjing"
         },
-        "full_name": "fabiospampinato/notable",
-        "forks_count": "275",
-        "stargazers_count": "7632",
-        "language": "TypeScript",
-        "repositoryDescription": "The markdown-based note-taking app that doesn't suck."
+        "full_name": "shengxinjing/programmer-job-blacklist",
+        "forks_count": "966",
+        "stargazers_count": "14395",
+        "language": "Shell",
+        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
     },
     {
-        "name": "ink",
+        "name": "react",
         "owner": {
-            "login": "vadimdemedes"
+            "login": "facebook"
         },
-        "full_name": "vadimdemedes/ink",
-        "forks_count": "180",
-        "stargazers_count": "8282",
+        "full_name": "facebook/react",
+        "forks_count": "22004",
+        "stargazers_count": "121432",
         "language": "JavaScript",
-        "repositoryDescription": "🌈\nReact for interactive command-line apps"
-    },
-    {
-        "name": "k9s",
-        "owner": {
-            "login": "derailed"
-        },
-        "full_name": "derailed/k9s",
-        "forks_count": "4",
-        "stargazers_count": "107",
-        "language": "Go",
-        "repositoryDescription": "🐶\nKubernetes CLI To Manage Your Clusters In Style!"
-    },
-    {
-        "name": "Intranet_Penetration_Tips",
-        "owner": {
-            "login": "Ridter"
-        },
-        "full_name": "Ridter/Intranet_Penetration_Tips",
-        "forks_count": "142",
-        "stargazers_count": "889",
-        "repositoryDescription": "2018年初整理的一些内网渗透TIPS，后面更新的慢，所以公开出来希望跟小伙伴们一起更新维护~"
+        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
     },
     {
         "name": "x-spreadsheet",
@@ -207,64 +263,9 @@
             "login": "myliang"
         },
         "full_name": "myliang/x-spreadsheet",
-        "forks_count": "155",
-        "stargazers_count": "3092",
+        "forks_count": "163",
+        "stargazers_count": "3192",
         "language": "JavaScript",
         "repositoryDescription": "A web-based JavaScript（canvas） spreadsheet"
-    },
-    {
-        "name": "redux-react-hook",
-        "owner": {
-            "login": "facebookincubator"
-        },
-        "full_name": "facebookincubator/redux-react-hook",
-        "forks_count": "25",
-        "stargazers_count": "573",
-        "language": "TypeScript",
-        "repositoryDescription": "React Hook for accessing state and dispatch from a Redux store"
-    },
-    {
-        "name": "nodeppt",
-        "owner": {
-            "login": "ksky521"
-        },
-        "full_name": "ksky521/nodeppt",
-        "forks_count": "1487",
-        "stargazers_count": "5590",
-        "language": "JavaScript",
-        "repositoryDescription": "This is probably the best web presentation tool so far!"
-    },
-    {
-        "name": "bbplot",
-        "owner": {
-            "login": "bbc"
-        },
-        "full_name": "bbc/bbplot",
-        "forks_count": "34",
-        "stargazers_count": "324",
-        "language": "R",
-        "repositoryDescription": "R package that helps create and export ggplot2 charts in the style used by the BBC News data team"
-    },
-    {
-        "name": "stanfordnlp",
-        "owner": {
-            "login": "stanfordnlp"
-        },
-        "full_name": "stanfordnlp/stanfordnlp",
-        "forks_count": "70",
-        "stargazers_count": "860",
-        "language": "Python",
-        "repositoryDescription": "Official Stanford NLP Python Library for Many Human Languages"
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "71808",
-        "stargazers_count": "119983",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     }
 ]

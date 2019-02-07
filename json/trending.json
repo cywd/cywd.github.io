@@ -1,14 +1,14 @@
 [
     {
-        "name": "inter",
+        "name": "github-history",
         "owner": {
-            "login": "rsms"
+            "login": "pomber"
         },
-        "full_name": "rsms/inter",
-        "forks_count": "140",
-        "stargazers_count": "7805",
-        "language": "Python",
-        "repositoryDescription": "The Inter font family"
+        "full_name": "pomber/github-history",
+        "forks_count": "41",
+        "stargazers_count": "2297",
+        "language": "JavaScript",
+        "repositoryDescription": "Browse the history of any file from GitHub with style"
     },
     {
         "name": "not-paid",
@@ -16,8 +16,8 @@
             "login": "kleampa"
         },
         "full_name": "kleampa/not-paid",
-        "forks_count": "44",
-        "stargazers_count": "748",
+        "forks_count": "110",
+        "stargazers_count": "2004",
         "language": "JavaScript",
         "repositoryDescription": "Client did not pay? Add opacity to the body tag and increase it every day until their site completely fades away"
     },
@@ -27,21 +27,10 @@
             "login": "toddmotto"
         },
         "full_name": "toddmotto/public-apis",
-        "forks_count": "4989",
-        "stargazers_count": "48763",
+        "forks_count": "5013",
+        "stargazers_count": "49135",
         "language": "Python",
         "repositoryDescription": "A collective list of free APIs for use in software and web development."
-    },
-    {
-        "name": "python-cheatsheet",
-        "owner": {
-            "login": "gto76"
-        },
-        "full_name": "gto76/python-cheatsheet",
-        "forks_count": "324",
-        "stargazers_count": "1819",
-        "language": "Python",
-        "repositoryDescription": "Comprehensive Python Cheatsheet"
     },
     {
         "name": "stylegan",
@@ -49,108 +38,10 @@
             "login": "NVlabs"
         },
         "full_name": "NVlabs/stylegan",
-        "forks_count": "57",
-        "stargazers_count": "566",
+        "forks_count": "90",
+        "stargazers_count": "927",
         "language": "Python",
         "repositoryDescription": "StyleGAN - Official TensorFlow Implementation"
-    },
-    {
-        "name": "gitin",
-        "owner": {
-            "login": "isacikgoz"
-        },
-        "full_name": "isacikgoz/gitin",
-        "forks_count": "17",
-        "stargazers_count": "795",
-        "language": "Go",
-        "repositoryDescription": "commit/branch/workdir explorer for git"
-    },
-    {
-        "name": "github-history",
-        "owner": {
-            "login": "pomber"
-        },
-        "full_name": "pomber/github-history",
-        "forks_count": "10",
-        "stargazers_count": "429",
-        "language": "JavaScript",
-        "repositoryDescription": "Browse the history of any file from GitHub with style"
-    },
-    {
-        "name": "flexsearch",
-        "owner": {
-            "login": "nextapps-de"
-        },
-        "full_name": "nextapps-de/flexsearch",
-        "forks_count": "44",
-        "stargazers_count": "2631",
-        "language": "JavaScript",
-        "repositoryDescription": "Next-Generation full text search library for Browser and Node.js"
-    },
-    {
-        "name": "clean-code-typescript",
-        "owner": {
-            "login": "labs42io"
-        },
-        "full_name": "labs42io/clean-code-typescript",
-        "forks_count": "30",
-        "stargazers_count": "671",
-        "language": "TypeScript",
-        "repositoryDescription": "Clean Code concepts adapted for TypeScript"
-    },
-    {
-        "name": "RustPython",
-        "owner": {
-            "login": "RustPython"
-        },
-        "full_name": "RustPython/RustPython",
-        "forks_count": "100",
-        "stargazers_count": "2348",
-        "language": "Rust",
-        "repositoryDescription": "A Python Interpreter written in Rust"
-    },
-    {
-        "name": "gotop",
-        "owner": {
-            "login": "cjbassi"
-        },
-        "full_name": "cjbassi/gotop",
-        "forks_count": "130",
-        "stargazers_count": "3487",
-        "language": "Go",
-        "repositoryDescription": "A terminal based graphical activity monitor inspired by gtop and vtop"
-    },
-    {
-        "name": "notion",
-        "owner": {
-            "login": "notion-cli"
-        },
-        "full_name": "notion-cli/notion",
-        "forks_count": "17",
-        "stargazers_count": "267",
-        "language": "Rust",
-        "repositoryDescription": "Notion: the hassle-free JavaScript toolchain manager"
-    },
-    {
-        "name": "deep-learning-drizzle",
-        "owner": {
-            "login": "kmario23"
-        },
-        "full_name": "kmario23/deep-learning-drizzle",
-        "forks_count": "105",
-        "stargazers_count": "1327",
-        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
-    },
-    {
-        "name": "QuickDraw",
-        "owner": {
-            "login": "vietnguyen91"
-        },
-        "full_name": "vietnguyen91/QuickDraw",
-        "forks_count": "42",
-        "stargazers_count": "307",
-        "language": "Python",
-        "repositoryDescription": "Implementation of Quickdraw - an online game developed by Google"
     },
     {
         "name": "h4cker",
@@ -158,64 +49,87 @@
             "login": "The-Art-of-Hacking"
         },
         "full_name": "The-Art-of-Hacking/h4cker",
-        "forks_count": "206",
-        "stargazers_count": "969",
+        "forks_count": "235",
+        "stargazers_count": "1338",
         "language": "Java",
         "repositoryDescription": "This repository is primarily maintained by Omar Santos and includes resources related to ethical hacking / penetration testing, digital forensics and incident response (DFIR), vulnerability research, exploit development, reverse engineering, and more."
     },
     {
-        "name": "react",
+        "name": "laravel",
         "owner": {
-            "login": "facebook"
+            "login": "laravel"
         },
-        "full_name": "facebook/react",
-        "forks_count": "22047",
-        "stargazers_count": "121654",
-        "language": "JavaScript",
-        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+        "full_name": "laravel/laravel",
+        "forks_count": "15231",
+        "stargazers_count": "49361",
+        "language": "PHP",
+        "repositoryDescription": "A PHP framework for web artisans"
     },
     {
-        "name": "learn-react-app",
+        "name": "inter",
         "owner": {
-            "login": "tyroprogrammer"
+            "login": "rsms"
         },
-        "full_name": "tyroprogrammer/learn-react-app",
-        "forks_count": "159",
-        "stargazers_count": "2296",
-        "language": "JavaScript",
-        "repositoryDescription": "Application that will help you learn React fundamentals. Install this application locally - there's tutorial, code snippets and exercises. The main objective of this project is to help you get off the ground with React!"
-    },
-    {
-        "name": "XLM",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/XLM",
-        "forks_count": "9",
-        "stargazers_count": "179",
+        "full_name": "rsms/inter",
+        "forks_count": "144",
+        "stargazers_count": "8046",
         "language": "Python",
-        "repositoryDescription": "PyTorch original implementation of Cross-lingual Language Model Pretraining."
+        "repositoryDescription": "The Inter font family"
     },
     {
-        "name": "awesome-podcasts",
+        "name": "constate",
         "owner": {
-            "login": "rShetty"
+            "login": "diegohaz"
         },
-        "full_name": "rShetty/awesome-podcasts",
-        "forks_count": "407",
-        "stargazers_count": "7929",
-        "repositoryDescription": "Collection of awesome podcasts"
+        "full_name": "diegohaz/constate",
+        "forks_count": "32",
+        "stargazers_count": "1113",
+        "language": "TypeScript",
+        "repositoryDescription": "Scalable state manager using React Hooks & Context"
     },
     {
-        "name": "apexcharts.js",
+        "name": "clean-code-typescript",
         "owner": {
-            "login": "apexcharts"
+            "login": "labs42io"
         },
-        "full_name": "apexcharts/apexcharts.js",
-        "forks_count": "174",
-        "stargazers_count": "4841",
+        "full_name": "labs42io/clean-code-typescript",
+        "forks_count": "42",
+        "stargazers_count": "945",
+        "language": "TypeScript",
+        "repositoryDescription": "Clean Code concepts adapted for TypeScript"
+    },
+    {
+        "name": "gitin",
+        "owner": {
+            "login": "isacikgoz"
+        },
+        "full_name": "isacikgoz/gitin",
+        "forks_count": "19",
+        "stargazers_count": "1022",
+        "language": "Go",
+        "repositoryDescription": "commit/branch/workdir explorer for git"
+    },
+    {
+        "name": "python-cheatsheet",
+        "owner": {
+            "login": "gto76"
+        },
+        "full_name": "gto76/python-cheatsheet",
+        "forks_count": "356",
+        "stargazers_count": "2004",
+        "language": "Python",
+        "repositoryDescription": "Comprehensive Python Cheatsheet"
+    },
+    {
+        "name": "flexsearch",
+        "owner": {
+            "login": "nextapps-de"
+        },
+        "full_name": "nextapps-de/flexsearch",
+        "forks_count": "50",
+        "stargazers_count": "2815",
         "language": "JavaScript",
-        "repositoryDescription": "📊\nInteractive SVG Charts"
+        "repositoryDescription": "Next-Generation full text search library for Browser and Node.js"
     },
     {
         "name": "developer-roadmap",
@@ -223,9 +137,75 @@
             "login": "kamranahmedse"
         },
         "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11162",
-        "stargazers_count": "71720",
+        "forks_count": "11182",
+        "stargazers_count": "71874",
         "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+    },
+    {
+        "name": "apexcharts.js",
+        "owner": {
+            "login": "apexcharts"
+        },
+        "full_name": "apexcharts/apexcharts.js",
+        "forks_count": "178",
+        "stargazers_count": "5001",
+        "language": "JavaScript",
+        "repositoryDescription": "📊\nInteractive SVG Charts"
+    },
+    {
+        "name": "notion",
+        "owner": {
+            "login": "notion-cli"
+        },
+        "full_name": "notion-cli/notion",
+        "forks_count": "20",
+        "stargazers_count": "411",
+        "language": "Rust",
+        "repositoryDescription": "Notion: the hassle-free JavaScript toolchain manager"
+    },
+    {
+        "name": "react-testing-library",
+        "owner": {
+            "login": "kentcdodds"
+        },
+        "full_name": "kentcdodds/react-testing-library",
+        "forks_count": "291",
+        "stargazers_count": "5193",
+        "language": "JavaScript",
+        "repositoryDescription": "🐐\nSimple and complete React DOM testing utilities that encourage good testing practices."
+    },
+    {
+        "name": "gotop",
+        "owner": {
+            "login": "cjbassi"
+        },
+        "full_name": "cjbassi/gotop",
+        "forks_count": "135",
+        "stargazers_count": "3617",
+        "language": "Go",
+        "repositoryDescription": "A terminal based graphical activity monitor inspired by gtop and vtop"
+    },
+    {
+        "name": "react",
+        "owner": {
+            "login": "facebook"
+        },
+        "full_name": "facebook/react",
+        "forks_count": "22063",
+        "stargazers_count": "121770",
+        "language": "JavaScript",
+        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+    },
+    {
+        "name": "RustPython",
+        "owner": {
+            "login": "RustPython"
+        },
+        "full_name": "RustPython/RustPython",
+        "forks_count": "103",
+        "stargazers_count": "2463",
+        "language": "Rust",
+        "repositoryDescription": "A Python Interpreter written in Rust"
     },
     {
         "name": "professional-programming",
@@ -233,21 +213,20 @@
             "login": "charlax"
         },
         "full_name": "charlax/professional-programming",
-        "forks_count": "901",
-        "stargazers_count": "11110",
+        "forks_count": "914",
+        "stargazers_count": "11218",
         "language": "Shell",
         "repositoryDescription": "A collection of full-stack resources for programmers."
     },
     {
-        "name": "nlp-tutorial",
+        "name": "awesome-podcasts",
         "owner": {
-            "login": "graykode"
+            "login": "rShetty"
         },
-        "full_name": "graykode/nlp-tutorial",
-        "forks_count": "130",
-        "stargazers_count": "920",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Natural Language Processing Tutorial for Deep Learning Researchers"
+        "full_name": "rShetty/awesome-podcasts",
+        "forks_count": "410",
+        "stargazers_count": "8035",
+        "repositoryDescription": "Collection of awesome podcasts"
     },
     {
         "name": "open-source-cs",
@@ -255,19 +234,41 @@
             "login": "ForrestKnight"
         },
         "full_name": "ForrestKnight/open-source-cs",
-        "forks_count": "751",
-        "stargazers_count": "5206",
+        "forks_count": "765",
+        "stargazers_count": "5306",
         "repositoryDescription": "Video discussing this curriculum:"
     },
     {
-        "name": "ffhq-dataset",
+        "name": "learn-react-app",
         "owner": {
-            "login": "NVlabs"
+            "login": "tyroprogrammer"
         },
-        "full_name": "NVlabs/ffhq-dataset",
-        "forks_count": "16",
-        "stargazers_count": "259",
+        "full_name": "tyroprogrammer/learn-react-app",
+        "forks_count": "170",
+        "stargazers_count": "2390",
+        "language": "JavaScript",
+        "repositoryDescription": "Application that will help you learn React fundamentals. Install this application locally - there's tutorial, code snippets and exercises. The main objective of this project is to help you get off the ground with React!"
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "18136",
+        "stargazers_count": "127285",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "modin",
+        "owner": {
+            "login": "modin-project"
+        },
+        "full_name": "modin-project/modin",
+        "forks_count": "65",
+        "stargazers_count": "1123",
         "language": "Python",
-        "repositoryDescription": "Flickr-Faces-HQ Dataset (FFHQ)"
+        "repositoryDescription": "Modin: Speed up your Pandas workflows by changing a single line of code"
     }
 ]

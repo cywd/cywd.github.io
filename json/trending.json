@@ -5,21 +5,10 @@
             "login": "pomber"
         },
         "full_name": "pomber/git-history",
-        "forks_count": "109",
-        "stargazers_count": "4439",
+        "forks_count": "146",
+        "stargazers_count": "5337",
         "language": "JavaScript",
         "repositoryDescription": "Quickly browse the history of any GitHub file"
-    },
-    {
-        "name": "instant.page",
-        "owner": {
-            "login": "instantpage"
-        },
-        "full_name": "instantpage/instant.page",
-        "forks_count": "15",
-        "stargazers_count": "516",
-        "language": "JavaScript",
-        "repositoryDescription": "Make your site’s pages instant in 1 minute and improve your conversion rate by 1%"
     },
     {
         "name": "nginx-quick-reference",
@@ -27,9 +16,41 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/nginx-quick-reference",
-        "forks_count": "113",
-        "stargazers_count": "2679",
+        "forks_count": "138",
+        "stargazers_count": "3336",
         "repositoryDescription": "⚡️\nThis notes describes how to improve Nginx performance, security and other important things; ssllabs A+ 100%."
+    },
+    {
+        "name": "instant.page",
+        "owner": {
+            "login": "instantpage"
+        },
+        "full_name": "instantpage/instant.page",
+        "forks_count": "28",
+        "stargazers_count": "1139",
+        "language": "JavaScript",
+        "repositoryDescription": "Make your site’s pages instant in 1 minute and improve your conversion rate by 1%"
+    },
+    {
+        "name": "deep-learning-drizzle",
+        "owner": {
+            "login": "kmario23"
+        },
+        "full_name": "kmario23/deep-learning-drizzle",
+        "forks_count": "282",
+        "stargazers_count": "2099",
+        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
+    },
+    {
+        "name": "swc",
+        "owner": {
+            "login": "swc-project"
+        },
+        "full_name": "swc-project/swc",
+        "forks_count": "58",
+        "stargazers_count": "4050",
+        "language": "Rust",
+        "repositoryDescription": "Super-fast javascript to javascript compiler written in rust"
     },
     {
         "name": "clusterfuzz",
@@ -37,10 +58,20 @@
             "login": "google"
         },
         "full_name": "google/clusterfuzz",
-        "forks_count": "92",
-        "stargazers_count": "1800",
+        "forks_count": "119",
+        "stargazers_count": "2203",
         "language": "Python",
         "repositoryDescription": "All your bug are belong to us."
+    },
+    {
+        "name": "How-To-Secure-A-Linux-Server",
+        "owner": {
+            "login": "imthenachoman"
+        },
+        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
+        "forks_count": "20",
+        "stargazers_count": "511",
+        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
     },
     {
         "name": "not-paid",
@@ -48,10 +79,75 @@
             "login": "kleampa"
         },
         "full_name": "kleampa/not-paid",
-        "forks_count": "269",
-        "stargazers_count": "4020",
+        "forks_count": "287",
+        "stargazers_count": "4409",
         "language": "JavaScript",
         "repositoryDescription": "Client did not pay? Add opacity to the body tag and decrease it every day until their site completely fades away"
+    },
+    {
+        "name": "vditor",
+        "owner": {
+            "login": "b3log"
+        },
+        "full_name": "b3log/vditor",
+        "forks_count": "8",
+        "stargazers_count": "389",
+        "language": "TypeScript",
+        "repositoryDescription": "♏ 一款浏览器端的 Markdown 编辑器，使用 TypeScript 实现。"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "11272",
+        "stargazers_count": "72608",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+    },
+    {
+        "name": "public-apis",
+        "owner": {
+            "login": "toddmotto"
+        },
+        "full_name": "toddmotto/public-apis",
+        "forks_count": "5097",
+        "stargazers_count": "50134",
+        "language": "Python",
+        "repositoryDescription": "A collective list of free APIs for use in software and web development."
+    },
+    {
+        "name": "python-cheatsheet",
+        "owner": {
+            "login": "gto76"
+        },
+        "full_name": "gto76/python-cheatsheet",
+        "forks_count": "454",
+        "stargazers_count": "2765",
+        "language": "Python",
+        "repositoryDescription": "Comprehensive Python Cheatsheet"
+    },
+    {
+        "name": "miniC-hosting",
+        "owner": {
+            "login": "vasyop"
+        },
+        "full_name": "vasyop/miniC-hosting",
+        "forks_count": "20",
+        "stargazers_count": "362",
+        "language": "JavaScript",
+        "repositoryDescription": "A simple stack-based virtual machine that runs C in the browser."
+    },
+    {
+        "name": "uppy",
+        "owner": {
+            "login": "transloadit"
+        },
+        "full_name": "transloadit/uppy",
+        "forks_count": "634",
+        "stargazers_count": "13414",
+        "language": "JavaScript",
+        "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
     },
     {
         "name": "qoa",
@@ -60,53 +156,9 @@
         },
         "full_name": "klaussinani/qoa",
         "forks_count": "10",
-        "stargazers_count": "378",
+        "stargazers_count": "642",
         "language": "JavaScript",
         "repositoryDescription": "💬\nMinimal interactive command-line prompts"
-    },
-    {
-        "name": "public-apis",
-        "owner": {
-            "login": "toddmotto"
-        },
-        "full_name": "toddmotto/public-apis",
-        "forks_count": "5069",
-        "stargazers_count": "49790",
-        "language": "Python",
-        "repositoryDescription": "A collective list of free APIs for use in software and web development."
-    },
-    {
-        "name": "react-native-hooks",
-        "owner": {
-            "login": "react-native-community"
-        },
-        "full_name": "react-native-community/react-native-hooks",
-        "forks_count": "13",
-        "stargazers_count": "592",
-        "language": "JavaScript",
-        "repositoryDescription": "React Native APIs turned into React Hooks for use in functional React components"
-    },
-    {
-        "name": "swc",
-        "owner": {
-            "login": "swc-project"
-        },
-        "full_name": "swc-project/swc",
-        "forks_count": "51",
-        "stargazers_count": "3505",
-        "language": "Rust",
-        "repositoryDescription": "Super-fast javascript to javascript compiler written in rust"
-    },
-    {
-        "name": "python-cheatsheet",
-        "owner": {
-            "login": "gto76"
-        },
-        "full_name": "gto76/python-cheatsheet",
-        "forks_count": "414",
-        "stargazers_count": "2516",
-        "language": "Python",
-        "repositoryDescription": "Comprehensive Python Cheatsheet"
     },
     {
         "name": "Gorsair",
@@ -114,64 +166,32 @@
             "login": "Ullaakut"
         },
         "full_name": "Ullaakut/Gorsair",
-        "forks_count": "14",
-        "stargazers_count": "181",
+        "forks_count": "27",
+        "stargazers_count": "402",
         "language": "Go",
         "repositoryDescription": "Gorsair hacks its way into remote docker containers that expose their APIs."
     },
     {
-        "name": "uppy",
+        "name": "stylegan",
         "owner": {
-            "login": "transloadit"
+            "login": "NVlabs"
         },
-        "full_name": "transloadit/uppy",
-        "forks_count": "629",
-        "stargazers_count": "13143",
+        "full_name": "NVlabs/stylegan",
+        "forks_count": "147",
+        "stargazers_count": "1440",
+        "language": "Python",
+        "repositoryDescription": "StyleGAN - Official TensorFlow Implementation"
+    },
+    {
+        "name": "javascript-algorithms",
+        "owner": {
+            "login": "trekhleb"
+        },
+        "full_name": "trekhleb/javascript-algorithms",
+        "forks_count": "5986",
+        "stargazers_count": "44286",
         "language": "JavaScript",
-        "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
-    },
-    {
-        "name": "go-elasticsearch",
-        "owner": {
-            "login": "elastic"
-        },
-        "full_name": "elastic/go-elasticsearch",
-        "forks_count": "39",
-        "stargazers_count": "563",
-        "language": "Go",
-        "repositoryDescription": "The official Go client for Elasticsearch"
-    },
-    {
-        "name": "developer-roadmap",
-        "owner": {
-            "login": "kamranahmedse"
-        },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11240",
-        "stargazers_count": "72244",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
-    },
-    {
-        "name": "linaria",
-        "owner": {
-            "login": "callstack"
-        },
-        "full_name": "callstack/linaria",
-        "forks_count": "67",
-        "stargazers_count": "2580",
-        "language": "JavaScript",
-        "repositoryDescription": "Zero-runtime CSS in JS library"
-    },
-    {
-        "name": "windows95",
-        "owner": {
-            "login": "felixrieseberg"
-        },
-        "full_name": "felixrieseberg/windows95",
-        "forks_count": "824",
-        "stargazers_count": "14321",
-        "language": "JavaScript",
-        "repositoryDescription": "💩\n🚀\nWindows 95 in Electron. Runs on macOS, Linux, and Windows."
+        "repositoryDescription": "📝\nAlgorithms and data structures implemented in JavaScript with explanations and links to further readings"
     },
     {
         "name": "flexsearch",
@@ -179,86 +199,41 @@
             "login": "nextapps-de"
         },
         "full_name": "nextapps-de/flexsearch",
-        "forks_count": "68",
-        "stargazers_count": "3296",
+        "forks_count": "74",
+        "stargazers_count": "3482",
         "language": "JavaScript",
         "repositoryDescription": "Next-Generation full text search library for Browser and Node.js"
     },
     {
-        "name": "fathom",
+        "name": "nlp_chinese_corpus",
         "owner": {
-            "login": "usefathom"
+            "login": "brightmart"
         },
-        "full_name": "usefathom/fathom",
-        "forks_count": "171",
-        "stargazers_count": "4297",
-        "language": "Go",
-        "repositoryDescription": "Fathom. Simple, trustworthy website analytics. Built with Golang & Preact."
+        "full_name": "brightmart/nlp_chinese_corpus",
+        "forks_count": "27",
+        "stargazers_count": "193",
+        "repositoryDescription": "大规模中文自然语言处理语料 Large Scale Chinese Corpus for NLP"
     },
     {
-        "name": "h4cker",
+        "name": "AspNetCore-Developer-Roadmap",
         "owner": {
-            "login": "The-Art-of-Hacking"
+            "login": "MoienTajik"
         },
-        "full_name": "The-Art-of-Hacking/h4cker",
-        "forks_count": "266",
-        "stargazers_count": "1744",
-        "language": "Java",
-        "repositoryDescription": "This repository is primarily maintained by Omar Santos and includes resources related to ethical hacking / penetration testing, digital forensics and incident response (DFIR), vulnerability research, exploit development, reverse engineering, and more."
+        "full_name": "MoienTajik/AspNetCore-Developer-Roadmap",
+        "forks_count": "20",
+        "stargazers_count": "294",
+        "repositoryDescription": "Roadmap to becoming an ASP.NET Core developer in 2019"
     },
     {
-        "name": "miniC-hosting",
+        "name": "windows95",
         "owner": {
-            "login": "vasyop"
+            "login": "felixrieseberg"
         },
-        "full_name": "vasyop/miniC-hosting",
-        "forks_count": "5",
-        "stargazers_count": "117",
+        "full_name": "felixrieseberg/windows95",
+        "forks_count": "834",
+        "stargazers_count": "14504",
         "language": "JavaScript",
-        "repositoryDescription": "A simple stack-based virtual machine that runs C in the browser."
-    },
-    {
-        "name": "gotop",
-        "owner": {
-            "login": "cjbassi"
-        },
-        "full_name": "cjbassi/gotop",
-        "forks_count": "140",
-        "stargazers_count": "3922",
-        "language": "Go",
-        "repositoryDescription": "A terminal based graphical activity monitor inspired by gtop and vtop"
-    },
-    {
-        "name": "deep-learning-drizzle",
-        "owner": {
-            "login": "kmario23"
-        },
-        "full_name": "kmario23/deep-learning-drizzle",
-        "forks_count": "129",
-        "stargazers_count": "1554",
-        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
-    },
-    {
-        "name": "docui",
-        "owner": {
-            "login": "skanehira"
-        },
-        "full_name": "skanehira/docui",
-        "forks_count": "29",
-        "stargazers_count": "659",
-        "language": "Go",
-        "repositoryDescription": "TUI Tool for Docker"
-    },
-    {
-        "name": "rant",
-        "owner": {
-            "login": "TheBerkin"
-        },
-        "full_name": "TheBerkin/rant",
-        "forks_count": "92",
-        "stargazers_count": "2723",
-        "language": "C#",
-        "repositoryDescription": "Rant – The all-purpose procedural text library"
+        "repositoryDescription": "💩\n🚀\nWindows 95 in Electron. Runs on macOS, Linux, and Windows."
     },
     {
         "name": "mercury-parser",
@@ -266,9 +241,31 @@
             "login": "postlight"
         },
         "full_name": "postlight/mercury-parser",
-        "forks_count": "19",
-        "stargazers_count": "502",
+        "forks_count": "39",
+        "stargazers_count": "675",
         "language": "JavaScript",
         "repositoryDescription": "📜\nExtracting content from the chaos of the web."
+    },
+    {
+        "name": "h4cker",
+        "owner": {
+            "login": "The-Art-of-Hacking"
+        },
+        "full_name": "The-Art-of-Hacking/h4cker",
+        "forks_count": "277",
+        "stargazers_count": "1882",
+        "language": "Java",
+        "repositoryDescription": "This repository is primarily maintained by Omar Santos and includes resources related to ethical hacking / penetration testing, digital forensics and incident response (DFIR), vulnerability research, exploit development, reverse engineering, and more."
+    },
+    {
+        "name": "go-elasticsearch",
+        "owner": {
+            "login": "elastic"
+        },
+        "full_name": "elastic/go-elasticsearch",
+        "forks_count": "44",
+        "stargazers_count": "710",
+        "language": "Go",
+        "repositoryDescription": "The official Go client for Elasticsearch"
     }
 ]

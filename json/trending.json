@@ -1,12 +1,43 @@
 [
     {
+        "name": "How-To-Secure-A-Linux-Server",
+        "owner": {
+            "login": "imthenachoman"
+        },
+        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
+        "forks_count": "139",
+        "stargazers_count": "3382",
+        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
+    },
+    {
+        "name": "faceswap",
+        "owner": {
+            "login": "deepfakes"
+        },
+        "full_name": "deepfakes/faceswap",
+        "forks_count": "3056",
+        "stargazers_count": "10010",
+        "language": "Python",
+        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+    },
+    {
+        "name": "awesome-startup-credits",
+        "owner": {
+            "login": "dakshshah96"
+        },
+        "full_name": "dakshshah96/awesome-startup-credits",
+        "forks_count": "28",
+        "stargazers_count": "599",
+        "repositoryDescription": "✨\nA collection of awesome companies offering free/discounted plans for eligible startups"
+    },
+    {
         "name": "leon",
         "owner": {
             "login": "leon-ai"
         },
         "full_name": "leon-ai/leon",
-        "forks_count": "51",
-        "stargazers_count": "1413",
+        "forks_count": "77",
+        "stargazers_count": "1793",
         "language": "JavaScript",
         "repositoryDescription": "🧠 Leon is your open-source personal assistant."
     },
@@ -16,139 +47,32 @@
             "login": "openai"
         },
         "full_name": "openai/gpt-2",
-        "forks_count": "254",
-        "stargazers_count": "1780",
+        "forks_count": "318",
+        "stargazers_count": "2110",
         "language": "Python",
         "repositoryDescription": "Code for the paper \"Language Models are Unsupervised Multitask Learners\""
     },
     {
-        "name": "tinyraycaster",
+        "name": "dgraph",
         "owner": {
-            "login": "ssloy"
+            "login": "dgraph-io"
         },
-        "full_name": "ssloy/tinyraycaster",
-        "forks_count": "26",
-        "stargazers_count": "681",
-        "language": "C++",
-        "repositoryDescription": "486 lines of C++: old-school FPS in a weekend"
-    },
-    {
-        "name": "How-To-Secure-A-Linux-Server",
-        "owner": {
-            "login": "imthenachoman"
-        },
-        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
-        "forks_count": "104",
-        "stargazers_count": "2356",
-        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
-    },
-    {
-        "name": "microservices-demo",
-        "owner": {
-            "login": "GoogleCloudPlatform"
-        },
-        "full_name": "GoogleCloudPlatform/microservices-demo",
-        "forks_count": "284",
-        "stargazers_count": "2199",
-        "language": "C#",
-        "repositoryDescription": "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
-    },
-    {
-        "name": "talos",
-        "owner": {
-            "login": "autonomy"
-        },
-        "full_name": "autonomy/talos",
-        "forks_count": "12",
-        "stargazers_count": "384",
+        "full_name": "dgraph-io/dgraph",
+        "forks_count": "562",
+        "stargazers_count": "8051",
         "language": "Go",
-        "repositoryDescription": "A modern Linux distribution for Kubernetes."
+        "repositoryDescription": "Fast, Distributed Graph DB"
     },
     {
-        "name": "stylegan",
+        "name": "PayloadsAllTheThings",
         "owner": {
-            "login": "NVlabs"
+            "login": "swisskyrepo"
         },
-        "full_name": "NVlabs/stylegan",
-        "forks_count": "300",
-        "stargazers_count": "2912",
+        "full_name": "swisskyrepo/PayloadsAllTheThings",
+        "forks_count": "1801",
+        "stargazers_count": "5546",
         "language": "Python",
-        "repositoryDescription": "StyleGAN - Official TensorFlow Implementation"
-    },
-    {
-        "name": "Sloth",
-        "owner": {
-            "login": "sveinbjornt"
-        },
-        "full_name": "sveinbjornt/Sloth",
-        "forks_count": "52",
-        "stargazers_count": "2728",
-        "language": "Objective-C",
-        "repositoryDescription": "Mac app that shows all open files and sockets in use by all running processes. Nice GUI for lsof."
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "48",
-        "stargazers_count": "579",
-        "repositoryDescription": "The best design tools for everything."
-    },
-    {
-        "name": "1m-go-websockets",
-        "owner": {
-            "login": "eranyanay"
-        },
-        "full_name": "eranyanay/1m-go-websockets",
-        "forks_count": "166",
-        "stargazers_count": "2273",
-        "language": "Go",
-        "repositoryDescription": "handling 1M websockets connections in Go"
-    },
-    {
-        "name": "ludwig",
-        "owner": {
-            "login": "uber"
-        },
-        "full_name": "uber/ludwig",
-        "forks_count": "200",
-        "stargazers_count": "2462",
-        "language": "Python",
-        "repositoryDescription": "Ludwig is a toolbox built on top of TensorFlow that allows to train and test deep learning models without the need to write code."
-    },
-    {
-        "name": "nsfw_data_source_urls",
-        "owner": {
-            "login": "EBazarov"
-        },
-        "full_name": "EBazarov/nsfw_data_source_urls",
-        "forks_count": "289",
-        "stargazers_count": "1037",
-        "repositoryDescription": "Collection of NSFW images URLs for the purposes of training an NSFW Image Classifier"
-    },
-    {
-        "name": "rasa_core",
-        "owner": {
-            "login": "RasaHQ"
-        },
-        "full_name": "RasaHQ/rasa_core",
-        "forks_count": "852",
-        "stargazers_count": "1859",
-        "language": "Python",
-        "repositoryDescription": "🤖\nOpen source chatbot framework with machine learning-based dialogue management - Build contextual AI assistants"
-    },
-    {
-        "name": "flutter-go",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/flutter-go",
-        "forks_count": "676",
-        "stargazers_count": "7125",
-        "language": "Dart",
-        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
+        "repositoryDescription": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF"
     },
     {
         "name": "vscode-leetcode",
@@ -156,10 +80,96 @@
             "login": "jdneo"
         },
         "full_name": "jdneo/vscode-leetcode",
-        "forks_count": "38",
-        "stargazers_count": "890",
+        "forks_count": "45",
+        "stargazers_count": "1146",
         "language": "TypeScript",
         "repositoryDescription": "Solve LeetCode problems in VS Code"
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "54",
+        "stargazers_count": "826",
+        "repositoryDescription": "The best design tools for everything."
+    },
+    {
+        "name": "awesome-algorithm",
+        "owner": {
+            "login": "apachecn"
+        },
+        "full_name": "apachecn/awesome-algorithm",
+        "forks_count": "1554",
+        "stargazers_count": "8526",
+        "language": "Python",
+        "repositoryDescription": "LeetCode, HackRank, 剑指offer, classic algorithm implementation"
+    },
+    {
+        "name": "microservices-demo",
+        "owner": {
+            "login": "GoogleCloudPlatform"
+        },
+        "full_name": "GoogleCloudPlatform/microservices-demo",
+        "forks_count": "304",
+        "stargazers_count": "2417",
+        "language": "C#",
+        "repositoryDescription": "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
+    },
+    {
+        "name": "pytorch-handbook",
+        "owner": {
+            "login": "zergtant"
+        },
+        "full_name": "zergtant/pytorch-handbook",
+        "forks_count": "245",
+        "stargazers_count": "1432",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用PyTorch进行深度学习开发和研究的朋友快速入门，其中包含的Pytorch教程全部通过测试保证可以成功运行"
+    },
+    {
+        "name": "stylegan",
+        "owner": {
+            "login": "NVlabs"
+        },
+        "full_name": "NVlabs/stylegan",
+        "forks_count": "328",
+        "stargazers_count": "3102",
+        "language": "Python",
+        "repositoryDescription": "StyleGAN - Official TensorFlow Implementation"
+    },
+    {
+        "name": "developer-roadmap",
+        "owner": {
+            "login": "kamranahmedse"
+        },
+        "full_name": "kamranahmedse/developer-roadmap",
+        "forks_count": "11425",
+        "stargazers_count": "73677",
+        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+    },
+    {
+        "name": "talos",
+        "owner": {
+            "login": "autonomy"
+        },
+        "full_name": "autonomy/talos",
+        "forks_count": "20",
+        "stargazers_count": "523",
+        "language": "Go",
+        "repositoryDescription": "A modern Linux distribution for Kubernetes."
+    },
+    {
+        "name": "Sloth",
+        "owner": {
+            "login": "sveinbjornt"
+        },
+        "full_name": "sveinbjornt/Sloth",
+        "forks_count": "55",
+        "stargazers_count": "2863",
+        "language": "Objective-C",
+        "repositoryDescription": "Mac app that shows all open files and sockets in use by all running processes. Nice GUI for lsof."
     },
     {
         "name": "git-history",
@@ -167,10 +177,32 @@
             "login": "pomber"
         },
         "full_name": "pomber/git-history",
-        "forks_count": "252",
-        "stargazers_count": "7891",
+        "forks_count": "256",
+        "stargazers_count": "8028",
         "language": "JavaScript",
         "repositoryDescription": "Quickly browse the history of any GitHub file"
+    },
+    {
+        "name": "ludwig",
+        "owner": {
+            "login": "uber"
+        },
+        "full_name": "uber/ludwig",
+        "forks_count": "211",
+        "stargazers_count": "2586",
+        "language": "Python",
+        "repositoryDescription": "Ludwig is a toolbox built on top of TensorFlow that allows to train and test deep learning models without the need to write code."
+    },
+    {
+        "name": "professional-programming",
+        "owner": {
+            "login": "charlax"
+        },
+        "full_name": "charlax/professional-programming",
+        "forks_count": "972",
+        "stargazers_count": "11969",
+        "language": "Shell",
+        "repositoryDescription": "A collection of full-stack resources for programmers."
     },
     {
         "name": "nginx-quick-reference",
@@ -178,9 +210,31 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/nginx-quick-reference",
-        "forks_count": "235",
-        "stargazers_count": "5247",
+        "forks_count": "240",
+        "stargazers_count": "5364",
         "repositoryDescription": "⚡️\nThis notes describes how to improve Nginx performance, security and other important things; ssllabs A+ 100%."
+    },
+    {
+        "name": "Tensorflow-Cookbook",
+        "owner": {
+            "login": "taki0112"
+        },
+        "full_name": "taki0112/Tensorflow-Cookbook",
+        "forks_count": "12",
+        "stargazers_count": "129",
+        "language": "Python",
+        "repositoryDescription": "Simple Tensorflow Cookbook for easy-to-use"
+    },
+    {
+        "name": "1m-go-websockets",
+        "owner": {
+            "login": "eranyanay"
+        },
+        "full_name": "eranyanay/1m-go-websockets",
+        "forks_count": "172",
+        "stargazers_count": "2381",
+        "language": "Go",
+        "repositoryDescription": "handling 1M websockets connections in Go"
     },
     {
         "name": "planet",
@@ -188,8 +242,8 @@
             "login": "google-research"
         },
         "full_name": "google-research/planet",
-        "forks_count": "24",
-        "stargazers_count": "144",
+        "forks_count": "32",
+        "stargazers_count": "249",
         "language": "Python",
         "repositoryDescription": "Deep Planning Network: Control from pixels by latent planning with learned dynamics"
     },
@@ -199,74 +253,20 @@
             "login": "transloadit"
         },
         "full_name": "transloadit/uppy",
-        "forks_count": "655",
-        "stargazers_count": "14332",
+        "forks_count": "661",
+        "stargazers_count": "14434",
         "language": "JavaScript",
         "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
     },
     {
-        "name": "developer-roadmap",
+        "name": "Recommenders",
         "owner": {
-            "login": "kamranahmedse"
+            "login": "Microsoft"
         },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11408",
-        "stargazers_count": "73503",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
-    },
-    {
-        "name": "DoraemonKit",
-        "owner": {
-            "login": "didi"
-        },
-        "full_name": "didi/DoraemonKit",
-        "forks_count": "349",
-        "stargazers_count": "3625",
-        "language": "Java",
-        "repositoryDescription": "简称 \"DoKit\" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。"
-    },
-    {
-        "name": "periphery",
-        "owner": {
-            "login": "peripheryapp"
-        },
-        "full_name": "peripheryapp/periphery",
-        "forks_count": "5",
-        "stargazers_count": "381",
-        "language": "Swift",
-        "repositoryDescription": "Eliminate Unused Swift Code."
-    },
-    {
-        "name": "pytorch-handbook",
-        "owner": {
-            "login": "zergtant"
-        },
-        "full_name": "zergtant/pytorch-handbook",
-        "forks_count": "203",
-        "stargazers_count": "1254",
+        "full_name": "Microsoft/Recommenders",
+        "forks_count": "114",
+        "stargazers_count": "1399",
         "language": "Jupyter Notebook",
-        "repositoryDescription": "pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用PyTorch进行深度学习开发和研究的朋友快速入门，其中包含的Pytorch教程全部通过测试保证可以成功运行"
-    },
-    {
-        "name": "Motrix",
-        "owner": {
-            "login": "agalwood"
-        },
-        "full_name": "agalwood/Motrix",
-        "forks_count": "213",
-        "stargazers_count": "2739",
-        "language": "JavaScript",
-        "repositoryDescription": "A full-featured download manager."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "7185",
-        "stargazers_count": "24191",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "repositoryDescription": "Recommender Systems"
     }
 ]

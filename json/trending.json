@@ -1,14 +1,34 @@
 [
     {
+        "name": "How-To-Secure-A-Linux-Server",
+        "owner": {
+            "login": "imthenachoman"
+        },
+        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
+        "forks_count": "219",
+        "stargazers_count": "5103",
+        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
+    },
+    {
         "name": "faceswap",
         "owner": {
             "login": "deepfakes"
         },
         "full_name": "deepfakes/faceswap",
-        "forks_count": "3725",
-        "stargazers_count": "11393",
+        "forks_count": "3948",
+        "stargazers_count": "12090",
         "language": "Python",
         "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+    },
+    {
+        "name": "Micro8",
+        "owner": {
+            "login": "Micropoor"
+        },
+        "full_name": "Micropoor/Micro8",
+        "forks_count": "254",
+        "stargazers_count": "631",
+        "repositoryDescription": ""
     },
     {
         "name": "the-book-of-secret-knowledge",
@@ -16,52 +36,9 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1171",
-        "stargazers_count": "14349",
+        "forks_count": "1217",
+        "stargazers_count": "14929",
         "repositoryDescription": "⭐️\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more."
-    },
-    {
-        "name": "How-To-Secure-A-Linux-Server",
-        "owner": {
-            "login": "imthenachoman"
-        },
-        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
-        "forks_count": "173",
-        "stargazers_count": "4142",
-        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
-    },
-    {
-        "name": "leon",
-        "owner": {
-            "login": "leon-ai"
-        },
-        "full_name": "leon-ai/leon",
-        "forks_count": "97",
-        "stargazers_count": "2355",
-        "language": "JavaScript",
-        "repositoryDescription": "🧠 Leon is your open-source personal assistant."
-    },
-    {
-        "name": "awesome-python",
-        "owner": {
-            "login": "vinta"
-        },
-        "full_name": "vinta/awesome-python",
-        "forks_count": "11979",
-        "stargazers_count": "62030",
-        "language": "Python",
-        "repositoryDescription": "A curated list of awesome Python frameworks, libraries, software and resources"
-    },
-    {
-        "name": "Tensorflow-Cookbook",
-        "owner": {
-            "login": "taki0112"
-        },
-        "full_name": "taki0112/Tensorflow-Cookbook",
-        "forks_count": "72",
-        "stargazers_count": "560",
-        "language": "Python",
-        "repositoryDescription": "Simple Tensorflow Cookbook for easy-to-use"
     },
     {
         "name": "Awesome-Design-Tools",
@@ -69,129 +46,31 @@
             "login": "LisaDziuba"
         },
         "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "74",
-        "stargazers_count": "1265",
+        "forks_count": "114",
+        "stargazers_count": "1866",
         "repositoryDescription": "The best design tools for everything."
     },
     {
-        "name": "gpt-2",
+        "name": "leon",
         "owner": {
-            "login": "openai"
+            "login": "leon-ai"
         },
-        "full_name": "openai/gpt-2",
-        "forks_count": "391",
-        "stargazers_count": "2501",
-        "language": "Python",
-        "repositoryDescription": "Code for the paper \"Language Models are Unsupervised Multitask Learners\""
+        "full_name": "leon-ai/leon",
+        "forks_count": "112",
+        "stargazers_count": "2830",
+        "language": "JavaScript",
+        "repositoryDescription": "🧠 Leon is your open-source personal assistant."
     },
     {
-        "name": "PayloadsAllTheThings",
+        "name": "inlets",
         "owner": {
-            "login": "swisskyrepo"
+            "login": "alexellis"
         },
-        "full_name": "swisskyrepo/PayloadsAllTheThings",
-        "forks_count": "1837",
-        "stargazers_count": "5881",
-        "language": "Python",
-        "repositoryDescription": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF"
-    },
-    {
-        "name": "vscode-leetcode",
-        "owner": {
-            "login": "jdneo"
-        },
-        "full_name": "jdneo/vscode-leetcode",
-        "forks_count": "56",
-        "stargazers_count": "1508",
-        "language": "TypeScript",
-        "repositoryDescription": "Solve LeetCode problems in VS Code"
-    },
-    {
-        "name": "awesome-startup-credits",
-        "owner": {
-            "login": "dakshshah96"
-        },
-        "full_name": "dakshshah96/awesome-startup-credits",
-        "forks_count": "41",
-        "stargazers_count": "932",
-        "repositoryDescription": "✨\nA collection of awesome companies offering free/discounted plans for eligible startups"
-    },
-    {
-        "name": "flutter-go",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/flutter-go",
-        "forks_count": "721",
-        "stargazers_count": "7477",
-        "language": "Dart",
-        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
-    },
-    {
-        "name": "stylegan",
-        "owner": {
-            "login": "NVlabs"
-        },
-        "full_name": "NVlabs/stylegan",
-        "forks_count": "370",
-        "stargazers_count": "3354",
-        "language": "Python",
-        "repositoryDescription": "StyleGAN - Official TensorFlow Implementation"
-    },
-    {
-        "name": "DoraemonKit",
-        "owner": {
-            "login": "didi"
-        },
-        "full_name": "didi/DoraemonKit",
-        "forks_count": "387",
-        "stargazers_count": "3938",
-        "language": "Java",
-        "repositoryDescription": "简称 \"DoKit\" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。"
-    },
-    {
-        "name": "pytorch-handbook",
-        "owner": {
-            "login": "zergtant"
-        },
-        "full_name": "zergtant/pytorch-handbook",
-        "forks_count": "281",
-        "stargazers_count": "1663",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "pytorch handbook是一本开源的书籍，目标是帮助那些希望和使用PyTorch进行深度学习开发和研究的朋友快速入门，其中包含的Pytorch教程全部通过测试保证可以成功运行"
-    },
-    {
-        "name": "ant-design-vue",
-        "owner": {
-            "login": "vueComponent"
-        },
-        "full_name": "vueComponent/ant-design-vue",
-        "forks_count": "403",
-        "stargazers_count": "4434",
-        "language": "Vue",
-        "repositoryDescription": "An enterprise-class UI components based on Ant Design and Vue.\n🐜"
-    },
-    {
-        "name": "microservices-demo",
-        "owner": {
-            "login": "GoogleCloudPlatform"
-        },
-        "full_name": "GoogleCloudPlatform/microservices-demo",
-        "forks_count": "327",
-        "stargazers_count": "2646",
-        "language": "C#",
-        "repositoryDescription": "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "7297",
-        "stargazers_count": "24447",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "full_name": "alexellis/inlets",
+        "forks_count": "18",
+        "stargazers_count": "591",
+        "language": "Go",
+        "repositoryDescription": "Expose your local endpoints to the Internet"
     },
     {
         "name": "nginx-quick-reference",
@@ -199,51 +78,86 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/nginx-quick-reference",
-        "forks_count": "258",
-        "stargazers_count": "5583",
+        "forks_count": "320",
+        "stargazers_count": "5968",
         "repositoryDescription": "⚡️\nThis notes describes how to improve Nginx performance, security and other important things; ssllabs A+ 100%."
     },
     {
-        "name": "Daily-Interview-Question",
+        "name": "gpt-2",
         "owner": {
-            "login": "Advanced-Frontend"
+            "login": "openai"
         },
-        "full_name": "Advanced-Frontend/Daily-Interview-Question",
-        "forks_count": "40",
-        "stargazers_count": "385",
-        "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
+        "full_name": "openai/gpt-2",
+        "forks_count": "439",
+        "stargazers_count": "2839",
+        "language": "Python",
+        "repositoryDescription": "Code for the paper \"Language Models are Unsupervised Multitask Learners\""
     },
     {
-        "name": "100-days-of-code-frontend",
+        "name": "Tensorflow-Cookbook",
         "owner": {
-            "login": "nas5w"
+            "login": "taki0112"
         },
-        "full_name": "nas5w/100-days-of-code-frontend",
-        "forks_count": "38",
-        "stargazers_count": "515",
-        "repositoryDescription": "Curriculum for learning front-end development during #100DaysOfCode."
+        "full_name": "taki0112/Tensorflow-Cookbook",
+        "forks_count": "104",
+        "stargazers_count": "883",
+        "language": "Python",
+        "repositoryDescription": "Simple Tensorflow Cookbook for easy-to-use"
     },
     {
-        "name": "uppy",
+        "name": "JavaGuide",
         "owner": {
-            "login": "transloadit"
+            "login": "Snailclimb"
         },
-        "full_name": "transloadit/uppy",
-        "forks_count": "672",
-        "stargazers_count": "14648",
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "7400",
+        "stargazers_count": "24720",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "awesome-python",
+        "owner": {
+            "login": "vinta"
+        },
+        "full_name": "vinta/awesome-python",
+        "forks_count": "12011",
+        "stargazers_count": "62316",
+        "language": "Python",
+        "repositoryDescription": "A curated list of awesome Python frameworks, libraries, software and resources"
+    },
+    {
+        "name": "ant-design-vue",
+        "owner": {
+            "login": "vueComponent"
+        },
+        "full_name": "vueComponent/ant-design-vue",
+        "forks_count": "418",
+        "stargazers_count": "4719",
+        "language": "Vue",
+        "repositoryDescription": "An enterprise-class UI components based on Ant Design and Vue.\n🐜"
+    },
+    {
+        "name": "taro-yanxuan",
+        "owner": {
+            "login": "js-newbee"
+        },
+        "full_name": "js-newbee/taro-yanxuan",
+        "forks_count": "34",
+        "stargazers_count": "261",
         "language": "JavaScript",
-        "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
+        "repositoryDescription": "首个 Taro 多端统一实例 - 网易严选（小程序 + H5 + React Native） - By 趣店 FED"
     },
     {
-        "name": "dgraph",
+        "name": "vscode-leetcode",
         "owner": {
-            "login": "dgraph-io"
+            "login": "jdneo"
         },
-        "full_name": "dgraph-io/dgraph",
-        "forks_count": "567",
-        "stargazers_count": "8245",
-        "language": "Go",
-        "repositoryDescription": "Fast, Distributed Graph DB"
+        "full_name": "jdneo/vscode-leetcode",
+        "forks_count": "63",
+        "stargazers_count": "1764",
+        "language": "TypeScript",
+        "repositoryDescription": "Solve LeetCode problems in VS Code"
     },
     {
         "name": "advanced-java",
@@ -251,19 +165,107 @@
             "login": "doocs"
         },
         "full_name": "doocs/advanced-java",
-        "forks_count": "1792",
-        "stargazers_count": "9595",
+        "forks_count": "1857",
+        "stargazers_count": "9809",
         "language": "Java",
         "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
-        "name": "developer-roadmap",
+        "name": "mall",
         "owner": {
-            "login": "kamranahmedse"
+            "login": "macrozheng"
         },
-        "full_name": "kamranahmedse/developer-roadmap",
-        "forks_count": "11449",
-        "stargazers_count": "73853",
-        "repositoryDescription": "Roadmap to becoming a web developer in 2019"
+        "full_name": "macrozheng/mall",
+        "forks_count": "2137",
+        "stargazers_count": "6565",
+        "language": "Java",
+        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
+    },
+    {
+        "name": "Daily-Interview-Question",
+        "owner": {
+            "login": "Advanced-Frontend"
+        },
+        "full_name": "Advanced-Frontend/Daily-Interview-Question",
+        "forks_count": "50",
+        "stargazers_count": "595",
+        "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
+    },
+    {
+        "name": "Brooklyn",
+        "owner": {
+            "login": "pedrommcarrasco"
+        },
+        "full_name": "pedrommcarrasco/Brooklyn",
+        "forks_count": "31",
+        "stargazers_count": "820",
+        "language": "Swift",
+        "repositoryDescription": "🍎\nScreensaver inspired by Apple's Event on October 30, 2018"
+    },
+    {
+        "name": "bookworm",
+        "owner": {
+            "login": "babluboy"
+        },
+        "full_name": "babluboy/bookworm",
+        "forks_count": "50",
+        "stargazers_count": "600",
+        "language": "Vala",
+        "repositoryDescription": "A simple ebook reader for Elementary OS"
+    },
+    {
+        "name": "flutter-go",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/flutter-go",
+        "forks_count": "750",
+        "stargazers_count": "7663",
+        "language": "Dart",
+        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
+    },
+    {
+        "name": "fltrdr",
+        "owner": {
+            "login": "octobanana"
+        },
+        "full_name": "octobanana/fltrdr",
+        "forks_count": "3",
+        "stargazers_count": "212",
+        "language": "C++",
+        "repositoryDescription": "A TUI text reader for the terminal."
+    },
+    {
+        "name": "DoraemonKit",
+        "owner": {
+            "login": "didi"
+        },
+        "full_name": "didi/DoraemonKit",
+        "forks_count": "411",
+        "stargazers_count": "4123",
+        "language": "Java",
+        "repositoryDescription": "简称 \"DoKit\" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。"
+    },
+    {
+        "name": "uppy",
+        "owner": {
+            "login": "transloadit"
+        },
+        "full_name": "transloadit/uppy",
+        "forks_count": "675",
+        "stargazers_count": "14846",
+        "language": "JavaScript",
+        "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
+    },
+    {
+        "name": "microservices-demo",
+        "owner": {
+            "login": "GoogleCloudPlatform"
+        },
+        "full_name": "GoogleCloudPlatform/microservices-demo",
+        "forks_count": "339",
+        "stargazers_count": "2826",
+        "language": "C#",
+        "repositoryDescription": "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
     }
 ]

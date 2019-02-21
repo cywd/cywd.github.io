@@ -5,19 +5,42 @@
             "login": "Micropoor"
         },
         "full_name": "Micropoor/Micro8",
-        "forks_count": "1005",
-        "stargazers_count": "2471",
+        "forks_count": "2066",
+        "stargazers_count": "5195",
         "repositoryDescription": ""
     },
     {
-        "name": "How-To-Secure-A-Linux-Server",
+        "name": "simdjson",
         "owner": {
-            "login": "imthenachoman"
+            "login": "lemire"
         },
-        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
-        "forks_count": "261",
-        "stargazers_count": "5801",
-        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
+        "full_name": "lemire/simdjson",
+        "forks_count": "45",
+        "stargazers_count": "1670",
+        "language": "C++",
+        "repositoryDescription": "Parsing gigabytes of JSON per second"
+    },
+    {
+        "name": "PlotNeuralNet",
+        "owner": {
+            "login": "HarisIqbal88"
+        },
+        "full_name": "HarisIqbal88/PlotNeuralNet",
+        "forks_count": "224",
+        "stargazers_count": "1897",
+        "language": "TeX",
+        "repositoryDescription": "Latex code for making neural networks diagrams"
+    },
+    {
+        "name": "personal-website",
+        "owner": {
+            "login": "github"
+        },
+        "full_name": "github/personal-website",
+        "forks_count": "628",
+        "stargazers_count": "981",
+        "language": "CSS",
+        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
     },
     {
         "name": "Awesome-Design-Tools",
@@ -25,9 +48,19 @@
             "login": "LisaDziuba"
         },
         "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "138",
-        "stargazers_count": "2499",
+        "forks_count": "167",
+        "stargazers_count": "3174",
         "repositoryDescription": "The best design tools for everything."
+    },
+    {
+        "name": "How-To-Secure-A-Linux-Server",
+        "owner": {
+            "login": "imthenachoman"
+        },
+        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
+        "forks_count": "295",
+        "stargazers_count": "6368",
+        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
     },
     {
         "name": "faceswap",
@@ -35,8 +68,8 @@
             "login": "deepfakes"
         },
         "full_name": "deepfakes/faceswap",
-        "forks_count": "4101",
-        "stargazers_count": "12616",
+        "forks_count": "4234",
+        "stargazers_count": "13034",
         "language": "Python",
         "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
     },
@@ -46,31 +79,9 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1254",
-        "stargazers_count": "15457",
+        "forks_count": "1285",
+        "stargazers_count": "15896",
         "repositoryDescription": "⭐️\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more."
-    },
-    {
-        "name": "personal-website",
-        "owner": {
-            "login": "github"
-        },
-        "full_name": "github/personal-website",
-        "forks_count": "353",
-        "stargazers_count": "378",
-        "language": "CSS",
-        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
-    },
-    {
-        "name": "leon",
-        "owner": {
-            "login": "leon-ai"
-        },
-        "full_name": "leon-ai/leon",
-        "forks_count": "134",
-        "stargazers_count": "3232",
-        "language": "JavaScript",
-        "repositoryDescription": "🧠 Leon is your open-source personal assistant."
     },
     {
         "name": "inlets",
@@ -78,54 +89,21 @@
             "login": "alexellis"
         },
         "full_name": "alexellis/inlets",
-        "forks_count": "27",
-        "stargazers_count": "997",
+        "forks_count": "56",
+        "stargazers_count": "1412",
         "language": "Go",
         "repositoryDescription": "Expose your local endpoints to the Internet"
     },
     {
-        "name": "awesome-python",
+        "name": "SC-FEGAN",
         "owner": {
-            "login": "vinta"
+            "login": "JoYoungjoo"
         },
-        "full_name": "vinta/awesome-python",
-        "forks_count": "12057",
-        "stargazers_count": "62635",
+        "full_name": "JoYoungjoo/SC-FEGAN",
+        "forks_count": "64",
+        "stargazers_count": "410",
         "language": "Python",
-        "repositoryDescription": "A curated list of awesome Python frameworks, libraries, software and resources"
-    },
-    {
-        "name": "codecrumbs",
-        "owner": {
-            "login": "Bogdan-Lyashenko"
-        },
-        "full_name": "Bogdan-Lyashenko/codecrumbs",
-        "forks_count": "21",
-        "stargazers_count": "574",
-        "language": "JavaScript",
-        "repositoryDescription": "Learn, design or document codebase by putting breadcrumbs in source code. Live updates, multi-language support, and easy sharing."
-    },
-    {
-        "name": "uppy",
-        "owner": {
-            "login": "transloadit"
-        },
-        "full_name": "transloadit/uppy",
-        "forks_count": "680",
-        "stargazers_count": "15130",
-        "language": "JavaScript",
-        "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "7486",
-        "stargazers_count": "24961",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "repositoryDescription": "SC-FEGAN : Face Editing Generative Adversarial Network with User's Sketch and Color"
     },
     {
         "name": "Daily-Interview-Question",
@@ -133,42 +111,9 @@
             "login": "Advanced-Frontend"
         },
         "full_name": "Advanced-Frontend/Daily-Interview-Question",
-        "forks_count": "66",
-        "stargazers_count": "872",
+        "forks_count": "93",
+        "stargazers_count": "1224",
         "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
-    },
-    {
-        "name": "gpt-2",
-        "owner": {
-            "login": "openai"
-        },
-        "full_name": "openai/gpt-2",
-        "forks_count": "489",
-        "stargazers_count": "3096",
-        "language": "Python",
-        "repositoryDescription": "Code for the paper \"Language Models are Unsupervised Multitask Learners\""
-    },
-    {
-        "name": "Tensorflow-Cookbook",
-        "owner": {
-            "login": "taki0112"
-        },
-        "full_name": "taki0112/Tensorflow-Cookbook",
-        "forks_count": "127",
-        "stargazers_count": "1140",
-        "language": "Python",
-        "repositoryDescription": "Simple Tensorflow Cookbook for easy-to-use"
-    },
-    {
-        "name": "flutter-go",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/flutter-go",
-        "forks_count": "773",
-        "stargazers_count": "7897",
-        "language": "Dart",
-        "repositoryDescription": "flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档"
     },
     {
         "name": "nginx-quick-reference",
@@ -176,53 +121,138 @@
             "login": "trimstray"
         },
         "full_name": "trimstray/nginx-quick-reference",
-        "forks_count": "336",
-        "stargazers_count": "6202",
+        "forks_count": "359",
+        "stargazers_count": "6505",
         "repositoryDescription": "⚡️\nThis notes describes how to improve Nginx performance, security and other important things; ssllabs A+ 100%."
     },
     {
-        "name": "microservices-demo",
+        "name": "leon",
         "owner": {
-            "login": "GoogleCloudPlatform"
+            "login": "leon-ai"
         },
-        "full_name": "GoogleCloudPlatform/microservices-demo",
-        "forks_count": "360",
-        "stargazers_count": "3043",
-        "language": "C#",
-        "repositoryDescription": "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
-    },
-    {
-        "name": "taro-yanxuan",
-        "owner": {
-            "login": "js-newbee"
-        },
-        "full_name": "js-newbee/taro-yanxuan",
-        "forks_count": "55",
-        "stargazers_count": "455",
+        "full_name": "leon-ai/leon",
+        "forks_count": "153",
+        "stargazers_count": "3527",
         "language": "JavaScript",
-        "repositoryDescription": "首个 Taro 多端统一实例 - 网易严选（小程序 + H5 + React Native） - By 趣店 FED"
+        "repositoryDescription": "🧠 Leon is your open-source personal assistant."
     },
     {
-        "name": "Brooklyn",
+        "name": "awesome-falsehood",
         "owner": {
-            "login": "pedrommcarrasco"
+            "login": "kdeldycke"
         },
-        "full_name": "pedrommcarrasco/Brooklyn",
-        "forks_count": "37",
-        "stargazers_count": "1013",
-        "language": "Swift",
-        "repositoryDescription": "🍎\nScreensaver inspired by Apple's Event on October 30, 2018"
+        "full_name": "kdeldycke/awesome-falsehood",
+        "forks_count": "212",
+        "stargazers_count": "8951",
+        "repositoryDescription": "💊\nCurated list of falsehoods programmers believe in."
     },
     {
-        "name": "ant-design-vue",
+        "name": "libphonenumber",
         "owner": {
-            "login": "vueComponent"
+            "login": "googlei18n"
         },
-        "full_name": "vueComponent/ant-design-vue",
-        "forks_count": "431",
-        "stargazers_count": "4898",
-        "language": "Vue",
-        "repositoryDescription": "An enterprise-class UI components based on Ant Design and Vue.\n🐜"
+        "full_name": "googlei18n/libphonenumber",
+        "forks_count": "1093",
+        "stargazers_count": "8459",
+        "language": "C++",
+        "repositoryDescription": "Google's common Java, C++ and JavaScript library for parsing, formatting, and validating international phone numbers."
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "7561",
+        "stargazers_count": "25190",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "hacker-news-undocumented",
+        "owner": {
+            "login": "minimaxir"
+        },
+        "full_name": "minimaxir/hacker-news-undocumented",
+        "forks_count": "49",
+        "stargazers_count": "1133",
+        "repositoryDescription": "Some of the hidden norms about Hacker News not otherwise covered in the Guidelines and the FAQ."
+    },
+    {
+        "name": "awesome-python",
+        "owner": {
+            "login": "vinta"
+        },
+        "full_name": "vinta/awesome-python",
+        "forks_count": "12082",
+        "stargazers_count": "62824",
+        "language": "Python",
+        "repositoryDescription": "A curated list of awesome Python frameworks, libraries, software and resources"
+    },
+    {
+        "name": "Tensorflow-Cookbook",
+        "owner": {
+            "login": "taki0112"
+        },
+        "full_name": "taki0112/Tensorflow-Cookbook",
+        "forks_count": "150",
+        "stargazers_count": "1346",
+        "language": "Python",
+        "repositoryDescription": "Simple Tensorflow Cookbook for easy-to-use"
+    },
+    {
+        "name": "fast-cli",
+        "owner": {
+            "login": "sindresorhus"
+        },
+        "full_name": "sindresorhus/fast-cli",
+        "forks_count": "55",
+        "stargazers_count": "1302",
+        "language": "JavaScript",
+        "repositoryDescription": "Test your download and upload speed using fast.com"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "15439",
+        "stargazers_count": "50132",
+        "repositoryDescription": "😋\n技术面试必备基础知识"
+    },
+    {
+        "name": "gpt-2",
+        "owner": {
+            "login": "openai"
+        },
+        "full_name": "openai/gpt-2",
+        "forks_count": "518",
+        "stargazers_count": "3285",
+        "language": "Python",
+        "repositoryDescription": "Code for the paper \"Language Models are Unsupervised Multitask Learners\""
+    },
+    {
+        "name": "codecrumbs",
+        "owner": {
+            "login": "Bogdan-Lyashenko"
+        },
+        "full_name": "Bogdan-Lyashenko/codecrumbs",
+        "forks_count": "23",
+        "stargazers_count": "788",
+        "language": "JavaScript",
+        "repositoryDescription": "Learn, design or document codebase by putting breadcrumbs in source code. Live updates, multi-language support, and easy sharing."
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "6159",
+        "stargazers_count": "22182",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "advanced-java",
@@ -230,41 +260,9 @@
             "login": "doocs"
         },
         "full_name": "doocs/advanced-java",
-        "forks_count": "1893",
-        "stargazers_count": "9970",
+        "forks_count": "1950",
+        "stargazers_count": "10127",
         "language": "Java",
         "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
-    },
-    {
-        "name": "deep-learning-drizzle",
-        "owner": {
-            "login": "kmario23"
-        },
-        "full_name": "kmario23/deep-learning-drizzle",
-        "forks_count": "589",
-        "stargazers_count": "3503",
-        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
-    },
-    {
-        "name": "lascar",
-        "owner": {
-            "login": "Ledger-Donjon"
-        },
-        "full_name": "Ledger-Donjon/lascar",
-        "forks_count": "13",
-        "stargazers_count": "219",
-        "language": "Python",
-        "repositoryDescription": "Ledger's Advanced Side-Channel Analysis Repository"
-    },
-    {
-        "name": "SwiftAlgorithms",
-        "owner": {
-            "login": "thexande"
-        },
-        "full_name": "thexande/SwiftAlgorithms",
-        "forks_count": "30",
-        "stargazers_count": "205",
-        "language": "Swift",
-        "repositoryDescription": "🤓\nAn open source app for viewing algorithms and data structures implemented in Swift."
     }
 ]

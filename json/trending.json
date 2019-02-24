@@ -5,62 +5,21 @@
             "login": "mbinary"
         },
         "full_name": "mbinary/USTC-CS-Courses-Resource",
-        "forks_count": "514",
-        "stargazers_count": "2283",
+        "forks_count": "723",
+        "stargazers_count": "3196",
         "language": "C++",
         "repositoryDescription": "❤️\n中国科学技术大学计算机学院课程资源(https://mbinary.xyz/ustc-cs/)"
     },
     {
-        "name": "Micro8",
+        "name": "cleave.js",
         "owner": {
-            "login": "Micropoor"
+            "login": "nosir"
         },
-        "full_name": "Micropoor/Micro8",
-        "forks_count": "2684",
-        "stargazers_count": "7168",
-        "repositoryDescription": "Gitbook"
-    },
-    {
-        "name": "material-kit",
-        "owner": {
-            "login": "creativetimofficial"
-        },
-        "full_name": "creativetimofficial/material-kit",
-        "forks_count": "415",
-        "stargazers_count": "4198",
-        "language": "CSS",
-        "repositoryDescription": "Free and Open Source UI Kit for Bootstrap 4, React, Vue.js, React Native and Sketch based on Google's Material Design"
-    },
-    {
-        "name": "simdjson",
-        "owner": {
-            "login": "lemire"
-        },
-        "full_name": "lemire/simdjson",
-        "forks_count": "104",
-        "stargazers_count": "3301",
-        "language": "C++",
-        "repositoryDescription": "Parsing gigabytes of JSON per second"
-    },
-    {
-        "name": "the-book-of-secret-knowledge",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1359",
-        "stargazers_count": "16401",
-        "repositoryDescription": "⭐️\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more."
-    },
-    {
-        "name": "awesome-falsehood",
-        "owner": {
-            "login": "kdeldycke"
-        },
-        "full_name": "kdeldycke/awesome-falsehood",
-        "forks_count": "221",
-        "stargazers_count": "9513",
-        "repositoryDescription": "💊\nCurated list of falsehoods programmers believe in."
+        "full_name": "nosir/cleave.js",
+        "forks_count": "901",
+        "stargazers_count": "10668",
+        "language": "JavaScript",
+        "repositoryDescription": "Format input text content when you are typing..."
     },
     {
         "name": "halley",
@@ -68,73 +27,63 @@
             "login": "amzeratul"
         },
         "full_name": "amzeratul/halley",
-        "forks_count": "16",
-        "stargazers_count": "496",
+        "forks_count": "40",
+        "stargazers_count": "1172",
         "language": "C++",
         "repositoryDescription": "A lightweight game engine written in modern C++"
     },
     {
-        "name": "PlotNeuralNet",
+        "name": "Algorithm_Interview_Notes-Chinese",
         "owner": {
-            "login": "HarisIqbal88"
+            "login": "imhuay"
         },
-        "full_name": "HarisIqbal88/PlotNeuralNet",
-        "forks_count": "302",
-        "stargazers_count": "2900",
-        "language": "TeX",
-        "repositoryDescription": "Latex code for making neural networks diagrams"
-    },
-    {
-        "name": "personal-website",
-        "owner": {
-            "login": "github"
-        },
-        "full_name": "github/personal-website",
-        "forks_count": "936",
-        "stargazers_count": "1652",
-        "language": "CSS",
-        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "205",
-        "stargazers_count": "3764",
-        "repositoryDescription": "The best design tools for everything."
-    },
-    {
-        "name": "Xiaomi_Kernel_OpenSource",
-        "owner": {
-            "login": "MiCode"
-        },
-        "full_name": "MiCode/Xiaomi_Kernel_OpenSource",
-        "forks_count": "1353",
-        "stargazers_count": "3403",
-        "repositoryDescription": "Xiaomi Mobile Phone Kernel OpenSource"
-    },
-    {
-        "name": "SC-FEGAN",
-        "owner": {
-            "login": "JoYoungjoo"
-        },
-        "full_name": "JoYoungjoo/SC-FEGAN",
-        "forks_count": "149",
-        "stargazers_count": "1130",
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "4260",
+        "stargazers_count": "14486",
         "language": "Python",
-        "repositoryDescription": "SC-FEGAN : Face Editing Generative Adversarial Network with User's Sketch and Color"
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
     },
     {
-        "name": "How-To-Secure-A-Linux-Server",
+        "name": "Micro8",
         "owner": {
-            "login": "imthenachoman"
+            "login": "Micropoor"
         },
-        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
-        "forks_count": "329",
-        "stargazers_count": "6827",
-        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
+        "full_name": "Micropoor/Micro8",
+        "forks_count": "2770",
+        "stargazers_count": "7521",
+        "repositoryDescription": "Gitbook"
+    },
+    {
+        "name": "the-book-of-secret-knowledge",
+        "owner": {
+            "login": "trimstray"
+        },
+        "full_name": "trimstray/the-book-of-secret-knowledge",
+        "forks_count": "1392",
+        "stargazers_count": "16639",
+        "repositoryDescription": "⭐️\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more."
+    },
+    {
+        "name": "simdjson",
+        "owner": {
+            "login": "lemire"
+        },
+        "full_name": "lemire/simdjson",
+        "forks_count": "120",
+        "stargazers_count": "3509",
+        "language": "C++",
+        "repositoryDescription": "Parsing gigabytes of JSON per second"
+    },
+    {
+        "name": "material-kit",
+        "owner": {
+            "login": "creativetimofficial"
+        },
+        "full_name": "creativetimofficial/material-kit",
+        "forks_count": "426",
+        "stargazers_count": "4391",
+        "language": "CSS",
+        "repositoryDescription": "Free and Open Source UI Kit for Bootstrap 4, React, Vue.js, React Native and Sketch based on Google's Material Design"
     },
     {
         "name": "Undecimus",
@@ -142,10 +91,63 @@
             "login": "pwn20wndstuff"
         },
         "full_name": "pwn20wndstuff/Undecimus",
-        "forks_count": "202",
-        "stargazers_count": "1073",
+        "forks_count": "225",
+        "stargazers_count": "1238",
         "language": "C",
         "repositoryDescription": "unc0ver jailbreak for iOS 11.0 - 12.1.2"
+    },
+    {
+        "name": "personal-website",
+        "owner": {
+            "login": "github"
+        },
+        "full_name": "github/personal-website",
+        "forks_count": "1006",
+        "stargazers_count": "1780",
+        "language": "CSS",
+        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
+    },
+    {
+        "name": "How-To-Secure-A-Linux-Server",
+        "owner": {
+            "login": "imthenachoman"
+        },
+        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
+        "forks_count": "342",
+        "stargazers_count": "6980",
+        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
+    },
+    {
+        "name": "PlotNeuralNet",
+        "owner": {
+            "login": "HarisIqbal88"
+        },
+        "full_name": "HarisIqbal88/PlotNeuralNet",
+        "forks_count": "308",
+        "stargazers_count": "3039",
+        "language": "TeX",
+        "repositoryDescription": "Latex code for making neural networks diagrams"
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "216",
+        "stargazers_count": "3900",
+        "repositoryDescription": "The best design tools for everything."
+    },
+    {
+        "name": "buefy",
+        "owner": {
+            "login": "buefy"
+        },
+        "full_name": "buefy/buefy",
+        "forks_count": "460",
+        "stargazers_count": "4780",
+        "language": "Vue",
+        "repositoryDescription": "Lightweight UI components for Vue.js based on Bulma"
     },
     {
         "name": "cds",
@@ -153,21 +155,10 @@
             "login": "ovh"
         },
         "full_name": "ovh/cds",
-        "forks_count": "81",
-        "stargazers_count": "700",
+        "forks_count": "89",
+        "stargazers_count": "832",
         "language": "Go",
         "repositoryDescription": "Enterprise-Grade Continuous Delivery & DevOps Automation Open Source Platform"
-    },
-    {
-        "name": "codecrumbs",
-        "owner": {
-            "login": "Bogdan-Lyashenko"
-        },
-        "full_name": "Bogdan-Lyashenko/codecrumbs",
-        "forks_count": "31",
-        "stargazers_count": "1105",
-        "language": "JavaScript",
-        "repositoryDescription": "Learn, design or document codebase by putting breadcrumbs in source code. Live updates, multi-language support, and easy sharing."
     },
     {
         "name": "Daily-Interview-Question",
@@ -175,52 +166,30 @@
             "login": "Advanced-Frontend"
         },
         "full_name": "Advanced-Frontend/Daily-Interview-Question",
-        "forks_count": "120",
-        "stargazers_count": "1652",
+        "forks_count": "124",
+        "stargazers_count": "1778",
         "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
     },
     {
-        "name": "uWebSockets.js",
+        "name": "SC-FEGAN",
         "owner": {
-            "login": "uNetworking"
+            "login": "JoYoungjoo"
         },
-        "full_name": "uNetworking/uWebSockets.js",
-        "forks_count": "53",
-        "stargazers_count": "1135",
-        "language": "C++",
-        "repositoryDescription": "TypeScript web server - 15x faster than Deno"
+        "full_name": "JoYoungjoo/SC-FEGAN",
+        "forks_count": "170",
+        "stargazers_count": "1259",
+        "language": "Python",
+        "repositoryDescription": "SC-FEGAN : Face Editing Generative Adversarial Network with User's Sketch and Color"
     },
     {
-        "name": "leon",
+        "name": "awesome-falsehood",
         "owner": {
-            "login": "leon-ai"
+            "login": "kdeldycke"
         },
-        "full_name": "leon-ai/leon",
-        "forks_count": "172",
-        "stargazers_count": "3941",
-        "language": "JavaScript",
-        "repositoryDescription": "🧠 Leon is your open-source personal assistant."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "15521",
-        "stargazers_count": "50408",
-        "repositoryDescription": "😋\n技术面试必备基础知识"
-    },
-    {
-        "name": "microservices-demo",
-        "owner": {
-            "login": "GoogleCloudPlatform"
-        },
-        "full_name": "GoogleCloudPlatform/microservices-demo",
-        "forks_count": "383",
-        "stargazers_count": "3374",
-        "language": "C#",
-        "repositoryDescription": "Sample cloud-native application with 10 microservices showcasing Kubernetes, Istio, gRPC and OpenCensus. Provided for illustration and demo purposes."
+        "full_name": "kdeldycke/awesome-falsehood",
+        "forks_count": "229",
+        "stargazers_count": "9620",
+        "repositoryDescription": "💊\nCurated list of falsehoods programmers believe in."
     },
     {
         "name": "JavaGuide",
@@ -228,32 +197,10 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "7669",
-        "stargazers_count": "25484",
+        "forks_count": "7699",
+        "stargazers_count": "25587",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "HelloGitHub",
-        "owner": {
-            "login": "521xueweihan"
-        },
-        "full_name": "521xueweihan/HelloGitHub",
-        "forks_count": "1011",
-        "stargazers_count": "9705",
-        "language": "Python",
-        "repositoryDescription": "分享 GitHub 上有趣、入门级的开源项目，帮你找到编程的乐趣。欢迎推荐、自荐项目，让更多人知道你的项目\n⭐️"
-    },
-    {
-        "name": "awesome-IT-films",
-        "owner": {
-            "login": "greybax"
-        },
-        "full_name": "greybax/awesome-IT-films",
-        "forks_count": "61",
-        "stargazers_count": "329",
-        "language": "HTML",
-        "repositoryDescription": "📺\nA curated list of awesome films about IT & geek people."
     },
     {
         "name": "faceswap",
@@ -261,9 +208,62 @@
             "login": "deepfakes"
         },
         "full_name": "deepfakes/faceswap",
-        "forks_count": "4324",
-        "stargazers_count": "13344",
+        "forks_count": "4339",
+        "stargazers_count": "13445",
         "language": "Python",
         "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "15546",
+        "stargazers_count": "50487",
+        "repositoryDescription": "😋\n技术面试必备基础知识"
+    },
+    {
+        "name": "awesome-IT-films",
+        "owner": {
+            "login": "greybax"
+        },
+        "full_name": "greybax/awesome-IT-films",
+        "forks_count": "66",
+        "stargazers_count": "427",
+        "language": "HTML",
+        "repositoryDescription": "📺\nA curated list of awesome films about IT & geek people."
+    },
+    {
+        "name": "nsfwjs",
+        "owner": {
+            "login": "infinitered"
+        },
+        "full_name": "infinitered/nsfwjs",
+        "forks_count": "14",
+        "stargazers_count": "410",
+        "language": "JavaScript",
+        "repositoryDescription": "NSFW detection on the client-side via Tensorflow JS"
+    },
+    {
+        "name": "Xiaomi_Kernel_OpenSource",
+        "owner": {
+            "login": "MiCode"
+        },
+        "full_name": "MiCode/Xiaomi_Kernel_OpenSource",
+        "forks_count": "1369",
+        "stargazers_count": "3494",
+        "repositoryDescription": "Xiaomi Mobile Phone Kernel OpenSource"
+    },
+    {
+        "name": "codecrumbs",
+        "owner": {
+            "login": "Bogdan-Lyashenko"
+        },
+        "full_name": "Bogdan-Lyashenko/codecrumbs",
+        "forks_count": "32",
+        "stargazers_count": "1200",
+        "language": "JavaScript",
+        "repositoryDescription": "Learn, design or document codebase by putting breadcrumbs in source code. Live updates, multi-language support, and easy sharing."
     }
 ]

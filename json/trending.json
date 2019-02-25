@@ -5,32 +5,10 @@
             "login": "mbinary"
         },
         "full_name": "mbinary/USTC-CS-Courses-Resource",
-        "forks_count": "723",
-        "stargazers_count": "3196",
+        "forks_count": "1068",
+        "stargazers_count": "4670",
         "language": "C++",
         "repositoryDescription": "❤️\n中国科学技术大学计算机学院课程资源(https://mbinary.xyz/ustc-cs/)"
-    },
-    {
-        "name": "cleave.js",
-        "owner": {
-            "login": "nosir"
-        },
-        "full_name": "nosir/cleave.js",
-        "forks_count": "901",
-        "stargazers_count": "10668",
-        "language": "JavaScript",
-        "repositoryDescription": "Format input text content when you are typing..."
-    },
-    {
-        "name": "halley",
-        "owner": {
-            "login": "amzeratul"
-        },
-        "full_name": "amzeratul/halley",
-        "forks_count": "40",
-        "stargazers_count": "1172",
-        "language": "C++",
-        "repositoryDescription": "A lightweight game engine written in modern C++"
     },
     {
         "name": "Algorithm_Interview_Notes-Chinese",
@@ -38,10 +16,21 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "4260",
-        "stargazers_count": "14486",
+        "forks_count": "4481",
+        "stargazers_count": "15298",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "cleave.js",
+        "owner": {
+            "login": "nosir"
+        },
+        "full_name": "nosir/cleave.js",
+        "forks_count": "920",
+        "stargazers_count": "11535",
+        "language": "JavaScript",
+        "repositoryDescription": "Format input text content when you are typing..."
     },
     {
         "name": "Micro8",
@@ -49,19 +38,9 @@
             "login": "Micropoor"
         },
         "full_name": "Micropoor/Micro8",
-        "forks_count": "2770",
-        "stargazers_count": "7521",
+        "forks_count": "2926",
+        "stargazers_count": "8014",
         "repositoryDescription": "Gitbook"
-    },
-    {
-        "name": "the-book-of-secret-knowledge",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1392",
-        "stargazers_count": "16639",
-        "repositoryDescription": "⭐️\nA collection of awesome lists, manuals, blogs, hacks, one-liners, cli/web tools and more."
     },
     {
         "name": "simdjson",
@@ -69,170 +48,10 @@
             "login": "lemire"
         },
         "full_name": "lemire/simdjson",
-        "forks_count": "120",
-        "stargazers_count": "3509",
+        "forks_count": "150",
+        "stargazers_count": "3985",
         "language": "C++",
         "repositoryDescription": "Parsing gigabytes of JSON per second"
-    },
-    {
-        "name": "material-kit",
-        "owner": {
-            "login": "creativetimofficial"
-        },
-        "full_name": "creativetimofficial/material-kit",
-        "forks_count": "426",
-        "stargazers_count": "4391",
-        "language": "CSS",
-        "repositoryDescription": "Free and Open Source UI Kit for Bootstrap 4, React, Vue.js, React Native and Sketch based on Google's Material Design"
-    },
-    {
-        "name": "Undecimus",
-        "owner": {
-            "login": "pwn20wndstuff"
-        },
-        "full_name": "pwn20wndstuff/Undecimus",
-        "forks_count": "225",
-        "stargazers_count": "1238",
-        "language": "C",
-        "repositoryDescription": "unc0ver jailbreak for iOS 11.0 - 12.1.2"
-    },
-    {
-        "name": "personal-website",
-        "owner": {
-            "login": "github"
-        },
-        "full_name": "github/personal-website",
-        "forks_count": "1006",
-        "stargazers_count": "1780",
-        "language": "CSS",
-        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
-    },
-    {
-        "name": "How-To-Secure-A-Linux-Server",
-        "owner": {
-            "login": "imthenachoman"
-        },
-        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
-        "forks_count": "342",
-        "stargazers_count": "6980",
-        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
-    },
-    {
-        "name": "PlotNeuralNet",
-        "owner": {
-            "login": "HarisIqbal88"
-        },
-        "full_name": "HarisIqbal88/PlotNeuralNet",
-        "forks_count": "308",
-        "stargazers_count": "3039",
-        "language": "TeX",
-        "repositoryDescription": "Latex code for making neural networks diagrams"
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "216",
-        "stargazers_count": "3900",
-        "repositoryDescription": "The best design tools for everything."
-    },
-    {
-        "name": "buefy",
-        "owner": {
-            "login": "buefy"
-        },
-        "full_name": "buefy/buefy",
-        "forks_count": "460",
-        "stargazers_count": "4780",
-        "language": "Vue",
-        "repositoryDescription": "Lightweight UI components for Vue.js based on Bulma"
-    },
-    {
-        "name": "cds",
-        "owner": {
-            "login": "ovh"
-        },
-        "full_name": "ovh/cds",
-        "forks_count": "89",
-        "stargazers_count": "832",
-        "language": "Go",
-        "repositoryDescription": "Enterprise-Grade Continuous Delivery & DevOps Automation Open Source Platform"
-    },
-    {
-        "name": "Daily-Interview-Question",
-        "owner": {
-            "login": "Advanced-Frontend"
-        },
-        "full_name": "Advanced-Frontend/Daily-Interview-Question",
-        "forks_count": "124",
-        "stargazers_count": "1778",
-        "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
-    },
-    {
-        "name": "SC-FEGAN",
-        "owner": {
-            "login": "JoYoungjoo"
-        },
-        "full_name": "JoYoungjoo/SC-FEGAN",
-        "forks_count": "170",
-        "stargazers_count": "1259",
-        "language": "Python",
-        "repositoryDescription": "SC-FEGAN : Face Editing Generative Adversarial Network with User's Sketch and Color"
-    },
-    {
-        "name": "awesome-falsehood",
-        "owner": {
-            "login": "kdeldycke"
-        },
-        "full_name": "kdeldycke/awesome-falsehood",
-        "forks_count": "229",
-        "stargazers_count": "9620",
-        "repositoryDescription": "💊\nCurated list of falsehoods programmers believe in."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "7699",
-        "stargazers_count": "25587",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "faceswap",
-        "owner": {
-            "login": "deepfakes"
-        },
-        "full_name": "deepfakes/faceswap",
-        "forks_count": "4339",
-        "stargazers_count": "13445",
-        "language": "Python",
-        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "15546",
-        "stargazers_count": "50487",
-        "repositoryDescription": "😋\n技术面试必备基础知识"
-    },
-    {
-        "name": "awesome-IT-films",
-        "owner": {
-            "login": "greybax"
-        },
-        "full_name": "greybax/awesome-IT-films",
-        "forks_count": "66",
-        "stargazers_count": "427",
-        "language": "HTML",
-        "repositoryDescription": "📺\nA curated list of awesome films about IT & geek people."
     },
     {
         "name": "nsfwjs",
@@ -240,20 +59,138 @@
             "login": "infinitered"
         },
         "full_name": "infinitered/nsfwjs",
-        "forks_count": "14",
-        "stargazers_count": "410",
+        "forks_count": "33",
+        "stargazers_count": "863",
         "language": "JavaScript",
         "repositoryDescription": "NSFW detection on the client-side via Tensorflow JS"
     },
     {
-        "name": "Xiaomi_Kernel_OpenSource",
+        "name": "halley",
         "owner": {
-            "login": "MiCode"
+            "login": "amzeratul"
         },
-        "full_name": "MiCode/Xiaomi_Kernel_OpenSource",
-        "forks_count": "1369",
-        "stargazers_count": "3494",
-        "repositoryDescription": "Xiaomi Mobile Phone Kernel OpenSource"
+        "full_name": "amzeratul/halley",
+        "forks_count": "49",
+        "stargazers_count": "1528",
+        "language": "C++",
+        "repositoryDescription": "A lightweight game engine written in modern C++"
+    },
+    {
+        "name": "Motrix",
+        "owner": {
+            "login": "agalwood"
+        },
+        "full_name": "agalwood/Motrix",
+        "forks_count": "272",
+        "stargazers_count": "3462",
+        "language": "JavaScript",
+        "repositoryDescription": "A full-featured download manager."
+    },
+    {
+        "name": "awesome-lite-websites",
+        "owner": {
+            "login": "mdibaiee"
+        },
+        "full_name": "mdibaiee/awesome-lite-websites",
+        "forks_count": "20",
+        "stargazers_count": "536",
+        "repositoryDescription": "A list of awesome lightweight websites without all the bloat"
+    },
+    {
+        "name": "the-book-of-secret-knowledge",
+        "owner": {
+            "login": "trimstray"
+        },
+        "full_name": "trimstray/the-book-of-secret-knowledge",
+        "forks_count": "1411",
+        "stargazers_count": "16923",
+        "repositoryDescription": "⭐️\nA collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
+    },
+    {
+        "name": "K8tools",
+        "owner": {
+            "login": "k8gege"
+        },
+        "full_name": "k8gege/K8tools",
+        "forks_count": "122",
+        "stargazers_count": "285",
+        "language": "Python",
+        "repositoryDescription": "K8工具(内网渗透/提权工具/远程溢出/漏洞利用/Exploit/APT/0day/Shellcode/Payload/priviledge/OverFlow/WebShell/PenTest)"
+    },
+    {
+        "name": "faceswap",
+        "owner": {
+            "login": "deepfakes"
+        },
+        "full_name": "deepfakes/faceswap",
+        "forks_count": "4406",
+        "stargazers_count": "13674",
+        "language": "Python",
+        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+    },
+    {
+        "name": "personal-website",
+        "owner": {
+            "login": "github"
+        },
+        "full_name": "github/personal-website",
+        "forks_count": "1099",
+        "stargazers_count": "2002",
+        "language": "CSS",
+        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
+    },
+    {
+        "name": "cds",
+        "owner": {
+            "login": "ovh"
+        },
+        "full_name": "ovh/cds",
+        "forks_count": "97",
+        "stargazers_count": "1080",
+        "language": "Go",
+        "repositoryDescription": "Enterprise-Grade Continuous Delivery & DevOps Automation Open Source Platform"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "7757",
+        "stargazers_count": "25795",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "material-kit",
+        "owner": {
+            "login": "creativetimofficial"
+        },
+        "full_name": "creativetimofficial/material-kit",
+        "forks_count": "439",
+        "stargazers_count": "4627",
+        "language": "CSS",
+        "repositoryDescription": "Free and Open Source UI Kit for Bootstrap 4, React, Vue.js, React Native and Sketch based on Google's Material Design"
+    },
+    {
+        "name": "Daily-Interview-Question",
+        "owner": {
+            "login": "Advanced-Frontend"
+        },
+        "full_name": "Advanced-Frontend/Daily-Interview-Question",
+        "forks_count": "144",
+        "stargazers_count": "1982",
+        "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "15598",
+        "stargazers_count": "50653",
+        "repositoryDescription": "😋\n技术面试必备基础知识"
     },
     {
         "name": "codecrumbs",
@@ -261,9 +198,72 @@
             "login": "Bogdan-Lyashenko"
         },
         "full_name": "Bogdan-Lyashenko/codecrumbs",
-        "forks_count": "32",
-        "stargazers_count": "1200",
+        "forks_count": "34",
+        "stargazers_count": "1409",
         "language": "JavaScript",
         "repositoryDescription": "Learn, design or document codebase by putting breadcrumbs in source code. Live updates, multi-language support, and easy sharing."
+    },
+    {
+        "name": "How-To-Secure-A-Linux-Server",
+        "owner": {
+            "login": "imthenachoman"
+        },
+        "full_name": "imthenachoman/How-To-Secure-A-Linux-Server",
+        "forks_count": "353",
+        "stargazers_count": "7185",
+        "repositoryDescription": "An evolving how-to guide for securing a Linux server."
+    },
+    {
+        "name": "chameleon",
+        "owner": {
+            "login": "didi"
+        },
+        "full_name": "didi/chameleon",
+        "forks_count": "188",
+        "stargazers_count": "2916",
+        "language": "JavaScript",
+        "repositoryDescription": "🦎\n一套代码运行多端，一端所见即多端所见"
+    },
+    {
+        "name": "Undecimus",
+        "owner": {
+            "login": "pwn20wndstuff"
+        },
+        "full_name": "pwn20wndstuff/Undecimus",
+        "forks_count": "255",
+        "stargazers_count": "1410",
+        "language": "C",
+        "repositoryDescription": "unc0ver jailbreak for iOS 11.0 - 12.1.2"
+    },
+    {
+        "name": "Xiaomi_Kernel_OpenSource",
+        "owner": {
+            "login": "MiCode"
+        },
+        "full_name": "MiCode/Xiaomi_Kernel_OpenSource",
+        "forks_count": "1400",
+        "stargazers_count": "3663",
+        "repositoryDescription": "Xiaomi Mobile Phone Kernel OpenSource"
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "225",
+        "stargazers_count": "4092",
+        "repositoryDescription": "The best design tools for everything."
+    },
+    {
+        "name": "SC-FEGAN",
+        "owner": {
+            "login": "JoYoungjoo"
+        },
+        "full_name": "JoYoungjoo/SC-FEGAN",
+        "forks_count": "186",
+        "stargazers_count": "1427",
+        "language": "Python",
+        "repositoryDescription": "SC-FEGAN : Face Editing Generative Adversarial Network with User's Sketch and Color"
     }
 ]

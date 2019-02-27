@@ -1,12 +1,34 @@
 [
     {
+        "name": "frontend-bootcamp",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/frontend-bootcamp",
+        "forks_count": "228",
+        "stargazers_count": "2542",
+        "language": "TypeScript",
+        "repositoryDescription": "Frontend Workshop from HTML/CSS/JS to TypeScript/React/Redux"
+    },
+    {
+        "name": "zero",
+        "owner": {
+            "login": "remoteinterview"
+        },
+        "full_name": "remoteinterview/zero",
+        "forks_count": "23",
+        "stargazers_count": "1521",
+        "language": "Python",
+        "repositoryDescription": "Zero is a web server to simplify web development."
+    },
+    {
         "name": "USTC-CS-Courses-Resource",
         "owner": {
             "login": "mbinary"
         },
         "full_name": "mbinary/USTC-CS-Courses-Resource",
-        "forks_count": "1896",
-        "stargazers_count": "6868",
+        "forks_count": "2252",
+        "stargazers_count": "8019",
         "language": "C++",
         "repositoryDescription": "❤️\n中国科学技术大学计算机学院课程资源(https://mbinary.xyz/ustc-cs/)"
     },
@@ -16,10 +38,21 @@
             "login": "smacke"
         },
         "full_name": "smacke/subsync",
-        "forks_count": "32",
-        "stargazers_count": "1550",
+        "forks_count": "50",
+        "stargazers_count": "2202",
         "language": "Python",
         "repositoryDescription": "Automagically synchronize subtitles with video."
+    },
+    {
+        "name": "k3s",
+        "owner": {
+            "login": "rancher"
+        },
+        "full_name": "rancher/k3s",
+        "forks_count": "65",
+        "stargazers_count": "2170",
+        "language": "Go",
+        "repositoryDescription": "Lightweight Kubernetes. 5 less than k8s."
     },
     {
         "name": "Algorithm_Interview_Notes-Chinese",
@@ -27,10 +60,107 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "4696",
-        "stargazers_count": "15995",
+        "forks_count": "4884",
+        "stargazers_count": "16643",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "AdaBound",
+        "owner": {
+            "login": "Luolc"
+        },
+        "full_name": "Luolc/AdaBound",
+        "forks_count": "73",
+        "stargazers_count": "923",
+        "language": "Python",
+        "repositoryDescription": "An optimizer that trains as fast as Adam and as good as SGD."
+    },
+    {
+        "name": "bullet",
+        "owner": {
+            "login": "Mckinsey666"
+        },
+        "full_name": "Mckinsey666/bullet",
+        "forks_count": "19",
+        "stargazers_count": "1008",
+        "language": "Python",
+        "repositoryDescription": "🚅\nBeautiful Python prompts made simple. Build a prompt like stacking blocks."
+    },
+    {
+        "name": "Awesome-WAF",
+        "owner": {
+            "login": "0xInfection"
+        },
+        "full_name": "0xInfection/Awesome-WAF",
+        "forks_count": "86",
+        "stargazers_count": "640",
+        "repositoryDescription": "🔥\nA curated list of awesome web-app firewall (WAF) stuff."
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "259",
+        "stargazers_count": "4829",
+        "repositoryDescription": "The best design tools for everything."
+    },
+    {
+        "name": "pi-hole",
+        "owner": {
+            "login": "pi-hole"
+        },
+        "full_name": "pi-hole/pi-hole",
+        "forks_count": "962",
+        "stargazers_count": "13350",
+        "language": "Shell",
+        "repositoryDescription": "A black hole for Internet advertisements"
+    },
+    {
+        "name": "react-three-fiber",
+        "owner": {
+            "login": "drcmda"
+        },
+        "full_name": "drcmda/react-three-fiber",
+        "forks_count": "8",
+        "stargazers_count": "526",
+        "language": "JavaScript",
+        "repositoryDescription": "👌\nReact-fiber renderer for THREE.js"
+    },
+    {
+        "name": "faceswap",
+        "owner": {
+            "login": "deepfakes"
+        },
+        "full_name": "deepfakes/faceswap",
+        "forks_count": "4657",
+        "stargazers_count": "14306",
+        "language": "Python",
+        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+    },
+    {
+        "name": "wasmer",
+        "owner": {
+            "login": "wasmerio"
+        },
+        "full_name": "wasmerio/wasmer",
+        "forks_count": "68",
+        "stargazers_count": "2358",
+        "language": "Rust",
+        "repositoryDescription": "Universal Binaries Powered by WebAssembly"
+    },
+    {
+        "name": "Motrix",
+        "owner": {
+            "login": "agalwood"
+        },
+        "full_name": "agalwood/Motrix",
+        "forks_count": "323",
+        "stargazers_count": "3992",
+        "language": "JavaScript",
+        "repositoryDescription": "A full-featured download manager."
     },
     {
         "name": "cleave.js",
@@ -38,21 +168,31 @@
             "login": "nosir"
         },
         "full_name": "nosir/cleave.js",
-        "forks_count": "938",
-        "stargazers_count": "12066",
+        "forks_count": "953",
+        "stargazers_count": "12362",
         "language": "JavaScript",
         "repositoryDescription": "Format input text content when you are typing..."
     },
     {
-        "name": "frontend-bootcamp",
+        "name": "JavaGuide",
         "owner": {
-            "login": "Microsoft"
+            "login": "Snailclimb"
         },
-        "full_name": "Microsoft/frontend-bootcamp",
-        "forks_count": "70",
-        "stargazers_count": "693",
-        "language": "TypeScript",
-        "repositoryDescription": "Frontend Workshop from HTML/CSS/JS to TypeScript/React/Redux"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "7945",
+        "stargazers_count": "26317",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "Micro8",
+        "owner": {
+            "login": "Micropoor"
+        },
+        "full_name": "Micropoor/Micro8",
+        "forks_count": "3089",
+        "stargazers_count": "8632",
+        "repositoryDescription": "Gitbook"
     },
     {
         "name": "simdjson",
@@ -60,8 +200,8 @@
             "login": "lemire"
         },
         "full_name": "lemire/simdjson",
-        "forks_count": "182",
-        "stargazers_count": "4395",
+        "forks_count": "200",
+        "stargazers_count": "4650",
         "language": "C++",
         "repositoryDescription": "Parsing gigabytes of JSON per second"
     },
@@ -71,31 +211,10 @@
             "login": "infinitered"
         },
         "full_name": "infinitered/nsfwjs",
-        "forks_count": "50",
-        "stargazers_count": "1263",
+        "forks_count": "69",
+        "stargazers_count": "1499",
         "language": "JavaScript",
         "repositoryDescription": "NSFW detection on the client-side via Tensorflow JS"
-    },
-    {
-        "name": "Micro8",
-        "owner": {
-            "login": "Micropoor"
-        },
-        "full_name": "Micropoor/Micro8",
-        "forks_count": "3011",
-        "stargazers_count": "8378",
-        "repositoryDescription": "Gitbook"
-    },
-    {
-        "name": "bullet",
-        "owner": {
-            "login": "Mckinsey666"
-        },
-        "full_name": "Mckinsey666/bullet",
-        "forks_count": "10",
-        "stargazers_count": "557",
-        "language": "Python",
-        "repositoryDescription": "🚅\nBeautiful Python prompts made simple."
     },
     {
         "name": "personal-website",
@@ -103,96 +222,10 @@
             "login": "github"
         },
         "full_name": "github/personal-website",
-        "forks_count": "1268",
-        "stargazers_count": "2278",
+        "forks_count": "1374",
+        "stargazers_count": "2482",
         "language": "CSS",
         "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
-    },
-    {
-        "name": "XPopup",
-        "owner": {
-            "login": "li-xiaojun"
-        },
-        "full_name": "li-xiaojun/XPopup",
-        "forks_count": "135",
-        "stargazers_count": "1091",
-        "language": "Java",
-        "repositoryDescription": "🔥\n功能强大，UI简洁，交互优雅的通用弹窗！可以替代Dialog，PopupWindow，PopupMenu，BottomSheet，DrawerLayout，Spinner等组件，自带十几种效果良好的动画， 支持完全的UI和动画自定义！(Powerful and Beautiful Popup，can absolutely replace Dialog，PopupWindow，PopupMenu，BottomSheet，DrawerLayout，Spinner. With built-in animators , very easy to custom Popup View.)"
-    },
-    {
-        "name": "lingvo",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/lingvo",
-        "forks_count": "82",
-        "stargazers_count": "558",
-        "language": "Python",
-        "repositoryDescription": "Lingvo"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "7844",
-        "stargazers_count": "26054",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "faceswap",
-        "owner": {
-            "login": "deepfakes"
-        },
-        "full_name": "deepfakes/faceswap",
-        "forks_count": "4478",
-        "stargazers_count": "13919",
-        "language": "Python",
-        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
-    },
-    {
-        "name": "chameleon",
-        "owner": {
-            "login": "didi"
-        },
-        "full_name": "didi/chameleon",
-        "forks_count": "204",
-        "stargazers_count": "3160",
-        "language": "JavaScript",
-        "repositoryDescription": "🦎\n一套代码运行多端，一端所见即多端所见"
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "247",
-        "stargazers_count": "4445",
-        "repositoryDescription": "The best design tools for everything."
-    },
-    {
-        "name": "Daily-Interview-Question",
-        "owner": {
-            "login": "Advanced-Frontend"
-        },
-        "full_name": "Advanced-Frontend/Daily-Interview-Question",
-        "forks_count": "157",
-        "stargazers_count": "2221",
-        "repositoryDescription": "工作日每天一道前端大厂面试题，祝大家天天进步，一年后会看到不一样的自己。"
-    },
-    {
-        "name": "wasmer",
-        "owner": {
-            "login": "wasmerio"
-        },
-        "full_name": "wasmerio/wasmer",
-        "forks_count": "57",
-        "stargazers_count": "2078",
-        "language": "Rust",
-        "repositoryDescription": "Universal Binaries Powered by WebAssembly"
     },
     {
         "name": "Nodejs-Developer-Roadmap",
@@ -200,51 +233,31 @@
             "login": "aliyr"
         },
         "full_name": "aliyr/Nodejs-Developer-Roadmap",
-        "forks_count": "9",
-        "stargazers_count": "288",
+        "forks_count": "26",
+        "stargazers_count": "534",
         "repositoryDescription": "A Developer Roadmap to becoming a Node.js developer in 2019"
     },
     {
-        "name": "video-maker",
+        "name": "spring-boot-examples",
         "owner": {
-            "login": "filipedeschamps"
+            "login": "ityouknow"
         },
-        "full_name": "filipedeschamps/video-maker",
-        "forks_count": "45",
-        "stargazers_count": "280",
-        "language": "JavaScript",
-        "repositoryDescription": "Projeto open source para fazer vídeos automatizados"
+        "full_name": "ityouknow/spring-boot-examples",
+        "forks_count": "4654",
+        "stargazers_count": "8637",
+        "language": "Java",
+        "repositoryDescription": "about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。"
     },
     {
-        "name": "the-book-of-secret-knowledge",
+        "name": "lingvo",
         "owner": {
-            "login": "trimstray"
+            "login": "tensorflow"
         },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1435",
-        "stargazers_count": "17115",
-        "repositoryDescription": "⭐️\nA collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
-    },
-    {
-        "name": "Motrix",
-        "owner": {
-            "login": "agalwood"
-        },
-        "full_name": "agalwood/Motrix",
-        "forks_count": "280",
-        "stargazers_count": "3645",
-        "language": "JavaScript",
-        "repositoryDescription": "A full-featured download manager."
-    },
-    {
-        "name": "deep-learning-drizzle",
-        "owner": {
-            "login": "kmario23"
-        },
-        "full_name": "kmario23/deep-learning-drizzle",
-        "forks_count": "715",
-        "stargazers_count": "3986",
-        "repositoryDescription": "Drench yourself in Deep Learning, Reinforcement Learning, Machine Learning, Computer Vision, and NLP by learning from these exciting lectures!!"
+        "full_name": "tensorflow/lingvo",
+        "forks_count": "115",
+        "stargazers_count": "765",
+        "language": "Python",
+        "repositoryDescription": "Lingvo"
     },
     {
         "name": "CS-Notes",
@@ -252,19 +265,8 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "15655",
-        "stargazers_count": "50820",
+        "forks_count": "15704",
+        "stargazers_count": "50997",
         "repositoryDescription": "😋\n技术面试必备基础知识"
-    },
-    {
-        "name": "halley",
-        "owner": {
-            "login": "amzeratul"
-        },
-        "full_name": "amzeratul/halley",
-        "forks_count": "61",
-        "stargazers_count": "1677",
-        "language": "C++",
-        "repositoryDescription": "A lightweight game engine written in modern C++"
     }
 ]

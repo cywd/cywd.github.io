@@ -5,21 +5,10 @@
             "login": "mbinary"
         },
         "full_name": "mbinary/USTC-CS-Courses-Resource",
-        "forks_count": "3076",
-        "stargazers_count": "10242",
+        "forks_count": "3490",
+        "stargazers_count": "11529",
         "language": "C++",
         "repositoryDescription": "❤️\n中国科学技术大学计算机学院课程资源(https://mbinary.xyz/ustc-cs/)"
-    },
-    {
-        "name": "coobjc",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/coobjc",
-        "forks_count": "194",
-        "stargazers_count": "1554",
-        "language": "Objective-C",
-        "repositoryDescription": "coobjc provides coroutine support for Objective-C and Swift. We added await method、generator and actor model like C#、Javascript and Kotlin. For convenience, we added coroutine categories for some Foundation and UIKit API in cokit framework like NSFileManager, JSON, NSData, UIImage etc. We also add tuple support in coobjc."
     },
     {
         "name": "frontend-bootcamp",
@@ -27,10 +16,21 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/frontend-bootcamp",
-        "forks_count": "318",
-        "stargazers_count": "3576",
+        "forks_count": "376",
+        "stargazers_count": "4111",
         "language": "TypeScript",
         "repositoryDescription": "Frontend Workshop from HTML/CSS/JS to TypeScript/React/Redux"
+    },
+    {
+        "name": "coobjc",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/coobjc",
+        "forks_count": "239",
+        "stargazers_count": "2017",
+        "language": "Objective-C",
+        "repositoryDescription": "coobjc provides coroutine support for Objective-C and Swift. We added await method、generator and actor model like C#、Javascript and Kotlin. For convenience, we added coroutine categories for some Foundation and UIKit API in cokit framework like NSFileManager, JSON, NSData, UIImage etc. We also add tuple support in coobjc."
     },
     {
         "name": "k3s",
@@ -38,8 +38,8 @@
             "login": "rancher"
         },
         "full_name": "rancher/k3s",
-        "forks_count": "103",
-        "stargazers_count": "3104",
+        "forks_count": "122",
+        "stargazers_count": "3565",
         "language": "Go",
         "repositoryDescription": "Lightweight Kubernetes. 5 less than k8s."
     },
@@ -49,130 +49,10 @@
             "login": "remoteinterview"
         },
         "full_name": "remoteinterview/zero",
-        "forks_count": "41",
-        "stargazers_count": "2061",
+        "forks_count": "52",
+        "stargazers_count": "2438",
         "language": "Python",
         "repositoryDescription": "Zero is a web server to simplify web development."
-    },
-    {
-        "name": "AdaBound",
-        "owner": {
-            "login": "Luolc"
-        },
-        "full_name": "Luolc/AdaBound",
-        "forks_count": "113",
-        "stargazers_count": "1400",
-        "language": "Python",
-        "repositoryDescription": "An optimizer that trains as fast as Adam and as good as SGD."
-    },
-    {
-        "name": "Algorithm_Interview_Notes-Chinese",
-        "owner": {
-            "login": "imhuay"
-        },
-        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "5022",
-        "stargazers_count": "17049",
-        "language": "Python",
-        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
-    },
-    {
-        "name": "Micro8",
-        "owner": {
-            "login": "Micropoor"
-        },
-        "full_name": "Micropoor/Micro8",
-        "forks_count": "3240",
-        "stargazers_count": "9011",
-        "repositoryDescription": "Gitbook"
-    },
-    {
-        "name": "gpu.js",
-        "owner": {
-            "login": "gpujs"
-        },
-        "full_name": "gpujs/gpu.js",
-        "forks_count": "345",
-        "stargazers_count": "7295",
-        "language": "JavaScript",
-        "repositoryDescription": "GPU Accelerated JavaScript"
-    },
-    {
-        "name": "faceswap",
-        "owner": {
-            "login": "deepfakes"
-        },
-        "full_name": "deepfakes/faceswap",
-        "forks_count": "4823",
-        "stargazers_count": "14638",
-        "language": "Python",
-        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
-    },
-    {
-        "name": "kubeadm-aws",
-        "owner": {
-            "login": "cablespaghetti"
-        },
-        "full_name": "cablespaghetti/kubeadm-aws",
-        "forks_count": "36",
-        "stargazers_count": "718",
-        "language": "HCL",
-        "repositoryDescription": "Really cheap Kubernetes cluster on AWS with kubeadm"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "8054",
-        "stargazers_count": "26624",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "spring-boot-examples",
-        "owner": {
-            "login": "ityouknow"
-        },
-        "full_name": "ityouknow/spring-boot-examples",
-        "forks_count": "4715",
-        "stargazers_count": "8964",
-        "language": "Java",
-        "repositoryDescription": "about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。"
-    },
-    {
-        "name": "pi-hole",
-        "owner": {
-            "login": "pi-hole"
-        },
-        "full_name": "pi-hole/pi-hole",
-        "forks_count": "968",
-        "stargazers_count": "13639",
-        "language": "Shell",
-        "repositoryDescription": "A black hole for Internet advertisements"
-    },
-    {
-        "name": "simdjson",
-        "owner": {
-            "login": "lemire"
-        },
-        "full_name": "lemire/simdjson",
-        "forks_count": "218",
-        "stargazers_count": "4934",
-        "language": "C++",
-        "repositoryDescription": "Parsing gigabytes of JSON per second"
-    },
-    {
-        "name": "subsync",
-        "owner": {
-            "login": "smacke"
-        },
-        "full_name": "smacke/subsync",
-        "forks_count": "54",
-        "stargazers_count": "2448",
-        "language": "Python",
-        "repositoryDescription": "Automagically synchronize subtitles with video."
     },
     {
         "name": "awesome-mental-health",
@@ -180,63 +60,30 @@
             "login": "dreamingechoes"
         },
         "full_name": "dreamingechoes/awesome-mental-health",
-        "forks_count": "12",
-        "stargazers_count": "412",
+        "forks_count": "17",
+        "stargazers_count": "786",
         "repositoryDescription": "A curated list of awesome articles, websites and resources about mental health in the software industry."
     },
     {
-        "name": "Motrix",
+        "name": "Micro8",
         "owner": {
-            "login": "agalwood"
+            "login": "Micropoor"
         },
-        "full_name": "agalwood/Motrix",
-        "forks_count": "337",
-        "stargazers_count": "4263",
-        "language": "JavaScript",
-        "repositoryDescription": "A full-featured download manager."
+        "full_name": "Micropoor/Micro8",
+        "forks_count": "3373",
+        "stargazers_count": "9324",
+        "repositoryDescription": "Gitbook"
     },
     {
-        "name": "Awesome-WAF",
+        "name": "Algorithm_Interview_Notes-Chinese",
         "owner": {
-            "login": "0xInfection"
+            "login": "imhuay"
         },
-        "full_name": "0xInfection/Awesome-WAF",
-        "forks_count": "114",
-        "stargazers_count": "874",
-        "repositoryDescription": "🔥\nA curated list of awesome web-app firewall (WAF) stuff."
-    },
-    {
-        "name": "react-three-fiber",
-        "owner": {
-            "login": "drcmda"
-        },
-        "full_name": "drcmda/react-three-fiber",
-        "forks_count": "11",
-        "stargazers_count": "736",
-        "language": "JavaScript",
-        "repositoryDescription": "👌\nReact-fiber renderer for THREE.js"
-    },
-    {
-        "name": "bullet",
-        "owner": {
-            "login": "Mckinsey666"
-        },
-        "full_name": "Mckinsey666/bullet",
-        "forks_count": "19",
-        "stargazers_count": "1226",
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "5108",
+        "stargazers_count": "17351",
         "language": "Python",
-        "repositoryDescription": "🚅\nBeautiful Python prompts made simple. Build a prompt like stacking blocks."
-    },
-    {
-        "name": "cleave.js",
-        "owner": {
-            "login": "nosir"
-        },
-        "full_name": "nosir/cleave.js",
-        "forks_count": "962",
-        "stargazers_count": "12569",
-        "language": "JavaScript",
-        "repositoryDescription": "Format input text content when you are typing..."
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
     },
     {
         "name": "Awesome-Design-Tools",
@@ -244,20 +91,174 @@
             "login": "LisaDziuba"
         },
         "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "273",
-        "stargazers_count": "5012",
+        "forks_count": "292",
+        "stargazers_count": "5362",
         "repositoryDescription": "The best design tools for everything."
     },
     {
-        "name": "Tensorflow-Cookbook",
+        "name": "grapesjs",
         "owner": {
-            "login": "taki0112"
+            "login": "artf"
         },
-        "full_name": "taki0112/Tensorflow-Cookbook",
-        "forks_count": "263",
-        "stargazers_count": "1886",
+        "full_name": "artf/grapesjs",
+        "forks_count": "1317",
+        "stargazers_count": "7772",
+        "language": "JavaScript",
+        "repositoryDescription": "Free and Open source Web Builder Framework. Next generation tool for building templates without coding"
+    },
+    {
+        "name": "gpu.js",
+        "owner": {
+            "login": "gpujs"
+        },
+        "full_name": "gpujs/gpu.js",
+        "forks_count": "358",
+        "stargazers_count": "7593",
+        "language": "JavaScript",
+        "repositoryDescription": "GPU Accelerated JavaScript"
+    },
+    {
+        "name": "public-apis",
+        "owner": {
+            "login": "toddmotto"
+        },
+        "full_name": "toddmotto/public-apis",
+        "forks_count": "5306",
+        "stargazers_count": "52405",
         "language": "Python",
-        "repositoryDescription": "Simple Tensorflow Cookbook for easy-to-use"
+        "repositoryDescription": "A collective list of free APIs for use in software and web development."
+    },
+    {
+        "name": "spring-boot-examples",
+        "owner": {
+            "login": "ityouknow"
+        },
+        "full_name": "ityouknow/spring-boot-examples",
+        "forks_count": "4770",
+        "stargazers_count": "9234",
+        "language": "Java",
+        "repositoryDescription": "about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "8151",
+        "stargazers_count": "26852",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "coolweatherjetpack",
+        "owner": {
+            "login": "guolindev"
+        },
+        "full_name": "guolindev/coolweatherjetpack",
+        "forks_count": "31",
+        "stargazers_count": "296",
+        "language": "Kotlin",
+        "repositoryDescription": "酷欧天气的Jetpack版本实现，采用了MVVM架构。"
+    },
+    {
+        "name": "faceswap",
+        "owner": {
+            "login": "deepfakes"
+        },
+        "full_name": "deepfakes/faceswap",
+        "forks_count": "4916",
+        "stargazers_count": "14836",
+        "language": "Python",
+        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+    },
+    {
+        "name": "ColorUI",
+        "owner": {
+            "login": "weilanwl"
+        },
+        "full_name": "weilanwl/ColorUI",
+        "forks_count": "205",
+        "stargazers_count": "1390",
+        "language": "JavaScript",
+        "repositoryDescription": "鲜亮的高饱和色彩，专注视觉的小程序组件库"
+    },
+    {
+        "name": "gomacro",
+        "owner": {
+            "login": "cosmos72"
+        },
+        "full_name": "cosmos72/gomacro",
+        "forks_count": "33",
+        "stargazers_count": "1150",
+        "language": "Go",
+        "repositoryDescription": "Interactive Go interpreter and debugger with REPL, Eval, generics and Lisp-like macros"
+    },
+    {
+        "name": "simdjson",
+        "owner": {
+            "login": "lemire"
+        },
+        "full_name": "lemire/simdjson",
+        "forks_count": "226",
+        "stargazers_count": "5167",
+        "language": "C++",
+        "repositoryDescription": "Parsing gigabytes of JSON per second"
+    },
+    {
+        "name": "AdaBound",
+        "owner": {
+            "login": "Luolc"
+        },
+        "full_name": "Luolc/AdaBound",
+        "forks_count": "130",
+        "stargazers_count": "1593",
+        "language": "Python",
+        "repositoryDescription": "An optimizer that trains as fast as Adam and as good as SGD."
+    },
+    {
+        "name": "lazynlp",
+        "owner": {
+            "login": "chiphuyen"
+        },
+        "full_name": "chiphuyen/lazynlp",
+        "forks_count": "42",
+        "stargazers_count": "456",
+        "language": "Python",
+        "repositoryDescription": "Library to scrape and clean web pages to create massive datasets."
+    },
+    {
+        "name": "bullet",
+        "owner": {
+            "login": "Mckinsey666"
+        },
+        "full_name": "Mckinsey666/bullet",
+        "forks_count": "22",
+        "stargazers_count": "1440",
+        "language": "Python",
+        "repositoryDescription": "🚅\nBeautiful Python prompts made simple. Build a prompt like stacking blocks."
+    },
+    {
+        "name": "Motrix",
+        "owner": {
+            "login": "agalwood"
+        },
+        "full_name": "agalwood/Motrix",
+        "forks_count": "356",
+        "stargazers_count": "4459",
+        "language": "JavaScript",
+        "repositoryDescription": "A full-featured download manager."
+    },
+    {
+        "name": "nni",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/nni",
+        "forks_count": "223",
+        "stargazers_count": "1603",
+        "language": "TypeScript",
+        "repositoryDescription": "An open source AutoML toolkit for neural architecture search and hyper-parameter tuning."
     },
     {
         "name": "CS-Notes",
@@ -265,8 +266,8 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "15767",
-        "stargazers_count": "51146",
+        "forks_count": "15817",
+        "stargazers_count": "51300",
         "repositoryDescription": "😋\n技术面试必备基础知识"
     }
 ]

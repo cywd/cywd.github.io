@@ -759,6 +759,10 @@
         "color": "#00a6a6",
         "url": "https://github.com/trending?l=MAXScript"
     },
+    "mcfunction": {
+        "color": "#E22837",
+        "url": "https://github.com/trending?l=mcfunction"
+    },
     "Mercury": {
         "color": "#ff2b2b",
         "url": "https://github.com/trending?l=Mercury"
@@ -1096,7 +1100,7 @@
         "url": "https://github.com/trending?l=R"
     },
     "Racket": {
-        "color": "#22228f",
+        "color": "#3c5caa",
         "url": "https://github.com/trending?l=Racket"
     },
     "Ragel": {

@@ -1,25 +1,24 @@
 [
     {
-        "name": "USTC-CS-Courses-Resource",
+        "name": "htrace.sh",
         "owner": {
-            "login": "mbinary"
+            "login": "trimstray"
         },
-        "full_name": "mbinary/USTC-CS-Courses-Resource",
-        "forks_count": "4246",
-        "stargazers_count": "13792",
-        "language": "C++",
-        "repositoryDescription": "❤️\n中国科学技术大学计算机学院课程资源(https://mbinary.xyz/ustc-cs/)"
+        "full_name": "trimstray/htrace.sh",
+        "forks_count": "89",
+        "stargazers_count": "1547",
+        "language": "Shell",
+        "repositoryDescription": "My simple Swiss Army knife for http/https troubleshooting and profiling."
     },
     {
-        "name": "web",
+        "name": "python_interview_question",
         "owner": {
-            "login": "pikapkg"
+            "login": "kenwoodjw"
         },
-        "full_name": "pikapkg/web",
-        "forks_count": "19",
-        "stargazers_count": "1543",
-        "language": "TypeScript",
-        "repositoryDescription": "📦\n✨\nInstall npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required."
+        "full_name": "kenwoodjw/python_interview_question",
+        "forks_count": "209",
+        "stargazers_count": "879",
+        "repositoryDescription": "关于python的面试题"
     },
     {
         "name": "Micro8",
@@ -27,8 +26,8 @@
             "login": "Micropoor"
         },
         "full_name": "Micropoor/Micro8",
-        "forks_count": "3662",
-        "stargazers_count": "10191",
+        "forks_count": "3781",
+        "stargazers_count": "10563",
         "repositoryDescription": "Gitbook"
     },
     {
@@ -37,10 +36,153 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/frontend-bootcamp",
-        "forks_count": "490",
-        "stargazers_count": "5038",
+        "forks_count": "548",
+        "stargazers_count": "5496",
         "language": "TypeScript",
         "repositoryDescription": "Frontend Workshop from HTML/CSS/JS to TypeScript/React/Redux"
+    },
+    {
+        "name": "m2cgen",
+        "owner": {
+            "login": "BayesWitnesses"
+        },
+        "full_name": "BayesWitnesses/m2cgen",
+        "forks_count": "22",
+        "stargazers_count": "566",
+        "language": "Python",
+        "repositoryDescription": "Transform ML models into a native code (Java, C, Python, etc.) with zero dependencies"
+    },
+    {
+        "name": "PythonDataScienceHandbook",
+        "owner": {
+            "login": "jakevdp"
+        },
+        "full_name": "jakevdp/PythonDataScienceHandbook",
+        "forks_count": "6014",
+        "stargazers_count": "15546",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Python Data Science Handbook: full text in Jupyter Notebooks"
+    },
+    {
+        "name": "vita",
+        "owner": {
+            "login": "inters"
+        },
+        "full_name": "inters/vita",
+        "forks_count": "288",
+        "stargazers_count": "540",
+        "language": "C",
+        "repositoryDescription": "Vita: simple and fast VPN gateway"
+    },
+    {
+        "name": "web",
+        "owner": {
+            "login": "pikapkg"
+        },
+        "full_name": "pikapkg/web",
+        "forks_count": "27",
+        "stargazers_count": "1922",
+        "language": "TypeScript",
+        "repositoryDescription": "📦\n✨\nInstall npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required."
+    },
+    {
+        "name": "tile38",
+        "owner": {
+            "login": "tidwall"
+        },
+        "full_name": "tidwall/tile38",
+        "forks_count": "297",
+        "stargazers_count": "5708",
+        "language": "Go",
+        "repositoryDescription": "Tile38 is a geospatial database, spatial index, and realtime geofence.\n🌐"
+    },
+    {
+        "name": "Algorithm_Interview_Notes-Chinese",
+        "owner": {
+            "login": "imhuay"
+        },
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "5364",
+        "stargazers_count": "18287",
+        "language": "Python",
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "maskscoring_rcnn",
+        "owner": {
+            "login": "zjhuang22"
+        },
+        "full_name": "zjhuang22/maskscoring_rcnn",
+        "forks_count": "63",
+        "stargazers_count": "413",
+        "language": "Python",
+        "repositoryDescription": "Codes for paper \"Mask Scoring R-CNN\"."
+    },
+    {
+        "name": "neural-mmo",
+        "owner": {
+            "login": "openai"
+        },
+        "full_name": "openai/neural-mmo",
+        "forks_count": "24",
+        "stargazers_count": "315",
+        "language": "Python",
+        "repositoryDescription": "Neural MMO - A Massively Multiagent Game Environment"
+    },
+    {
+        "name": "Lihang",
+        "owner": {
+            "login": "SmirkCao"
+        },
+        "full_name": "SmirkCao/Lihang",
+        "forks_count": "153",
+        "stargazers_count": "528",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Statistical learning methods, 统计学习方法 [李航] 值得反复读. [笔记, 代码, notebook, 参考文献, Errata]"
+    },
+    {
+        "name": "wesng",
+        "owner": {
+            "login": "bitsadmin"
+        },
+        "full_name": "bitsadmin/wesng",
+        "forks_count": "81",
+        "stargazers_count": "606",
+        "language": "Python",
+        "repositoryDescription": "Windows Exploit Suggester - Next Generation"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "8398",
+        "stargazers_count": "27485",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "wirefilter",
+        "owner": {
+            "login": "cloudflare"
+        },
+        "full_name": "cloudflare/wirefilter",
+        "forks_count": "9",
+        "stargazers_count": "279",
+        "language": "Rust",
+        "repositoryDescription": "An execution engine for Wireshark-like filters"
+    },
+    {
+        "name": "k3s",
+        "owner": {
+            "login": "rancher"
+        },
+        "full_name": "rancher/k3s",
+        "forks_count": "169",
+        "stargazers_count": "4461",
+        "language": "Go",
+        "repositoryDescription": "Lightweight Kubernetes. 5 less than k8s."
     },
     {
         "name": "hiring-without-whiteboards",
@@ -48,8 +190,8 @@
             "login": "poteto"
         },
         "full_name": "poteto/hiring-without-whiteboards",
-        "forks_count": "1124",
-        "stargazers_count": "10976",
+        "forks_count": "1148",
+        "stargazers_count": "11202",
         "language": "JavaScript",
         "repositoryDescription": "⭐️\nCompanies that don't have a broken hiring process"
     },
@@ -59,150 +201,10 @@
             "login": "emilbaehr"
         },
         "full_name": "emilbaehr/automatic-app-landing-page",
-        "forks_count": "58",
-        "stargazers_count": "482",
+        "forks_count": "89",
+        "stargazers_count": "707",
         "language": "HTML",
         "repositoryDescription": "A Jekyll theme for automatically generating and deploying landing page sites for mobile apps."
-    },
-    {
-        "name": "Algorithm_Interview_Notes-Chinese",
-        "owner": {
-            "login": "imhuay"
-        },
-        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "5284",
-        "stargazers_count": "18010",
-        "language": "Python",
-        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
-    },
-    {
-        "name": "system-design-primer",
-        "owner": {
-            "login": "donnemartin"
-        },
-        "full_name": "donnemartin/system-design-primer",
-        "forks_count": "8552",
-        "stargazers_count": "58440",
-        "language": "Python",
-        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
-    },
-    {
-        "name": "k3s",
-        "owner": {
-            "login": "rancher"
-        },
-        "full_name": "rancher/k3s",
-        "forks_count": "153",
-        "stargazers_count": "4216",
-        "language": "Go",
-        "repositoryDescription": "Lightweight Kubernetes. 5 less than k8s."
-    },
-    {
-        "name": "zero",
-        "owner": {
-            "login": "remoteinterview"
-        },
-        "full_name": "remoteinterview/zero",
-        "forks_count": "83",
-        "stargazers_count": "3280",
-        "language": "Python",
-        "repositoryDescription": "Zero is a web server to simplify web development."
-    },
-    {
-        "name": "distsys-class",
-        "owner": {
-            "login": "aphyr"
-        },
-        "full_name": "aphyr/distsys-class",
-        "forks_count": "415",
-        "stargazers_count": "5624",
-        "repositoryDescription": "Class materials for a distributed systems lecture series"
-    },
-    {
-        "name": "wesng",
-        "owner": {
-            "login": "bitsadmin"
-        },
-        "full_name": "bitsadmin/wesng",
-        "forks_count": "54",
-        "stargazers_count": "355",
-        "language": "PowerShell",
-        "repositoryDescription": "Windows Exploit Suggester - Next Generation"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "8313",
-        "stargazers_count": "27272",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "coobjc",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/coobjc",
-        "forks_count": "298",
-        "stargazers_count": "2371",
-        "language": "Objective-C",
-        "repositoryDescription": "coobjc provides coroutine support for Objective-C and Swift. We added await method、generator and actor model like C#、Javascript and Kotlin. For convenience, we added coroutine categories for some Foundation and UIKit API in cokit framework like NSFileManager, JSON, NSData, UIImage etc. We also add tuple support in coobjc."
-    },
-    {
-        "name": "DoraemonKit",
-        "owner": {
-            "login": "didi"
-        },
-        "full_name": "didi/DoraemonKit",
-        "forks_count": "527",
-        "stargazers_count": "5240",
-        "language": "Java",
-        "repositoryDescription": "简称 \"DoKit\" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。"
-    },
-    {
-        "name": "gpu.js",
-        "owner": {
-            "login": "gpujs"
-        },
-        "full_name": "gpujs/gpu.js",
-        "forks_count": "368",
-        "stargazers_count": "8120",
-        "language": "JavaScript",
-        "repositoryDescription": "GPU Accelerated JavaScript"
-    },
-    {
-        "name": "bootstrapping-calculator",
-        "owner": {
-            "login": "dvassallo"
-        },
-        "full_name": "dvassallo/bootstrapping-calculator",
-        "forks_count": "6",
-        "stargazers_count": "233",
-        "repositoryDescription": "Do you have enough savings to fund your business?"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "15926",
-        "stargazers_count": "51607",
-        "repositoryDescription": "😋\n技术面试必备基础知识"
-    },
-    {
-        "name": "vue-dev-server",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue-dev-server",
-        "forks_count": "8",
-        "stargazers_count": "321",
-        "language": "JavaScript",
-        "repositoryDescription": "A POC dev server that allows you to import `*.vue` files via native ES modules imports."
     },
     {
         "name": "Awesome-Design-Tools",
@@ -210,62 +212,62 @@
             "login": "LisaDziuba"
         },
         "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "326",
-        "stargazers_count": "5934",
+        "forks_count": "329",
+        "stargazers_count": "6158",
         "repositoryDescription": "The best design tools for everything."
     },
     {
-        "name": "lazynlp",
+        "name": "react-three-fiber",
         "owner": {
-            "login": "chiphuyen"
+            "login": "drcmda"
         },
-        "full_name": "chiphuyen/lazynlp",
-        "forks_count": "127",
-        "stargazers_count": "966",
+        "full_name": "drcmda/react-three-fiber",
+        "forks_count": "22",
+        "stargazers_count": "1176",
+        "language": "JavaScript",
+        "repositoryDescription": "👌\nReact renderer for THREE.js"
+    },
+    {
+        "name": "zero",
+        "owner": {
+            "login": "remoteinterview"
+        },
+        "full_name": "remoteinterview/zero",
+        "forks_count": "91",
+        "stargazers_count": "3462",
         "language": "Python",
-        "repositoryDescription": "Library to scrape and clean web pages to create massive datasets."
+        "repositoryDescription": "Zero is a web server to simplify web development."
     },
     {
-        "name": "luster",
+        "name": "simple-streaming-datasource",
         "owner": {
-            "login": "kyren"
+            "login": "seanlaff"
         },
-        "full_name": "kyren/luster",
-        "forks_count": "12",
-        "stargazers_count": "329",
-        "language": "Rust",
-        "repositoryDescription": "An experimental Lua VM implemented in pure Rust"
+        "full_name": "seanlaff/simple-streaming-datasource",
+        "forks_count": "9",
+        "stargazers_count": "211",
+        "language": "JavaScript",
+        "repositoryDescription": "End-to-end Grafana streaming datasource example"
     },
     {
-        "name": "eboy",
+        "name": "CS-Notes",
         "owner": {
-            "login": "vreeze"
+            "login": "CyC2018"
         },
-        "full_name": "vreeze/eboy",
-        "forks_count": "5",
-        "stargazers_count": "310",
-        "language": "Emacs Lisp",
-        "repositoryDescription": "A Gameboy emulator for Emacs"
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "15970",
+        "stargazers_count": "51745",
+        "repositoryDescription": "😋\n技术面试必备基础知识"
     },
     {
-        "name": "queueing_theory",
+        "name": "freeCodeCamp",
         "owner": {
-            "login": "joelparkerhenderson"
+            "login": "freeCodeCamp"
         },
-        "full_name": "joelparkerhenderson/queueing_theory",
-        "forks_count": "35",
-        "stargazers_count": "842",
-        "repositoryDescription": "Queueing theory: an introduction for software development"
-    },
-    {
-        "name": "faceswap",
-        "owner": {
-            "login": "deepfakes"
-        },
-        "full_name": "deepfakes/faceswap",
-        "forks_count": "5036",
-        "stargazers_count": "15174",
-        "language": "Python",
-        "repositoryDescription": "Non official project based on original /r/Deepfakes thread. Many thanks to him!"
+        "full_name": "freeCodeCamp/freeCodeCamp",
+        "forks_count": "21043",
+        "stargazers_count": "297840",
+        "language": "JavaScript",
+        "repositoryDescription": "The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
     }
 ]

@@ -1,12 +1,23 @@
 [
     {
+        "name": "calculator",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/calculator",
+        "forks_count": "558",
+        "stargazers_count": "5281",
+        "language": "C++",
+        "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
+    },
+    {
         "name": "ghidra",
         "owner": {
             "login": "NationalSecurityAgency"
         },
         "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "346",
-        "stargazers_count": "4034",
+        "forks_count": "649",
+        "stargazers_count": "6892",
         "repositoryDescription": ""
     },
     {
@@ -15,10 +26,52 @@
             "login": "codercom"
         },
         "full_name": "codercom/code-server",
-        "forks_count": "56",
-        "stargazers_count": "1634",
+        "forks_count": "114",
+        "stargazers_count": "2740",
         "language": "TypeScript",
-        "repositoryDescription": "Run VS Code remotely."
+        "repositoryDescription": "Run VS Code on a remote server."
+    },
+    {
+        "name": "ycy",
+        "owner": {
+            "login": "ccyyycy"
+        },
+        "full_name": "ccyyycy/ycy",
+        "forks_count": "119",
+        "stargazers_count": "885",
+        "repositoryDescription": "欢迎大家！hello ycy"
+    },
+    {
+        "name": "awesome-python-login-model",
+        "owner": {
+            "login": "CriseLYJ"
+        },
+        "full_name": "CriseLYJ/awesome-python-login-model",
+        "forks_count": "109",
+        "stargazers_count": "843",
+        "language": "Python",
+        "repositoryDescription": "😮\npython各大网站登陆方式与一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
+    },
+    {
+        "name": "Micro8",
+        "owner": {
+            "login": "Micropoor"
+        },
+        "full_name": "Micropoor/Micro8",
+        "forks_count": "4301",
+        "stargazers_count": "11607",
+        "repositoryDescription": "Gitbook"
+    },
+    {
+        "name": "lets-get-arrested",
+        "owner": {
+            "login": "hamukazu"
+        },
+        "full_name": "hamukazu/lets-get-arrested",
+        "forks_count": "250",
+        "stargazers_count": "873",
+        "language": "HTML",
+        "repositoryDescription": "This project is intended to protest against the police in Japan"
     },
     {
         "name": "fish-redux",
@@ -26,8 +79,8 @@
             "login": "alibaba"
         },
         "full_name": "alibaba/fish-redux",
-        "forks_count": "175",
-        "stargazers_count": "1629",
+        "forks_count": "207",
+        "stargazers_count": "2027",
         "language": "Dart",
         "repositoryDescription": "An assembled flutter application framework."
     },
@@ -37,20 +90,10 @@
             "login": "uber"
         },
         "full_name": "uber/kraken",
-        "forks_count": "28",
-        "stargazers_count": "888",
+        "forks_count": "38",
+        "stargazers_count": "1255",
         "language": "Go",
         "repositoryDescription": "P2P docker registry capable of distributing TBs of data in seconds"
-    },
-    {
-        "name": "Micro8",
-        "owner": {
-            "login": "Micropoor"
-        },
-        "full_name": "Micropoor/Micro8",
-        "forks_count": "4014",
-        "stargazers_count": "11041",
-        "repositoryDescription": "Gitbook"
     },
     {
         "name": "frontend-bootcamp",
@@ -58,63 +101,10 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/frontend-bootcamp",
-        "forks_count": "611",
-        "stargazers_count": "5976",
+        "forks_count": "656",
+        "stargazers_count": "6301",
         "language": "TypeScript",
         "repositoryDescription": "Frontend Workshop from HTML/CSS/JS to TypeScript/React/Redux"
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "355",
-        "stargazers_count": "6633",
-        "repositoryDescription": "The best design tools for everything."
-    },
-    {
-        "name": "lets-get-arrested",
-        "owner": {
-            "login": "hamukazu"
-        },
-        "full_name": "hamukazu/lets-get-arrested",
-        "forks_count": "139",
-        "stargazers_count": "432",
-        "language": "HTML",
-        "repositoryDescription": "This project is intended to protest against the police in Japan"
-    },
-    {
-        "name": "python_interview_question",
-        "owner": {
-            "login": "kenwoodjw"
-        },
-        "full_name": "kenwoodjw/python_interview_question",
-        "forks_count": "289",
-        "stargazers_count": "1243",
-        "repositoryDescription": "关于python的面试题"
-    },
-    {
-        "name": "m2cgen",
-        "owner": {
-            "login": "BayesWitnesses"
-        },
-        "full_name": "BayesWitnesses/m2cgen",
-        "forks_count": "49",
-        "stargazers_count": "904",
-        "language": "Python",
-        "repositoryDescription": "Transform ML models into a native code (Java, C, Python, etc.) with zero dependencies"
-    },
-    {
-        "name": "htrace.sh",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/htrace.sh",
-        "forks_count": "105",
-        "stargazers_count": "1893",
-        "language": "Shell",
-        "repositoryDescription": "My simple Swiss Army knife for http/https troubleshooting and profiling."
     },
     {
         "name": "JavaGuide",
@@ -122,10 +112,41 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "8484",
-        "stargazers_count": "27739",
+        "forks_count": "8602",
+        "stargazers_count": "28001",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "374",
+        "stargazers_count": "6874",
+        "repositoryDescription": "The best design tools for everything."
+    },
+    {
+        "name": "ink",
+        "owner": {
+            "login": "vadimdemedes"
+        },
+        "full_name": "vadimdemedes/ink",
+        "forks_count": "199",
+        "stargazers_count": "9212",
+        "language": "JavaScript",
+        "repositoryDescription": "🌈\nReact for interactive command-line apps"
+    },
+    {
+        "name": "python_interview_question",
+        "owner": {
+            "login": "kenwoodjw"
+        },
+        "full_name": "kenwoodjw/python_interview_question",
+        "forks_count": "351",
+        "stargazers_count": "1484",
+        "repositoryDescription": "关于python的面试题"
     },
     {
         "name": "Algorithm_Interview_Notes-Chinese",
@@ -133,8 +154,8 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "5447",
-        "stargazers_count": "18536",
+        "forks_count": "5524",
+        "stargazers_count": "18755",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
     },
@@ -144,54 +165,21 @@
             "login": "USTC-Resource"
         },
         "full_name": "USTC-Resource/USTC-Course",
-        "forks_count": "126",
-        "stargazers_count": "254",
+        "forks_count": "188",
+        "stargazers_count": "479",
         "language": "Python",
-        "repositoryDescription": "❤️\n中国科学技术大学课程资源"
+        "repositoryDescription": "❤️\n中国科学技术大学课程资源(https://ustc-resource.github.io/USTC-Course)"
     },
     {
-        "name": "chunkwm",
+        "name": "reaviz",
         "owner": {
-            "login": "koekeishiya"
+            "login": "jask-oss"
         },
-        "full_name": "koekeishiya/chunkwm",
-        "forks_count": "160",
-        "stargazers_count": "3403",
-        "language": "C++",
-        "repositoryDescription": "Tiling window manager for macOS based on plugin architecture"
-    },
-    {
-        "name": "neural-mmo",
-        "owner": {
-            "login": "openai"
-        },
-        "full_name": "openai/neural-mmo",
-        "forks_count": "45",
-        "stargazers_count": "548",
-        "language": "Python",
-        "repositoryDescription": "Neural MMO - A Massively Multiagent Game Environment"
-    },
-    {
-        "name": "PythonDataScienceHandbook",
-        "owner": {
-            "login": "jakevdp"
-        },
-        "full_name": "jakevdp/PythonDataScienceHandbook",
-        "forks_count": "6039",
-        "stargazers_count": "15767",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Python Data Science Handbook: full text in Jupyter Notebooks"
-    },
-    {
-        "name": "web",
-        "owner": {
-            "login": "pikapkg"
-        },
-        "full_name": "pikapkg/web",
-        "forks_count": "32",
-        "stargazers_count": "2120",
+        "full_name": "jask-oss/reaviz",
+        "forks_count": "4",
+        "stargazers_count": "249",
         "language": "TypeScript",
-        "repositoryDescription": "📦\n✨\nInstall npm dependencies that run directly in the browser. No Browserify, Webpack or import maps required."
+        "repositoryDescription": "📊\nReactJS Data Visualization Library based on D3.js"
     },
     {
         "name": "flutter",
@@ -199,43 +187,43 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "5938",
-        "stargazers_count": "55398",
+        "forks_count": "5961",
+        "stargazers_count": "55579",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     },
     {
-        "name": "maskscoring_rcnn",
+        "name": "tensorflow",
         "owner": {
-            "login": "zjhuang22"
+            "login": "tensorflow"
         },
-        "full_name": "zjhuang22/maskscoring_rcnn",
-        "forks_count": "96",
-        "stargazers_count": "587",
-        "language": "Python",
-        "repositoryDescription": "Codes for paper \"Mask Scoring R-CNN\"."
+        "full_name": "tensorflow/tensorflow",
+        "forks_count": "72583",
+        "stargazers_count": "122038",
+        "language": "C++",
+        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     },
     {
-        "name": "tile38",
+        "name": "quickchart",
         "owner": {
-            "login": "tidwall"
+            "login": "typpo"
         },
-        "full_name": "tidwall/tile38",
-        "forks_count": "306",
-        "stargazers_count": "5886",
-        "language": "Go",
-        "repositoryDescription": "Tile38 is a geospatial database, spatial index, and realtime geofence.\n🌐"
+        "full_name": "typpo/quickchart",
+        "forks_count": "14",
+        "stargazers_count": "204",
+        "language": "HTML",
+        "repositoryDescription": "Google Image Charts alternative"
     },
     {
-        "name": "ludwig",
+        "name": "htrace.sh",
         "owner": {
-            "login": "uber"
+            "login": "trimstray"
         },
-        "full_name": "uber/ludwig",
-        "forks_count": "337",
-        "stargazers_count": "3652",
-        "language": "Python",
-        "repositoryDescription": "Ludwig is a toolbox built on top of TensorFlow that allows to train and test deep learning models without the need to write code."
+        "full_name": "trimstray/htrace.sh",
+        "forks_count": "114",
+        "stargazers_count": "2062",
+        "language": "Shell",
+        "repositoryDescription": "My simple Swiss Army knife for http/https troubleshooting and profiling."
     },
     {
         "name": "CS-Notes",
@@ -243,20 +231,31 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "16025",
-        "stargazers_count": "51906",
+        "forks_count": "16082",
+        "stargazers_count": "52049",
         "repositoryDescription": "😋\n技术面试必备基础知识"
     },
     {
-        "name": "Lihang",
+        "name": "k3s",
         "owner": {
-            "login": "SmirkCao"
+            "login": "rancher"
         },
-        "full_name": "SmirkCao/Lihang",
-        "forks_count": "184",
-        "stargazers_count": "697",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Statistical learning methods, 统计学习方法 [李航] 值得反复读. [笔记, 代码, notebook, 参考文献, Errata]"
+        "full_name": "rancher/k3s",
+        "forks_count": "189",
+        "stargazers_count": "4810",
+        "language": "Go",
+        "repositoryDescription": "Lightweight Kubernetes. 5 less than k8s."
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "2340",
+        "stargazers_count": "11653",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
     },
     {
         "name": "freeCodeCamp",
@@ -264,8 +263,8 @@
             "login": "freeCodeCamp"
         },
         "full_name": "freeCodeCamp/freeCodeCamp",
-        "forks_count": "21052",
-        "stargazers_count": "297905",
+        "forks_count": "21069",
+        "stargazers_count": "297966",
         "language": "JavaScript",
         "repositoryDescription": "The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
     }

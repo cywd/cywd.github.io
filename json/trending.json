@@ -1,14 +1,14 @@
 [
     {
-        "name": "calculator",
+        "name": "spring-boot-examples",
         "owner": {
-            "login": "Microsoft"
+            "login": "ityouknow"
         },
-        "full_name": "Microsoft/calculator",
-        "forks_count": "1226",
-        "stargazers_count": "10201",
-        "language": "C++",
-        "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
+        "full_name": "ityouknow/spring-boot-examples",
+        "forks_count": "5035",
+        "stargazers_count": "10817",
+        "language": "Java",
+        "repositoryDescription": "about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。"
     },
     {
         "name": "server",
@@ -16,21 +16,32 @@
             "login": "gotify"
         },
         "full_name": "gotify/server",
-        "forks_count": "57",
-        "stargazers_count": "1568",
+        "forks_count": "87",
+        "stargazers_count": "2448",
         "language": "Go",
         "repositoryDescription": "A simple server for sending and receiving messages in real-time per web socket. (Includes a sleek web-ui)"
     },
     {
-        "name": "ArchiveBox",
+        "name": "calculator",
         "owner": {
-            "login": "pirate"
+            "login": "Microsoft"
         },
-        "full_name": "pirate/ArchiveBox",
-        "forks_count": "166",
-        "stargazers_count": "2686",
-        "language": "Python",
-        "repositoryDescription": "🗃\nThe open source self-hosted web archive. Takes browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more..."
+        "full_name": "Microsoft/calculator",
+        "forks_count": "1363",
+        "stargazers_count": "11022",
+        "language": "C++",
+        "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
+    },
+    {
+        "name": "code-server",
+        "owner": {
+            "login": "codercom"
+        },
+        "full_name": "codercom/code-server",
+        "forks_count": "238",
+        "stargazers_count": "5448",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
     },
     {
         "name": "lets-get-arrested",
@@ -38,8 +49,8 @@
             "login": "hamukazu"
         },
         "full_name": "hamukazu/lets-get-arrested",
-        "forks_count": "657",
-        "stargazers_count": "2030",
+        "forks_count": "791",
+        "stargazers_count": "2474",
         "language": "HTML",
         "repositoryDescription": "This project is intended to protest against the police in Japan"
     },
@@ -49,31 +60,20 @@
             "login": "NationalSecurityAgency"
         },
         "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "898",
-        "stargazers_count": "8932",
+        "forks_count": "959",
+        "stargazers_count": "9424",
         "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
     },
     {
-        "name": "code-server",
+        "name": "ArchiveBox",
         "owner": {
-            "login": "codercom"
+            "login": "pirate"
         },
-        "full_name": "codercom/code-server",
-        "forks_count": "204",
-        "stargazers_count": "4791",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
-    },
-    {
-        "name": "UserLAnd",
-        "owner": {
-            "login": "CypherpunkArmory"
-        },
-        "full_name": "CypherpunkArmory/UserLAnd",
-        "forks_count": "75",
-        "stargazers_count": "823",
-        "language": "Java",
-        "repositoryDescription": "Main UserLAnd Repository"
+        "full_name": "pirate/ArchiveBox",
+        "forks_count": "180",
+        "stargazers_count": "3131",
+        "language": "Python",
+        "repositoryDescription": "🗃\nThe open source self-hosted web archive. Takes browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more..."
     },
     {
         "name": "awesome-python-login-model",
@@ -81,21 +81,52 @@
             "login": "CriseLYJ"
         },
         "full_name": "CriseLYJ/awesome-python-login-model",
-        "forks_count": "251",
-        "stargazers_count": "1983",
+        "forks_count": "317",
+        "stargazers_count": "2397",
         "language": "Python",
         "repositoryDescription": "😮\npython模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
     },
     {
-        "name": "personal-website",
+        "name": "Go42",
         "owner": {
-            "login": "github"
+            "login": "ffhelicopter"
         },
-        "full_name": "github/personal-website",
-        "forks_count": "2163",
-        "stargazers_count": "3600",
-        "language": "HTML",
-        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
+        "full_name": "ffhelicopter/Go42",
+        "forks_count": "64",
+        "stargazers_count": "718",
+        "repositoryDescription": "写《Go语言四十二章经》，纯粹是因为开发过程中碰到过的一些问题，踩到过的一些坑，感觉在Go语言学习使用过程中，有必要深刻理解这门语言的核心思维、清晰掌握语言的细节规范以及反复琢磨标准包代码设计模式，于是才有了这本书。"
+    },
+    {
+        "name": "takeover.sh",
+        "owner": {
+            "login": "marcan"
+        },
+        "full_name": "marcan/takeover.sh",
+        "forks_count": "244",
+        "stargazers_count": "4363",
+        "language": "Shell",
+        "repositoryDescription": "Wipe and reinstall a running Linux system via SSH, without rebooting. You know you want to."
+    },
+    {
+        "name": "Micro8",
+        "owner": {
+            "login": "Micropoor"
+        },
+        "full_name": "Micropoor/Micro8",
+        "forks_count": "4756",
+        "stargazers_count": "12543",
+        "repositoryDescription": "Gitbook"
+    },
+    {
+        "name": "ChromeAppHeroes",
+        "owner": {
+            "login": "zhaoolee"
+        },
+        "full_name": "zhaoolee/ChromeAppHeroes",
+        "forks_count": "64",
+        "stargazers_count": "796",
+        "language": "Python",
+        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
     },
     {
         "name": "pytorch_geometric",
@@ -103,10 +134,21 @@
             "login": "rusty1s"
         },
         "full_name": "rusty1s/pytorch_geometric",
-        "forks_count": "253",
-        "stargazers_count": "1946",
+        "forks_count": "286",
+        "stargazers_count": "2220",
         "language": "Python",
         "repositoryDescription": "Geometric Deep Learning Extension Library for PyTorch"
+    },
+    {
+        "name": "USTC-Course",
+        "owner": {
+            "login": "USTC-Resource"
+        },
+        "full_name": "USTC-Resource/USTC-Course",
+        "forks_count": "340",
+        "stargazers_count": "1058",
+        "language": "Python",
+        "repositoryDescription": "❤️\n中国科学技术大学课程资源"
     },
     {
         "name": "awesome-compilers",
@@ -114,8 +156,8 @@
             "login": "aalhour"
         },
         "full_name": "aalhour/awesome-compilers",
-        "forks_count": "270",
-        "stargazers_count": "3558",
+        "forks_count": "288",
+        "stargazers_count": "3783",
         "repositoryDescription": "😎\nCurated list of awesome resources on Compilers, Interpreters and Runtimes"
     },
     {
@@ -124,53 +166,63 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "8751",
-        "stargazers_count": "28470",
+        "forks_count": "8815",
+        "stargazers_count": "28686",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "Micro8",
+        "name": "flyover-reverse-engineering",
         "owner": {
-            "login": "Micropoor"
+            "login": "retroplasma"
         },
-        "full_name": "Micropoor/Micro8",
-        "forks_count": "4645",
-        "stargazers_count": "12297",
-        "repositoryDescription": "Gitbook"
+        "full_name": "retroplasma/flyover-reverse-engineering",
+        "forks_count": "13",
+        "stargazers_count": "276",
+        "language": "Go",
+        "repositoryDescription": "Reversing Apple's 3D satellite mode"
     },
     {
-        "name": "frontend-bootcamp",
+        "name": "olive",
         "owner": {
-            "login": "Microsoft"
+            "login": "olive-editor"
         },
-        "full_name": "Microsoft/frontend-bootcamp",
-        "forks_count": "713",
-        "stargazers_count": "6793",
-        "language": "TypeScript",
-        "repositoryDescription": "Frontend Workshop from HTML/CSS/JS to TypeScript/React/Redux"
+        "full_name": "olive-editor/olive",
+        "forks_count": "79",
+        "stargazers_count": "879",
+        "language": "C++",
+        "repositoryDescription": "Professional open-source NLE video editor"
     },
     {
-        "name": "curriculum-bootloader",
+        "name": "cmake-examples",
         "owner": {
-            "login": "pjimenezmateo"
+            "login": "pr0g"
         },
-        "full_name": "pjimenezmateo/curriculum-bootloader",
-        "forks_count": "14",
-        "stargazers_count": "294",
-        "language": "Assembly",
-        "repositoryDescription": "Here I share the code of my CV, which is also a bootable bootloader :)"
+        "full_name": "pr0g/cmake-examples",
+        "forks_count": "3",
+        "stargazers_count": "267",
+        "repositoryDescription": "A collection of as simple as possible, modern CMake projects"
     },
     {
-        "name": "Motrix",
+        "name": "react-window",
         "owner": {
-            "login": "agalwood"
+            "login": "bvaughn"
         },
-        "full_name": "agalwood/Motrix",
-        "forks_count": "445",
-        "stargazers_count": "5458",
+        "full_name": "bvaughn/react-window",
+        "forks_count": "121",
+        "stargazers_count": "3602",
         "language": "JavaScript",
-        "repositoryDescription": "A full-featured download manager."
+        "repositoryDescription": "React components for efficiently rendering large lists and tabular data"
+    },
+    {
+        "name": "portable-node-guide",
+        "owner": {
+            "login": "ehmicky"
+        },
+        "full_name": "ehmicky/portable-node-guide",
+        "forks_count": "19",
+        "stargazers_count": "467",
+        "repositoryDescription": "📗\nPractical guide on how to write portable/cross-platform Node.js code"
     },
     {
         "name": "CS-Notes",
@@ -178,96 +230,40 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "16166",
-        "stargazers_count": "52391",
+        "forks_count": "16210",
+        "stargazers_count": "52571",
         "repositoryDescription": "😋\n技术面试必备基础知识"
     },
     {
-        "name": "tensorflow",
+        "name": "personal-website",
         "owner": {
-            "login": "tensorflow"
+            "login": "github"
         },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "72673",
-        "stargazers_count": "122382",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
+        "full_name": "github/personal-website",
+        "forks_count": "2281",
+        "stargazers_count": "3744",
+        "language": "HTML",
+        "repositoryDescription": "Code that'll help you kickstart a personal website that showcases your work as a software developer."
     },
     {
-        "name": "Python",
+        "name": "kubernetes-the-hard-way",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "kelseyhightower"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "6415",
-        "stargazers_count": "23071",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "full_name": "kelseyhightower/kubernetes-the-hard-way",
+        "forks_count": "2636",
+        "stargazers_count": "14580",
+        "repositoryDescription": "Bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts."
     },
     {
-        "name": "awesome-vscode",
+        "name": "freeCodeCamp",
         "owner": {
-            "login": "viatsko"
+            "login": "freeCodeCamp"
         },
-        "full_name": "viatsko/awesome-vscode",
-        "forks_count": "694",
-        "stargazers_count": "13903",
+        "full_name": "freeCodeCamp/freeCodeCamp",
+        "forks_count": "21096",
+        "stargazers_count": "298146",
         "language": "JavaScript",
-        "repositoryDescription": "🎨\nA curated list of delightful VS Code packages and resources."
-    },
-    {
-        "name": "vscode",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/vscode",
-        "forks_count": "9419",
-        "stargazers_count": "70886",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
-    },
-    {
-        "name": "system-design-primer",
-        "owner": {
-            "login": "donnemartin"
-        },
-        "full_name": "donnemartin/system-design-primer",
-        "forks_count": "8638",
-        "stargazers_count": "59042",
-        "language": "Python",
-        "repositoryDescription": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards."
-    },
-    {
-        "name": "fish-redux",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/fish-redux",
-        "forks_count": "265",
-        "stargazers_count": "2605",
-        "language": "Dart",
-        "repositoryDescription": "An assembled flutter application framework."
-    },
-    {
-        "name": "ChromeAppHeroes",
-        "owner": {
-            "login": "zhaoolee"
-        },
-        "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "51",
-        "stargazers_count": "499",
-        "language": "Python",
-        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
-    },
-    {
-        "name": "flutter",
-        "owner": {
-            "login": "flutter"
-        },
-        "full_name": "flutter/flutter",
-        "forks_count": "6008",
-        "stargazers_count": "55910",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "repositoryDescription": "The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
     }
 ]

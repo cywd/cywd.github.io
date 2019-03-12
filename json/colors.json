@@ -623,6 +623,10 @@
         "color": "#40d47e",
         "url": "https://github.com/trending?l=JSONiq"
     },
+    "Jsonnet": {
+        "color": "#0064bd",
+        "url": "https://github.com/trending?l=Jsonnet"
+    },
     "JSX": {
         "color": null,
         "url": "https://github.com/trending?l=JSX"

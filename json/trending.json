@@ -5,63 +5,10 @@
             "login": "selfteaching"
         },
         "full_name": "selfteaching/the-craft-of-selfteaching",
-        "forks_count": "2549",
-        "stargazers_count": "1953",
+        "forks_count": "3352",
+        "stargazers_count": "3320",
         "language": "Jupyter Notebook",
         "repositoryDescription": "One has no future if one couldn't teach themself."
-    },
-    {
-        "name": "js-dev-reads",
-        "owner": {
-            "login": "twhite96"
-        },
-        "full_name": "twhite96/js-dev-reads",
-        "forks_count": "42",
-        "stargazers_count": "558",
-        "repositoryDescription": "A list of books\n📚\nand articles\n📝\nfor the discerning web developer to read."
-    },
-    {
-        "name": "libfacedetection",
-        "owner": {
-            "login": "ShiqiYu"
-        },
-        "full_name": "ShiqiYu/libfacedetection",
-        "forks_count": "1444",
-        "stargazers_count": "4921",
-        "language": "C++",
-        "repositoryDescription": "An open source library for face detection in images. The face detection speed can reach 1500FPS."
-    },
-    {
-        "name": "Machine-Learning-Study-Path-March-2019",
-        "owner": {
-            "login": "clone95"
-        },
-        "full_name": "clone95/Machine-Learning-Study-Path-March-2019",
-        "forks_count": "138",
-        "stargazers_count": "700",
-        "repositoryDescription": "A complete ML study path, focused on TensorFlow and Scikit-Learn"
-    },
-    {
-        "name": "code-server",
-        "owner": {
-            "login": "codercom"
-        },
-        "full_name": "codercom/code-server",
-        "forks_count": "399",
-        "stargazers_count": "9419",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
-    },
-    {
-        "name": "generative.fm",
-        "owner": {
-            "login": "generative-music"
-        },
-        "full_name": "generative-music/generative.fm",
-        "forks_count": "16",
-        "stargazers_count": "295",
-        "language": "JavaScript",
-        "repositoryDescription": "A platform for playing generative music in the browser."
     },
     {
         "name": "laxxx",
@@ -69,10 +16,95 @@
             "login": "alexfoxy"
         },
         "full_name": "alexfoxy/laxxx",
-        "forks_count": "37",
-        "stargazers_count": "1183",
+        "forks_count": "59",
+        "stargazers_count": "1822",
         "language": "JavaScript",
         "repositoryDescription": "Simple & light weight (2kb minified & zipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!"
+    },
+    {
+        "name": "js-dev-reads",
+        "owner": {
+            "login": "twhite96"
+        },
+        "full_name": "twhite96/js-dev-reads",
+        "forks_count": "69",
+        "stargazers_count": "1057",
+        "repositoryDescription": "A list of books\n📚\nand articles\n📝\nfor the discerning web developer to read."
+    },
+    {
+        "name": "code-server",
+        "owner": {
+            "login": "codercom"
+        },
+        "full_name": "codercom/code-server",
+        "forks_count": "420",
+        "stargazers_count": "9823",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
+    },
+    {
+        "name": "libfacedetection",
+        "owner": {
+            "login": "ShiqiYu"
+        },
+        "full_name": "ShiqiYu/libfacedetection",
+        "forks_count": "1505",
+        "stargazers_count": "5280",
+        "language": "C++",
+        "repositoryDescription": "An open source library for face detection in images. The face detection speed can reach 1500FPS."
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "4972",
+        "stargazers_count": "17957",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "Machine-Learning-Study-Path-March-2019",
+        "owner": {
+            "login": "clone95"
+        },
+        "full_name": "clone95/Machine-Learning-Study-Path-March-2019",
+        "forks_count": "178",
+        "stargazers_count": "1040",
+        "repositoryDescription": "A complete ML study path, focused on TensorFlow and Scikit-Learn"
+    },
+    {
+        "name": "V",
+        "owner": {
+            "login": "vlang-io"
+        },
+        "full_name": "vlang-io/V",
+        "forks_count": "20",
+        "stargazers_count": "1096",
+        "repositoryDescription": "Simple, fast, safe, compiled language for creating maintainable software. Supports translation from C/C++."
+    },
+    {
+        "name": "generative.fm",
+        "owner": {
+            "login": "generative-music"
+        },
+        "full_name": "generative-music/generative.fm",
+        "forks_count": "23",
+        "stargazers_count": "579",
+        "language": "JavaScript",
+        "repositoryDescription": "A platform for playing generative music in the browser."
+    },
+    {
+        "name": "flutter-ui",
+        "owner": {
+            "login": "efoxTeam"
+        },
+        "full_name": "efoxTeam/flutter-ui",
+        "forks_count": "42",
+        "stargazers_count": "312",
+        "language": "Dart",
+        "repositoryDescription": "Flutter 开发组件库中文社区"
     },
     {
         "name": "JavaGuide",
@@ -80,8 +112,8 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "9187",
-        "stargazers_count": "29767",
+        "forks_count": "9256",
+        "stargazers_count": "29972",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
@@ -91,10 +123,10 @@
             "login": "lyricat"
         },
         "full_name": "lyricat/wechat-format",
-        "forks_count": "50",
-        "stargazers_count": "558",
+        "forks_count": "57",
+        "stargazers_count": "777",
         "language": "JavaScript",
-        "repositoryDescription": "微信公众号排版编辑器，转化 Markdown 微信特制的 HTML"
+        "repositoryDescription": "微信公众号排版编辑器，转换 Markdown 到微信特制的 HTML"
     },
     {
         "name": "calculator",
@@ -102,20 +134,10 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/calculator",
-        "forks_count": "1789",
-        "stargazers_count": "13207",
+        "forks_count": "1827",
+        "stargazers_count": "13394",
         "language": "C++",
         "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
-    },
-    {
-        "name": "V",
-        "owner": {
-            "login": "vlang-io"
-        },
-        "full_name": "vlang-io/V",
-        "forks_count": "16",
-        "stargazers_count": "698",
-        "repositoryDescription": "Simple, fast, safe, compiled language for creating maintainable software. Supports translation from C/C++."
     },
     {
         "name": "send",
@@ -123,129 +145,21 @@
             "login": "mozilla"
         },
         "full_name": "mozilla/send",
-        "forks_count": "502",
-        "stargazers_count": "6030",
+        "forks_count": "518",
+        "stargazers_count": "6239",
         "language": "JavaScript",
         "repositoryDescription": "Simple, private file sharing from the makers of Firefox"
     },
     {
-        "name": "phoenix_live_view",
+        "name": "nsfwjs",
         "owner": {
-            "login": "phoenixframework"
+            "login": "infinitered"
         },
-        "full_name": "phoenixframework/phoenix_live_view",
-        "forks_count": "36",
-        "stargazers_count": "926",
-        "language": "Elixir",
-        "repositoryDescription": "Rich, real-time user experiences with server-rendered HTML"
-    },
-    {
-        "name": "godot",
-        "owner": {
-            "login": "godotengine"
-        },
-        "full_name": "godotengine/godot",
-        "forks_count": "4036",
-        "stargazers_count": "20124",
-        "language": "C++",
-        "repositoryDescription": "Godot Engine – Multi-platform 2D and 3D game engine"
-    },
-    {
-        "name": "LARK",
-        "owner": {
-            "login": "PaddlePaddle"
-        },
-        "full_name": "PaddlePaddle/LARK",
-        "forks_count": "69",
-        "stargazers_count": "380",
-        "language": "Python",
-        "repositoryDescription": "LAnguage Representations Kit"
-    },
-    {
-        "name": "takeover.sh",
-        "owner": {
-            "login": "marcan"
-        },
-        "full_name": "marcan/takeover.sh",
-        "forks_count": "315",
-        "stargazers_count": "5923",
-        "language": "Shell",
-        "repositoryDescription": "Wipe and reinstall a running Linux system via SSH, without rebooting. You know you want to."
-    },
-    {
-        "name": "gmail_clone",
-        "owner": {
-            "login": "AppleEducate"
-        },
-        "full_name": "AppleEducate/gmail_clone",
-        "forks_count": "28",
-        "stargazers_count": "253",
-        "language": "Dart",
-        "repositoryDescription": "A Gmail Clone built with Flutter"
-    },
-    {
-        "name": "ghidra",
-        "owner": {
-            "login": "NationalSecurityAgency"
-        },
-        "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "1153",
-        "stargazers_count": "11012",
-        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "72887",
-        "stargazers_count": "123095",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
-    },
-    {
-        "name": "ffsend",
-        "owner": {
-            "login": "timvisee"
-        },
-        "full_name": "timvisee/ffsend",
-        "forks_count": "47",
-        "stargazers_count": "2780",
-        "language": "Rust",
-        "repositoryDescription": "📬\nEasily and securely share files from the command line. A fully featured Firefox Send client."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "16469",
-        "stargazers_count": "53480",
-        "repositoryDescription": "😋\n技术面试必备基础知识"
-    },
-    {
-        "name": "lem",
-        "owner": {
-            "login": "cxxxr"
-        },
-        "full_name": "cxxxr/lem",
-        "forks_count": "46",
-        "stargazers_count": "543",
-        "language": "Common Lisp",
-        "repositoryDescription": "Common Lisp editor/IDE with high expansibility"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "18685",
-        "stargazers_count": "131013",
+        "full_name": "infinitered/nsfwjs",
+        "forks_count": "115",
+        "stargazers_count": "2397",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "NSFW detection on the client-side via Tensorflow JS"
     },
     {
         "name": "ChromeAppHeroes",
@@ -253,10 +167,75 @@
             "login": "zhaoolee"
         },
         "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "122",
-        "stargazers_count": "1750",
+        "forks_count": "136",
+        "stargazers_count": "1927",
         "language": "Python",
         "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
+    },
+    {
+        "name": "godot",
+        "owner": {
+            "login": "godotengine"
+        },
+        "full_name": "godotengine/godot",
+        "forks_count": "4045",
+        "stargazers_count": "20288",
+        "language": "C++",
+        "repositoryDescription": "Godot Engine – Multi-platform 2D and 3D game engine"
+    },
+    {
+        "name": "takeover.sh",
+        "owner": {
+            "login": "marcan"
+        },
+        "full_name": "marcan/takeover.sh",
+        "forks_count": "325",
+        "stargazers_count": "6060",
+        "language": "Shell",
+        "repositoryDescription": "Wipe and reinstall a running Linux system via SSH, without rebooting. You know you want to."
+    },
+    {
+        "name": "LARK",
+        "owner": {
+            "login": "PaddlePaddle"
+        },
+        "full_name": "PaddlePaddle/LARK",
+        "forks_count": "99",
+        "stargazers_count": "542",
+        "language": "Python",
+        "repositoryDescription": "LAnguage Representations Kit"
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "18710",
+        "stargazers_count": "131172",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "spring-boot-examples",
+        "owner": {
+            "login": "ityouknow"
+        },
+        "full_name": "ityouknow/spring-boot-examples",
+        "forks_count": "5265",
+        "stargazers_count": "11843",
+        "language": "Java",
+        "repositoryDescription": "about learning Spring Boot via examples. Spring Boot 教程、技术栈示例代码，快速简单上手教程。"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "16506",
+        "stargazers_count": "53628",
+        "repositoryDescription": "😋\n技术面试必备基础知识"
     },
     {
         "name": "flutter",
@@ -264,9 +243,31 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "6139",
-        "stargazers_count": "56810",
+        "forks_count": "6165",
+        "stargazers_count": "56950",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "kaf",
+        "owner": {
+            "login": "infinimesh"
+        },
+        "full_name": "infinimesh/kaf",
+        "forks_count": "8",
+        "stargazers_count": "277",
+        "language": "Go",
+        "repositoryDescription": "Modern CLI for Apache Kafka, written in Go."
+    },
+    {
+        "name": "baiduyun",
+        "owner": {
+            "login": "syhyz1990"
+        },
+        "full_name": "syhyz1990/baiduyun",
+        "forks_count": "180",
+        "stargazers_count": "1251",
+        "language": "JavaScript",
+        "repositoryDescription": "油猴脚本 直接下载百度网盘和百度网盘分享的文件,直链下载超级加速"
     }
 ]

@@ -1,12 +1,44 @@
 [
     {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "5368",
+        "stargazers_count": "19367",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "SPADE",
+        "owner": {
+            "login": "NVlabs"
+        },
+        "full_name": "NVlabs/SPADE",
+        "forks_count": "61",
+        "stargazers_count": "1516",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "x86-bare-metal-examples",
+        "owner": {
+            "login": "cirosantilli"
+        },
+        "full_name": "cirosantilli/x86-bare-metal-examples",
+        "forks_count": "183",
+        "stargazers_count": "2233",
+        "language": "Assembly",
+        "repositoryDescription": "Dozens of minimal operating systems to learn x86 system programming. Tested on Ubuntu 17.10 host and real hardware. Userland cheat at: https://github.com/cirosantilli/x86-assembly-cheat ARM baremetal setup at: https://github.com/cirosantilli/linux-kernel-module-cheat#baremetal-setup"
+    },
+    {
         "name": "the-craft-of-selfteaching",
         "owner": {
             "login": "selfteaching"
         },
         "full_name": "selfteaching/the-craft-of-selfteaching",
-        "forks_count": "3932",
-        "stargazers_count": "4198",
+        "forks_count": "4245",
+        "stargazers_count": "4629",
         "language": "Jupyter Notebook",
         "repositoryDescription": "One has no future if one couldn't teach themself."
     },
@@ -16,43 +48,10 @@
             "login": "Wookai"
         },
         "full_name": "Wookai/paper-tips-and-tricks",
-        "forks_count": "53",
-        "stargazers_count": "949",
+        "forks_count": "77",
+        "stargazers_count": "1508",
         "language": "Python",
         "repositoryDescription": "Best practice and tips & tricks to write scientific papers in LaTeX, with figures generated in Python or Matlab."
-    },
-    {
-        "name": "postgresqltuner",
-        "owner": {
-            "login": "jfcoz"
-        },
-        "full_name": "jfcoz/postgresqltuner",
-        "forks_count": "62",
-        "stargazers_count": "1107",
-        "language": "Perl",
-        "repositoryDescription": "Simple script to analyse your PostgreSQL database configuration, and give tuning advice"
-    },
-    {
-        "name": "x86-bare-metal-examples",
-        "owner": {
-            "login": "cirosantilli"
-        },
-        "full_name": "cirosantilli/x86-bare-metal-examples",
-        "forks_count": "157",
-        "stargazers_count": "1592",
-        "language": "Assembly",
-        "repositoryDescription": "Dozens of minimal operating systems to learn x86 system programming. Tested on Ubuntu 17.10 host and real hardware. Userland cheat at: https://github.com/cirosantilli/x86-assembly-cheat ARM baremetal setup at: https://github.com/cirosantilli/linux-kernel-module-cheat#baremetal-setup"
-    },
-    {
-        "name": "laxxx",
-        "owner": {
-            "login": "alexfoxy"
-        },
-        "full_name": "alexfoxy/laxxx",
-        "forks_count": "80",
-        "stargazers_count": "2470",
-        "language": "JavaScript",
-        "repositoryDescription": "Simple & light weight (2kb minified & zipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!"
     },
     {
         "name": "js-dev-reads",
@@ -60,51 +59,9 @@
             "login": "twhite96"
         },
         "full_name": "twhite96/js-dev-reads",
-        "forks_count": "122",
-        "stargazers_count": "1688",
+        "forks_count": "144",
+        "stargazers_count": "2099",
         "repositoryDescription": "A list of books\n📚\nand articles\n📝\nfor the discerning web developer to read."
-    },
-    {
-        "name": "SPADE",
-        "owner": {
-            "login": "NVlabs"
-        },
-        "full_name": "NVlabs/SPADE",
-        "forks_count": "26",
-        "stargazers_count": "620",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "5118",
-        "stargazers_count": "18459",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "construct-js",
-        "owner": {
-            "login": "francisrstokes"
-        },
-        "full_name": "francisrstokes/construct-js",
-        "forks_count": "10",
-        "stargazers_count": "623",
-        "language": "JavaScript",
-        "repositoryDescription": "🛠️\nA library for creating byte level data structures."
-    },
-    {
-        "name": "awesome-uses",
-        "owner": {
-            "login": "wesbos"
-        },
-        "full_name": "wesbos/awesome-uses",
-        "forks_count": "33",
-        "stargazers_count": "494",
-        "repositoryDescription": "Awesome Uses Page"
     },
     {
         "name": "Machine-Learning-Study-Path-March-2019",
@@ -112,20 +69,20 @@
             "login": "clone95"
         },
         "full_name": "clone95/Machine-Learning-Study-Path-March-2019",
-        "forks_count": "229",
-        "stargazers_count": "1381",
+        "forks_count": "301",
+        "stargazers_count": "1739",
         "repositoryDescription": "A complete ML study path, focused on TensorFlow and Scikit-Learn"
     },
     {
-        "name": "code-server",
+        "name": "laxxx",
         "owner": {
-            "login": "codercom"
+            "login": "alexfoxy"
         },
-        "full_name": "codercom/code-server",
-        "forks_count": "441",
-        "stargazers_count": "10177",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
+        "full_name": "alexfoxy/laxxx",
+        "forks_count": "90",
+        "stargazers_count": "2848",
+        "language": "JavaScript",
+        "repositoryDescription": "Simple & light weight (2kb minified & zipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!"
     },
     {
         "name": "sandboxed-api",
@@ -133,52 +90,32 @@
             "login": "google"
         },
         "full_name": "google/sandboxed-api",
-        "forks_count": "19",
-        "stargazers_count": "366",
+        "forks_count": "49",
+        "stargazers_count": "705",
         "language": "C++",
         "repositoryDescription": "Sandboxed API automatically generates sandboxes for C/C++ libraries"
     },
     {
-        "name": "The-Hacker-Playbook-3-Translation",
+        "name": "postgresqltuner",
         "owner": {
-            "login": "Snowming04"
+            "login": "jfcoz"
         },
-        "full_name": "Snowming04/The-Hacker-Playbook-3-Translation",
-        "forks_count": "70",
-        "stargazers_count": "493",
-        "repositoryDescription": "对 The Hacker Playbook 3 的翻译。"
+        "full_name": "jfcoz/postgresqltuner",
+        "forks_count": "75",
+        "stargazers_count": "1377",
+        "language": "Perl",
+        "repositoryDescription": "Simple script to analyse your PostgreSQL database configuration, and give tuning advice"
     },
     {
-        "name": "V",
+        "name": "code-server",
         "owner": {
-            "login": "vlang-io"
+            "login": "codercom"
         },
-        "full_name": "vlang-io/V",
-        "forks_count": "24",
-        "stargazers_count": "1403",
-        "repositoryDescription": "Simple, fast, safe, compiled language for creating maintainable software. Supports translation from C/C++."
-    },
-    {
-        "name": "drogon",
-        "owner": {
-            "login": "an-tao"
-        },
-        "full_name": "an-tao/drogon",
-        "forks_count": "29",
-        "stargazers_count": "452",
-        "language": "C++",
-        "repositoryDescription": "Drogon: A C++14/17 based HTTP web application framework running on Linux/macOS/Unix"
-    },
-    {
-        "name": "swift-log",
-        "owner": {
-            "login": "apple"
-        },
-        "full_name": "apple/swift-log",
-        "forks_count": "13",
-        "stargazers_count": "409",
-        "language": "Swift",
-        "repositoryDescription": "A Logging API package for Swift 5."
+        "full_name": "codercom/code-server",
+        "forks_count": "458",
+        "stargazers_count": "10434",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
     },
     {
         "name": "baiduyun",
@@ -186,21 +123,20 @@
             "login": "syhyz1990"
         },
         "full_name": "syhyz1990/baiduyun",
-        "forks_count": "200",
-        "stargazers_count": "1533",
+        "forks_count": "216",
+        "stargazers_count": "1802",
         "language": "JavaScript",
         "repositoryDescription": "油猴脚本 直接下载百度网盘和百度网盘分享的文件,直链下载超级加速"
     },
     {
-        "name": "libfacedetection",
+        "name": "awesome-uses",
         "owner": {
-            "login": "ShiqiYu"
+            "login": "wesbos"
         },
-        "full_name": "ShiqiYu/libfacedetection",
-        "forks_count": "1556",
-        "stargazers_count": "5530",
-        "language": "C++",
-        "repositoryDescription": "An open source library for face detection in images. The face detection speed can reach 1500FPS."
+        "full_name": "wesbos/awesome-uses",
+        "forks_count": "43",
+        "stargazers_count": "735",
+        "repositoryDescription": "Awesome Uses Page"
     },
     {
         "name": "awesome-python-login-model",
@@ -208,8 +144,8 @@
             "login": "CriseLYJ"
         },
         "full_name": "CriseLYJ/awesome-python-login-model",
-        "forks_count": "562",
-        "stargazers_count": "3903",
+        "forks_count": "609",
+        "stargazers_count": "4104",
         "language": "Python",
         "repositoryDescription": "😮\npython模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
     },
@@ -219,21 +155,53 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "9315",
-        "stargazers_count": "30168",
+        "forks_count": "9393",
+        "stargazers_count": "30331",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "ChromeAppHeroes",
+        "name": "web",
         "owner": {
-            "login": "zhaoolee"
+            "login": "pikapkg"
         },
-        "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "153",
-        "stargazers_count": "2122",
-        "language": "Python",
-        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
+        "full_name": "pikapkg/web",
+        "forks_count": "41",
+        "stargazers_count": "2721",
+        "language": "TypeScript",
+        "repositoryDescription": "📦\n✨\nRun npm dependencies directly in the browser. No Browserify, Webpack or import maps required."
+    },
+    {
+        "name": "webiny-js",
+        "owner": {
+            "login": "Webiny"
+        },
+        "full_name": "Webiny/webiny-js",
+        "forks_count": "23",
+        "stargazers_count": "446",
+        "language": "JavaScript",
+        "repositoryDescription": "Serverless CMS (GraphQL + React)"
+    },
+    {
+        "name": "swift-log",
+        "owner": {
+            "login": "apple"
+        },
+        "full_name": "apple/swift-log",
+        "forks_count": "20",
+        "stargazers_count": "600",
+        "language": "Swift",
+        "repositoryDescription": "A Logging API package for Swift 5."
+    },
+    {
+        "name": "The-Hacker-Playbook-3-Translation",
+        "owner": {
+            "login": "Snowming04"
+        },
+        "full_name": "Snowming04/The-Hacker-Playbook-3-Translation",
+        "forks_count": "95",
+        "stargazers_count": "668",
+        "repositoryDescription": "对 The Hacker Playbook 3 的翻译。"
     },
     {
         "name": "vue",
@@ -241,10 +209,54 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "18736",
-        "stargazers_count": "131317",
+        "forks_count": "18761",
+        "stargazers_count": "131467",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+    },
+    {
+        "name": "ChromeAppHeroes",
+        "owner": {
+            "login": "zhaoolee"
+        },
+        "full_name": "zhaoolee/ChromeAppHeroes",
+        "forks_count": "164",
+        "stargazers_count": "2290",
+        "language": "Python",
+        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
+    },
+    {
+        "name": "uni-app",
+        "owner": {
+            "login": "dcloudio"
+        },
+        "full_name": "dcloudio/uni-app",
+        "forks_count": "379",
+        "stargazers_count": "3856",
+        "language": "Vue",
+        "repositoryDescription": "使用 Vue.js 开发跨平台应用的前端框架"
+    },
+    {
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "6205",
+        "stargazers_count": "57240",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "libfacedetection",
+        "owner": {
+            "login": "ShiqiYu"
+        },
+        "full_name": "ShiqiYu/libfacedetection",
+        "forks_count": "1590",
+        "stargazers_count": "5683",
+        "language": "C++",
+        "repositoryDescription": "An open source library for face detection in images. The face detection speed can reach 1500FPS."
     },
     {
         "name": "send",
@@ -252,19 +264,9 @@
             "login": "mozilla"
         },
         "full_name": "mozilla/send",
-        "forks_count": "528",
-        "stargazers_count": "6414",
+        "forks_count": "539",
+        "stargazers_count": "6565",
         "language": "JavaScript",
         "repositoryDescription": "Simple, private file sharing from the makers of Firefox"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "16553",
-        "stargazers_count": "53744",
-        "repositoryDescription": "😋\n技术面试必备基础知识"
     }
 ]

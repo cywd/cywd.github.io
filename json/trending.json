@@ -5,10 +5,21 @@
             "login": "selfteaching"
         },
         "full_name": "selfteaching/the-craft-of-selfteaching",
-        "forks_count": "4980",
-        "stargazers_count": "5938",
+        "forks_count": "5236",
+        "stargazers_count": "6259",
         "language": "Jupyter Notebook",
         "repositoryDescription": "One has no future if one couldn't teach themself."
+    },
+    {
+        "name": "BigGAN-PyTorch",
+        "owner": {
+            "login": "ajbrock"
+        },
+        "full_name": "ajbrock/BigGAN-PyTorch",
+        "forks_count": "35",
+        "stargazers_count": "483",
+        "language": "Python",
+        "repositoryDescription": "The author's officially unofficial PyTorch BigGAN implementation."
     },
     {
         "name": "Machine-Learning-Study-Path-March-2019",
@@ -16,8 +27,8 @@
             "login": "clone95"
         },
         "full_name": "clone95/Machine-Learning-Study-Path-March-2019",
-        "forks_count": "590",
-        "stargazers_count": "3207",
+        "forks_count": "643",
+        "stargazers_count": "3491",
         "repositoryDescription": "A complete ML study path, focused on TensorFlow and Scikit-Learn"
     },
     {
@@ -26,8 +37,8 @@
             "login": "fyne-io"
         },
         "full_name": "fyne-io/fyne",
-        "forks_count": "46",
-        "stargazers_count": "1404",
+        "forks_count": "56",
+        "stargazers_count": "1684",
         "language": "Go",
         "repositoryDescription": "Cross platform GUI in Go based on Material Design"
     },
@@ -37,8 +48,8 @@
             "login": "vuejs"
         },
         "full_name": "vuejs/vue",
-        "forks_count": "18817",
-        "stargazers_count": "132079",
+        "forks_count": "18829",
+        "stargazers_count": "132262",
         "language": "JavaScript",
         "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
@@ -48,21 +59,10 @@
             "login": "tiangolo"
         },
         "full_name": "tiangolo/fastapi",
-        "forks_count": "42",
-        "stargazers_count": "1107",
+        "forks_count": "46",
+        "stargazers_count": "1309",
         "language": "Python",
         "repositoryDescription": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "5559",
-        "stargazers_count": "20143",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
         "name": "code-server",
@@ -70,8 +70,8 @@
             "login": "codercom"
         },
         "full_name": "codercom/code-server",
-        "forks_count": "492",
-        "stargazers_count": "10993",
+        "forks_count": "508",
+        "stargazers_count": "11176",
         "language": "TypeScript",
         "repositoryDescription": "Run VS Code on a remote server."
     },
@@ -81,10 +81,65 @@
             "login": "alexfoxy"
         },
         "full_name": "alexfoxy/laxxx",
-        "forks_count": "122",
-        "stargazers_count": "3545",
+        "forks_count": "132",
+        "stargazers_count": "3720",
         "language": "JavaScript",
         "repositoryDescription": "Simple & light weight (2kb minified & zipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!"
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "5604",
+        "stargazers_count": "20311",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "WeChatAgreement.WebApi.Simple",
+        "owner": {
+            "login": "changtuiqie"
+        },
+        "full_name": "changtuiqie/WeChatAgreement.WebApi.Simple",
+        "forks_count": "49",
+        "stargazers_count": "520",
+        "language": "HTML",
+        "repositoryDescription": "微信mac/ipad协议，webapi封装好的实现方案，免IIS一键部署。 可实现微信80%功能；支持62数据登录、扫码登录、收发朋友圈、查看朋友圈、微信建群、微信拉人进群、微信公众号阅读、微信消息收发、微信附近的人定位、微信添加好友、微信红包接收、微信防撤回、分享小程序、微信加粉、微信收藏、微信标签等"
+    },
+    {
+        "name": "PlotNeuralNet",
+        "owner": {
+            "login": "HarisIqbal88"
+        },
+        "full_name": "HarisIqbal88/PlotNeuralNet",
+        "forks_count": "440",
+        "stargazers_count": "4077",
+        "language": "TeX",
+        "repositoryDescription": "Latex code for making neural networks diagrams"
+    },
+    {
+        "name": "calculator",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/calculator",
+        "forks_count": "1961",
+        "stargazers_count": "14086",
+        "language": "C++",
+        "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
+    },
+    {
+        "name": "endlessh",
+        "owner": {
+            "login": "skeeto"
+        },
+        "full_name": "skeeto/endlessh",
+        "forks_count": "9",
+        "stargazers_count": "197",
+        "language": "C",
+        "repositoryDescription": "SSH tarpit that slowly sends an endless banner"
     },
     {
         "name": "baiduyun",
@@ -92,21 +147,31 @@
             "login": "syhyz1990"
         },
         "full_name": "syhyz1990/baiduyun",
-        "forks_count": "246",
-        "stargazers_count": "2253",
+        "forks_count": "260",
+        "stargazers_count": "2400",
         "language": "JavaScript",
         "repositoryDescription": "油猴脚本 直接下载百度网盘和百度网盘分享的文件,直链下载超级加速"
     },
     {
-        "name": "wechat-format",
+        "name": "requests-async",
         "owner": {
-            "login": "lyricat"
+            "login": "encode"
         },
-        "full_name": "lyricat/wechat-format",
-        "forks_count": "77",
-        "stargazers_count": "1234",
-        "language": "JavaScript",
-        "repositoryDescription": "微信公众号排版编辑器，转换 Markdown 到微信特制的 HTML"
+        "full_name": "encode/requests-async",
+        "forks_count": "13",
+        "stargazers_count": "352",
+        "language": "Python",
+        "repositoryDescription": "async-await support for `requests`.\n🍰"
+    },
+    {
+        "name": "open-source-jobs",
+        "owner": {
+            "login": "t9tio"
+        },
+        "full_name": "t9tio/open-source-jobs",
+        "forks_count": "8",
+        "stargazers_count": "159",
+        "repositoryDescription": "A list of Open Source projects offering jobs. For who want to work on open source and get paid."
     },
     {
         "name": "SPADE",
@@ -114,8 +179,8 @@
             "login": "NVlabs"
         },
         "full_name": "NVlabs/SPADE",
-        "forks_count": "92",
-        "stargazers_count": "2149",
+        "forks_count": "99",
+        "stargazers_count": "2260",
         "repositoryDescription": ""
     },
     {
@@ -124,21 +189,43 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "9542",
-        "stargazers_count": "30708",
+        "forks_count": "9570",
+        "stargazers_count": "30806",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "requests-async",
+        "name": "fromfrom",
         "owner": {
-            "login": "encode"
+            "login": "tomi"
         },
-        "full_name": "encode/requests-async",
-        "forks_count": "10",
-        "stargazers_count": "236",
-        "language": "Python",
-        "repositoryDescription": "async-await support for `requests`.\n🍰"
+        "full_name": "tomi/fromfrom",
+        "forks_count": "2",
+        "stargazers_count": "143",
+        "language": "TypeScript",
+        "repositoryDescription": "A JS library written in TS to transform sequences of data from format to another"
+    },
+    {
+        "name": "interesting-python",
+        "owner": {
+            "login": "Alfred1984"
+        },
+        "full_name": "Alfred1984/interesting-python",
+        "forks_count": "177",
+        "stargazers_count": "524",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "有趣的Python爬虫和Python数据分析小项目(Some interesting Python crawlers and data analysis projects)"
+    },
+    {
+        "name": "dropcss",
+        "owner": {
+            "login": "leeoniya"
+        },
+        "full_name": "leeoniya/dropcss",
+        "forks_count": "2",
+        "stargazers_count": "210",
+        "language": "JavaScript",
+        "repositoryDescription": "A simple, thorough and fast unused-CSS cleaner"
     },
     {
         "name": "js-dev-reads",
@@ -146,52 +233,31 @@
             "login": "twhite96"
         },
         "full_name": "twhite96/js-dev-reads",
-        "forks_count": "173",
-        "stargazers_count": "2522",
+        "forks_count": "180",
+        "stargazers_count": "2619",
         "repositoryDescription": "A list of books\n📚\nand articles\n📝\nfor the discerning web developer to read."
     },
     {
-        "name": "stereogram-raycaster",
+        "name": "react",
         "owner": {
-            "login": "ammonb"
+            "login": "facebook"
         },
-        "full_name": "ammonb/stereogram-raycaster",
-        "forks_count": "9",
-        "stargazers_count": "201",
+        "full_name": "facebook/react",
+        "forks_count": "22734",
+        "stargazers_count": "125110",
         "language": "JavaScript",
-        "repositoryDescription": "A raycaster that renders to random dot stereogram"
+        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
     },
     {
-        "name": "awesome-python-login-model",
+        "name": "ko",
         "owner": {
-            "login": "CriseLYJ"
+            "login": "google"
         },
-        "full_name": "CriseLYJ/awesome-python-login-model",
-        "forks_count": "685",
-        "stargazers_count": "4458",
-        "language": "Python",
-        "repositoryDescription": "😮\npython模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
-    },
-    {
-        "name": "dragonwell8",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/dragonwell8",
-        "forks_count": "71",
-        "stargazers_count": "706",
-        "language": "Shell",
-        "repositoryDescription": "Alibaba Dragonwell8 JDK"
-    },
-    {
-        "name": "Reddit-Privacy-Megathread",
-        "owner": {
-            "login": "aaronthecodpro"
-        },
-        "full_name": "aaronthecodpro/Reddit-Privacy-Megathread",
-        "forks_count": "10",
-        "stargazers_count": "180",
-        "repositoryDescription": ""
+        "full_name": "google/ko",
+        "forks_count": "4",
+        "stargazers_count": "136",
+        "language": "Go",
+        "repositoryDescription": "Build and deploy Go applications on Kubernetes"
     },
     {
         "name": "flutter",
@@ -199,73 +265,9 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "6249",
-        "stargazers_count": "57529",
+        "forks_count": "6258",
+        "stargazers_count": "57616",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "16657",
-        "stargazers_count": "54118",
-        "repositoryDescription": "😋\n技术面试必备基础知识"
-    },
-    {
-        "name": "uni-app",
-        "owner": {
-            "login": "dcloudio"
-        },
-        "full_name": "dcloudio/uni-app",
-        "forks_count": "406",
-        "stargazers_count": "4196",
-        "language": "Vue",
-        "repositoryDescription": "使用 Vue.js 开发跨平台应用的前端框架"
-    },
-    {
-        "name": "pytorch-pretrained-BigGAN",
-        "owner": {
-            "login": "huggingface"
-        },
-        "full_name": "huggingface/pytorch-pretrained-BigGAN",
-        "forks_count": "19",
-        "stargazers_count": "159",
-        "language": "Python",
-        "repositoryDescription": "🦋\nA PyTorch implementation of BigGAN with pretrained weights and conversion scripts."
-    },
-    {
-        "name": "mas",
-        "owner": {
-            "login": "mas-cli"
-        },
-        "full_name": "mas-cli/mas",
-        "forks_count": "135",
-        "stargazers_count": "5711",
-        "language": "Swift",
-        "repositoryDescription": "📦\nMac App Store command line interface"
-    },
-    {
-        "name": "awesome-uses",
-        "owner": {
-            "login": "wesbos"
-        },
-        "full_name": "wesbos/awesome-uses",
-        "forks_count": "62",
-        "stargazers_count": "1052",
-        "repositoryDescription": "Awesome Uses Page"
-    },
-    {
-        "name": "freeCodeCamp",
-        "owner": {
-            "login": "freeCodeCamp"
-        },
-        "full_name": "freeCodeCamp/freeCodeCamp",
-        "forks_count": "21175",
-        "stargazers_count": "298612",
-        "language": "JavaScript",
-        "repositoryDescription": "The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people."
     }
 ]

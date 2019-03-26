@@ -1,79 +1,24 @@
 [
     {
+        "name": "Virgilio",
+        "owner": {
+            "login": "clone95"
+        },
+        "full_name": "clone95/Virgilio",
+        "forks_count": "953",
+        "stargazers_count": "5114",
+        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
+    },
+    {
         "name": "sonic",
         "owner": {
             "login": "valeriansaliou"
         },
         "full_name": "valeriansaliou/sonic",
-        "forks_count": "24",
-        "stargazers_count": "1270",
+        "forks_count": "55",
+        "stargazers_count": "3048",
         "language": "Rust",
         "repositoryDescription": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
-    },
-    {
-        "name": "pyright",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/pyright",
-        "forks_count": "18",
-        "stargazers_count": "913",
-        "language": "Python",
-        "repositoryDescription": "Static type checker for Python"
-    },
-    {
-        "name": "the-craft-of-selfteaching",
-        "owner": {
-            "login": "selfteaching"
-        },
-        "full_name": "selfteaching/the-craft-of-selfteaching",
-        "forks_count": "5407",
-        "stargazers_count": "6464",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "One has no future if one couldn't teach themself."
-    },
-    {
-        "name": "qri",
-        "owner": {
-            "login": "qri-io"
-        },
-        "full_name": "qri-io/qri",
-        "forks_count": "24",
-        "stargazers_count": "525",
-        "language": "Go",
-        "repositoryDescription": "you're invited to a data party!"
-    },
-    {
-        "name": "dropcss",
-        "owner": {
-            "login": "leeoniya"
-        },
-        "full_name": "leeoniya/dropcss",
-        "forks_count": "6",
-        "stargazers_count": "482",
-        "language": "JavaScript",
-        "repositoryDescription": "A simple, thorough and fast unused-CSS cleaner"
-    },
-    {
-        "name": "endlessh",
-        "owner": {
-            "login": "skeeto"
-        },
-        "full_name": "skeeto/endlessh",
-        "forks_count": "18",
-        "stargazers_count": "424",
-        "language": "C",
-        "repositoryDescription": "SSH tarpit that slowly sends an endless banner"
-    },
-    {
-        "name": "Machine-Learning-Study-Path-March-2019",
-        "owner": {
-            "login": "clone95"
-        },
-        "full_name": "clone95/Machine-Learning-Study-Path-March-2019",
-        "forks_count": "681",
-        "stargazers_count": "3675",
-        "repositoryDescription": "A complete ML study path, focused on TensorFlow and Scikit-Learn"
     },
     {
         "name": "fyne",
@@ -81,21 +26,64 @@
             "login": "fyne-io"
         },
         "full_name": "fyne-io/fyne",
-        "forks_count": "58",
-        "stargazers_count": "1882",
+        "forks_count": "106",
+        "stargazers_count": "3778",
         "language": "Go",
         "repositoryDescription": "Cross platform GUI in Go based on Material Design"
     },
     {
-        "name": "BigGAN-PyTorch",
+        "name": "TNFE-Weekly",
         "owner": {
-            "login": "ajbrock"
+            "login": "Tnfe"
         },
-        "full_name": "ajbrock/BigGAN-PyTorch",
-        "forks_count": "55",
-        "stargazers_count": "654",
+        "full_name": "Tnfe/TNFE-Weekly",
+        "forks_count": "46",
+        "stargazers_count": "723",
+        "repositoryDescription": "每周为你提供高质量的关于小程序、h5等前端领域的文章和项目"
+    },
+    {
+        "name": "zerosharp",
+        "owner": {
+            "login": "MichalStrehovsky"
+        },
+        "full_name": "MichalStrehovsky/zerosharp",
+        "forks_count": "25",
+        "stargazers_count": "588",
+        "language": "C#",
+        "repositoryDescription": "Demo of the potential of C# for systems programming with CoreRT"
+    },
+    {
+        "name": "logoly",
+        "owner": {
+            "login": "bestony"
+        },
+        "full_name": "bestony/logoly",
+        "forks_count": "58",
+        "stargazers_count": "937",
+        "language": "Vue",
+        "repositoryDescription": "A Pornhub Pattern Logo Generator"
+    },
+    {
+        "name": "pyright",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/pyright",
+        "forks_count": "36",
+        "stargazers_count": "1982",
         "language": "Python",
-        "repositoryDescription": "The author's officially unofficial PyTorch BigGAN implementation."
+        "repositoryDescription": "Static type checker for Python"
+    },
+    {
+        "name": "red",
+        "owner": {
+            "login": "antonmedv"
+        },
+        "full_name": "antonmedv/red",
+        "forks_count": "13",
+        "stargazers_count": "497",
+        "language": "Go",
+        "repositoryDescription": "Terminal log analysis tools"
     },
     {
         "name": "DeepLearning-500-questions",
@@ -103,98 +91,32 @@
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "5636",
-        "stargazers_count": "20472",
+        "forks_count": "5786",
+        "stargazers_count": "21013",
         "language": "TeX",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
-        "name": "taskbook",
+        "name": "the-craft-of-selfteaching",
         "owner": {
-            "login": "klaussinani"
+            "login": "selfteaching"
         },
-        "full_name": "klaussinani/taskbook",
-        "forks_count": "246",
-        "stargazers_count": "6083",
-        "language": "JavaScript",
-        "repositoryDescription": "📓\nTasks, boards & notes for the command-line habitat"
+        "full_name": "selfteaching/the-craft-of-selfteaching",
+        "forks_count": "5824",
+        "stargazers_count": "6956",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "One has no future if one couldn't teach themself."
     },
     {
-        "name": "crfs",
+        "name": "majestic",
         "owner": {
-            "login": "google"
+            "login": "Raathigesh"
         },
-        "full_name": "google/crfs",
-        "forks_count": "9",
-        "stargazers_count": "376",
-        "language": "Go",
-        "repositoryDescription": "CRFS: Container Registry Filesystem"
-    },
-    {
-        "name": "PlotNeuralNet",
-        "owner": {
-            "login": "HarisIqbal88"
-        },
-        "full_name": "HarisIqbal88/PlotNeuralNet",
-        "forks_count": "457",
-        "stargazers_count": "4241",
-        "language": "TeX",
-        "repositoryDescription": "Latex code for making neural networks diagrams"
-    },
-    {
-        "name": "PreVue",
-        "owner": {
-            "login": "teamprevue"
-        },
-        "full_name": "teamprevue/PreVue",
-        "forks_count": "10",
-        "stargazers_count": "212",
-        "language": "Vue",
-        "repositoryDescription": "🎨\nAll in One Prototyping Tool For Vue Developers."
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "18850",
-        "stargazers_count": "132384",
-        "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
-    },
-    {
-        "name": "code-server",
-        "owner": {
-            "login": "codercom"
-        },
-        "full_name": "codercom/code-server",
-        "forks_count": "521",
-        "stargazers_count": "11302",
+        "full_name": "Raathigesh/majestic",
+        "forks_count": "62",
+        "stargazers_count": "2600",
         "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
-    },
-    {
-        "name": "fastapi",
-        "owner": {
-            "login": "tiangolo"
-        },
-        "full_name": "tiangolo/fastapi",
-        "forks_count": "50",
-        "stargazers_count": "1430",
-        "language": "Python",
-        "repositoryDescription": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "9608",
-        "stargazers_count": "30911",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "repositoryDescription": "⚡ Zero config GUI for Jest"
     },
     {
         "name": "veonim",
@@ -202,73 +124,151 @@
             "login": "veonim"
         },
         "full_name": "veonim/veonim",
-        "forks_count": "16",
-        "stargazers_count": "836",
+        "forks_count": "24",
+        "stargazers_count": "1483",
         "language": "TypeScript",
         "repositoryDescription": "simple modal IDE built on neovim"
     },
     {
-        "name": "Data-Science--Cheat-Sheet",
+        "name": "vue",
         "owner": {
-            "login": "abhat222"
+            "login": "vuejs"
         },
-        "full_name": "abhat222/Data-Science--Cheat-Sheet",
-        "forks_count": "293",
-        "stargazers_count": "569",
-        "repositoryDescription": "Cheat Sheets"
-    },
-    {
-        "name": "open-source-jobs",
-        "owner": {
-            "login": "t9tio"
-        },
-        "full_name": "t9tio/open-source-jobs",
-        "forks_count": "16",
-        "stargazers_count": "272",
-        "repositoryDescription": "Open Source Jobs: A list of Open Source projects offering jobs. For who want to work on open source and get paid."
-    },
-    {
-        "name": "laxxx",
-        "owner": {
-            "login": "alexfoxy"
-        },
-        "full_name": "alexfoxy/laxxx",
-        "forks_count": "132",
-        "stargazers_count": "3827",
+        "full_name": "vuejs/vue",
+        "forks_count": "18904",
+        "stargazers_count": "132769",
         "language": "JavaScript",
-        "repositoryDescription": "Simple & light weight (2kb minified & zipped) vanilla javascript plugin to create smooth & beautiful animations when you scrolllll! Harness the power of the most intuitive interaction and make your websites come alive!"
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "google-unlocked",
+        "name": "instantbox",
         "owner": {
-            "login": "Ibit-to"
+            "login": "instantbox"
         },
-        "full_name": "Ibit-to/google-unlocked",
-        "forks_count": "13",
-        "stargazers_count": "136",
+        "full_name": "instantbox/instantbox",
+        "forks_count": "121",
+        "stargazers_count": "2046",
+        "language": "Python",
+        "repositoryDescription": "Get a clean, ready-to-go Linux box in seconds."
+    },
+    {
+        "name": "prefect",
+        "owner": {
+            "login": "PrefectHQ"
+        },
+        "full_name": "PrefectHQ/prefect",
+        "forks_count": "23",
+        "stargazers_count": "370",
+        "language": "Python",
+        "repositoryDescription": "The Prefect Core automation engine"
+    },
+    {
+        "name": "griffith",
+        "owner": {
+            "login": "zhihu"
+        },
+        "full_name": "zhihu/griffith",
+        "forks_count": "36",
+        "stargazers_count": "697",
         "language": "JavaScript",
-        "repositoryDescription": "Google Unlocked Chrome extension unlocks hidden google search results"
+        "repositoryDescription": "A React-based web video player"
     },
     {
-        "name": "calculator",
+        "name": "JavaGuide",
         "owner": {
-            "login": "Microsoft"
+            "login": "Snailclimb"
         },
-        "full_name": "Microsoft/calculator",
-        "forks_count": "1984",
-        "stargazers_count": "14175",
-        "language": "C++",
-        "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "9734",
+        "stargazers_count": "31220",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "libfacedetection",
+        "name": "flutter",
         "owner": {
-            "login": "ShiqiYu"
+            "login": "flutter"
         },
-        "full_name": "ShiqiYu/libfacedetection",
-        "forks_count": "1670",
-        "stargazers_count": "6079",
+        "full_name": "flutter/flutter",
+        "forks_count": "6306",
+        "stargazers_count": "57956",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "FluentTerminal",
+        "owner": {
+            "login": "felixse"
+        },
+        "full_name": "felixse/FluentTerminal",
+        "forks_count": "111",
+        "stargazers_count": "2648",
+        "language": "C#",
+        "repositoryDescription": "A Terminal Emulator based on UWP and web technologies."
+    },
+    {
+        "name": "code-server",
+        "owner": {
+            "login": "codercom"
+        },
+        "full_name": "codercom/code-server",
+        "forks_count": "531",
+        "stargazers_count": "11683",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
+    },
+    {
+        "name": "awesome-python-login-model",
+        "owner": {
+            "login": "CriseLYJ"
+        },
+        "full_name": "CriseLYJ/awesome-python-login-model",
+        "forks_count": "780",
+        "stargazers_count": "4831",
+        "language": "Python",
+        "repositoryDescription": "😮\npython模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
+    },
+    {
+        "name": "ODM",
+        "owner": {
+            "login": "OpenDroneMap"
+        },
+        "full_name": "OpenDroneMap/ODM",
+        "forks_count": "559",
+        "stargazers_count": "1905",
         "language": "C++",
-        "repositoryDescription": "An open source library for face detection in images. The face detection speed can reach 1500FPS."
+        "repositoryDescription": "A command line toolkit to generate maps, point clouds, 3D models and DEMs from drone, balloon or kite images."
+    },
+    {
+        "name": "beagle",
+        "owner": {
+            "login": "yampelo"
+        },
+        "full_name": "yampelo/beagle",
+        "forks_count": "30",
+        "stargazers_count": "346",
+        "language": "Python",
+        "repositoryDescription": "Beagle is an incident response and digital forensics tool which transforms security logs and data into graphs."
+    },
+    {
+        "name": "Gloading",
+        "owner": {
+            "login": "luckybilly"
+        },
+        "full_name": "luckybilly/Gloading",
+        "forks_count": "18",
+        "stargazers_count": "288",
+        "language": "Java",
+        "repositoryDescription": "Show global loading status view in a low coupling way for Android App(深度解耦Android App中全局加载中、加载失败及空数据视图)"
+    },
+    {
+        "name": "reactjs-interview-questions",
+        "owner": {
+            "login": "semlinker"
+        },
+        "full_name": "semlinker/reactjs-interview-questions",
+        "forks_count": "25",
+        "stargazers_count": "163",
+        "language": "JavaScript",
+        "repositoryDescription": "List of top 301 ReactJS Interview Questions & Answers"
     }
 ]

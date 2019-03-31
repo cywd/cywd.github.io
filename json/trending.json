@@ -5,9 +5,9 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "8671",
-        "stargazers_count": "122223",
-        "language": "Python",
+        "forks_count": "9240",
+        "stargazers_count": "129499",
+        "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
     {
@@ -16,9 +16,31 @@
             "login": "formulahendry"
         },
         "full_name": "formulahendry/955.WLB",
-        "forks_count": "220",
-        "stargazers_count": "6301",
+        "forks_count": "242",
+        "stargazers_count": "7090",
         "repositoryDescription": "955 不加班的公司名单"
+    },
+    {
+        "name": "coc.nvim",
+        "owner": {
+            "login": "neoclide"
+        },
+        "full_name": "neoclide/coc.nvim",
+        "forks_count": "72",
+        "stargazers_count": "2459",
+        "language": "TypeScript",
+        "repositoryDescription": "Intellisense engine for vim8 & neovim, full language server protocol support as VSCode"
+    },
+    {
+        "name": "react",
+        "owner": {
+            "login": "facebook"
+        },
+        "full_name": "facebook/react",
+        "forks_count": "22872",
+        "stargazers_count": "126054",
+        "language": "JavaScript",
+        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
     },
     {
         "name": "Python-crawler-tutorial-starts-from-zero",
@@ -26,20 +48,10 @@
             "login": "CriseLYJ"
         },
         "full_name": "CriseLYJ/Python-crawler-tutorial-starts-from-zero",
-        "forks_count": "38",
-        "stargazers_count": "553",
-        "repositoryDescription": "python爬虫教程，带你从零到一，包含js逆向，selenium, tesseract OCR识别,mongodb的使用，以及scrapy框架"
-    },
-    {
-        "name": "awesome-python-login-model",
-        "owner": {
-            "login": "CriseLYJ"
-        },
-        "full_name": "CriseLYJ/awesome-python-login-model",
-        "forks_count": "895",
-        "stargazers_count": "5662",
+        "forks_count": "65",
+        "stargazers_count": "790",
         "language": "Python",
-        "repositoryDescription": "😮\npython模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
+        "repositoryDescription": "python爬虫教程，带你从零到一，包含js逆向，selenium, tesseract OCR识别,mongodb的使用，以及scrapy框架"
     },
     {
         "name": "free-programming-books",
@@ -47,64 +59,9 @@
             "login": "EbookFoundation"
         },
         "full_name": "EbookFoundation/free-programming-books",
-        "forks_count": "30000",
-        "stargazers_count": "120044",
+        "forks_count": "30034",
+        "stargazers_count": "120230",
         "repositoryDescription": "📚\nFreely available programming books"
-    },
-    {
-        "name": "vugu",
-        "owner": {
-            "login": "vugu"
-        },
-        "full_name": "vugu/vugu",
-        "forks_count": "10",
-        "stargazers_count": "466",
-        "language": "Go",
-        "repositoryDescription": "Vugu: A modern UI library for Go+WebAssembly (experimental)"
-    },
-    {
-        "name": "commando-vm",
-        "owner": {
-            "login": "fireeye"
-        },
-        "full_name": "fireeye/commando-vm",
-        "forks_count": "85",
-        "stargazers_count": "597",
-        "language": "PowerShell",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "Tone.js",
-        "owner": {
-            "login": "Tonejs"
-        },
-        "full_name": "Tonejs/Tone.js",
-        "forks_count": "559",
-        "stargazers_count": "7246",
-        "language": "JavaScript",
-        "repositoryDescription": "A Web Audio framework for making interactive music in the browser."
-    },
-    {
-        "name": "lucet",
-        "owner": {
-            "login": "fastly"
-        },
-        "full_name": "fastly/lucet",
-        "forks_count": "25",
-        "stargazers_count": "1251",
-        "language": "Rust",
-        "repositoryDescription": "Lucet, the Sandboxing WebAssembly Compiler."
-    },
-    {
-        "name": "majestic",
-        "owner": {
-            "login": "Raathigesh"
-        },
-        "full_name": "Raathigesh/majestic",
-        "forks_count": "89",
-        "stargazers_count": "4108",
-        "language": "TypeScript",
-        "repositoryDescription": "⚡ Zero config GUI for Jest"
     },
     {
         "name": "CS-Notes",
@@ -112,51 +69,9 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "17009",
-        "stargazers_count": "55586",
+        "forks_count": "17045",
+        "stargazers_count": "55746",
         "repositoryDescription": "📚\n技术面试必备基础知识"
-    },
-    {
-        "name": "996ICU",
-        "owner": {
-            "login": "995icu"
-        },
-        "full_name": "995icu/996ICU",
-        "forks_count": "46",
-        "stargazers_count": "698",
-        "repositoryDescription": "996ICU 995ICU 工作996 生病ICU 加班不规范 亲人两行泪"
-    },
-    {
-        "name": "winXP",
-        "owner": {
-            "login": "ShizukuIchi"
-        },
-        "full_name": "ShizukuIchi/winXP",
-        "forks_count": "57",
-        "stargazers_count": "1560",
-        "language": "JavaScript",
-        "repositoryDescription": "🏁\nWeb based Windows XP desktop recreation."
-    },
-    {
-        "name": "react-use",
-        "owner": {
-            "login": "streamich"
-        },
-        "full_name": "streamich/react-use",
-        "forks_count": "121",
-        "stargazers_count": "3235",
-        "language": "TypeScript",
-        "repositoryDescription": "React Hooks —\n👍"
-    },
-    {
-        "name": "996.Law",
-        "owner": {
-            "login": "Y1ran"
-        },
-        "full_name": "Y1ran/996.Law",
-        "forks_count": "17",
-        "stargazers_count": "587",
-        "repositoryDescription": "联合仲裁发起地 | 法律板块(主站996.ICU)"
     },
     {
         "name": "code-server",
@@ -164,32 +79,32 @@
             "login": "codercom"
         },
         "full_name": "codercom/code-server",
-        "forks_count": "611",
-        "stargazers_count": "12757",
+        "forks_count": "625",
+        "stargazers_count": "12920",
         "language": "TypeScript",
         "repositoryDescription": "Run VS Code on a remote server."
     },
     {
-        "name": "Librefox",
+        "name": "awesome-python-login-model",
         "owner": {
-            "login": "intika"
+            "login": "CriseLYJ"
         },
-        "full_name": "intika/Librefox",
-        "forks_count": "43",
-        "stargazers_count": "1090",
-        "language": "JavaScript",
-        "repositoryDescription": "Librefox: Firefox with privacy enhancements"
+        "full_name": "CriseLYJ/awesome-python-login-model",
+        "forks_count": "926",
+        "stargazers_count": "5795",
+        "language": "Python",
+        "repositoryDescription": "😮\npython模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助\n❤️\n，如果喜欢记得给个star哦\n🌟"
     },
     {
-        "name": "Virgilio",
+        "name": "calculator",
         "owner": {
-            "login": "clone95"
+            "login": "Microsoft"
         },
-        "full_name": "clone95/Virgilio",
-        "forks_count": "1203",
-        "stargazers_count": "6624",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
+        "full_name": "Microsoft/calculator",
+        "forks_count": "2114",
+        "stargazers_count": "14972",
+        "language": "C++",
+        "repositoryDescription": "Windows Calculator: A simple yet powerful calculator that ships with Windows"
     },
     {
         "name": "JavaGuide",
@@ -197,43 +112,32 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "9978",
-        "stargazers_count": "32174",
+        "forks_count": "10021",
+        "stargazers_count": "32310",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "vue",
+        "name": "winXP",
         "owner": {
-            "login": "vuejs"
+            "login": "ShizukuIchi"
         },
-        "full_name": "vuejs/vue",
-        "forks_count": "19009",
-        "stargazers_count": "133661",
+        "full_name": "ShizukuIchi/winXP",
+        "forks_count": "61",
+        "stargazers_count": "1723",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "🏁\nWeb based Windows XP desktop recreation."
     },
     {
-        "name": "DeepLearning-500-questions",
+        "name": "Virgilio",
         "owner": {
-            "login": "scutan90"
+            "login": "clone95"
         },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "6017",
-        "stargazers_count": "21974",
-        "language": "TeX",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "linux",
-        "owner": {
-            "login": "torvalds"
-        },
-        "full_name": "torvalds/linux",
-        "forks_count": "25479",
-        "stargazers_count": "71812",
-        "language": "C",
-        "repositoryDescription": "Linux kernel source tree"
+        "full_name": "clone95/Virgilio",
+        "forks_count": "1229",
+        "stargazers_count": "6768",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
     },
     {
         "name": "everyone-can-use-english",
@@ -241,9 +145,31 @@
             "login": "xiaolai"
         },
         "full_name": "xiaolai/everyone-can-use-english",
-        "forks_count": "278",
-        "stargazers_count": "979",
+        "forks_count": "295",
+        "stargazers_count": "1121",
         "repositoryDescription": "人人都能用英语"
+    },
+    {
+        "name": "Tone.js",
+        "owner": {
+            "login": "Tonejs"
+        },
+        "full_name": "Tonejs/Tone.js",
+        "forks_count": "564",
+        "stargazers_count": "7386",
+        "language": "JavaScript",
+        "repositoryDescription": "A Web Audio framework for making interactive music in the browser."
+    },
+    {
+        "name": "vugu",
+        "owner": {
+            "login": "vugu"
+        },
+        "full_name": "vugu/vugu",
+        "forks_count": "15",
+        "stargazers_count": "608",
+        "language": "Go",
+        "repositoryDescription": "Vugu: A modern UI library for Go+WebAssembly (experimental)"
     },
     {
         "name": "zju-icicles",
@@ -251,10 +177,21 @@
             "login": "QSCTech"
         },
         "full_name": "QSCTech/zju-icicles",
-        "forks_count": "1228",
-        "stargazers_count": "3589",
+        "forks_count": "1265",
+        "stargazers_count": "3711",
         "language": "HTML",
         "repositoryDescription": "浙江大学课程攻略共享计划"
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "6050",
+        "stargazers_count": "22095",
+        "language": "TeX",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，近30万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
         "name": "sonic",
@@ -262,9 +199,74 @@
             "login": "valeriansaliou"
         },
         "full_name": "valeriansaliou/sonic",
-        "forks_count": "93",
-        "stargazers_count": "4138",
+        "forks_count": "99",
+        "stargazers_count": "4274",
         "language": "Rust",
         "repositoryDescription": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
+    },
+    {
+        "name": "the-craft-of-selfteaching",
+        "owner": {
+            "login": "selfteaching"
+        },
+        "full_name": "selfteaching/the-craft-of-selfteaching",
+        "forks_count": "6419",
+        "stargazers_count": "7647",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "One has no future if one couldn't teach themself."
+    },
+    {
+        "name": "react-use",
+        "owner": {
+            "login": "streamich"
+        },
+        "full_name": "streamich/react-use",
+        "forks_count": "124",
+        "stargazers_count": "3354",
+        "language": "TypeScript",
+        "repositoryDescription": "React Hooks —\n👍"
+    },
+    {
+        "name": "lucet",
+        "owner": {
+            "login": "fastly"
+        },
+        "full_name": "fastly/lucet",
+        "forks_count": "28",
+        "stargazers_count": "1364",
+        "language": "Rust",
+        "repositoryDescription": "Lucet, the Sandboxing WebAssembly Compiler."
+    },
+    {
+        "name": "996.Law",
+        "owner": {
+            "login": "Y1ran"
+        },
+        "full_name": "Y1ran/996.Law",
+        "forks_count": "21",
+        "stargazers_count": "708",
+        "repositoryDescription": "联合仲裁发起地 | 法律板块(主站：996.ICU)"
+    },
+    {
+        "name": "commando-vm",
+        "owner": {
+            "login": "fireeye"
+        },
+        "full_name": "fireeye/commando-vm",
+        "forks_count": "105",
+        "stargazers_count": "715",
+        "language": "PowerShell",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "vue",
+        "owner": {
+            "login": "vuejs"
+        },
+        "full_name": "vuejs/vue",
+        "forks_count": "19019",
+        "stargazers_count": "133759",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     }
 ]

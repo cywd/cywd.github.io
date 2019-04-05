@@ -5,10 +5,42 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "13528",
-        "stargazers_count": "174927",
+        "forks_count": "13834",
+        "stargazers_count": "178287",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "AgileLite",
+        "owner": {
+            "login": "davebs"
+        },
+        "full_name": "davebs/AgileLite",
+        "forks_count": "35",
+        "stargazers_count": "1130",
+        "repositoryDescription": "Agile software development without all the burnout."
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "598",
+        "stargazers_count": "10488",
+        "language": "JavaScript",
+        "repositoryDescription": "The best design tools for everything\n👉"
+    },
+    {
+        "name": "ghidra",
+        "owner": {
+            "login": "NationalSecurityAgency"
+        },
+        "full_name": "NationalSecurityAgency/ghidra",
+        "forks_count": "1451",
+        "stargazers_count": "13092",
+        "language": "Java",
+        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
     },
     {
         "name": "pumpkin-book",
@@ -16,9 +48,20 @@
             "login": "datawhalechina"
         },
         "full_name": "datawhalechina/pumpkin-book",
-        "forks_count": "359",
-        "stargazers_count": "2058",
+        "forks_count": "449",
+        "stargazers_count": "2594",
         "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
+    },
+    {
+        "name": "Deform",
+        "owner": {
+            "login": "keenanwoodall"
+        },
+        "full_name": "keenanwoodall/Deform",
+        "forks_count": "44",
+        "stargazers_count": "578",
+        "language": "C#",
+        "repositoryDescription": "A fully-featured deformer system for Unity."
     },
     {
         "name": "editor.js",
@@ -26,21 +69,31 @@
             "login": "codex-team"
         },
         "full_name": "codex-team/editor.js",
-        "forks_count": "104",
-        "stargazers_count": "3545",
+        "forks_count": "114",
+        "stargazers_count": "3998",
         "language": "TypeScript",
         "repositoryDescription": "A block-styled editor with clean JSON output"
     },
     {
-        "name": "programmer-job-blacklist",
+        "name": "algernon",
         "owner": {
-            "login": "shengxinjing"
+            "login": "xyproto"
         },
-        "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "1283",
-        "stargazers_count": "20016",
-        "language": "Shell",
-        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
+        "full_name": "xyproto/algernon",
+        "forks_count": "44",
+        "stargazers_count": "1035",
+        "language": "Go",
+        "repositoryDescription": "🎩\nSmall self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support"
+    },
+    {
+        "name": "free-gophers-pack",
+        "owner": {
+            "login": "MariaLetta"
+        },
+        "full_name": "MariaLetta/free-gophers-pack",
+        "forks_count": "20",
+        "stargazers_count": "410",
+        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
     },
     {
         "name": "955.WLB",
@@ -48,9 +101,42 @@
             "login": "formulahendry"
         },
         "full_name": "formulahendry/955.WLB",
-        "forks_count": "397",
-        "stargazers_count": "10813",
+        "forks_count": "410",
+        "stargazers_count": "11095",
         "repositoryDescription": "955 不加班的公司名单"
+    },
+    {
+        "name": "AmpliGraph",
+        "owner": {
+            "login": "Accenture"
+        },
+        "full_name": "Accenture/AmpliGraph",
+        "forks_count": "24",
+        "stargazers_count": "434",
+        "language": "Python",
+        "repositoryDescription": "Python library for Representation Learning on Knowledge Graphs"
+    },
+    {
+        "name": "programmer-job-blacklist",
+        "owner": {
+            "login": "shengxinjing"
+        },
+        "full_name": "shengxinjing/programmer-job-blacklist",
+        "forks_count": "1293",
+        "stargazers_count": "20249",
+        "language": "Shell",
+        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
+    },
+    {
+        "name": "code-server",
+        "owner": {
+            "login": "codercom"
+        },
+        "full_name": "codercom/code-server",
+        "forks_count": "702",
+        "stargazers_count": "14184",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
     },
     {
         "name": "mathematics_dataset",
@@ -58,21 +144,21 @@
             "login": "deepmind"
         },
         "full_name": "deepmind/mathematics_dataset",
-        "forks_count": "36",
-        "stargazers_count": "492",
+        "forks_count": "47",
+        "stargazers_count": "622",
         "language": "Python",
         "repositoryDescription": ""
     },
     {
-        "name": "advanced-java",
+        "name": "Pock",
         "owner": {
-            "login": "doocs"
+            "login": "pigigaldi"
         },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "3404",
-        "stargazers_count": "15823",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+        "full_name": "pigigaldi/Pock",
+        "forks_count": "44",
+        "stargazers_count": "2154",
+        "language": "Swift",
+        "repositoryDescription": "Display macOS Dock in Touch Bar"
     },
     {
         "name": "JavaGuide",
@@ -80,10 +166,32 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10330",
-        "stargazers_count": "33472",
+        "forks_count": "10359",
+        "stargazers_count": "33569",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "advanced-java",
+        "owner": {
+            "login": "doocs"
+        },
+        "full_name": "doocs/advanced-java",
+        "forks_count": "3426",
+        "stargazers_count": "15929",
+        "language": "Java",
+        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+    },
+    {
+        "name": "goweight",
+        "owner": {
+            "login": "jondot"
+        },
+        "full_name": "jondot/goweight",
+        "forks_count": "17",
+        "stargazers_count": "533",
+        "language": "Go",
+        "repositoryDescription": "A tool to analyze and troubleshoot a Go binary size."
     },
     {
         "name": "AutoPiano",
@@ -91,10 +199,42 @@
             "login": "WarpPrism"
         },
         "full_name": "WarpPrism/AutoPiano",
-        "forks_count": "64",
-        "stargazers_count": "774",
+        "forks_count": "72",
+        "stargazers_count": "872",
         "language": "JavaScript",
         "repositoryDescription": "自由钢琴 AutoPiano，喜欢可以star ( http://crystalworld.gitee.io/qpiano/#/ )"
+    },
+    {
+        "name": "sonic",
+        "owner": {
+            "login": "valeriansaliou"
+        },
+        "full_name": "valeriansaliou/sonic",
+        "forks_count": "117",
+        "stargazers_count": "5302",
+        "language": "Rust",
+        "repositoryDescription": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
+    },
+    {
+        "name": "public-apis",
+        "owner": {
+            "login": "toddmotto"
+        },
+        "full_name": "toddmotto/public-apis",
+        "forks_count": "5656",
+        "stargazers_count": "55202",
+        "language": "Python",
+        "repositoryDescription": "A collective list of free APIs for use in software and web development."
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "6274",
+        "stargazers_count": "22897",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
         "name": "mlir",
@@ -102,8 +242,8 @@
             "login": "tensorflow"
         },
         "full_name": "tensorflow/mlir",
-        "forks_count": "26",
-        "stargazers_count": "313",
+        "forks_count": "36",
+        "stargazers_count": "407",
         "language": "C++",
         "repositoryDescription": "\"Multi-Level Intermediate Representation\" Compiler Infrastructure"
     },
@@ -113,159 +253,19 @@
             "login": "995icu"
         },
         "full_name": "995icu/996ICU",
-        "forks_count": "117",
-        "stargazers_count": "1880",
+        "forks_count": "122",
+        "stargazers_count": "1987",
         "repositoryDescription": "996ICU 995ICU 工作996 生病ICU 加班不规范 亲人两行泪"
     },
     {
-        "name": "code-server",
+        "name": "vue",
         "owner": {
-            "login": "codercom"
+            "login": "vuejs"
         },
-        "full_name": "codercom/code-server",
-        "forks_count": "690",
-        "stargazers_count": "13979",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
-    },
-    {
-        "name": "public-apis",
-        "owner": {
-            "login": "toddmotto"
-        },
-        "full_name": "toddmotto/public-apis",
-        "forks_count": "5644",
-        "stargazers_count": "55100",
-        "language": "Python",
-        "repositoryDescription": "A collective list of free APIs for use in software and web development."
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "17263",
-        "stargazers_count": "56670",
-        "repositoryDescription": "📚\n技术面试必备基础知识"
-    },
-    {
-        "name": "ghidra",
-        "owner": {
-            "login": "NationalSecurityAgency"
-        },
-        "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "1359",
-        "stargazers_count": "12504",
-        "language": "Java",
-        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
-    },
-    {
-        "name": "sonic",
-        "owner": {
-            "login": "valeriansaliou"
-        },
-        "full_name": "valeriansaliou/sonic",
-        "forks_count": "115",
-        "stargazers_count": "5192",
-        "language": "Rust",
-        "repositoryDescription": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "6244",
-        "stargazers_count": "22800",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "PyTorch-BigGraph",
-        "owner": {
-            "login": "facebookresearch"
-        },
-        "full_name": "facebookresearch/PyTorch-BigGraph",
-        "forks_count": "73",
-        "stargazers_count": "740",
-        "language": "Python",
-        "repositoryDescription": "Software used for generating embeddings from large-scale graph-structured data."
-    },
-    {
-        "name": "AgileLite",
-        "owner": {
-            "login": "davebs"
-        },
-        "full_name": "davebs/AgileLite",
-        "forks_count": "10",
-        "stargazers_count": "408",
-        "repositoryDescription": "Agile software development without all the burnout."
-    },
-    {
-        "name": "matrix",
-        "owner": {
-            "login": "Tencent"
-        },
-        "full_name": "Tencent/matrix",
-        "forks_count": "444",
-        "stargazers_count": "4253",
-        "language": "C",
-        "repositoryDescription": "Matrix is a plugin style, non-invasive APM system developed by WeChat."
-    },
-    {
-        "name": "lobster",
-        "owner": {
-            "login": "aardappel"
-        },
-        "full_name": "aardappel/lobster",
-        "forks_count": "35",
-        "stargazers_count": "623",
-        "language": "C++",
-        "repositoryDescription": "The Lobster Programming Language"
-    },
-    {
-        "name": "hng.tech",
-        "owner": {
-            "login": "hnginternship5"
-        },
-        "full_name": "hnginternship5/hng.tech",
-        "forks_count": "645",
-        "stargazers_count": "56",
-        "language": "CSS",
-        "repositoryDescription": "HNG 5.0 Project\n🔥"
-    },
-    {
-        "name": "Pock",
-        "owner": {
-            "login": "pigigaldi"
-        },
-        "full_name": "pigigaldi/Pock",
-        "forks_count": "43",
-        "stargazers_count": "1974",
-        "language": "Swift",
-        "repositoryDescription": "Display macOS Dock in Touch Bar"
-    },
-    {
-        "name": "hacl-star",
-        "owner": {
-            "login": "project-everest"
-        },
-        "full_name": "project-everest/hacl-star",
-        "forks_count": "43",
-        "stargazers_count": "544",
-        "language": "Assembly",
-        "repositoryDescription": "HACL*, a formally verified cryptographic library written in F*"
-    },
-    {
-        "name": "nps",
-        "owner": {
-            "login": "cnlh"
-        },
-        "full_name": "cnlh/nps",
-        "forks_count": "341",
-        "stargazers_count": "2543",
-        "language": "Go",
-        "repositoryDescription": "一款轻量级、功能强大的内网穿透代理服务器。支持tcp、udp流量转发，支持内网http代理、内网socks5代理，同时支持snappy压缩、站点保护、加密传输、多路复用、header修改等。支持web图形化管理，集成多用户模式。"
+        "full_name": "vuejs/vue",
+        "forks_count": "19112",
+        "stargazers_count": "134579",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     }
 ]

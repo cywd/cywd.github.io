@@ -5,20 +5,21 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "13834",
-        "stargazers_count": "178287",
+        "forks_count": "14117",
+        "stargazers_count": "181305",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
     {
-        "name": "AgileLite",
+        "name": "citybound",
         "owner": {
-            "login": "davebs"
+            "login": "citybound"
         },
-        "full_name": "davebs/AgileLite",
-        "forks_count": "35",
-        "stargazers_count": "1130",
-        "repositoryDescription": "Agile software development without all the burnout."
+        "full_name": "citybound/citybound",
+        "forks_count": "113",
+        "stargazers_count": "3434",
+        "language": "Rust",
+        "repositoryDescription": "A work-in-progress, open-source, multi-player city simulation game."
     },
     {
         "name": "Awesome-Design-Tools",
@@ -26,21 +27,10 @@
             "login": "LisaDziuba"
         },
         "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "598",
-        "stargazers_count": "10488",
+        "forks_count": "635",
+        "stargazers_count": "11460",
         "language": "JavaScript",
         "repositoryDescription": "The best design tools for everything\n👉"
-    },
-    {
-        "name": "ghidra",
-        "owner": {
-            "login": "NationalSecurityAgency"
-        },
-        "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "1451",
-        "stargazers_count": "13092",
-        "language": "Java",
-        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
     },
     {
         "name": "pumpkin-book",
@@ -48,73 +38,42 @@
             "login": "datawhalechina"
         },
         "full_name": "datawhalechina/pumpkin-book",
-        "forks_count": "449",
-        "stargazers_count": "2594",
+        "forks_count": "488",
+        "stargazers_count": "2911",
         "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
     },
     {
-        "name": "Deform",
+        "name": "db_tutorial",
         "owner": {
-            "login": "keenanwoodall"
+            "login": "cstack"
         },
-        "full_name": "keenanwoodall/Deform",
-        "forks_count": "44",
-        "stargazers_count": "578",
-        "language": "C#",
-        "repositoryDescription": "A fully-featured deformer system for Unity."
+        "full_name": "cstack/db_tutorial",
+        "forks_count": "219",
+        "stargazers_count": "2901",
+        "language": "C",
+        "repositoryDescription": "Writing a sqlite clone from scratch in C"
     },
     {
-        "name": "editor.js",
+        "name": "You-Dont-Need-jQuery",
         "owner": {
-            "login": "codex-team"
+            "login": "nefe"
         },
-        "full_name": "codex-team/editor.js",
-        "forks_count": "114",
-        "stargazers_count": "3998",
+        "full_name": "nefe/You-Dont-Need-jQuery",
+        "forks_count": "1499",
+        "stargazers_count": "16776",
+        "language": "JavaScript",
+        "repositoryDescription": "Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript."
+    },
+    {
+        "name": "quirk",
+        "owner": {
+            "login": "Flaque"
+        },
+        "full_name": "Flaque/quirk",
+        "forks_count": "33",
+        "stargazers_count": "459",
         "language": "TypeScript",
-        "repositoryDescription": "A block-styled editor with clean JSON output"
-    },
-    {
-        "name": "algernon",
-        "owner": {
-            "login": "xyproto"
-        },
-        "full_name": "xyproto/algernon",
-        "forks_count": "44",
-        "stargazers_count": "1035",
-        "language": "Go",
-        "repositoryDescription": "🎩\nSmall self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support"
-    },
-    {
-        "name": "free-gophers-pack",
-        "owner": {
-            "login": "MariaLetta"
-        },
-        "full_name": "MariaLetta/free-gophers-pack",
-        "forks_count": "20",
-        "stargazers_count": "410",
-        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
-    },
-    {
-        "name": "955.WLB",
-        "owner": {
-            "login": "formulahendry"
-        },
-        "full_name": "formulahendry/955.WLB",
-        "forks_count": "410",
-        "stargazers_count": "11095",
-        "repositoryDescription": "955 不加班的公司名单"
-    },
-    {
-        "name": "AmpliGraph",
-        "owner": {
-            "login": "Accenture"
-        },
-        "full_name": "Accenture/AmpliGraph",
-        "forks_count": "24",
-        "stargazers_count": "434",
-        "language": "Python",
-        "repositoryDescription": "Python library for Representation Learning on Knowledge Graphs"
+        "repositoryDescription": "✨\n🐙\nA GPL Licensed Cognitive Behavioral Therapy app for iOS and Android"
     },
     {
         "name": "programmer-job-blacklist",
@@ -122,10 +81,74 @@
             "login": "shengxinjing"
         },
         "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "1293",
-        "stargazers_count": "20249",
+        "forks_count": "1308",
+        "stargazers_count": "20481",
         "language": "Shell",
         "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
+    },
+    {
+        "name": "ghidra",
+        "owner": {
+            "login": "NationalSecurityAgency"
+        },
+        "full_name": "NationalSecurityAgency/ghidra",
+        "forks_count": "1483",
+        "stargazers_count": "13288",
+        "language": "Java",
+        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
+    },
+    {
+        "name": "AgileLite",
+        "owner": {
+            "login": "davebs"
+        },
+        "full_name": "davebs/AgileLite",
+        "forks_count": "41",
+        "stargazers_count": "1328",
+        "repositoryDescription": "Agile software development without all the burnout."
+    },
+    {
+        "name": "pandoc-latex-template",
+        "owner": {
+            "login": "Wandmalfarbe"
+        },
+        "full_name": "Wandmalfarbe/pandoc-latex-template",
+        "forks_count": "216",
+        "stargazers_count": "1001",
+        "language": "TeX",
+        "repositoryDescription": "A pandoc LaTeX template to convert markdown files to PDF or LaTeX."
+    },
+    {
+        "name": "955.WLB",
+        "owner": {
+            "login": "formulahendry"
+        },
+        "full_name": "formulahendry/955.WLB",
+        "forks_count": "424",
+        "stargazers_count": "11288",
+        "repositoryDescription": "955 不加班的公司名单"
+    },
+    {
+        "name": "editor.js",
+        "owner": {
+            "login": "codex-team"
+        },
+        "full_name": "codex-team/editor.js",
+        "forks_count": "122",
+        "stargazers_count": "4191",
+        "language": "TypeScript",
+        "repositoryDescription": "A block-styled editor with clean JSON output"
+    },
+    {
+        "name": "the-way-to-go_ZH_CN",
+        "owner": {
+            "login": "Unknwon"
+        },
+        "full_name": "Unknwon/the-way-to-go_ZH_CN",
+        "forks_count": "3716",
+        "stargazers_count": "12662",
+        "language": "Go",
+        "repositoryDescription": "《The Way to Go》中文译本，中文正式名《Go 入门指南》"
     },
     {
         "name": "code-server",
@@ -133,54 +156,41 @@
             "login": "codercom"
         },
         "full_name": "codercom/code-server",
-        "forks_count": "702",
-        "stargazers_count": "14184",
+        "forks_count": "713",
+        "stargazers_count": "14349",
         "language": "TypeScript",
         "repositoryDescription": "Run VS Code on a remote server."
     },
     {
-        "name": "mathematics_dataset",
+        "name": "app-ideas",
         "owner": {
-            "login": "deepmind"
+            "login": "florinpop17"
         },
-        "full_name": "deepmind/mathematics_dataset",
-        "forks_count": "47",
-        "stargazers_count": "622",
-        "language": "Python",
-        "repositoryDescription": ""
+        "full_name": "florinpop17/app-ideas",
+        "forks_count": "62",
+        "stargazers_count": "720",
+        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
     },
     {
-        "name": "Pock",
+        "name": "free-gophers-pack",
         "owner": {
-            "login": "pigigaldi"
+            "login": "MariaLetta"
         },
-        "full_name": "pigigaldi/Pock",
-        "forks_count": "44",
-        "stargazers_count": "2154",
-        "language": "Swift",
-        "repositoryDescription": "Display macOS Dock in Touch Bar"
+        "full_name": "MariaLetta/free-gophers-pack",
+        "forks_count": "26",
+        "stargazers_count": "572",
+        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
     },
     {
-        "name": "JavaGuide",
+        "name": "algernon",
         "owner": {
-            "login": "Snailclimb"
+            "login": "xyproto"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10359",
-        "stargazers_count": "33569",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "advanced-java",
-        "owner": {
-            "login": "doocs"
-        },
-        "full_name": "doocs/advanced-java",
-        "forks_count": "3426",
-        "stargazers_count": "15929",
-        "language": "Java",
-        "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲"
+        "full_name": "xyproto/algernon",
+        "forks_count": "48",
+        "stargazers_count": "1184",
+        "language": "Go",
+        "repositoryDescription": "🎩\nSmall self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support"
     },
     {
         "name": "goweight",
@@ -188,43 +198,21 @@
             "login": "jondot"
         },
         "full_name": "jondot/goweight",
-        "forks_count": "17",
-        "stargazers_count": "533",
+        "forks_count": "20",
+        "stargazers_count": "689",
         "language": "Go",
         "repositoryDescription": "A tool to analyze and troubleshoot a Go binary size."
     },
     {
-        "name": "AutoPiano",
+        "name": "JavaGuide",
         "owner": {
-            "login": "WarpPrism"
+            "login": "Snailclimb"
         },
-        "full_name": "WarpPrism/AutoPiano",
-        "forks_count": "72",
-        "stargazers_count": "872",
-        "language": "JavaScript",
-        "repositoryDescription": "自由钢琴 AutoPiano，喜欢可以star ( http://crystalworld.gitee.io/qpiano/#/ )"
-    },
-    {
-        "name": "sonic",
-        "owner": {
-            "login": "valeriansaliou"
-        },
-        "full_name": "valeriansaliou/sonic",
-        "forks_count": "117",
-        "stargazers_count": "5302",
-        "language": "Rust",
-        "repositoryDescription": "🦔 Fast, lightweight & schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM."
-    },
-    {
-        "name": "public-apis",
-        "owner": {
-            "login": "toddmotto"
-        },
-        "full_name": "toddmotto/public-apis",
-        "forks_count": "5656",
-        "stargazers_count": "55202",
-        "language": "Python",
-        "repositoryDescription": "A collective list of free APIs for use in software and web development."
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "10388",
+        "stargazers_count": "33691",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
         "name": "DeepLearning-500-questions",
@@ -232,40 +220,52 @@
             "login": "scutan90"
         },
         "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "6274",
-        "stargazers_count": "22897",
+        "forks_count": "6296",
+        "stargazers_count": "23018",
         "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
-        "name": "mlir",
+        "name": "popeye",
         "owner": {
-            "login": "tensorflow"
+            "login": "derailed"
         },
-        "full_name": "tensorflow/mlir",
-        "forks_count": "36",
-        "stargazers_count": "407",
-        "language": "C++",
-        "repositoryDescription": "\"Multi-Level Intermediate Representation\" Compiler Infrastructure"
+        "full_name": "derailed/popeye",
+        "forks_count": "2",
+        "stargazers_count": "133",
+        "language": "Go",
+        "repositoryDescription": "🧭 A Kubernetes cluster resource sanitizer"
     },
     {
-        "name": "996ICU",
+        "name": "solid",
         "owner": {
-            "login": "995icu"
+            "login": "ryansolid"
         },
-        "full_name": "995icu/996ICU",
-        "forks_count": "122",
-        "stargazers_count": "1987",
-        "repositoryDescription": "996ICU 995ICU 工作996 生病ICU 加班不规范 亲人两行泪"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "19112",
-        "stargazers_count": "134579",
+        "full_name": "ryansolid/solid",
+        "forks_count": "9",
+        "stargazers_count": "265",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+    },
+    {
+        "name": "Pock",
+        "owner": {
+            "login": "pigigaldi"
+        },
+        "full_name": "pigigaldi/Pock",
+        "forks_count": "45",
+        "stargazers_count": "2269",
+        "language": "Swift",
+        "repositoryDescription": "Display macOS Dock in Touch Bar"
+    },
+    {
+        "name": "Deform",
+        "owner": {
+            "login": "keenanwoodall"
+        },
+        "full_name": "keenanwoodall/Deform",
+        "forks_count": "47",
+        "stargazers_count": "693",
+        "language": "C#",
+        "repositoryDescription": "A fully-featured deformer system for Unity."
     }
 ]

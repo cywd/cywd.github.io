@@ -5,10 +5,21 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "14117",
-        "stargazers_count": "181305",
+        "forks_count": "14410",
+        "stargazers_count": "184490",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "water.css",
+        "owner": {
+            "login": "kognise"
+        },
+        "full_name": "kognise/water.css",
+        "forks_count": "27",
+        "stargazers_count": "1112",
+        "language": "HTML",
+        "repositoryDescription": "A just-add-css collection of styles to make simple websites just a little nicer"
     },
     {
         "name": "citybound",
@@ -16,10 +27,31 @@
             "login": "citybound"
         },
         "full_name": "citybound/citybound",
-        "forks_count": "113",
-        "stargazers_count": "3434",
+        "forks_count": "124",
+        "stargazers_count": "3975",
         "language": "Rust",
         "repositoryDescription": "A work-in-progress, open-source, multi-player city simulation game."
+    },
+    {
+        "name": "955.WLB",
+        "owner": {
+            "login": "formulahendry"
+        },
+        "full_name": "formulahendry/955.WLB",
+        "forks_count": "440",
+        "stargazers_count": "11716",
+        "repositoryDescription": "955 不加班的公司名单"
+    },
+    {
+        "name": "pandoc-latex-template",
+        "owner": {
+            "login": "Wandmalfarbe"
+        },
+        "full_name": "Wandmalfarbe/pandoc-latex-template",
+        "forks_count": "229",
+        "stargazers_count": "1345",
+        "language": "TeX",
+        "repositoryDescription": "A pandoc LaTeX template to convert markdown files to PDF or LaTeX."
     },
     {
         "name": "Awesome-Design-Tools",
@@ -27,10 +59,31 @@
             "login": "LisaDziuba"
         },
         "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "635",
-        "stargazers_count": "11460",
+        "forks_count": "658",
+        "stargazers_count": "11840",
         "language": "JavaScript",
         "repositoryDescription": "The best design tools for everything\n👉"
+    },
+    {
+        "name": "nndl.github.io",
+        "owner": {
+            "login": "nndl"
+        },
+        "full_name": "nndl/nndl.github.io",
+        "forks_count": "547",
+        "stargazers_count": "2211",
+        "language": "HTML",
+        "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
+    },
+    {
+        "name": "app-ideas",
+        "owner": {
+            "login": "florinpop17"
+        },
+        "full_name": "florinpop17/app-ideas",
+        "forks_count": "82",
+        "stargazers_count": "1066",
+        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
     },
     {
         "name": "pumpkin-book",
@@ -38,31 +91,9 @@
             "login": "datawhalechina"
         },
         "full_name": "datawhalechina/pumpkin-book",
-        "forks_count": "488",
-        "stargazers_count": "2911",
+        "forks_count": "529",
+        "stargazers_count": "3183",
         "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
-    },
-    {
-        "name": "db_tutorial",
-        "owner": {
-            "login": "cstack"
-        },
-        "full_name": "cstack/db_tutorial",
-        "forks_count": "219",
-        "stargazers_count": "2901",
-        "language": "C",
-        "repositoryDescription": "Writing a sqlite clone from scratch in C"
-    },
-    {
-        "name": "You-Dont-Need-jQuery",
-        "owner": {
-            "login": "nefe"
-        },
-        "full_name": "nefe/You-Dont-Need-jQuery",
-        "forks_count": "1499",
-        "stargazers_count": "16776",
-        "language": "JavaScript",
-        "repositoryDescription": "Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript."
     },
     {
         "name": "quirk",
@@ -70,8 +101,8 @@
             "login": "Flaque"
         },
         "full_name": "Flaque/quirk",
-        "forks_count": "33",
-        "stargazers_count": "459",
+        "forks_count": "52",
+        "stargazers_count": "667",
         "language": "TypeScript",
         "repositoryDescription": "✨\n🐙\nA GPL Licensed Cognitive Behavioral Therapy app for iOS and Android"
     },
@@ -81,148 +112,10 @@
             "login": "shengxinjing"
         },
         "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "1308",
-        "stargazers_count": "20481",
+        "forks_count": "1322",
+        "stargazers_count": "20701",
         "language": "Shell",
         "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
-    },
-    {
-        "name": "ghidra",
-        "owner": {
-            "login": "NationalSecurityAgency"
-        },
-        "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "1483",
-        "stargazers_count": "13288",
-        "language": "Java",
-        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
-    },
-    {
-        "name": "AgileLite",
-        "owner": {
-            "login": "davebs"
-        },
-        "full_name": "davebs/AgileLite",
-        "forks_count": "41",
-        "stargazers_count": "1328",
-        "repositoryDescription": "Agile software development without all the burnout."
-    },
-    {
-        "name": "pandoc-latex-template",
-        "owner": {
-            "login": "Wandmalfarbe"
-        },
-        "full_name": "Wandmalfarbe/pandoc-latex-template",
-        "forks_count": "216",
-        "stargazers_count": "1001",
-        "language": "TeX",
-        "repositoryDescription": "A pandoc LaTeX template to convert markdown files to PDF or LaTeX."
-    },
-    {
-        "name": "955.WLB",
-        "owner": {
-            "login": "formulahendry"
-        },
-        "full_name": "formulahendry/955.WLB",
-        "forks_count": "424",
-        "stargazers_count": "11288",
-        "repositoryDescription": "955 不加班的公司名单"
-    },
-    {
-        "name": "editor.js",
-        "owner": {
-            "login": "codex-team"
-        },
-        "full_name": "codex-team/editor.js",
-        "forks_count": "122",
-        "stargazers_count": "4191",
-        "language": "TypeScript",
-        "repositoryDescription": "A block-styled editor with clean JSON output"
-    },
-    {
-        "name": "the-way-to-go_ZH_CN",
-        "owner": {
-            "login": "Unknwon"
-        },
-        "full_name": "Unknwon/the-way-to-go_ZH_CN",
-        "forks_count": "3716",
-        "stargazers_count": "12662",
-        "language": "Go",
-        "repositoryDescription": "《The Way to Go》中文译本，中文正式名《Go 入门指南》"
-    },
-    {
-        "name": "code-server",
-        "owner": {
-            "login": "codercom"
-        },
-        "full_name": "codercom/code-server",
-        "forks_count": "713",
-        "stargazers_count": "14349",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
-    },
-    {
-        "name": "app-ideas",
-        "owner": {
-            "login": "florinpop17"
-        },
-        "full_name": "florinpop17/app-ideas",
-        "forks_count": "62",
-        "stargazers_count": "720",
-        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
-    },
-    {
-        "name": "free-gophers-pack",
-        "owner": {
-            "login": "MariaLetta"
-        },
-        "full_name": "MariaLetta/free-gophers-pack",
-        "forks_count": "26",
-        "stargazers_count": "572",
-        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
-    },
-    {
-        "name": "algernon",
-        "owner": {
-            "login": "xyproto"
-        },
-        "full_name": "xyproto/algernon",
-        "forks_count": "48",
-        "stargazers_count": "1184",
-        "language": "Go",
-        "repositoryDescription": "🎩\nSmall self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support"
-    },
-    {
-        "name": "goweight",
-        "owner": {
-            "login": "jondot"
-        },
-        "full_name": "jondot/goweight",
-        "forks_count": "20",
-        "stargazers_count": "689",
-        "language": "Go",
-        "repositoryDescription": "A tool to analyze and troubleshoot a Go binary size."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10388",
-        "stargazers_count": "33691",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "6296",
-        "stargazers_count": "23018",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
     },
     {
         "name": "popeye",
@@ -230,42 +123,149 @@
             "login": "derailed"
         },
         "full_name": "derailed/popeye",
-        "forks_count": "2",
-        "stargazers_count": "133",
+        "forks_count": "10",
+        "stargazers_count": "311",
         "language": "Go",
         "repositoryDescription": "🧭 A Kubernetes cluster resource sanitizer"
     },
     {
-        "name": "solid",
+        "name": "editor.js",
         "owner": {
-            "login": "ryansolid"
+            "login": "codex-team"
         },
-        "full_name": "ryansolid/solid",
-        "forks_count": "9",
-        "stargazers_count": "265",
-        "language": "JavaScript",
-        "repositoryDescription": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+        "full_name": "codex-team/editor.js",
+        "forks_count": "133",
+        "stargazers_count": "4355",
+        "language": "TypeScript",
+        "repositoryDescription": "A block-styled editor with clean JSON output"
     },
     {
-        "name": "Pock",
+        "name": "ghidra",
         "owner": {
-            "login": "pigigaldi"
+            "login": "NationalSecurityAgency"
         },
-        "full_name": "pigigaldi/Pock",
+        "full_name": "NationalSecurityAgency/ghidra",
+        "forks_count": "1501",
+        "stargazers_count": "13448",
+        "language": "Java",
+        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
+    },
+    {
+        "name": "bench-scripts",
+        "owner": {
+            "login": "haydenjames"
+        },
+        "full_name": "haydenjames/bench-scripts",
         "forks_count": "45",
-        "stargazers_count": "2269",
-        "language": "Swift",
-        "repositoryDescription": "Display macOS Dock in Touch Bar"
+        "stargazers_count": "372",
+        "repositoryDescription": "A compilation of Linux server benchmarking scripts."
     },
     {
-        "name": "Deform",
+        "name": "free-gophers-pack",
         "owner": {
-            "login": "keenanwoodall"
+            "login": "MariaLetta"
         },
-        "full_name": "keenanwoodall/Deform",
-        "forks_count": "47",
-        "stargazers_count": "693",
-        "language": "C#",
-        "repositoryDescription": "A fully-featured deformer system for Unity."
+        "full_name": "MariaLetta/free-gophers-pack",
+        "forks_count": "33",
+        "stargazers_count": "714",
+        "language": "Go",
+        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
+    },
+    {
+        "name": "the-way-to-go_ZH_CN",
+        "owner": {
+            "login": "Unknwon"
+        },
+        "full_name": "Unknwon/the-way-to-go_ZH_CN",
+        "forks_count": "3725",
+        "stargazers_count": "12787",
+        "language": "Go",
+        "repositoryDescription": "《The Way to Go》中文译本，中文正式名《Go 入门指南》"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "10415",
+        "stargazers_count": "33791",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "tailwindcss",
+        "owner": {
+            "login": "tailwindcss"
+        },
+        "full_name": "tailwindcss/tailwindcss",
+        "forks_count": "455",
+        "stargazers_count": "10124",
+        "language": "CSS",
+        "repositoryDescription": "A utility-first CSS framework for rapid UI development."
+    },
+    {
+        "name": "DeepLearning-500-questions",
+        "owner": {
+            "login": "scutan90"
+        },
+        "full_name": "scutan90/DeepLearning-500-questions",
+        "forks_count": "6327",
+        "stargazers_count": "23131",
+        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
+    },
+    {
+        "name": "You-Dont-Need-jQuery",
+        "owner": {
+            "login": "nefe"
+        },
+        "full_name": "nefe/You-Dont-Need-jQuery",
+        "forks_count": "1508",
+        "stargazers_count": "16888",
+        "language": "JavaScript",
+        "repositoryDescription": "Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript."
+    },
+    {
+        "name": "the-book-of-secret-knowledge",
+        "owner": {
+            "login": "trimstray"
+        },
+        "full_name": "trimstray/the-book-of-secret-knowledge",
+        "forks_count": "1714",
+        "stargazers_count": "19201",
+        "repositoryDescription": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
+    },
+    {
+        "name": "code-server",
+        "owner": {
+            "login": "codercom"
+        },
+        "full_name": "codercom/code-server",
+        "forks_count": "726",
+        "stargazers_count": "14467",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
+    },
+    {
+        "name": "CheatSheetSeries",
+        "owner": {
+            "login": "OWASP"
+        },
+        "full_name": "OWASP/CheatSheetSeries",
+        "forks_count": "370",
+        "stargazers_count": "2660",
+        "language": "Python",
+        "repositoryDescription": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics."
+    },
+    {
+        "name": "db_tutorial",
+        "owner": {
+            "login": "cstack"
+        },
+        "full_name": "cstack/db_tutorial",
+        "forks_count": "222",
+        "stargazers_count": "3002",
+        "language": "C",
+        "repositoryDescription": "Writing a sqlite clone from scratch in C"
     }
 ]

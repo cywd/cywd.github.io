@@ -5,64 +5,10 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "14410",
-        "stargazers_count": "184490",
+        "forks_count": "15270",
+        "stargazers_count": "192920",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "water.css",
-        "owner": {
-            "login": "kognise"
-        },
-        "full_name": "kognise/water.css",
-        "forks_count": "27",
-        "stargazers_count": "1112",
-        "language": "HTML",
-        "repositoryDescription": "A just-add-css collection of styles to make simple websites just a little nicer"
-    },
-    {
-        "name": "citybound",
-        "owner": {
-            "login": "citybound"
-        },
-        "full_name": "citybound/citybound",
-        "forks_count": "124",
-        "stargazers_count": "3975",
-        "language": "Rust",
-        "repositoryDescription": "A work-in-progress, open-source, multi-player city simulation game."
-    },
-    {
-        "name": "955.WLB",
-        "owner": {
-            "login": "formulahendry"
-        },
-        "full_name": "formulahendry/955.WLB",
-        "forks_count": "440",
-        "stargazers_count": "11716",
-        "repositoryDescription": "955 不加班的公司名单"
-    },
-    {
-        "name": "pandoc-latex-template",
-        "owner": {
-            "login": "Wandmalfarbe"
-        },
-        "full_name": "Wandmalfarbe/pandoc-latex-template",
-        "forks_count": "229",
-        "stargazers_count": "1345",
-        "language": "TeX",
-        "repositoryDescription": "A pandoc LaTeX template to convert markdown files to PDF or LaTeX."
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "658",
-        "stargazers_count": "11840",
-        "language": "JavaScript",
-        "repositoryDescription": "The best design tools for everything\n👉"
     },
     {
         "name": "nndl.github.io",
@@ -70,10 +16,42 @@
             "login": "nndl"
         },
         "full_name": "nndl/nndl.github.io",
-        "forks_count": "547",
-        "stargazers_count": "2211",
+        "forks_count": "802",
+        "stargazers_count": "3622",
         "language": "HTML",
         "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
+    },
+    {
+        "name": "955.WLB",
+        "owner": {
+            "login": "formulahendry"
+        },
+        "full_name": "formulahendry/955.WLB",
+        "forks_count": "465",
+        "stargazers_count": "12506",
+        "repositoryDescription": "955 不加班的公司名单"
+    },
+    {
+        "name": "water.css",
+        "owner": {
+            "login": "kognise"
+        },
+        "full_name": "kognise/water.css",
+        "forks_count": "53",
+        "stargazers_count": "1895",
+        "language": "HTML",
+        "repositoryDescription": "A just-add-css collection of styles to make simple websites just a little nicer"
+    },
+    {
+        "name": "Virgilio",
+        "owner": {
+            "login": "clone95"
+        },
+        "full_name": "clone95/Virgilio",
+        "forks_count": "1476",
+        "stargazers_count": "8023",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
     },
     {
         "name": "app-ideas",
@@ -81,170 +59,9 @@
             "login": "florinpop17"
         },
         "full_name": "florinpop17/app-ideas",
-        "forks_count": "82",
-        "stargazers_count": "1066",
+        "forks_count": "110",
+        "stargazers_count": "1676",
         "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
-    },
-    {
-        "name": "pumpkin-book",
-        "owner": {
-            "login": "datawhalechina"
-        },
-        "full_name": "datawhalechina/pumpkin-book",
-        "forks_count": "529",
-        "stargazers_count": "3183",
-        "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
-    },
-    {
-        "name": "quirk",
-        "owner": {
-            "login": "Flaque"
-        },
-        "full_name": "Flaque/quirk",
-        "forks_count": "52",
-        "stargazers_count": "667",
-        "language": "TypeScript",
-        "repositoryDescription": "✨\n🐙\nA GPL Licensed Cognitive Behavioral Therapy app for iOS and Android"
-    },
-    {
-        "name": "programmer-job-blacklist",
-        "owner": {
-            "login": "shengxinjing"
-        },
-        "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "1322",
-        "stargazers_count": "20701",
-        "language": "Shell",
-        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
-    },
-    {
-        "name": "popeye",
-        "owner": {
-            "login": "derailed"
-        },
-        "full_name": "derailed/popeye",
-        "forks_count": "10",
-        "stargazers_count": "311",
-        "language": "Go",
-        "repositoryDescription": "🧭 A Kubernetes cluster resource sanitizer"
-    },
-    {
-        "name": "editor.js",
-        "owner": {
-            "login": "codex-team"
-        },
-        "full_name": "codex-team/editor.js",
-        "forks_count": "133",
-        "stargazers_count": "4355",
-        "language": "TypeScript",
-        "repositoryDescription": "A block-styled editor with clean JSON output"
-    },
-    {
-        "name": "ghidra",
-        "owner": {
-            "login": "NationalSecurityAgency"
-        },
-        "full_name": "NationalSecurityAgency/ghidra",
-        "forks_count": "1501",
-        "stargazers_count": "13448",
-        "language": "Java",
-        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
-    },
-    {
-        "name": "bench-scripts",
-        "owner": {
-            "login": "haydenjames"
-        },
-        "full_name": "haydenjames/bench-scripts",
-        "forks_count": "45",
-        "stargazers_count": "372",
-        "repositoryDescription": "A compilation of Linux server benchmarking scripts."
-    },
-    {
-        "name": "free-gophers-pack",
-        "owner": {
-            "login": "MariaLetta"
-        },
-        "full_name": "MariaLetta/free-gophers-pack",
-        "forks_count": "33",
-        "stargazers_count": "714",
-        "language": "Go",
-        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
-    },
-    {
-        "name": "the-way-to-go_ZH_CN",
-        "owner": {
-            "login": "Unknwon"
-        },
-        "full_name": "Unknwon/the-way-to-go_ZH_CN",
-        "forks_count": "3725",
-        "stargazers_count": "12787",
-        "language": "Go",
-        "repositoryDescription": "《The Way to Go》中文译本，中文正式名《Go 入门指南》"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10415",
-        "stargazers_count": "33791",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "tailwindcss",
-        "owner": {
-            "login": "tailwindcss"
-        },
-        "full_name": "tailwindcss/tailwindcss",
-        "forks_count": "455",
-        "stargazers_count": "10124",
-        "language": "CSS",
-        "repositoryDescription": "A utility-first CSS framework for rapid UI development."
-    },
-    {
-        "name": "DeepLearning-500-questions",
-        "owner": {
-            "login": "scutan90"
-        },
-        "full_name": "scutan90/DeepLearning-500-questions",
-        "forks_count": "6327",
-        "stargazers_count": "23131",
-        "repositoryDescription": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06"
-    },
-    {
-        "name": "You-Dont-Need-jQuery",
-        "owner": {
-            "login": "nefe"
-        },
-        "full_name": "nefe/You-Dont-Need-jQuery",
-        "forks_count": "1508",
-        "stargazers_count": "16888",
-        "language": "JavaScript",
-        "repositoryDescription": "Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript."
-    },
-    {
-        "name": "the-book-of-secret-knowledge",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1714",
-        "stargazers_count": "19201",
-        "repositoryDescription": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
-    },
-    {
-        "name": "code-server",
-        "owner": {
-            "login": "codercom"
-        },
-        "full_name": "codercom/code-server",
-        "forks_count": "726",
-        "stargazers_count": "14467",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
     },
     {
         "name": "CheatSheetSeries",
@@ -252,20 +69,204 @@
             "login": "OWASP"
         },
         "full_name": "OWASP/CheatSheetSeries",
-        "forks_count": "370",
-        "stargazers_count": "2660",
+        "forks_count": "418",
+        "stargazers_count": "3238",
         "language": "Python",
         "repositoryDescription": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics."
     },
     {
-        "name": "db_tutorial",
+        "name": "SpringAll",
         "owner": {
-            "login": "cstack"
+            "login": "wuyouzhuguli"
         },
-        "full_name": "cstack/db_tutorial",
-        "forks_count": "222",
-        "stargazers_count": "3002",
+        "full_name": "wuyouzhuguli/SpringAll",
+        "forks_count": "553",
+        "stargazers_count": "2768",
+        "language": "Java",
+        "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "683",
+        "stargazers_count": "12347",
+        "language": "JavaScript",
+        "repositoryDescription": "The best design tools for everything\n👉"
+    },
+    {
+        "name": "pumpkin-book",
+        "owner": {
+            "login": "datawhalechina"
+        },
+        "full_name": "datawhalechina/pumpkin-book",
+        "forks_count": "605",
+        "stargazers_count": "3654",
+        "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
+    },
+    {
+        "name": "programmer-job-blacklist",
+        "owner": {
+            "login": "shengxinjing"
+        },
+        "full_name": "shengxinjing/programmer-job-blacklist",
+        "forks_count": "1339",
+        "stargazers_count": "21194",
+        "language": "Shell",
+        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
+    },
+    {
+        "name": "citybound",
+        "owner": {
+            "login": "citybound"
+        },
+        "full_name": "citybound/citybound",
+        "forks_count": "136",
+        "stargazers_count": "4403",
+        "language": "Rust",
+        "repositoryDescription": "A work-in-progress, open-source, multi-player city simulation game."
+    },
+    {
+        "name": "editor.js",
+        "owner": {
+            "login": "codex-team"
+        },
+        "full_name": "codex-team/editor.js",
+        "forks_count": "153",
+        "stargazers_count": "4783",
+        "language": "TypeScript",
+        "repositoryDescription": "A block-styled editor with clean JSON output"
+    },
+    {
+        "name": "You-Dont-Need-jQuery",
+        "owner": {
+            "login": "nefe"
+        },
+        "full_name": "nefe/You-Dont-Need-jQuery",
+        "forks_count": "1533",
+        "stargazers_count": "17243",
+        "language": "JavaScript",
+        "repositoryDescription": "Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript."
+    },
+    {
+        "name": "ElGrapho",
+        "owner": {
+            "login": "ericdrowell"
+        },
+        "full_name": "ericdrowell/ElGrapho",
+        "forks_count": "26",
+        "stargazers_count": "456",
+        "language": "JavaScript",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "dotfiles",
+        "owner": {
+            "login": "lewagon"
+        },
+        "full_name": "lewagon/dotfiles",
+        "forks_count": "5051",
+        "stargazers_count": "4543",
+        "language": "Shell",
+        "repositoryDescription": "Default configuration for Le Wagon's students"
+    },
+    {
+        "name": "commando-vm",
+        "owner": {
+            "login": "fireeye"
+        },
+        "full_name": "fireeye/commando-vm",
+        "forks_count": "293",
+        "stargazers_count": "1537",
+        "language": "PowerShell",
+        "repositoryDescription": "Complete Mandiant Offensive VM (Commando VM), the first full Windows-based penetration testing virtual machine distribution. The security community recognizes Kali Linux as the go-to penetration testing platform for those that prefer Linux. Commando VM is for penetration testers that prefer Windows. We know that building a Windows penetration te…"
+    },
+    {
+        "name": "996ICU",
+        "owner": {
+            "login": "995icu"
+        },
+        "full_name": "995icu/996ICU",
+        "forks_count": "146",
+        "stargazers_count": "2468",
+        "repositoryDescription": "996ICU 995ICU 工作996 生病ICU 加班不规范 亲人两行泪"
+    },
+    {
+        "name": "libpku",
+        "owner": {
+            "login": "lib-pku"
+        },
+        "full_name": "lib-pku/libpku",
+        "forks_count": "1033",
+        "stargazers_count": "2929",
+        "language": "JavaScript",
+        "repositoryDescription": "北京大学课程资料整理"
+    },
+    {
+        "name": "muon",
+        "owner": {
+            "login": "nickmqb"
+        },
+        "full_name": "nickmqb/muon",
+        "forks_count": "6",
+        "stargazers_count": "294",
         "language": "C",
-        "repositoryDescription": "Writing a sqlite clone from scratch in C"
+        "repositoryDescription": "Modern low-level programming language"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "10484",
+        "stargazers_count": "34021",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "996.Leave",
+        "owner": {
+            "login": "623637646"
+        },
+        "full_name": "623637646/996.Leave",
+        "forks_count": "39",
+        "stargazers_count": "728",
+        "repositoryDescription": "逃离996"
+    },
+    {
+        "name": "ghidra",
+        "owner": {
+            "login": "NationalSecurityAgency"
+        },
+        "full_name": "NationalSecurityAgency/ghidra",
+        "forks_count": "1551",
+        "stargazers_count": "13685",
+        "language": "Java",
+        "repositoryDescription": "Ghidra is a software reverse engineering (SRE) framework"
+    },
+    {
+        "name": "free-gophers-pack",
+        "owner": {
+            "login": "MariaLetta"
+        },
+        "full_name": "MariaLetta/free-gophers-pack",
+        "forks_count": "46",
+        "stargazers_count": "977",
+        "language": "Go",
+        "repositoryDescription": "✨\nThis pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, posts in blogs or social media, courses, videos and many, many more."
+    },
+    {
+        "name": "RandWireNN",
+        "owner": {
+            "login": "seungwonpark"
+        },
+        "full_name": "seungwonpark/RandWireNN",
+        "forks_count": "42",
+        "stargazers_count": "254",
+        "language": "Python",
+        "repositoryDescription": "Implementation of: \"Exploring Randomly Wired Neural Networks for Image Recognition\""
     }
 ]

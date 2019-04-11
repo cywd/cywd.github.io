@@ -5,8 +5,8 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "16684",
-        "stargazers_count": "205759",
+        "forks_count": "17080",
+        "stargazers_count": "209525",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
@@ -16,8 +16,8 @@
             "login": "lib-pku"
         },
         "full_name": "lib-pku/libpku",
-        "forks_count": "2963",
-        "stargazers_count": "9288",
+        "forks_count": "3275",
+        "stargazers_count": "10426",
         "language": "JavaScript",
         "repositoryDescription": "贵校课程资料民间整理"
     },
@@ -27,8 +27,8 @@
             "login": "PKUanonym"
         },
         "full_name": "PKUanonym/REKCARC-TSC-UHT",
-        "forks_count": "640",
-        "stargazers_count": "2400",
+        "forks_count": "815",
+        "stargazers_count": "3087",
         "language": "C++",
         "repositoryDescription": "清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University"
     },
@@ -38,20 +38,43 @@
             "login": "QSCTech"
         },
         "full_name": "QSCTech/zju-icicles",
-        "forks_count": "2040",
-        "stargazers_count": "6333",
+        "forks_count": "2197",
+        "stargazers_count": "6948",
         "language": "HTML",
         "repositoryDescription": "浙江大学课程攻略共享计划"
     },
     {
-        "name": "xg2xg",
+        "name": "eht-imaging",
         "owner": {
-            "login": "jhuangtw-dev"
+            "login": "achael"
         },
-        "full_name": "jhuangtw-dev/xg2xg",
-        "forks_count": "105",
-        "stargazers_count": "2186",
-        "repositoryDescription": "by ex-googlers, for ex-googlers - a lookup table of similar tech & services"
+        "full_name": "achael/eht-imaging",
+        "forks_count": "39",
+        "stargazers_count": "710",
+        "language": "Python",
+        "repositoryDescription": "Imaging, analysis, and simulation software for radio interferometry"
+    },
+    {
+        "name": "linux",
+        "owner": {
+            "login": "torvalds"
+        },
+        "full_name": "torvalds/linux",
+        "forks_count": "25704",
+        "stargazers_count": "73089",
+        "language": "C",
+        "repositoryDescription": "Linux kernel source tree"
+    },
+    {
+        "name": "ChromeAppHeroes",
+        "owner": {
+            "login": "zhaoolee"
+        },
+        "full_name": "zhaoolee/ChromeAppHeroes",
+        "forks_count": "312",
+        "stargazers_count": "4318",
+        "language": "Python",
+        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
     },
     {
         "name": "USTC-Course",
@@ -59,10 +82,21 @@
             "login": "USTC-Resource"
         },
         "full_name": "USTC-Resource/USTC-Course",
-        "forks_count": "1118",
-        "stargazers_count": "3581",
+        "forks_count": "1209",
+        "stargazers_count": "3909",
         "language": "Python",
         "repositoryDescription": "❤️\n中国科学技术大学课程资源"
+    },
+    {
+        "name": "Virgilio",
+        "owner": {
+            "login": "clone95"
+        },
+        "full_name": "clone95/Virgilio",
+        "forks_count": "1641",
+        "stargazers_count": "8679",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
     },
     {
         "name": "nndl.github.io",
@@ -70,21 +104,31 @@
             "login": "nndl"
         },
         "full_name": "nndl/nndl.github.io",
-        "forks_count": "1091",
-        "stargazers_count": "5210",
+        "forks_count": "1139",
+        "stargazers_count": "5520",
         "language": "HTML",
         "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
     },
     {
-        "name": "public-sans",
+        "name": "Awesome-Design-Tools",
         "owner": {
-            "login": "uswds"
+            "login": "LisaDziuba"
         },
-        "full_name": "uswds/public-sans",
-        "forks_count": "43",
-        "stargazers_count": "2115",
-        "language": "HTML",
-        "repositoryDescription": "A strong, neutral, principles-driven, open-source typeface for text or display"
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "747",
+        "stargazers_count": "13437",
+        "language": "JavaScript",
+        "repositoryDescription": "The best design tools for everything\n👉"
+    },
+    {
+        "name": "xg2xg",
+        "owner": {
+            "login": "jhuangtw-dev"
+        },
+        "full_name": "jhuangtw-dev/xg2xg",
+        "forks_count": "116",
+        "stargazers_count": "2457",
+        "repositoryDescription": "by ex-googlers, for ex-googlers - a lookup table of similar tech & services"
     },
     {
         "name": "955.WLB",
@@ -92,8 +136,8 @@
             "login": "formulahendry"
         },
         "full_name": "formulahendry/955.WLB",
-        "forks_count": "520",
-        "stargazers_count": "13540",
+        "forks_count": "534",
+        "stargazers_count": "13818",
         "repositoryDescription": "955 不加班的公司名单"
     },
     {
@@ -102,62 +146,10 @@
             "login": "codex-team"
         },
         "full_name": "codex-team/editor.js",
-        "forks_count": "190",
-        "stargazers_count": "5662",
+        "forks_count": "199",
+        "stargazers_count": "5951",
         "language": "TypeScript",
         "repositoryDescription": "A block-styled editor with clean JSON output"
-    },
-    {
-        "name": "algorithms",
-        "owner": {
-            "login": "jeffgerickson"
-        },
-        "full_name": "jeffgerickson/algorithms",
-        "forks_count": "629",
-        "stargazers_count": "4753",
-        "repositoryDescription": "Bug-tracking for Jeff's algorithms book, notes, etc."
-    },
-    {
-        "name": "ChromeAppHeroes",
-        "owner": {
-            "login": "zhaoolee"
-        },
-        "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "278",
-        "stargazers_count": "3894",
-        "language": "Python",
-        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "726",
-        "stargazers_count": "13150",
-        "language": "JavaScript",
-        "repositoryDescription": "The best design tools for everything\n👉"
-    },
-    {
-        "name": "pumpkin-book",
-        "owner": {
-            "login": "datawhalechina"
-        },
-        "full_name": "datawhalechina/pumpkin-book",
-        "forks_count": "720",
-        "stargazers_count": "4332",
-        "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
-    },
-    {
-        "name": "app-ideas",
-        "owner": {
-            "login": "florinpop17"
-        },
-        "full_name": "florinpop17/app-ideas",
-        "forks_count": "147",
-        "stargazers_count": "2401",
-        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
     },
     {
         "name": "JavaGuide",
@@ -165,40 +157,10 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10646",
-        "stargazers_count": "34522",
+        "forks_count": "10714",
+        "stargazers_count": "34760",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "chinese-independent-developer",
-        "owner": {
-            "login": "1c7"
-        },
-        "full_name": "1c7/chinese-independent-developer",
-        "forks_count": "1178",
-        "stargazers_count": "12103",
-        "repositoryDescription": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么"
-    },
-    {
-        "name": "Awesome",
-        "owner": {
-            "login": "Awesome-Windows"
-        },
-        "full_name": "Awesome-Windows/Awesome",
-        "forks_count": "726",
-        "stargazers_count": "6730",
-        "repositoryDescription": "💻\nAn awesome & curated list of best applications and tools for Windows."
-    },
-    {
-        "name": "datascience",
-        "owner": {
-            "login": "r0f1"
-        },
-        "full_name": "r0f1/datascience",
-        "forks_count": "90",
-        "stargazers_count": "730",
-        "repositoryDescription": "Curated list of Python resources for data science."
     },
     {
         "name": "FaceDetection-DSFD",
@@ -206,64 +168,104 @@
             "login": "TencentYoutuResearch"
         },
         "full_name": "TencentYoutuResearch/FaceDetection-DSFD",
-        "forks_count": "129",
-        "stargazers_count": "648",
+        "forks_count": "183",
+        "stargazers_count": "890",
         "language": "Python",
         "repositoryDescription": ""
     },
     {
-        "name": "water.css",
+        "name": "code-server",
         "owner": {
-            "login": "kognise"
+            "login": "codercom"
         },
-        "full_name": "kognise/water.css",
-        "forks_count": "69",
-        "stargazers_count": "2548",
+        "full_name": "codercom/code-server",
+        "forks_count": "784",
+        "stargazers_count": "15193",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
+    },
+    {
+        "name": "Algorithm_Interview_Notes-Chinese",
+        "owner": {
+            "login": "imhuay"
+        },
+        "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
+        "forks_count": "6420",
+        "stargazers_count": "21504",
+        "language": "Python",
+        "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
+    },
+    {
+        "name": "pumpkin-book",
+        "owner": {
+            "login": "datawhalechina"
+        },
+        "full_name": "datawhalechina/pumpkin-book",
+        "forks_count": "765",
+        "stargazers_count": "4540",
+        "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
+    },
+    {
+        "name": "Awesome",
+        "owner": {
+            "login": "Awesome-Windows"
+        },
+        "full_name": "Awesome-Windows/Awesome",
+        "forks_count": "742",
+        "stargazers_count": "6944",
+        "repositoryDescription": "💻\nAn awesome & curated list of best applications and tools for Windows."
+    },
+    {
+        "name": "chinese-independent-developer",
+        "owner": {
+            "login": "1c7"
+        },
+        "full_name": "1c7/chinese-independent-developer",
+        "forks_count": "1203",
+        "stargazers_count": "12302",
+        "repositoryDescription": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么"
+    },
+    {
+        "name": "public-sans",
+        "owner": {
+            "login": "uswds"
+        },
+        "full_name": "uswds/public-sans",
+        "forks_count": "45",
+        "stargazers_count": "2312",
         "language": "HTML",
-        "repositoryDescription": "A just-add-css collection of styles to make simple websites just a little nicer"
+        "repositoryDescription": "A strong, neutral, principles-driven, open-source typeface for text or display"
     },
     {
-        "name": "programmer-job-blacklist",
+        "name": "vue",
         "owner": {
-            "login": "shengxinjing"
+            "login": "vuejs"
         },
-        "full_name": "shengxinjing/programmer-job-blacklist",
-        "forks_count": "1373",
-        "stargazers_count": "21801",
-        "language": "Shell",
-        "repositoryDescription": "🙈\n程序员找工作黑名单，换工作和当技术合伙人需谨慎啊 更新有赞"
+        "full_name": "vuejs/vue",
+        "forks_count": "19210",
+        "stargazers_count": "135292",
+        "language": "JavaScript",
+        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
     },
     {
-        "name": "pytorch_GAN_zoo",
+        "name": "Python",
         "owner": {
-            "login": "facebookresearch"
+            "login": "TheAlgorithms"
         },
-        "full_name": "facebookresearch/pytorch_GAN_zoo",
-        "forks_count": "21",
-        "stargazers_count": "240",
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "6950",
+        "stargazers_count": "24786",
         "language": "Python",
-        "repositoryDescription": "A mix of GAN implementations including progressive growing"
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "CheatSheetSeries",
+        "name": "app-ideas",
         "owner": {
-            "login": "OWASP"
+            "login": "florinpop17"
         },
-        "full_name": "OWASP/CheatSheetSeries",
-        "forks_count": "478",
-        "stargazers_count": "3735",
-        "language": "Python",
-        "repositoryDescription": "The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics."
-    },
-    {
-        "name": "SpringAll",
-        "owner": {
-            "login": "wuyouzhuguli"
-        },
-        "full_name": "wuyouzhuguli/SpringAll",
-        "forks_count": "630",
-        "stargazers_count": "3261",
-        "language": "Java",
-        "repositoryDescription": "循序渐进，学习Spring Boot、Spring Boot & Shiro、Spring Cloud和Spring Security，博客Spring系列源码"
+        "full_name": "florinpop17/app-ideas",
+        "forks_count": "163",
+        "stargazers_count": "2575",
+        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
     }
 ]

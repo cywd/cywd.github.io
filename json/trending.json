@@ -5,10 +5,21 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "17080",
-        "stargazers_count": "209525",
+        "forks_count": "17358",
+        "stargazers_count": "212269",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "eht-imaging",
+        "owner": {
+            "login": "achael"
+        },
+        "full_name": "achael/eht-imaging",
+        "forks_count": "149",
+        "stargazers_count": "2075",
+        "language": "Python",
+        "repositoryDescription": "Imaging, analysis, and simulation software for radio interferometry"
     },
     {
         "name": "libpku",
@@ -16,8 +27,8 @@
             "login": "lib-pku"
         },
         "full_name": "lib-pku/libpku",
-        "forks_count": "3275",
-        "stargazers_count": "10426",
+        "forks_count": "3465",
+        "stargazers_count": "11127",
         "language": "JavaScript",
         "repositoryDescription": "贵校课程资料民间整理"
     },
@@ -27,98 +38,10 @@
             "login": "PKUanonym"
         },
         "full_name": "PKUanonym/REKCARC-TSC-UHT",
-        "forks_count": "815",
-        "stargazers_count": "3087",
+        "forks_count": "968",
+        "stargazers_count": "3619",
         "language": "C++",
         "repositoryDescription": "清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University"
-    },
-    {
-        "name": "zju-icicles",
-        "owner": {
-            "login": "QSCTech"
-        },
-        "full_name": "QSCTech/zju-icicles",
-        "forks_count": "2197",
-        "stargazers_count": "6948",
-        "language": "HTML",
-        "repositoryDescription": "浙江大学课程攻略共享计划"
-    },
-    {
-        "name": "eht-imaging",
-        "owner": {
-            "login": "achael"
-        },
-        "full_name": "achael/eht-imaging",
-        "forks_count": "39",
-        "stargazers_count": "710",
-        "language": "Python",
-        "repositoryDescription": "Imaging, analysis, and simulation software for radio interferometry"
-    },
-    {
-        "name": "linux",
-        "owner": {
-            "login": "torvalds"
-        },
-        "full_name": "torvalds/linux",
-        "forks_count": "25704",
-        "stargazers_count": "73089",
-        "language": "C",
-        "repositoryDescription": "Linux kernel source tree"
-    },
-    {
-        "name": "ChromeAppHeroes",
-        "owner": {
-            "login": "zhaoolee"
-        },
-        "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "312",
-        "stargazers_count": "4318",
-        "language": "Python",
-        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
-    },
-    {
-        "name": "USTC-Course",
-        "owner": {
-            "login": "USTC-Resource"
-        },
-        "full_name": "USTC-Resource/USTC-Course",
-        "forks_count": "1209",
-        "stargazers_count": "3909",
-        "language": "Python",
-        "repositoryDescription": "❤️\n中国科学技术大学课程资源"
-    },
-    {
-        "name": "Virgilio",
-        "owner": {
-            "login": "clone95"
-        },
-        "full_name": "clone95/Virgilio",
-        "forks_count": "1641",
-        "stargazers_count": "8679",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
-    },
-    {
-        "name": "nndl.github.io",
-        "owner": {
-            "login": "nndl"
-        },
-        "full_name": "nndl/nndl.github.io",
-        "forks_count": "1139",
-        "stargazers_count": "5520",
-        "language": "HTML",
-        "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
-    },
-    {
-        "name": "Awesome-Design-Tools",
-        "owner": {
-            "login": "LisaDziuba"
-        },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "747",
-        "stargazers_count": "13437",
-        "language": "JavaScript",
-        "repositoryDescription": "The best design tools for everything\n👉"
     },
     {
         "name": "xg2xg",
@@ -126,19 +49,31 @@
             "login": "jhuangtw-dev"
         },
         "full_name": "jhuangtw-dev/xg2xg",
-        "forks_count": "116",
-        "stargazers_count": "2457",
+        "forks_count": "182",
+        "stargazers_count": "3067",
         "repositoryDescription": "by ex-googlers, for ex-googlers - a lookup table of similar tech & services"
     },
     {
-        "name": "955.WLB",
+        "name": "zju-icicles",
         "owner": {
-            "login": "formulahendry"
+            "login": "QSCTech"
         },
-        "full_name": "formulahendry/955.WLB",
-        "forks_count": "534",
-        "stargazers_count": "13818",
-        "repositoryDescription": "955 不加班的公司名单"
+        "full_name": "QSCTech/zju-icicles",
+        "forks_count": "2317",
+        "stargazers_count": "7339",
+        "language": "HTML",
+        "repositoryDescription": "浙江大学课程攻略共享计划"
+    },
+    {
+        "name": "nndl.github.io",
+        "owner": {
+            "login": "nndl"
+        },
+        "full_name": "nndl/nndl.github.io",
+        "forks_count": "1208",
+        "stargazers_count": "5850",
+        "language": "HTML",
+        "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
     },
     {
         "name": "editor.js",
@@ -146,43 +81,32 @@
             "login": "codex-team"
         },
         "full_name": "codex-team/editor.js",
-        "forks_count": "199",
-        "stargazers_count": "5951",
+        "forks_count": "215",
+        "stargazers_count": "6281",
         "language": "TypeScript",
         "repositoryDescription": "A block-styled editor with clean JSON output"
     },
     {
-        "name": "JavaGuide",
+        "name": "awesome-stacks",
         "owner": {
-            "login": "Snailclimb"
+            "login": "stackshareio"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10714",
-        "stargazers_count": "34760",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "full_name": "stackshareio/awesome-stacks",
+        "forks_count": "34",
+        "stargazers_count": "591",
+        "language": "JavaScript",
+        "repositoryDescription": "A curated list of tech stacks for building different applications & features"
     },
     {
-        "name": "FaceDetection-DSFD",
+        "name": "ChromeAppHeroes",
         "owner": {
-            "login": "TencentYoutuResearch"
+            "login": "zhaoolee"
         },
-        "full_name": "TencentYoutuResearch/FaceDetection-DSFD",
-        "forks_count": "183",
-        "stargazers_count": "890",
+        "full_name": "zhaoolee/ChromeAppHeroes",
+        "forks_count": "337",
+        "stargazers_count": "4622",
         "language": "Python",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "code-server",
-        "owner": {
-            "login": "codercom"
-        },
-        "full_name": "codercom/code-server",
-        "forks_count": "784",
-        "stargazers_count": "15193",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
+        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
     },
     {
         "name": "Algorithm_Interview_Notes-Chinese",
@@ -190,62 +114,95 @@
             "login": "imhuay"
         },
         "full_name": "imhuay/Algorithm_Interview_Notes-Chinese",
-        "forks_count": "6420",
-        "stargazers_count": "21504",
+        "forks_count": "6495",
+        "stargazers_count": "21750",
         "language": "Python",
         "repositoryDescription": "2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记"
     },
     {
-        "name": "pumpkin-book",
+        "name": "CRN",
         "owner": {
-            "login": "datawhalechina"
+            "login": "ctripcorp"
         },
-        "full_name": "datawhalechina/pumpkin-book",
-        "forks_count": "765",
-        "stargazers_count": "4540",
-        "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
-    },
-    {
-        "name": "Awesome",
-        "owner": {
-            "login": "Awesome-Windows"
-        },
-        "full_name": "Awesome-Windows/Awesome",
-        "forks_count": "742",
-        "stargazers_count": "6944",
-        "repositoryDescription": "💻\nAn awesome & curated list of best applications and tools for Windows."
-    },
-    {
-        "name": "chinese-independent-developer",
-        "owner": {
-            "login": "1c7"
-        },
-        "full_name": "1c7/chinese-independent-developer",
-        "forks_count": "1203",
-        "stargazers_count": "12302",
-        "repositoryDescription": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么"
-    },
-    {
-        "name": "public-sans",
-        "owner": {
-            "login": "uswds"
-        },
-        "full_name": "uswds/public-sans",
-        "forks_count": "45",
-        "stargazers_count": "2312",
-        "language": "HTML",
-        "repositoryDescription": "A strong, neutral, principles-driven, open-source typeface for text or display"
-    },
-    {
-        "name": "vue",
-        "owner": {
-            "login": "vuejs"
-        },
-        "full_name": "vuejs/vue",
-        "forks_count": "19210",
-        "stargazers_count": "135292",
+        "full_name": "ctripcorp/CRN",
+        "forks_count": "52",
+        "stargazers_count": "396",
         "language": "JavaScript",
-        "repositoryDescription": "🖖\nVue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
+        "repositoryDescription": "CRN是Ctrip React Native简称，由携程无线平台研发团队基于React Native框架优化，定制成稳定性和性能更佳、也更适合业务场景的跨平台开发框架。"
+    },
+    {
+        "name": "USTC-Course",
+        "owner": {
+            "login": "USTC-Resource"
+        },
+        "full_name": "USTC-Resource/USTC-Course",
+        "forks_count": "1267",
+        "stargazers_count": "4156",
+        "language": "Python",
+        "repositoryDescription": "❤️\n中国科学技术大学课程资源"
+    },
+    {
+        "name": "jumpcutter",
+        "owner": {
+            "login": "carykh"
+        },
+        "full_name": "carykh/jumpcutter",
+        "forks_count": "86",
+        "stargazers_count": "552",
+        "language": "Python",
+        "repositoryDescription": "Automatically edits vidx. Explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw"
+    },
+    {
+        "name": "git-tips",
+        "owner": {
+            "login": "521xueweihan"
+        },
+        "full_name": "521xueweihan/git-tips",
+        "forks_count": "719",
+        "stargazers_count": "3268",
+        "repositoryDescription": "Git的奇技淫巧"
+    },
+    {
+        "name": "Awesome-Design-Tools",
+        "owner": {
+            "login": "LisaDziuba"
+        },
+        "full_name": "LisaDziuba/Awesome-Design-Tools",
+        "forks_count": "766",
+        "stargazers_count": "13714",
+        "language": "JavaScript",
+        "repositoryDescription": "The best design tools for everything\n👉"
+    },
+    {
+        "name": "955.WLB",
+        "owner": {
+            "login": "formulahendry"
+        },
+        "full_name": "formulahendry/955.WLB",
+        "forks_count": "546",
+        "stargazers_count": "14060",
+        "repositoryDescription": "955 不加班的公司名单"
+    },
+    {
+        "name": "awesome-programming-books",
+        "owner": {
+            "login": "majikarp"
+        },
+        "full_name": "majikarp/awesome-programming-books",
+        "forks_count": "22",
+        "stargazers_count": "382",
+        "repositoryDescription": "📚\nA curated list of awesome programming books"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "10766",
+        "stargazers_count": "34963",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
         "name": "Python",
@@ -253,19 +210,62 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "6950",
-        "stargazers_count": "24786",
+        "forks_count": "7000",
+        "stargazers_count": "24980",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "app-ideas",
+        "name": "pumpkin-book",
         "owner": {
-            "login": "florinpop17"
+            "login": "datawhalechina"
         },
-        "full_name": "florinpop17/app-ideas",
-        "forks_count": "163",
-        "stargazers_count": "2575",
-        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
+        "full_name": "datawhalechina/pumpkin-book",
+        "forks_count": "824",
+        "stargazers_count": "4749",
+        "repositoryDescription": "《机器学习》（西瓜书）公式推导解析，在线阅读地址：https://datawhalechina.github.io/pumpkin-book"
+    },
+    {
+        "name": "linux-command",
+        "owner": {
+            "login": "jaywcjlove"
+        },
+        "full_name": "jaywcjlove/linux-command",
+        "forks_count": "892",
+        "stargazers_count": "3661",
+        "language": "HTML",
+        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
+    },
+    {
+        "name": "linux",
+        "owner": {
+            "login": "torvalds"
+        },
+        "full_name": "torvalds/linux",
+        "forks_count": "25720",
+        "stargazers_count": "73263",
+        "language": "C",
+        "repositoryDescription": "Linux kernel source tree"
+    },
+    {
+        "name": "Awesome",
+        "owner": {
+            "login": "Awesome-Windows"
+        },
+        "full_name": "Awesome-Windows/Awesome",
+        "forks_count": "750",
+        "stargazers_count": "7134",
+        "repositoryDescription": "💻\nAn awesome & curated list of best applications and tools for Windows."
+    },
+    {
+        "name": "tbox",
+        "owner": {
+            "login": "tboox"
+        },
+        "full_name": "tboox/tbox",
+        "forks_count": "355",
+        "stargazers_count": "2661",
+        "language": "C",
+        "repositoryDescription": "🎁\nA glib-like multi-platform c library"
     }
 ]

@@ -5,42 +5,10 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "17855",
-        "stargazers_count": "216439",
+        "forks_count": "18214",
+        "stargazers_count": "219775",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "eht-imaging",
-        "owner": {
-            "login": "achael"
-        },
-        "full_name": "achael/eht-imaging",
-        "forks_count": "301",
-        "stargazers_count": "3565",
-        "language": "Python",
-        "repositoryDescription": "Imaging, analysis, and simulation software for radio interferometry"
-    },
-    {
-        "name": "xg2xg",
-        "owner": {
-            "login": "jhuangtw-dev"
-        },
-        "full_name": "jhuangtw-dev/xg2xg",
-        "forks_count": "253",
-        "stargazers_count": "4135",
-        "repositoryDescription": "by ex-googlers, for ex-googlers - a lookup table of similar tech & services"
-    },
-    {
-        "name": "libpku",
-        "owner": {
-            "login": "lib-pku"
-        },
-        "full_name": "lib-pku/libpku",
-        "forks_count": "3661",
-        "stargazers_count": "11833",
-        "language": "JavaScript",
-        "repositoryDescription": "贵校课程资料民间整理"
     },
     {
         "name": "git-tips",
@@ -48,9 +16,30 @@
             "login": "521xueweihan"
         },
         "full_name": "521xueweihan/git-tips",
-        "forks_count": "773",
-        "stargazers_count": "3868",
+        "forks_count": "825",
+        "stargazers_count": "4516",
         "repositoryDescription": "Git的奇技淫巧"
+    },
+    {
+        "name": "xg2xg",
+        "owner": {
+            "login": "jhuangtw-dev"
+        },
+        "full_name": "jhuangtw-dev/xg2xg",
+        "forks_count": "313",
+        "stargazers_count": "4707",
+        "repositoryDescription": "by ex-googlers, for ex-googlers - a lookup table of similar tech & services"
+    },
+    {
+        "name": "squeezer",
+        "owner": {
+            "login": "SqueezerIO"
+        },
+        "full_name": "SqueezerIO/squeezer",
+        "forks_count": "22",
+        "stargazers_count": "1364",
+        "language": "JavaScript",
+        "repositoryDescription": "Squeezer Framework - Build serverless dApps"
     },
     {
         "name": "octotree",
@@ -58,21 +47,43 @@
             "login": "ovity"
         },
         "full_name": "ovity/octotree",
-        "forks_count": "1305",
-        "stargazers_count": "15581",
+        "forks_count": "1336",
+        "stargazers_count": "16081",
         "language": "JavaScript",
         "repositoryDescription": "GitHub code tree on steroids"
     },
     {
-        "name": "vscodium",
+        "name": "eht-imaging",
         "owner": {
-            "login": "VSCodium"
+            "login": "achael"
         },
-        "full_name": "VSCodium/vscodium",
-        "forks_count": "76",
-        "stargazers_count": "3015",
-        "language": "Shell",
-        "repositoryDescription": "binary releases of VS Code without MS branding/telemetry/licensing"
+        "full_name": "achael/eht-imaging",
+        "forks_count": "345",
+        "stargazers_count": "4038",
+        "language": "Python",
+        "repositoryDescription": "Imaging, analysis, and simulation software for radio interferometry"
+    },
+    {
+        "name": "libpku",
+        "owner": {
+            "login": "lib-pku"
+        },
+        "full_name": "lib-pku/libpku",
+        "forks_count": "3768",
+        "stargazers_count": "12238",
+        "language": "JavaScript",
+        "repositoryDescription": "贵校课程资料民间整理"
+    },
+    {
+        "name": "playroom",
+        "owner": {
+            "login": "seek-oss"
+        },
+        "full_name": "seek-oss/playroom",
+        "forks_count": "46",
+        "stargazers_count": "1492",
+        "language": "JavaScript",
+        "repositoryDescription": "Design with JSX, powered by your own component library."
     },
     {
         "name": "REKCARC-TSC-UHT",
@@ -80,8 +91,8 @@
             "login": "PKUanonym"
         },
         "full_name": "PKUanonym/REKCARC-TSC-UHT",
-        "forks_count": "1108",
-        "stargazers_count": "4071",
+        "forks_count": "1189",
+        "stargazers_count": "4363",
         "language": "C++",
         "repositoryDescription": "清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University"
     },
@@ -91,86 +102,32 @@
             "login": "FrontendMasters"
         },
         "full_name": "FrontendMasters/front-end-handbook-2019",
-        "forks_count": "31",
-        "stargazers_count": "358",
+        "forks_count": "49",
+        "stargazers_count": "680",
         "language": "HTML",
         "repositoryDescription": "[Book] 2019 edition of our front-end development handbook"
     },
     {
-        "name": "955.WLB",
+        "name": "org-rs",
         "owner": {
-            "login": "formulahendry"
+            "login": "org-rs"
         },
-        "full_name": "formulahendry/955.WLB",
-        "forks_count": "566",
-        "stargazers_count": "14463",
-        "repositoryDescription": "955 不加班的公司名单 - 工作 955，work–life balance (工作与生活的平衡)"
+        "full_name": "org-rs/org-rs",
+        "forks_count": "7",
+        "stargazers_count": "381",
+        "language": "Rust",
+        "repositoryDescription": "org-mode parser rewrite in Rust"
     },
     {
-        "name": "space-cloud",
+        "name": "vscodium",
         "owner": {
-            "login": "spaceuptech"
+            "login": "VSCodium"
         },
-        "full_name": "spaceuptech/space-cloud",
-        "forks_count": "19",
-        "stargazers_count": "385",
-        "language": "Go",
-        "repositoryDescription": "Space Cloud is an open source, web server that provides instant Realtime APIs on any database of your choice. Build highly scalable apps with the agility of a prototype!"
-    },
-    {
-        "name": "squeezer",
-        "owner": {
-            "login": "SqueezerIO"
-        },
-        "full_name": "SqueezerIO/squeezer",
-        "forks_count": "14",
-        "stargazers_count": "811",
-        "language": "JavaScript",
-        "repositoryDescription": "Squeezer Framework - Build serverless dApps"
-    },
-    {
-        "name": "zju-icicles",
-        "owner": {
-            "login": "QSCTech"
-        },
-        "full_name": "QSCTech/zju-icicles",
-        "forks_count": "2416",
-        "stargazers_count": "7686",
-        "language": "HTML",
-        "repositoryDescription": "浙江大学课程攻略共享计划"
-    },
-    {
-        "name": "nndl.github.io",
-        "owner": {
-            "login": "nndl"
-        },
-        "full_name": "nndl/nndl.github.io",
-        "forks_count": "1281",
-        "stargazers_count": "6168",
-        "language": "HTML",
-        "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
-    },
-    {
-        "name": "jumpcutter",
-        "owner": {
-            "login": "carykh"
-        },
-        "full_name": "carykh/jumpcutter",
-        "forks_count": "123",
-        "stargazers_count": "878",
-        "language": "Python",
-        "repositoryDescription": "Automatically edits vidx. Explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw"
-    },
-    {
-        "name": "editor.js",
-        "owner": {
-            "login": "codex-team"
-        },
-        "full_name": "codex-team/editor.js",
-        "forks_count": "229",
-        "stargazers_count": "6600",
-        "language": "TypeScript",
-        "repositoryDescription": "A block-styled editor with clean JSON output"
+        "full_name": "VSCodium/vscodium",
+        "forks_count": "82",
+        "stargazers_count": "3288",
+        "language": "Shell",
+        "repositoryDescription": "binary releases of VS Code without MS branding/telemetry/licensing"
     },
     {
         "name": "ZXBlog",
@@ -178,74 +135,95 @@
             "login": "ZXZxin"
         },
         "full_name": "ZXZxin/ZXBlog",
-        "forks_count": "192",
-        "stargazers_count": "1017",
+        "forks_count": "240",
+        "stargazers_count": "1258",
         "language": "Java",
         "repositoryDescription": "记录各种学习笔记(算法、Java、数据库、并发......)"
     },
     {
-        "name": "awesome-stacks",
+        "name": "zju-icicles",
         "owner": {
-            "login": "stackshareio"
+            "login": "QSCTech"
         },
-        "full_name": "stackshareio/awesome-stacks",
-        "forks_count": "41",
-        "stargazers_count": "891",
-        "language": "JavaScript",
-        "repositoryDescription": "A curated list of tech stacks for building different applications & features"
+        "full_name": "QSCTech/zju-icicles",
+        "forks_count": "2478",
+        "stargazers_count": "7919",
+        "language": "HTML",
+        "repositoryDescription": "浙江大学课程攻略共享计划"
     },
     {
-        "name": "twemoji",
+        "name": "SPADE",
         "owner": {
-            "login": "twitter"
+            "login": "NVlabs"
         },
-        "full_name": "twitter/twemoji",
-        "forks_count": "1101",
-        "stargazers_count": "9397",
-        "language": "JavaScript",
-        "repositoryDescription": "Emoji for everyone. https://twemoji.twitter.com/"
-    },
-    {
-        "name": "algorithms",
-        "owner": {
-            "login": "jeffgerickson"
-        },
-        "full_name": "jeffgerickson/algorithms",
-        "forks_count": "670",
-        "stargazers_count": "5227",
-        "repositoryDescription": "Bug-tracking for Jeff's algorithms book, notes, etc."
-    },
-    {
-        "name": "www.sh",
-        "owner": {
-            "login": "nerdgeneration"
-        },
-        "full_name": "nerdgeneration/www.sh",
-        "forks_count": "13",
-        "stargazers_count": "364",
-        "language": "Shell",
-        "repositoryDescription": "Web framework in Bash"
-    },
-    {
-        "name": "ChromeAppHeroes",
-        "owner": {
-            "login": "zhaoolee"
-        },
-        "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "363",
-        "stargazers_count": "4853",
+        "full_name": "NVlabs/SPADE",
+        "forks_count": "227",
+        "stargazers_count": "3313",
         "language": "Python",
-        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
+        "repositoryDescription": "Semantic Image Synthesis with SPADE"
     },
     {
-        "name": "awesome-programming-books",
+        "name": "nndl.github.io",
         "owner": {
-            "login": "majikarp"
+            "login": "nndl"
         },
-        "full_name": "majikarp/awesome-programming-books",
-        "forks_count": "39",
-        "stargazers_count": "643",
-        "repositoryDescription": "📚\nA curated list of awesome programming books"
+        "full_name": "nndl/nndl.github.io",
+        "forks_count": "1338",
+        "stargazers_count": "6378",
+        "language": "HTML",
+        "repositoryDescription": "《神经网络与深度学习》 Neural Network and Deep Learning"
+    },
+    {
+        "name": "Weekly-FE-Interview",
+        "owner": {
+            "login": "airuikun"
+        },
+        "full_name": "airuikun/Weekly-FE-Interview",
+        "forks_count": "50",
+        "stargazers_count": "541",
+        "repositoryDescription": "每周十道前端大厂面试题，并收集大家在大厂面试中遇到的难题，一起共同成长。"
+    },
+    {
+        "name": "Awesome",
+        "owner": {
+            "login": "Awesome-Windows"
+        },
+        "full_name": "Awesome-Windows/Awesome",
+        "forks_count": "792",
+        "stargazers_count": "7488",
+        "repositoryDescription": "💻\nAn awesome & curated list of best applications and tools for Windows."
+    },
+    {
+        "name": "space-cloud",
+        "owner": {
+            "login": "spaceuptech"
+        },
+        "full_name": "spaceuptech/space-cloud",
+        "forks_count": "30",
+        "stargazers_count": "618",
+        "language": "Go",
+        "repositoryDescription": "Space Cloud is an open source, web server that provides instant Realtime APIs on any database of your choice. Build highly scalable apps with the agility of a prototype!"
+    },
+    {
+        "name": "955.WLB",
+        "owner": {
+            "login": "formulahendry"
+        },
+        "full_name": "formulahendry/955.WLB",
+        "forks_count": "575",
+        "stargazers_count": "14679",
+        "repositoryDescription": "955 不加班的公司名单 - 工作 955，work–life balance (工作与生活的平衡)"
+    },
+    {
+        "name": "editor.js",
+        "owner": {
+            "login": "codex-team"
+        },
+        "full_name": "codex-team/editor.js",
+        "forks_count": "236",
+        "stargazers_count": "6798",
+        "language": "TypeScript",
+        "repositoryDescription": "A block-styled editor with clean JSON output"
     },
     {
         "name": "webiny-js",
@@ -253,20 +231,42 @@
             "login": "Webiny"
         },
         "full_name": "Webiny/webiny-js",
-        "forks_count": "34",
-        "stargazers_count": "825",
+        "forks_count": "40",
+        "stargazers_count": "987",
         "language": "JavaScript",
         "repositoryDescription": "Serverless CMS (GraphQL + React)"
     },
     {
-        "name": "Awesome-Design-Tools",
+        "name": "ChromeAppHeroes",
         "owner": {
-            "login": "LisaDziuba"
+            "login": "zhaoolee"
         },
-        "full_name": "LisaDziuba/Awesome-Design-Tools",
-        "forks_count": "781",
-        "stargazers_count": "13973",
-        "language": "JavaScript",
-        "repositoryDescription": "The best design tools for everything\n👉"
+        "full_name": "zhaoolee/ChromeAppHeroes",
+        "forks_count": "379",
+        "stargazers_count": "5038",
+        "language": "Python",
+        "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "10860",
+        "stargazers_count": "35291",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "jumpcutter",
+        "owner": {
+            "login": "carykh"
+        },
+        "full_name": "carykh/jumpcutter",
+        "forks_count": "139",
+        "stargazers_count": "1064",
+        "language": "Python",
+        "repositoryDescription": "Automatically edits vidx. Explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw"
     }
 ]

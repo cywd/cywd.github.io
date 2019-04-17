@@ -1459,6 +1459,10 @@
         "color": "#32AB90",
         "url": "https://github.com/trending?l=YASnippet"
     },
+    "ZAP": {
+        "color": "#0d665e",
+        "url": "https://github.com/trending?l=ZAP"
+    },
     "Zephir": {
         "color": "#118f9e",
         "url": "https://github.com/trending?l=Zephir"
@@ -1466,6 +1470,10 @@
     "Zig": {
         "color": "#ec915c",
         "url": "https://github.com/trending?l=Zig"
+    },
+    "ZIL": {
+        "color": "#dc75e5",
+        "url": "https://github.com/trending?l=ZIL"
     },
     "Zimpl": {
         "color": null,

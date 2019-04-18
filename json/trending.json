@@ -5,139 +5,10 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "18718",
-        "stargazers_count": "224476",
+        "forks_count": "18911",
+        "stargazers_count": "226101",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "squeezer",
-        "owner": {
-            "login": "SqueezerIO"
-        },
-        "full_name": "SqueezerIO/squeezer",
-        "forks_count": "26",
-        "stargazers_count": "2425",
-        "language": "JavaScript",
-        "repositoryDescription": "Squeezer Framework - Build serverless dApps"
-    },
-    {
-        "name": "libpku",
-        "owner": {
-            "login": "lib-pku"
-        },
-        "full_name": "lib-pku/libpku",
-        "forks_count": "4110",
-        "stargazers_count": "13397",
-        "language": "JavaScript",
-        "repositoryDescription": "贵校课程资料民间整理"
-    },
-    {
-        "name": "git-tips",
-        "owner": {
-            "login": "521xueweihan"
-        },
-        "full_name": "521xueweihan/git-tips",
-        "forks_count": "1013",
-        "stargazers_count": "5746",
-        "repositoryDescription": "Git的奇技淫巧"
-    },
-    {
-        "name": "zju-icicles",
-        "owner": {
-            "login": "QSCTech"
-        },
-        "full_name": "QSCTech/zju-icicles",
-        "forks_count": "2737",
-        "stargazers_count": "8818",
-        "language": "HTML",
-        "repositoryDescription": "浙江大学课程攻略共享计划"
-    },
-    {
-        "name": "REKCARC-TSC-UHT",
-        "owner": {
-            "login": "PKUanonym"
-        },
-        "full_name": "PKUanonym/REKCARC-TSC-UHT",
-        "forks_count": "1369",
-        "stargazers_count": "5027",
-        "language": "C++",
-        "repositoryDescription": "清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University"
-    },
-    {
-        "name": "litemall",
-        "owner": {
-            "login": "linlinjava"
-        },
-        "full_name": "linlinjava/litemall",
-        "forks_count": "1885",
-        "stargazers_count": "5478",
-        "language": "Java",
-        "repositoryDescription": "又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端"
-    },
-    {
-        "name": "SJTU-Courses",
-        "owner": {
-            "login": "CoolPhilChen"
-        },
-        "full_name": "CoolPhilChen/SJTU-Courses",
-        "forks_count": "817",
-        "stargazers_count": "2521",
-        "repositoryDescription": "上海交通大学课程资料分享"
-    },
-    {
-        "name": "USTC-Course",
-        "owner": {
-            "login": "USTC-Resource"
-        },
-        "full_name": "USTC-Resource/USTC-Course",
-        "forks_count": "1492",
-        "stargazers_count": "4989",
-        "language": "Python",
-        "repositoryDescription": "❤️\n中国科学技术大学课程资源"
-    },
-    {
-        "name": "Kalman-and-Bayesian-Filters-in-Python",
-        "owner": {
-            "login": "rlabbe"
-        },
-        "full_name": "rlabbe/Kalman-and-Bayesian-Filters-in-Python",
-        "forks_count": "1590",
-        "stargazers_count": "5778",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Kalman Filter book using Jupyter Notebook. Focuses on building intuition and experience, not formal proofs. Includes Kalman filters,extended Kalman filters, unscented Kalman filters, particle filters, and more. All exercises include solutions."
-    },
-    {
-        "name": "pyodide",
-        "owner": {
-            "login": "iodide-project"
-        },
-        "full_name": "iodide-project/pyodide",
-        "forks_count": "93",
-        "stargazers_count": "1586",
-        "language": "Python",
-        "repositoryDescription": "The Python scientific stack, compiled to WebAssembly"
-    },
-    {
-        "name": "OpenInTerminal",
-        "owner": {
-            "login": "Ji4n1ng"
-        },
-        "full_name": "Ji4n1ng/OpenInTerminal",
-        "forks_count": "26",
-        "stargazers_count": "439",
-        "language": "Swift",
-        "repositoryDescription": "✨\nFinder Toolbar app for macOS to open the current directory in Terminal, iTerm or Hyper."
-    },
-    {
-        "name": "Weekly-FE-Interview",
-        "owner": {
-            "login": "airuikun"
-        },
-        "full_name": "airuikun/Weekly-FE-Interview",
-        "forks_count": "93",
-        "stargazers_count": "1085",
-        "repositoryDescription": "每周十道前端大厂面试题，并收集大家在大厂面试中遇到的难题，一起共同成长。"
     },
     {
         "name": "React95",
@@ -145,95 +16,194 @@
             "login": "arturbien"
         },
         "full_name": "arturbien/React95",
-        "forks_count": "5",
-        "stargazers_count": "329",
+        "forks_count": "17",
+        "stargazers_count": "1199",
         "language": "JavaScript",
         "repositoryDescription": "🌈\n🕹\nRefreshed Windows 95 style UI components for your React app"
     },
     {
-        "name": "playroom",
+        "name": "BlingFire",
         "owner": {
-            "login": "seek-oss"
+            "login": "Microsoft"
         },
-        "full_name": "seek-oss/playroom",
-        "forks_count": "53",
-        "stargazers_count": "1971",
+        "full_name": "Microsoft/BlingFire",
+        "forks_count": "23",
+        "stargazers_count": "705",
+        "language": "C++",
+        "repositoryDescription": "A lightning fast Finite State machine and REgular expression manipulation library."
+    },
+    {
+        "name": "git-tips",
+        "owner": {
+            "login": "521xueweihan"
+        },
+        "full_name": "521xueweihan/git-tips",
+        "forks_count": "1083",
+        "stargazers_count": "6217",
+        "repositoryDescription": "Git的奇技淫巧"
+    },
+    {
+        "name": "libpku",
+        "owner": {
+            "login": "lib-pku"
+        },
+        "full_name": "lib-pku/libpku",
+        "forks_count": "4217",
+        "stargazers_count": "13830",
         "language": "JavaScript",
-        "repositoryDescription": "Design with JSX, powered by your own component library."
+        "repositoryDescription": "贵校课程资料民间整理"
     },
     {
-        "name": "front-end-handbook-2019",
+        "name": "spacy-course",
         "owner": {
-            "login": "FrontendMasters"
+            "login": "ines"
         },
-        "full_name": "FrontendMasters/front-end-handbook-2019",
-        "forks_count": "87",
-        "stargazers_count": "1200",
-        "language": "HTML",
-        "repositoryDescription": "[Book] 2019 edition of our front-end development handbook"
+        "full_name": "ines/spacy-course",
+        "forks_count": "33",
+        "stargazers_count": "493",
+        "language": "Python",
+        "repositoryDescription": "👩‍🏫\nAdvanced NLP with spaCy: A free online course"
     },
     {
-        "name": "zork1",
+        "name": "squeezer",
         "owner": {
-            "login": "historicalsource"
+            "login": "SqueezerIO"
         },
-        "full_name": "historicalsource/zork1",
-        "forks_count": "43",
-        "stargazers_count": "443",
-        "repositoryDescription": "Zork I (Microcomputer Version) by Infocom"
+        "full_name": "SqueezerIO/squeezer",
+        "forks_count": "37",
+        "stargazers_count": "2864",
+        "language": "JavaScript",
+        "repositoryDescription": "Squeezer Framework - Build serverless dApps"
     },
     {
-        "name": "Cello",
+        "name": "lemmy",
         "owner": {
-            "login": "orangeduck"
+            "login": "dessalines"
         },
-        "full_name": "orangeduck/Cello",
-        "forks_count": "285",
-        "stargazers_count": "4614",
-        "language": "C",
-        "repositoryDescription": "Higher level programming in C"
-    },
-    {
-        "name": "xg2xg",
-        "owner": {
-            "login": "jhuangtw-dev"
-        },
-        "full_name": "jhuangtw-dev/xg2xg",
-        "forks_count": "353",
-        "stargazers_count": "5200",
-        "repositoryDescription": "by ex-googlers, for ex-googlers - a lookup table of similar tech & services"
-    },
-    {
-        "name": "runtime",
-        "owner": {
-            "login": "rustasync"
-        },
-        "full_name": "rustasync/runtime",
-        "forks_count": "1",
-        "stargazers_count": "219",
+        "full_name": "dessalines/lemmy",
+        "forks_count": "16",
+        "stargazers_count": "449",
         "language": "Rust",
-        "repositoryDescription": "Empowering everyone to build asynchronous software"
+        "repositoryDescription": "Building a federated alternative to reddit in rust"
     },
     {
-        "name": "datascience",
+        "name": "zju-icicles",
         "owner": {
-            "login": "r0f1"
+            "login": "QSCTech"
         },
-        "full_name": "r0f1/datascience",
-        "forks_count": "163",
-        "stargazers_count": "1224",
-        "repositoryDescription": "Curated list of Python resources for data science."
+        "full_name": "QSCTech/zju-icicles",
+        "forks_count": "2825",
+        "stargazers_count": "9132",
+        "language": "HTML",
+        "repositoryDescription": "浙江大学课程攻略共享计划"
     },
     {
-        "name": "Virgilio",
+        "name": "golang-developer-roadmap",
         "owner": {
-            "login": "clone95"
+            "login": "Alikhll"
         },
-        "full_name": "clone95/Virgilio",
-        "forks_count": "1754",
-        "stargazers_count": "9334",
+        "full_name": "Alikhll/golang-developer-roadmap",
+        "forks_count": "63",
+        "stargazers_count": "696",
+        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
+    },
+    {
+        "name": "REKCARC-TSC-UHT",
+        "owner": {
+            "login": "PKUanonym"
+        },
+        "full_name": "PKUanonym/REKCARC-TSC-UHT",
+        "forks_count": "1445",
+        "stargazers_count": "5302",
+        "language": "C++",
+        "repositoryDescription": "清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University"
+    },
+    {
+        "name": "BosqueLanguage",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/BosqueLanguage",
+        "forks_count": "29",
+        "stargazers_count": "545",
+        "language": "TypeScript",
+        "repositoryDescription": "The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle."
+    },
+    {
+        "name": "pyodide",
+        "owner": {
+            "login": "iodide-project"
+        },
+        "full_name": "iodide-project/pyodide",
+        "forks_count": "104",
+        "stargazers_count": "1856",
+        "language": "Python",
+        "repositoryDescription": "The Python scientific stack, compiled to WebAssembly"
+    },
+    {
+        "name": "CenterNet",
+        "owner": {
+            "login": "xingyizhou"
+        },
+        "full_name": "xingyizhou/CenterNet",
+        "forks_count": "39",
+        "stargazers_count": "442",
+        "language": "Python",
+        "repositoryDescription": "Object detection, 3D detection, and pose estimation using center point detection:"
+    },
+    {
+        "name": "OpenInTerminal",
+        "owner": {
+            "login": "Ji4n1ng"
+        },
+        "full_name": "Ji4n1ng/OpenInTerminal",
+        "forks_count": "33",
+        "stargazers_count": "696",
+        "language": "Swift",
+        "repositoryDescription": "✨\nFinder Toolbar app for macOS to open the current directory in Terminal, iTerm or Hyper."
+    },
+    {
+        "name": "Kalman-and-Bayesian-Filters-in-Python",
+        "owner": {
+            "login": "rlabbe"
+        },
+        "full_name": "rlabbe/Kalman-and-Bayesian-Filters-in-Python",
+        "forks_count": "1611",
+        "stargazers_count": "5978",
         "language": "Jupyter Notebook",
-        "repositoryDescription": "Your new Mentor for Data Science E-Learning."
+        "repositoryDescription": "Kalman Filter book using Jupyter Notebook. Focuses on building intuition and experience, not formal proofs. Includes Kalman filters,extended Kalman filters, unscented Kalman filters, particle filters, and more. All exercises include solutions."
+    },
+    {
+        "name": "CenterNet",
+        "owner": {
+            "login": "Duankaiwen"
+        },
+        "full_name": "Duankaiwen/CenterNet",
+        "forks_count": "43",
+        "stargazers_count": "260",
+        "language": "Python",
+        "repositoryDescription": "Codes for our paper \"CenterNet: Keypoint Triplets for Object Detection\" ."
+    },
+    {
+        "name": "SJTU-Courses",
+        "owner": {
+            "login": "CoolPhilChen"
+        },
+        "full_name": "CoolPhilChen/SJTU-Courses",
+        "forks_count": "883",
+        "stargazers_count": "2733",
+        "repositoryDescription": "上海交通大学课程资料分享"
+    },
+    {
+        "name": "meshroom",
+        "owner": {
+            "login": "alicevision"
+        },
+        "full_name": "alicevision/meshroom",
+        "forks_count": "199",
+        "stargazers_count": "2360",
+        "language": "Python",
+        "repositoryDescription": "3D Reconstruction Software"
     },
     {
         "name": "JavaGuide",
@@ -241,31 +211,63 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "10949",
-        "stargazers_count": "35640",
+        "forks_count": "11009",
+        "stargazers_count": "35827",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "gridea",
+        "name": "litemall",
         "owner": {
-            "login": "getgridea"
+            "login": "linlinjava"
         },
-        "full_name": "getgridea/gridea",
-        "forks_count": "107",
-        "stargazers_count": "1265",
-        "language": "CSS",
-        "repositoryDescription": "✍️\n一个静态博客写作客户端 (A static blog writing client)"
+        "full_name": "linlinjava/litemall",
+        "forks_count": "1933",
+        "stargazers_count": "5672",
+        "language": "Java",
+        "repositoryDescription": "又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端"
     },
     {
-        "name": "eht-imaging",
+        "name": "Weekly-FE-Interview",
         "owner": {
-            "login": "achael"
+            "login": "airuikun"
         },
-        "full_name": "achael/eht-imaging",
-        "forks_count": "390",
-        "stargazers_count": "4476",
+        "full_name": "airuikun/Weekly-FE-Interview",
+        "forks_count": "103",
+        "stargazers_count": "1284",
+        "repositoryDescription": "每周十道前端大厂面试题，并收集大家在大厂面试中遇到的难题，一起共同成长。"
+    },
+    {
+        "name": "front-end-handbook-2019",
+        "owner": {
+            "login": "FrontendMasters"
+        },
+        "full_name": "FrontendMasters/front-end-handbook-2019",
+        "forks_count": "107",
+        "stargazers_count": "1384",
+        "language": "HTML",
+        "repositoryDescription": "[Book] 2019 edition of our front-end development handbook"
+    },
+    {
+        "name": "runtime",
+        "owner": {
+            "login": "rustasync"
+        },
+        "full_name": "rustasync/runtime",
+        "forks_count": "8",
+        "stargazers_count": "411",
+        "language": "Rust",
+        "repositoryDescription": "Empowering everyone to build asynchronous software"
+    },
+    {
+        "name": "AiLearning",
+        "owner": {
+            "login": "apachecn"
+        },
+        "full_name": "apachecn/AiLearning",
+        "forks_count": "3773",
+        "stargazers_count": "9954",
         "language": "Python",
-        "repositoryDescription": "Imaging, analysis, and simulation software for radio interferometry"
+        "repositoryDescription": "AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP"
     }
 ]

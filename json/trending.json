@@ -1,24 +1,68 @@
 [
     {
-        "name": "commit-messages-guide",
-        "owner": {
-            "login": "RomuloOliveira"
-        },
-        "full_name": "RomuloOliveira/commit-messages-guide",
-        "forks_count": "81",
-        "stargazers_count": "1707",
-        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
-    },
-    {
         "name": "996.ICU",
         "owner": {
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "19216",
-        "stargazers_count": "228470",
+        "forks_count": "19425",
+        "stargazers_count": "229634",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "gb-studio",
+        "owner": {
+            "login": "chrismaltby"
+        },
+        "full_name": "chrismaltby/gb-studio",
+        "forks_count": "55",
+        "stargazers_count": "1493",
+        "language": "C",
+        "repositoryDescription": "Visual retro game maker"
+    },
+    {
+        "name": "kratos",
+        "owner": {
+            "login": "bilibili"
+        },
+        "full_name": "bilibili/kratos",
+        "forks_count": "347",
+        "stargazers_count": "1008",
+        "language": "Go",
+        "repositoryDescription": "Kratos是bilibili开源的一套Go微服务框架，包含大量微服务相关框架及工具。"
+    },
+    {
+        "name": "PySnooper",
+        "owner": {
+            "login": "cool-RR"
+        },
+        "full_name": "cool-RR/PySnooper",
+        "forks_count": "19",
+        "stargazers_count": "1278",
+        "language": "Python",
+        "repositoryDescription": "Never use print for debugging again"
+    },
+    {
+        "name": "manim",
+        "owner": {
+            "login": "3b1b"
+        },
+        "full_name": "3b1b/manim",
+        "forks_count": "925",
+        "stargazers_count": "8110",
+        "language": "Python",
+        "repositoryDescription": "Animation engine for explanatory math videos"
+    },
+    {
+        "name": "commit-messages-guide",
+        "owner": {
+            "login": "RomuloOliveira"
+        },
+        "full_name": "RomuloOliveira/commit-messages-guide",
+        "forks_count": "108",
+        "stargazers_count": "2399",
+        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
     },
     {
         "name": "BosqueLanguage",
@@ -26,53 +70,10 @@
             "login": "Microsoft"
         },
         "full_name": "Microsoft/BosqueLanguage",
-        "forks_count": "118",
-        "stargazers_count": "2381",
+        "forks_count": "172",
+        "stargazers_count": "3001",
         "language": "TypeScript",
         "repositoryDescription": "The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle."
-    },
-    {
-        "name": "go-patterns",
-        "owner": {
-            "login": "tmrts"
-        },
-        "full_name": "tmrts/go-patterns",
-        "forks_count": "743",
-        "stargazers_count": "8776",
-        "language": "Go",
-        "repositoryDescription": "Curated list of Go design patterns, recipes and idioms"
-    },
-    {
-        "name": "mockit",
-        "owner": {
-            "login": "boyney123"
-        },
-        "full_name": "boyney123/mockit",
-        "forks_count": "14",
-        "stargazers_count": "447",
-        "language": "JavaScript",
-        "repositoryDescription": "A tool to quickly mock out end points, setup delays and more..."
-    },
-    {
-        "name": "AiLearning",
-        "owner": {
-            "login": "apachecn"
-        },
-        "full_name": "apachecn/AiLearning",
-        "forks_count": "3992",
-        "stargazers_count": "10983",
-        "language": "Python",
-        "repositoryDescription": "AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP"
-    },
-    {
-        "name": "git-tips",
-        "owner": {
-            "login": "521xueweihan"
-        },
-        "full_name": "521xueweihan/git-tips",
-        "forks_count": "1218",
-        "stargazers_count": "7020",
-        "repositoryDescription": "Git的奇技淫巧"
     },
     {
         "name": "tool",
@@ -80,52 +81,21 @@
             "login": "Louiszhai"
         },
         "full_name": "Louiszhai/tool",
-        "forks_count": "105",
-        "stargazers_count": "1002",
+        "forks_count": "146",
+        "stargazers_count": "1650",
         "language": "JavaScript",
         "repositoryDescription": "开发效率提升：Mac生产力工具链推荐"
     },
     {
-        "name": "libpku",
+        "name": "AiLearning",
         "owner": {
-            "login": "lib-pku"
+            "login": "apachecn"
         },
-        "full_name": "lib-pku/libpku",
-        "forks_count": "4444",
-        "stargazers_count": "14622",
-        "language": "JavaScript",
-        "repositoryDescription": "贵校课程资料民间整理"
-    },
-    {
-        "name": "app-ideas",
-        "owner": {
-            "login": "florinpop17"
-        },
-        "full_name": "florinpop17/app-ideas",
-        "forks_count": "257",
-        "stargazers_count": "3627",
-        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
-    },
-    {
-        "name": "golang-developer-roadmap",
-        "owner": {
-            "login": "Alikhll"
-        },
-        "full_name": "Alikhll/golang-developer-roadmap",
-        "forks_count": "112",
-        "stargazers_count": "1580",
-        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
-    },
-    {
-        "name": "canvas-sketch",
-        "owner": {
-            "login": "mattdesl"
-        },
-        "full_name": "mattdesl/canvas-sketch",
-        "forks_count": "68",
-        "stargazers_count": "1289",
-        "language": "JavaScript",
-        "repositoryDescription": "[beta] A framework for making generative artwork in JavaScript and the browser."
+        "full_name": "apachecn/AiLearning",
+        "forks_count": "4138",
+        "stargazers_count": "11560",
+        "language": "Python",
+        "repositoryDescription": "AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP"
     },
     {
         "name": "sshcode",
@@ -133,32 +103,20 @@
             "login": "codercom"
         },
         "full_name": "codercom/sshcode",
-        "forks_count": "10",
-        "stargazers_count": "246",
+        "forks_count": "30",
+        "stargazers_count": "859",
         "language": "Go",
         "repositoryDescription": "Run VS Code on any server over SSH."
     },
     {
-        "name": "requests3",
+        "name": "git-tips",
         "owner": {
-            "login": "kennethreitz"
+            "login": "521xueweihan"
         },
-        "full_name": "kennethreitz/requests3",
-        "forks_count": "8",
-        "stargazers_count": "374",
-        "language": "Python",
-        "repositoryDescription": "Requests 3.0, for Humans and Machines, alike.\n🤖"
-    },
-    {
-        "name": "zju-icicles",
-        "owner": {
-            "login": "QSCTech"
-        },
-        "full_name": "QSCTech/zju-icicles",
-        "forks_count": "2992",
-        "stargazers_count": "9656",
-        "language": "HTML",
-        "repositoryDescription": "浙江大学课程攻略共享计划"
+        "full_name": "521xueweihan/git-tips",
+        "forks_count": "1318",
+        "stargazers_count": "7494",
+        "repositoryDescription": "Git的奇技淫巧"
     },
     {
         "name": "ikonate",
@@ -166,43 +124,96 @@
             "login": "mikolajdobrucki"
         },
         "full_name": "mikolajdobrucki/ikonate",
-        "forks_count": "37",
-        "stargazers_count": "1183",
+        "forks_count": "60",
+        "stargazers_count": "1647",
         "language": "JavaScript",
         "repositoryDescription": "fully customisable & accessible vector icons"
     },
     {
-        "name": "REKCARC-TSC-UHT",
+        "name": "libpku",
         "owner": {
-            "login": "PKUanonym"
+            "login": "lib-pku"
         },
-        "full_name": "PKUanonym/REKCARC-TSC-UHT",
-        "forks_count": "1580",
-        "stargazers_count": "5786",
-        "language": "C++",
-        "repositoryDescription": "清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University"
+        "full_name": "lib-pku/libpku",
+        "forks_count": "4548",
+        "stargazers_count": "14956",
+        "language": "JavaScript",
+        "repositoryDescription": "贵校课程资料民间整理"
     },
     {
-        "name": "code-server",
+        "name": "go-patterns",
         "owner": {
-            "login": "codercom"
+            "login": "tmrts"
         },
-        "full_name": "codercom/code-server",
-        "forks_count": "874",
-        "stargazers_count": "16381",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
+        "full_name": "tmrts/go-patterns",
+        "forks_count": "765",
+        "stargazers_count": "9087",
+        "language": "Go",
+        "repositoryDescription": "Curated list of Go design patterns, recipes and idioms"
     },
     {
-        "name": "CornerNet-Lite",
+        "name": "zju-icicles",
         "owner": {
-            "login": "princeton-vl"
+            "login": "QSCTech"
         },
-        "full_name": "princeton-vl/CornerNet-Lite",
-        "forks_count": "54",
-        "stargazers_count": "346",
-        "language": "Python",
+        "full_name": "QSCTech/zju-icicles",
+        "forks_count": "3065",
+        "stargazers_count": "9919",
+        "language": "HTML",
+        "repositoryDescription": "浙江大学课程攻略共享计划"
+    },
+    {
+        "name": "linux-command",
+        "owner": {
+            "login": "jaywcjlove"
+        },
+        "full_name": "jaywcjlove/linux-command",
+        "forks_count": "1004",
+        "stargazers_count": "4327",
+        "language": "HTML",
+        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "11180",
+        "stargazers_count": "36355",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "996action",
+        "owner": {
+            "login": "CPdogson"
+        },
+        "full_name": "CPdogson/996action",
+        "forks_count": "33",
+        "stargazers_count": "450",
         "repositoryDescription": ""
+    },
+    {
+        "name": "golang-developer-roadmap",
+        "owner": {
+            "login": "Alikhll"
+        },
+        "full_name": "Alikhll/golang-developer-roadmap",
+        "forks_count": "136",
+        "stargazers_count": "1829",
+        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
+    },
+    {
+        "name": "cxk-ball",
+        "owner": {
+            "login": "kasuganosoras"
+        },
+        "full_name": "kasuganosoras/cxk-ball",
+        "forks_count": "69",
+        "stargazers_count": "557",
+        "language": "JavaScript",
+        "repositoryDescription": "Javascript 实现的 CXK 打篮球游戏"
     },
     {
         "name": "ChromeAppHeroes",
@@ -210,63 +221,52 @@
             "login": "zhaoolee"
         },
         "full_name": "zhaoolee/ChromeAppHeroes",
-        "forks_count": "451",
-        "stargazers_count": "6151",
+        "forks_count": "468",
+        "stargazers_count": "6356",
         "language": "Python",
         "repositoryDescription": "🌈\nChrome插件英雄榜, 为优秀的Chrome插件写一本中文说明书, 让Chrome插件英雄们造福人类~ ChromePluginHeroes, Write a Chinese manual for the excellent Chrome plugin, let the Chrome plugin heroes benefit the human~"
     },
     {
-        "name": "dsa.js",
+        "name": "hub",
         "owner": {
-            "login": "amejiarosario"
+            "login": "github"
         },
-        "full_name": "amejiarosario/dsa.js",
-        "forks_count": "61",
-        "stargazers_count": "990",
-        "language": "JavaScript",
-        "repositoryDescription": "Data Structures and Algorithms explained and implemented in JavaScript"
+        "full_name": "github/hub",
+        "forks_count": "1580",
+        "stargazers_count": "15682",
+        "language": "Go",
+        "repositoryDescription": "A command-line tool that makes git easier to use with GitHub."
     },
     {
-        "name": "halo",
+        "name": "app-ideas",
         "owner": {
-            "login": "halo-dev"
+            "login": "florinpop17"
         },
-        "full_name": "halo-dev/halo",
-        "forks_count": "720",
-        "stargazers_count": "2852",
-        "language": "Java",
-        "repositoryDescription": "✍ Halo 可能是最好的 Java 博客系统"
+        "full_name": "florinpop17/app-ideas",
+        "forks_count": "277",
+        "stargazers_count": "3829",
+        "repositoryDescription": "A Collection of application ideas which can be used to improve your coding skills."
     },
     {
-        "name": "Photon",
+        "name": "CornerNet-Lite",
         "owner": {
-            "login": "s0md3v"
+            "login": "princeton-vl"
         },
-        "full_name": "s0md3v/Photon",
-        "forks_count": "509",
-        "stargazers_count": "4754",
+        "full_name": "princeton-vl/CornerNet-Lite",
+        "forks_count": "103",
+        "stargazers_count": "537",
         "language": "Python",
-        "repositoryDescription": "Incredibly fast crawler designed for OSINT."
+        "repositoryDescription": ""
     },
     {
-        "name": "SJTU-Courses",
+        "name": "code-server",
         "owner": {
-            "login": "CoolPhilChen"
+            "login": "codercom"
         },
-        "full_name": "CoolPhilChen/SJTU-Courses",
-        "forks_count": "976",
-        "stargazers_count": "3078",
-        "repositoryDescription": "上海交通大学课程资料分享"
-    },
-    {
-        "name": "BlingFire",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/BlingFire",
-        "forks_count": "36",
-        "stargazers_count": "1101",
-        "language": "C++",
-        "repositoryDescription": "A lightning fast Finite State machine and REgular expression manipulation library."
+        "full_name": "codercom/code-server",
+        "forks_count": "886",
+        "stargazers_count": "16597",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
     }
 ]

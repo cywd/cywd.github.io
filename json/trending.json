@@ -1,12 +1,23 @@
 [
     {
+        "name": "996.ICU",
+        "owner": {
+            "login": "996icu"
+        },
+        "full_name": "996icu/996.ICU",
+        "forks_count": "20272",
+        "stargazers_count": "235762",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
         "name": "support.996.ICU",
         "owner": {
             "login": "MSWorkers"
         },
         "full_name": "MSWorkers/support.996.ICU",
-        "forks_count": "261",
-        "stargazers_count": "4030",
+        "forks_count": "460",
+        "stargazers_count": "6303",
         "repositoryDescription": "Microsoft and GitHub Workers Support 996.ICU"
     },
     {
@@ -15,32 +26,10 @@
             "login": "cool-RR"
         },
         "full_name": "cool-RR/PySnooper",
-        "forks_count": "217",
-        "stargazers_count": "4828",
+        "forks_count": "302",
+        "stargazers_count": "6131",
         "language": "Python",
         "repositoryDescription": "Never use print for debugging again"
-    },
-    {
-        "name": "996.ICU",
-        "owner": {
-            "login": "996icu"
-        },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "19828",
-        "stargazers_count": "232580",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "openbilibili-go-common",
-        "owner": {
-            "login": "swituo"
-        },
-        "full_name": "swituo/openbilibili-go-common",
-        "forks_count": "4544",
-        "stargazers_count": "1245",
-        "language": "Go",
-        "repositoryDescription": "嘘，不要问！我也不清楚这些是啥…"
     },
     {
         "name": "termshark",
@@ -48,42 +37,21 @@
             "login": "gcla"
         },
         "full_name": "gcla/termshark",
-        "forks_count": "33",
-        "stargazers_count": "1308",
+        "forks_count": "85",
+        "stargazers_count": "2449",
         "language": "Go",
         "repositoryDescription": "A terminal UI for tshark, inspired by Wireshark"
     },
     {
-        "name": "gb-studio",
+        "name": "openbilibili-go-common",
         "owner": {
-            "login": "chrismaltby"
+            "login": "swituo"
         },
-        "full_name": "chrismaltby/gb-studio",
-        "forks_count": "97",
-        "stargazers_count": "2513",
-        "language": "C",
-        "repositoryDescription": "Visual retro game maker"
-    },
-    {
-        "name": "kratos",
-        "owner": {
-            "login": "bilibili"
-        },
-        "full_name": "bilibili/kratos",
-        "forks_count": "574",
-        "stargazers_count": "1754",
+        "full_name": "swituo/openbilibili-go-common",
+        "forks_count": "5873",
+        "stargazers_count": "1871",
         "language": "Go",
-        "repositoryDescription": "Kratos是bilibili开源的一套Go微服务框架，包含大量微服务相关框架及工具。"
-    },
-    {
-        "name": "linux-network-performance-parameters",
-        "owner": {
-            "login": "leandromoreira"
-        },
-        "full_name": "leandromoreira/linux-network-performance-parameters",
-        "forks_count": "111",
-        "stargazers_count": "1380",
-        "repositoryDescription": "Learn where some of the network sysctl variables fit into the Linux/Kernel network flow"
+        "repositoryDescription": "🙈\n！\n🙉\n！\n🙊\n！我不清楚这些是啥… 道德心泛滥的麻烦出门右转关注996.icu！"
     },
     {
         "name": "jsproxy",
@@ -91,8 +59,8 @@
             "login": "EtherDream"
         },
         "full_name": "EtherDream/jsproxy",
-        "forks_count": "208",
-        "stargazers_count": "1482",
+        "forks_count": "321",
+        "stargazers_count": "2094",
         "language": "Shell",
         "repositoryDescription": "一个基于浏览器端 JS 实现的在线代理"
     },
@@ -102,10 +70,21 @@
             "login": "sveltejs"
         },
         "full_name": "sveltejs/svelte",
-        "forks_count": "392",
-        "stargazers_count": "10499",
+        "forks_count": "417",
+        "stargazers_count": "11149",
         "language": "JavaScript",
         "repositoryDescription": "Cybernetically enhanced web apps"
+    },
+    {
+        "name": "cadence",
+        "owner": {
+            "login": "uber"
+        },
+        "full_name": "uber/cadence",
+        "forks_count": "130",
+        "stargazers_count": "1457",
+        "language": "Go",
+        "repositoryDescription": "Cadence is a distributed, scalable, durable, and highly available orchestration engine to execute asynchronous long-running business logic in a scalable and resilient way."
     },
     {
         "name": "Python-100-Days",
@@ -113,42 +92,62 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "1775",
-        "stargazers_count": "6591",
+        "forks_count": "1868",
+        "stargazers_count": "7077",
         "language": "Python",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
-        "name": "manim",
+        "name": "kratos",
         "owner": {
-            "login": "3b1b"
+            "login": "bilibili"
         },
-        "full_name": "3b1b/manim",
-        "forks_count": "952",
-        "stargazers_count": "8645",
-        "language": "Python",
-        "repositoryDescription": "Animation engine for explanatory math videos"
-    },
-    {
-        "name": "sshcode",
-        "owner": {
-            "login": "codercom"
-        },
-        "full_name": "codercom/sshcode",
-        "forks_count": "40",
-        "stargazers_count": "1425",
+        "full_name": "bilibili/kratos",
+        "forks_count": "669",
+        "stargazers_count": "2220",
         "language": "Go",
-        "repositoryDescription": "Run VS Code on any server over SSH."
+        "repositoryDescription": "Kratos是bilibili开源的一套Go微服务框架，包含大量微服务相关框架及工具。"
     },
     {
-        "name": "commit-messages-guide",
+        "name": "dmca",
         "owner": {
-            "login": "RomuloOliveira"
+            "login": "github"
         },
-        "full_name": "RomuloOliveira/commit-messages-guide",
-        "forks_count": "130",
-        "stargazers_count": "2900",
-        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
+        "full_name": "github/dmca",
+        "forks_count": "544",
+        "stargazers_count": "2351",
+        "repositoryDescription": "Repository with text of DMCA takedown notices as received. GitHub does not endorse or adopt any assertion contained in the following notices. Users identified in the notices are presumed innocent until proven guilty. Additional information about our DMCA policy can be found at"
+    },
+    {
+        "name": "gb-studio",
+        "owner": {
+            "login": "chrismaltby"
+        },
+        "full_name": "chrismaltby/gb-studio",
+        "forks_count": "119",
+        "stargazers_count": "2931",
+        "language": "C",
+        "repositoryDescription": "Visual retro game maker"
+    },
+    {
+        "name": "golang-developer-roadmap",
+        "owner": {
+            "login": "Alikhll"
+        },
+        "full_name": "Alikhll/golang-developer-roadmap",
+        "forks_count": "176",
+        "stargazers_count": "2501",
+        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
+    },
+    {
+        "name": "linux-network-performance-parameters",
+        "owner": {
+            "login": "leandromoreira"
+        },
+        "full_name": "leandromoreira/linux-network-performance-parameters",
+        "forks_count": "132",
+        "stargazers_count": "1662",
+        "repositoryDescription": "Learn where some of the network sysctl variables fit into the Linux/Kernel network flow"
     },
     {
         "name": "git-tips",
@@ -156,86 +155,41 @@
             "login": "521xueweihan"
         },
         "full_name": "521xueweihan/git-tips",
-        "forks_count": "1395",
-        "stargazers_count": "7887",
+        "forks_count": "1453",
+        "stargazers_count": "8167",
         "repositoryDescription": "Git的奇技淫巧"
     },
     {
-        "name": "AiLearning",
+        "name": "commit-messages-guide",
         "owner": {
-            "login": "apachecn"
+            "login": "RomuloOliveira"
         },
-        "full_name": "apachecn/AiLearning",
-        "forks_count": "4263",
-        "stargazers_count": "11898",
-        "language": "Python",
-        "repositoryDescription": "AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP"
+        "full_name": "RomuloOliveira/commit-messages-guide",
+        "forks_count": "143",
+        "stargazers_count": "3191",
+        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
     },
     {
-        "name": "BosqueLanguage",
+        "name": "sshcode",
         "owner": {
-            "login": "Microsoft"
+            "login": "codercom"
         },
-        "full_name": "Microsoft/BosqueLanguage",
-        "forks_count": "203",
-        "stargazers_count": "3348",
-        "language": "TypeScript",
-        "repositoryDescription": "The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle."
-    },
-    {
-        "name": "tool",
-        "owner": {
-            "login": "Louiszhai"
-        },
-        "full_name": "Louiszhai/tool",
-        "forks_count": "174",
-        "stargazers_count": "2004",
-        "language": "JavaScript",
-        "repositoryDescription": "开发效率提升：Mac生产力工具链推荐"
-    },
-    {
-        "name": "ikonate",
-        "owner": {
-            "login": "mikolajdobrucki"
-        },
-        "full_name": "mikolajdobrucki/ikonate",
-        "forks_count": "75",
-        "stargazers_count": "1986",
-        "language": "JavaScript",
-        "repositoryDescription": "fully customisable & accessible vector icons"
-    },
-    {
-        "name": "libpku",
-        "owner": {
-            "login": "lib-pku"
-        },
-        "full_name": "lib-pku/libpku",
-        "forks_count": "4643",
-        "stargazers_count": "15231",
-        "language": "JavaScript",
-        "repositoryDescription": "贵校课程资料民间整理"
-    },
-    {
-        "name": "book_sample",
-        "owner": {
-            "login": "rnorm"
-        },
-        "full_name": "rnorm/book_sample",
-        "forks_count": "19",
-        "stargazers_count": "329",
-        "language": "R",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "the-way-to-go_ZH_CN",
-        "owner": {
-            "login": "Unknwon"
-        },
-        "full_name": "Unknwon/the-way-to-go_ZH_CN",
-        "forks_count": "3966",
-        "stargazers_count": "14103",
+        "full_name": "codercom/sshcode",
+        "forks_count": "43",
+        "stargazers_count": "1683",
         "language": "Go",
-        "repositoryDescription": "《The Way to Go》中文译本，中文正式名《Go 入门指南》"
+        "repositoryDescription": "Run VS Code on any server over SSH."
+    },
+    {
+        "name": "sparse_attention",
+        "owner": {
+            "login": "openai"
+        },
+        "full_name": "openai/sparse_attention",
+        "forks_count": "29",
+        "stargazers_count": "302",
+        "language": "Python",
+        "repositoryDescription": "Examples of using sparse attention, as in \"Generating Long Sequences with Sparse Transformers\""
     },
     {
         "name": "JavaGuide",
@@ -243,8 +197,8 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "11272",
-        "stargazers_count": "36598",
+        "forks_count": "11373",
+        "stargazers_count": "36830",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
@@ -254,19 +208,64 @@
             "login": "kasuganosoras"
         },
         "full_name": "kasuganosoras/cxk-ball",
-        "forks_count": "106",
-        "stargazers_count": "803",
+        "forks_count": "143",
+        "stargazers_count": "1062",
         "language": "JavaScript",
         "repositoryDescription": "🏀\nJavascript 实现的 CXK 打篮球游戏"
     },
     {
-        "name": "golang-developer-roadmap",
+        "name": "AiLearning",
         "owner": {
-            "login": "Alikhll"
+            "login": "apachecn"
         },
-        "full_name": "Alikhll/golang-developer-roadmap",
-        "forks_count": "151",
-        "stargazers_count": "2075",
-        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
+        "full_name": "apachecn/AiLearning",
+        "forks_count": "4341",
+        "stargazers_count": "12121",
+        "language": "Python",
+        "repositoryDescription": "AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP"
+    },
+    {
+        "name": "tool",
+        "owner": {
+            "login": "Louiszhai"
+        },
+        "full_name": "Louiszhai/tool",
+        "forks_count": "198",
+        "stargazers_count": "2238",
+        "language": "JavaScript",
+        "repositoryDescription": "开发效率提升：Mac生产力工具链推荐"
+    },
+    {
+        "name": "BosqueLanguage",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/BosqueLanguage",
+        "forks_count": "222",
+        "stargazers_count": "3531",
+        "language": "TypeScript",
+        "repositoryDescription": "The Bosque programming language is an experiment in regularized design for a machine assisted rapid and reliable software development lifecycle."
+    },
+    {
+        "name": "manim",
+        "owner": {
+            "login": "3b1b"
+        },
+        "full_name": "3b1b/manim",
+        "forks_count": "958",
+        "stargazers_count": "8816",
+        "language": "Python",
+        "repositoryDescription": "Animation engine for explanatory math videos"
+    },
+    {
+        "name": "use-http",
+        "owner": {
+            "login": "alex-cory"
+        },
+        "full_name": "alex-cory/use-http",
+        "forks_count": "3",
+        "stargazers_count": "309",
+        "language": "JavaScript",
+        "repositoryDescription": "🐶\nReact hook for making isomorphic http requests"
     }
 ]

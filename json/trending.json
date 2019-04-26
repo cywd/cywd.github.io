@@ -5,8 +5,8 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "20419",
-        "stargazers_count": "237169",
+        "forks_count": "20576",
+        "stargazers_count": "238165",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
@@ -16,8 +16,8 @@
             "login": "MSWorkers"
         },
         "full_name": "MSWorkers/support.996.ICU",
-        "forks_count": "512",
-        "stargazers_count": "7099",
+        "forks_count": "551",
+        "stargazers_count": "7627",
         "repositoryDescription": "Microsoft and GitHub Workers Support 996.ICU"
     },
     {
@@ -26,96 +26,10 @@
             "login": "cool-RR"
         },
         "full_name": "cool-RR/PySnooper",
-        "forks_count": "362",
-        "stargazers_count": "6863",
+        "forks_count": "383",
+        "stargazers_count": "7389",
         "language": "Python",
         "repositoryDescription": "Never use print for debugging again"
-    },
-    {
-        "name": "golang-developer-roadmap",
-        "owner": {
-            "login": "Alikhll"
-        },
-        "full_name": "Alikhll/golang-developer-roadmap",
-        "forks_count": "234",
-        "stargazers_count": "3078",
-        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
-    },
-    {
-        "name": "termshark",
-        "owner": {
-            "login": "gcla"
-        },
-        "full_name": "gcla/termshark",
-        "forks_count": "109",
-        "stargazers_count": "2968",
-        "language": "Go",
-        "repositoryDescription": "A terminal UI for tshark, inspired by Wireshark"
-    },
-    {
-        "name": "svelte",
-        "owner": {
-            "login": "sveltejs"
-        },
-        "full_name": "sveltejs/svelte",
-        "forks_count": "429",
-        "stargazers_count": "11588",
-        "language": "JavaScript",
-        "repositoryDescription": "Cybernetically enhanced web apps"
-    },
-    {
-        "name": "spark",
-        "owner": {
-            "login": "dotnet"
-        },
-        "full_name": "dotnet/spark",
-        "forks_count": "30",
-        "stargazers_count": "427",
-        "language": "C#",
-        "repositoryDescription": ".NET for Apache® Spark™ makes Apache Spark™ easily accessible to .NET developers."
-    },
-    {
-        "name": "vim.wasm",
-        "owner": {
-            "login": "rhysd"
-        },
-        "full_name": "rhysd/vim.wasm",
-        "forks_count": "69",
-        "stargazers_count": "3620",
-        "language": "C",
-        "repositoryDescription": "Vim editor ported to WebAssembly"
-    },
-    {
-        "name": "golang-developer-roadmap-cn",
-        "owner": {
-            "login": "Quorafind"
-        },
-        "full_name": "Quorafind/golang-developer-roadmap-cn",
-        "forks_count": "97",
-        "stargazers_count": "691",
-        "repositoryDescription": "在 2019 成为一名 Go 开发者的路线图。为学习 Go 的人而准备。"
-    },
-    {
-        "name": "Python-100-Days",
-        "owner": {
-            "login": "jackfrued"
-        },
-        "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "1938",
-        "stargazers_count": "7413",
-        "language": "Python",
-        "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "layer",
-        "owner": {
-            "login": "cloudkj"
-        },
-        "full_name": "cloudkj/layer",
-        "forks_count": "11",
-        "stargazers_count": "406",
-        "language": "Scheme",
-        "repositoryDescription": "Neural network inference the Unix way"
     },
     {
         "name": "Python",
@@ -123,54 +37,41 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "7329",
-        "stargazers_count": "25944",
+        "forks_count": "7437",
+        "stargazers_count": "26387",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "delta",
+        "name": "golang-developer-roadmap",
         "owner": {
-            "login": "delta-io"
+            "login": "Alikhll"
         },
-        "full_name": "delta-io/delta",
-        "forks_count": "60",
-        "stargazers_count": "498",
-        "language": "Scala",
-        "repositoryDescription": "An open-source storage layer that brings scalable, ACID transactions to Apache Spark™ and big data workloads."
+        "full_name": "Alikhll/golang-developer-roadmap",
+        "forks_count": "273",
+        "stargazers_count": "3479",
+        "repositoryDescription": "Roadmap to becoming a Go developer in 2019"
     },
     {
-        "name": "jsproxy",
+        "name": "svelte",
         "owner": {
-            "login": "EtherDream"
+            "login": "sveltejs"
         },
-        "full_name": "EtherDream/jsproxy",
-        "forks_count": "363",
-        "stargazers_count": "2358",
-        "language": "Shell",
-        "repositoryDescription": "一个基于浏览器端 JS 实现的在线代理"
+        "full_name": "sveltejs/svelte",
+        "forks_count": "440",
+        "stargazers_count": "11976",
+        "language": "JavaScript",
+        "repositoryDescription": "Cybernetically enhanced web apps"
     },
     {
-        "name": "leetcode",
+        "name": "golang-developer-roadmap-cn",
         "owner": {
-            "login": "haoel"
+            "login": "Quorafind"
         },
-        "full_name": "haoel/leetcode",
-        "forks_count": "3194",
-        "stargazers_count": "9804",
-        "language": "C++",
-        "repositoryDescription": "LeetCode Problems' Solutions"
-    },
-    {
-        "name": "gb-studio",
-        "owner": {
-            "login": "chrismaltby"
-        },
-        "full_name": "chrismaltby/gb-studio",
-        "forks_count": "142",
-        "stargazers_count": "3186",
-        "language": "C",
-        "repositoryDescription": "Visual retro game maker"
+        "full_name": "Quorafind/golang-developer-roadmap-cn",
+        "forks_count": "127",
+        "stargazers_count": "1036",
+        "repositoryDescription": "在 2019 成为一名 Go 开发者的路线图。为学习 Go 的人而准备。"
     },
     {
         "name": "kratos",
@@ -178,85 +79,21 @@
             "login": "bilibili"
         },
         "full_name": "bilibili/kratos",
-        "forks_count": "709",
-        "stargazers_count": "2453",
+        "forks_count": "757",
+        "stargazers_count": "2747",
         "language": "Go",
         "repositoryDescription": "Kratos是bilibili开源的一套Go微服务框架，包含大量微服务相关框架及工具。"
     },
     {
-        "name": "edex-ui",
+        "name": "termshark",
         "owner": {
-            "login": "GitSquared"
+            "login": "gcla"
         },
-        "full_name": "GitSquared/edex-ui",
-        "forks_count": "468",
-        "stargazers_count": "9030",
-        "language": "JavaScript",
-        "repositoryDescription": "A cross-platform, customizable science fiction terminal emulator with advanced monitoring & touchscreen support."
-    },
-    {
-        "name": "tool",
-        "owner": {
-            "login": "Louiszhai"
-        },
-        "full_name": "Louiszhai/tool",
-        "forks_count": "216",
-        "stargazers_count": "2481",
-        "language": "JavaScript",
-        "repositoryDescription": "开发效率提升：Mac生产力工具链推荐"
-    },
-    {
-        "name": "React95",
-        "owner": {
-            "login": "arturbien"
-        },
-        "full_name": "arturbien/React95",
-        "forks_count": "41",
-        "stargazers_count": "2380",
-        "language": "JavaScript",
-        "repositoryDescription": "🌈\n🕹\nRefreshed Windows 95 style UI components for your React app"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "11440",
-        "stargazers_count": "37023",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "commit-messages-guide",
-        "owner": {
-            "login": "RomuloOliveira"
-        },
-        "full_name": "RomuloOliveira/commit-messages-guide",
-        "forks_count": "154",
-        "stargazers_count": "3421",
-        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
-    },
-    {
-        "name": "Motrix",
-        "owner": {
-            "login": "agalwood"
-        },
-        "full_name": "agalwood/Motrix",
-        "forks_count": "780",
-        "stargazers_count": "8442",
-        "language": "JavaScript",
-        "repositoryDescription": "A full-featured download manager."
-    },
-    {
-        "name": "git-tips",
-        "owner": {
-            "login": "521xueweihan"
-        },
-        "full_name": "521xueweihan/git-tips",
-        "forks_count": "1499",
-        "stargazers_count": "8366",
-        "repositoryDescription": "Git的奇技淫巧"
+        "full_name": "gcla/termshark",
+        "forks_count": "120",
+        "stargazers_count": "3260",
+        "language": "Go",
+        "repositoryDescription": "A terminal UI for tshark, inspired by Wireshark"
     },
     {
         "name": "flutter",
@@ -264,9 +101,173 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "6765",
-        "stargazers_count": "61097",
+        "forks_count": "6787",
+        "stargazers_count": "61360",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "leetcode",
+        "owner": {
+            "login": "azl397985856"
+        },
+        "full_name": "azl397985856/leetcode",
+        "forks_count": "51",
+        "stargazers_count": "500",
+        "language": "JavaScript",
+        "repositoryDescription": "leetcode题解，记录自己的leecode解题之路。"
+    },
+    {
+        "name": "fklearn",
+        "owner": {
+            "login": "nubank"
+        },
+        "full_name": "nubank/fklearn",
+        "forks_count": "54",
+        "stargazers_count": "600",
+        "language": "Python",
+        "repositoryDescription": "fklearn: Functional Machine Learning"
+    },
+    {
+        "name": "commit-messages-guide",
+        "owner": {
+            "login": "RomuloOliveira"
+        },
+        "full_name": "RomuloOliveira/commit-messages-guide",
+        "forks_count": "167",
+        "stargazers_count": "3673",
+        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
+    },
+    {
+        "name": "spark",
+        "owner": {
+            "login": "dotnet"
+        },
+        "full_name": "dotnet/spark",
+        "forks_count": "47",
+        "stargazers_count": "663",
+        "language": "C#",
+        "repositoryDescription": ".NET for Apache® Spark™ makes Apache Spark™ easily accessible to .NET developers."
+    },
+    {
+        "name": "tool",
+        "owner": {
+            "login": "Louiszhai"
+        },
+        "full_name": "Louiszhai/tool",
+        "forks_count": "237",
+        "stargazers_count": "2711",
+        "language": "JavaScript",
+        "repositoryDescription": "开发效率提升：Mac生产力工具链推荐"
+    },
+    {
+        "name": "vim.wasm",
+        "owner": {
+            "login": "rhysd"
+        },
+        "full_name": "rhysd/vim.wasm",
+        "forks_count": "75",
+        "stargazers_count": "3850",
+        "language": "C",
+        "repositoryDescription": "Vim editor ported to WebAssembly"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "11497",
+        "stargazers_count": "37214",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "edex-ui",
+        "owner": {
+            "login": "GitSquared"
+        },
+        "full_name": "GitSquared/edex-ui",
+        "forks_count": "475",
+        "stargazers_count": "9250",
+        "language": "JavaScript",
+        "repositoryDescription": "A cross-platform, customizable science fiction terminal emulator with advanced monitoring & touchscreen support."
+    },
+    {
+        "name": "Python-100-Days",
+        "owner": {
+            "login": "jackfrued"
+        },
+        "full_name": "jackfrued/Python-100-Days",
+        "forks_count": "1982",
+        "stargazers_count": "7615",
+        "language": "Python",
+        "repositoryDescription": "Python - 100天从新手到大师"
+    },
+    {
+        "name": "simplify",
+        "owner": {
+            "login": "leggett"
+        },
+        "full_name": "leggett/simplify",
+        "forks_count": "31",
+        "stargazers_count": "516",
+        "language": "CSS",
+        "repositoryDescription": "Chrome extension to simplify Gmail's interface"
+    },
+    {
+        "name": "sauron",
+        "owner": {
+            "login": "ivanceras"
+        },
+        "full_name": "ivanceras/sauron",
+        "forks_count": "3",
+        "stargazers_count": "256",
+        "language": "Rust",
+        "repositoryDescription": "Sauron is an html web framework for building web-apps. It is heavily inspired by elm."
+    },
+    {
+        "name": "leetcode",
+        "owner": {
+            "login": "haoel"
+        },
+        "full_name": "haoel/leetcode",
+        "forks_count": "3215",
+        "stargazers_count": "9969",
+        "language": "C++",
+        "repositoryDescription": "LeetCode Problems' Solutions"
+    },
+    {
+        "name": "booster",
+        "owner": {
+            "login": "didi"
+        },
+        "full_name": "didi/booster",
+        "forks_count": "23",
+        "stargazers_count": "343",
+        "language": "Kotlin",
+        "repositoryDescription": "✨\nOptimizer for mobile applications"
+    },
+    {
+        "name": "AiLearning",
+        "owner": {
+            "login": "apachecn"
+        },
+        "full_name": "apachecn/AiLearning",
+        "forks_count": "4431",
+        "stargazers_count": "12404",
+        "language": "Python",
+        "repositoryDescription": "AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP"
+    },
+    {
+        "name": "jsproxy",
+        "owner": {
+            "login": "EtherDream"
+        },
+        "full_name": "EtherDream/jsproxy",
+        "forks_count": "384",
+        "stargazers_count": "2507",
+        "language": "Shell",
+        "repositoryDescription": "一个基于浏览器端 JS 实现的在线代理"
     }
 ]

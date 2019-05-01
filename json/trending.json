@@ -5,21 +5,43 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "9395",
-        "stargazers_count": "33018",
+        "forks_count": "9535",
+        "stargazers_count": "33609",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "996.ICU",
+        "name": "synthwave-vscode",
         "owner": {
-            "login": "996icu"
+            "login": "robb0wen"
         },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "20879",
-        "stargazers_count": "240450",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+        "full_name": "robb0wen/synthwave-vscode",
+        "forks_count": "230",
+        "stargazers_count": "1084",
+        "language": "CSS",
+        "repositoryDescription": "Synthwave inspired colour theme for VS Code\n🌅\n🕶"
+    },
+    {
+        "name": "leetcode",
+        "owner": {
+            "login": "azl397985856"
+        },
+        "full_name": "azl397985856/leetcode",
+        "forks_count": "240",
+        "stargazers_count": "2226",
+        "language": "JavaScript",
+        "repositoryDescription": "leetcode题解，记录自己的leecode解题之路。"
+    },
+    {
+        "name": "smarchWatch_PUBLIC",
+        "owner": {
+            "login": "S-March"
+        },
+        "full_name": "S-March/smarchWatch_PUBLIC",
+        "forks_count": "49",
+        "stargazers_count": "533",
+        "language": "C",
+        "repositoryDescription": ""
     },
     {
         "name": "tsdx",
@@ -27,9 +49,9 @@
             "login": "palmerhq"
         },
         "full_name": "palmerhq/tsdx",
-        "forks_count": "11",
-        "stargazers_count": "699",
-        "language": "JavaScript",
+        "forks_count": "17",
+        "stargazers_count": "1040",
+        "language": "TypeScript",
         "repositoryDescription": "Zero-config CLI for TypeScript package development"
     },
     {
@@ -38,9 +60,64 @@
             "login": "abhat222"
         },
         "full_name": "abhat222/Data-Science--Cheat-Sheet",
-        "forks_count": "1717",
-        "stargazers_count": "3765",
+        "forks_count": "1816",
+        "stargazers_count": "4106",
         "repositoryDescription": "Cheat Sheets"
+    },
+    {
+        "name": "996.ICU",
+        "owner": {
+            "login": "996icu"
+        },
+        "full_name": "996icu/996.ICU",
+        "forks_count": "20907",
+        "stargazers_count": "240745",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "pastel",
+        "owner": {
+            "login": "vadimdemedes"
+        },
+        "full_name": "vadimdemedes/pastel",
+        "forks_count": "2",
+        "stargazers_count": "413",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nFramework for effortlessly building Ink apps"
+    },
+    {
+        "name": "SOUL",
+        "owner": {
+            "login": "soul-lang"
+        },
+        "full_name": "soul-lang/SOUL",
+        "forks_count": "19",
+        "stargazers_count": "490",
+        "language": "JavaScript",
+        "repositoryDescription": "The SOUL programming language and API"
+    },
+    {
+        "name": "gameboy.live",
+        "owner": {
+            "login": "HFO4"
+        },
+        "full_name": "HFO4/gameboy.live",
+        "forks_count": "10",
+        "stargazers_count": "242",
+        "language": "Go",
+        "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
+    },
+    {
+        "name": "BuildXL",
+        "owner": {
+            "login": "Microsoft"
+        },
+        "full_name": "Microsoft/BuildXL",
+        "forks_count": "36",
+        "stargazers_count": "318",
+        "language": "C#",
+        "repositoryDescription": "Microsoft Build Accelerator"
     },
     {
         "name": "uppy",
@@ -48,54 +125,21 @@
             "login": "transloadit"
         },
         "full_name": "transloadit/uppy",
-        "forks_count": "831",
-        "stargazers_count": "18372",
+        "forks_count": "836",
+        "stargazers_count": "18536",
         "language": "JavaScript",
         "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
     },
     {
-        "name": "leetcode",
+        "name": "SymCrypt",
         "owner": {
-            "login": "azl397985856"
+            "login": "Microsoft"
         },
-        "full_name": "azl397985856/leetcode",
-        "forks_count": "155",
-        "stargazers_count": "1710",
-        "language": "JavaScript",
-        "repositoryDescription": "leetcode题解，记录自己的leecode解题之路。"
-    },
-    {
-        "name": "linux-command",
-        "owner": {
-            "login": "jaywcjlove"
-        },
-        "full_name": "jaywcjlove/linux-command",
-        "forks_count": "1288",
-        "stargazers_count": "5424",
-        "language": "HTML",
-        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
-    },
-    {
-        "name": "stretch",
-        "owner": {
-            "login": "vislyhq"
-        },
-        "full_name": "vislyhq/stretch",
-        "forks_count": "17",
-        "stargazers_count": "597",
-        "language": "Rust",
-        "repositoryDescription": "High performance flexbox implementation written in rust"
-    },
-    {
-        "name": "pprint",
-        "owner": {
-            "login": "p-ranav"
-        },
-        "full_name": "p-ranav/pprint",
-        "forks_count": "11",
-        "stargazers_count": "296",
-        "language": "C++",
-        "repositoryDescription": "Pretty Printer for Modern C++"
+        "full_name": "Microsoft/SymCrypt",
+        "forks_count": "16",
+        "stargazers_count": "285",
+        "language": "C",
+        "repositoryDescription": "Cryptographic library"
     },
     {
         "name": "svelte",
@@ -103,21 +147,43 @@
             "login": "sveltejs"
         },
         "full_name": "sveltejs/svelte",
-        "forks_count": "480",
-        "stargazers_count": "12963",
+        "forks_count": "482",
+        "stargazers_count": "13096",
         "language": "JavaScript",
         "repositoryDescription": "Cybernetically enhanced web apps"
     },
     {
-        "name": "flow9",
+        "name": "jupytext",
         "owner": {
-            "login": "area9innovation"
+            "login": "mwouts"
         },
-        "full_name": "area9innovation/flow9",
-        "forks_count": "6",
-        "stargazers_count": "270",
-        "language": "C",
-        "repositoryDescription": "Platform for safe, easy and productive programming of complex, multi-platform apps with a modern user interface"
+        "full_name": "mwouts/jupytext",
+        "forks_count": "108",
+        "stargazers_count": "2114",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Jupyter notebooks as Markdown documents, Julia, Python or R scripts"
+    },
+    {
+        "name": "PySnooper",
+        "owner": {
+            "login": "cool-RR"
+        },
+        "full_name": "cool-RR/PySnooper",
+        "forks_count": "468",
+        "stargazers_count": "8709",
+        "language": "Python",
+        "repositoryDescription": "Never use print for debugging again"
+    },
+    {
+        "name": "linux-command",
+        "owner": {
+            "login": "jaywcjlove"
+        },
+        "full_name": "jaywcjlove/linux-command",
+        "forks_count": "1301",
+        "stargazers_count": "5551",
+        "language": "HTML",
+        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
     },
     {
         "name": "shepherd",
@@ -125,8 +191,8 @@
             "login": "shipshapecode"
         },
         "full_name": "shipshapecode/shepherd",
-        "forks_count": "417",
-        "stargazers_count": "6974",
+        "forks_count": "418",
+        "stargazers_count": "7079",
         "language": "JavaScript",
         "repositoryDescription": "Guide your users through a tour of your app"
     },
@@ -136,74 +202,9 @@
             "login": "MSWorkers"
         },
         "full_name": "MSWorkers/support.996.ICU",
-        "forks_count": "656",
-        "stargazers_count": "8707",
+        "forks_count": "672",
+        "stargazers_count": "8803",
         "repositoryDescription": "Microsoft and GitHub Workers Support 996.ICU"
-    },
-    {
-        "name": "PySnooper",
-        "owner": {
-            "login": "cool-RR"
-        },
-        "full_name": "cool-RR/PySnooper",
-        "forks_count": "460",
-        "stargazers_count": "8594",
-        "language": "Python",
-        "repositoryDescription": "Never use print for debugging again"
-    },
-    {
-        "name": "stackprinter",
-        "owner": {
-            "login": "cknd"
-        },
-        "full_name": "cknd/stackprinter",
-        "forks_count": "12",
-        "stargazers_count": "566",
-        "language": "Python",
-        "repositoryDescription": "Debugging-friendly tracebacks for Python"
-    },
-    {
-        "name": "FlutterDouBan",
-        "owner": {
-            "login": "kaina404"
-        },
-        "full_name": "kaina404/FlutterDouBan",
-        "forks_count": "90",
-        "stargazers_count": "581",
-        "language": "Dart",
-        "repositoryDescription": "🔥\n🔥\n🔥\nFlutter豆瓣客户端,全网最100%还原豆瓣客户端。首页、书影音、小组、市集及个人中心，一个不拉 https://img.xuvip.top/douyademo.mp4"
-    },
-    {
-        "name": "golang-developer-roadmap-cn",
-        "owner": {
-            "login": "Quorafind"
-        },
-        "full_name": "Quorafind/golang-developer-roadmap-cn",
-        "forks_count": "191",
-        "stargazers_count": "1768",
-        "repositoryDescription": "在 2019 成为一名 Go 开发者的路线图。为学习 Go 的人而准备。"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "11714",
-        "stargazers_count": "37848",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "DoraemonKit",
-        "owner": {
-            "login": "didi"
-        },
-        "full_name": "didi/DoraemonKit",
-        "forks_count": "840",
-        "stargazers_count": "7583",
-        "language": "Java",
-        "repositoryDescription": "简称 \"DoKit\" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。"
     },
     {
         "name": "CS-Notes",
@@ -211,64 +212,63 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18062",
-        "stargazers_count": "59101",
+        "forks_count": "18082",
+        "stargazers_count": "59197",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识"
     },
     {
-        "name": "dirmap",
+        "name": "commit-messages-guide",
         "owner": {
-            "login": "H4ckForJob"
+            "login": "RomuloOliveira"
         },
-        "full_name": "H4ckForJob/dirmap",
-        "forks_count": "82",
-        "stargazers_count": "450",
+        "full_name": "RomuloOliveira/commit-messages-guide",
+        "forks_count": "190",
+        "stargazers_count": "4314",
+        "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
+    },
+    {
+        "name": "stackprinter",
+        "owner": {
+            "login": "cknd"
+        },
+        "full_name": "cknd/stackprinter",
+        "forks_count": "14",
+        "stargazers_count": "654",
         "language": "Python",
-        "repositoryDescription": "An advanced web directory scanning tool that will be more powerful than DirBuster, Dirsearch, cansina, and Yu Jian.一个高级web目录扫描工具，功能将会强于DirBuster、Dirsearch、cansina、御剑。"
+        "repositoryDescription": "Debugging-friendly tracebacks for Python"
     },
     {
-        "name": "pydockenv",
+        "name": "WeChatExtension-ForMac",
         "owner": {
-            "login": "se7entyse7en"
+            "login": "MustangYM"
         },
-        "full_name": "se7entyse7en/pydockenv",
-        "forks_count": "8",
-        "stargazers_count": "181",
-        "language": "Python",
-        "repositoryDescription": "Python virtual environment, but backed by Docker!"
+        "full_name": "MustangYM/WeChatExtension-ForMac",
+        "forks_count": "43",
+        "stargazers_count": "261",
+        "language": "Objective-C",
+        "repositoryDescription": "Mac版微信的功能拓展"
     },
     {
-        "name": "skywalking",
+        "name": "stretch",
         "owner": {
-            "login": "apache"
+            "login": "vislyhq"
         },
-        "full_name": "apache/skywalking",
-        "forks_count": "2243",
-        "stargazers_count": "8058",
-        "language": "Java",
-        "repositoryDescription": "APM, Application Performance Monitoring System"
+        "full_name": "vislyhq/stretch",
+        "forks_count": "17",
+        "stargazers_count": "683",
+        "language": "Rust",
+        "repositoryDescription": "High performance flexbox implementation written in rust"
     },
     {
-        "name": "picsum-photos",
+        "name": "pprint",
         "owner": {
-            "login": "DMarby"
+            "login": "p-ranav"
         },
-        "full_name": "DMarby/picsum-photos",
-        "forks_count": "87",
-        "stargazers_count": "1059",
-        "language": "Go",
-        "repositoryDescription": "Lorem Ipsum... but for photos."
-    },
-    {
-        "name": "tool",
-        "owner": {
-            "login": "Louiszhai"
-        },
-        "full_name": "Louiszhai/tool",
-        "forks_count": "286",
-        "stargazers_count": "3284",
-        "language": "JavaScript",
-        "repositoryDescription": "开发效率提升：Mac生产力工具链推荐"
+        "full_name": "p-ranav/pprint",
+        "forks_count": "16",
+        "stargazers_count": "385",
+        "language": "C++",
+        "repositoryDescription": "Pretty Printer for Modern C++"
     }
 ]

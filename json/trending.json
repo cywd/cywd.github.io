@@ -1,14 +1,14 @@
 [
     {
-        "name": "Python",
+        "name": "Python-100-Days",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "jackfrued"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "9535",
-        "stargazers_count": "33609",
+        "full_name": "jackfrued/Python-100-Days",
+        "forks_count": "2466",
+        "stargazers_count": "9121",
         "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
         "name": "synthwave-vscode",
@@ -16,10 +16,21 @@
             "login": "robb0wen"
         },
         "full_name": "robb0wen/synthwave-vscode",
-        "forks_count": "230",
-        "stargazers_count": "1084",
+        "forks_count": "307",
+        "stargazers_count": "1708",
         "language": "CSS",
         "repositoryDescription": "Synthwave inspired colour theme for VS Code\n🌅\n🕶"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "9665",
+        "stargazers_count": "34114",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "leetcode",
@@ -27,32 +38,10 @@
             "login": "azl397985856"
         },
         "full_name": "azl397985856/leetcode",
-        "forks_count": "240",
-        "stargazers_count": "2226",
+        "forks_count": "311",
+        "stargazers_count": "2666",
         "language": "JavaScript",
         "repositoryDescription": "leetcode题解，记录自己的leecode解题之路。"
-    },
-    {
-        "name": "smarchWatch_PUBLIC",
-        "owner": {
-            "login": "S-March"
-        },
-        "full_name": "S-March/smarchWatch_PUBLIC",
-        "forks_count": "49",
-        "stargazers_count": "533",
-        "language": "C",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "tsdx",
-        "owner": {
-            "login": "palmerhq"
-        },
-        "full_name": "palmerhq/tsdx",
-        "forks_count": "17",
-        "stargazers_count": "1040",
-        "language": "TypeScript",
-        "repositoryDescription": "Zero-config CLI for TypeScript package development"
     },
     {
         "name": "Data-Science--Cheat-Sheet",
@@ -60,42 +49,9 @@
             "login": "abhat222"
         },
         "full_name": "abhat222/Data-Science--Cheat-Sheet",
-        "forks_count": "1816",
-        "stargazers_count": "4106",
+        "forks_count": "1949",
+        "stargazers_count": "4528",
         "repositoryDescription": "Cheat Sheets"
-    },
-    {
-        "name": "996.ICU",
-        "owner": {
-            "login": "996icu"
-        },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "20907",
-        "stargazers_count": "240745",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "pastel",
-        "owner": {
-            "login": "vadimdemedes"
-        },
-        "full_name": "vadimdemedes/pastel",
-        "forks_count": "2",
-        "stargazers_count": "413",
-        "language": "JavaScript",
-        "repositoryDescription": "🎨\nFramework for effortlessly building Ink apps"
-    },
-    {
-        "name": "SOUL",
-        "owner": {
-            "login": "soul-lang"
-        },
-        "full_name": "soul-lang/SOUL",
-        "forks_count": "19",
-        "stargazers_count": "490",
-        "language": "JavaScript",
-        "repositoryDescription": "The SOUL programming language and API"
     },
     {
         "name": "gameboy.live",
@@ -103,21 +59,119 @@
             "login": "HFO4"
         },
         "full_name": "HFO4/gameboy.live",
-        "forks_count": "10",
-        "stargazers_count": "242",
+        "forks_count": "25",
+        "stargazers_count": "618",
         "language": "Go",
         "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
     },
     {
-        "name": "BuildXL",
+        "name": "botorch",
         "owner": {
-            "login": "Microsoft"
+            "login": "pytorch"
         },
-        "full_name": "Microsoft/BuildXL",
-        "forks_count": "36",
-        "stargazers_count": "318",
-        "language": "C#",
-        "repositoryDescription": "Microsoft Build Accelerator"
+        "full_name": "pytorch/botorch",
+        "forks_count": "19",
+        "stargazers_count": "370",
+        "language": "Python",
+        "repositoryDescription": "Bayesian optimization in PyTorch"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "2346",
+        "stargazers_count": "18147",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "996.ICU",
+        "owner": {
+            "login": "996icu"
+        },
+        "full_name": "996icu/996.ICU",
+        "forks_count": "20935",
+        "stargazers_count": "241013",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "tensorflow2_tutorials_chinese",
+        "owner": {
+            "login": "czy36mengfei"
+        },
+        "full_name": "czy36mengfei/tensorflow2_tutorials_chinese",
+        "forks_count": "122",
+        "stargazers_count": "555",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "tensorflow2中文教程，持续更新(当前版本:tensorflow2.0)，tag: tensorflow 2.0 tutorials"
+    },
+    {
+        "name": "Ax",
+        "owner": {
+            "login": "facebook"
+        },
+        "full_name": "facebook/Ax",
+        "forks_count": "14",
+        "stargazers_count": "248",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Adaptive Experimentation Platform"
+    },
+    {
+        "name": "smarchWatch_PUBLIC",
+        "owner": {
+            "login": "S-March"
+        },
+        "full_name": "S-March/smarchWatch_PUBLIC",
+        "forks_count": "64",
+        "stargazers_count": "703",
+        "language": "C",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "ipfs-deploy",
+        "owner": {
+            "login": "agentofuser"
+        },
+        "full_name": "agentofuser/ipfs-deploy",
+        "forks_count": "6",
+        "stargazers_count": "219",
+        "language": "JavaScript",
+        "repositoryDescription": "Zero-Config CLI to Deploy Static Websites to IPFS"
+    },
+    {
+        "name": "pastel",
+        "owner": {
+            "login": "vadimdemedes"
+        },
+        "full_name": "vadimdemedes/pastel",
+        "forks_count": "3",
+        "stargazers_count": "601",
+        "language": "JavaScript",
+        "repositoryDescription": "🎨\nFramework for effortlessly building Ink apps"
+    },
+    {
+        "name": "tsdx",
+        "owner": {
+            "login": "palmerhq"
+        },
+        "full_name": "palmerhq/tsdx",
+        "forks_count": "24",
+        "stargazers_count": "1208",
+        "language": "TypeScript",
+        "repositoryDescription": "Zero-config CLI for TypeScript package development"
+    },
+    {
+        "name": "graphql-birdseye",
+        "owner": {
+            "login": "Novvum"
+        },
+        "full_name": "Novvum/graphql-birdseye",
+        "forks_count": "8",
+        "stargazers_count": "353",
+        "language": "TypeScript",
+        "repositoryDescription": "View any GraphQL schema as a dynamic and interactive graph.\n🦅"
     },
     {
         "name": "uppy",
@@ -125,97 +179,10 @@
             "login": "transloadit"
         },
         "full_name": "transloadit/uppy",
-        "forks_count": "836",
-        "stargazers_count": "18536",
+        "forks_count": "843",
+        "stargazers_count": "18689",
         "language": "JavaScript",
         "repositoryDescription": "The next open source file uploader for web browsers\n🐶"
-    },
-    {
-        "name": "SymCrypt",
-        "owner": {
-            "login": "Microsoft"
-        },
-        "full_name": "Microsoft/SymCrypt",
-        "forks_count": "16",
-        "stargazers_count": "285",
-        "language": "C",
-        "repositoryDescription": "Cryptographic library"
-    },
-    {
-        "name": "svelte",
-        "owner": {
-            "login": "sveltejs"
-        },
-        "full_name": "sveltejs/svelte",
-        "forks_count": "482",
-        "stargazers_count": "13096",
-        "language": "JavaScript",
-        "repositoryDescription": "Cybernetically enhanced web apps"
-    },
-    {
-        "name": "jupytext",
-        "owner": {
-            "login": "mwouts"
-        },
-        "full_name": "mwouts/jupytext",
-        "forks_count": "108",
-        "stargazers_count": "2114",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Jupyter notebooks as Markdown documents, Julia, Python or R scripts"
-    },
-    {
-        "name": "PySnooper",
-        "owner": {
-            "login": "cool-RR"
-        },
-        "full_name": "cool-RR/PySnooper",
-        "forks_count": "468",
-        "stargazers_count": "8709",
-        "language": "Python",
-        "repositoryDescription": "Never use print for debugging again"
-    },
-    {
-        "name": "linux-command",
-        "owner": {
-            "login": "jaywcjlove"
-        },
-        "full_name": "jaywcjlove/linux-command",
-        "forks_count": "1301",
-        "stargazers_count": "5551",
-        "language": "HTML",
-        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
-    },
-    {
-        "name": "shepherd",
-        "owner": {
-            "login": "shipshapecode"
-        },
-        "full_name": "shipshapecode/shepherd",
-        "forks_count": "418",
-        "stargazers_count": "7079",
-        "language": "JavaScript",
-        "repositoryDescription": "Guide your users through a tour of your app"
-    },
-    {
-        "name": "support.996.ICU",
-        "owner": {
-            "login": "MSWorkers"
-        },
-        "full_name": "MSWorkers/support.996.ICU",
-        "forks_count": "672",
-        "stargazers_count": "8803",
-        "repositoryDescription": "Microsoft and GitHub Workers Support 996.ICU"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18082",
-        "stargazers_count": "59197",
-        "language": "Java",
-        "repositoryDescription": "📚\n技术面试必备基础知识"
     },
     {
         "name": "commit-messages-guide",
@@ -223,52 +190,84 @@
             "login": "RomuloOliveira"
         },
         "full_name": "RomuloOliveira/commit-messages-guide",
-        "forks_count": "190",
-        "stargazers_count": "4314",
+        "forks_count": "194",
+        "stargazers_count": "4464",
         "repositoryDescription": "A guide to understand the importance of commit messages and how to write them well"
     },
     {
-        "name": "stackprinter",
+        "name": "linux-command",
         "owner": {
-            "login": "cknd"
+            "login": "jaywcjlove"
         },
-        "full_name": "cknd/stackprinter",
-        "forks_count": "14",
-        "stargazers_count": "654",
+        "full_name": "jaywcjlove/linux-command",
+        "forks_count": "1317",
+        "stargazers_count": "5698",
+        "language": "HTML",
+        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
+    },
+    {
+        "name": "svelte",
+        "owner": {
+            "login": "sveltejs"
+        },
+        "full_name": "sveltejs/svelte",
+        "forks_count": "486",
+        "stargazers_count": "13257",
+        "language": "JavaScript",
+        "repositoryDescription": "Cybernetically enhanced web apps"
+    },
+    {
+        "name": "IsometricSass",
+        "owner": {
+            "login": "MorganCaron"
+        },
+        "full_name": "MorganCaron/IsometricSass",
+        "forks_count": "2",
+        "stargazers_count": "179",
+        "language": "HTML",
+        "repositoryDescription": "Sass library to make isometric 2D without javascript"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "18115",
+        "stargazers_count": "59292",
+        "language": "Java",
+        "repositoryDescription": "📚\n技术面试必备基础知识"
+    },
+    {
+        "name": "jupytext",
+        "owner": {
+            "login": "mwouts"
+        },
+        "full_name": "mwouts/jupytext",
+        "forks_count": "109",
+        "stargazers_count": "2233",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Jupyter notebooks as Markdown documents, Julia, Python or R scripts"
+    },
+    {
+        "name": "ui-libraries",
+        "owner": {
+            "login": "jefflombard"
+        },
+        "full_name": "jefflombard/ui-libraries",
+        "forks_count": "19",
+        "stargazers_count": "322",
+        "repositoryDescription": "A collection of UI Frameworks and their platform implementations."
+    },
+    {
+        "name": "PySnooper",
+        "owner": {
+            "login": "cool-RR"
+        },
+        "full_name": "cool-RR/PySnooper",
+        "forks_count": "477",
+        "stargazers_count": "8824",
         "language": "Python",
-        "repositoryDescription": "Debugging-friendly tracebacks for Python"
-    },
-    {
-        "name": "WeChatExtension-ForMac",
-        "owner": {
-            "login": "MustangYM"
-        },
-        "full_name": "MustangYM/WeChatExtension-ForMac",
-        "forks_count": "43",
-        "stargazers_count": "261",
-        "language": "Objective-C",
-        "repositoryDescription": "Mac版微信的功能拓展"
-    },
-    {
-        "name": "stretch",
-        "owner": {
-            "login": "vislyhq"
-        },
-        "full_name": "vislyhq/stretch",
-        "forks_count": "17",
-        "stargazers_count": "683",
-        "language": "Rust",
-        "repositoryDescription": "High performance flexbox implementation written in rust"
-    },
-    {
-        "name": "pprint",
-        "owner": {
-            "login": "p-ranav"
-        },
-        "full_name": "p-ranav/pprint",
-        "forks_count": "16",
-        "stargazers_count": "385",
-        "language": "C++",
-        "repositoryDescription": "Pretty Printer for Modern C++"
+        "repositoryDescription": "Never use print for debugging again"
     }
 ]

@@ -5,43 +5,10 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "2956",
-        "stargazers_count": "10721",
+        "forks_count": "3465",
+        "stargazers_count": "12102",
         "language": "HTML",
         "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "9930",
-        "stargazers_count": "35038",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "996.ICU",
-        "owner": {
-            "login": "996icu"
-        },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "20989",
-        "stargazers_count": "241513",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "dexon",
-        "owner": {
-            "login": "dexon-foundation"
-        },
-        "full_name": "dexon-foundation/dexon",
-        "forks_count": "37",
-        "stargazers_count": "772",
-        "language": "Go",
-        "repositoryDescription": "Official golang DEXON fullnode implementation"
     },
     {
         "name": "leetcode",
@@ -49,31 +16,21 @@
             "login": "azl397985856"
         },
         "full_name": "azl397985856/leetcode",
-        "forks_count": "389",
-        "stargazers_count": "3256",
+        "forks_count": "480",
+        "stargazers_count": "3845",
         "language": "JavaScript",
         "repositoryDescription": "leetcode题解，记录自己的leetcode解题之路。"
     },
     {
-        "name": "InAppViewDebugger",
+        "name": "Python",
         "owner": {
-            "login": "indragiek"
+            "login": "TheAlgorithms"
         },
-        "full_name": "indragiek/InAppViewDebugger",
-        "forks_count": "12",
-        "stargazers_count": "551",
-        "language": "Swift",
-        "repositoryDescription": "A UIView debugger (like Reveal or Xcode) that can be embedded in an app for on-device view debugging"
-    },
-    {
-        "name": "Data-Science--Cheat-Sheet",
-        "owner": {
-            "login": "abhat222"
-        },
-        "full_name": "abhat222/Data-Science--Cheat-Sheet",
-        "forks_count": "2096",
-        "stargazers_count": "4970",
-        "repositoryDescription": "Cheat Sheets"
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "10082",
+        "stargazers_count": "35540",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "LeetCodeAnimation",
@@ -81,97 +38,42 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "2416",
-        "stargazers_count": "18513",
+        "forks_count": "2502",
+        "stargazers_count": "19035",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "synthwave-vscode",
+        "name": "996.ICU",
         "owner": {
-            "login": "robb0wen"
+            "login": "996icu"
         },
-        "full_name": "robb0wen/synthwave-vscode",
-        "forks_count": "386",
-        "stargazers_count": "2243",
-        "language": "CSS",
-        "repositoryDescription": "Synthwave inspired colour theme for VS Code\n🌅\n🕶"
+        "full_name": "996icu/996.ICU",
+        "forks_count": "21038",
+        "stargazers_count": "241901",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
     {
-        "name": "faast.js",
+        "name": "komiser",
         "owner": {
-            "login": "faastjs"
+            "login": "mlabouardy"
         },
-        "full_name": "faastjs/faast.js",
-        "forks_count": "14",
-        "stargazers_count": "773",
-        "language": "TypeScript",
-        "repositoryDescription": "Serverless batch computing made simple."
-    },
-    {
-        "name": "terraformer",
-        "owner": {
-            "login": "GoogleCloudPlatform"
-        },
-        "full_name": "GoogleCloudPlatform/terraformer",
-        "forks_count": "16",
-        "stargazers_count": "305",
+        "full_name": "mlabouardy/komiser",
+        "forks_count": "69",
+        "stargazers_count": "1134",
         "language": "Go",
-        "repositoryDescription": "CLI tool to generate terraform files from existing infrastructure (reverse Terraform)."
+        "repositoryDescription": "AWS Environment Inspector\n👮"
     },
     {
-        "name": "gameboy.live",
+        "name": "auxpi",
         "owner": {
-            "login": "HFO4"
+            "login": "aimerforreimu"
         },
-        "full_name": "HFO4/gameboy.live",
-        "forks_count": "49",
-        "stargazers_count": "1003",
+        "full_name": "aimerforreimu/auxpi",
+        "forks_count": "111",
+        "stargazers_count": "936",
         "language": "Go",
-        "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
-    },
-    {
-        "name": "UnblockNeteaseMusic",
-        "owner": {
-            "login": "nondanee"
-        },
-        "full_name": "nondanee/UnblockNeteaseMusic",
-        "forks_count": "133",
-        "stargazers_count": "1277",
-        "language": "JavaScript",
-        "repositoryDescription": "Revive unavailable songs for Netease Cloud Music"
-    },
-    {
-        "name": "tml",
-        "owner": {
-            "login": "liamg"
-        },
-        "full_name": "liamg/tml",
-        "forks_count": "3",
-        "stargazers_count": "340",
-        "language": "Go",
-        "repositoryDescription": "🌈\n💻\n🎨\nA tiny markup language for terminal output. Makes formatting output in CLI apps easier!"
-    },
-    {
-        "name": "editor.js",
-        "owner": {
-            "login": "codex-team"
-        },
-        "full_name": "codex-team/editor.js",
-        "forks_count": "288",
-        "stargazers_count": "7835",
-        "language": "TypeScript",
-        "repositoryDescription": "A block-styled editor with clean JSON output"
-    },
-    {
-        "name": "nodebestpractices",
-        "owner": {
-            "login": "i0natan"
-        },
-        "full_name": "i0natan/nodebestpractices",
-        "forks_count": "2133",
-        "stargazers_count": "27639",
-        "language": "JavaScript",
-        "repositoryDescription": "✅\nThe largest Node.js best practices list (April 2019)"
+        "repositoryDescription": "🍭\n集合多家 API 的新一代图床"
     },
     {
         "name": "CS-Notes",
@@ -179,42 +81,21 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18192",
-        "stargazers_count": "59523",
+        "forks_count": "18269",
+        "stargazers_count": "59770",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
     {
-        "name": "termdash",
+        "name": "InAppViewDebugger",
         "owner": {
-            "login": "mum4k"
+            "login": "indragiek"
         },
-        "full_name": "mum4k/termdash",
-        "forks_count": "16",
-        "stargazers_count": "444",
-        "language": "Go",
-        "repositoryDescription": "Terminal based dashboard."
-    },
-    {
-        "name": "response",
-        "owner": {
-            "login": "monzo"
-        },
-        "full_name": "monzo/response",
-        "forks_count": "10",
-        "stargazers_count": "189",
-        "language": "JavaScript",
-        "repositoryDescription": "Monzo's real-time incident response and reporting tool\n⚡️"
-    },
-    {
-        "name": "industry-machine-learning",
-        "owner": {
-            "login": "firmai"
-        },
-        "full_name": "firmai/industry-machine-learning",
-        "forks_count": "16",
-        "stargazers_count": "154",
-        "repositoryDescription": "A curated list of applied machine learning and data science notebooks and libraries accross different industries."
+        "full_name": "indragiek/InAppViewDebugger",
+        "forks_count": "26",
+        "stargazers_count": "847",
+        "language": "Swift",
+        "repositoryDescription": "A UIView debugger (like Reveal or Xcode) that can be embedded in an app for on-device view debugging"
     },
     {
         "name": "tensorflow2_tutorials_chinese",
@@ -222,21 +103,21 @@
             "login": "czy36mengfei"
         },
         "full_name": "czy36mengfei/tensorflow2_tutorials_chinese",
-        "forks_count": "158",
-        "stargazers_count": "858",
+        "forks_count": "194",
+        "stargazers_count": "1062",
         "language": "Jupyter Notebook",
         "repositoryDescription": "tensorflow2中文教程，持续更新(当前版本:tensorflow2.0)，tag: tensorflow 2.0 tutorials"
     },
     {
-        "name": "manifold",
+        "name": "kratos",
         "owner": {
-            "login": "manifold-systems"
+            "login": "bilibili"
         },
-        "full_name": "manifold-systems/manifold",
-        "forks_count": "11",
-        "stargazers_count": "275",
-        "language": "Java",
-        "repositoryDescription": "Manifold re-energizes Java with powerful features like Type-safe Metaprogramming, Structural Typing, and Extension Methods."
+        "full_name": "bilibili/kratos",
+        "forks_count": "908",
+        "stargazers_count": "3556",
+        "language": "Go",
+        "repositoryDescription": "Kratos是bilibili开源的一套Go微服务框架，包含大量微服务相关框架及工具。"
     },
     {
         "name": "linux-command",
@@ -244,31 +125,151 @@
             "login": "jaywcjlove"
         },
         "full_name": "jaywcjlove/linux-command",
-        "forks_count": "1349",
-        "stargazers_count": "5914",
+        "forks_count": "1378",
+        "stargazers_count": "6098",
         "language": "HTML",
         "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
     },
     {
-        "name": "libpku",
+        "name": "JavaGuide",
         "owner": {
-            "login": "lib-pku"
+            "login": "Snailclimb"
         },
-        "full_name": "lib-pku/libpku",
-        "forks_count": "4966",
-        "stargazers_count": "16132",
-        "language": "JavaScript",
-        "repositoryDescription": "贵校课程资料民间整理"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "11844",
+        "stargazers_count": "38269",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "dexon-consensus",
+        "name": "gameboy.live",
+        "owner": {
+            "login": "HFO4"
+        },
+        "full_name": "HFO4/gameboy.live",
+        "forks_count": "59",
+        "stargazers_count": "1172",
+        "language": "Go",
+        "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
+    },
+    {
+        "name": "svelte",
+        "owner": {
+            "login": "sveltejs"
+        },
+        "full_name": "sveltejs/svelte",
+        "forks_count": "503",
+        "stargazers_count": "13654",
+        "language": "JavaScript",
+        "repositoryDescription": "Cybernetically enhanced web apps"
+    },
+    {
+        "name": "nodebestpractices",
+        "owner": {
+            "login": "i0natan"
+        },
+        "full_name": "i0natan/nodebestpractices",
+        "forks_count": "2150",
+        "stargazers_count": "27792",
+        "language": "JavaScript",
+        "repositoryDescription": "✅\nThe largest Node.js best practices list (April 2019)"
+    },
+    {
+        "name": "synthwave-vscode",
+        "owner": {
+            "login": "robb0wen"
+        },
+        "full_name": "robb0wen/synthwave-vscode",
+        "forks_count": "420",
+        "stargazers_count": "2400",
+        "language": "CSS",
+        "repositoryDescription": "Synthwave inspired colour theme for VS Code\n🌅\n🕶"
+    },
+    {
+        "name": "mr2",
+        "owner": {
+            "login": "txthinking"
+        },
+        "full_name": "txthinking/mr2",
+        "forks_count": "11",
+        "stargazers_count": "174",
+        "language": "Go",
+        "repositoryDescription": "Expose local server to external network"
+    },
+    {
+        "name": "ip2region",
+        "owner": {
+            "login": "lionsoul2014"
+        },
+        "full_name": "lionsoul2014/ip2region",
+        "forks_count": "1038",
+        "stargazers_count": "5902",
+        "language": "Java",
+        "repositoryDescription": "Ip2region is a offline IP location library with accuracy rate of 99.9% and 0.0x millseconds searching performance. DB file is less then 5Mb with all ip address stored. binding for Java,PHP,C,Python,Nodejs,Golang,C#,lua. Binary,B-tree,Memory searching algorithm"
+    },
+    {
+        "name": "dexon",
         "owner": {
             "login": "dexon-foundation"
         },
-        "full_name": "dexon-foundation/dexon-consensus",
-        "forks_count": "16",
-        "stargazers_count": "329",
+        "full_name": "dexon-foundation/dexon",
+        "forks_count": "42",
+        "stargazers_count": "919",
         "language": "Go",
-        "repositoryDescription": "DEXON consensus Implementation & Simulation"
+        "repositoryDescription": "Official golang DEXON fullnode implementation"
+    },
+    {
+        "name": "UnblockNeteaseMusic",
+        "owner": {
+            "login": "nondanee"
+        },
+        "full_name": "nondanee/UnblockNeteaseMusic",
+        "forks_count": "153",
+        "stargazers_count": "1424",
+        "language": "JavaScript",
+        "repositoryDescription": "Revive unavailable songs for Netease Cloud Music"
+    },
+    {
+        "name": "terraformer",
+        "owner": {
+            "login": "GoogleCloudPlatform"
+        },
+        "full_name": "GoogleCloudPlatform/terraformer",
+        "forks_count": "20",
+        "stargazers_count": "457",
+        "language": "Go",
+        "repositoryDescription": "CLI tool to generate terraform files from existing infrastructure (reverse Terraform)."
+    },
+    {
+        "name": "industry-machine-learning",
+        "owner": {
+            "login": "firmai"
+        },
+        "full_name": "firmai/industry-machine-learning",
+        "forks_count": "26",
+        "stargazers_count": "291",
+        "repositoryDescription": "A curated list of applied machine learning and data science notebooks and libraries accross different industries."
+    },
+    {
+        "name": "response",
+        "owner": {
+            "login": "monzo"
+        },
+        "full_name": "monzo/response",
+        "forks_count": "13",
+        "stargazers_count": "320",
+        "language": "JavaScript",
+        "repositoryDescription": "Monzo's real-time incident response and reporting tool\n⚡️"
+    },
+    {
+        "name": "manifold",
+        "owner": {
+            "login": "manifold-systems"
+        },
+        "full_name": "manifold-systems/manifold",
+        "forks_count": "16",
+        "stargazers_count": "393",
+        "language": "Java",
+        "repositoryDescription": "Manifold re-energizes Java with powerful features like Type-safe Metaprogramming, Structural Typing, and Extension Methods."
     }
 ]

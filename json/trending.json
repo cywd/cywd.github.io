@@ -1,25 +1,46 @@
 [
     {
+        "name": "Terminal",
+        "owner": {
+            "login": "microsoft"
+        },
+        "full_name": "microsoft/Terminal",
+        "forks_count": "1246",
+        "stargazers_count": "15671",
+        "language": "C++",
+        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
+    },
+    {
         "name": "Python-100-Days",
         "owner": {
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "4396",
-        "stargazers_count": "14227",
+        "forks_count": "5220",
+        "stargazers_count": "16394",
         "language": "HTML",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
-        "name": "dexon",
+        "name": "go-perfbook",
         "owner": {
-            "login": "dexon-foundation"
+            "login": "dgryski"
         },
-        "full_name": "dexon-foundation/dexon",
-        "forks_count": "65",
-        "stargazers_count": "1820",
-        "language": "Go",
-        "repositoryDescription": "Official golang DEXON fullnode implementation"
+        "full_name": "dgryski/go-perfbook",
+        "forks_count": "284",
+        "stargazers_count": "6064",
+        "repositoryDescription": "Thoughts on Go performance optimization"
+    },
+    {
+        "name": "react-native-windows",
+        "owner": {
+            "login": "microsoft"
+        },
+        "full_name": "microsoft/react-native-windows",
+        "forks_count": "577",
+        "stargazers_count": "7407",
+        "language": "C#",
+        "repositoryDescription": "A framework for building native Windows apps with React."
     },
     {
         "name": "Python",
@@ -27,32 +48,10 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "10231",
-        "stargazers_count": "36052",
+        "forks_count": "10430",
+        "stargazers_count": "36765",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "dexon-consensus",
-        "owner": {
-            "login": "dexon-foundation"
-        },
-        "full_name": "dexon-foundation/dexon-consensus",
-        "forks_count": "23",
-        "stargazers_count": "979",
-        "language": "Go",
-        "repositoryDescription": "DEXON consensus Implementation & Simulation"
-    },
-    {
-        "name": "MNN",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/MNN",
-        "forks_count": "97",
-        "stargazers_count": "519",
-        "language": "C++",
-        "repositoryDescription": "MNN is a lightweight deep neural network inference engine."
     },
     {
         "name": "LeetCodeAnimation",
@@ -60,9 +59,31 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "2594",
-        "stargazers_count": "19499",
+        "forks_count": "2691",
+        "stargazers_count": "20096",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "MNN",
+        "owner": {
+            "login": "alibaba"
+        },
+        "full_name": "alibaba/MNN",
+        "forks_count": "199",
+        "stargazers_count": "1048",
+        "language": "C++",
+        "repositoryDescription": "MNN is a lightweight deep neural network inference engine."
+    },
+    {
+        "name": "dexon",
+        "owner": {
+            "login": "dexon-foundation"
+        },
+        "full_name": "dexon-foundation/dexon",
+        "forks_count": "82",
+        "stargazers_count": "2099",
+        "language": "Go",
+        "repositoryDescription": "Official golang DEXON fullnode implementation"
     },
     {
         "name": "996.ICU",
@@ -70,21 +91,10 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "21081",
-        "stargazers_count": "242235",
+        "forks_count": "21125",
+        "stargazers_count": "242595",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "sqlflow",
-        "owner": {
-            "login": "sql-machine-learning"
-        },
-        "full_name": "sql-machine-learning/sqlflow",
-        "forks_count": "92",
-        "stargazers_count": "513",
-        "language": "Go",
-        "repositoryDescription": "Brings SQL and AI together."
     },
     {
         "name": "leetcode",
@@ -92,10 +102,21 @@
             "login": "azl397985856"
         },
         "full_name": "azl397985856/leetcode",
-        "forks_count": "541",
-        "stargazers_count": "4222",
+        "forks_count": "618",
+        "stargazers_count": "4660",
         "language": "JavaScript",
         "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+    },
+    {
+        "name": "sqlflow",
+        "owner": {
+            "login": "sql-machine-learning"
+        },
+        "full_name": "sql-machine-learning/sqlflow",
+        "forks_count": "139",
+        "stargazers_count": "920",
+        "language": "Go",
+        "repositoryDescription": "Brings SQL and AI together."
     },
     {
         "name": "server",
@@ -103,8 +124,8 @@
             "login": "wildfirechat"
         },
         "full_name": "wildfirechat/server",
-        "forks_count": "244",
-        "stargazers_count": "1350",
+        "forks_count": "294",
+        "stargazers_count": "1684",
         "language": "Java",
         "repositoryDescription": "全开源即时通讯(IM)系统"
     },
@@ -114,54 +135,53 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18359",
-        "stargazers_count": "60049",
+        "forks_count": "18426",
+        "stargazers_count": "60346",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
     {
-        "name": "komiser",
+        "name": "dexon-consensus",
         "owner": {
-            "login": "mlabouardy"
+            "login": "dexon-foundation"
         },
-        "full_name": "mlabouardy/komiser",
-        "forks_count": "75",
-        "stargazers_count": "1401",
+        "full_name": "dexon-foundation/dexon-consensus",
+        "forks_count": "37",
+        "stargazers_count": "1207",
         "language": "Go",
-        "repositoryDescription": "AWS Environment Inspector\n👮"
+        "repositoryDescription": "DEXON consensus Implementation & Simulation"
     },
     {
-        "name": "beam",
+        "name": "code-server",
         "owner": {
-            "login": "eBay"
+            "login": "cdr"
         },
-        "full_name": "eBay/beam",
-        "forks_count": "38",
-        "stargazers_count": "981",
-        "language": "Go",
-        "repositoryDescription": "A distributed knowledge graph store"
+        "full_name": "cdr/code-server",
+        "forks_count": "1024",
+        "stargazers_count": "18466",
+        "language": "TypeScript",
+        "repositoryDescription": "Run VS Code on a remote server."
     },
     {
-        "name": "ip2region",
+        "name": "PowerToys",
         "owner": {
-            "login": "lionsoul2014"
+            "login": "microsoft"
         },
-        "full_name": "lionsoul2014/ip2region",
-        "forks_count": "1069",
-        "stargazers_count": "6111",
-        "language": "Java",
-        "repositoryDescription": "Ip2region is a offline IP location library with accuracy rate of 99.9% and 0.0x millseconds searching performance. DB file is less then 5Mb with all ip address stored. binding for Java,PHP,C,Python,Nodejs,Golang,C#,lua. Binary,B-tree,Memory searching algorithm"
+        "full_name": "microsoft/PowerToys",
+        "forks_count": "8",
+        "stargazers_count": "350",
+        "repositoryDescription": "Windows system utilities to maximize productivity"
     },
     {
-        "name": "auxpi",
+        "name": "keda",
         "owner": {
-            "login": "aimerforreimu"
+            "login": "kedacore"
         },
-        "full_name": "aimerforreimu/auxpi",
-        "forks_count": "123",
-        "stargazers_count": "1136",
+        "full_name": "kedacore/keda",
+        "forks_count": "13",
+        "stargazers_count": "334",
         "language": "Go",
-        "repositoryDescription": "🍭\n集合多家 API 的新一代图床"
+        "repositoryDescription": "KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes"
     },
     {
         "name": "nodebestpractices",
@@ -169,8 +189,8 @@
             "login": "i0natan"
         },
         "full_name": "i0natan/nodebestpractices",
-        "forks_count": "2164",
-        "stargazers_count": "27993",
+        "forks_count": "2176",
+        "stargazers_count": "28251",
         "language": "JavaScript",
         "repositoryDescription": "✅\nThe largest Node.js best practices list (April 2019)"
     },
@@ -180,64 +200,54 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "11907",
-        "stargazers_count": "38423",
+        "forks_count": "11980",
+        "stargazers_count": "38648",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "mr2",
+        "name": "vscode",
         "owner": {
-            "login": "txthinking"
+            "login": "microsoft"
         },
-        "full_name": "txthinking/mr2",
-        "forks_count": "16",
-        "stargazers_count": "358",
+        "full_name": "microsoft/vscode",
+        "forks_count": "10253",
+        "stargazers_count": "75101",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual Studio Code"
+    },
+    {
+        "name": "react-material-dashboard",
+        "owner": {
+            "login": "devias-io"
+        },
+        "full_name": "devias-io/react-material-dashboard",
+        "forks_count": "13",
+        "stargazers_count": "279",
+        "language": "JavaScript",
+        "repositoryDescription": "React Dashboard made with Material UI’s components, React and of course create-react-app to boost your app development process!"
+    },
+    {
+        "name": "NeuronBlocks",
+        "owner": {
+            "login": "microsoft"
+        },
+        "full_name": "microsoft/NeuronBlocks",
+        "forks_count": "61",
+        "stargazers_count": "419",
+        "language": "Python",
+        "repositoryDescription": "NLP DNN Toolkit - Building Your NLP DNN Models Like Playing Lego"
+    },
+    {
+        "name": "beam",
+        "owner": {
+            "login": "eBay"
+        },
+        "full_name": "eBay/beam",
+        "forks_count": "47",
+        "stargazers_count": "1137",
         "language": "Go",
-        "repositoryDescription": "Expose local server to external network"
-    },
-    {
-        "name": "kratos",
-        "owner": {
-            "login": "bilibili"
-        },
-        "full_name": "bilibili/kratos",
-        "forks_count": "926",
-        "stargazers_count": "3727",
-        "language": "Go",
-        "repositoryDescription": "Kratos是bilibili开源的一套Go微服务框架，包含大量微服务相关框架及工具。"
-    },
-    {
-        "name": "industry-machine-learning",
-        "owner": {
-            "login": "firmai"
-        },
-        "full_name": "firmai/industry-machine-learning",
-        "forks_count": "51",
-        "stargazers_count": "463",
-        "repositoryDescription": "A curated list of applied machine learning and data science notebooks and libraries accross different industries."
-    },
-    {
-        "name": "synthwave-vscode",
-        "owner": {
-            "login": "robb0wen"
-        },
-        "full_name": "robb0wen/synthwave-vscode",
-        "forks_count": "451",
-        "stargazers_count": "2571",
-        "language": "CSS",
-        "repositoryDescription": "Synthwave inspired colour theme for VS Code\n🌅\n🕶"
-    },
-    {
-        "name": "InAppViewDebugger",
-        "owner": {
-            "login": "indragiek"
-        },
-        "full_name": "indragiek/InAppViewDebugger",
-        "forks_count": "34",
-        "stargazers_count": "1022",
-        "language": "Swift",
-        "repositoryDescription": "A UIView debugger (like Reveal or Xcode) that can be embedded in an app for on-device view debugging"
+        "repositoryDescription": "A distributed knowledge graph store"
     },
     {
         "name": "svelte",
@@ -245,31 +255,20 @@
             "login": "sveltejs"
         },
         "full_name": "sveltejs/svelte",
-        "forks_count": "508",
-        "stargazers_count": "13830",
+        "forks_count": "512",
+        "stargazers_count": "13997",
         "language": "JavaScript",
         "repositoryDescription": "Cybernetically enhanced web apps"
     },
     {
-        "name": "linux-command",
+        "name": "PySnooper",
         "owner": {
-            "login": "jaywcjlove"
+            "login": "cool-RR"
         },
-        "full_name": "jaywcjlove/linux-command",
-        "forks_count": "1401",
-        "stargazers_count": "6253",
-        "language": "HTML",
-        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
-    },
-    {
-        "name": "tensorflow2_tutorials_chinese",
-        "owner": {
-            "login": "czy36mengfei"
-        },
-        "full_name": "czy36mengfei/tensorflow2_tutorials_chinese",
-        "forks_count": "216",
-        "stargazers_count": "1216",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "tensorflow2中文教程，持续更新(当前版本:tensorflow2.0)，tag: tensorflow 2.0 tutorials"
+        "full_name": "cool-RR/PySnooper",
+        "forks_count": "532",
+        "stargazers_count": "9468",
+        "language": "Python",
+        "repositoryDescription": "Never use print for debugging again"
     }
 ]

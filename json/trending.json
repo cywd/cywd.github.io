@@ -5,8 +5,8 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/Terminal",
-        "forks_count": "2162",
-        "stargazers_count": "24814",
+        "forks_count": "2542",
+        "stargazers_count": "28826",
         "language": "C++",
         "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
@@ -16,96 +16,21 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "5864",
-        "stargazers_count": "18143",
+        "forks_count": "6483",
+        "stargazers_count": "19830",
         "language": "HTML",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
-        "name": "flutter_web",
+        "name": "css-only-chat",
         "owner": {
-            "login": "flutter"
+            "login": "kkuchta"
         },
-        "full_name": "flutter/flutter_web",
-        "forks_count": "36",
-        "stargazers_count": "1231",
-        "language": "Dart",
-        "repositoryDescription": "Bring your Flutter code to web browsers"
-    },
-    {
-        "name": "react-native-windows",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/react-native-windows",
-        "forks_count": "609",
-        "stargazers_count": "8100",
-        "language": "C#",
-        "repositoryDescription": "A framework for building native Windows apps with React."
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "2815",
-        "stargazers_count": "20717",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "10581",
-        "stargazers_count": "37270",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "leetcode",
-        "owner": {
-            "login": "azl397985856"
-        },
-        "full_name": "azl397985856/leetcode",
-        "forks_count": "727",
-        "stargazers_count": "5211",
-        "language": "JavaScript",
-        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
-    },
-    {
-        "name": "go-perfbook",
-        "owner": {
-            "login": "dgryski"
-        },
-        "full_name": "dgryski/go-perfbook",
-        "forks_count": "303",
-        "stargazers_count": "6517",
-        "repositoryDescription": "Thoughts on Go performance optimization"
-    },
-    {
-        "name": "sqlflow",
-        "owner": {
-            "login": "sql-machine-learning"
-        },
-        "full_name": "sql-machine-learning/sqlflow",
-        "forks_count": "207",
-        "stargazers_count": "1409",
-        "language": "Go",
-        "repositoryDescription": "Brings SQL and AI together."
-    },
-    {
-        "name": "996.ICU",
-        "owner": {
-            "login": "996icu"
-        },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "21161",
-        "stargazers_count": "242919",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+        "full_name": "kkuchta/css-only-chat",
+        "forks_count": "86",
+        "stargazers_count": "2878",
+        "language": "Ruby",
+        "repositoryDescription": "A truly monstrous async web chat using no JS whatsoever on the frontend"
     },
     {
         "name": "PowerToys",
@@ -113,20 +38,53 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/PowerToys",
-        "forks_count": "22",
-        "stargazers_count": "804",
+        "forks_count": "54",
+        "stargazers_count": "1738",
         "repositoryDescription": "Windows system utilities to maximize productivity"
     },
     {
-        "name": "flutter",
+        "name": "cssfx",
+        "owner": {
+            "login": "jolaleye"
+        },
+        "full_name": "jolaleye/cssfx",
+        "forks_count": "47",
+        "stargazers_count": "1106",
+        "language": "Vue",
+        "repositoryDescription": "✨\nBeautifully simple click-to-copy CSS effects"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "2943",
+        "stargazers_count": "21452",
+        "language": "Java",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "flutter_web",
         "owner": {
             "login": "flutter"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "6953",
-        "stargazers_count": "62619",
+        "full_name": "flutter/flutter_web",
+        "forks_count": "63",
+        "stargazers_count": "1845",
         "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "repositoryDescription": "Bring your Flutter code to web browsers"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "10689",
+        "stargazers_count": "37625",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "CS-Notes",
@@ -134,21 +92,129 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18508",
-        "stargazers_count": "60641",
+        "forks_count": "18615",
+        "stargazers_count": "60997",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
     {
-        "name": "vscode",
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "6987",
+        "stargazers_count": "62958",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "linux-command",
+        "owner": {
+            "login": "jaywcjlove"
+        },
+        "full_name": "jaywcjlove/linux-command",
+        "forks_count": "1538",
+        "stargazers_count": "6751",
+        "language": "HTML",
+        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
+    },
+    {
+        "name": "996.ICU",
+        "owner": {
+            "login": "996icu"
+        },
+        "full_name": "996icu/996.ICU",
+        "forks_count": "21170",
+        "stargazers_count": "243190",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "pysot",
+        "owner": {
+            "login": "STVIR"
+        },
+        "full_name": "STVIR/pysot",
+        "forks_count": "44",
+        "stargazers_count": "398",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "formation",
+        "owner": {
+            "login": "minamarkham"
+        },
+        "full_name": "minamarkham/formation",
+        "forks_count": "64",
+        "stargazers_count": "920",
+        "language": "Shell",
+        "repositoryDescription": "💻\nmacOS setup script for front-end development"
+    },
+    {
+        "name": "react-native-windows",
         "owner": {
             "login": "microsoft"
         },
-        "full_name": "microsoft/vscode",
-        "forks_count": "10273",
-        "stargazers_count": "75310",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
+        "full_name": "microsoft/react-native-windows",
+        "forks_count": "622",
+        "stargazers_count": "8360",
+        "language": "C#",
+        "repositoryDescription": "A framework for building native Windows apps with React."
+    },
+    {
+        "name": "leetcode",
+        "owner": {
+            "login": "azl397985856"
+        },
+        "full_name": "azl397985856/leetcode",
+        "forks_count": "774",
+        "stargazers_count": "5471",
+        "language": "JavaScript",
+        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+    },
+    {
+        "name": "fusuma",
+        "owner": {
+            "login": "hiroppy"
+        },
+        "full_name": "hiroppy/fusuma",
+        "forks_count": "34",
+        "stargazers_count": "825",
+        "language": "CSS",
+        "repositoryDescription": "✍️\nMake slides with Markdown easily."
+    },
+    {
+        "name": "sqlflow",
+        "owner": {
+            "login": "sql-machine-learning"
+        },
+        "full_name": "sql-machine-learning/sqlflow",
+        "forks_count": "237",
+        "stargazers_count": "1661",
+        "language": "Go",
+        "repositoryDescription": "Brings SQL and AI together."
+    },
+    {
+        "name": "Web",
+        "owner": {
+            "login": "qianguyihao"
+        },
+        "full_name": "qianguyihao/Web",
+        "forks_count": "1159",
+        "stargazers_count": "3670",
+        "language": "JavaScript",
+        "repositoryDescription": "Web前端入门和进阶学习笔记，超详细的前端学习图文教程。从零开始学前端，做一个Web全栈工程师。持续更新..."
+    },
+    {
+        "name": "go-perfbook",
+        "owner": {
+            "login": "dgryski"
+        },
+        "full_name": "dgryski/go-perfbook",
+        "forks_count": "312",
+        "stargazers_count": "6708",
+        "repositoryDescription": "Thoughts on Go performance optimization"
     },
     {
         "name": "JavaGuide",
@@ -156,21 +222,32 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "12053",
-        "stargazers_count": "38839",
+        "forks_count": "12102",
+        "stargazers_count": "38999",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "keda",
+        "name": "vscode",
         "owner": {
-            "login": "kedacore"
+            "login": "microsoft"
         },
-        "full_name": "kedacore/keda",
-        "forks_count": "21",
-        "stargazers_count": "565",
-        "language": "Go",
-        "repositoryDescription": "KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes"
+        "full_name": "microsoft/vscode",
+        "forks_count": "10286",
+        "stargazers_count": "75473",
+        "language": "TypeScript",
+        "repositoryDescription": "Visual Studio Code"
+    },
+    {
+        "name": "react-material-dashboard",
+        "owner": {
+            "login": "devias-io"
+        },
+        "full_name": "devias-io/react-material-dashboard",
+        "forks_count": "50",
+        "stargazers_count": "611",
+        "language": "JavaScript",
+        "repositoryDescription": "React Dashboard made with Material UI’s components, React and of course create-react-app to boost your app development process!"
     },
     {
         "name": "MNN",
@@ -178,8 +255,8 @@
             "login": "alibaba"
         },
         "full_name": "alibaba/MNN",
-        "forks_count": "232",
-        "stargazers_count": "1271",
+        "forks_count": "257",
+        "stargazers_count": "1433",
         "language": "C++",
         "repositoryDescription": "MNN is a lightweight deep neural network inference engine."
     },
@@ -189,86 +266,9 @@
             "login": "baidu"
         },
         "full_name": "baidu/amis",
-        "forks_count": "45",
-        "stargazers_count": "492",
+        "forks_count": "60",
+        "stargazers_count": "628",
         "language": "TypeScript",
         "repositoryDescription": "一种基于特定 JSON 格式生成 MIS 页面的工具"
-    },
-    {
-        "name": "nodebestpractices",
-        "owner": {
-            "login": "i0natan"
-        },
-        "full_name": "i0natan/nodebestpractices",
-        "forks_count": "2188",
-        "stargazers_count": "28420",
-        "language": "JavaScript",
-        "repositoryDescription": "✅\nThe largest Node.js best practices list (April 2019)"
-    },
-    {
-        "name": "MobileIMSDK",
-        "owner": {
-            "login": "JackJiang2011"
-        },
-        "full_name": "JackJiang2011/MobileIMSDK",
-        "forks_count": "608",
-        "stargazers_count": "2120",
-        "language": "Objective-C",
-        "repositoryDescription": "一个专为移动端开发的原创即时通讯框架，超轻量级、高度提炼，完全基于UDP协议，支持iOS、Android、标准Java平台，服务端基于Mina和Netty编写。"
-    },
-    {
-        "name": "react-material-dashboard",
-        "owner": {
-            "login": "devias-io"
-        },
-        "full_name": "devias-io/react-material-dashboard",
-        "forks_count": "32",
-        "stargazers_count": "472",
-        "language": "JavaScript",
-        "repositoryDescription": "React Dashboard made with Material UI’s components, React and of course create-react-app to boost your app development process!"
-    },
-    {
-        "name": "server",
-        "owner": {
-            "login": "wildfirechat"
-        },
-        "full_name": "wildfirechat/server",
-        "forks_count": "324",
-        "stargazers_count": "1840",
-        "language": "Java",
-        "repositoryDescription": "全开源即时通讯(IM)系统"
-    },
-    {
-        "name": "PySnooper",
-        "owner": {
-            "login": "cool-RR"
-        },
-        "full_name": "cool-RR/PySnooper",
-        "forks_count": "545",
-        "stargazers_count": "9615",
-        "language": "Python",
-        "repositoryDescription": "Never use print for debugging again"
-    },
-    {
-        "name": "code-server",
-        "owner": {
-            "login": "cdr"
-        },
-        "full_name": "cdr/code-server",
-        "forks_count": "1037",
-        "stargazers_count": "18599",
-        "language": "TypeScript",
-        "repositoryDescription": "Run VS Code on a remote server."
-    },
-    {
-        "name": "tensorflow",
-        "owner": {
-            "login": "tensorflow"
-        },
-        "full_name": "tensorflow/tensorflow",
-        "forks_count": "74430",
-        "stargazers_count": "127086",
-        "language": "C++",
-        "repositoryDescription": "An Open Source Machine Learning Framework for Everyone"
     }
 ]

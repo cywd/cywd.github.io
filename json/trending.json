@@ -5,8 +5,8 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/Terminal",
-        "forks_count": "2542",
-        "stargazers_count": "28826",
+        "forks_count": "2761",
+        "stargazers_count": "31405",
         "language": "C++",
         "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
@@ -16,31 +16,10 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "6483",
-        "stargazers_count": "19830",
+        "forks_count": "6956",
+        "stargazers_count": "21036",
         "language": "HTML",
         "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "css-only-chat",
-        "owner": {
-            "login": "kkuchta"
-        },
-        "full_name": "kkuchta/css-only-chat",
-        "forks_count": "86",
-        "stargazers_count": "2878",
-        "language": "Ruby",
-        "repositoryDescription": "A truly monstrous async web chat using no JS whatsoever on the frontend"
-    },
-    {
-        "name": "PowerToys",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/PowerToys",
-        "forks_count": "54",
-        "stargazers_count": "1738",
-        "repositoryDescription": "Windows system utilities to maximize productivity"
     },
     {
         "name": "cssfx",
@@ -48,8 +27,8 @@
             "login": "jolaleye"
         },
         "full_name": "jolaleye/cssfx",
-        "forks_count": "47",
-        "stargazers_count": "1106",
+        "forks_count": "73",
+        "stargazers_count": "1942",
         "language": "Vue",
         "repositoryDescription": "✨\nBeautifully simple click-to-copy CSS effects"
     },
@@ -59,119 +38,21 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "2943",
-        "stargazers_count": "21452",
+        "forks_count": "3039",
+        "stargazers_count": "22056",
         "language": "Java",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "flutter_web",
+        "name": "css-only-chat",
         "owner": {
-            "login": "flutter"
+            "login": "kkuchta"
         },
-        "full_name": "flutter/flutter_web",
-        "forks_count": "63",
-        "stargazers_count": "1845",
-        "language": "Dart",
-        "repositoryDescription": "Bring your Flutter code to web browsers"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "10689",
-        "stargazers_count": "37625",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18615",
-        "stargazers_count": "60997",
-        "language": "Java",
-        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
-    },
-    {
-        "name": "flutter",
-        "owner": {
-            "login": "flutter"
-        },
-        "full_name": "flutter/flutter",
-        "forks_count": "6987",
-        "stargazers_count": "62958",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
-    },
-    {
-        "name": "linux-command",
-        "owner": {
-            "login": "jaywcjlove"
-        },
-        "full_name": "jaywcjlove/linux-command",
-        "forks_count": "1538",
-        "stargazers_count": "6751",
-        "language": "HTML",
-        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
-    },
-    {
-        "name": "996.ICU",
-        "owner": {
-            "login": "996icu"
-        },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "21170",
-        "stargazers_count": "243190",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
-    },
-    {
-        "name": "pysot",
-        "owner": {
-            "login": "STVIR"
-        },
-        "full_name": "STVIR/pysot",
-        "forks_count": "44",
-        "stargazers_count": "398",
-        "repositoryDescription": ""
-    },
-    {
-        "name": "formation",
-        "owner": {
-            "login": "minamarkham"
-        },
-        "full_name": "minamarkham/formation",
-        "forks_count": "64",
-        "stargazers_count": "920",
-        "language": "Shell",
-        "repositoryDescription": "💻\nmacOS setup script for front-end development"
-    },
-    {
-        "name": "react-native-windows",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/react-native-windows",
-        "forks_count": "622",
-        "stargazers_count": "8360",
-        "language": "C#",
-        "repositoryDescription": "A framework for building native Windows apps with React."
-    },
-    {
-        "name": "leetcode",
-        "owner": {
-            "login": "azl397985856"
-        },
-        "full_name": "azl397985856/leetcode",
-        "forks_count": "774",
-        "stargazers_count": "5471",
-        "language": "JavaScript",
-        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+        "full_name": "kkuchta/css-only-chat",
+        "forks_count": "119",
+        "stargazers_count": "3422",
+        "language": "Ruby",
+        "repositoryDescription": "A truly monstrous async web chat using no JS whatsoever on the frontend"
     },
     {
         "name": "fusuma",
@@ -179,21 +60,75 @@
             "login": "hiroppy"
         },
         "full_name": "hiroppy/fusuma",
-        "forks_count": "34",
-        "stargazers_count": "825",
+        "forks_count": "50",
+        "stargazers_count": "1332",
         "language": "CSS",
-        "repositoryDescription": "✍️\nMake slides with Markdown easily."
+        "repositoryDescription": "✍️\nFusuma makes slides with Markdown easily."
     },
     {
-        "name": "sqlflow",
+        "name": "graphics",
         "owner": {
-            "login": "sql-machine-learning"
+            "login": "tensorflow"
         },
-        "full_name": "sql-machine-learning/sqlflow",
-        "forks_count": "237",
-        "stargazers_count": "1661",
-        "language": "Go",
-        "repositoryDescription": "Brings SQL and AI together."
+        "full_name": "tensorflow/graphics",
+        "forks_count": "31",
+        "stargazers_count": "591",
+        "language": "Python",
+        "repositoryDescription": "TensorFlow Graphics: Differentiable Graphics Layers for TensorFlow"
+    },
+    {
+        "name": "edgedb",
+        "owner": {
+            "login": "edgedb"
+        },
+        "full_name": "edgedb/edgedb",
+        "forks_count": "43",
+        "stargazers_count": "2165",
+        "language": "Python",
+        "repositoryDescription": "The next generation object-relational database. A @MagicStack project."
+    },
+    {
+        "name": "PowerToys",
+        "owner": {
+            "login": "microsoft"
+        },
+        "full_name": "microsoft/PowerToys",
+        "forks_count": "62",
+        "stargazers_count": "2148",
+        "repositoryDescription": "Windows system utilities to maximize productivity"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "10796",
+        "stargazers_count": "37977",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "flutter_web",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter_web",
+        "forks_count": "77",
+        "stargazers_count": "2179",
+        "language": "Dart",
+        "repositoryDescription": "Bring your Flutter code to web browsers"
+    },
+    {
+        "name": "wasm-micro-runtime",
+        "owner": {
+            "login": "intel"
+        },
+        "full_name": "intel/wasm-micro-runtime",
+        "forks_count": "19",
+        "stargazers_count": "392",
+        "language": "C",
+        "repositoryDescription": ""
     },
     {
         "name": "Web",
@@ -201,10 +136,74 @@
             "login": "qianguyihao"
         },
         "full_name": "qianguyihao/Web",
-        "forks_count": "1159",
-        "stargazers_count": "3670",
+        "forks_count": "1205",
+        "stargazers_count": "3962",
         "language": "JavaScript",
         "repositoryDescription": "Web前端入门和进阶学习笔记，超详细的前端学习图文教程。从零开始学前端，做一个Web全栈工程师。持续更新..."
+    },
+    {
+        "name": "awesome-product-design",
+        "owner": {
+            "login": "teoga"
+        },
+        "full_name": "teoga/awesome-product-design",
+        "forks_count": "42",
+        "stargazers_count": "662",
+        "repositoryDescription": "A collection of bookmarks, resources, articles for product designers."
+    },
+    {
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "7027",
+        "stargazers_count": "63221",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "996.ICU",
+        "owner": {
+            "login": "996icu"
+        },
+        "full_name": "996icu/996.ICU",
+        "forks_count": "21174",
+        "stargazers_count": "243371",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+    },
+    {
+        "name": "linux-command",
+        "owner": {
+            "login": "jaywcjlove"
+        },
+        "full_name": "jaywcjlove/linux-command",
+        "forks_count": "1599",
+        "stargazers_count": "6953",
+        "language": "HTML",
+        "repositoryDescription": "Linux命令大全搜索工具，内容包含Linux命令手册、详解、学习、搜集。https://git.io/linux"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "18683",
+        "stargazers_count": "61176",
+        "language": "Java",
+        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
+    },
+    {
+        "name": "FUNIT",
+        "owner": {
+            "login": "NVlabs"
+        },
+        "full_name": "NVlabs/FUNIT",
+        "forks_count": "25",
+        "stargazers_count": "300",
+        "repositoryDescription": "Translate images to unseen domains in the test time with few example images."
     },
     {
         "name": "go-perfbook",
@@ -212,20 +211,53 @@
             "login": "dgryski"
         },
         "full_name": "dgryski/go-perfbook",
-        "forks_count": "312",
-        "stargazers_count": "6708",
+        "forks_count": "324",
+        "stargazers_count": "6891",
         "repositoryDescription": "Thoughts on Go performance optimization"
     },
     {
-        "name": "JavaGuide",
+        "name": "formation",
         "owner": {
-            "login": "Snailclimb"
+            "login": "minamarkham"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "12102",
-        "stargazers_count": "38999",
+        "full_name": "minamarkham/formation",
+        "forks_count": "74",
+        "stargazers_count": "1104",
+        "language": "Shell",
+        "repositoryDescription": "💻\nmacOS setup script for front-end development"
+    },
+    {
+        "name": "sqlflow",
+        "owner": {
+            "login": "sql-machine-learning"
+        },
+        "full_name": "sql-machine-learning/sqlflow",
+        "forks_count": "251",
+        "stargazers_count": "1819",
+        "language": "Go",
+        "repositoryDescription": "Brings SQL and AI together."
+    },
+    {
+        "name": "jsproxy",
+        "owner": {
+            "login": "EtherDream"
+        },
+        "full_name": "EtherDream/jsproxy",
+        "forks_count": "530",
+        "stargazers_count": "3057",
+        "language": "Lua",
+        "repositoryDescription": "一个基于浏览器端 JS 实现的在线代理"
+    },
+    {
+        "name": "learnxinyminutes-docs",
+        "owner": {
+            "login": "adambard"
+        },
+        "full_name": "adambard/learnxinyminutes-docs",
+        "forks_count": "2089",
+        "stargazers_count": "6286",
         "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "repositoryDescription": "Code documentation written as code! How novel and totally my idea!"
     },
     {
         "name": "vscode",
@@ -233,42 +265,9 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/vscode",
-        "forks_count": "10286",
-        "stargazers_count": "75473",
+        "forks_count": "10306",
+        "stargazers_count": "75625",
         "language": "TypeScript",
         "repositoryDescription": "Visual Studio Code"
-    },
-    {
-        "name": "react-material-dashboard",
-        "owner": {
-            "login": "devias-io"
-        },
-        "full_name": "devias-io/react-material-dashboard",
-        "forks_count": "50",
-        "stargazers_count": "611",
-        "language": "JavaScript",
-        "repositoryDescription": "React Dashboard made with Material UI’s components, React and of course create-react-app to boost your app development process!"
-    },
-    {
-        "name": "MNN",
-        "owner": {
-            "login": "alibaba"
-        },
-        "full_name": "alibaba/MNN",
-        "forks_count": "257",
-        "stargazers_count": "1433",
-        "language": "C++",
-        "repositoryDescription": "MNN is a lightweight deep neural network inference engine."
-    },
-    {
-        "name": "amis",
-        "owner": {
-            "login": "baidu"
-        },
-        "full_name": "baidu/amis",
-        "forks_count": "60",
-        "stargazers_count": "628",
-        "language": "TypeScript",
-        "repositoryDescription": "一种基于特定 JSON 格式生成 MIS 页面的工具"
     }
 ]

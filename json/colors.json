@@ -147,10 +147,6 @@
         "color": null,
         "url": "https://github.com/trending?l=Brightscript"
     },
-    "Bro": {
-        "color": null,
-        "url": "https://github.com/trending?l=Bro"
-    },
     "C": {
         "color": "#555555",
         "url": "https://github.com/trending?l=C"
@@ -534,6 +530,10 @@
     "HLSL": {
         "color": null,
         "url": "https://github.com/trending?l=HLSL"
+    },
+    "HolyC": {
+        "color": "#ffefaf",
+        "url": "https://github.com/trending?l=HolyC"
     },
     "HTML": {
         "color": "#e34c26",
@@ -1331,6 +1331,14 @@
         "color": null,
         "url": "https://github.com/trending?l=TLA"
     },
+    "TSQL": {
+        "color": null,
+        "url": "https://github.com/trending?l=TSQL"
+    },
+    "TSX": {
+        "color": null,
+        "url": "https://github.com/trending?l=TSX"
+    },
     "Turing": {
         "color": "#cf142b",
         "url": "https://github.com/trending?l=Turing"
@@ -1411,6 +1419,10 @@
         "color": "#7582D1",
         "url": "https://github.com/trending?l=wisp"
     },
+    "Wollok": {
+        "color": "#a23738",
+        "url": "https://github.com/trending?l=Wollok"
+    },
     "X10": {
         "color": "#4B6BEF",
         "url": "https://github.com/trending?l=X10"
@@ -1462,6 +1474,14 @@
     "ZAP": {
         "color": "#0d665e",
         "url": "https://github.com/trending?l=ZAP"
+    },
+    "Zeek": {
+        "color": null,
+        "url": "https://github.com/trending?l=Zeek"
+    },
+    "ZenScript": {
+        "color": "#00BCD1",
+        "url": "https://github.com/trending?l=ZenScript"
     },
     "Zephir": {
         "color": "#118f9e",

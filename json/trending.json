@@ -1,14 +1,13 @@
 [
     {
-        "name": "3d-game-shaders-for-beginners",
+        "name": "hacker-laws",
         "owner": {
-            "login": "lettier"
+            "login": "dwmkerr"
         },
-        "full_name": "lettier/3d-game-shaders-for-beginners",
-        "forks_count": "73",
-        "stargazers_count": "2354",
-        "language": "C++",
-        "repositoryDescription": "🎮\nA step-by-step guide on how to implement SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
+        "full_name": "dwmkerr/hacker-laws",
+        "forks_count": "112",
+        "stargazers_count": "2301",
+        "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful."
     },
     {
         "name": "Python-100-Days",
@@ -16,43 +15,43 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "8247",
-        "stargazers_count": "24213",
+        "forks_count": "8717",
+        "stargazers_count": "25470",
         "language": "HTML",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
-        "name": "Terminal",
+        "name": "terminal",
         "owner": {
             "login": "microsoft"
         },
-        "full_name": "microsoft/Terminal",
-        "forks_count": "3293",
-        "stargazers_count": "36348",
+        "full_name": "microsoft/terminal",
+        "forks_count": "3360",
+        "stargazers_count": "37084",
         "language": "C++",
         "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
     {
-        "name": "unform",
+        "name": "uds",
         "owner": {
-            "login": "Rocketseat"
+            "login": "stewartmcgown"
         },
-        "full_name": "Rocketseat/unform",
-        "forks_count": "86",
-        "stargazers_count": "747",
-        "language": "TypeScript",
-        "repositoryDescription": "ReactJS form library to create uncontrolled form structures with nested fields, validations and much more!"
+        "full_name": "stewartmcgown/uds",
+        "forks_count": "79",
+        "stargazers_count": "1223",
+        "language": "Python",
+        "repositoryDescription": "Unlimited Drive Storage by splitting binary files into base64"
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "3d-game-shaders-for-beginners",
         "owner": {
-            "login": "MisterBooo"
+            "login": "lettier"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "3319",
-        "stargazers_count": "23594",
-        "language": "Java",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "full_name": "lettier/3d-game-shaders-for-beginners",
+        "forks_count": "109",
+        "stargazers_count": "2827",
+        "language": "C++",
+        "repositoryDescription": "🎮\nA step-by-step guide on how to implement SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
     },
     {
         "name": "machine-learning-course",
@@ -60,10 +59,32 @@
             "login": "machinelearningmindset"
         },
         "full_name": "machinelearningmindset/machine-learning-course",
-        "forks_count": "196",
-        "stargazers_count": "2131",
+        "forks_count": "278",
+        "stargazers_count": "2609",
         "language": "Python",
         "repositoryDescription": "💬\nMachine Learning Course with Python"
+    },
+    {
+        "name": "phpinsights",
+        "owner": {
+            "login": "nunomaduro"
+        },
+        "full_name": "nunomaduro/phpinsights",
+        "forks_count": "29",
+        "stargazers_count": "803",
+        "language": "PHP",
+        "repositoryDescription": "💡\nInstant PHP quality checks from your console"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "3384",
+        "stargazers_count": "24017",
+        "language": "Java",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
         "name": "Python",
@@ -71,31 +92,64 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "11185",
-        "stargazers_count": "39199",
+        "forks_count": "11293",
+        "stargazers_count": "39558",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "hacker-laws",
+        "name": "ReacType",
         "owner": {
-            "login": "dwmkerr"
+            "login": "team-reactype"
         },
-        "full_name": "dwmkerr/hacker-laws",
-        "forks_count": "34",
-        "stargazers_count": "837",
-        "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful."
+        "full_name": "team-reactype/ReacType",
+        "forks_count": "9",
+        "stargazers_count": "390",
+        "language": "TypeScript",
+        "repositoryDescription": "🧪 Prototyping Tool for exporting React/Typescript Applications!"
     },
     {
-        "name": "gameboy.live",
+        "name": "cssfx",
         "owner": {
-            "login": "HFO4"
+            "login": "jolaleye"
         },
-        "full_name": "HFO4/gameboy.live",
-        "forks_count": "112",
-        "stargazers_count": "2789",
-        "language": "Go",
-        "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
+        "full_name": "jolaleye/cssfx",
+        "forks_count": "134",
+        "stargazers_count": "3500",
+        "language": "Vue",
+        "repositoryDescription": "✨\nBeautifully simple click-to-copy CSS effects"
+    },
+    {
+        "name": "nlp-beginner",
+        "owner": {
+            "login": "FudanNLP"
+        },
+        "full_name": "FudanNLP/nlp-beginner",
+        "forks_count": "186",
+        "stargazers_count": "660",
+        "repositoryDescription": "NLP上手教程"
+    },
+    {
+        "name": "reakit",
+        "owner": {
+            "login": "reakit"
+        },
+        "full_name": "reakit/reakit",
+        "forks_count": "127",
+        "stargazers_count": "2108",
+        "language": "TypeScript",
+        "repositoryDescription": "Toolkit for building accessible rich web apps with React"
+    },
+    {
+        "name": "unform",
+        "owner": {
+            "login": "Rocketseat"
+        },
+        "full_name": "Rocketseat/unform",
+        "forks_count": "103",
+        "stargazers_count": "958",
+        "language": "TypeScript",
+        "repositoryDescription": "ReactJS form library to create uncontrolled form structures with nested fields, validations and much more!"
     },
     {
         "name": "RCRE",
@@ -103,8 +157,8 @@
             "login": "andycall"
         },
         "full_name": "andycall/RCRE",
-        "forks_count": "6",
-        "stargazers_count": "372",
+        "forks_count": "7",
+        "stargazers_count": "612",
         "language": "TypeScript",
         "repositoryDescription": "Build complex applications without tears"
     },
@@ -115,64 +169,20 @@
         },
         "full_name": "wandb/client",
         "forks_count": "11",
-        "stargazers_count": "382",
+        "stargazers_count": "601",
         "language": "Python",
         "repositoryDescription": "The official cli and python API client for W&B"
     },
     {
-        "name": "cssfx",
+        "name": "shadowsocks_install",
         "owner": {
-            "login": "jolaleye"
+            "login": "teddysun"
         },
-        "full_name": "jolaleye/cssfx",
-        "forks_count": "120",
-        "stargazers_count": "3218",
-        "language": "Vue",
-        "repositoryDescription": "✨\nBeautifully simple click-to-copy CSS effects"
-    },
-    {
-        "name": "pysot",
-        "owner": {
-            "login": "STVIR"
-        },
-        "full_name": "STVIR/pysot",
-        "forks_count": "261",
-        "stargazers_count": "1205",
-        "language": "Python",
-        "repositoryDescription": "SenseTime Research platform for single object tracking, implementing algorithms like SiamRPN and SiamMask."
-    },
-    {
-        "name": "comlink",
-        "owner": {
-            "login": "GoogleChromeLabs"
-        },
-        "full_name": "GoogleChromeLabs/comlink",
-        "forks_count": "107",
-        "stargazers_count": "3237",
-        "language": "JavaScript",
-        "repositoryDescription": "Comlink makes WebWorkers enjoyable."
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "12328",
-        "stargazers_count": "39610",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "openpilot",
-        "owner": {
-            "login": "commaai"
-        },
-        "full_name": "commaai/openpilot",
-        "forks_count": "2565",
-        "stargazers_count": "10912",
-        "language": "C",
-        "repositoryDescription": "open source driving agent"
+        "full_name": "teddysun/shadowsocks_install",
+        "forks_count": "3392",
+        "stargazers_count": "6298",
+        "language": "Shell",
+        "repositoryDescription": "Auto Install Shadowsocks Server for CentOS/Debian/Ubuntu"
     },
     {
         "name": "CS-Notes",
@@ -180,8 +190,8 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18873",
-        "stargazers_count": "61801",
+        "forks_count": "18921",
+        "stargazers_count": "61981",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
@@ -191,32 +201,32 @@
             "login": "996icu"
         },
         "full_name": "996icu/996.ICU",
-        "forks_count": "21214",
-        "stargazers_count": "243953",
+        "forks_count": "21222",
+        "stargazers_count": "244087",
         "language": "Rust",
         "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
     {
-        "name": "react-tetris",
+        "name": "JavaGuide",
         "owner": {
-            "login": "chvin"
+            "login": "Snailclimb"
         },
-        "full_name": "chvin/react-tetris",
-        "forks_count": "817",
-        "stargazers_count": "4884",
-        "language": "JavaScript",
-        "repositoryDescription": "Use React, Redux, Immutable to code Tetris.\n🎮"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "12392",
+        "stargazers_count": "39768",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "mall",
+        "name": "gameboy.live",
         "owner": {
-            "login": "macrozheng"
+            "login": "HFO4"
         },
-        "full_name": "macrozheng/mall",
-        "forks_count": "4447",
-        "stargazers_count": "12479",
-        "language": "Java",
-        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
+        "full_name": "HFO4/gameboy.live",
+        "forks_count": "114",
+        "stargazers_count": "2936",
+        "language": "Go",
+        "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
     },
     {
         "name": "PowerToys",
@@ -224,52 +234,41 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/PowerToys",
-        "forks_count": "83",
-        "stargazers_count": "2983",
+        "forks_count": "87",
+        "stargazers_count": "3230",
         "repositoryDescription": "Windows system utilities to maximize productivity"
     },
     {
-        "name": "numcl",
+        "name": "tensorflow2-generative-models",
         "owner": {
-            "login": "numcl"
+            "login": "timsainb"
         },
-        "full_name": "numcl/numcl",
-        "forks_count": "6",
-        "stargazers_count": "275",
-        "language": "Common Lisp",
-        "repositoryDescription": "Numpy clone in Common Lisp"
+        "full_name": "timsainb/tensorflow2-generative-models",
+        "forks_count": "19",
+        "stargazers_count": "207",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Implementations of a number of generative models in Tensorflow 2. GAN, VAE, Seq2Seq, VAEGAN, GAIA, Spectrogram Inversion. Everything is self contained in a jupyter notebook for easy export to colab."
     },
     {
-        "name": "Eigengrau-s-Essential-Establishment-Generator",
+        "name": "mall",
         "owner": {
-            "login": "ryceg"
+            "login": "macrozheng"
         },
-        "full_name": "ryceg/Eigengrau-s-Essential-Establishment-Generator",
-        "forks_count": "28",
-        "stargazers_count": "276",
-        "language": "JavaScript",
-        "repositoryDescription": "An establishment generator that is suitable for out of the box play in any fantasy campaign."
+        "full_name": "macrozheng/mall",
+        "forks_count": "4489",
+        "stargazers_count": "12628",
+        "language": "Java",
+        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
     },
     {
-        "name": "fusuma",
+        "name": "flutter",
         "owner": {
-            "login": "hiroppy"
+            "login": "flutter"
         },
-        "full_name": "hiroppy/fusuma",
-        "forks_count": "73",
-        "stargazers_count": "2239",
-        "language": "JavaScript",
-        "repositoryDescription": "✍️\nFusuma makes slides with Markdown easily."
-    },
-    {
-        "name": "Mob",
-        "owner": {
-            "login": "zenghongtu"
-        },
-        "full_name": "zenghongtu/Mob",
-        "forks_count": "22",
-        "stargazers_count": "304",
-        "language": "TypeScript",
-        "repositoryDescription": "Mob - 一个基于 Electron 开发的喜马拉雅 FM 桌面客户端，支持 Mac、Win 和 Linux"
+        "full_name": "flutter/flutter",
+        "forks_count": "7117",
+        "stargazers_count": "63928",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     }
 ]

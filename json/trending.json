@@ -1,35 +1,35 @@
 [
     {
-        "name": "hacker-laws",
-        "owner": {
-            "login": "dwmkerr"
-        },
-        "full_name": "dwmkerr/hacker-laws",
-        "forks_count": "112",
-        "stargazers_count": "2301",
-        "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful."
-    },
-    {
         "name": "Python-100-Days",
         "owner": {
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "8717",
-        "stargazers_count": "25470",
-        "language": "HTML",
+        "forks_count": "9258",
+        "stargazers_count": "26938",
+        "language": "Jupyter Notebook",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
-        "name": "terminal",
+        "name": "SPTAG",
         "owner": {
             "login": "microsoft"
         },
-        "full_name": "microsoft/terminal",
-        "forks_count": "3360",
-        "stargazers_count": "37084",
+        "full_name": "microsoft/SPTAG",
+        "forks_count": "139",
+        "stargazers_count": "1413",
         "language": "C++",
-        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
+        "repositoryDescription": "A distributed approximate nearest neighborhood search (ANN) library which provides a high quality vector index build, search and distributed online serving toolkits for large scale vector search scenario."
+    },
+    {
+        "name": "hacker-laws",
+        "owner": {
+            "login": "dwmkerr"
+        },
+        "full_name": "dwmkerr/hacker-laws",
+        "forks_count": "164",
+        "stargazers_count": "3158",
+        "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful."
     },
     {
         "name": "uds",
@@ -37,43 +37,32 @@
             "login": "stewartmcgown"
         },
         "full_name": "stewartmcgown/uds",
-        "forks_count": "79",
-        "stargazers_count": "1223",
+        "forks_count": "104",
+        "stargazers_count": "1963",
         "language": "Python",
         "repositoryDescription": "Unlimited Drive Storage by splitting binary files into base64"
     },
     {
-        "name": "3d-game-shaders-for-beginners",
+        "name": "terminal",
         "owner": {
-            "login": "lettier"
+            "login": "microsoft"
         },
-        "full_name": "lettier/3d-game-shaders-for-beginners",
-        "forks_count": "109",
-        "stargazers_count": "2827",
+        "full_name": "microsoft/terminal",
+        "forks_count": "3427",
+        "stargazers_count": "37657",
         "language": "C++",
-        "repositoryDescription": "🎮\nA step-by-step guide on how to implement SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
+        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
     {
-        "name": "machine-learning-course",
+        "name": "konstellate",
         "owner": {
-            "login": "machinelearningmindset"
+            "login": "containership"
         },
-        "full_name": "machinelearningmindset/machine-learning-course",
-        "forks_count": "278",
-        "stargazers_count": "2609",
-        "language": "Python",
-        "repositoryDescription": "💬\nMachine Learning Course with Python"
-    },
-    {
-        "name": "phpinsights",
-        "owner": {
-            "login": "nunomaduro"
-        },
-        "full_name": "nunomaduro/phpinsights",
-        "forks_count": "29",
-        "stargazers_count": "803",
-        "language": "PHP",
-        "repositoryDescription": "💡\nInstant PHP quality checks from your console"
+        "full_name": "containership/konstellate",
+        "forks_count": "23",
+        "stargazers_count": "727",
+        "language": "Clojure",
+        "repositoryDescription": "Free and Open Source GUI to Visualize Kubernetes Applications."
     },
     {
         "name": "LeetCodeAnimation",
@@ -81,53 +70,32 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "3384",
-        "stargazers_count": "24017",
+        "forks_count": "3468",
+        "stargazers_count": "24502",
         "language": "Java",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "Python",
+        "name": "taichi",
         "owner": {
-            "login": "TheAlgorithms"
+            "login": "yuanming-hu"
         },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "11293",
-        "stargazers_count": "39558",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "full_name": "yuanming-hu/taichi",
+        "forks_count": "181",
+        "stargazers_count": "2107",
+        "language": "C++",
+        "repositoryDescription": "Computer Graphics R&D Infrastructure"
     },
     {
-        "name": "ReacType",
+        "name": "my-budget",
         "owner": {
-            "login": "team-reactype"
+            "login": "reZach"
         },
-        "full_name": "team-reactype/ReacType",
-        "forks_count": "9",
-        "stargazers_count": "390",
-        "language": "TypeScript",
-        "repositoryDescription": "🧪 Prototyping Tool for exporting React/Typescript Applications!"
-    },
-    {
-        "name": "cssfx",
-        "owner": {
-            "login": "jolaleye"
-        },
-        "full_name": "jolaleye/cssfx",
-        "forks_count": "134",
-        "stargazers_count": "3500",
-        "language": "Vue",
-        "repositoryDescription": "✨\nBeautifully simple click-to-copy CSS effects"
-    },
-    {
-        "name": "nlp-beginner",
-        "owner": {
-            "login": "FudanNLP"
-        },
-        "full_name": "FudanNLP/nlp-beginner",
-        "forks_count": "186",
-        "stargazers_count": "660",
-        "repositoryDescription": "NLP上手教程"
+        "full_name": "reZach/my-budget",
+        "forks_count": "33",
+        "stargazers_count": "577",
+        "language": "JavaScript",
+        "repositoryDescription": "Free, open source offline cross-platform budgeting solution built with Electron."
     },
     {
         "name": "reakit",
@@ -135,98 +103,75 @@
             "login": "reakit"
         },
         "full_name": "reakit/reakit",
-        "forks_count": "127",
-        "stargazers_count": "2108",
+        "forks_count": "139",
+        "stargazers_count": "2428",
         "language": "TypeScript",
         "repositoryDescription": "Toolkit for building accessible rich web apps with React"
     },
     {
-        "name": "unform",
+        "name": "machine-learning-course",
         "owner": {
-            "login": "Rocketseat"
+            "login": "machinelearningmindset"
         },
-        "full_name": "Rocketseat/unform",
-        "forks_count": "103",
-        "stargazers_count": "958",
-        "language": "TypeScript",
-        "repositoryDescription": "ReactJS form library to create uncontrolled form structures with nested fields, validations and much more!"
-    },
-    {
-        "name": "RCRE",
-        "owner": {
-            "login": "andycall"
-        },
-        "full_name": "andycall/RCRE",
-        "forks_count": "7",
-        "stargazers_count": "612",
-        "language": "TypeScript",
-        "repositoryDescription": "Build complex applications without tears"
-    },
-    {
-        "name": "client",
-        "owner": {
-            "login": "wandb"
-        },
-        "full_name": "wandb/client",
-        "forks_count": "11",
-        "stargazers_count": "601",
+        "full_name": "machinelearningmindset/machine-learning-course",
+        "forks_count": "329",
+        "stargazers_count": "2961",
         "language": "Python",
-        "repositoryDescription": "The official cli and python API client for W&B"
+        "repositoryDescription": "💬\nMachine Learning Course with Python"
     },
     {
-        "name": "shadowsocks_install",
+        "name": "resilience-engineering",
         "owner": {
-            "login": "teddysun"
+            "login": "lorin"
         },
-        "full_name": "teddysun/shadowsocks_install",
-        "forks_count": "3392",
-        "stargazers_count": "6298",
-        "language": "Shell",
-        "repositoryDescription": "Auto Install Shadowsocks Server for CentOS/Debian/Ubuntu"
+        "full_name": "lorin/resilience-engineering",
+        "forks_count": "41",
+        "stargazers_count": "1134",
+        "repositoryDescription": "Resilience Engineering Notes"
     },
     {
-        "name": "CS-Notes",
+        "name": "svelte",
         "owner": {
-            "login": "CyC2018"
+            "login": "sveltejs"
         },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "18921",
-        "stargazers_count": "61981",
-        "language": "Java",
-        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
+        "full_name": "sveltejs/svelte",
+        "forks_count": "554",
+        "stargazers_count": "15040",
+        "language": "JavaScript",
+        "repositoryDescription": "Cybernetically enhanced web apps"
     },
     {
-        "name": "996.ICU",
+        "name": "phpinsights",
         "owner": {
-            "login": "996icu"
+            "login": "nunomaduro"
         },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "21222",
-        "stargazers_count": "244087",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+        "full_name": "nunomaduro/phpinsights",
+        "forks_count": "45",
+        "stargazers_count": "1176",
+        "language": "PHP",
+        "repositoryDescription": "💡\nInstant PHP quality checks from your console"
     },
     {
-        "name": "JavaGuide",
+        "name": "3d-game-shaders-for-beginners",
         "owner": {
-            "login": "Snailclimb"
+            "login": "lettier"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "12392",
-        "stargazers_count": "39768",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+        "full_name": "lettier/3d-game-shaders-for-beginners",
+        "forks_count": "129",
+        "stargazers_count": "3121",
+        "language": "C++",
+        "repositoryDescription": "🎮\nA step-by-step guide on how to implement SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
     },
     {
-        "name": "gameboy.live",
+        "name": "Python",
         "owner": {
-            "login": "HFO4"
+            "login": "TheAlgorithms"
         },
-        "full_name": "HFO4/gameboy.live",
-        "forks_count": "114",
-        "stargazers_count": "2936",
-        "language": "Go",
-        "repositoryDescription": "🕹️\nA basic gameboy emulator with terminal \"Cloud Gaming\" support"
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "11376",
+        "stargazers_count": "39836",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
         "name": "PowerToys",
@@ -234,41 +179,95 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/PowerToys",
-        "forks_count": "87",
-        "stargazers_count": "3230",
+        "forks_count": "91",
+        "stargazers_count": "3465",
         "repositoryDescription": "Windows system utilities to maximize productivity"
     },
     {
-        "name": "tensorflow2-generative-models",
+        "name": "lede",
         "owner": {
-            "login": "timsainb"
+            "login": "coolsnowwolf"
         },
-        "full_name": "timsainb/tensorflow2-generative-models",
-        "forks_count": "19",
-        "stargazers_count": "207",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Implementations of a number of generative models in Tensorflow 2. GAN, VAE, Seq2Seq, VAEGAN, GAIA, Spectrogram Inversion. Everything is self contained in a jupyter notebook for easy export to colab."
+        "full_name": "coolsnowwolf/lede",
+        "forks_count": "1627",
+        "stargazers_count": "2776",
+        "language": "C",
+        "repositoryDescription": "Lean's OpenWrt source"
     },
     {
-        "name": "mall",
+        "name": "CS-Notes",
         "owner": {
-            "login": "macrozheng"
+            "login": "CyC2018"
         },
-        "full_name": "macrozheng/mall",
-        "forks_count": "4489",
-        "stargazers_count": "12628",
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "18970",
+        "stargazers_count": "62180",
         "language": "Java",
-        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
+        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
     {
-        "name": "flutter",
+        "name": "cssfx",
         "owner": {
-            "login": "flutter"
+            "login": "jolaleye"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "7117",
-        "stargazers_count": "63928",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+        "full_name": "jolaleye/cssfx",
+        "forks_count": "142",
+        "stargazers_count": "3697",
+        "language": "Vue",
+        "repositoryDescription": "✨\nBeautifully simple click-to-copy CSS effects"
+    },
+    {
+        "name": "nodebestpractices",
+        "owner": {
+            "login": "i0natan"
+        },
+        "full_name": "i0natan/nodebestpractices",
+        "forks_count": "2247",
+        "stargazers_count": "29125",
+        "language": "JavaScript",
+        "repositoryDescription": "✅\nThe largest Node.js best practices list (May 2019)"
+    },
+    {
+        "name": "leetcode",
+        "owner": {
+            "login": "azl397985856"
+        },
+        "full_name": "azl397985856/leetcode",
+        "forks_count": "937",
+        "stargazers_count": "6329",
+        "language": "JavaScript",
+        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+    },
+    {
+        "name": "ZombieLoad",
+        "owner": {
+            "login": "IAIK"
+        },
+        "full_name": "IAIK/ZombieLoad",
+        "forks_count": "57",
+        "stargazers_count": "456",
+        "language": "C",
+        "repositoryDescription": "Proof-of-concept for the ZombieLoad attack"
+    },
+    {
+        "name": "nlp-beginner",
+        "owner": {
+            "login": "FudanNLP"
+        },
+        "full_name": "FudanNLP/nlp-beginner",
+        "forks_count": "224",
+        "stargazers_count": "821",
+        "repositoryDescription": "NLP上手教程"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "12452",
+        "stargazers_count": "39924",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     }
 ]

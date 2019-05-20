@@ -5,21 +5,10 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "10190",
-        "stargazers_count": "29423",
+        "forks_count": "10537",
+        "stargazers_count": "30300",
         "language": "Jupyter Notebook",
         "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "memory-profiler",
-        "owner": {
-            "login": "nokia"
-        },
-        "full_name": "nokia/memory-profiler",
-        "forks_count": "13",
-        "stargazers_count": "551",
-        "language": "Rust",
-        "repositoryDescription": ""
     },
     {
         "name": "gitfolio",
@@ -27,10 +16,31 @@
             "login": "imfunniee"
         },
         "full_name": "imfunniee/gitfolio",
-        "forks_count": "50",
-        "stargazers_count": "584",
+        "forks_count": "94",
+        "stargazers_count": "1230",
         "language": "JavaScript",
         "repositoryDescription": "personal website + blog for every github user"
+    },
+    {
+        "name": "memory-profiler",
+        "owner": {
+            "login": "nokia"
+        },
+        "full_name": "nokia/memory-profiler",
+        "forks_count": "26",
+        "stargazers_count": "1130",
+        "language": "Rust",
+        "repositoryDescription": ""
+    },
+    {
+        "name": "hacker-laws-zh",
+        "owner": {
+            "login": "nusr"
+        },
+        "full_name": "nusr/hacker-laws-zh",
+        "forks_count": "103",
+        "stargazers_count": "1486",
+        "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful. (对开发人员有用的定律、理论、原则和模式。)"
     },
     {
         "name": "terminal",
@@ -38,8 +48,8 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/terminal",
-        "forks_count": "3576",
-        "stargazers_count": "38764",
+        "forks_count": "3633",
+        "stargazers_count": "39208",
         "language": "C++",
         "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
@@ -49,19 +59,9 @@
             "login": "dwmkerr"
         },
         "full_name": "dwmkerr/hacker-laws",
-        "forks_count": "235",
-        "stargazers_count": "4388",
+        "forks_count": "265",
+        "stargazers_count": "4789",
         "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful."
-    },
-    {
-        "name": "hacker-laws-zh",
-        "owner": {
-            "login": "nusr"
-        },
-        "full_name": "nusr/hacker-laws-zh",
-        "forks_count": "73",
-        "stargazers_count": "992",
-        "repositoryDescription": "💻\n📖\nLaws, Theories, Principles and Patterns that developers will find useful. (对开发人员有用的定律、理论、原则和模式。)"
     },
     {
         "name": "machine-learning-course",
@@ -69,10 +69,32 @@
             "login": "machinelearningmindset"
         },
         "full_name": "machinelearningmindset/machine-learning-course",
-        "forks_count": "463",
-        "stargazers_count": "3756",
+        "forks_count": "520",
+        "stargazers_count": "4092",
         "language": "Python",
         "repositoryDescription": "💬\nMachine Learning Course with Python"
+    },
+    {
+        "name": "reading-go",
+        "owner": {
+            "login": "developer-learning"
+        },
+        "full_name": "developer-learning/reading-go",
+        "forks_count": "307",
+        "stargazers_count": "3329",
+        "language": "Go",
+        "repositoryDescription": "Go 夜读 > 每周通过 zoom 在线直播的方式分享 Go 相关的技术话题，每天大家在 Slack 上及时沟通交流编程技术话题。"
+    },
+    {
+        "name": "ola",
+        "owner": {
+            "login": "franciscop"
+        },
+        "full_name": "franciscop/ola",
+        "forks_count": "10",
+        "stargazers_count": "988",
+        "language": "JavaScript",
+        "repositoryDescription": "🌊\nSmooth animation library for interpolating numbers"
     },
     {
         "name": "LeetCodeAnimation",
@@ -80,8 +102,8 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "3630",
-        "stargazers_count": "25368",
+        "forks_count": "3691",
+        "stargazers_count": "25661",
         "language": "Java",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
@@ -91,10 +113,21 @@
             "login": "sveltejs"
         },
         "full_name": "sveltejs/svelte",
-        "forks_count": "572",
-        "stargazers_count": "15598",
+        "forks_count": "585",
+        "stargazers_count": "15878",
         "language": "JavaScript",
         "repositoryDescription": "Cybernetically enhanced web apps"
+    },
+    {
+        "name": "uxy",
+        "owner": {
+            "login": "sustrik"
+        },
+        "full_name": "sustrik/uxy",
+        "forks_count": "6",
+        "stargazers_count": "288",
+        "language": "Python",
+        "repositoryDescription": ""
     },
     {
         "name": "mall",
@@ -102,21 +135,21 @@
             "login": "macrozheng"
         },
         "full_name": "macrozheng/mall",
-        "forks_count": "4642",
-        "stargazers_count": "12979",
+        "forks_count": "4746",
+        "stargazers_count": "13198",
         "language": "Java",
         "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
     },
     {
-        "name": "leetcode",
+        "name": "weird-fonts",
         "owner": {
-            "login": "azl397985856"
+            "login": "beizhedenglong"
         },
-        "full_name": "azl397985856/leetcode",
-        "forks_count": "1073",
-        "stargazers_count": "7065",
-        "language": "JavaScript",
-        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+        "full_name": "beizhedenglong/weird-fonts",
+        "forks_count": "23",
+        "stargazers_count": "270",
+        "language": "TypeScript",
+        "repositoryDescription": "𝑨 𝑱𝒂𝒗𝒂𝑺𝒄𝒓𝒊𝒑𝒕 𝒑𝒂𝒄𝒌𝒂𝒈𝒆 𝒕𝒉𝒂𝒕 𝒕𝒖𝒓𝒏 𝒂𝒍𝒑𝒉𝒂𝒏𝒖𝒎𝒆𝒓𝒊𝒄 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒔 𝒊𝒏𝒕𝒐 𝒘𝒆𝒊𝒓𝒅 𝒇𝒐𝒏𝒕 𝒔𝒕𝒚𝒍𝒆."
     },
     {
         "name": "Python",
@@ -124,21 +157,32 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "11609",
-        "stargazers_count": "40620",
+        "forks_count": "11674",
+        "stargazers_count": "40825",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "SPTAG",
+        "name": "leetcode",
         "owner": {
-            "login": "microsoft"
+            "login": "azl397985856"
         },
-        "full_name": "microsoft/SPTAG",
-        "forks_count": "251",
-        "stargazers_count": "2551",
+        "full_name": "azl397985856/leetcode",
+        "forks_count": "1111",
+        "stargazers_count": "7287",
+        "language": "JavaScript",
+        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+    },
+    {
+        "name": "codegen",
+        "owner": {
+            "login": "pdziepak"
+        },
+        "full_name": "pdziepak/codegen",
+        "forks_count": "4",
+        "stargazers_count": "243",
         "language": "C++",
-        "repositoryDescription": "A distributed approximate nearest neighborhood search (ANN) library which provides a high quality vector index build, search and distributed online serving toolkits for large scale vector search scenario."
+        "repositoryDescription": "Experimental wrapper over LLVM for generating and compiling code at run-time."
     },
     {
         "name": "CS-Notes",
@@ -146,120 +190,64 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "19107",
-        "stargazers_count": "62562",
+        "forks_count": "19175",
+        "stargazers_count": "62747",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
     {
-        "name": "PayloadsAllTheThings",
+        "name": "Emergency-Response-Notes",
         "owner": {
-            "login": "swisskyrepo"
+            "login": "Bypass007"
         },
-        "full_name": "swisskyrepo/PayloadsAllTheThings",
-        "forks_count": "2327",
-        "stargazers_count": "7519",
+        "full_name": "Bypass007/Emergency-Response-Notes",
+        "forks_count": "67",
+        "stargazers_count": "202",
+        "repositoryDescription": "应急响应实战笔记，一个安全工程师的自我修养。"
+    },
+    {
+        "name": "CVE-2019-0708-PoC-Hitting-Path",
+        "owner": {
+            "login": "digital-missiles"
+        },
+        "full_name": "digital-missiles/CVE-2019-0708-PoC-Hitting-Path",
+        "forks_count": "65",
+        "stargazers_count": "165",
         "language": "Python",
-        "repositoryDescription": "A list of useful payloads and bypass for Web Application Security and Pentest/CTF"
+        "repositoryDescription": "It's only hitting vulnerable path in termdd.sys!!! NOT DOS"
     },
     {
-        "name": "i18nize-react",
+        "name": "phpinsights",
         "owner": {
-            "login": "Ghost---Shadow"
+            "login": "nunomaduro"
         },
-        "full_name": "Ghost---Shadow/i18nize-react",
-        "forks_count": "4",
-        "stargazers_count": "170",
-        "language": "JavaScript",
-        "repositoryDescription": "Internationalize react apps within a lunch break"
+        "full_name": "nunomaduro/phpinsights",
+        "forks_count": "77",
+        "stargazers_count": "1965",
+        "language": "PHP",
+        "repositoryDescription": "💡\nInstant PHP quality checks from your console"
     },
     {
-        "name": "ola",
+        "name": "Cookbook",
         "owner": {
-            "login": "franciscop"
+            "login": "andkret"
         },
-        "full_name": "franciscop/ola",
-        "forks_count": "7",
-        "stargazers_count": "632",
-        "language": "JavaScript",
-        "repositoryDescription": "🌊\nSmooth animation library for interpolating numbers"
+        "full_name": "andkret/Cookbook",
+        "forks_count": "40",
+        "stargazers_count": "191",
+        "language": "TeX",
+        "repositoryDescription": ""
     },
     {
-        "name": "awesome-modern-cpp",
+        "name": "SPTAG",
         "owner": {
-            "login": "rigtorp"
+            "login": "microsoft"
         },
-        "full_name": "rigtorp/awesome-modern-cpp",
-        "forks_count": "442",
-        "stargazers_count": "4385",
-        "language": "HTML",
-        "repositoryDescription": "A collection of resources on modern C++"
-    },
-    {
-        "name": "black",
-        "owner": {
-            "login": "python"
-        },
-        "full_name": "python/black",
-        "forks_count": "489",
-        "stargazers_count": "10082",
-        "language": "Python",
-        "repositoryDescription": "The uncompromising Python code formatter"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "12563",
-        "stargazers_count": "40217",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "vhr",
-        "owner": {
-            "login": "lenve"
-        },
-        "full_name": "lenve/vhr",
-        "forks_count": "1546",
-        "stargazers_count": "3456",
-        "language": "JavaScript",
-        "repositoryDescription": "微人事是一个前后端分离的人力资源管理系统，项目采用SpringBoot+Vue开发。"
-    },
-    {
-        "name": "3d-game-shaders-for-beginners",
-        "owner": {
-            "login": "lettier"
-        },
-        "full_name": "lettier/3d-game-shaders-for-beginners",
-        "forks_count": "160",
-        "stargazers_count": "3529",
+        "full_name": "microsoft/SPTAG",
+        "forks_count": "276",
+        "stargazers_count": "2724",
         "language": "C++",
-        "repositoryDescription": "🎮\nA step-by-step guide on how to implement SSAO, depth of field, lighting, normal mapping, and more for your 3D game."
-    },
-    {
-        "name": "uds",
-        "owner": {
-            "login": "stewartmcgown"
-        },
-        "full_name": "stewartmcgown/uds",
-        "forks_count": "151",
-        "stargazers_count": "2734",
-        "language": "Python",
-        "repositoryDescription": "Unlimited Drive Storage by splitting binary files into base64"
-    },
-    {
-        "name": "litemall",
-        "owner": {
-            "login": "linlinjava"
-        },
-        "full_name": "linlinjava/litemall",
-        "forks_count": "2317",
-        "stargazers_count": "6576",
-        "language": "Java",
-        "repositoryDescription": "又一个小商城。litemall = Spring Boot后端 + Vue管理员前端 + 微信小程序用户前端 + Vue用户移动端"
+        "repositoryDescription": "A distributed approximate nearest neighborhood search (ANN) library which provides a high quality vector index build, search and distributed online serving toolkits for large scale vector search scenario."
     },
     {
         "name": "trivy",
@@ -267,9 +255,20 @@
             "login": "knqyf263"
         },
         "full_name": "knqyf263/trivy",
-        "forks_count": "33",
-        "stargazers_count": "689",
+        "forks_count": "45",
+        "stargazers_count": "860",
         "language": "Go",
         "repositoryDescription": "A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "12626",
+        "stargazers_count": "40355",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     }
 ]

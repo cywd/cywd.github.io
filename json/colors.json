@@ -419,6 +419,10 @@
         "color": "#00cafe",
         "url": "https://github.com/trending?l=Frege"
     },
+    "G-code": {
+        "color": "#D08CF2",
+        "url": "https://github.com/trending?l=G-code"
+    },
     "Game Maker Language": {
         "color": "#71b417",
         "url": "https://github.com/trending?l=Game-Maker-Language"
@@ -815,6 +819,10 @@
         "color": null,
         "url": "https://github.com/trending?l=MoonScript"
     },
+    "Motorola 68K Assembly": {
+        "color": null,
+        "url": "https://github.com/trending?l=Motorola-68K-Assembly"
+    },
     "MQL4": {
         "color": "#62A8D6",
         "url": "https://github.com/trending?l=MQL4"
@@ -910,6 +918,10 @@
     "Objective-J": {
         "color": "#ff0c5a",
         "url": "https://github.com/trending?l=Objective-J"
+    },
+    "ObjectScript": {
+        "color": "#424893",
+        "url": "https://github.com/trending?l=ObjectScript"
     },
     "OCaml": {
         "color": "#3be133",

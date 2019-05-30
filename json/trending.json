@@ -5,31 +5,10 @@
             "login": "metafizzy"
         },
         "full_name": "metafizzy/zdog",
-        "forks_count": "20",
-        "stargazers_count": "1841",
+        "forks_count": "43",
+        "stargazers_count": "3057",
         "language": "JavaScript",
         "repositoryDescription": "Flat, round, designer-friendly pseudo-3D engine"
-    },
-    {
-        "name": "cssgridgenerator",
-        "owner": {
-            "login": "sdras"
-        },
-        "full_name": "sdras/cssgridgenerator",
-        "forks_count": "55",
-        "stargazers_count": "876",
-        "language": "Vue",
-        "repositoryDescription": "🧮Generate basic CSS Grid code to make dynamic layouts!"
-    },
-    {
-        "name": "the-art-of-command-line",
-        "owner": {
-            "login": "jlevy"
-        },
-        "full_name": "jlevy/the-art-of-command-line",
-        "forks_count": "4680",
-        "stargazers_count": "49061",
-        "repositoryDescription": "Master the command line, in one page"
     },
     {
         "name": "Python-100-Days",
@@ -37,8 +16,8 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "12536",
-        "stargazers_count": "35650",
+        "forks_count": "12744",
+        "stargazers_count": "36092",
         "language": "Jupyter Notebook",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
@@ -48,10 +27,42 @@
             "login": "pirate"
         },
         "full_name": "pirate/wireguard-docs",
-        "forks_count": "27",
-        "stargazers_count": "678",
+        "forks_count": "49",
+        "stargazers_count": "1049",
         "language": "Shell",
         "repositoryDescription": "The Missing WireGuard Documentation: Setup, Usage, Configuration, and a full example for server-to-server VPN with roaming clients & public peers."
+    },
+    {
+        "name": "algorithm-visualizer",
+        "owner": {
+            "login": "algorithm-visualizer"
+        },
+        "full_name": "algorithm-visualizer/algorithm-visualizer",
+        "forks_count": "2245",
+        "stargazers_count": "15584",
+        "language": "JavaScript",
+        "repositoryDescription": "🎆\nInteractive Online Platform that Visualizes Algorithms from Code"
+    },
+    {
+        "name": "the-art-of-command-line",
+        "owner": {
+            "login": "jlevy"
+        },
+        "full_name": "jlevy/the-art-of-command-line",
+        "forks_count": "4728",
+        "stargazers_count": "49486",
+        "repositoryDescription": "Master the command line, in one page"
+    },
+    {
+        "name": "cssgridgenerator",
+        "owner": {
+            "login": "sdras"
+        },
+        "full_name": "sdras/cssgridgenerator",
+        "forks_count": "72",
+        "stargazers_count": "1234",
+        "language": "Vue",
+        "repositoryDescription": "🧮Generate basic CSS Grid code to make dynamic layouts!"
     },
     {
         "name": "awesome-scalability",
@@ -59,8 +70,8 @@
             "login": "binhnguyennus"
         },
         "full_name": "binhnguyennus/awesome-scalability",
-        "forks_count": "1813",
-        "stargazers_count": "17624",
+        "forks_count": "1836",
+        "stargazers_count": "17954",
         "repositoryDescription": "The Patterns Behind Scalable, Reliable, and Performant Large-Scale Systems"
     },
     {
@@ -69,54 +80,21 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "12497",
-        "stargazers_count": "43662",
+        "forks_count": "12568",
+        "stargazers_count": "43904",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "ojichat",
         "owner": {
-            "login": "MisterBooo"
+            "login": "greymd"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "4233",
-        "stargazers_count": "28404",
-        "language": "Java",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "youtube-dl-interactive",
-        "owner": {
-            "login": "synox"
-        },
-        "full_name": "synox/youtube-dl-interactive",
-        "forks_count": "26",
-        "stargazers_count": "867",
-        "language": "JavaScript",
-        "repositoryDescription": "Interactively select the quality and format for youtube-dl"
-    },
-    {
-        "name": "terminal",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/terminal",
-        "forks_count": "3954",
-        "stargazers_count": "41927",
-        "language": "C++",
-        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
-    },
-    {
-        "name": "penrose",
-        "owner": {
-            "login": "penrose"
-        },
-        "full_name": "penrose/penrose",
-        "forks_count": "31",
-        "stargazers_count": "1223",
-        "language": "Haskell",
-        "repositoryDescription": "Create beautiful diagrams just by typing mathematical notation in plain text."
+        "full_name": "greymd/ojichat",
+        "forks_count": "8",
+        "stargazers_count": "341",
+        "language": "Go",
+        "repositoryDescription": "おじさんがLINEやメールで送ってきそうな文を生成する"
     },
     {
         "name": "fabulous",
@@ -124,97 +102,76 @@
             "login": "Raathigesh"
         },
         "full_name": "Raathigesh/fabulous",
-        "forks_count": "7",
-        "stargazers_count": "343",
+        "forks_count": "13",
+        "stargazers_count": "587",
         "language": "TypeScript",
         "repositoryDescription": "🎨\nCSS properties sidebar for VS Code"
     },
     {
-        "name": "react-use",
+        "name": "FunctionScript",
         "owner": {
-            "login": "streamich"
+            "login": "FunctionScript"
         },
-        "full_name": "streamich/react-use",
-        "forks_count": "204",
-        "stargazers_count": "5262",
-        "language": "TypeScript",
-        "repositoryDescription": "React Hooks —\n👍"
-    },
-    {
-        "name": "android-developer-roadmap",
-        "owner": {
-            "login": "anacoimbrag"
-        },
-        "full_name": "anacoimbrag/android-developer-roadmap",
-        "forks_count": "74",
-        "stargazers_count": "803",
-        "repositoryDescription": "Android Developer Roadmap 2019"
-    },
-    {
-        "name": "xuperunion",
-        "owner": {
-            "login": "xuperchain"
-        },
-        "full_name": "xuperchain/xuperunion",
-        "forks_count": "83",
-        "stargazers_count": "354",
-        "language": "Go",
-        "repositoryDescription": "A highly flexible blockchain architecture with great transaction performance."
-    },
-    {
-        "name": "imgsquash",
-        "owner": {
-            "login": "eashish93"
-        },
-        "full_name": "eashish93/imgsquash",
-        "forks_count": "35",
-        "stargazers_count": "534",
+        "full_name": "FunctionScript/FunctionScript",
+        "forks_count": "5",
+        "stargazers_count": "377",
         "language": "JavaScript",
-        "repositoryDescription": "Simple image compression full website code written in node, react and next.js framework. Easy to deploy as a microservice."
+        "repositoryDescription": "A language and specification for turning JavaScript functions into typed HTTP APIs"
     },
     {
-        "name": "laravel-actions",
+        "name": "penrose",
         "owner": {
-            "login": "lorisleiva"
+            "login": "penrose"
         },
-        "full_name": "lorisleiva/laravel-actions",
-        "forks_count": "12",
-        "stargazers_count": "314",
-        "language": "PHP",
-        "repositoryDescription": "⚡️\nLaravel components that take care of one specific task"
+        "full_name": "penrose/penrose",
+        "forks_count": "34",
+        "stargazers_count": "1428",
+        "language": "Haskell",
+        "repositoryDescription": "Create beautiful diagrams just by typing mathematical notation in plain text."
     },
     {
-        "name": "996.ICU",
+        "name": "LeetCodeAnimation",
         "owner": {
-            "login": "996icu"
+            "login": "MisterBooo"
         },
-        "full_name": "996icu/996.ICU",
-        "forks_count": "21326",
-        "stargazers_count": "245155",
-        "language": "Rust",
-        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "4277",
+        "stargazers_count": "28634",
+        "language": "Java",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "algo",
+        "name": "Command-line-text-processing",
         "owner": {
-            "login": "wangzheng0822"
+            "login": "learnbyexample"
         },
-        "full_name": "wangzheng0822/algo",
-        "forks_count": "1820",
-        "stargazers_count": "6144",
-        "language": "C",
-        "repositoryDescription": "数据结构和算法必知必会的50个代码实现"
+        "full_name": "learnbyexample/Command-line-text-processing",
+        "forks_count": "523",
+        "stargazers_count": "8456",
+        "language": "Shell",
+        "repositoryDescription": "⚡️\nFrom finding text to search and replace, from sorting to beautifying text and more\n🎨"
     },
     {
-        "name": "react-simple-animate",
+        "name": "terminal",
         "owner": {
-            "login": "bluebill1049"
+            "login": "microsoft"
         },
-        "full_name": "bluebill1049/react-simple-animate",
-        "forks_count": "23",
-        "stargazers_count": "848",
+        "full_name": "microsoft/terminal",
+        "forks_count": "3980",
+        "stargazers_count": "42140",
+        "language": "C++",
+        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
+    },
+    {
+        "name": "svelte",
+        "owner": {
+            "login": "sveltejs"
+        },
+        "full_name": "sveltejs/svelte",
+        "forks_count": "648",
+        "stargazers_count": "17557",
         "language": "TypeScript",
-        "repositoryDescription": "🎯\nReact UI animation made easy"
+        "repositoryDescription": "Cybernetically enhanced web apps"
     },
     {
         "name": "JavaGuide",
@@ -222,32 +179,21 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "13142",
-        "stargazers_count": "41684",
+        "forks_count": "13197",
+        "stargazers_count": "41863",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "xstyled",
+        "name": "996.ICU",
         "owner": {
-            "login": "smooth-code"
+            "login": "996icu"
         },
-        "full_name": "smooth-code/xstyled",
-        "forks_count": "10",
-        "stargazers_count": "638",
-        "language": "JavaScript",
-        "repositoryDescription": "Consistent theme based CSS for styled-components\n💅"
-    },
-    {
-        "name": "devhub",
-        "owner": {
-            "login": "devhubapp"
-        },
-        "full_name": "devhubapp/devhub",
-        "forks_count": "227",
-        "stargazers_count": "5356",
-        "language": "TypeScript",
-        "repositoryDescription": "\"TweetDeck\" for GitHub - Android, iOS, Web & Desktop"
+        "full_name": "996icu/996.ICU",
+        "forks_count": "21331",
+        "stargazers_count": "245266",
+        "language": "Rust",
+        "repositoryDescription": "Repo for counting stars and contributing. Press F to pay respect to glorious developers."
     },
     {
         "name": "CS-Notes",
@@ -255,10 +201,21 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "19607",
-        "stargazers_count": "64064",
+        "forks_count": "19654",
+        "stargazers_count": "64213",
         "language": "Java",
         "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
+    },
+    {
+        "name": "go-ext-wasm",
+        "owner": {
+            "login": "wasmerio"
+        },
+        "full_name": "wasmerio/go-ext-wasm",
+        "forks_count": "7",
+        "stargazers_count": "227",
+        "language": "Go",
+        "repositoryDescription": "🐹\n🕸️\nGo library to run WebAssembly binaries at native speed"
     },
     {
         "name": "flutter",
@@ -266,9 +223,52 @@
             "login": "flutter"
         },
         "full_name": "flutter/flutter",
-        "forks_count": "7358",
-        "stargazers_count": "65461",
+        "forks_count": "7375",
+        "stargazers_count": "65601",
         "language": "Dart",
         "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
+    },
+    {
+        "name": "react-use",
+        "owner": {
+            "login": "streamich"
+        },
+        "full_name": "streamich/react-use",
+        "forks_count": "212",
+        "stargazers_count": "5394",
+        "language": "TypeScript",
+        "repositoryDescription": "React Hooks —\n👍"
+    },
+    {
+        "name": "mall",
+        "owner": {
+            "login": "macrozheng"
+        },
+        "full_name": "macrozheng/mall",
+        "forks_count": "5319",
+        "stargazers_count": "14493",
+        "language": "Java",
+        "repositoryDescription": "mall项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现。 前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。 后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。"
+    },
+    {
+        "name": "tpu",
+        "owner": {
+            "login": "tensorflow"
+        },
+        "full_name": "tensorflow/tpu",
+        "forks_count": "355",
+        "stargazers_count": "1060",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Reference models and tools for Cloud TPUs."
+    },
+    {
+        "name": "PHP-Interview-QA",
+        "owner": {
+            "login": "colinlet"
+        },
+        "full_name": "colinlet/PHP-Interview-QA",
+        "forks_count": "72",
+        "stargazers_count": "490",
+        "repositoryDescription": "PHP面试问答"
     }
 ]

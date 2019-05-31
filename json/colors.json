@@ -299,6 +299,10 @@
         "color": "#003a52",
         "url": "https://github.com/trending?l=DataWeave"
     },
+    "Dhall": {
+        "color": "#dfafff",
+        "url": "https://github.com/trending?l=Dhall"
+    },
     "DIGITAL Command Language": {
         "color": null,
         "url": "https://github.com/trending?l=DIGITAL-Command-Language"
@@ -606,6 +610,10 @@
     "JavaScript": {
         "color": "#f1e05a",
         "url": "https://github.com/trending?l=JavaScript"
+    },
+    "JavaScript+ERB": {
+        "color": null,
+        "url": "https://github.com/trending?l=JavaScript+ERB"
     },
     "JFlex": {
         "color": null,

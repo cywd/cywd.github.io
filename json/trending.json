@@ -1,80 +1,25 @@
 [
     {
+        "name": "entropic",
+        "owner": {
+            "login": "entropic-dev"
+        },
+        "full_name": "entropic-dev/entropic",
+        "forks_count": "11",
+        "stargazers_count": "631",
+        "language": "JavaScript",
+        "repositoryDescription": "a package registry for anything, but mostly javascript"
+    },
+    {
         "name": "semantic",
         "owner": {
             "login": "github"
         },
         "full_name": "github/semantic",
-        "forks_count": "25",
-        "stargazers_count": "1366",
+        "forks_count": "41",
+        "stargazers_count": "1938",
         "language": "Haskell",
         "repositoryDescription": "Parsing, analyzing, and comparing source code across many languages"
-    },
-    {
-        "name": "medium-to-own-blog",
-        "owner": {
-            "login": "mathieudutour"
-        },
-        "full_name": "mathieudutour/medium-to-own-blog",
-        "forks_count": "21",
-        "stargazers_count": "897",
-        "language": "JavaScript",
-        "repositoryDescription": "Switch from Medium to your own blog in a few minutes"
-    },
-    {
-        "name": "algorithm-visualizer",
-        "owner": {
-            "login": "algorithm-visualizer"
-        },
-        "full_name": "algorithm-visualizer/algorithm-visualizer",
-        "forks_count": "2403",
-        "stargazers_count": "16744",
-        "language": "JavaScript",
-        "repositoryDescription": "🎆\nInteractive Online Platform that Visualizes Algorithms from Code"
-    },
-    {
-        "name": "urql",
-        "owner": {
-            "login": "FormidableLabs"
-        },
-        "full_name": "FormidableLabs/urql",
-        "forks_count": "81",
-        "stargazers_count": "2523",
-        "language": "TypeScript",
-        "repositoryDescription": "A highly customizable and versatile GraphQL client for React"
-    },
-    {
-        "name": "graphql-engine",
-        "owner": {
-            "login": "hasura"
-        },
-        "full_name": "hasura/graphql-engine",
-        "forks_count": "652",
-        "stargazers_count": "9869",
-        "language": "JavaScript",
-        "repositoryDescription": "Blazing fast, instant realtime GraphQL APIs on Postgres with fine grained access control, also trigger webhooks on database events."
-    },
-    {
-        "name": "Python-100-Days",
-        "owner": {
-            "login": "jackfrued"
-        },
-        "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "13012",
-        "stargazers_count": "36773",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "zdog",
-        "owner": {
-            "login": "metafizzy"
-        },
-        "full_name": "metafizzy/zdog",
-        "forks_count": "69",
-        "stargazers_count": "3948",
-        "language": "JavaScript",
-        "repositoryDescription": "Flat, round, designer-friendly pseudo-3D engine"
     },
     {
         "name": "the-art-of-command-line",
@@ -82,31 +27,86 @@
             "login": "jlevy"
         },
         "full_name": "jlevy/the-art-of-command-line",
-        "forks_count": "4783",
-        "stargazers_count": "50048",
+        "forks_count": "4881",
+        "stargazers_count": "50550",
         "repositoryDescription": "Master the command line, in one page"
     },
     {
-        "name": "LeetCodeAnimation",
+        "name": "medium-to-own-blog",
         "owner": {
-            "login": "MisterBooo"
+            "login": "mathieudutour"
         },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "4370",
-        "stargazers_count": "29077",
-        "language": "Java",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+        "full_name": "mathieudutour/medium-to-own-blog",
+        "forks_count": "35",
+        "stargazers_count": "1307",
+        "language": "JavaScript",
+        "repositoryDescription": "Switch from Medium to your own blog in a few minutes"
     },
     {
-        "name": "unioffice",
+        "name": "halo",
         "owner": {
-            "login": "unidoc"
+            "login": "halo-dev"
         },
-        "full_name": "unidoc/unioffice",
-        "forks_count": "95",
-        "stargazers_count": "1102",
-        "language": "Go",
-        "repositoryDescription": "Pure go library for creating and processing Office Word (.docx), Excel (.xlsx) and Powerpoint (.pptx) documents"
+        "full_name": "halo-dev/halo",
+        "forks_count": "1225",
+        "stargazers_count": "4479",
+        "language": "Java",
+        "repositoryDescription": "✍ Halo 可能是最好的 Java 博客系统"
+    },
+    {
+        "name": "algorithm-visualizer",
+        "owner": {
+            "login": "algorithm-visualizer"
+        },
+        "full_name": "algorithm-visualizer/algorithm-visualizer",
+        "forks_count": "2443",
+        "stargazers_count": "17113",
+        "language": "JavaScript",
+        "repositoryDescription": "🎆\nInteractive Online Platform that Visualizes Algorithms from Code"
+    },
+    {
+        "name": "Python-100-Days",
+        "owner": {
+            "login": "jackfrued"
+        },
+        "full_name": "jackfrued/Python-100-Days",
+        "forks_count": "13108",
+        "stargazers_count": "37023",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Python - 100天从新手到大师"
+    },
+    {
+        "name": "shellcheck",
+        "owner": {
+            "login": "koalaman"
+        },
+        "full_name": "koalaman/shellcheck",
+        "forks_count": "755",
+        "stargazers_count": "14963",
+        "language": "Haskell",
+        "repositoryDescription": "ShellCheck, a static analysis tool for shell scripts"
+    },
+    {
+        "name": "EfficientNet-PyTorch",
+        "owner": {
+            "login": "lukemelas"
+        },
+        "full_name": "lukemelas/EfficientNet-PyTorch",
+        "forks_count": "21",
+        "stargazers_count": "402",
+        "language": "Python",
+        "repositoryDescription": "A PyTorch implementation of EfficientNet"
+    },
+    {
+        "name": "algo",
+        "owner": {
+            "login": "wangzheng0822"
+        },
+        "full_name": "wangzheng0822/algo",
+        "forks_count": "1897",
+        "stargazers_count": "6544",
+        "language": "C",
+        "repositoryDescription": "数据结构和算法必知必会的50个代码实现"
     },
     {
         "name": "terminal",
@@ -114,43 +114,10 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/terminal",
-        "forks_count": "4029",
-        "stargazers_count": "42552",
+        "forks_count": "4040",
+        "stargazers_count": "42718",
         "language": "C++",
         "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
-    },
-    {
-        "name": "rucene",
-        "owner": {
-            "login": "zhihu"
-        },
-        "full_name": "zhihu/rucene",
-        "forks_count": "11",
-        "stargazers_count": "396",
-        "language": "Rust",
-        "repositoryDescription": "Rust port of Lucene"
-    },
-    {
-        "name": "dnSpy",
-        "owner": {
-            "login": "0xd4d"
-        },
-        "full_name": "0xd4d/dnSpy",
-        "forks_count": "1607",
-        "stargazers_count": "10007",
-        "language": "C#",
-        "repositoryDescription": ".NET debugger and assembly editor"
-    },
-    {
-        "name": "PapaParse",
-        "owner": {
-            "login": "mholt"
-        },
-        "full_name": "mholt/PapaParse",
-        "forks_count": "822",
-        "stargazers_count": "6916",
-        "language": "JavaScript",
-        "repositoryDescription": "Fast and powerful CSV (delimited text) parser that gracefully handles large files and malformed input"
     },
     {
         "name": "awesome-scalability",
@@ -158,9 +125,64 @@
             "login": "binhnguyennus"
         },
         "full_name": "binhnguyennus/awesome-scalability",
-        "forks_count": "1878",
-        "stargazers_count": "18393",
+        "forks_count": "1893",
+        "stargazers_count": "18561",
         "repositoryDescription": "The Patterns Behind Scalable, Reliable, and Performant Large-Scale Systems"
+    },
+    {
+        "name": "zdog",
+        "owner": {
+            "login": "metafizzy"
+        },
+        "full_name": "metafizzy/zdog",
+        "forks_count": "78",
+        "stargazers_count": "4113",
+        "language": "JavaScript",
+        "repositoryDescription": "Flat, round, designer-friendly pseudo-3D engine"
+    },
+    {
+        "name": "Super-mario-bros-A3C-pytorch",
+        "owner": {
+            "login": "vietnguyen91"
+        },
+        "full_name": "vietnguyen91/Super-mario-bros-A3C-pytorch",
+        "forks_count": "43",
+        "stargazers_count": "211",
+        "language": "Python",
+        "repositoryDescription": "Asynchronous Advantage Actor-Critic (A3C) algorithm for Super Mario Bros"
+    },
+    {
+        "name": "sunfish",
+        "owner": {
+            "login": "thomasahle"
+        },
+        "full_name": "thomasahle/sunfish",
+        "forks_count": "283",
+        "stargazers_count": "1470",
+        "language": "Python",
+        "repositoryDescription": "Sunfish: a Python Chess Engine in 111 lines of code"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "4404",
+        "stargazers_count": "29210",
+        "language": "Java",
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
+    },
+    {
+        "name": "v2ray-core",
+        "owner": {
+            "login": "v2ray"
+        },
+        "full_name": "v2ray/v2ray-core",
+        "forks_count": "3745",
+        "stargazers_count": "16190",
+        "language": "Go",
+        "repositoryDescription": "A platform for building proxies to bypass network restrictions."
     },
     {
         "name": "Python",
@@ -168,108 +190,86 @@
             "login": "TheAlgorithms"
         },
         "full_name": "TheAlgorithms/Python",
-        "forks_count": "12668",
-        "stargazers_count": "44260",
+        "forks_count": "12703",
+        "stargazers_count": "44360",
         "language": "Python",
         "repositoryDescription": "All Algorithms implemented in Python"
     },
     {
-        "name": "EdgeRealtimeVideoAnalytics",
+        "name": "dnSpy",
         "owner": {
-            "login": "RedisGears"
+            "login": "0xd4d"
         },
-        "full_name": "RedisGears/EdgeRealtimeVideoAnalytics",
-        "forks_count": "9",
-        "stargazers_count": "143",
-        "language": "Python",
-        "repositoryDescription": "An example of using Redis Streams, RedisGears, RedisAI and RedisTimeSeries for Realtime Video Analytics (i.e. counting people)"
+        "full_name": "0xd4d/dnSpy",
+        "forks_count": "1611",
+        "stargazers_count": "10116",
+        "language": "C#",
+        "repositoryDescription": ".NET debugger and assembly editor"
     },
     {
-        "name": "pytorch-image-models",
+        "name": "graphql-engine",
         "owner": {
-            "login": "rwightman"
+            "login": "hasura"
         },
-        "full_name": "rwightman/pytorch-image-models",
-        "forks_count": "25",
-        "stargazers_count": "437",
-        "language": "Python",
-        "repositoryDescription": "PyTorch image models, scripts, pretrained weights -- (SE)ResNet/ResNeXT, DPN, EfficientNet, MobileNet-V3/V2/V1, MNASNet, Single-Path NAS, FBNet, and more"
-    },
-    {
-        "name": "leetcode",
-        "owner": {
-            "login": "azl397985856"
-        },
-        "full_name": "azl397985856/leetcode",
-        "forks_count": "1427",
-        "stargazers_count": "9062",
+        "full_name": "hasura/graphql-engine",
+        "forks_count": "655",
+        "stargazers_count": "9984",
         "language": "JavaScript",
-        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+        "repositoryDescription": "Blazing fast, instant realtime GraphQL APIs on Postgres with fine grained access control, also trigger webhooks on database events."
     },
     {
-        "name": "FunctionScript",
+        "name": "next",
         "owner": {
-            "login": "FunctionScript"
+            "login": "atlas-engineer"
         },
-        "full_name": "FunctionScript/FunctionScript",
-        "forks_count": "16",
-        "stargazers_count": "800",
+        "full_name": "atlas-engineer/next",
+        "forks_count": "107",
+        "stargazers_count": "2713",
+        "language": "Common Lisp",
+        "repositoryDescription": "Next Browser - Be Productive."
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "19766",
+        "stargazers_count": "64496",
+        "language": "Java",
+        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
+    },
+    {
+        "name": "PapaParse",
+        "owner": {
+            "login": "mholt"
+        },
+        "full_name": "mholt/PapaParse",
+        "forks_count": "826",
+        "stargazers_count": "7020",
         "language": "JavaScript",
-        "repositoryDescription": "A language and specification for turning JavaScript functions into typed HTTP APIs"
+        "repositoryDescription": "Fast and powerful CSV (delimited text) parser that gracefully handles large files and malformed input"
     },
     {
-        "name": "nightfall",
+        "name": "unioffice",
         "owner": {
-            "login": "EYBlockchain"
+            "login": "unidoc"
         },
-        "full_name": "EYBlockchain/nightfall",
-        "forks_count": "25",
-        "stargazers_count": "231",
-        "language": "JavaScript",
-        "repositoryDescription": "EY's Nightfall protocols for private transactions on the Ethereum blockchain using zk-snarks"
+        "full_name": "unidoc/unioffice",
+        "forks_count": "98",
+        "stargazers_count": "1206",
+        "language": "Go",
+        "repositoryDescription": "Pure go library for creating and processing Office Word (.docx), Excel (.xlsx) and Powerpoint (.pptx) documents"
     },
     {
-        "name": "cssgridgenerator",
+        "name": "urql",
         "owner": {
-            "login": "sdras"
+            "login": "FormidableLabs"
         },
-        "full_name": "sdras/cssgridgenerator",
-        "forks_count": "94",
-        "stargazers_count": "1543",
-        "language": "Vue",
-        "repositoryDescription": "🧮Generate basic CSS Grid code to make dynamic layouts!"
-    },
-    {
-        "name": "BlueKeep",
-        "owner": {
-            "login": "Ekultek"
-        },
-        "full_name": "Ekultek/BlueKeep",
-        "forks_count": "165",
-        "stargazers_count": "485",
-        "language": "Python",
-        "repositoryDescription": "Proof of concept for CVE-2019-0708"
-    },
-    {
-        "name": "hyper",
-        "owner": {
-            "login": "zeit"
-        },
-        "full_name": "zeit/hyper",
-        "forks_count": "2434",
-        "stargazers_count": "29758",
-        "language": "JavaScript",
-        "repositoryDescription": "A terminal built on web technologies"
-    },
-    {
-        "name": "efficientnet",
-        "owner": {
-            "login": "qubvel"
-        },
-        "full_name": "qubvel/efficientnet",
-        "forks_count": "5",
-        "stargazers_count": "124",
-        "language": "Python",
-        "repositoryDescription": "Implementation on EfficientNet model. Keras."
+        "full_name": "FormidableLabs/urql",
+        "forks_count": "82",
+        "stargazers_count": "2606",
+        "language": "TypeScript",
+        "repositoryDescription": "A highly customizable and versatile GraphQL client for React"
     }
 ]

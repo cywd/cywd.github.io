@@ -1,23 +1,23 @@
 [
     {
-        "name": "the-art-of-command-line",
-        "owner": {
-            "login": "jlevy"
-        },
-        "full_name": "jlevy/the-art-of-command-line",
-        "forks_count": "5423",
-        "stargazers_count": "53518",
-        "repositoryDescription": "Master the command line, in one page"
-    },
-    {
         "name": "Enterprise-Registration-Data-of-Chinese-Mainland",
         "owner": {
             "login": "imhuster"
         },
         "full_name": "imhuster/Enterprise-Registration-Data-of-Chinese-Mainland",
-        "forks_count": "490",
-        "stargazers_count": "1145",
+        "forks_count": "1289",
+        "stargazers_count": "3068",
         "repositoryDescription": "中国大陆 31 个省份1978 年至 2019 年一千多万工商企业注册信息，包含企业名称、注册地址、统一社会信用代码、地区、注册日期、经营范围、法人代表、注册资金、企业类型等详细资料。This repository is an dataset of over 10,000,000 enterprise registration data of 31 provinces in Chinese mainland from 1978 to 2019.【工商大数据】、【企业信息】、【enterprise registration data】。"
+    },
+    {
+        "name": "the-art-of-command-line",
+        "owner": {
+            "login": "jlevy"
+        },
+        "full_name": "jlevy/the-art-of-command-line",
+        "forks_count": "5580",
+        "stargazers_count": "54318",
+        "repositoryDescription": "Master the command line, in one page"
     },
     {
         "name": "Python-100-Days",
@@ -25,74 +25,10 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "13596",
-        "stargazers_count": "38263",
+        "forks_count": "13818",
+        "stargazers_count": "38932",
         "language": "Jupyter Notebook",
         "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "mlsql",
-        "owner": {
-            "login": "paulfitz"
-        },
-        "full_name": "paulfitz/mlsql",
-        "forks_count": "6",
-        "stargazers_count": "342",
-        "language": "Shell",
-        "repositoryDescription": "inferring sql queries from plain-text questions about tables"
-    },
-    {
-        "name": "JavaGuide",
-        "owner": {
-            "login": "Snailclimb"
-        },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "13501",
-        "stargazers_count": "42698",
-        "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "awesome-scalability",
-        "owner": {
-            "login": "binhnguyennus"
-        },
-        "full_name": "binhnguyennus/awesome-scalability",
-        "forks_count": "1980",
-        "stargazers_count": "19214",
-        "repositoryDescription": "The Patterns Behind Scalable, Reliable, and Performant Large-Scale Systems"
-    },
-    {
-        "name": "algorithm-visualizer",
-        "owner": {
-            "login": "algorithm-visualizer"
-        },
-        "full_name": "algorithm-visualizer/algorithm-visualizer",
-        "forks_count": "2629",
-        "stargazers_count": "18378",
-        "language": "JavaScript",
-        "repositoryDescription": "🎆\nInteractive Online Platform that Visualizes Algorithms from Code"
-    },
-    {
-        "name": "entropic",
-        "owner": {
-            "login": "entropic-dev"
-        },
-        "full_name": "entropic-dev/entropic",
-        "forks_count": "59",
-        "stargazers_count": "1766",
-        "language": "JavaScript",
-        "repositoryDescription": "a package registry for anything, but mostly javascript"
-    },
-    {
-        "name": "security",
-        "owner": {
-            "login": "numirias"
-        },
-        "full_name": "numirias/security",
-        "forks_count": "38",
-        "stargazers_count": "246",
-        "repositoryDescription": "My security stuff"
     },
     {
         "name": "LeetCodeAnimation",
@@ -100,54 +36,10 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "4553",
-        "stargazers_count": "29878",
+        "forks_count": "4649",
+        "stargazers_count": "30283",
         "language": "Java",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "oh-my-zsh",
-        "owner": {
-            "login": "robbyrussell"
-        },
-        "full_name": "robbyrussell/oh-my-zsh",
-        "forks_count": "16762",
-        "stargazers_count": "89436",
-        "language": "Shell",
-        "repositoryDescription": "🙃\nA delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 200+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community."
-    },
-    {
-        "name": "terminal",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/terminal",
-        "forks_count": "4101",
-        "stargazers_count": "43397",
-        "language": "C++",
-        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
-    },
-    {
-        "name": "v2ray-core",
-        "owner": {
-            "login": "v2ray"
-        },
-        "full_name": "v2ray/v2ray-core",
-        "forks_count": "3889",
-        "stargazers_count": "16924",
-        "language": "Go",
-        "repositoryDescription": "A platform for building proxies to bypass network restrictions."
-    },
-    {
-        "name": "kedro",
-        "owner": {
-            "login": "quantumblacklabs"
-        },
-        "full_name": "quantumblacklabs/kedro",
-        "forks_count": "22",
-        "stargazers_count": "339",
-        "language": "Python",
-        "repositoryDescription": "A Python library for building robust production-ready data and analytics pipelines"
     },
     {
         "name": "semantic",
@@ -155,21 +47,32 @@
             "login": "github"
         },
         "full_name": "github/semantic",
-        "forks_count": "86",
-        "stargazers_count": "3163",
+        "forks_count": "99",
+        "stargazers_count": "3610",
         "language": "Haskell",
         "repositoryDescription": "Parsing, analyzing, and comparing source code across many languages"
     },
     {
-        "name": "zdog",
+        "name": "JavaGuide",
         "owner": {
-            "login": "metafizzy"
+            "login": "Snailclimb"
         },
-        "full_name": "metafizzy/zdog",
-        "forks_count": "104",
-        "stargazers_count": "4946",
-        "language": "JavaScript",
-        "repositoryDescription": "Flat, round, designer-friendly pseudo-3D engine for canvas & SVG"
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "13605",
+        "stargazers_count": "43021",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "EverydayWechat",
+        "owner": {
+            "login": "sfyc23"
+        },
+        "full_name": "sfyc23/EverydayWechat",
+        "forks_count": "156",
+        "stargazers_count": "609",
+        "language": "Python",
+        "repositoryDescription": "每日自动给女朋友发微信暖心话。"
     },
     {
         "name": "CS-Notes",
@@ -177,75 +80,52 @@
             "login": "CyC2018"
         },
         "full_name": "CyC2018/CS-Notes",
-        "forks_count": "19953",
-        "stargazers_count": "65027",
+        "forks_count": "20045",
+        "stargazers_count": "65262",
         "language": "Java",
         "repositoryDescription": "📚\nBasic Knowledge of Technical Interview（技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计）"
     },
     {
-        "name": "TensorNetwork",
+        "name": "algorithm-visualizer",
         "owner": {
-            "login": "google"
+            "login": "algorithm-visualizer"
         },
-        "full_name": "google/TensorNetwork",
-        "forks_count": "55",
-        "stargazers_count": "302",
-        "language": "Python",
-        "repositoryDescription": "A library for easy and efficient manipulation of tensor networks."
+        "full_name": "algorithm-visualizer/algorithm-visualizer",
+        "forks_count": "2665",
+        "stargazers_count": "18626",
+        "language": "JavaScript",
+        "repositoryDescription": "🎆\nInteractive Online Platform that Visualizes Algorithms from Code"
     },
     {
-        "name": "SwiftUI",
+        "name": "awesome-scalability",
         "owner": {
-            "login": "Jinxiansen"
+            "login": "binhnguyennus"
         },
-        "full_name": "Jinxiansen/SwiftUI",
-        "forks_count": "24",
-        "stargazers_count": "458",
-        "language": "Swift",
-        "repositoryDescription": "This is some of the official examples of the SwiftUI layout framework for the full platform of the apple released by WWDC2019 today. I hope to help you understand and learn this new layout framework!"
+        "full_name": "binhnguyennus/awesome-scalability",
+        "forks_count": "2015",
+        "stargazers_count": "19440",
+        "repositoryDescription": "The Patterns Behind Scalable, Reliable, and Performant Large-Scale Systems"
     },
     {
-        "name": "nebular",
+        "name": "terminal",
         "owner": {
-            "login": "akveo"
+            "login": "microsoft"
         },
-        "full_name": "akveo/nebular",
-        "forks_count": "812",
-        "stargazers_count": "4495",
-        "language": "TypeScript",
-        "repositoryDescription": "💥\nAngular UI Library based on Eva Design System (Angular 8 supported!)\n🌚\n✨\nDark Mode"
+        "full_name": "microsoft/terminal",
+        "forks_count": "4129",
+        "stargazers_count": "43619",
+        "language": "C++",
+        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
     {
-        "name": "flutter",
+        "name": "security",
         "owner": {
-            "login": "flutter"
+            "login": "numirias"
         },
-        "full_name": "flutter/flutter",
-        "forks_count": "7475",
-        "stargazers_count": "66231",
-        "language": "Dart",
-        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
-    },
-    {
-        "name": "awesome",
-        "owner": {
-            "login": "sindresorhus"
-        },
-        "full_name": "sindresorhus/awesome",
-        "forks_count": "14468",
-        "stargazers_count": "109820",
-        "repositoryDescription": "😎\nAwesome lists about all kinds of interesting topics"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "12828",
-        "stargazers_count": "44784",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "full_name": "numirias/security",
+        "forks_count": "69",
+        "stargazers_count": "433",
+        "repositoryDescription": "Some of my security stuff and vulnerabilities. Nothing advanced. More to come."
     },
     {
         "name": "EfficientNet-PyTorch",
@@ -253,10 +133,87 @@
             "login": "lukemelas"
         },
         "full_name": "lukemelas/EfficientNet-PyTorch",
-        "forks_count": "118",
-        "stargazers_count": "1094",
+        "forks_count": "162",
+        "stargazers_count": "1288",
         "language": "Python",
         "repositoryDescription": "A PyTorch implementation of EfficientNet"
+    },
+    {
+        "name": "mlsql",
+        "owner": {
+            "login": "paulfitz"
+        },
+        "full_name": "paulfitz/mlsql",
+        "forks_count": "13",
+        "stargazers_count": "524",
+        "language": "Shell",
+        "repositoryDescription": "inferring sql queries from plain-text questions about tables"
+    },
+    {
+        "name": "actix-web",
+        "owner": {
+            "login": "actix"
+        },
+        "full_name": "actix/actix-web",
+        "forks_count": "307",
+        "stargazers_count": "4369",
+        "language": "Rust",
+        "repositoryDescription": "Actix web is a small, pragmatic, and extremely fast rust web framework."
+    },
+    {
+        "name": "kedro",
+        "owner": {
+            "login": "quantumblacklabs"
+        },
+        "full_name": "quantumblacklabs/kedro",
+        "forks_count": "27",
+        "stargazers_count": "555",
+        "language": "Python",
+        "repositoryDescription": "A Python library for building robust production-ready data and analytics pipelines"
+    },
+    {
+        "name": "v2ray-core",
+        "owner": {
+            "login": "v2ray"
+        },
+        "full_name": "v2ray/v2ray-core",
+        "forks_count": "3914",
+        "stargazers_count": "17115",
+        "language": "Go",
+        "repositoryDescription": "A platform for building proxies to bypass network restrictions."
+    },
+    {
+        "name": "leetcode",
+        "owner": {
+            "login": "azl397985856"
+        },
+        "full_name": "azl397985856/leetcode",
+        "forks_count": "1569",
+        "stargazers_count": "9715",
+        "language": "JavaScript",
+        "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
+    },
+    {
+        "name": "tensorwatch",
+        "owner": {
+            "login": "microsoft"
+        },
+        "full_name": "microsoft/tensorwatch",
+        "forks_count": "74",
+        "stargazers_count": "1048",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Debugging, monitoring and visualization for Python Machine Learning and Data Science"
+    },
+    {
+        "name": "oh-my-zsh",
+        "owner": {
+            "login": "robbyrussell"
+        },
+        "full_name": "robbyrussell/oh-my-zsh",
+        "forks_count": "16772",
+        "stargazers_count": "89594",
+        "language": "Shell",
+        "repositoryDescription": "🙃\nA delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 200+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community."
     },
     {
         "name": "advanced-java",
@@ -264,9 +221,53 @@
             "login": "doocs"
         },
         "full_name": "doocs/advanced-java",
-        "forks_count": "5084",
-        "stargazers_count": "21180",
+        "forks_count": "5119",
+        "stargazers_count": "21343",
         "language": "Java",
         "repositoryDescription": "😮\n互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识"
+    },
+    {
+        "name": "zdog",
+        "owner": {
+            "login": "metafizzy"
+        },
+        "full_name": "metafizzy/zdog",
+        "forks_count": "114",
+        "stargazers_count": "5125",
+        "language": "JavaScript",
+        "repositoryDescription": "Flat, round, designer-friendly pseudo-3D engine for canvas & SVG"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "12879",
+        "stargazers_count": "44931",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "TensorNetwork",
+        "owner": {
+            "login": "google"
+        },
+        "full_name": "google/TensorNetwork",
+        "forks_count": "75",
+        "stargazers_count": "458",
+        "language": "Python",
+        "repositoryDescription": "A library for easy and efficient manipulation of tensor networks."
+    },
+    {
+        "name": "flutter",
+        "owner": {
+            "login": "flutter"
+        },
+        "full_name": "flutter/flutter",
+        "forks_count": "7485",
+        "stargazers_count": "66364",
+        "language": "Dart",
+        "repositoryDescription": "Flutter makes it easy and fast to build beautiful mobile apps."
     }
 ]

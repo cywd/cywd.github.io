@@ -5,20 +5,10 @@
             "login": "rasbt"
         },
         "full_name": "rasbt/deeplearning-models",
-        "forks_count": "321",
-        "stargazers_count": "1854",
+        "forks_count": "484",
+        "stargazers_count": "2713",
         "language": "Jupyter Notebook",
         "repositoryDescription": "A collection of various deep learning architectures, models, and tips"
-    },
-    {
-        "name": "Enterprise-Registration-Data-of-Chinese-Mainland",
-        "owner": {
-            "login": "imhuster"
-        },
-        "full_name": "imhuster/Enterprise-Registration-Data-of-Chinese-Mainland",
-        "forks_count": "1455",
-        "stargazers_count": "3538",
-        "repositoryDescription": "中国大陆 31 个省份1978 年至 2019 年一千多万工商企业注册信息，包含企业名称、注册地址、统一社会信用代码、地区、注册日期、经营范围、法人代表、注册资金、企业类型等详细资料。This repository is an dataset of over 10,000,000 enterprise registration data of 31 provinces in Chinese mainland from 1978 to 2019.【工商大数据】、【企业信息】、【enterprise registration data】。"
     },
     {
         "name": "the-art-of-command-line",
@@ -26,8 +16,8 @@
             "login": "jlevy"
         },
         "full_name": "jlevy/the-art-of-command-line",
-        "forks_count": "5651",
-        "stargazers_count": "54834",
+        "forks_count": "5702",
+        "stargazers_count": "55162",
         "repositoryDescription": "Master the command line, in one page"
     },
     {
@@ -36,21 +26,31 @@
             "login": "jackfrued"
         },
         "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "13910",
-        "stargazers_count": "39202",
+        "forks_count": "14019",
+        "stargazers_count": "39484",
         "language": "Jupyter Notebook",
         "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
-        "name": "semantic",
+        "name": "Enterprise-Registration-Data-of-Chinese-Mainland",
         "owner": {
-            "login": "github"
+            "login": "imhuster"
         },
-        "full_name": "github/semantic",
-        "forks_count": "106",
-        "stargazers_count": "3839",
-        "language": "Haskell",
-        "repositoryDescription": "Parsing, analyzing, and comparing source code across many languages"
+        "full_name": "imhuster/Enterprise-Registration-Data-of-Chinese-Mainland",
+        "forks_count": "1534",
+        "stargazers_count": "3787",
+        "repositoryDescription": "中国大陆 31 个省份1978 年至 2019 年一千多万工商企业注册信息，包含企业名称、注册地址、统一社会信用代码、地区、注册日期、经营范围、法人代表、注册资金、企业类型等详细资料。This repository is an dataset of over 10,000,000 enterprise registration data of 31 provinces in Chinese mainland from 1978 to 2019.【工商大数据】、【企业信息】、【enterprise registration data】。"
+    },
+    {
+        "name": "laravel",
+        "owner": {
+            "login": "pipe-dream"
+        },
+        "full_name": "pipe-dream/laravel",
+        "forks_count": "14",
+        "stargazers_count": "335",
+        "language": "JavaScript",
+        "repositoryDescription": "Create Laravel projects really fast"
     },
     {
         "name": "EverydayWechat",
@@ -58,31 +58,21 @@
             "login": "sfyc23"
         },
         "full_name": "sfyc23/EverydayWechat",
-        "forks_count": "189",
-        "stargazers_count": "820",
+        "forks_count": "213",
+        "stargazers_count": "1034",
         "language": "Python",
         "repositoryDescription": "每日自动给女朋友发微信暖心话。"
     },
     {
-        "name": "GSYFlutterBook",
+        "name": "pure-bash-bible",
         "owner": {
-            "login": "CarGuo"
+            "login": "dylanaraps"
         },
-        "full_name": "CarGuo/GSYFlutterBook",
-        "forks_count": "31",
-        "stargazers_count": "449",
-        "repositoryDescription": "Flutter完整开发实战详解系列，提供在线预览和pdf下载，本系列将完整讲述：如何快速从 0 开发一个完整的 Flutter APP，配套高完成度 Flutter 开源项目 GSYGithubAppFlutter ，同时会提供一些Flutter的开发细节技巧，之后深入源码和实战为你全面解析 Flutter 。"
-    },
-    {
-        "name": "kedro",
-        "owner": {
-            "login": "quantumblacklabs"
-        },
-        "full_name": "quantumblacklabs/kedro",
-        "forks_count": "36",
-        "stargazers_count": "709",
-        "language": "Python",
-        "repositoryDescription": "A Python library for building robust production-ready data and analytics pipelines"
+        "full_name": "dylanaraps/pure-bash-bible",
+        "forks_count": "731",
+        "stargazers_count": "11870",
+        "language": "Shell",
+        "repositoryDescription": "📖\nA collection of pure bash alternatives to external processes."
     },
     {
         "name": "terminal",
@@ -90,75 +80,20 @@
             "login": "microsoft"
         },
         "full_name": "microsoft/terminal",
-        "forks_count": "4144",
-        "stargazers_count": "43758",
+        "forks_count": "4161",
+        "stargazers_count": "43914",
         "language": "C++",
         "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
     },
     {
-        "name": "awesome-scalability",
+        "name": "GSYFlutterBook",
         "owner": {
-            "login": "binhnguyennus"
+            "login": "CarGuo"
         },
-        "full_name": "binhnguyennus/awesome-scalability",
-        "forks_count": "2034",
-        "stargazers_count": "19554",
-        "repositoryDescription": "The Patterns of Scalable, Reliable, and Performant Large-Scale Systems"
-    },
-    {
-        "name": "Q2RTX",
-        "owner": {
-            "login": "NVIDIA"
-        },
-        "full_name": "NVIDIA/Q2RTX",
-        "forks_count": "9",
-        "stargazers_count": "167",
-        "language": "C",
-        "repositoryDescription": "NVIDIA’s implementation of RTX ray-tracing in Quake II"
-    },
-    {
-        "name": "Invaders",
-        "owner": {
-            "login": "nanochess"
-        },
-        "full_name": "nanochess/Invaders",
-        "forks_count": "11",
-        "stargazers_count": "299",
-        "language": "Assembly",
-        "repositoryDescription": "Invaders game in 512 bytes (boot sector)"
-    },
-    {
-        "name": "algorithm-visualizer",
-        "owner": {
-            "login": "algorithm-visualizer"
-        },
-        "full_name": "algorithm-visualizer/algorithm-visualizer",
-        "forks_count": "2679",
-        "stargazers_count": "18747",
-        "language": "JavaScript",
-        "repositoryDescription": "🎆\nInteractive Online Platform that Visualizes Algorithms from Code"
-    },
-    {
-        "name": "tensorwatch",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/tensorwatch",
-        "forks_count": "82",
-        "stargazers_count": "1161",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Debugging, monitoring and visualization for Python Machine Learning and Data Science"
-    },
-    {
-        "name": "v2ray-core",
-        "owner": {
-            "login": "v2ray"
-        },
-        "full_name": "v2ray/v2ray-core",
-        "forks_count": "3933",
-        "stargazers_count": "17224",
-        "language": "Go",
-        "repositoryDescription": "A platform for building proxies to bypass network restrictions."
+        "full_name": "CarGuo/GSYFlutterBook",
+        "forks_count": "38",
+        "stargazers_count": "601",
+        "repositoryDescription": "Flutter完整开发实战详解系列，提供在线预览和pdf下载，本系列将完整讲述：如何快速从 0 开发一个完整的 Flutter APP，配套高完成度 Flutter 开源项目 GSYGithubAppFlutter ，同时会提供一些Flutter的开发细节技巧，之后深入源码和实战为你全面解析 Flutter 。"
     },
     {
         "name": "LeetCodeAnimation",
@@ -166,87 +101,32 @@
             "login": "MisterBooo"
         },
         "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "4670",
-        "stargazers_count": "30389",
+        "forks_count": "4695",
+        "stargazers_count": "30537",
         "language": "Java",
         "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
-        "name": "oh-my-zsh",
+        "name": "football",
         "owner": {
-            "login": "robbyrussell"
+            "login": "google-research"
         },
-        "full_name": "robbyrussell/oh-my-zsh",
-        "forks_count": "16780",
-        "stargazers_count": "89698",
-        "language": "Shell",
-        "repositoryDescription": "🙃\nA delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 200+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, php, python, etc), over 140 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community."
-    },
-    {
-        "name": "zdog",
-        "owner": {
-            "login": "metafizzy"
-        },
-        "full_name": "metafizzy/zdog",
-        "forks_count": "119",
-        "stargazers_count": "5228",
-        "language": "JavaScript",
-        "repositoryDescription": "Flat, round, designer-friendly pseudo-3D engine for canvas & SVG"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "20067",
-        "stargazers_count": "65352",
-        "language": "Java",
-        "repositoryDescription": "📚\nBasic Knowledge of Technical Interview（技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计）"
-    },
-    {
-        "name": "entropic",
-        "owner": {
-            "login": "entropic-dev"
-        },
-        "full_name": "entropic-dev/entropic",
-        "forks_count": "72",
-        "stargazers_count": "2025",
-        "language": "JavaScript",
-        "repositoryDescription": "🦝\n📦\na package registry for anything, but mostly javascript 🦝 🦝 🦝"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "12910",
-        "stargazers_count": "45008",
+        "full_name": "google-research/football",
+        "forks_count": "12",
+        "stargazers_count": "165",
         "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
+        "repositoryDescription": ""
     },
     {
-        "name": "vscode",
+        "name": "files-uwp",
         "owner": {
-            "login": "microsoft"
+            "login": "duke7553"
         },
-        "full_name": "microsoft/vscode",
-        "forks_count": "10726",
-        "stargazers_count": "77658",
-        "language": "TypeScript",
-        "repositoryDescription": "Visual Studio Code"
-    },
-    {
-        "name": "svelte",
-        "owner": {
-            "login": "sveltejs"
-        },
-        "full_name": "sveltejs/svelte",
-        "forks_count": "677",
-        "stargazers_count": "18353",
-        "language": "TypeScript",
-        "repositoryDescription": "Cybernetically enhanced web apps"
+        "full_name": "duke7553/files-uwp",
+        "forks_count": "73",
+        "stargazers_count": "853",
+        "language": "C#",
+        "repositoryDescription": "\"More than just a rewrite of Windows Explorer\""
     },
     {
         "name": "JavaGuide",
@@ -254,20 +134,140 @@
             "login": "Snailclimb"
         },
         "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "13630",
-        "stargazers_count": "43105",
+        "forks_count": "13660",
+        "stargazers_count": "43228",
         "language": "Java",
         "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
     },
     {
-        "name": "GSYGithubAppFlutter",
+        "name": "entropic",
         "owner": {
-            "login": "CarGuo"
+            "login": "entropic-dev"
         },
-        "full_name": "CarGuo/GSYGithubAppFlutter",
-        "forks_count": "912",
-        "stargazers_count": "5869",
-        "language": "Dart",
-        "repositoryDescription": "超完整的Flutter项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高，持续维护，配套文章，适合全面学习，对比参考。跨平台的开源Github客户端App，更好的体验，更丰富的功能，旨在更好的日常管理和维护个人Github，提供更好更方便的驾车体验Σ(￣。￣ﾉ)ﾉ。同款Weex版本 ： https://github.com/CarGuo/GSYGithubAppWeex 、同款React Native版本 ： https://github.com/CarGuo/GSYGithubApp 、原生 kotlin 版本 https://g…"
+        "full_name": "entropic-dev/entropic",
+        "forks_count": "79",
+        "stargazers_count": "2168",
+        "language": "JavaScript",
+        "repositoryDescription": "🦝\n📦\na package registry for anything, but mostly javascript 🦝 🦝 🦝"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "20099",
+        "stargazers_count": "65469",
+        "language": "Java",
+        "repositoryDescription": "📚\nBasic Knowledge of Technical Interview（技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计）"
+    },
+    {
+        "name": "medium-to-own-blog",
+        "owner": {
+            "login": "mathieudutour"
+        },
+        "full_name": "mathieudutour/medium-to-own-blog",
+        "forks_count": "62",
+        "stargazers_count": "2254",
+        "language": "JavaScript",
+        "repositoryDescription": "Switch from Medium to your own blog in a few minutes"
+    },
+    {
+        "name": "semantic",
+        "owner": {
+            "login": "github"
+        },
+        "full_name": "github/semantic",
+        "forks_count": "111",
+        "stargazers_count": "3941",
+        "language": "Haskell",
+        "repositoryDescription": "Parsing, analyzing, and comparing source code across many languages"
+    },
+    {
+        "name": "CoreWCF",
+        "owner": {
+            "login": "CoreWCF"
+        },
+        "full_name": "CoreWCF/CoreWCF",
+        "forks_count": "13",
+        "stargazers_count": "113",
+        "language": "C#",
+        "repositoryDescription": "Main repository for the Core WCF project"
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "12930",
+        "stargazers_count": "45097",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "Q2RTX",
+        "owner": {
+            "login": "NVIDIA"
+        },
+        "full_name": "NVIDIA/Q2RTX",
+        "forks_count": "17",
+        "stargazers_count": "265",
+        "language": "C",
+        "repositoryDescription": "NVIDIA’s implementation of RTX ray-tracing in Quake II"
+    },
+    {
+        "name": "theme-ui",
+        "owner": {
+            "login": "system-ui"
+        },
+        "full_name": "system-ui/theme-ui",
+        "forks_count": "6",
+        "stargazers_count": "170",
+        "language": "JavaScript",
+        "repositoryDescription": "Build consistent, themeable React UIs based on design system constraints and design tokens"
+    },
+    {
+        "name": "svelte",
+        "owner": {
+            "login": "sveltejs"
+        },
+        "full_name": "sveltejs/svelte",
+        "forks_count": "678",
+        "stargazers_count": "18439",
+        "language": "TypeScript",
+        "repositoryDescription": "Cybernetically enhanced web apps"
+    },
+    {
+        "name": "awesome-casestudy",
+        "owner": {
+            "login": "luruke"
+        },
+        "full_name": "luruke/awesome-casestudy",
+        "forks_count": "76",
+        "stargazers_count": "1829",
+        "repositoryDescription": "📕\nCurated list of technical case studies on WebGL and creative development"
+    },
+    {
+        "name": "SwiftUI-2048",
+        "owner": {
+            "login": "unixzii"
+        },
+        "full_name": "unixzii/SwiftUI-2048",
+        "forks_count": "2",
+        "stargazers_count": "165",
+        "language": "Swift",
+        "repositoryDescription": "A 2048 game writing with SwiftUI."
+    },
+    {
+        "name": "v2ray-core",
+        "owner": {
+            "login": "v2ray"
+        },
+        "full_name": "v2ray/v2ray-core",
+        "forks_count": "3952",
+        "stargazers_count": "17302",
+        "language": "Go",
+        "repositoryDescription": "A platform for building proxies to bypass network restrictions."
     }
 ]

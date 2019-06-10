@@ -1,12 +1,12 @@
 [
     {
-        "name": "onefraction",
+        "name": "fullstack",
         "owner": {
             "login": "TrillCyborg"
         },
-        "full_name": "TrillCyborg/onefraction",
-        "forks_count": "482",
-        "stargazers_count": "2098",
+        "full_name": "TrillCyborg/fullstack",
+        "forks_count": "1372",
+        "stargazers_count": "4406",
         "language": "TypeScript",
         "repositoryDescription": "React/ApolloGraphQL/Node/Mongo demo written in Typescript"
     },
@@ -16,31 +16,10 @@
             "login": "rasbt"
         },
         "full_name": "rasbt/deeplearning-models",
-        "forks_count": "641",
-        "stargazers_count": "3538",
+        "forks_count": "821",
+        "stargazers_count": "4382",
         "language": "Jupyter Notebook",
         "repositoryDescription": "A collection of various deep learning architectures, models, and tips"
-    },
-    {
-        "name": "Python-100-Days",
-        "owner": {
-            "login": "jackfrued"
-        },
-        "full_name": "jackfrued/Python-100-Days",
-        "forks_count": "14135",
-        "stargazers_count": "39849",
-        "language": "Jupyter Notebook",
-        "repositoryDescription": "Python - 100天从新手到大师"
-    },
-    {
-        "name": "the-art-of-command-line",
-        "owner": {
-            "login": "jlevy"
-        },
-        "full_name": "jlevy/the-art-of-command-line",
-        "forks_count": "5753",
-        "stargazers_count": "55521",
-        "repositoryDescription": "Master the command line, in one page"
     },
     {
         "name": "Enterprise-Registration-Data-of-Chinese-Mainland",
@@ -48,42 +27,9 @@
             "login": "imhuster"
         },
         "full_name": "imhuster/Enterprise-Registration-Data-of-Chinese-Mainland",
-        "forks_count": "1642",
-        "stargazers_count": "4044",
+        "forks_count": "1899",
+        "stargazers_count": "4693",
         "repositoryDescription": "中国大陆 31 个省份1978 年至 2019 年一千多万工商企业注册信息，包含企业名称、注册地址、统一社会信用代码、地区、注册日期、经营范围、法人代表、注册资金、企业类型等详细资料。This repository is an dataset of over 10,000,000 enterprise registration data of 31 provinces in Chinese mainland from 1978 to 2019.【工商大数据】、【企业信息】、【enterprise registration data】。"
-    },
-    {
-        "name": "GPT2",
-        "owner": {
-            "login": "ConnorJL"
-        },
-        "full_name": "ConnorJL/GPT2",
-        "forks_count": "78",
-        "stargazers_count": "368",
-        "language": "Python",
-        "repositoryDescription": "An implementation of training for GPT2, supports TPUs"
-    },
-    {
-        "name": "LeetCodeAnimation",
-        "owner": {
-            "login": "MisterBooo"
-        },
-        "full_name": "MisterBooo/LeetCodeAnimation",
-        "forks_count": "4731",
-        "stargazers_count": "30764",
-        "language": "Java",
-        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
-    },
-    {
-        "name": "football",
-        "owner": {
-            "login": "google-research"
-        },
-        "full_name": "google-research/football",
-        "forks_count": "35",
-        "stargazers_count": "396",
-        "language": "Python",
-        "repositoryDescription": ""
     },
     {
         "name": "from_coder_to_expert",
@@ -91,20 +37,20 @@
             "login": "0voice"
         },
         "full_name": "0voice/from_coder_to_expert",
-        "forks_count": "62",
-        "stargazers_count": "297",
+        "forks_count": "225",
+        "stargazers_count": "953",
         "repositoryDescription": "2019年最新总结，从程序员到CTO，从专业走向卓越，分享大牛企业内部pdf与PPT"
     },
     {
-        "name": "pure-bash-bible",
+        "name": "Python-100-Days",
         "owner": {
-            "login": "dylanaraps"
+            "login": "jackfrued"
         },
-        "full_name": "dylanaraps/pure-bash-bible",
-        "forks_count": "754",
-        "stargazers_count": "12069",
-        "language": "Shell",
-        "repositoryDescription": "📖\nA collection of pure bash alternatives to external processes."
+        "full_name": "jackfrued/Python-100-Days",
+        "forks_count": "14308",
+        "stargazers_count": "40340",
+        "language": "Jupyter Notebook",
+        "repositoryDescription": "Python - 100天从新手到大师"
     },
     {
         "name": "EverydayWechat",
@@ -112,108 +58,31 @@
             "login": "sfyc23"
         },
         "full_name": "sfyc23/EverydayWechat",
-        "forks_count": "235",
-        "stargazers_count": "1199",
+        "forks_count": "320",
+        "stargazers_count": "1702",
         "language": "Python",
         "repositoryDescription": "每日自动给女朋友发微信暖心话。"
     },
     {
-        "name": "JavaGuide",
+        "name": "the-art-of-command-line",
         "owner": {
-            "login": "Snailclimb"
+            "login": "jlevy"
         },
-        "full_name": "Snailclimb/JavaGuide",
-        "forks_count": "13702",
-        "stargazers_count": "43387",
+        "full_name": "jlevy/the-art-of-command-line",
+        "forks_count": "5828",
+        "stargazers_count": "55970",
+        "repositoryDescription": "Master the command line, in one page"
+    },
+    {
+        "name": "LeetCodeAnimation",
+        "owner": {
+            "login": "MisterBooo"
+        },
+        "full_name": "MisterBooo/LeetCodeAnimation",
+        "forks_count": "4801",
+        "stargazers_count": "31136",
         "language": "Java",
-        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
-    },
-    {
-        "name": "CS-Notes",
-        "owner": {
-            "login": "CyC2018"
-        },
-        "full_name": "CyC2018/CS-Notes",
-        "forks_count": "20144",
-        "stargazers_count": "65594",
-        "language": "Java",
-        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
-    },
-    {
-        "name": "About-SwiftUI",
-        "owner": {
-            "login": "Juanpe"
-        },
-        "full_name": "Juanpe/About-SwiftUI",
-        "forks_count": "14",
-        "stargazers_count": "243",
-        "language": "Swift",
-        "repositoryDescription": "Gathering all info published, both by Apple and by others, about new framework SwiftUI."
-    },
-    {
-        "name": "terminal",
-        "owner": {
-            "login": "microsoft"
-        },
-        "full_name": "microsoft/terminal",
-        "forks_count": "4178",
-        "stargazers_count": "44041",
-        "language": "C++",
-        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
-    },
-    {
-        "name": "laravel",
-        "owner": {
-            "login": "pipe-dream"
-        },
-        "full_name": "pipe-dream/laravel",
-        "forks_count": "22",
-        "stargazers_count": "473",
-        "language": "JavaScript",
-        "repositoryDescription": "Create Laravel projects really fast"
-    },
-    {
-        "name": "files-uwp",
-        "owner": {
-            "login": "duke7553"
-        },
-        "full_name": "duke7553/files-uwp",
-        "forks_count": "73",
-        "stargazers_count": "959",
-        "language": "C#",
-        "repositoryDescription": "\"More than just a rewrite of Windows Explorer\""
-    },
-    {
-        "name": "WebStack-Laravel",
-        "owner": {
-            "login": "hui-ho"
-        },
-        "full_name": "hui-ho/WebStack-Laravel",
-        "forks_count": "110",
-        "stargazers_count": "418",
-        "language": "PHP",
-        "repositoryDescription": "一个开源的网址导航网站项目，您可以拿来制作自己的网址导航。"
-    },
-    {
-        "name": "Python",
-        "owner": {
-            "login": "TheAlgorithms"
-        },
-        "full_name": "TheAlgorithms/Python",
-        "forks_count": "12960",
-        "stargazers_count": "45191",
-        "language": "Python",
-        "repositoryDescription": "All Algorithms implemented in Python"
-    },
-    {
-        "name": "the-book-of-secret-knowledge",
-        "owner": {
-            "login": "trimstray"
-        },
-        "full_name": "trimstray/the-book-of-secret-knowledge",
-        "forks_count": "1943",
-        "stargazers_count": "20628",
-        "repositoryDescription": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
+        "repositoryDescription": "Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）"
     },
     {
         "name": "The-Documentation-Compendium",
@@ -221,9 +90,95 @@
             "login": "kylelobo"
         },
         "full_name": "kylelobo/The-Documentation-Compendium",
-        "forks_count": "19",
-        "stargazers_count": "373",
+        "forks_count": "50",
+        "stargazers_count": "750",
         "repositoryDescription": "📢\nVarious README templates & tips on writing high-quality documentation that people want to read."
+    },
+    {
+        "name": "tripRecord",
+        "owner": {
+            "login": "wwenj"
+        },
+        "full_name": "wwenj/tripRecord",
+        "forks_count": "124",
+        "stargazers_count": "320",
+        "language": "PLpgSQL",
+        "repositoryDescription": "咔咔出行——解决出行问题基于高德地图API，Vue，Express实现的移动端全栈webapp"
+    },
+    {
+        "name": "About-SwiftUI",
+        "owner": {
+            "login": "Juanpe"
+        },
+        "full_name": "Juanpe/About-SwiftUI",
+        "forks_count": "28",
+        "stargazers_count": "637",
+        "language": "Swift",
+        "repositoryDescription": "Gathering all info published, both by Apple and by others, about new framework SwiftUI."
+    },
+    {
+        "name": "GSYFlutterBook",
+        "owner": {
+            "login": "CarGuo"
+        },
+        "full_name": "CarGuo/GSYFlutterBook",
+        "forks_count": "75",
+        "stargazers_count": "1022",
+        "repositoryDescription": "Flutter完整开发实战详解系列，提供在线预览和pdf下载，本系列将完整讲述：如何快速从 0 开发一个完整的 Flutter APP，配套高完成度 Flutter 开源项目 GSYGithubAppFlutter ，同时会提供一些Flutter的开发细节技巧，之后深入源码和实战为你全面解析 Flutter 。"
+    },
+    {
+        "name": "trackerslist",
+        "owner": {
+            "login": "ngosang"
+        },
+        "full_name": "ngosang/trackerslist",
+        "forks_count": "1697",
+        "stargazers_count": "11214",
+        "repositoryDescription": "Updated list of public BitTorrent trackers"
+    },
+    {
+        "name": "JavaGuide",
+        "owner": {
+            "login": "Snailclimb"
+        },
+        "full_name": "Snailclimb/JavaGuide",
+        "forks_count": "13776",
+        "stargazers_count": "43642",
+        "language": "Java",
+        "repositoryDescription": "【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。"
+    },
+    {
+        "name": "pure-bash-bible",
+        "owner": {
+            "login": "dylanaraps"
+        },
+        "full_name": "dylanaraps/pure-bash-bible",
+        "forks_count": "786",
+        "stargazers_count": "12324",
+        "language": "Shell",
+        "repositoryDescription": "📖\nA collection of pure bash alternatives to external processes."
+    },
+    {
+        "name": "GPT2",
+        "owner": {
+            "login": "ConnorJL"
+        },
+        "full_name": "ConnorJL/GPT2",
+        "forks_count": "132",
+        "stargazers_count": "604",
+        "language": "Python",
+        "repositoryDescription": "An implementation of training for GPT2, supports TPUs"
+    },
+    {
+        "name": "CS-Notes",
+        "owner": {
+            "login": "CyC2018"
+        },
+        "full_name": "CyC2018/CS-Notes",
+        "forks_count": "20206",
+        "stargazers_count": "65825",
+        "language": "Java",
+        "repositoryDescription": "📚\n技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计"
     },
     {
         "name": "leetcode",
@@ -231,32 +186,64 @@
             "login": "azl397985856"
         },
         "full_name": "azl397985856/leetcode",
-        "forks_count": "1601",
-        "stargazers_count": "9985",
+        "forks_count": "1636",
+        "stargazers_count": "10190",
         "language": "JavaScript",
         "repositoryDescription": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)"
     },
     {
-        "name": "Vaux",
+        "name": "d2l-zh",
         "owner": {
-            "login": "dokun1"
+            "login": "d2l-ai"
         },
-        "full_name": "dokun1/Vaux",
-        "forks_count": "6",
-        "stargazers_count": "197",
-        "language": "Swift",
-        "repositoryDescription": "A HTML DSL library for Swift"
+        "full_name": "d2l-ai/d2l-zh",
+        "forks_count": "2241",
+        "stargazers_count": "8415",
+        "language": "Python",
+        "repositoryDescription": "《动手学深度学习》，英文版即伯克利深度学习（STAT 157，2019春）教材。面向中文读者、能运行、可讨论。"
     },
     {
-        "name": "entropic",
+        "name": "the-book-of-secret-knowledge",
         "owner": {
-            "login": "entropic-dev"
+            "login": "trimstray"
         },
-        "full_name": "entropic-dev/entropic",
-        "forks_count": "83",
-        "stargazers_count": "2265",
-        "language": "JavaScript",
-        "repositoryDescription": "🦝\n📦\na package registry for anything, but mostly javascript 🦝 🦝 🦝"
+        "full_name": "trimstray/the-book-of-secret-knowledge",
+        "forks_count": "1959",
+        "stargazers_count": "20804",
+        "repositoryDescription": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more."
+    },
+    {
+        "name": "Python",
+        "owner": {
+            "login": "TheAlgorithms"
+        },
+        "full_name": "TheAlgorithms/Python",
+        "forks_count": "13009",
+        "stargazers_count": "45377",
+        "language": "Python",
+        "repositoryDescription": "All Algorithms implemented in Python"
+    },
+    {
+        "name": "terminal",
+        "owner": {
+            "login": "microsoft"
+        },
+        "full_name": "microsoft/terminal",
+        "forks_count": "4199",
+        "stargazers_count": "44213",
+        "language": "C++",
+        "repositoryDescription": "The new Windows Terminal, and the original Windows console host -- all in the same place!"
+    },
+    {
+        "name": "football",
+        "owner": {
+            "login": "google-research"
+        },
+        "full_name": "google-research/football",
+        "forks_count": "54",
+        "stargazers_count": "565",
+        "language": "Python",
+        "repositoryDescription": ""
     },
     {
         "name": "china-indie-podcasts",
@@ -264,9 +251,20 @@
             "login": "typlog"
         },
         "full_name": "typlog/china-indie-podcasts",
-        "forks_count": "27",
-        "stargazers_count": "185",
+        "forks_count": "36",
+        "stargazers_count": "339",
         "language": "HTML",
         "repositoryDescription": "发现与推荐高质量的中文独立播客"
+    },
+    {
+        "name": "laravel",
+        "owner": {
+            "login": "pipe-dream"
+        },
+        "full_name": "pipe-dream/laravel",
+        "forks_count": "35",
+        "stargazers_count": "627",
+        "language": "JavaScript",
+        "repositoryDescription": "Create Laravel projects really fast"
     }
 ]

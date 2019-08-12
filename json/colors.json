@@ -431,6 +431,10 @@
         "color": "#71b417",
         "url": "https://github.com/trending?l=Game-Maker-Language"
     },
+    "GAML": {
+        "color": "#FFC766",
+        "url": "https://github.com/trending?l=GAML"
+    },
     "GAMS": {
         "color": null,
         "url": "https://github.com/trending?l=GAMS"
@@ -564,7 +568,7 @@
         "url": "https://github.com/trending?l=Idris"
     },
     "IGOR Pro": {
-        "color": null,
+        "color": "#0000cc",
         "url": "https://github.com/trending?l=IGOR-Pro"
     },
     "Inform 7": {
@@ -1271,6 +1275,10 @@
         "color": null,
         "url": "https://github.com/trending?l=Smarty"
     },
+    "SmPL": {
+        "color": "#c94949",
+        "url": "https://github.com/trending?l=SmPL"
+    },
     "SMT": {
         "color": null,
         "url": "https://github.com/trending?l=SMT"
@@ -1390,6 +1398,10 @@
     "UrWeb": {
         "color": null,
         "url": "https://github.com/trending?l=UrWeb"
+    },
+    "V": {
+        "color": "#5d87bd",
+        "url": "https://github.com/trending?l=V"
     },
     "Vala": {
         "color": "#fbe5cd",

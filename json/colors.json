@@ -803,6 +803,10 @@
         "color": "#c7a938",
         "url": "https://github.com/trending?l=Mirah"
     },
+    "MLIR": {
+        "color": null,
+        "url": "https://github.com/trending?l=MLIR"
+    },
     "Modelica": {
         "color": null,
         "url": "https://github.com/trending?l=Modelica"

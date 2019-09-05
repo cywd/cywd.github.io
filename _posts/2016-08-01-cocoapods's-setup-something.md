@@ -110,7 +110,7 @@ ERROR:  While executing gem ... (TypeError)
 
 `sudo gem update --system`
 
-`sudo gem install cocoa pods`
+`sudo gem install cocoapods`
 
 `sudo gem install -n /usr/local/bin cocoapods`
 

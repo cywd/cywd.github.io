@@ -959,6 +959,10 @@
         "color": "#f7ede0",
         "url": "https://github.com/trending?l=Opal"
     },
+    "Open Policy Agent": {
+        "color": null,
+        "url": "https://github.com/trending?l=Open-Policy-Agent"
+    },
     "OpenCL": {
         "color": null,
         "url": "https://github.com/trending?l=OpenCL"

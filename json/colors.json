@@ -1187,6 +1187,10 @@
         "color": "#2D54CB",
         "url": "https://github.com/trending?l=Ring"
     },
+    "Riot": {
+        "color": "#A71E49",
+        "url": "https://github.com/trending?l=Riot"
+    },
     "RobotFramework": {
         "color": null,
         "url": "https://github.com/trending?l=RobotFramework"

@@ -1423,6 +1423,14 @@
         "color": "#fbe5cd",
         "url": "https://github.com/trending?l=Vala"
     },
+    "VBA": {
+        "color": "#867db1",
+        "url": "https://github.com/trending?l=VBA"
+    },
+    "VBScript": {
+        "color": "#15dcdc",
+        "url": "https://github.com/trending?l=VBScript"
+    },
     "VCL": {
         "color": "#148AA8",
         "url": "https://github.com/trending?l=VCL"
@@ -1439,9 +1447,9 @@
         "color": "#199f4b",
         "url": "https://github.com/trending?l=Vim-script"
     },
-    "Visual Basic": {
+    "Visual Basic .NET": {
         "color": "#945db7",
-        "url": "https://github.com/trending?l=Visual-Basic"
+        "url": "https://github.com/trending?l=Visual-Basic-.NET"
     },
     "Volt": {
         "color": "#1F1F1F",

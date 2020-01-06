@@ -391,6 +391,10 @@
         "color": "#14253c",
         "url": "https://github.com/trending?l=Fantom"
     },
+    "Faust": {
+        "color": "#c37240",
+        "url": "https://github.com/trending?l=Faust"
+    },
     "Filebench WML": {
         "color": null,
         "url": "https://github.com/trending?l=Filebench-WML"
@@ -1035,10 +1039,6 @@
         "color": "#0298c3",
         "url": "https://github.com/trending?l=Perl"
     },
-    "Perl 6": {
-        "color": "#0000fb",
-        "url": "https://github.com/trending?l=Perl-6"
-    },
     "PHP": {
         "color": "#4F5D95",
         "url": "https://github.com/trending?l=PHP"
@@ -1146,6 +1146,10 @@
     "Ragel": {
         "color": "#9d5200",
         "url": "https://github.com/trending?l=Ragel"
+    },
+    "Raku": {
+        "color": "#0000fb",
+        "url": "https://github.com/trending?l=Raku"
     },
     "RAML": {
         "color": "#77d9fb",

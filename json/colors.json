@@ -1347,6 +1347,10 @@
         "color": "#ffac45",
         "url": "https://github.com/trending?l=Swift"
     },
+    "SWIG": {
+        "color": null,
+        "url": "https://github.com/trending?l=SWIG"
+    },
     "SystemVerilog": {
         "color": "#DAE1C2",
         "url": "https://github.com/trending?l=SystemVerilog"

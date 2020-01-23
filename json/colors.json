@@ -1335,6 +1335,10 @@
         "color": "#dc566d",
         "url": "https://github.com/trending?l=Standard-ML"
     },
+    "Starlark": {
+        "color": "#76d275",
+        "url": "https://github.com/trending?l=Starlark"
+    },
     "Stata": {
         "color": null,
         "url": "https://github.com/trending?l=Stata"

@@ -3,6 +3,10 @@
         "color": "#814CCC",
         "url": "https://github.com/trending?l=1C-Enterprise"
     },
+    "4D": {
+        "color": null,
+        "url": "https://github.com/trending?l=4D"
+    },
     "ABAP": {
         "color": "#E8274B",
         "url": "https://github.com/trending?l=ABAP"
@@ -950,6 +954,10 @@
     "OCaml": {
         "color": "#3be133",
         "url": "https://github.com/trending?l=OCaml"
+    },
+    "Odin": {
+        "color": "#60AFFE",
+        "url": "https://github.com/trending?l=Odin"
     },
     "Omgrofl": {
         "color": "#cabbff",

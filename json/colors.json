@@ -223,6 +223,10 @@
         "color": null,
         "url": "https://github.com/trending?l=COBOL"
     },
+    "CodeQL": {
+        "color": null,
+        "url": "https://github.com/trending?l=CodeQL"
+    },
     "CoffeeScript": {
         "color": "#244776",
         "url": "https://github.com/trending?l=CoffeeScript"
@@ -875,6 +879,10 @@
         "color": null,
         "url": "https://github.com/trending?l=Myghty"
     },
+    "NASL": {
+        "color": null,
+        "url": "https://github.com/trending?l=NASL"
+    },
     "NCL": {
         "color": "#28431f",
         "url": "https://github.com/trending?l=NCL"
@@ -986,6 +994,10 @@
     "OpenEdge ABL": {
         "color": null,
         "url": "https://github.com/trending?l=OpenEdge-ABL"
+    },
+    "OpenQASM": {
+        "color": "#AA70FF",
+        "url": "https://github.com/trending?l=OpenQASM"
     },
     "OpenRC runscript": {
         "color": null,

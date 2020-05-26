@@ -299,6 +299,10 @@
         "color": "#ba595e",
         "url": "https://github.com/trending?l=D"
     },
+    "Dafny": {
+        "color": "#FFEC25",
+        "url": "https://github.com/trending?l=Dafny"
+    },
     "Dart": {
         "color": "#00B4AB",
         "url": "https://github.com/trending?l=Dart"
@@ -762,6 +766,10 @@
     "M4Sugar": {
         "color": null,
         "url": "https://github.com/trending?l=M4Sugar"
+    },
+    "Macaulay2": {
+        "color": "#d8ffff",
+        "url": "https://github.com/trending?l=Macaulay2"
     },
     "Makefile": {
         "color": "#427819",

@@ -431,6 +431,10 @@
         "color": "#4d41b1",
         "url": "https://github.com/trending?l=Fortran"
     },
+    "Fortran Free Form": {
+        "color": null,
+        "url": "https://github.com/trending?l=Fortran-Free-Form"
+    },
     "FreeMarker": {
         "color": "#0050b2",
         "url": "https://github.com/trending?l=FreeMarker"

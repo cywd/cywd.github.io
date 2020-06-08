@@ -443,6 +443,10 @@
         "color": "#00cafe",
         "url": "https://github.com/trending?l=Frege"
     },
+    "Futhark": {
+        "color": "#5f021f",
+        "url": "https://github.com/trending?l=Futhark"
+    },
     "G-code": {
         "color": "#D08CF2",
         "url": "https://github.com/trending?l=G-code"
@@ -1306,6 +1310,10 @@
     "Shen": {
         "color": "#120F14",
         "url": "https://github.com/trending?l=Shen"
+    },
+    "Sieve": {
+        "color": null,
+        "url": "https://github.com/trending?l=Sieve"
     },
     "Slash": {
         "color": "#007eff",

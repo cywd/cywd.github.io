@@ -679,6 +679,10 @@
         "color": "#DA5B0B",
         "url": "https://github.com/trending?l=Jupyter-Notebook"
     },
+    "Kaitai Struct": {
+        "color": "#773b37",
+        "url": "https://github.com/trending?l=Kaitai-Struct"
+    },
     "Kotlin": {
         "color": "#F18E33",
         "url": "https://github.com/trending?l=Kotlin"
@@ -1159,6 +1163,10 @@
         "color": "#0040cd",
         "url": "https://github.com/trending?l=q"
     },
+    "Q#": {
+        "color": "#fed659",
+        "url": "https://github.com/trending?l=Qsharp"
+    },
     "QMake": {
         "color": null,
         "url": "https://github.com/trending?l=QMake"
@@ -1166,6 +1174,10 @@
     "QML": {
         "color": "#44a51c",
         "url": "https://github.com/trending?l=QML"
+    },
+    "Qt Script": {
+        "color": "#00b841",
+        "url": "https://github.com/trending?l=Qt-Script"
     },
     "Quake": {
         "color": "#882233",

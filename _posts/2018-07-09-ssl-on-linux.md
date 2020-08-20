@@ -2,8 +2,8 @@
 layout: post
 title: Linux下自制HTTPS证书
 excerpt: "Linux下自签证书，用于单向认证，双向认证"
-categories: ["Linux", "OpenResty", "SSL"]
-tags: ["Linux", "OpenResty", "SSL"]
+categories: ["Linux", "OpenResty", "SSL", "Nginx"]
+tags: ["Linux", "OpenResty", "SSL", "Nginx"]
 date: 2018-07-09
 comments: true
 ---
@@ -51,325 +51,256 @@ OPENSSLDIR: "/usr/local/ssl"
 
 # 制作证书
 
-## 准备目录
+## CA
 
-创建一个测试目录
+创建一个新的 CA 根证书，在 nginx 安装目录下新建 ca 文件夹，进入 ca，创建几个子文件夹
 
 ```shell
-mkdir /home/testDemo 
+mkdir ca && cd ca  
+mkdir newcerts private conf server
+
+# newcerts 子目录将用于存放 CA 签署过的数字证书(证书备份目录)；private 用于存放 CA 的私钥；conf 目录用于存放一些简化参数用的配置文件；server 存放服务器证书文件。
 ```
 
-```shell
-cd /home/testDemo/
+### conf 目录新建 openssl.conf 文件
+
+```nginx
+[ ca ] 
+default_ca     = CA_default          	# The default ca section 
+
+[ CA_default ] 
+dir            = ./                   # top dir
+database       = ./index.txt          # index file.  
+new_certs_dir  = ./newcerts           # new certs dir 
+
+certificate    = ./private/ca.crt         # The CA cert  
+serial         = ./serial             # serial no file  
+private_key    = ./private/ca.key  # CA private key  
+RANDFILE       = ./private/.rand      # random number file 
+
+default_days   = 3650                     # how long to certify for  
+default_crl_days= 30                     # how long before next CRL  
+default_md     = sha256                     # message digest method to use  
+unique_subject = no                      # Set to 'no' to allow creation of  
+                                         # several ctificates with same subject. 
+policy         = policy_match              # default policy 
+
+[ policy_match ] 
+countryName = match  
+stateOrProvinceName = match  
+organizationName = match  
+organizationalUnitName = match  
+localityName            = optional  
+commonName              = supplied  
+emailAddress            = optional  
 ```
 
-创建要生成证书的目录
+### 生成私钥 key 文件
 
 ```shell
-mkdir ssl
-```
-
-```shell
-cd ssl/
-```
-
-## 制作CA证书
-
-### 1.创建CA证书密钥 ca.key
-
-```shell
-openssl genrsa -des3 -out ca.key 2048
-```
-
-输出
-
-```shell
-Generating RSA private key, 2048 bit long modulus
-.............+++
-..................................................+++
-e is 65537 (0x10001)
-Enter pass phrase for ca.key: ← 输入一个新密码 
-Verifying - Enter pass phrase for ca.key: ← 确认密码 
-```
-
-### 2.创建CA证书的申请文件 ca.csr
-
-```shell
-openssl req -new -key ca.key -out ca.csr
-```
-
-输出
-
-```shell
-Enter pass phrase for ca.key: ← 刚刚创建ca.key的密码
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) [AU]:CN ← 国家代号，中国输入CN 
-State or Province Name (full name) [Some-State]:Beijing ← 省的全名，拼音 
-Locality Name (eg, city) []:Beijing ← 市的全名，拼音
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:MyCompany Corp. ← 公司英文名
-Organizational Unit Name (eg, section) []: ← 可以不输入 
-Common Name (e.g. server FQDN or YOUR name) []: ← 此时不输入
-Email Address []:admin@mycompany.com ← 电子邮箱，可随意填
-
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []: ← 可以不输入 
-An optional company name []: ← 可以不输入 
-```
-
-### 3.创建一个自当前日期起为期十年的CA证书 ca.crt
-
-其中`-extfile`后面的路径是`openssl version -a`查出来的`OPENSSLDIR`。
-
-```shell
-openssl x509 -req -days 3650 -sha256 -extfile /usr/local/ssl/openssl.cnf -extensions v3_ca -signkey ca.key -in ca.csr -out ca.crt
+openssl genrsa -out private/ca.key 2048 
 ```
 
 输出
 
 ```shell
-Signature ok 
-subject=/C=CN/ST=Beijing/L=Beijing/O=MyCompany Corp./emailAddress=admin@mycompany.com
-Getting Private key 
-Enter pass phrase for ca.key: ← 输入前面创建ca.key的密码
+Generating RSA private key, 2048 bit long modulus  
+.......+++
+.........................+++
+e is 65537 (0x10001)  
+private 目录下有 ca.key 文件生成。 
 ```
 
-### 4.根据CA证书生成truststore JKS文件 ca.truststore
+### 生成证书请求 csr 文件
 
 ```shell
-keytool -keystore ca.truststore -keypass 123456 -storepass 123456 -alias ca -import -trustcacerts -file ./ca.crt
+openssl req -new -key private/ca.key -out private/ca.csr  
 ```
 
-输出
+### 生成凭证 crt 文件
 
 ```shell
-所有者: EMAILADDRESS=admin@mycompany.com, O=MyCompany Corp., L=Beijing, ST=Beijing, C=CN
-发布者: EMAILADDRESS=admin@mycompany.com, O=MyCompany Corp., L=Beijing, ST=Beijing, C=CN
-序列号: e326870e0912e25f
-有效期开始日期: Tue Jul 09 09:27:53 CST 2018, 截止日期: Fri Jul 06 09:27:53 CST 2028
-证书指纹:
-	 MD5: 04:1F:42:2F:6A:C0:B8:94:6E:25:31:35:F6:0E:AD:AF
-	 SHA1: D5:E1:3E:E2:0E:CE:43:B5:65:2A:9E:8D:DA:75:3B:B7:AB:28:7D:96
-	 SHA256: 6D:C4:C8:30:8D:AC:D9:DC:AA:EC:64:E8:42:1D:5A:B2:DB:7A:9D:CB:EF:0A:0B:4D:FE:54:90:B5:F1:9B:B3:0B
-	 签名算法名称: SHA256withRSA
-	 版本: 3
-
-扩展:
-
-#1: ObjectId: 2.5.29.35 Criticality=false
-AuthorityKeyIdentifier [
-KeyIdentifier [
-0000: D0 E6 93 81 F6 ED A5 54   CE 81 38 E8 83 D2 B3 2B  .......T..8....+
-0010: 5A 47 24 AC                                        ZG$.
-]
-]
-
-#2: ObjectId: 2.5.29.19 Criticality=false
-BasicConstraints:[
-  CA:true
-  PathLen:2147483647
-]
-
-#3: ObjectId: 2.5.29.14 Criticality=false
-SubjectKeyIdentifier [
-KeyIdentifier [
-0000: D0 E6 93 81 F6 ED A5 54   CE 81 38 E8 83 D2 B3 2B  .......T..8....+
-0010: 5A 47 24 AC                                        ZG$.
-]
-]
-
-是否信任此证书? [否]:  yes
-错误的答案, 请再试一次
-是否信任此证书? [否]:  y
-证书已添加到密钥库中
+openssl x509 -req -days 365 -in private/ca.csr -signkey private/ca.key -out private/ca.crt  
 ```
 
-## 制作服务端证书
+private 目录下有 ca.crt 文件生成。
 
-### 1.创建服务端证书密钥 server.key
+### 为我们的 key 设置起始序列号(可以是任意四个字符)和创建 CA 键库
 
 ```shell
-openssl genrsa -des3 -out server.key 2048
+echo FACE > serial  
+touch index.txt  
 ```
 
-输出
+### 为 "用户证书" 的移除创建一个证书撤销列表
 
 ```shell
-Generating RSA private key, 2048 bit long modulus
-........................+++
-.................................................................................................+++
-e is 65537 (0x10001)
-Enter pass phrase for server.key: ← 输入新密码
-Verifying - Enter pass phrase for server.key: ← 确认密码
+openssl ca -gencrl -out ./private/ca.crl -crldays 7 -config "./conf/openssl.conf"  
+
 ```
 
-运行时会提示输入密码,此密码用于加密`key`文件(参数`des3`便是指加密算法,当然也可以选用其他你认为安全的算法.),以后每当需读取此文件(通过`openssl`提供的命令或`API`)都需输入口令.如果觉得不方便,也可以去除这个口令,但一定要采取其他的保护措施! 
-
-去除`key`文件口令的命令: 
+输出:
 
 ```shell
-openssl rsa -in server.key -out server.key
+Using configuration from ./conf/openssl.conf  
+private 目录下有 ca.crl 文件生成。 
 ```
 
-### 2.创建服务端证书的申请文件 server.csr
+## 服务器证书的生成
+
+### 创建一个 key
 
 ```shell
-openssl req -new -key server.key -out server.csr
+openssl genrsa -out server/server.key 2048  
+```
+
+### 为我们的 key 创建一个证书签名请求 csr 文件
+
+```shell
+openssl req -new -key server/server.key -out server/server.csr  
+```
+
+### 使用我们私有的 CA key 为刚才的 key 签名
+
+```shell
+openssl ca -in server/server.csr -cert private/ca.crt -keyfile private/ca.key -out server/server.crt -config "./conf/openssl.conf"
 ```
 
 输出
 
 ```shell
-Enter pass phrase for server.key: ← 输入前面创建server.key的密码
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) [AU]:CN ← 国家代号，中国输入CN 
-State or Province Name (full name) [Some-State]:Beijing ← 省的全名，拼音 
-Locality Name (eg, city) []:Beijing ← 市的全名，拼音
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:MyCompany Corp. ← 公司英文名
-Organizational Unit Name (eg, section) []: ← 可以不输入 
-Common Name (e.g. server FQDN or YOUR name) []:192.168.27.222 ← 服务器主机名(或者IP)，若填写不正确，浏览器会报告证书无效，但并不影响使用
-Email Address []:admin@mycompany.com ← 电子邮箱，可随意填
+Using configuration from ./conf/openssl.conf  
+Check that the request matches the signature  
+Signature ok  
+The Subject's Distinguished Name is as follows  
+countryName           :PRINTABLE:'CN'  
+stateOrProvinceName   :ASN.1 12:'BJ'  
+localityName          :ASN.1 12:'BJ'  
+organizationName      :ASN.1 12:'****'  
+organizationalUnitName:ASN.1 12:'BJ'  
+commonName            :ASN.1 12:'**'  
+emailAddress          :IA5STRING:'****'  
+Certificate is to be certified until Aug 17 10:15:15 2029 GMT (3650 days) 
+Sign the certificate? [y/n]:y
 
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []: ← 可以不输入 
-An optional company name []: ← 可以不输入 
+
+1 out of 1 certificate requests certified, commit? [y/n]y  
+Write out database with 1 new entries  
+Data Base Updated  
 ```
 
-### 3.创建自当前日期起有效期为期十年的服务端证书 server.crt
+注：签名信息每次必须输入一致
+
+
+
+## 客户端证书的生成 
+
+### 创建存放 key 的目录 users
 
 ```shell
-openssl x509 -req -days 3650 -sha256 -extfile /usr/local/ssl/openssl.cnf -extensions v3_req -CA ca.crt -CAkey ca.key -CAcreateserial -in server.csr -out server.crt
+mkdir users
 ```
 
-输出
+### 为用户创建一个 key
 
 ```shell
-Signature ok
-subject=/C=CN/ST=Beijing/L=Beijing/O=MyCompany Corp./CN=192.168.27.222/emailAddress=admin@mycompany.com
-Getting CA Private Key
-Enter pass phrase for ca.key: ← 输入前面创建ca.key的密码
+openssl genrsa -des3 -out ./users/client.key 2048  
 ```
 
-### 4.导出p12文件 server.p12
+输出：
 
 ```shell
-openssl pkcs12 -export -in server.crt -inkey server.key -out server.p12 -name "server"
+Enter pass phrase for ./users/client.key:123  
+Verifying - Enter pass phrase for ./users/client.key:123  
+#要求输入 pass phrase，这个是当前 key 的口令，以防止本密钥泄漏后被人盗用。两次输入同一个密码(比如我这里输入     123)，users 目录下有 client.key 文件生成。
 ```
 
-输出
+### 为 key 创建一个证书签名请求 csr 文件
 
 ```shell
-Enter pass phrase for server.key: ← 输入前面创建server.key的密码
-Enter Export Password: ← 输入创建p12的密码
-Verifying - Enter Export Password: ← 确认创建p12的密码
+openssl req -new -key ./users/client.key -out ./users/client.csr  
 ```
 
-### 5.将p12 文件导入到keystore JKS文件 server.keystore
+users 目录下有 client.csr 文件生成。
 
-这里`srcstorepass`后面的`p12pwd`为`server.p12`的密码`deststorepass`后的`keystorepwd`为`keyStore`的密码
+### 使用我们私有的 CA key 为刚才的 key 签名
 
 ```shell
-keytool -importkeystore -v -srckeystore  server.p12 -srcstoretype pkcs12 -srcstorepass p12pwd -destkeystore server.keystore -deststoretype jks -deststorepass keystorepwd
+openssl ca -in ./users/client.csr -cert ./private/ca.crt -keyfile ./private/ca.key -out    ./users/client.crt -config "./conf/openssl.conf"  
 ```
 
-输出
+将证书转换为大多数浏览器都能识别的 PKCS12 文件
 
 ```shell
-已成功导入别名 server 的条目。
-已完成导入命令: 1 个条目成功导入, 0 个条目失败或取消
-[正在存储server.keystore]
-```
-
-## 制作client客户端证书
-
-### 1.创建客户端证书密钥文件 client.key
-
-```shell
-openssl genrsa -des3 -out client.key 2048
+openssl pkcs12 -export -clcerts -in ./users/client.crt -inkey ./users/client.key -out ./users/client.p12  
 ```
 
 输出
 
 ```shell
-Generating RSA private key, 2048 bit long modulus
-.............................................+++
-...............................................................+++
-e is 65537 (0x10001)
-Enter pass phrase for client.key:
-Verifying - Enter pass phrase for client.key:
+Enter pass phrase for ./users/client.key:  
+Enter Export Password:  
+Verifying - Enter Export Password:  
 ```
 
-### 2.创建客户端证书的申请文件 client.csr
+输入密码后，users 目录下有 client.p12 文件生成。
+
+最终目录大概如下
 
 ```shell
-openssl req -new -key client.key -out client.csr
+.
+├── conf
+│   └── openssl.conf
+├── index.txt
+├── index.txt.attr
+├── index.txt.attr.old
+├── index.txt.old
+├── newcerts
+│   ├── FACE.pem
+│   └── FACF.pem
+├── private
+│   ├── ca.crl
+│   ├── ca.crt
+│   ├── ca.csr
+│   └── ca.key
+├── serial
+├── serial.old
+├── server
+│   ├── server.crt
+│   ├── server.csr
+│   └── server.key
+└── users
+    ├── client.crt
+    ├── client.csr
+    ├── client.key
+    └── client.p12
 ```
 
-输出
 
-```shell
-Enter pass phrase for client.key: ← 输入上一步中创client.key建的密码
-You are about to be asked to enter information that will be incorporated
-into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank
-For some fields there will be a default value,
-If you enter '.', the field will be left blank.
------
-Country Name (2 letter code) [AU]:CN ← 国家代号，中国输入CN 
-State or Province Name (full name) [Some-State]:Beijing ← 省的全名，拼音 
-Locality Name (eg, city) []:Beijing ← 市的全名，拼音
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:MyCompany Corp. ← 公司英文名
-Organizational Unit Name (eg, section) []: ← 可以不输入 
-Common Name (e.g. server FQDN or YOUR name) []:cy ← 自己的英文名，可以随便填 
-Email Address []:admin@mycompany.com ← 电子邮箱，可随意填
 
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []: ← 可以不输入 
-An optional company name []: ← 可以不输入 
-```
+# Nginx配置
 
-### 3.创建一个自当前日期起有效期为十年的客户端证书 client.crt
+```nginx
+server {
+    listen 443; 
+    server_name localhost; 
+    ssi on; 
+    ssi_silent_errors on; 
+    ssi_types text/shtml; 
 
-```shell
-openssl x509 -req -days 3650 -sha256 -extfile /usr/local/ssl/openssl.cnf -extensions v3_req -CA ca.crt -CAkey ca.key -CAcreateserial -in client.csr -out client.crt
-```
+    ssl                  on;
+    ssl_certificate      /usr/local/nginx/ca/server/server.crt; 
+    ssl_certificate_key  /usr/local/nginx/ca/server/server.key; 
+    # 这里放ca证书，用来校验ca颁发的客户端证书
+    ssl_client_certificate /usr/local/nginx/ca/private/ca.crt; 
 
-输出
+    ssl_session_timeout  5m; 
+    ssl_verify_client on;  # 开户客户端证书验证 
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    # ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDH:AES:HIGH:!aNULL:!MD5:!ADH:!DH;
 
-```shell
-Signature ok
-subject=/C=CN/ST=Beijing/L=Beijing/O=MyCompany Corp./emailAddress=admin@mycompany.com
-Getting Private key 
-Enter pass phrase for ca.key: ← 输入前面创建ca.key的密码
-```
-
-### 4.导出.p12文件 client.p12
-
-```shell
-openssl pkcs12 -export -in client.crt -inkey client.key -out  client.p12 -name "client"
-```
-
-输出
-
-```shell
-Enter pass phrase for client.key: ← 输入前面创建client.key的密码
-Enter Export Password: ← 输入创建p12的密码
-Verifying - Enter Export Password: ← 确认创建p12的密码
+    ssl_prefer_server_ciphers   on; 
+}
 ```
 
 # 解释
@@ -514,6 +445,5 @@ X.509是常见通用的证书格式。所有的证书都符合为Public Key Infr
 
 [https://www.cnblogs.com/yjmyzz/p/openssl-tutorial.html](https://www.cnblogs.com/yjmyzz/p/openssl-tutorial.html)
 
-[https://blog.csdn.net/fyang2007/article/details/6180361](https://blog.csdn.net/fyang2007/article/details/6180361)
-
 [https://www.chinassl.net/ssltools/convert-ssl.html](https://www.chinassl.net/ssltools/convert-ssl.html)
+

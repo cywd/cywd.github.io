@@ -1,0 +1,68 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#uialertview" id="markdown-toc-uialertview">UIAlertView</a></li>
+  <li><a href="#uialertcontroller" id="markdown-toc-uialertcontroller">UIAlertController</a>    <ul>
+      <li><a href="#alertview" id="markdown-toc-alertview">alertView</a></li>
+      <li><a href="#actionsheet" id="markdown-toc-actionsheet">actionSheet</a></li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h2 id="uialertview">UIAlertView</h2>
+
+<p>OC</p>
+
+<pre><code class="language-objective-c">UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"标题" message:@"这个是UIAlertView的默认样式" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好的", nil];
+[alertview show];
+</code></pre>
+
+<p>swift</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">alertView</span> <span class="o">=</span> <span class="kt">UIAlertView</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"标题"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"这个是UIAlertView的默认样式"</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span> <span class="nv">cancelButtonTitle</span><span class="p">:</span> <span class="s">"取消"</span><span class="p">)</span>
+<span class="n">alertView</span><span class="o">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="uialertcontroller">UIAlertController</h2>
+
+<h3 id="alertview">alertView</h3>
+
+<p>OC</p>
+
+<pre><code class="language-objective-c">UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"这个是UIAlertController的默认样式" preferredStyle:UIAlertControllerStyleAlert];
+UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+[alertController addAction:cancelAction];
+[alertController addAction:okAction];
+</code></pre>
+
+<p>swift</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span><span class="err"> </span><span class="n">alertController</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span><span class="err"> </span><span class="s">"标题"</span><span class="p">,</span><span class="err"> </span><span class="nv">message</span><span class="p">:</span><span class="err"> </span><span class="s">"这个是UIAlertController的默认样式"</span><span class="p">,</span><span class="err"> </span><span class="nv">preferredStyle</span><span class="p">:</span><span class="err"> </span><span class="kt">UIAlertControllerStyle</span><span class="o">.</span><span class="kt">Alert</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">cancelAction</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"取消"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">UIAlertActionStyle</span><span class="o">.</span><span class="kt">Cancel</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">okAction</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"好的"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">UIAlertActionStyle</span><span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">cancelAction</span><span class="p">)</span>
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">okAction</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="actionsheet">actionSheet</h3>
+
+<p>OC</p>
+
+<pre><code class="language-objective-c">UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"信息" preferredStyle: UIAlertControllerStyleActionSheet];
+UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    
+}];
+[alertController addAction:cancelAction];
+[alertController addAction:okAction];
+</code></pre>
+
+<p>swift</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span><span class="err"> </span><span class="n">alertController</span><span class="err"> </span><span class="o">=</span><span class="err"> </span><span class="kt">UIAlertController</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span><span class="err"> </span><span class="s">"标题"</span><span class="p">,</span><span class="err"> </span><span class="nv">message</span><span class="p">:</span><span class="err"> </span><span class="s">"这个是UIAlertController的默认样式"</span><span class="p">,</span><span class="err"> </span><span class="nv">preferredStyle</span><span class="p">:</span><span class="err"> </span><span class="kt">UIAlertControllerStyle</span><span class="o">.</span><span class="kt">ActionSheet</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">cancelAction</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"取消"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">UIAlertActionStyle</span><span class="o">.</span><span class="kt">Cancel</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">okAction</span> <span class="o">=</span> <span class="kt">UIAlertAction</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"好的"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="kt">UIAlertActionStyle</span><span class="o">.</span><span class="kt">Default</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">cancelAction</span><span class="p">)</span>
+<span class="n">alertController</span><span class="o">.</span><span class="nf">addAction</span><span class="p">(</span><span class="n">okAction</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

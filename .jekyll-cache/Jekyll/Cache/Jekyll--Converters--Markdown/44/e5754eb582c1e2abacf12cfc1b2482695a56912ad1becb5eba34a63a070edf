@@ -1,0 +1,35 @@
+I"�<hr />
+
+<p>回退到前一个版本后</p>
+
+<p><code class="language-plaintext highlighter-rouge">git reset --hard HEAD~1</code></p>
+
+<p>回退到前两个版本后</p>
+
+<p><code class="language-plaintext highlighter-rouge">git reset --hard HEAD~2</code></p>
+
+<p>回退到前三个版本后</p>
+
+<p><code class="language-plaintext highlighter-rouge">git reset --hard HEAD~3</code></p>
+
+<p>如果Git上只有自己的话可以</p>
+
+<p><code class="language-plaintext highlighter-rouge">git push -f</code></p>
+
+<p>意思是按当前的状态push，会干掉之前<code class="language-plaintext highlighter-rouge">git reset</code>的版本之后的push记录</p>
+
+<p>如果是多人协作,更漂亮的做法是revert</p>
+
+<p><code class="language-plaintext highlighter-rouge">git log</code></p>
+
+<p>决定放弃最近提交的 e7c8599d29b61579ef31789309b4e691d6d3a83f</p>
+
+<p><code class="language-plaintext highlighter-rouge">git revert e7c8599d29b61579ef31789309b4e691d6d3a83f</code></p>
+
+<p>比较一下，跟原来的代码一样了</p>
+
+<p><code class="language-plaintext highlighter-rouge">git diff d501310d245fe50959e8bcc1f5465bb64d67d1c8</code></p>
+
+<p>这样做，会看到revert的记录。</p>
+
+:ET

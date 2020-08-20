@@ -1,0 +1,43 @@
+I"�<hr />
+
+<p>作用是引入了如下这些头文件</p>
+
+<pre><code class="language-objective-c">/* CoreAnimation - CoreAnimation.h
+
+   Copyright (c) 2006-2016, Apple Inc.
+   All rights reserved. */
+
+#ifndef COREANIMATION_H
+#define COREANIMATION_H
+
+#include &lt;QuartzCore/CABase.h&gt;
+#include &lt;QuartzCore/CATransform3D.h&gt;
+
+#ifdef __OBJC__
+#import &lt;Foundation/Foundation.h&gt;
+#import &lt;QuartzCore/CAAnimation.h&gt;
+#import &lt;QuartzCore/CADisplayLink.h&gt;
+#import &lt;QuartzCore/CAEAGLLayer.h&gt;
+#import &lt;QuartzCore/CAEmitterBehavior.h&gt;
+#import &lt;QuartzCore/CAEmitterCell.h&gt;
+#import &lt;QuartzCore/CAEmitterLayer.h&gt;
+#import &lt;QuartzCore/CAGradientLayer.h&gt;
+#import &lt;QuartzCore/CALayer.h&gt;
+#import &lt;QuartzCore/CAMediaTiming.h&gt;
+#import &lt;QuartzCore/CAMediaTimingFunction.h&gt;
+#import &lt;QuartzCore/CAReplicatorLayer.h&gt;
+#import &lt;QuartzCore/CAScrollLayer.h&gt;
+#import &lt;QuartzCore/CAShapeLayer.h&gt;
+#import &lt;QuartzCore/CATextLayer.h&gt;
+#import &lt;QuartzCore/CATiledLayer.h&gt;
+#import &lt;QuartzCore/CATransaction.h&gt;
+#import &lt;QuartzCore/CATransform3D.h&gt;
+#import &lt;QuartzCore/CATransformLayer.h&gt;
+#import &lt;QuartzCore/CAValueFunction.h&gt;
+#endif
+
+#endif /* COREANIMATION_H */
+
+</code></pre>
+
+:ET

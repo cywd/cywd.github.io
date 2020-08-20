@@ -1,0 +1,508 @@
+I"F�<hr />
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/ruby -w</span>
+<span class="c1"># -*- coding: UTF-8 -*-</span>
+
+<span class="nb">puts</span> <span class="s2">"你好，世界"</span><span class="p">;</span>
+
+
+<span class="nb">print</span> <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh">
+
+	这是第一种方式
+ 你好，世界
+	多行字符串
+</span><span class="no">EOF</span>
+
+<span class="nb">print</span> <span class="o">&lt;&lt;</span><span class="no">"TT"</span><span class="p">;</span>                <span class="c1"># 与上面相同</span><span class="sh">
+    这是第二种方式创建here document 。
+    多行字符串。
+</span><span class="no">TT</span>
+
+<span class="nb">print</span> <span class="o">&lt;&lt;</span><span class="no">`EOC`</span>                 <span class="c1"># 执行命令</span><span class="sh">
+	echo hi there
+	echo lo there
+</span><span class="no">EOC</span>
+
+<span class="nb">print</span> <span class="o">&lt;&lt;</span><span class="no">"foo"</span><span class="p">,</span> <span class="o">&lt;&lt;</span><span class="no">"bar"</span>	      <span class="c1"># 您可以把它们进行堆叠</span><span class="sh">
+	I said foo.
+</span><span class="no">foo</span><span class="sh">
+	I said bar.
+</span><span class="no">bar</span>
+
+<span class="k">BEGIN</span> <span class="p">{</span>
+	<span class="c1"># 声明 code 会在程序运行之前被调用。</span>
+	<span class="nb">puts</span> <span class="s2">"开始的时候执行</span><span class="se">\n\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">END</span> <span class="p">{</span>
+	<span class="c1"># 声明 code 会在程序的结尾被调用。</span>
+	<span class="nb">puts</span> <span class="s2">"声明 code 会在程序的结尾被调用。"</span>
+<span class="p">}</span>
+
+<span class="cm">=begin
+这也是注释
+
+这也是注释
+=end</span>
+
+<span class="k">class</span> <span class="nc">Sample1111</span>
+	<span class="k">def</span> <span class="nf">hello</span>
+		<span class="nb">puts</span> <span class="s2">"Hello Ruby(class)"</span><span class="p">;</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">obj</span> <span class="o">=</span> <span class="no">Sample1111</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">obj</span><span class="p">.</span><span class="nf">hello</span>
+
+<span class="k">class</span> <span class="nc">Customer111</span>
+	<span class="vc">@@no_of_customers</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">end</span>
+
+<span class="n">cust1</span> <span class="o">=</span> <span class="no">Customer111</span><span class="p">.</span> <span class="nf">new</span>
+<span class="n">cust2</span> <span class="o">=</span> <span class="no">Customer111</span><span class="p">.</span> <span class="nf">new</span>
+
+
+<span class="k">class</span> <span class="nc">Customer1</span>
+	<span class="vc">@@no_of_customers</span> <span class="o">=</span> <span class="mi">0</span>
+
+	<span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="nb">name</span><span class="p">,</span> <span class="n">addr</span><span class="p">)</span>
+		<span class="vi">@cust_id</span> <span class="o">=</span> <span class="nb">id</span><span class="p">;</span>
+		<span class="vi">@cust_name</span> <span class="o">=</span> <span class="nb">name</span><span class="p">;</span>
+		<span class="vi">@cust_addr</span> <span class="o">=</span> <span class="n">addr</span><span class="p">;</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">cust1</span><span class="o">=</span><span class="no">Customer1</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"1"</span><span class="p">,</span> <span class="s2">"John"</span><span class="p">,</span> <span class="s2">"Wisdom Apartments, Ludhiya"</span><span class="p">)</span>
+<span class="n">cust2</span><span class="o">=</span><span class="no">Customer1</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"2"</span><span class="p">,</span> <span class="s2">"Poul"</span><span class="p">,</span> <span class="s2">"New Empire road, Khandala"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Sample1</span>
+   <span class="k">def</span> <span class="nf">function</span>
+      <span class="n">statement</span> <span class="mi">1</span>
+      <span class="n">statement</span> <span class="mi">2</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># 类的实例</span>
+<span class="k">class</span> <span class="nc">CustomerMtehod</span> 
+	<span class="vc">@@no_of_customers</span><span class="o">=</span><span class="mi">0</span>
+	<span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="nb">name</span><span class="p">,</span> <span class="n">addr</span><span class="p">)</span>
+		<span class="vi">@cust_id</span> <span class="o">=</span> <span class="nb">id</span><span class="p">;</span>
+		<span class="vi">@cust_name</span> <span class="o">=</span> <span class="nb">name</span><span class="p">;</span>
+		<span class="vi">@cust_addr</span> <span class="o">=</span> <span class="n">addr</span><span class="p">;</span>
+	<span class="k">end</span>
+	<span class="k">def</span> <span class="nf">display_details</span><span class="p">()</span>
+		<span class="nb">puts</span> <span class="s2">"CustomerMtehod id </span><span class="si">#@cust_id</span><span class="s2">"</span>
+		<span class="nb">puts</span> <span class="s2">"CustomerMtehod name </span><span class="si">#@cust_name</span><span class="s2">"</span>
+		<span class="nb">puts</span> <span class="s2">"CustomerMtehod addr </span><span class="si">#@cust_addr</span><span class="s2">"</span>
+	<span class="k">end</span>
+
+	<span class="k">def</span> <span class="nf">total_no_of_customers</span><span class="p">()</span>
+		<span class="vc">@@no_of_customers</span> <span class="o">+=</span> <span class="mi">1</span>
+		<span class="nb">puts</span> <span class="s2">"total_no_of_customers: </span><span class="si">#@@no_of_customers</span><span class="s2">"</span>
+	<span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">cust1</span> <span class="o">=</span> <span class="no">CustomerMtehod</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"1"</span><span class="p">,</span> <span class="s2">"John"</span><span class="p">,</span> <span class="s2">"Wisdom Apartments, Ludhiya"</span><span class="p">)</span>
+<span class="n">cust2</span> <span class="o">=</span> <span class="no">CustomerMtehod</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"2"</span><span class="p">,</span> <span class="s2">"Poul"</span><span class="p">,</span> <span class="s2">"New Empire road, Khandala"</span><span class="p">)</span>
+
+<span class="n">cust1</span><span class="p">.</span><span class="nf">display_details</span><span class="p">()</span>
+<span class="n">cust1</span><span class="p">.</span><span class="nf">total_no_of_customers</span><span class="p">()</span>
+
+<span class="n">cust2</span><span class="p">.</span><span class="nf">display_details</span><span class="p">()</span>
+<span class="n">cust2</span><span class="p">.</span><span class="nf">total_no_of_customers</span><span class="p">()</span>
+
+
+<span class="cm">=begin
+	一般小写字母、下划线开头：变量（Variable）。
+    $开头：全局变量（Global variable）。
+    @开头：实例变量（Instance variable）。
+    @@开头：类变量（Class variable）类变量被共享在整个继承链中
+    大写字母开头：常数（Constant）。
+=end</span>
+
+<span class="k">class</span> <span class="nc">Example1</span>
+   <span class="no">VAR1</span> <span class="o">=</span> <span class="mi">100</span>
+   <span class="no">VAR2</span> <span class="o">=</span> <span class="mi">200</span>
+   <span class="k">def</span> <span class="nf">show</span>
+       <span class="nb">puts</span> <span class="s2">"第一个常量的值为 </span><span class="si">#{</span><span class="no">VAR1</span><span class="si">}</span><span class="s2">"</span>
+       <span class="nb">puts</span> <span class="s2">"第二个常量的值为 </span><span class="si">#{</span><span class="no">VAR2</span><span class="si">}</span><span class="s2">"</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># 创建对象</span>
+<span class="n">object</span> <span class="o">=</span> <span class="no">Example1</span><span class="p">.</span><span class="nf">new</span><span class="p">()</span>
+<span class="n">object</span><span class="p">.</span><span class="nf">show</span>
+
+<span class="cm">=begin
+    self: 当前方法的接收器对象。
+    true: 代表 true 的值。
+    false: 代表 false 的值。
+    nil: 代表 undefined 的值。
+    __FILE__: 当前源文件的名称。
+    __LINE__: 当前行在源文件中的编号。
+=end</span>
+	
+<span class="cm">=begin
+	变量 a 的值为 10，变量 b 的值为 20
+
+	算数运算符
+    + - * /   加减乘除
+	% 取模，返回余数
+	** 指数 变量 a 的值为 10，变量 b 的值为 20  a**b  将得到 10 的 20 次方
+
+	比较运算符
+    == != &gt; &lt; &gt;= &lt;= 
+	&lt;==&gt; 联合比较运算符。如果第一个操作数等于第二个操作数则返回 0，如果第一个操作数大于第二个操作数则返回 1，如果第一个操作数小于第二个操作数则返回 -1。
+	===  用于测试 case 语句的 when 子句内的相等。(1...10) === 5 返回 true。
+	.eql? 如果接收器和参数具有相同的类型和相等的值，则返回 true。 1 == 1.0 返回 true，但是 1.eql?(1.0) 返回 false。
+	equal? 如果接收器和参数具有相同的对象 id，则返回 true。如果 aObj 是 bObj 的副本，那么 aObj == bObj 返回 true，a.equal?bObj 返回 false，但是 a.equal?aObj 返回 true。
+	
+	赋值运算符
+	= += -= *= /= %=
+	**= 指数且赋值运算符，执行指数计算，并赋值给左操作数 c **= a 相当于 c = c ** a
+
+	并行赋值
+	a = 10
+	b = 20
+	c = 30
+
+	使用并行赋值可以更快地声明：
+	a, b, c = 10, 20, 30
+
+	并行赋值在交换两个变量的值时也很有用：
+	a, b = b, c
+
+	逻辑运算符
+	and  称为逻辑与运算符。如果两个操作数都为真，则条件为真。	
+	or   称为逻辑或运算符。如果两个操作数中有任意一个非零，则条件为真。
+	&amp;&amp;   称为逻辑与运算符。如果两个操作数都非零，则条件为真。
+	||   称为逻辑或运算符。如果两个操作数中有任意一个非零，则条件为真。
+	!    称为逻辑非运算符。用来逆转操作数的逻辑状态。如果条件为真则逻辑非运算符将使其为假。
+	not  称为逻辑非运算符。用来逆转操作数的逻辑状态。如果条件为真则逻辑非运算符将使其为假。
+	!和not作用相同
+
+	三元运算符
+	? :	   条件表达式
+
+
+	范围运算符
+	..    创建一个从开始点到结束点的范围（包含结束点） 1..10 创建从 1 到 10 的范围
+	...   创建一个从开始点到结束点的范围（不包含结束点） 1...10 创建从 1 到 9 的范围
+
+
+	defined? 运算符
+	defined? variable # 如果 variable 已经初始化，则为 True
+
+	foo = 42
+	defined? foo    # =&gt; "local-variable"
+	defined? $_     # =&gt; "global-variable"
+	defined? bar    # =&gt; nil（未定义） 
+
+	defined? method_call # 如果方法已经定义，则为 True
+	defined? puts        # =&gt; "method"
+	defined? puts(bar)   # =&gt; nil（在这里 bar 未定义）
+	defined? unpack      # =&gt; nil（在这里未定义）
+
+=end</span>
+
+
+<span class="c1"># if  a == 4 then a == 7 end</span>
+
+<span class="n">x</span><span class="o">=</span><span class="mi">1</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span>
+   <span class="nb">puts</span> <span class="s2">"x 大于 2"</span>
+<span class="k">elsif</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">2</span> <span class="n">and</span> <span class="n">x!</span><span class="o">=</span><span class="mi">0</span>
+   <span class="nb">puts</span> <span class="s2">"x 是 1"</span>
+<span class="k">else</span>
+   <span class="nb">puts</span> <span class="s2">"无法得知 x 的值"</span>
+<span class="k">end</span>
+
+<span class="vg">$debug</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span> <span class="s2">"debug</span><span class="se">\n</span><span class="s2">"</span> <span class="k">if</span> <span class="vg">$debug</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">unless</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span>
+   <span class="nb">puts</span> <span class="s2">"x 小于 2"</span>
+ <span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"x 大于 2"</span>
+<span class="k">end</span>
+
+<span class="vg">$var</span> <span class="o">=</span>  <span class="mi">1</span>
+<span class="nb">print</span> <span class="s2">"1 -- 这一行输出</span><span class="se">\n</span><span class="s2">"</span> <span class="k">if</span> <span class="vg">$var</span>
+<span class="nb">print</span> <span class="s2">"2 -- 这一行不输出</span><span class="se">\n</span><span class="s2">"</span> <span class="k">unless</span> <span class="vg">$var</span>
+
+<span class="vg">$var</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="nb">print</span> <span class="s2">"3 -- 这一行输出</span><span class="se">\n</span><span class="s2">"</span> <span class="k">unless</span> <span class="vg">$var</span>
+
+
+<span class="c1"># when a == 4 then a = 7 end</span>
+<span class="c1"># case expr0</span>
+<span class="c1"># when expr1, expr2</span>
+<span class="c1"># 	stmt1</span>
+<span class="c1"># when expr3, expr4</span>
+<span class="c1"># 	stmt2</span>
+<span class="c1"># else</span>
+<span class="c1"># 	stmt3</span>
+<span class="c1"># end</span>
+
+<span class="c1"># _tmp = expr0</span>
+<span class="c1"># if expr1 === _tmp || expr2 === _tmp</span>
+<span class="c1">#    stmt1</span>
+<span class="c1"># elsif expr3 === _tmp || expr4 === _tmp</span>
+<span class="c1">#    stmt2</span>
+<span class="c1"># else</span>
+<span class="c1">#    stmt3</span>
+<span class="c1"># end</span>
+
+<span class="vg">$age</span> <span class="o">=</span>  <span class="mi">5</span>
+<span class="k">case</span> <span class="vg">$age</span>
+<span class="k">when</span> <span class="mi">0</span> <span class="o">..</span> <span class="mi">2</span>
+    <span class="nb">puts</span> <span class="s2">"婴儿"</span>
+<span class="k">when</span> <span class="mi">3</span> <span class="o">..</span> <span class="mi">6</span>
+    <span class="nb">puts</span> <span class="s2">"小孩"</span>
+<span class="k">when</span> <span class="mi">7</span> <span class="o">..</span> <span class="mi">12</span>
+    <span class="nb">puts</span> <span class="s2">"child"</span>
+<span class="k">when</span> <span class="mi">13</span> <span class="o">..</span> <span class="mi">18</span>
+    <span class="nb">puts</span> <span class="s2">"少年"</span>
+<span class="k">else</span>
+    <span class="nb">puts</span> <span class="s2">"其他年龄段的"</span>
+<span class="k">end</span>
+<span class="c1"># 输出小孩</span>
+
+<span class="n">foo</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="n">bar</span> <span class="o">=</span> <span class="kp">true</span>
+<span class="n">quu</span> <span class="o">=</span> <span class="kp">false</span>
+
+<span class="k">case</span>
+<span class="k">when</span> <span class="n">foo</span> <span class="k">then</span> <span class="nb">puts</span> <span class="s1">'foo is true'</span>
+<span class="k">when</span> <span class="n">bar</span> <span class="k">then</span> <span class="nb">puts</span> <span class="s1">'bar is true'</span>
+<span class="k">when</span> <span class="n">quu</span> <span class="k">then</span> <span class="nb">puts</span> <span class="s1">'quu is true'</span>
+<span class="k">end</span>
+<span class="c1"># 显示 "bar is true"</span>
+
+
+<span class="c1"># 循环</span>
+
+<span class="vg">$i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="vg">$num</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">while</span> <span class="vg">$i</span> <span class="o">&lt;</span> <span class="vg">$num</span> <span class="k">do</span>
+	<span class="nb">puts</span><span class="p">(</span><span class="s2">"在循环语句中 i = </span><span class="si">#$i</span><span class="s2">"</span> <span class="p">)</span>
+   <span class="vg">$i</span> <span class="o">+=</span><span class="mi">1</span>	
+<span class="k">end</span>
+
+<span class="vg">$i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="vg">$num</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">begin</span>
+   <span class="nb">puts</span><span class="p">(</span><span class="s2">"在循环语句中 i = </span><span class="si">#$i</span><span class="s2">"</span> <span class="p">)</span>
+   <span class="vg">$i</span> <span class="o">+=</span><span class="mi">1</span>
+<span class="k">end</span> <span class="k">while</span> <span class="vg">$i</span> <span class="o">&lt;</span> <span class="vg">$num</span>
+
+<span class="vg">$i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="vg">$num</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">until</span> <span class="vg">$i</span> <span class="o">&gt;</span> <span class="vg">$num</span>  <span class="k">do</span>
+   <span class="nb">puts</span><span class="p">(</span><span class="s2">"在循环语句中 i = </span><span class="si">#$i</span><span class="s2">"</span> <span class="p">)</span>
+   <span class="vg">$i</span> <span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+<span class="k">end</span>
+
+<span class="vg">$i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="vg">$num</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">begin</span>
+   <span class="nb">puts</span><span class="p">(</span><span class="s2">"在循环语句中 i = </span><span class="si">#$i</span><span class="s2">"</span> <span class="p">)</span>
+   <span class="vg">$i</span> <span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+<span class="k">end</span> <span class="k">until</span> <span class="vg">$i</span> <span class="o">&gt;</span> <span class="vg">$num</span>
+
+
+<span class="c1"># for</span>
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">5</span>
+	<span class="nb">puts</span> <span class="s2">"局部变量的值为 </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="c1"># 等价于</span>
+<span class="p">(</span><span class="mi">0</span><span class="o">..</span><span class="mi">5</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+   <span class="nb">puts</span> <span class="s2">"局部变量的值为 </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">5</span>
+   <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="k">then</span>
+      <span class="k">break</span>
+   <span class="k">end</span>
+   <span class="nb">puts</span> <span class="s2">"局部变量的值为 </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">5</span>
+   <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="k">then</span>
+   	  <span class="c1"># 类似c语言的continue</span>
+      <span class="k">next</span>
+   <span class="k">end</span>
+   <span class="nb">puts</span> <span class="s2">"局部变量的值为 </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="c1"># for i in 0..5</span>
+<span class="c1">#    if i &lt; 2 then</span>
+<span class="c1">#       puts "局部变量的值为 #{i}"</span>
+<span class="c1">#       redo</span>
+<span class="c1">#    end</span>
+<span class="c1"># end</span>
+
+<span class="cm">=begin
+	retry
+	如果 retry 出现在 begin 表达式的 rescue 子句中，则从 begin 主体的开头重新开始。
+	begin
+	   do_something   # 抛出的异常
+	rescue
+	   # 处理错误
+	   retry          # 重新从 begin 开始
+	end
+
+	for i in 1..5
+	   retry if some_condition # 重新从 i == 1 开始
+	end
+=end</span>
+
+<span class="c1"># for i in 1..5</span>
+<span class="c1">#    retry if  i &gt; 2</span>
+<span class="c1">#    puts "局部变量的值为 #{i}"</span>
+<span class="c1"># end</span>
+
+<span class="k">def</span> <span class="nf">testMethod</span><span class="p">(</span><span class="n">a1</span> <span class="o">=</span> <span class="s2">"Ruby"</span><span class="p">,</span> <span class="n">a2</span> <span class="o">=</span> <span class="s2">"Perl"</span><span class="p">)</span>
+	<span class="nb">puts</span> <span class="s2">"编程语言 </span><span class="si">#{</span><span class="n">a1</span><span class="si">}</span><span class="s2">"</span>
+	<span class="nb">puts</span> <span class="s2">"编程语言 </span><span class="si">#{</span><span class="n">a2</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+
+<span class="n">testMethod</span><span class="p">(</span><span class="s2">"c"</span><span class="p">,</span> <span class="s2">"C++"</span><span class="p">)</span>
+<span class="n">testMethod</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"C++"</span>
+<span class="n">testMethod</span> <span class="s2">"c"</span>
+<span class="n">testMethod</span><span class="p">()</span>
+<span class="n">testMethod</span>
+
+<span class="k">def</span> <span class="nf">test1111</span>
+	<span class="n">i</span> <span class="o">=</span> <span class="mi">100</span>
+	<span class="n">j</span> <span class="o">=</span> <span class="mi">10</span>
+	<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">return</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+<span class="k">end</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">test1111</span>
+<span class="nb">puts</span> <span class="n">var</span>
+
+<span class="k">def</span> <span class="nf">sample</span> <span class="p">(</span><span class="o">*</span><span class="nb">test</span><span class="p">)</span>
+   <span class="nb">puts</span> <span class="s2">"参数个数为 </span><span class="si">#{</span><span class="nb">test</span><span class="p">.</span><span class="nf">length</span><span class="si">}</span><span class="s2">"</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="nb">test</span><span class="p">.</span><span class="nf">length</span>
+      <span class="nb">puts</span> <span class="s2">"参数值为 </span><span class="si">#{</span><span class="nb">test</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+<span class="n">sample</span> <span class="s2">"Zara"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"F"</span>
+<span class="n">sample</span> <span class="s2">"Mac"</span><span class="p">,</span> <span class="s2">"36"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">"MCA"</span>
+
+<span class="c1"># alias 定义别名</span>
+<span class="k">alias</span> <span class="n">tt</span> <span class="n">test1111</span> 
+<span class="nb">puts</span> <span class="n">tt</span>
+
+<span class="c1"># undef 这个语句用于取消方法定义。undef 不能出现在方法主体内。</span>
+<span class="k">undef</span> <span class="n">tt</span>
+<span class="c1"># puts tt</span>
+
+
+<span class="c1"># 代码块的使用</span>
+<span class="k">def</span> <span class="nf">yieldTest</span>
+	<span class="nb">puts</span> <span class="s2">"你在 yieldTest 方法内"</span>
+
+	<span class="k">yield</span>
+		<span class="nb">puts</span> <span class="s2">"你又回到了 yieldTest 方法内"</span>
+	<span class="k">yield</span>
+<span class="k">end</span>
+
+<span class="n">yieldTest</span> <span class="p">{</span><span class="nb">puts</span> <span class="s2">"你在代码块内"</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">test_yield_num</span>
+	<span class="nb">puts</span> <span class="s2">"在 test1 方法内"</span>
+	<span class="k">yield</span> <span class="mi">5</span>
+	<span class="nb">puts</span> <span class="s2">"在 test2 方法内"</span>
+	<span class="nb">puts</span> <span class="s2">"在 test3 方法内"</span>
+	<span class="k">yield</span> <span class="mi">100</span>
+	<span class="nb">puts</span> <span class="s2">"在 test4 方法内"</span>
+<span class="k">end</span>
+<span class="n">test_yield_num</span> <span class="p">{</span><span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">"你在块 </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2"> 内"</span><span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">test_block</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+   <span class="n">block</span><span class="p">.</span><span class="nf">call</span>
+<span class="k">end</span>
+
+<span class="n">test_block</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">"Hello Wisdom"</span> <span class="p">}</span>
+
+<span class="c1"># BEGIN END 代码块</span>
+<span class="k">BEGIN</span> <span class="p">{</span> 
+  <span class="c1"># BEGIN 代码块</span>
+  <span class="nb">puts</span> <span class="s2">"BEGIN 代码块"</span>
+<span class="p">}</span> 
+
+<span class="k">END</span> <span class="p">{</span> 
+  <span class="c1"># END 代码块</span>
+  <span class="nb">puts</span> <span class="s2">"END 代码块"</span>
+<span class="p">}</span>
+  <span class="c1"># MAIN 代码块</span>
+<span class="nb">puts</span> <span class="s2">"MAIN 代码块"</span>
+
+
+<span class="c1"># Ruby 模块（Module）</span>
+
+<span class="c1"># 定义在 Test1.rb 文件中的模块</span>
+<span class="k">module</span> <span class="nn">Trig</span>
+   <span class="no">PI</span> <span class="o">=</span> <span class="mf">3.141592654</span>
+   <span class="k">def</span> <span class="nc">Trig</span><span class="o">.</span><span class="nf">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="c1"># ..</span>
+   <span class="k">end</span>
+   <span class="k">def</span> <span class="nc">Trig</span><span class="o">.</span><span class="nf">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+   <span class="c1"># ..</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># require '' 用来引入文件</span>
+
+
+<span class="c1"># Ruby string</span>
+<span class="c1"># Ruby 字符串分为单引号字符串（'）和双引号字符串（"），区别在于双引号字符串能够支持更多的转义字符。</span>
+<span class="n">name1</span> <span class="o">=</span> <span class="s2">"Joe"</span>
+<span class="n">name2</span> <span class="o">=</span> <span class="s2">"Mary"</span>
+<span class="nb">puts</span> <span class="s2">"你好 </span><span class="si">#{</span><span class="n">name1</span><span class="si">}</span><span class="s2">,  </span><span class="si">#{</span><span class="n">name2</span><span class="si">}</span><span class="s2"> 在哪?"</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">72</span>
+<span class="nb">puts</span> <span class="s2">"x 的值为 </span><span class="si">#{</span> <span class="n">x</span> <span class="si">}</span><span class="s2">"</span>
+<span class="nb">puts</span> <span class="s2">"x + y 的值为 </span><span class="si">#{</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="si">}</span><span class="s2">"</span>
+<span class="nb">puts</span> <span class="s2">"x + y + z 的平均值为 </span><span class="si">#{</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span> <span class="si">}</span><span class="s2">"</span>
+
+
+<span class="n">myStr</span> <span class="o">=</span> <span class="no">String</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"THIS IS TEST"</span><span class="p">)</span>
+<span class="n">foo</span> <span class="o">=</span> <span class="n">myStr</span><span class="p">.</span><span class="nf">downcase</span>
+
+<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">foo</span><span class="si">}</span><span class="s2">"</span>
+
+
+<span class="c1"># Ruby array</span>
+<span class="n">names</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">names</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">names</span><span class="si">}</span><span class="s2">"</span>
+<span class="nb">puts</span> <span class="n">names</span><span class="p">.</span><span class="nf">size</span>  <span class="c1"># 返回 20</span>
+<span class="nb">puts</span> <span class="n">names</span><span class="p">.</span><span class="nf">length</span> <span class="c1"># 返回 20</span>
+
+<span class="n">names</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">"mac"</span><span class="p">)</span>
+
+<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">names</span><span class="si">}</span><span class="s2">"</span> <span class="c1"># 以字符串的方式打印names</span>
+<span class="nb">puts</span> <span class="n">names</span> <span class="c1"># 直接打印数组</span>
+
+<span class="n">nums</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="n">e</span> <span class="o">=</span> <span class="n">e</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
+
+<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">nums</span><span class="si">}</span><span class="s2">"</span>
+
+<span class="n">nums</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">[</span><span class="p">](</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">nums</span><span class="si">}</span><span class="s2">"</span>
+
+
+
+
+</code></pre></div></div>
+
+:ET

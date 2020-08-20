@@ -1,0 +1,1259 @@
+I"��<ul id="markdown-toc">
+  <li><a href="#版本142" id="markdown-toc-版本142">版本1.4.2</a></li>
+  <li><a href="#aspectsh" id="markdown-toc-aspectsh">Aspects.h</a></li>
+  <li><a href="#aspectsm" id="markdown-toc-aspectsm">Aspects.m</a></li>
+</ul>
+<hr />
+
+<h1 id="版本142">版本1.4.2</h1>
+
+<h1 id="aspectsh">Aspects.h</h1>
+
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//</span>
+<span class="c1">//  Aspects.h</span>
+<span class="c1">//  Aspects - A delightful, simple library for aspect oriented programming.</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2014 Peter Steinberger. Licensed under the MIT license.</span>
+<span class="c1">//</span>
+
+<span class="cp">#import &lt;Foundation/Foundation.h&gt;
+</span>
+<span class="c1">// 这里表示了 block 执行的时机，也就是额外操作的执行时机，在我的应用场景中就是打点逻辑的执行时机，它可以在原始函数执行之前，也可以是执行之后，甚至可以完全替换掉原来的逻辑</span>
+<span class="k">typedef</span> <span class="nf">NS_OPTIONS</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">,</span> <span class="n">AspectOptions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">AspectPositionAfter</span>   <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>            <span class="c1">/// Called after the original implementation (default)</span>
+    <span class="n">AspectPositionInstead</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>            <span class="c1">/// Will replace the original implementation.</span>
+    <span class="n">AspectPositionBefore</span>  <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>            <span class="c1">/// Called before the original implementation.</span>
+    
+    <span class="n">AspectOptionAutomaticRemoval</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span> <span class="c1">/// Will remove the hook after the first execution.</span>
+<span class="p">};</span>
+
+<span class="c1">/// Opaque Aspect Token that allows to deregister the hook.</span>
+<span class="k">@protocol</span> <span class="nc">AspectToken</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
+
+<span class="cm">/*
+ AspectToken 协议旨在让使用者可以灵活的注销之前添加过的 Hook，内部规定遵守此协议的对象须实现 remove 方法。
+ */</span>
+
+<span class="c1">/// Deregisters an aspect.</span>
+<span class="c1">/// @return YES if deregistration is successful, otherwise NO.</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">remove</span><span class="p">;</span>
+
+<span class="k">@end</span>
+
+<span class="c1">/// The AspectInfo protocol is the first parameter of our block syntax.</span>
+<span class="k">@protocol</span> <span class="nc">AspectInfo</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span> <span class="c1">/// 当前被hook的实例</span>
+
+
+<span class="cm">/*
+ AspectInfo 协议旨在规范对一个切面，即 aspect 的 Hook 内部信息的纰漏，我们在 Hook 时添加切面的 Block 第一个参数就遵守此协议。
+ */</span>
+
+<span class="c1">/// The instance that is currently hooked.</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">instance</span><span class="p">;</span>
+
+<span class="c1">/// The original invocation of the hooked method.</span>
+<span class="c1">/// 被Hook方法的原始 invovation</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSInvocation</span> <span class="o">*</span><span class="p">)</span><span class="n">originalInvocation</span><span class="p">;</span>
+
+<span class="c1">/// All method arguments, boxed. This is lazily evaluated.</span>
+<span class="c1">/// 所有方法参数（装箱之后）的懒惰执行</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">arguments</span><span class="p">;</span>
+
+<span class="c1">// 装箱是一个开销昂贵操作，所以用到再去执行。</span>
+
+<span class="k">@end</span>
+
+<span class="cm">/**
+ Aspects uses Objective-C message forwarding to hook into messages. This will create some overhead. Don't add aspects to methods that are called a lot. Aspects is meant for view/controller code that is not called a 1000 times per second.
+
+ Adding aspects returns an opaque token which can be used to deregister again. All calls are thread safe.
+ */</span>
+<span class="k">@interface</span> <span class="nc">NSObject</span> <span class="p">(</span><span class="nl">Aspects</span><span class="p">)</span>
+
+<span class="c1">/// Adds a block of code before/instead/after the current `selector` for a specific class.</span>
+<span class="c1">///</span>
+<span class="c1">/// @param block Aspects replicates the type signature of the method being hooked.</span>
+<span class="c1">/// The first parameter will be `id&lt;AspectInfo&gt;`, followed by all parameters of the method.</span>
+<span class="c1">/// These parameters are optional and will be filled to match the block signature.</span>
+<span class="c1">/// You can even use an empty block, or one that simple gets `id&lt;AspectInfo&gt;`.</span>
+<span class="c1">///</span>
+<span class="c1">/// @note Hooking static methods is not supported.</span>
+<span class="c1">/// @return A token which allows to later deregister the aspect.</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">AspectToken</span><span class="o">&gt;</span><span class="p">)</span><span class="nf">aspect_hookSelector</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span>
+                           <span class="nf">withOptions</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span>
+                            <span class="nf">usingBlock</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">block</span>
+                                 <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
+
+<span class="c1">/// Adds a block of code before/instead/after the current `selector` for a specific instance.</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">AspectToken</span><span class="o">&gt;</span><span class="p">)</span><span class="nf">aspect_hookSelector</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span>
+                           <span class="nf">withOptions</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span>
+                            <span class="nf">usingBlock</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">block</span>
+                                 <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
+
+<span class="k">@end</span>
+
+<span class="c1">// AspectErrorCode枚举</span>
+<span class="k">typedef</span> <span class="nf">NS_ENUM</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">,</span> <span class="n">AspectErrorCode</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">AspectErrorSelectorBlacklisted</span><span class="p">,</span>                   <span class="c1">/// Selectors like release, retain, autorelease are blacklisted.</span>
+    <span class="n">AspectErrorDoesNotRespondToSelector</span><span class="p">,</span>              <span class="c1">/// Selector could not be found.</span>
+    <span class="n">AspectErrorSelectorDeallocPosition</span><span class="p">,</span>               <span class="c1">/// When hooking dealloc, only AspectPositionBefore is allowed.</span>
+    <span class="n">AspectErrorSelectorAlreadyHookedInClassHierarchy</span><span class="p">,</span> <span class="c1">/// Statically hooking the same method in subclasses is not allowed.</span>
+    <span class="n">AspectErrorFailedToAllocateClassPair</span><span class="p">,</span>             <span class="c1">/// The runtime failed creating a class pair.</span>
+    <span class="n">AspectErrorMissingBlockSignature</span><span class="p">,</span>                 <span class="c1">/// The block misses compile time signature info and can't be called.</span>
+    <span class="n">AspectErrorIncompatibleBlockSignature</span><span class="p">,</span>            <span class="c1">/// The block signature does not match the method or is too large.</span>
+
+    <span class="n">AspectErrorRemoveObjectAlreadyDeallocated</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1">/// (for removing) The object hooked is already deallocated.</span>
+<span class="p">};</span>
+
+<span class="k">extern</span> <span class="n">NSString</span> <span class="o">*</span><span class="k">const</span> <span class="n">AspectErrorDomain</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<h1 id="aspectsm">Aspects.m</h1>
+
+<div class="language-objc highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//</span>
+<span class="c1">//  Aspects.m</span>
+<span class="c1">//  Aspects - A delightful, simple library for aspect oriented programming.</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2014 Peter Steinberger. Licensed under the MIT license.</span>
+<span class="c1">//</span>
+
+<span class="cp">#import "Aspects.h"
+#import &lt;libkern/OSAtomic.h&gt;
+#import &lt;objc/runtime.h&gt;
+#import &lt;objc/message.h&gt;
+</span>
+<span class="cp">#define AspectLog(...)
+</span><span class="c1">//#define AspectLog(...) do { NSLog(__VA_ARGS__); }while(0)</span>
+<span class="cp">#define AspectLogError(...) do { NSLog(__VA_ARGS__); }while(0)
+</span>
+<span class="c1">// Block internals.</span>
+<span class="k">typedef</span> <span class="nf">NS_OPTIONS</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="n">AspectBlockFlags</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">AspectBlockFlagsHasCopyDisposeHelpers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">25</span><span class="p">),</span>
+	<span class="n">AspectBlockFlagsHasSignature</span>          <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">30</span><span class="p">)</span>
+<span class="p">};</span>
+
+<span class="c1">// 结构体</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">_AspectBlock</span> <span class="p">{</span>
+	<span class="n">__unused</span> <span class="n">Class</span> <span class="n">isa</span><span class="p">;</span>
+	<span class="n">AspectBlockFlags</span> <span class="n">flags</span><span class="p">;</span>
+	<span class="n">__unused</span> <span class="kt">int</span> <span class="n">reserved</span><span class="p">;</span>
+	<span class="kt">void</span> <span class="p">(</span><span class="n">__unused</span> <span class="o">*</span><span class="n">invoke</span><span class="p">)(</span><span class="k">struct</span> <span class="n">_AspectBlock</span> <span class="o">*</span><span class="n">block</span><span class="p">,</span> <span class="p">...);</span>
+	<span class="k">struct</span> <span class="p">{</span>
+        <span class="c1">// 1</span>
+		<span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">reserved</span><span class="p">;</span>
+		<span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">size</span><span class="p">;</span>
+        
+        <span class="c1">// 2</span>
+		<span class="c1">// requires AspectBlockFlagsHasCopyDisposeHelpers</span>
+		<span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">copy</span><span class="p">)(</span><span class="kt">void</span> <span class="o">*</span><span class="n">dst</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span> <span class="o">*</span><span class="n">src</span><span class="p">);</span>
+		<span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">dispose</span><span class="p">)(</span><span class="k">const</span> <span class="kt">void</span> <span class="o">*</span><span class="p">);</span>
+        
+        <span class="c1">// 3</span>
+		<span class="c1">// requires AspectBlockFlagsHasSignature</span>
+		<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">signature</span><span class="p">;</span>
+		<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">layout</span><span class="p">;</span>
+	<span class="p">}</span> <span class="o">*</span><span class="n">descriptor</span><span class="p">;</span>
+	<span class="c1">// imported variables</span>
+<span class="p">}</span> <span class="o">*</span><span class="n">AspectBlockRef</span><span class="p">;</span>
+
+<span class="c1">// class AspectInfo 遵循了AspectInfo协议</span>
+<span class="c1">// 一个 Aspect 执行环境，主要是 NSInvocation 信息。</span>
+<span class="k">@interface</span> <span class="nc">AspectInfo</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">AspectInfo</span><span class="o">&gt;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithInstance</span><span class="p">:(</span><span class="n">__unsafe_unretained</span> <span class="n">id</span><span class="p">)</span><span class="nv">instance</span> <span class="nf">invocation</span><span class="p">:(</span><span class="n">NSInvocation</span> <span class="o">*</span><span class="p">)</span><span class="nv">invocation</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span> <span class="n">instance</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">arguments</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSInvocation</span> <span class="o">*</span><span class="n">originalInvocation</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="c1">// Tracks a single aspect.</span>
+<span class="c1">// 一个 Aspect 的具体内容。这里主要包含了单个的 aspect 的具体信息，包括执行时机，要执行 block 所需要用到的具体信息：包括方法签名、参数等等</span>
+<span class="c1">// AspectIdentifier 实际上是添加切面的 Block 的第一个参数，其应该遵循 AspectToken 协议，事实上也的确如此，其提供了 remove 方法的实现。</span>
+<span class="c1">// 注意并不是，这里是最开始看的时候搞错了。</span>
+<span class="cm">/*
+ 我想作者应该是忘记遵守协议了. 实现里面也确实有remove方法
+ */</span>
+
+<span class="c1">// 实际上是这样的</span>
+<span class="cm">/*
+ + (id&lt;AspectToken&gt;)aspect_hookSelector:(SEL)selector
+ withOptions:(AspectOptions)options
+ usingBlock:(id)block
+ error:(NSError **)error {
+ return aspect_add((id)self, selector, options, block, error);
+ 
+ 这里返回的是一个遵守了协议的id对象。而实现里面返回的是 是一个 AspectIdentifier 对象。所以并不是作者忘记遵守协议了。而是这里返回的时候加了。等外面拿到的时候就是一个遵守了协议的id对象了。
+ */</span>
+<span class="k">@interface</span> <span class="nc">AspectIdentifier</span> <span class="p">:</span> <span class="nc">NSObject</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">identifierWithSelector</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span> <span class="nf">object</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">object</span> <span class="nf">options</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span> <span class="nf">block</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">block</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">invokeWithInfo</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">AspectInfo</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">info</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">id</span> <span class="n">block</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSMethodSignature</span> <span class="o">*</span><span class="n">blockSignature</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">id</span> <span class="n">object</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">AspectOptions</span> <span class="n">options</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="c1">// Tracks all aspects for an object/class.</span>
+<span class="c1">// 一个对象或者类的所有的 Aspects 整体情况。是切面的容器类。关联指定对象的指定方法，内部有3个切面队列，分别容纳关联指定对象的指定方法中相对应的 option 的hoook</span>
+<span class="k">@interface</span> <span class="nc">AspectsContainer</span> <span class="p">:</span> <span class="nc">NSObject</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addAspect</span><span class="p">:(</span><span class="n">AspectIdentifier</span> <span class="o">*</span><span class="p">)</span><span class="nv">aspect</span> <span class="nf">withOptions</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">injectPosition</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">removeAspect</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">aspect</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">hasAspects</span><span class="p">;</span>
+
+<span class="c1">// 以下是三个队列</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">atomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">beforeAspects</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">atomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">insteadAspects</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">atomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">afterAspects</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="c1">// 切面追踪器</span>
+<span class="k">@interface</span> <span class="nc">AspectTracker</span> <span class="p">:</span> <span class="nc">NSObject</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithTrackedClass</span><span class="p">:(</span><span class="n">Class</span><span class="p">)</span><span class="nv">trackedClass</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">Class</span> <span class="n">trackedClass</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">trackedClassName</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">selectorNames</span><span class="p">;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addSubclassTracker</span><span class="p">:(</span><span class="n">AspectTracker</span> <span class="o">*</span><span class="p">)</span><span class="nv">subclassTracker</span> <span class="nf">hookingSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeSubclassTracker</span><span class="p">:(</span><span class="n">AspectTracker</span> <span class="o">*</span><span class="p">)</span><span class="nv">subclassTracker</span> <span class="nf">hookingSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">subclassHasHookedSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSSet</span> <span class="o">*</span><span class="p">)</span><span class="nf">subclassTrackersHookingSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="k">@interface</span> <span class="nc">NSInvocation</span> <span class="p">(</span><span class="nl">Aspects</span><span class="p">)</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">aspects_arguments</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="c1">// 转换成二进制是。0000 0111</span>
+<span class="cp">#define AspectPositionFilter 0x07
+</span>
+<span class="cp">#define AspectError(errorCode, errorDescription) do { \
+AspectLogError(@"Aspects: %@", errorDescription); \
+if (error) { *error = [NSError errorWithDomain:AspectErrorDomain code:errorCode userInfo:@{NSLocalizedDescriptionKey: errorDescription}]; }}while(0)
+</span>
+<span class="n">NSString</span> <span class="o">*</span><span class="k">const</span> <span class="n">AspectErrorDomain</span> <span class="o">=</span> <span class="s">@"AspectErrorDomain"</span><span class="p">;</span>
+<span class="c1">//固定后缀</span>
+<span class="k">static</span> <span class="n">NSString</span> <span class="o">*</span><span class="k">const</span> <span class="n">AspectsSubclassSuffix</span> <span class="o">=</span> <span class="s">@"_Aspects_"</span><span class="p">;</span>
+<span class="c1">// 固定前缀</span>
+<span class="k">static</span> <span class="n">NSString</span> <span class="o">*</span><span class="k">const</span> <span class="n">AspectsMessagePrefix</span> <span class="o">=</span> <span class="s">@"aspects_"</span><span class="p">;</span>
+
+<span class="k">@implementation</span> <span class="nc">NSObject</span> <span class="p">(</span><span class="nl">Aspects</span><span class="p">)</span>
+
+<span class="c1">// Aspects 使用 NSObject + Categroy 的方式提供接口，非常巧妙的涵盖了 Instance 和 Class。</span>
+<span class="c1">// Aspects 提供的接口保持高度一致</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Public Aspects API
+</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">AspectToken</span><span class="o">&gt;</span><span class="p">)</span><span class="nf">aspect_hookSelector</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span>
+                      <span class="nf">withOptions</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span>
+                       <span class="nf">usingBlock</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">block</span>
+                            <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">aspect_add</span><span class="p">((</span><span class="n">id</span><span class="p">)</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">/// @return A token which allows to later deregister the aspect.</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">AspectToken</span><span class="o">&gt;</span><span class="p">)</span><span class="nf">aspect_hookSelector</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span>
+                      <span class="nf">withOptions</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span>
+                       <span class="nf">usingBlock</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">block</span>
+                            <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">aspect_add</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Private Helper
+</span>
+<span class="c1">// 私有 helper</span>
+
+<span class="c1">// aspect_add</span>
+<span class="k">static</span> <span class="n">id</span> <span class="nf">aspect_add</span><span class="p">(</span><span class="n">id</span> <span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">,</span> <span class="n">AspectOptions</span> <span class="n">options</span><span class="p">,</span> <span class="n">id</span> <span class="n">block</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 断言</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">block</span><span class="p">);</span>
+
+    <span class="n">__block</span> <span class="n">AspectIdentifier</span> <span class="o">*</span><span class="n">identifier</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="n">aspect_performLocked</span><span class="p">(</span><span class="o">^</span><span class="p">{</span>
+        <span class="c1">//</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">aspect_isSelectorAllowedAndTrack</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">error</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// 判断能否被hook</span>
+            <span class="c1">// 记录数据结构</span>
+            <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">aspectContainer</span> <span class="o">=</span> <span class="n">aspect_getContainerForObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+            <span class="c1">// 初始化 identifier</span>
+            <span class="n">identifier</span> <span class="o">=</span> <span class="p">[</span><span class="n">AspectIdentifier</span> <span class="nf">identifierWithSelector</span><span class="p">:</span><span class="n">selector</span> <span class="nf">object</span><span class="p">:</span><span class="n">self</span> <span class="n">options</span><span class="o">:</span><span class="n">options</span> <span class="n">block</span><span class="o">:</span><span class="n">block</span> <span class="n">error</span><span class="o">:</span><span class="n">error</span><span class="p">];</span>
+            
+            <span class="k">if</span> <span class="p">(</span><span class="n">identifier</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 如果identifier存在</span>
+                <span class="c1">// 加到list中</span>
+                <span class="p">[</span><span class="n">aspectContainer</span> <span class="nf">addAspect</span><span class="p">:</span><span class="n">identifier</span> <span class="nf">withOptions</span><span class="p">:</span><span class="n">options</span><span class="p">];</span>
+
+                
+                <span class="c1">// ！！！ 想来这里是核心。之前的都是在准备和初始化</span>
+                <span class="c1">// Modify the class to allow message interception.</span>
+                <span class="c1">// swizzling</span>
+                <span class="c1">// 修改class允许消息拦截</span>
+                <span class="c1">// swizzling</span>
+                <span class="n">aspect_prepareClassAndHookSelector</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="k">return</span> <span class="n">identifier</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// aspect_remove</span>
+<span class="k">static</span> <span class="n">BOOL</span> <span class="nf">aspect_remove</span><span class="p">(</span><span class="n">AspectIdentifier</span> <span class="o">*</span><span class="n">aspect</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCAssert</span><span class="p">([</span><span class="n">aspect</span> <span class="nf">isKindOfClass</span><span class="p">:</span><span class="n">AspectIdentifier</span><span class="p">.</span><span class="n">class</span><span class="p">],</span> <span class="s">@"Must have correct type."</span><span class="p">);</span>
+
+    <span class="n">__block</span> <span class="n">BOOL</span> <span class="n">success</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="c1">// 锁</span>
+    <span class="n">aspect_performLocked</span><span class="p">(</span><span class="o">^</span><span class="p">{</span>
+        <span class="c1">// 持有</span>
+        <span class="n">id</span> <span class="n">self</span> <span class="o">=</span> <span class="n">aspect</span><span class="p">.</span><span class="n">object</span><span class="p">;</span> <span class="c1">// strongify</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">self</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">aspectContainer</span> <span class="o">=</span> <span class="n">aspect_getContainerForObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">aspect</span><span class="p">.</span><span class="n">selector</span><span class="p">);</span>
+            <span class="c1">// 移除</span>
+            <span class="n">success</span> <span class="o">=</span> <span class="p">[</span><span class="n">aspectContainer</span> <span class="nf">removeAspect</span><span class="p">:</span><span class="n">aspect</span><span class="p">];</span>
+
+            <span class="n">aspect_cleanupHookedClassAndSelector</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">aspect</span><span class="p">.</span><span class="n">selector</span><span class="p">);</span>
+            <span class="c1">// destroy token</span>
+            <span class="c1">// 销毁</span>
+            <span class="n">aspect</span><span class="p">.</span><span class="n">object</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+            <span class="n">aspect</span><span class="p">.</span><span class="n">block</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+            <span class="n">aspect</span><span class="p">.</span><span class="n">selector</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+            <span class="n">NSString</span> <span class="o">*</span><span class="n">errrorDesc</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"Unable to deregister hook. Object already deallocated: %@"</span><span class="p">,</span> <span class="n">aspect</span><span class="p">];</span>
+            <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorRemoveObjectAlreadyDeallocated</span><span class="p">,</span> <span class="n">errrorDesc</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="k">return</span> <span class="n">success</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 加锁</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_performLocked</span><span class="p">(</span><span class="n">dispatch_block_t</span> <span class="n">block</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/*
+     将代码块作为参数，然后对其执行前后加锁，这样做的好处是：如果以后要换锁的类型，那么只要在这个方法中改变就可以了
+     */</span>
+    <span class="k">static</span> <span class="n">OSSpinLock</span> <span class="n">aspect_lock</span> <span class="o">=</span> <span class="n">OS_SPINLOCK_INIT</span><span class="p">;</span>
+    <span class="n">OSSpinLockLock</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aspect_lock</span><span class="p">);</span>
+    <span class="n">block</span><span class="p">();</span>
+    <span class="n">OSSpinLockUnlock</span><span class="p">(</span><span class="o">&amp;</span><span class="n">aspect_lock</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 这个方法，传入一个selector，返回一个加了前缀的selector</span>
+<span class="k">static</span> <span class="n">SEL</span> <span class="nf">aspect_aliasForSelector</span><span class="p">(</span><span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+	<span class="k">return</span> <span class="n">NSSelectorFromString</span><span class="p">([</span><span class="n">AspectsMessagePrefix</span> <span class="nf">stringByAppendingFormat</span><span class="p">:</span><span class="s">@"_%@"</span><span class="p">,</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">)]);</span>
+<span class="p">}</span>
+
+<span class="c1">// 方法签名</span>
+<span class="k">static</span> <span class="n">NSMethodSignature</span> <span class="o">*</span><span class="nf">aspect_blockMethodSignature</span><span class="p">(</span><span class="n">id</span> <span class="n">block</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 首先把block桥接成结构体</span>
+    <span class="n">AspectBlockRef</span> <span class="n">layout</span> <span class="o">=</span> <span class="p">(</span><span class="n">__bridge</span> <span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="n">block</span><span class="p">;</span>
+    
+    <span class="c1">// 判断 layout-&gt;flags 是否存在</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">layout</span><span class="o">-&gt;</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="n">AspectBlockFlagsHasSignature</span><span class="p">))</span> <span class="p">{</span>
+        <span class="c1">// 如果不存在。</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">description</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"The block %@ doesn't contain a type signature."</span><span class="p">,</span> <span class="n">block</span><span class="p">];</span>
+        <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorMissingBlockSignature</span><span class="p">,</span> <span class="n">description</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// 获取block的descriptor,descriptor结构体的copy或者signature存在着方法签名.但是由于全局block和堆block存在的位置不同,所以需要判断.如果是全局block,则方法签名存在于signature上,如果是堆block,则存在于copy上.</span>
+    <span class="c1">// https://www.jianshu.com/p/1849068b7833</span>
+    <span class="c1">// https://blog.csdn.net/yangbodong22011/article/details/53224856</span>
+	<span class="kt">void</span> <span class="o">*</span><span class="n">desc</span> <span class="o">=</span> <span class="n">layout</span><span class="o">-&gt;</span><span class="n">descriptor</span><span class="p">;</span>
+    
+    <span class="c1">// 默认移动两步 desc指向 copy</span>
+	<span class="n">desc</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span><span class="p">);</span>
+    <span class="c1">// 判断layout-&gt;flags是否是AspectBlockFlagsHasCopyDisposeHelpers</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">layout</span><span class="o">-&gt;</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="n">AspectBlockFlagsHasCopyDisposeHelpers</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果是 再移动两步 desc指向 signature</span>
+		<span class="n">desc</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">*</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">desc</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果不存在desc，则抛出异常</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">description</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"The block %@ doesn't has a type signature."</span><span class="p">,</span> <span class="n">block</span><span class="p">];</span>
+        <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorMissingBlockSignature</span><span class="p">,</span> <span class="n">description</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// 转换成 char * signature</span>
+	<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">signature</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">**</span><span class="p">)</span><span class="n">desc</span><span class="p">);</span>
+    <span class="c1">// 返回签名</span>
+	<span class="k">return</span> <span class="p">[</span><span class="n">NSMethodSignature</span> <span class="nf">signatureWithObjCTypes</span><span class="p">:</span><span class="n">signature</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// 是否兼容签名</span>
+<span class="k">static</span> <span class="n">BOOL</span> <span class="nf">aspect_isCompatibleBlockSignature</span><span class="p">(</span><span class="n">NSMethodSignature</span> <span class="o">*</span><span class="n">blockSignature</span><span class="p">,</span> <span class="n">id</span> <span class="n">object</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 断言</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">blockSignature</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">object</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="c1">// 声明签名匹配为yes</span>
+    <span class="n">BOOL</span> <span class="n">signaturesMatch</span> <span class="o">=</span> <span class="nb">YES</span><span class="p">;</span>
+    <span class="c1">// obj的方法签名</span>
+    <span class="n">NSMethodSignature</span> <span class="o">*</span><span class="n">methodSignature</span> <span class="o">=</span> <span class="p">[[</span><span class="n">object</span> <span class="nf">class</span><span class="p">]</span> <span class="nf">instanceMethodSignatureForSelector</span><span class="p">:</span><span class="n">selector</span><span class="p">];</span>
+    <span class="c1">// 比较numberOfArguments</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">blockSignature</span><span class="p">.</span><span class="n">numberOfArguments</span> <span class="o">&gt;</span> <span class="n">methodSignature</span><span class="p">.</span><span class="n">numberOfArguments</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">signaturesMatch</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">blockSignature</span><span class="p">.</span><span class="n">numberOfArguments</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 数量大于1时，拿到第。1 个 char。  比较char 的首字母是不是@，不是则signaturesMatch = NO;</span>
+            <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">blockType</span> <span class="o">=</span> <span class="p">[</span><span class="n">blockSignature</span> <span class="nf">getArgumentTypeAtIndex</span><span class="p">:</span><span class="mi">1</span><span class="p">];</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">blockType</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="sc">'@'</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">signaturesMatch</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// Argument 0 是 self/block 。Argument 1 是 SEL 或者 id&lt;AspectInfo&gt;。我们从位置2开始比较</span>
+        <span class="c1">// Block的arguments可以比method更少。所以以下代码没问题</span>
+        <span class="c1">// Argument 0 is self/block, argument 1 is SEL or id&lt;AspectInfo&gt;. We start comparing at argument 2.</span>
+        <span class="c1">// The block can have less arguments than the method, that's ok.</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">signaturesMatch</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="n">NSUInteger</span> <span class="n">idx</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="n">blockSignature</span><span class="p">.</span><span class="n">numberOfArguments</span><span class="p">;</span> <span class="n">idx</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">methodType</span> <span class="o">=</span> <span class="p">[</span><span class="n">methodSignature</span> <span class="nf">getArgumentTypeAtIndex</span><span class="p">:</span><span class="n">idx</span><span class="p">];</span>
+                <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">blockType</span> <span class="o">=</span> <span class="p">[</span><span class="n">blockSignature</span> <span class="nf">getArgumentTypeAtIndex</span><span class="p">:</span><span class="n">idx</span><span class="p">];</span>
+                <span class="c1">// Only compare parameter, not the optional type data.</span>
+                <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">methodType</span> <span class="o">||</span> <span class="o">!</span><span class="n">blockType</span> <span class="o">||</span> <span class="n">methodType</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">blockType</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="p">{</span>
+                    <span class="n">signaturesMatch</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">signaturesMatch</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果 signaturesMatch 变为NO，那么抛出错误</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">description</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"Block signature %@ doesn't match %@."</span><span class="p">,</span> <span class="n">blockSignature</span><span class="p">,</span> <span class="n">methodSignature</span><span class="p">];</span>
+        <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorIncompatibleBlockSignature</span><span class="p">,</span> <span class="n">description</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// return  YES</span>
+    <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Class + Selector Preparation
+</span>
+<span class="c1">// 判断是不是MsgForwardIMP</span>
+<span class="k">static</span> <span class="n">BOOL</span> <span class="nf">aspect_isMsgForwardIMP</span><span class="p">(</span><span class="n">IMP</span> <span class="n">impl</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">impl</span> <span class="o">==</span> <span class="n">_objc_msgForward</span>
+<span class="cp">#if !defined(__arm64__)
+</span>    <span class="o">||</span> <span class="n">impl</span> <span class="o">==</span> <span class="p">(</span><span class="n">IMP</span><span class="p">)</span><span class="n">_objc_msgForward_stret</span>
+<span class="cp">#endif
+</span>    <span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 获取消息转发IMP</span>
+<span class="k">static</span> <span class="n">IMP</span> <span class="nf">aspect_getMsgForwardIMP</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">IMP</span> <span class="n">msgForwardIMP</span> <span class="o">=</span> <span class="n">_objc_msgForward</span><span class="p">;</span>
+<span class="cp">#if !defined(__arm64__)
+</span>    <span class="c1">// As an ugly internal runtime implementation detail in the 32bit runtime, we need to determine of the method we hook returns a struct or anything larger than id.</span>
+    <span class="c1">// https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/LowLevelABI/000-Introduction/introduction.html</span>
+    <span class="c1">// https://github.com/ReactiveCocoa/ReactiveCocoa/issues/783</span>
+    <span class="c1">// http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042e/IHI0042E_aapcs.pdf (Section 5.4)</span>
+    <span class="n">Method</span> <span class="n">method</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">class</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">encoding</span> <span class="o">=</span> <span class="n">method_getTypeEncoding</span><span class="p">(</span><span class="n">method</span><span class="p">);</span>
+    <span class="n">BOOL</span> <span class="n">methodReturnsStructValue</span> <span class="o">=</span> <span class="n">encoding</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">_C_STRUCT_B</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">methodReturnsStructValue</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">@try</span> <span class="p">{</span>
+            <span class="n">NSUInteger</span> <span class="n">valueSize</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">NSGetSizeAndAlignment</span><span class="p">(</span><span class="n">encoding</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">valueSize</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">valueSize</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">valueSize</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">||</span> <span class="n">valueSize</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">||</span> <span class="n">valueSize</span> <span class="o">==</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">methodReturnsStructValue</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">@catch</span> <span class="p">(</span><span class="n">__unused</span> <span class="n">NSException</span> <span class="o">*</span><span class="n">e</span><span class="p">)</span> <span class="p">{}</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">methodReturnsStructValue</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">msgForwardIMP</span> <span class="o">=</span> <span class="p">(</span><span class="n">IMP</span><span class="p">)</span><span class="n">_objc_msgForward_stret</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="cp">#endif
+</span>    <span class="k">return</span> <span class="n">msgForwardIMP</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 准备class and hook selector</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_prepareClassAndHookSelector</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="n">Class</span> <span class="n">klass</span> <span class="o">=</span> <span class="n">aspect_hookClass</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span> <span class="c1">//1  swizzling forwardInvocation</span>
+    <span class="c1">// 获取Method</span>
+    <span class="n">Method</span> <span class="n">targetMethod</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+    <span class="c1">// 获取IMP</span>
+    <span class="n">IMP</span> <span class="n">targetMethodIMP</span> <span class="o">=</span> <span class="n">method_getImplementation</span><span class="p">(</span><span class="n">targetMethod</span><span class="p">);</span>
+    <span class="c1">// 判断是不是消息转发IMP</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">aspect_isMsgForwardIMP</span><span class="p">(</span><span class="n">targetMethodIMP</span><span class="p">))</span> <span class="p">{</span> <span class="c1">//2  swizzling method</span>
+        <span class="c1">// 混写method. 弄一个这个已经存在的方法的别名。并不是真的copy了一份</span>
+        <span class="c1">// Make a method alias for the existing method implementation, it not already copied.</span>
+        <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">typeEncoding</span> <span class="o">=</span> <span class="n">method_getTypeEncoding</span><span class="p">(</span><span class="n">targetMethod</span><span class="p">);</span>
+        <span class="c1">// 拿到selector的别名</span>
+        <span class="n">SEL</span> <span class="n">aliasSelector</span> <span class="o">=</span> <span class="n">aspect_aliasForSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">[</span><span class="n">klass</span> <span class="nf">instancesRespondToSelector</span><span class="p">:</span><span class="n">aliasSelector</span><span class="p">])</span> <span class="p">{</span>
+            <span class="c1">// 如果不响应，抛出错误</span>
+            <span class="n">__unused</span> <span class="n">BOOL</span> <span class="n">addedAlias</span> <span class="o">=</span> <span class="n">class_addMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">aliasSelector</span><span class="p">,</span> <span class="n">method_getImplementation</span><span class="p">(</span><span class="n">targetMethod</span><span class="p">),</span> <span class="n">typeEncoding</span><span class="p">);</span>
+            <span class="n">NSCAssert</span><span class="p">(</span><span class="n">addedAlias</span><span class="p">,</span> <span class="s">@"Original implementation for %@ is already copied to %@ on %@"</span><span class="p">,</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">),</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">aliasSelector</span><span class="p">),</span> <span class="n">klass</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// We use forwardInvocation to hook in.</span>
+        <span class="c1">// 使用forwardInvocation hook in</span>
+        <span class="n">class_replaceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">aspect_getMsgForwardIMP</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">),</span> <span class="n">typeEncoding</span><span class="p">);</span>
+        <span class="n">AspectLog</span><span class="p">(</span><span class="s">@"Aspects: Installed hook for -[%@ %@]."</span><span class="p">,</span> <span class="n">klass</span><span class="p">,</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Will undo the runtime changes made.</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_cleanupHookedClassAndSelector</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+
+	<span class="n">Class</span> <span class="n">klass</span> <span class="o">=</span> <span class="n">object_getClass</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="n">BOOL</span> <span class="n">isMetaClass</span> <span class="o">=</span> <span class="n">class_isMetaClass</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">isMetaClass</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">klass</span> <span class="o">=</span> <span class="p">(</span><span class="n">Class</span><span class="p">)</span><span class="n">self</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Check if the method is marked as forwarded and undo that.</span>
+    <span class="n">Method</span> <span class="n">targetMethod</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+    <span class="n">IMP</span> <span class="n">targetMethodIMP</span> <span class="o">=</span> <span class="n">method_getImplementation</span><span class="p">(</span><span class="n">targetMethod</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">aspect_isMsgForwardIMP</span><span class="p">(</span><span class="n">targetMethodIMP</span><span class="p">))</span> <span class="p">{</span>
+        <span class="c1">// Restore the original method implementation.</span>
+        <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">typeEncoding</span> <span class="o">=</span> <span class="n">method_getTypeEncoding</span><span class="p">(</span><span class="n">targetMethod</span><span class="p">);</span>
+        <span class="n">SEL</span> <span class="n">aliasSelector</span> <span class="o">=</span> <span class="n">aspect_aliasForSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+        <span class="n">Method</span> <span class="n">originalMethod</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">aliasSelector</span><span class="p">);</span>
+        <span class="n">IMP</span> <span class="n">originalIMP</span> <span class="o">=</span> <span class="n">method_getImplementation</span><span class="p">(</span><span class="n">originalMethod</span><span class="p">);</span>
+        <span class="n">NSCAssert</span><span class="p">(</span><span class="n">originalMethod</span><span class="p">,</span> <span class="s">@"Original implementation for %@ not found %@ on %@"</span><span class="p">,</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">),</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">aliasSelector</span><span class="p">),</span> <span class="n">klass</span><span class="p">);</span>
+
+        <span class="n">class_replaceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">originalIMP</span><span class="p">,</span> <span class="n">typeEncoding</span><span class="p">);</span>
+        <span class="n">AspectLog</span><span class="p">(</span><span class="s">@"Aspects: Removed hook for -[%@ %@]."</span><span class="p">,</span> <span class="n">klass</span><span class="p">,</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Deregister global tracked selector</span>
+    <span class="n">aspect_deregisterTrackedSelector</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+
+    <span class="c1">// Get the aspect container and check if there are any hooks remaining. Clean up if there are not.</span>
+    <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">container</span> <span class="o">=</span> <span class="n">aspect_getContainerForObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">container</span><span class="p">.</span><span class="n">hasAspects</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Destroy the container</span>
+        <span class="n">aspect_destroyContainerForObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+
+        <span class="c1">// Figure out how the class was modified to undo the changes.</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">className</span> <span class="o">=</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">className</span> <span class="nf">hasSuffix</span><span class="p">:</span><span class="n">AspectsSubclassSuffix</span><span class="p">])</span> <span class="p">{</span>
+            <span class="n">Class</span> <span class="n">originalClass</span> <span class="o">=</span> <span class="n">NSClassFromString</span><span class="p">([</span><span class="n">className</span> <span class="nf">stringByReplacingOccurrencesOfString</span><span class="p">:</span><span class="n">AspectsSubclassSuffix</span> <span class="nf">withString</span><span class="p">:</span><span class="s">@""</span><span class="p">]);</span>
+            <span class="n">NSCAssert</span><span class="p">(</span><span class="n">originalClass</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">,</span> <span class="s">@"Original class must exist"</span><span class="p">);</span>
+            <span class="n">object_setClass</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">originalClass</span><span class="p">);</span>
+            <span class="n">AspectLog</span><span class="p">(</span><span class="s">@"Aspects: %@ has been restored."</span><span class="p">,</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">originalClass</span><span class="p">));</span>
+
+            <span class="c1">// We can only dispose the class pair if we can ensure that no instances exist using our subclass.</span>
+            <span class="c1">// Since we don't globally track this, we can't ensure this - but there's also not much overhead in keeping it around.</span>
+            <span class="c1">//objc_disposeClassPair(object.class);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+            <span class="c1">// Class is most likely swizzled in place. Undo that.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">isMetaClass</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">aspect_undoSwizzleClassInPlace</span><span class="p">((</span><span class="n">Class</span><span class="p">)</span><span class="n">self</span><span class="p">);</span>
+            <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">class</span> <span class="o">!=</span> <span class="n">klass</span><span class="p">)</span> <span class="p">{</span>
+            	<span class="n">aspect_undoSwizzleClassInPlace</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Hook Class
+</span><span class="c1">// 核心代码</span>
+
+<span class="c1">// hook class</span>
+<span class="k">static</span> <span class="n">Class</span> <span class="nf">aspect_hookClass</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 断言</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="c1">// 当self是实例对象的时候，返回的是类对象，否则则返回自身。</span>
+	<span class="n">Class</span> <span class="n">statedClass</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">class</span><span class="p">;</span>
+    <span class="c1">// self的isa</span>
+	<span class="n">Class</span> <span class="n">baseClass</span> <span class="o">=</span> <span class="n">object_getClass</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="c1">// className</span>
+	<span class="n">NSString</span> <span class="o">*</span><span class="n">className</span> <span class="o">=</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">baseClass</span><span class="p">);</span>
+
+    <span class="c1">// Already subclassed</span>
+    <span class="c1">// 已经子类化过了</span>
+	<span class="k">if</span> <span class="p">([</span><span class="n">className</span> <span class="nf">hasSuffix</span><span class="p">:</span><span class="n">AspectsSubclassSuffix</span><span class="p">])</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="n">baseClass</span><span class="p">;</span>
+        
+        <span class="c1">// We swizzle a class object, not a single object.</span>
+        <span class="c1">// 我们混写了一个类对象，而不是一个单独的object</span>
+	<span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">class_isMetaClass</span><span class="p">(</span><span class="n">baseClass</span><span class="p">))</span> <span class="p">{</span>
+        <span class="c1">// baseClass是元类，则self是class 或 metaClass，混写self</span>
+        <span class="k">return</span> <span class="n">aspect_swizzleClassInPlace</span><span class="p">((</span><span class="n">Class</span><span class="p">)</span><span class="n">self</span><span class="p">);</span>
+        <span class="c1">// 可能是一个 KVO 的类，混写就位。也要混写meta classes</span>
+        <span class="c1">// Probably a KVO'ed class. Swizzle in place. Also swizzle meta classes in place.</span>
+    <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">statedClass</span> <span class="o">!=</span> <span class="n">baseClass</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 当不同时混写baseClass</span>
+        <span class="k">return</span> <span class="n">aspect_swizzleClassInPlace</span><span class="p">(</span><span class="n">baseClass</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Default case. Create dynamic subclass.</span>
+    <span class="c1">// 默认情况下，动态创建子类</span>
+    <span class="c1">// 拼接子类后缀</span>
+	<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">subclassName</span> <span class="o">=</span> <span class="p">[</span><span class="n">className</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="n">AspectsSubclassSuffix</span><span class="p">].</span><span class="n">UTF8String</span><span class="p">;</span>
+    <span class="c1">// 尝试用拼接后缀的名称获取isa</span>
+	<span class="n">Class</span> <span class="n">subclass</span> <span class="o">=</span> <span class="n">objc_getClass</span><span class="p">(</span><span class="n">subclassName</span><span class="p">);</span>
+
+    <span class="c1">// 如果找不到isa，代表还没有动态创建过这个子类</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">subclass</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 创建一个 class pair。 baseClass 作为新类的 superClass，类名为subclassName，</span>
+		<span class="n">subclass</span> <span class="o">=</span> <span class="n">objc_allocateClassPair</span><span class="p">(</span><span class="n">baseClass</span><span class="p">,</span> <span class="n">subclassName</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">subclass</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 返回nil，表示创建失败</span>
+            <span class="n">NSString</span> <span class="o">*</span><span class="n">errrorDesc</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"objc_allocateClassPair failed to allocate class %s."</span><span class="p">,</span> <span class="n">subclassName</span><span class="p">];</span>
+            <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorFailedToAllocateClassPair</span><span class="p">,</span> <span class="n">errrorDesc</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// 混写 ForwardInvocation</span>
+		<span class="n">aspect_swizzleForwardInvocation</span><span class="p">(</span><span class="n">subclass</span><span class="p">);</span>
+        <span class="c1">// subClass.class = statedClass</span>
+        <span class="n">aspect_hookedGetClass</span><span class="p">(</span><span class="n">subclass</span><span class="p">,</span> <span class="n">statedClass</span><span class="p">);</span>
+        <span class="c1">// subClass.isa.class = statedClass</span>
+		<span class="n">aspect_hookedGetClass</span><span class="p">(</span><span class="n">object_getClass</span><span class="p">(</span><span class="n">subclass</span><span class="p">),</span> <span class="n">statedClass</span><span class="p">);</span>
+        
+        <span class="c1">// 注册新类</span>
+		<span class="n">objc_registerClassPair</span><span class="p">(</span><span class="n">subclass</span><span class="p">);</span>
+	<span class="p">}</span>
+
+     <span class="c1">// 覆盖 isa</span>
+	<span class="n">object_setClass</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">subclass</span><span class="p">);</span>
+	<span class="k">return</span> <span class="n">subclass</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">NSString</span> <span class="o">*</span><span class="k">const</span> <span class="n">AspectsForwardInvocationSelectorName</span> <span class="o">=</span> <span class="s">@"__aspects_forwardInvocation:"</span><span class="p">;</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_swizzleForwardInvocation</span><span class="p">(</span><span class="n">Class</span> <span class="n">klass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 断言 klass</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+    <span class="p">[</span><span class="n">NSObject</span> <span class="nf">forwardInvocation</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
+    <span class="c1">// If there is no method, replace will act like class_addMethod.</span>
+    <span class="c1">// 如果没有method，那么替换的作用和class_addMethod相同</span>
+    <span class="c1">// 这里是把forwardInvocation 的 IMP 替换成 __ASPECTS_ARE_BEING_CALLED__</span>
+    <span class="c1">// 如果是replace返回原forwardInvocation:的IMP的地址</span>
+    <span class="c1">// 之后系统调用 forwardInvocation 时。就会</span>
+    <span class="n">IMP</span> <span class="n">originalImplementation</span> <span class="o">=</span> <span class="n">class_replaceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="k">@selector</span><span class="p">(</span><span class="n">forwardInvocation</span><span class="o">:</span><span class="p">),</span> <span class="p">(</span><span class="n">IMP</span><span class="p">)</span><span class="n">__ASPECTS_ARE_BEING_CALLED__</span><span class="p">,</span> <span class="s">"v@:@"</span><span class="p">);</span>
+    <span class="c1">// 拿到 originalImplementation 证明是 replace 而不是 add，情况少见</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">originalImplementation</span><span class="p">)</span> <span class="p">{</span>
+<span class="err">        </span><span class="c1">// 添加 AspectsForwardInvocationSelectorName 的方法，IMP 为原生 forwardInvocation:</span>
+        <span class="n">class_addMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">NSSelectorFromString</span><span class="p">(</span><span class="n">AspectsForwardInvocationSelectorName</span><span class="p">),</span> <span class="n">originalImplementation</span><span class="p">,</span> <span class="s">"v@:@"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">AspectLog</span><span class="p">(</span><span class="s">@"Aspects: %@ is now aspect aware."</span><span class="p">,</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">klass</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_undoSwizzleForwardInvocation</span><span class="p">(</span><span class="n">Class</span> <span class="n">klass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+    <span class="c1">// 这里拿到的是原来forwardInvocation:</span>
+    <span class="n">Method</span> <span class="n">originalMethod</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">NSSelectorFromString</span><span class="p">(</span><span class="n">AspectsForwardInvocationSelectorName</span><span class="p">));</span>
+    <span class="c1">// 拿到 forwardInvocation:</span>
+    <span class="n">Method</span> <span class="n">objectMethod</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">NSObject</span><span class="p">.</span><span class="n">class</span><span class="p">,</span> <span class="k">@selector</span><span class="p">(</span><span class="n">forwardInvocation</span><span class="o">:</span><span class="p">));</span>
+    <span class="c1">// There is no class_removeMethod, so the best we can do is to retore the original implementation, or use a dummy.</span>
+    <span class="n">IMP</span> <span class="n">originalImplementation</span> <span class="o">=</span> <span class="n">method_getImplementation</span><span class="p">(</span><span class="n">originalMethod</span> <span class="p">?:</span> <span class="n">objectMethod</span><span class="p">);</span>
+    <span class="c1">// 换回来</span>
+    <span class="n">class_replaceMethod</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="k">@selector</span><span class="p">(</span><span class="n">forwardInvocation</span><span class="o">:</span><span class="p">),</span> <span class="n">originalImplementation</span><span class="p">,</span> <span class="s">"v@:@"</span><span class="p">);</span>
+
+    <span class="n">AspectLog</span><span class="p">(</span><span class="s">@"Aspects: %@ has been restored."</span><span class="p">,</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">klass</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_hookedGetClass</span><span class="p">(</span><span class="n">Class</span> <span class="n">class</span><span class="p">,</span> <span class="n">Class</span> <span class="n">statedClass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">class</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">statedClass</span><span class="p">);</span>
+    <span class="c1">// 拿到class  method。</span>
+	<span class="n">Method</span> <span class="n">method</span> <span class="o">=</span> <span class="n">class_getInstanceMethod</span><span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="k">@selector</span><span class="p">(</span><span class="n">class</span><span class="p">));</span>
+    <span class="c1">// 创建一个IMP</span>
+	<span class="n">IMP</span> <span class="n">newIMP</span> <span class="o">=</span> <span class="n">imp_implementationWithBlock</span><span class="p">(</span><span class="o">^</span><span class="p">(</span><span class="n">id</span> <span class="n">self</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="n">statedClass</span><span class="p">;</span>
+	<span class="p">});</span>
+    <span class="c1">// 替换 @selector(class) 的IMP为 newIMP。就是说。调 class方法时。返回的实际是statedClass</span>
+	<span class="n">class_replaceMethod</span><span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="k">@selector</span><span class="p">(</span><span class="n">class</span><span class="p">),</span> <span class="n">newIMP</span><span class="p">,</span> <span class="n">method_getTypeEncoding</span><span class="p">(</span><span class="n">method</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Swizzle Class In Place
+</span>
+<span class="c1">// 混写类</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">_aspect_modifySwizzledClasses</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">block</span><span class="p">)(</span><span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">swizzledClasses</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">static</span> <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">swizzledClasses</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">dispatch_once_t</span> <span class="n">pred</span><span class="p">;</span>
+    <span class="c1">// 单例</span>
+    <span class="n">dispatch_once</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pred</span><span class="p">,</span> <span class="o">^</span><span class="p">{</span>
+        <span class="c1">// 初始化</span>
+        <span class="n">swizzledClasses</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableSet</span> <span class="nf">new</span><span class="p">];</span>
+    <span class="p">});</span>
+    <span class="k">@synchronized</span><span class="p">(</span><span class="n">swizzledClasses</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">block</span><span class="p">(</span><span class="n">swizzledClasses</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">Class</span> <span class="nf">aspect_swizzleClassInPlace</span><span class="p">(</span><span class="n">Class</span> <span class="n">klass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+    <span class="c1">// 类名</span>
+    <span class="n">NSString</span> <span class="o">*</span><span class="n">className</span> <span class="o">=</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+
+    <span class="n">_aspect_modifySwizzledClasses</span><span class="p">(</span><span class="o">^</span><span class="p">(</span><span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">swizzledClasses</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 这个swizzledClasses是否包含className</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">[</span><span class="n">swizzledClasses</span> <span class="nf">containsObject</span><span class="p">:</span><span class="n">className</span><span class="p">])</span> <span class="p">{</span>
+            <span class="c1">// 如果不包含。aspect_swizzleForwardInvocation ，并加入</span>
+            <span class="n">aspect_swizzleForwardInvocation</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+            <span class="p">[</span><span class="n">swizzledClasses</span> <span class="nf">addObject</span><span class="p">:</span><span class="n">className</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="k">return</span> <span class="n">klass</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_undoSwizzleClassInPlace</span><span class="p">(</span><span class="n">Class</span> <span class="n">klass</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+    <span class="n">NSString</span> <span class="o">*</span><span class="n">className</span> <span class="o">=</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+
+    <span class="n">_aspect_modifySwizzledClasses</span><span class="p">(</span><span class="o">^</span><span class="p">(</span><span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">swizzledClasses</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">swizzledClasses</span> <span class="nf">containsObject</span><span class="p">:</span><span class="n">className</span><span class="p">])</span> <span class="p">{</span>
+            <span class="n">aspect_undoSwizzleForwardInvocation</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+            <span class="p">[</span><span class="n">swizzledClasses</span> <span class="nf">removeObject</span><span class="p">:</span><span class="n">className</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Aspect Invoke Point
+</span>
+<span class="c1">// This is a macro so we get a cleaner stack trace.</span>
+<span class="c1">// 这是一个宏定义用来表示一个更清晰的 堆栈轨迹</span>
+<span class="cp">#define aspect_invoke(aspects, info) \
+for (AspectIdentifier *aspect in aspects) {\
+    [aspect invokeWithInfo:info];\
+    if (aspect.options &amp; AspectOptionAutomaticRemoval) { \
+        aspectsToRemove = [aspectsToRemove?:@[] arrayByAddingObject:aspect]; \
+    } \
+}
+</span>
+<span class="c1">// This is the swizzled forwardInvocation: method.</span>
+<span class="c1">// 这个是混写的forwardInvocation: method.</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">__ASPECTS_ARE_BEING_CALLED__</span><span class="p">(</span><span class="n">__unsafe_unretained</span> <span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">,</span> <span class="n">NSInvocation</span> <span class="o">*</span><span class="n">invocation</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 两个断言</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">invocation</span><span class="p">);</span>
+    <span class="c1">// 从invovation可以拿到很多东西 比如 originalSelector</span>
+    <span class="n">SEL</span> <span class="n">originalSelector</span> <span class="o">=</span> <span class="n">invocation</span><span class="p">.</span><span class="n">selector</span><span class="p">;</span>
+    <span class="c1">// 加前缀</span>
+	<span class="n">SEL</span> <span class="n">aliasSelector</span> <span class="o">=</span> <span class="n">aspect_aliasForSelector</span><span class="p">(</span><span class="n">invocation</span><span class="p">.</span><span class="n">selector</span><span class="p">);</span>
+    <span class="c1">// 替换</span>
+    <span class="n">invocation</span><span class="p">.</span><span class="n">selector</span> <span class="o">=</span> <span class="n">aliasSelector</span><span class="p">;</span>
+    
+    <span class="c1">// 获取 Instance 的容器</span>
+    <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">objectContainer</span> <span class="o">=</span> <span class="n">objc_getAssociatedObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">aliasSelector</span><span class="p">);</span>
+    <span class="c1">// Class 的容器</span>
+    <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">classContainer</span> <span class="o">=</span> <span class="n">aspect_getContainerForClass</span><span class="p">(</span><span class="n">object_getClass</span><span class="p">(</span><span class="n">self</span><span class="p">),</span> <span class="n">aliasSelector</span><span class="p">);</span>
+    <span class="c1">// info</span>
+    <span class="n">AspectInfo</span> <span class="o">*</span><span class="n">info</span> <span class="o">=</span> <span class="p">[[</span><span class="n">AspectInfo</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithInstance</span><span class="p">:</span><span class="n">self</span> <span class="nf">invocation</span><span class="p">:</span><span class="n">invocation</span><span class="p">];</span>
+    <span class="n">NSArray</span> <span class="o">*</span><span class="n">aspectsToRemove</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+
+    <span class="c1">// Before hooks.</span>
+    <span class="n">aspect_invoke</span><span class="p">(</span><span class="n">classContainer</span><span class="p">.</span><span class="n">beforeAspects</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+    <span class="n">aspect_invoke</span><span class="p">(</span><span class="n">objectContainer</span><span class="p">.</span><span class="n">beforeAspects</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+
+    <span class="c1">// Instead hooks.</span>
+    <span class="n">BOOL</span> <span class="n">respondsToAlias</span> <span class="o">=</span> <span class="nb">YES</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">objectContainer</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">.</span><span class="n">count</span> <span class="o">||</span> <span class="n">classContainer</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">.</span><span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果有任何 insteadAspects 就直接替换了</span>
+        <span class="n">aspect_invoke</span><span class="p">(</span><span class="n">classContainer</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+        <span class="n">aspect_invoke</span><span class="p">(</span><span class="n">objectContainer</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// 否则执行下面</span>
+        
+        <span class="n">Class</span> <span class="n">klass</span> <span class="o">=</span> <span class="n">object_getClass</span><span class="p">(</span><span class="n">invocation</span><span class="p">.</span><span class="n">target</span><span class="p">);</span>
+        
+        <span class="c1">// 遍历 invocation.target 及其 superClass 找到实例可以响应 aliasSelector 的 invoke</span>
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">((</span><span class="n">respondsToAlias</span> <span class="o">=</span> <span class="p">[</span><span class="n">klass</span> <span class="nf">instancesRespondToSelector</span><span class="p">:</span><span class="n">aliasSelector</span><span class="p">]))</span> <span class="p">{</span>
+                <span class="p">[</span><span class="n">invocation</span> <span class="nf">invoke</span><span class="p">];</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span><span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">respondsToAlias</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">klass</span> <span class="o">=</span> <span class="n">class_getSuperclass</span><span class="p">(</span><span class="n">klass</span><span class="p">)));</span>
+    <span class="p">}</span>
+
+    <span class="c1">// After hooks.</span>
+    <span class="n">aspect_invoke</span><span class="p">(</span><span class="n">classContainer</span><span class="p">.</span><span class="n">afterAspects</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+    <span class="n">aspect_invoke</span><span class="p">(</span><span class="n">objectContainer</span><span class="p">.</span><span class="n">afterAspects</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+
+    <span class="c1">// If no hooks are installed, call original implementation (usually to throw an exception)</span>
+    <span class="c1">// 如果没有hook，则执行原实现（通常会抛出异常）</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">respondsToAlias</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">invocation</span><span class="p">.</span><span class="n">selector</span> <span class="o">=</span> <span class="n">originalSelector</span><span class="p">;</span>
+        <span class="n">SEL</span> <span class="n">originalForwardInvocationSEL</span> <span class="o">=</span> <span class="n">NSSelectorFromString</span><span class="p">(</span><span class="n">AspectsForwardInvocationSelectorName</span><span class="p">);</span>
+        <span class="c1">// 如果可以响应 originalForwardInvocationSEL，表示之前是 replace method 而非 add method</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">self</span> <span class="nf">respondsToSelector</span><span class="p">:</span><span class="n">originalForwardInvocationSEL</span><span class="p">])</span> <span class="p">{</span>
+            <span class="p">((</span><span class="kt">void</span><span class="p">(</span> <span class="o">*</span><span class="p">)(</span><span class="n">id</span><span class="p">,</span> <span class="n">SEL</span><span class="p">,</span> <span class="n">NSInvocation</span> <span class="o">*</span><span class="p">))</span><span class="n">objc_msgSend</span><span class="p">)(</span><span class="n">self</span><span class="p">,</span> <span class="n">originalForwardInvocationSEL</span><span class="p">,</span> <span class="n">invocation</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+            <span class="p">[</span><span class="n">self</span> <span class="nf">doesNotRecognizeSelector</span><span class="p">:</span><span class="n">invocation</span><span class="p">.</span><span class="n">selector</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// 移除 aspectsToRemove 队列中的 AspectIdentifier，执行 remove</span>
+    <span class="c1">// Remove any hooks that are queued for deregistration.</span>
+    <span class="p">[</span><span class="n">aspectsToRemove</span> <span class="nf">makeObjectsPerformSelector</span><span class="p">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">remove</span><span class="p">)];</span>
+<span class="p">}</span>
+<span class="cp">#undef aspect_invoke
+</span><span class="c1">// 去除宏定义</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Aspect Container Management
+</span>
+<span class="c1">// Loads or creates the aspect container.</span>
+<span class="c1">// 加载并创建一个aspect container</span>
+<span class="k">static</span> <span class="n">AspectsContainer</span> <span class="o">*</span><span class="nf">aspect_getContainerForObject</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="c1">// 获取别名selector</span>
+    <span class="n">SEL</span> <span class="n">aliasSelector</span> <span class="o">=</span> <span class="n">aspect_aliasForSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="c1">// 获取关联对象，如果为nil则set关联对象。</span>
+    <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">aspectContainer</span> <span class="o">=</span> <span class="n">objc_getAssociatedObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">aliasSelector</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">aspectContainer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">aspectContainer</span> <span class="o">=</span> <span class="p">[</span><span class="n">AspectsContainer</span> <span class="nf">new</span><span class="p">];</span>
+        <span class="n">objc_setAssociatedObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">aliasSelector</span><span class="p">,</span> <span class="n">aspectContainer</span><span class="p">,</span> <span class="n">OBJC_ASSOCIATION_RETAIN</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">aspectContainer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 传入selector 和class</span>
+<span class="k">static</span> <span class="n">AspectsContainer</span> <span class="o">*</span><span class="nf">aspect_getContainerForClass</span><span class="p">(</span><span class="n">Class</span> <span class="n">klass</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 断言</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">klass</span><span class="p">);</span>
+    <span class="c1">// 定义一个</span>
+    <span class="n">AspectsContainer</span> <span class="o">*</span><span class="n">classContainer</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="c1">// 遍历找classContainer</span>
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="n">classContainer</span> <span class="o">=</span> <span class="n">objc_getAssociatedObject</span><span class="p">(</span><span class="n">klass</span><span class="p">,</span> <span class="n">selector</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">classContainer</span><span class="p">.</span><span class="n">hasAspects</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">while</span> <span class="p">((</span><span class="n">klass</span> <span class="o">=</span> <span class="n">class_getSuperclass</span><span class="p">(</span><span class="n">klass</span><span class="p">)));</span>
+
+    <span class="k">return</span> <span class="n">classContainer</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_destroyContainerForObject</span><span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span> <span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+    <span class="n">SEL</span> <span class="n">aliasSelector</span> <span class="o">=</span> <span class="n">aspect_aliasForSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="n">objc_setAssociatedObject</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">aliasSelector</span><span class="p">,</span> <span class="nb">nil</span><span class="p">,</span> <span class="n">OBJC_ASSOCIATION_RETAIN</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - Selector Blacklist Checking
+</span>
+<span class="k">static</span> <span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="nf">aspect_getSwizzledClassesDict</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// 单例，初始化</span>
+    <span class="k">static</span> <span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="n">swizzledClassesDict</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">dispatch_once_t</span> <span class="n">pred</span><span class="p">;</span>
+    <span class="n">dispatch_once</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pred</span><span class="p">,</span> <span class="o">^</span><span class="p">{</span>
+        <span class="n">swizzledClassesDict</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableDictionary</span> <span class="nf">new</span><span class="p">];</span>
+    <span class="p">});</span>
+    <span class="k">return</span> <span class="n">swizzledClassesDict</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 检查允许</span>
+<span class="k">static</span> <span class="n">BOOL</span> <span class="nf">aspect_isSelectorAllowedAndTrack</span><span class="p">(</span><span class="n">NSObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">,</span> <span class="n">AspectOptions</span> <span class="n">options</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">**</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 黑名单</span>
+    <span class="k">static</span> <span class="n">NSSet</span> <span class="o">*</span><span class="n">disallowedSelectorList</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">dispatch_once_t</span> <span class="n">pred</span><span class="p">;</span>
+    <span class="c1">// 一个单例</span>
+    <span class="n">dispatch_once</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pred</span><span class="p">,</span> <span class="o">^</span><span class="p">{</span>
+        <span class="c1">// 初始化。</span>
+        <span class="n">disallowedSelectorList</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSSet</span> <span class="nf">setWithObjects</span><span class="p">:</span><span class="s">@"retain"</span><span class="p">,</span> <span class="s">@"release"</span><span class="p">,</span> <span class="s">@"autorelease"</span><span class="p">,</span> <span class="s">@"forwardInvocation:"</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
+    <span class="p">});</span>
+
+    <span class="c1">// Check against the blacklist.</span>
+    <span class="n">NSString</span> <span class="o">*</span><span class="n">selectorName</span> <span class="o">=</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">([</span><span class="n">disallowedSelectorList</span> <span class="nf">containsObject</span><span class="p">:</span><span class="n">selectorName</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// 如果在黑名单里</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">errorDescription</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"Selector %@ is blacklisted."</span><span class="p">,</span> <span class="n">selectorName</span><span class="p">];</span>
+        <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorSelectorBlacklisted</span><span class="p">,</span> <span class="n">errorDescription</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Additional checks.</span>
+    <span class="c1">// 保证是012中的一个。</span>
+    <span class="n">AspectOptions</span> <span class="n">position</span> <span class="o">=</span> <span class="n">options</span><span class="o">&amp;</span><span class="n">AspectPositionFilter</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">([</span><span class="n">selectorName</span> <span class="nf">isEqualToString</span><span class="p">:</span><span class="s">@"dealloc"</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">position</span> <span class="o">!=</span> <span class="n">AspectPositionBefore</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果是dealloc &amp;&amp; 不是 before</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">errorDesc</span> <span class="o">=</span> <span class="s">@"AspectPositionBefore is the only valid position when hooking dealloc."</span><span class="p">;</span>
+        <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorSelectorDeallocPosition</span><span class="p">,</span> <span class="n">errorDesc</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">[</span><span class="n">self</span> <span class="nf">respondsToSelector</span><span class="p">:</span><span class="n">selector</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">class</span> <span class="nf">instancesRespondToSelector</span><span class="p">:</span><span class="n">selector</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// 如果没有这个selector</span>
+        <span class="n">NSString</span> <span class="o">*</span><span class="n">errorDesc</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"Unable to find selector -[%@ %@]."</span><span class="p">,</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">class</span><span class="p">),</span> <span class="n">selectorName</span><span class="p">];</span>
+        <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorDoesNotRespondToSelector</span><span class="p">,</span> <span class="n">errorDesc</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Search for the current class and the class hierarchy IF we are modifying a class object</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">class_isMetaClass</span><span class="p">(</span><span class="n">object_getClass</span><span class="p">(</span><span class="n">self</span><span class="p">)))</span> <span class="p">{</span>
+        <span class="c1">// 如果是元类</span>
+        <span class="n">Class</span> <span class="n">klass</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">class</span><span class="p">];</span>
+        <span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="n">swizzledClassesDict</span> <span class="o">=</span> <span class="n">aspect_getSwizzledClassesDict</span><span class="p">();</span>
+        <span class="n">Class</span> <span class="n">currentClass</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">class</span><span class="p">];</span>
+        
+        <span class="c1">// 这里先找看能不能从swizzledClassesDict中找到这个class对应的tracker。</span>
+        <span class="c1">// 分为两种情况</span>
+        <span class="cm">/*
+         1.为nil。则初始化。并赋值。swizzledClassesDict中。key是class
+         2.不为nil。则抛出异常。返回NO。
+         */</span>
+
+        <span class="n">AspectTracker</span> <span class="o">*</span><span class="n">tracker</span> <span class="o">=</span> <span class="n">swizzledClassesDict</span><span class="p">[</span><span class="nf">currentClass</span><span class="p">];</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">tracker</span> <span class="nf">subclassHasHookedSelectorName</span><span class="p">:</span><span class="n">selectorName</span><span class="p">])</span> <span class="p">{</span>
+            <span class="n">NSSet</span> <span class="o">*</span><span class="n">subclassTracker</span> <span class="o">=</span> <span class="p">[</span><span class="n">tracker</span> <span class="nf">subclassTrackersHookingSelectorName</span><span class="p">:</span><span class="n">selectorName</span><span class="p">];</span>
+            <span class="n">NSSet</span> <span class="o">*</span><span class="n">subclassNames</span> <span class="o">=</span> <span class="p">[</span><span class="n">subclassTracker</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="s">@"trackedClassName"</span><span class="p">];</span>
+            <span class="n">NSString</span> <span class="o">*</span><span class="n">errorDescription</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"Error: %@ already hooked subclasses: %@. A method can only be hooked once per class hierarchy."</span><span class="p">,</span> <span class="n">selectorName</span><span class="p">,</span> <span class="n">subclassNames</span><span class="p">];</span>
+            <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorSelectorAlreadyHookedInClassHierarchy</span><span class="p">,</span> <span class="n">errorDescription</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="n">tracker</span> <span class="o">=</span> <span class="n">swizzledClassesDict</span><span class="p">[</span><span class="nf">currentClass</span><span class="p">];</span>
+            <span class="k">if</span> <span class="p">([</span><span class="n">tracker</span><span class="p">.</span><span class="n">selectorNames</span> <span class="nf">containsObject</span><span class="p">:</span><span class="n">selectorName</span><span class="p">])</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">klass</span> <span class="o">==</span> <span class="n">currentClass</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="c1">// Already modified and topmost!</span>
+                    <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="n">NSString</span> <span class="o">*</span><span class="n">errorDescription</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"Error: %@ already hooked in %@. A method can only be hooked once per class hierarchy."</span><span class="p">,</span> <span class="n">selectorName</span><span class="p">,</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">currentClass</span><span class="p">)];</span>
+                <span class="n">AspectError</span><span class="p">(</span><span class="n">AspectErrorSelectorAlreadyHookedInClassHierarchy</span><span class="p">,</span> <span class="n">errorDescription</span><span class="p">);</span>
+                <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">while</span> <span class="p">((</span><span class="n">currentClass</span> <span class="o">=</span> <span class="n">class_getSuperclass</span><span class="p">(</span><span class="n">currentClass</span><span class="p">)));</span>
+
+        <span class="c1">// Add the selector as being modified.</span>
+        <span class="n">currentClass</span> <span class="o">=</span> <span class="n">klass</span><span class="p">;</span>
+        <span class="n">AspectTracker</span> <span class="o">*</span><span class="n">subclassTracker</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="n">tracker</span> <span class="o">=</span> <span class="n">swizzledClassesDict</span><span class="p">[</span><span class="nf">currentClass</span><span class="p">];</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tracker</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">tracker</span> <span class="o">=</span> <span class="p">[[</span><span class="n">AspectTracker</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithTrackedClass</span><span class="p">:</span><span class="n">currentClass</span><span class="p">];</span>
+                <span class="n">swizzledClassesDict</span><span class="p">[(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">NSCopying</span><span class="o">&gt;</span><span class="p">)</span><span class="nf">currentClass</span><span class="p">]</span> <span class="o">=</span> <span class="n">tracker</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">subclassTracker</span><span class="p">)</span> <span class="p">{</span>
+                <span class="p">[</span><span class="n">tracker</span> <span class="nf">addSubclassTracker</span><span class="p">:</span><span class="n">subclassTracker</span> <span class="nf">hookingSelectorName</span><span class="p">:</span><span class="n">selectorName</span><span class="p">];</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="p">[</span><span class="n">tracker</span><span class="p">.</span><span class="n">selectorNames</span> <span class="nf">addObject</span><span class="p">:</span><span class="n">selectorName</span><span class="p">];</span>
+            <span class="p">}</span>
+
+            <span class="c1">// All superclasses get marked as having a subclass that is modified.</span>
+            <span class="n">subclassTracker</span> <span class="o">=</span> <span class="n">tracker</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">while</span> <span class="p">((</span><span class="n">currentClass</span> <span class="o">=</span> <span class="n">class_getSuperclass</span><span class="p">(</span><span class="n">currentClass</span><span class="p">)));</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+	<span class="p">}</span>
+
+    <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">aspect_deregisterTrackedSelector</span><span class="p">(</span><span class="n">id</span> <span class="n">self</span><span class="p">,</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">class_isMetaClass</span><span class="p">(</span><span class="n">object_getClass</span><span class="p">(</span><span class="n">self</span><span class="p">)))</span> <span class="k">return</span><span class="p">;</span>
+
+    <span class="n">NSMutableDictionary</span> <span class="o">*</span><span class="n">swizzledClassesDict</span> <span class="o">=</span> <span class="n">aspect_getSwizzledClassesDict</span><span class="p">();</span>
+    <span class="n">NSString</span> <span class="o">*</span><span class="n">selectorName</span> <span class="o">=</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="n">Class</span> <span class="n">currentClass</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">class</span><span class="p">];</span>
+    <span class="n">AspectTracker</span> <span class="o">*</span><span class="n">subclassTracker</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="n">AspectTracker</span> <span class="o">*</span><span class="n">tracker</span> <span class="o">=</span> <span class="n">swizzledClassesDict</span><span class="p">[</span><span class="nf">currentClass</span><span class="p">];</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">subclassTracker</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">[</span><span class="n">tracker</span> <span class="nf">removeSubclassTracker</span><span class="p">:</span><span class="n">subclassTracker</span> <span class="nf">hookingSelectorName</span><span class="p">:</span><span class="n">selectorName</span><span class="p">];</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="p">[</span><span class="n">tracker</span><span class="p">.</span><span class="n">selectorNames</span> <span class="nf">removeObject</span><span class="p">:</span><span class="n">selectorName</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">tracker</span><span class="p">.</span><span class="n">selectorNames</span><span class="p">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">tracker</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">[</span><span class="n">swizzledClassesDict</span> <span class="nf">removeObjectForKey</span><span class="p">:</span><span class="n">currentClass</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="n">subclassTracker</span> <span class="o">=</span> <span class="n">tracker</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">while</span> <span class="p">((</span><span class="n">currentClass</span> <span class="o">=</span> <span class="n">class_getSuperclass</span><span class="p">(</span><span class="n">currentClass</span><span class="p">)));</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+<span class="k">@implementation</span> <span class="nc">AspectTracker</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithTrackedClass</span><span class="p">:(</span><span class="n">Class</span><span class="p">)</span><span class="nv">trackedClass</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">self</span> <span class="o">=</span> <span class="p">[</span><span class="n">super</span> <span class="nf">init</span><span class="p">])</span> <span class="p">{</span>
+        <span class="n">_trackedClass</span> <span class="o">=</span> <span class="n">trackedClass</span><span class="p">;</span>
+        <span class="n">_selectorNames</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableSet</span> <span class="nf">new</span><span class="p">];</span>
+        <span class="n">_selectorNamesToSubclassTrackers</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableDictionary</span> <span class="nf">new</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">subclassHasHookedSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">[</span><span class="nf">selectorName</span><span class="p">]</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addSubclassTracker</span><span class="p">:(</span><span class="n">AspectTracker</span> <span class="o">*</span><span class="p">)</span><span class="nv">subclassTracker</span> <span class="nf">hookingSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span> <span class="p">{</span>
+    <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">trackerSet</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">[</span><span class="nf">selectorName</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">trackerSet</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">trackerSet</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableSet</span> <span class="nf">new</span><span class="p">];</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">[</span><span class="nf">selectorName</span><span class="p">]</span> <span class="o">=</span> <span class="n">trackerSet</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="p">[</span><span class="n">trackerSet</span> <span class="nf">addObject</span><span class="p">:</span><span class="n">subclassTracker</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeSubclassTracker</span><span class="p">:(</span><span class="n">AspectTracker</span> <span class="o">*</span><span class="p">)</span><span class="nv">subclassTracker</span> <span class="nf">hookingSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span> <span class="p">{</span>
+    <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">trackerSet</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">[</span><span class="nf">selectorName</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">trackerSet</span> <span class="nf">removeObject</span><span class="p">:</span><span class="n">subclassTracker</span><span class="p">];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">trackerSet</span><span class="p">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span> <span class="nf">removeObjectForKey</span><span class="p">:</span><span class="n">selectorName</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSSet</span> <span class="o">*</span><span class="p">)</span><span class="nf">subclassTrackersHookingSelectorName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">selectorName</span> <span class="p">{</span>
+    <span class="n">NSMutableSet</span> <span class="o">*</span><span class="n">hookingSubclassTrackers</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableSet</span> <span class="nf">new</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">AspectTracker</span> <span class="o">*</span><span class="n">tracker</span> <span class="k">in</span> <span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">[</span><span class="nf">selectorName</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">([</span><span class="n">tracker</span><span class="p">.</span><span class="n">selectorNames</span> <span class="nf">containsObject</span><span class="p">:</span><span class="n">selectorName</span><span class="p">])</span> <span class="p">{</span>
+            <span class="p">[</span><span class="n">hookingSubclassTrackers</span> <span class="nf">addObject</span><span class="p">:</span><span class="n">tracker</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="p">[</span><span class="n">hookingSubclassTrackers</span> <span class="nf">unionSet</span><span class="p">:[</span><span class="n">tracker</span> <span class="nf">subclassTrackersHookingSelectorName</span><span class="p">:</span><span class="n">selectorName</span><span class="p">]];</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">hookingSubclassTrackers</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">trackedClassName</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">trackedClass</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">description</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"&lt;%@: %@, trackedClass: %@, selectorNames:%@, subclass selector names: %@&gt;"</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">class</span><span class="p">,</span> <span class="n">self</span><span class="p">,</span> <span class="n">NSStringFromClass</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">trackedClass</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">selectorNames</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">selectorNamesToSubclassTrackers</span><span class="p">.</span><span class="n">allKeys</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - NSInvocation (Aspects)
+</span>
+<span class="k">@implementation</span> <span class="nc">NSInvocation</span> <span class="p">(</span><span class="nl">Aspects</span><span class="p">)</span>
+
+<span class="c1">// Thanks to the ReactiveCocoa team for providing a generic solution for this.</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">aspect_argumentAtIndex</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">index</span> <span class="p">{</span>
+	<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argType</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">methodSignature</span> <span class="nf">getArgumentTypeAtIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
+	<span class="c1">// Skip const type qualifier.</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">argType</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">_C_CONST</span><span class="p">)</span> <span class="n">argType</span><span class="o">++</span><span class="p">;</span>
+
+<span class="cp">#define WRAP_AND_RETURN(type) do { type val = 0; [self getArgument:&amp;val atIndex:(NSInteger)index]; return @(val); } while (0)
+</span>	<span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="n">id</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="n">Class</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">__autoreleasing</span> <span class="n">id</span> <span class="n">returnObj</span><span class="p">;</span>
+		<span class="p">[</span><span class="n">self</span> <span class="nf">getArgument</span><span class="p">:</span><span class="o">&amp;</span><span class="n">returnObj</span> <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">index</span><span class="p">];</span>
+		<span class="k">return</span> <span class="n">returnObj</span><span class="p">;</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="n">SEL</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">SEL</span> <span class="n">selector</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">[</span><span class="n">self</span> <span class="nf">getArgument</span><span class="p">:</span><span class="o">&amp;</span><span class="n">selector</span> <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">index</span><span class="p">];</span>
+        <span class="k">return</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="n">Class</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">__autoreleasing</span> <span class="n">Class</span> <span class="n">theClass</span> <span class="o">=</span> <span class="n">Nil</span><span class="p">;</span>
+        <span class="p">[</span><span class="n">self</span> <span class="nf">getArgument</span><span class="p">:</span><span class="o">&amp;</span><span class="n">theClass</span> <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">index</span><span class="p">];</span>
+        <span class="k">return</span> <span class="n">theClass</span><span class="p">;</span>
+        <span class="c1">// Using this list will box the number with the appropriate constructor, instead of the generic NSValue.</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">char</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">char</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">int</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">short</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">short</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">long</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">long</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">short</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">short</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">float</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">float</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">double</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="kt">double</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="n">BOOL</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="n">BOOL</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="n">bool</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="n">BOOL</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">WRAP_AND_RETURN</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="p">);</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="k">@encode</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">void</span><span class="p">)))</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">__unsafe_unretained</span> <span class="n">id</span> <span class="n">block</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+		<span class="p">[</span><span class="n">self</span> <span class="nf">getArgument</span><span class="p">:</span><span class="o">&amp;</span><span class="n">block</span> <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">index</span><span class="p">];</span>
+		<span class="k">return</span> <span class="p">[</span><span class="n">block</span> <span class="nf">copy</span><span class="p">];</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="n">NSUInteger</span> <span class="n">valueSize</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+		<span class="n">NSGetSizeAndAlignment</span><span class="p">(</span><span class="n">argType</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">valueSize</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+
+		<span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">valueBytes</span><span class="p">[</span><span class="nf">valueSize</span><span class="p">];</span>
+		<span class="p">[</span><span class="n">self</span> <span class="nf">getArgument</span><span class="p">:</span><span class="n">valueBytes</span> <span class="nf">atIndex</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">index</span><span class="p">];</span>
+
+		<span class="k">return</span> <span class="p">[</span><span class="n">NSValue</span> <span class="nf">valueWithBytes</span><span class="p">:</span><span class="n">valueBytes</span> <span class="nf">objCType</span><span class="p">:</span><span class="n">argType</span><span class="p">];</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+<span class="cp">#undef WRAP_AND_RETURN
+</span><span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">aspects_arguments</span> <span class="p">{</span>
+	<span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">argumentsArray</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableArray</span> <span class="nf">array</span><span class="p">];</span>
+	<span class="k">for</span> <span class="p">(</span><span class="n">NSUInteger</span> <span class="n">idx</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="n">self</span><span class="p">.</span><span class="n">methodSignature</span><span class="p">.</span><span class="n">numberOfArguments</span><span class="p">;</span> <span class="n">idx</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="p">[</span><span class="n">argumentsArray</span> <span class="nf">addObject</span><span class="p">:[</span><span class="n">self</span> <span class="nf">aspect_argumentAtIndex</span><span class="p">:</span><span class="n">idx</span><span class="p">]</span> <span class="p">?:</span> <span class="n">NSNull</span><span class="p">.</span><span class="n">null</span><span class="p">];</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="p">[</span><span class="n">argumentsArray</span> <span class="nf">copy</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - AspectIdentifier
+</span>
+<span class="k">@implementation</span> <span class="nc">AspectIdentifier</span>
+
+<span class="c1">// 实例化</span>
+<span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">identifierWithSelector</span><span class="p">:(</span><span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span> <span class="nf">object</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">object</span> <span class="nf">options</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span> <span class="nf">block</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">block</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">block</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">selector</span><span class="p">);</span>
+    <span class="c1">// 根据block生成方法签名</span>
+    <span class="n">NSMethodSignature</span> <span class="o">*</span><span class="n">blockSignature</span> <span class="o">=</span> <span class="n">aspect_blockMethodSignature</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span> <span class="c1">// TODO: check signature compatibility, etc.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">aspect_isCompatibleBlockSignature</span><span class="p">(</span><span class="n">blockSignature</span><span class="p">,</span> <span class="n">object</span><span class="p">,</span> <span class="n">selector</span><span class="p">,</span> <span class="n">error</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 下面开始初始化</span>
+    <span class="n">AspectIdentifier</span> <span class="o">*</span><span class="n">identifier</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">blockSignature</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">identifier</span> <span class="o">=</span> <span class="p">[</span><span class="n">AspectIdentifier</span> <span class="nf">new</span><span class="p">];</span>
+        <span class="n">identifier</span><span class="p">.</span><span class="n">selector</span> <span class="o">=</span> <span class="n">selector</span><span class="p">;</span>
+        <span class="n">identifier</span><span class="p">.</span><span class="n">block</span> <span class="o">=</span> <span class="n">block</span><span class="p">;</span>
+        <span class="n">identifier</span><span class="p">.</span><span class="n">blockSignature</span> <span class="o">=</span> <span class="n">blockSignature</span><span class="p">;</span>
+        <span class="n">identifier</span><span class="p">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">options</span><span class="p">;</span>
+        <span class="n">identifier</span><span class="p">.</span><span class="n">object</span> <span class="o">=</span> <span class="n">object</span><span class="p">;</span> <span class="c1">// weak</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">identifier</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">invokeWithInfo</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">AspectInfo</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">info</span> <span class="p">{</span>
+    <span class="n">NSInvocation</span> <span class="o">*</span><span class="n">blockInvocation</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSInvocation</span> <span class="nf">invocationWithMethodSignature</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">blockSignature</span><span class="p">];</span>
+    <span class="n">NSInvocation</span> <span class="o">*</span><span class="n">originalInvocation</span> <span class="o">=</span> <span class="n">info</span><span class="p">.</span><span class="n">originalInvocation</span><span class="p">;</span>
+    <span class="n">NSUInteger</span> <span class="n">numberOfArguments</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">blockSignature</span><span class="p">.</span><span class="n">numberOfArguments</span><span class="p">;</span>
+
+    <span class="c1">// Be extra paranoid. We already check that on hook registration.</span>
+    <span class="c1">// 这里再检查一遍</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">numberOfArguments</span> <span class="o">&gt;</span> <span class="n">originalInvocation</span><span class="p">.</span><span class="n">methodSignature</span><span class="p">.</span><span class="n">numberOfArguments</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">AspectLogError</span><span class="p">(</span><span class="s">@"Block has too many arguments. Not calling %@"</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// The `self` of the block will be the AspectInfo. Optional.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">numberOfArguments</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">[</span><span class="n">blockInvocation</span> <span class="nf">setArgument</span><span class="p">:</span><span class="o">&amp;</span><span class="n">info</span> <span class="nf">atIndex</span><span class="p">:</span><span class="mi">1</span><span class="p">];</span>
+    <span class="p">}</span>
+    
+	<span class="kt">void</span> <span class="o">*</span><span class="n">argBuf</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">NSUInteger</span> <span class="n">idx</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="n">numberOfArguments</span><span class="p">;</span> <span class="n">idx</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">type</span> <span class="o">=</span> <span class="p">[</span><span class="n">originalInvocation</span><span class="p">.</span><span class="n">methodSignature</span> <span class="nf">getArgumentTypeAtIndex</span><span class="p">:</span><span class="n">idx</span><span class="p">];</span>
+		<span class="n">NSUInteger</span> <span class="n">argSize</span><span class="p">;</span>
+		<span class="n">NSGetSizeAndAlignment</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">argSize</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+        
+		<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">argBuf</span> <span class="o">=</span> <span class="n">reallocf</span><span class="p">(</span><span class="n">argBuf</span><span class="p">,</span> <span class="n">argSize</span><span class="p">)))</span> <span class="p">{</span>
+            <span class="n">AspectLogError</span><span class="p">(</span><span class="s">@"Failed to allocate memory for block invocation."</span><span class="p">);</span>
+			<span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+		<span class="p">}</span>
+        
+		<span class="p">[</span><span class="n">originalInvocation</span> <span class="nf">getArgument</span><span class="p">:</span><span class="n">argBuf</span> <span class="nf">atIndex</span><span class="p">:</span><span class="n">idx</span><span class="p">];</span>
+		<span class="p">[</span><span class="n">blockInvocation</span> <span class="nf">setArgument</span><span class="p">:</span><span class="n">argBuf</span> <span class="nf">atIndex</span><span class="p">:</span><span class="n">idx</span><span class="p">];</span>
+    <span class="p">}</span>
+    
+    <span class="p">[</span><span class="n">blockInvocation</span> <span class="nf">invokeWithTarget</span><span class="p">:</span><span class="n">self</span><span class="p">.</span><span class="n">block</span><span class="p">];</span>
+    
+    <span class="k">if</span> <span class="p">(</span><span class="n">argBuf</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">free</span><span class="p">(</span><span class="n">argBuf</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 描述</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">description</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"&lt;%@: %p, SEL:%@ object:%@ options:%tu block:%@ (#%tu args)&gt;"</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">class</span><span class="p">,</span> <span class="n">self</span><span class="p">,</span> <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">selector</span><span class="p">),</span> <span class="n">self</span><span class="p">.</span><span class="n">object</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">options</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">block</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">blockSignature</span><span class="p">.</span><span class="n">numberOfArguments</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// 这里是代理方法。</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">remove</span> <span class="p">{</span>
+    <span class="c1">// 实际调用了 aspect_remove</span>
+    <span class="k">return</span> <span class="n">aspect_remove</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - AspectsContainer
+</span>
+<span class="k">@implementation</span> <span class="nc">AspectsContainer</span>
+
+<span class="c1">// 是否有aspect</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">hasAspects</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">beforeAspects</span><span class="p">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">self</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">self</span><span class="p">.</span><span class="n">afterAspects</span><span class="p">.</span><span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 加入aspect</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addAspect</span><span class="p">:(</span><span class="n">AspectIdentifier</span> <span class="o">*</span><span class="p">)</span><span class="nv">aspect</span> <span class="nf">withOptions</span><span class="p">:(</span><span class="n">AspectOptions</span><span class="p">)</span><span class="nv">options</span> <span class="p">{</span>
+    <span class="n">NSParameterAssert</span><span class="p">(</span><span class="n">aspect</span><span class="p">);</span>
+    <span class="n">NSUInteger</span> <span class="n">position</span> <span class="o">=</span> <span class="n">options</span><span class="o">&amp;</span><span class="n">AspectPositionFilter</span><span class="p">;</span>
+    <span class="c1">// 这里做一个判断，加入不同的list</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="n">AspectPositionBefore</span><span class="p">:</span>  <span class="n">self</span><span class="p">.</span><span class="n">beforeAspects</span>  <span class="o">=</span> <span class="p">[(</span><span class="n">self</span><span class="p">.</span><span class="n">beforeAspects</span> <span class="p">?:@[])</span> <span class="nf">arrayByAddingObject</span><span class="p">:</span><span class="n">aspect</span><span class="p">];</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">AspectPositionInstead</span><span class="p">:</span> <span class="n">self</span><span class="p">.</span><span class="n">insteadAspects</span> <span class="o">=</span> <span class="p">[(</span><span class="n">self</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">?:@[])</span> <span class="nf">arrayByAddingObject</span><span class="p">:</span><span class="n">aspect</span><span class="p">];</span> <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">AspectPositionAfter</span><span class="p">:</span>   <span class="n">self</span><span class="p">.</span><span class="n">afterAspects</span>   <span class="o">=</span> <span class="p">[(</span><span class="n">self</span><span class="p">.</span><span class="n">afterAspects</span>  <span class="p">?:@[])</span> <span class="nf">arrayByAddingObject</span><span class="p">:</span><span class="n">aspect</span><span class="p">];</span> <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// 移除aspect</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">removeAspect</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">aspect</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">aspectArrayName</span> <span class="k">in</span> <span class="p">@[</span><span class="n">NSStringFromSelector</span><span class="p">(</span><span class="k">@selector</span><span class="p">(</span><span class="n">beforeAspects</span><span class="p">)),</span>
+                                        <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="k">@selector</span><span class="p">(</span><span class="n">insteadAspects</span><span class="p">)),</span>
+                                        <span class="n">NSStringFromSelector</span><span class="p">(</span><span class="k">@selector</span><span class="p">(</span><span class="n">afterAspects</span><span class="p">))])</span> <span class="p">{</span>
+        <span class="n">NSArray</span> <span class="o">*</span><span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">valueForKey</span><span class="p">:</span><span class="n">aspectArrayName</span><span class="p">];</span>
+        <span class="n">NSUInteger</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="n">array</span> <span class="nf">indexOfObjectIdenticalTo</span><span class="p">:</span><span class="n">aspect</span><span class="p">];</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">array</span> <span class="o">&amp;&amp;</span> <span class="n">index</span> <span class="o">!=</span> <span class="n">NSNotFound</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">NSMutableArray</span> <span class="o">*</span><span class="n">newArray</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSMutableArray</span> <span class="nf">arrayWithArray</span><span class="p">:</span><span class="n">array</span><span class="p">];</span>
+            <span class="p">[</span><span class="n">newArray</span> <span class="nf">removeObjectAtIndex</span><span class="p">:</span><span class="n">index</span><span class="p">];</span>
+            <span class="p">[</span><span class="n">self</span> <span class="nf">setValue</span><span class="p">:</span><span class="n">newArray</span> <span class="nf">forKey</span><span class="p">:</span><span class="n">aspectArrayName</span><span class="p">];</span>
+            <span class="k">return</span> <span class="nb">YES</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nb">NO</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 描述</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">description</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">NSString</span> <span class="nf">stringWithFormat</span><span class="p">:</span><span class="s">@"&lt;%@: %p, before:%@, instead:%@, after:%@&gt;"</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">class</span><span class="p">,</span> <span class="n">self</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">beforeAspects</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">insteadAspects</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">afterAspects</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+<span class="c1">///////////////////////////////////////////////////////////////////////////////////////////</span>
+<span class="cp">#pragma mark - AspectInfo
+</span>
+<span class="k">@implementation</span> <span class="nc">AspectInfo</span>
+
+<span class="k">@synthesize</span> <span class="n">arguments</span> <span class="o">=</span> <span class="n">_arguments</span><span class="p">;</span>
+
+<span class="c1">// 初始化</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithInstance</span><span class="p">:(</span><span class="n">__unsafe_unretained</span> <span class="n">id</span><span class="p">)</span><span class="nv">instance</span> <span class="nf">invocation</span><span class="p">:(</span><span class="n">NSInvocation</span> <span class="o">*</span><span class="p">)</span><span class="nv">invocation</span> <span class="p">{</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">instance</span><span class="p">);</span>
+    <span class="n">NSCParameterAssert</span><span class="p">(</span><span class="n">invocation</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">self</span> <span class="o">=</span> <span class="p">[</span><span class="n">super</span> <span class="nf">init</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// 实例</span>
+        <span class="n">_instance</span> <span class="o">=</span> <span class="n">instance</span><span class="p">;</span>
+        <span class="c1">// 调用</span>
+        <span class="n">_originalInvocation</span> <span class="o">=</span> <span class="n">invocation</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 懒加载</span>
+<span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">arguments</span> <span class="p">{</span>
+    <span class="c1">// Lazily evaluate arguments, boxing is expensive.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">_arguments</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">_arguments</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">originalInvocation</span><span class="p">.</span><span class="n">aspects_arguments</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">_arguments</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+</code></pre></div></div>
+
+:ET

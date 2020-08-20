@@ -1,0 +1,20 @@
+I"f<hr />
+
+<p>引入了这个头文件&lt;QuartzCore/CoreAnimation.h&gt;</p>
+
+<pre><code class="language-objective-c">/* QuartzCore.h
+
+   Copyright (c) 2004-2016, Apple Inc.
+   All rights reserved. */
+
+#ifndef QUARTZCORE_H
+#define QUARTZCORE_H
+
+// 引入了这个头文件 
+#include &lt;QuartzCore/CoreAnimation.h&gt;
+
+#endif /* QUARTZCORE_H */
+
+</code></pre>
+
+:ET

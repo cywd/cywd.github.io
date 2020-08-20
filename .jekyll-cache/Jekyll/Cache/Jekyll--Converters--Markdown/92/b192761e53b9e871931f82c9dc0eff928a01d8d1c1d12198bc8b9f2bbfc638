@@ -1,0 +1,23 @@
+I"l<ul id="markdown-toc">
+  <li><a href="#简介" id="markdown-toc-简介">简介</a></li>
+  <li><a href="#安装" id="markdown-toc-安装">安装</a></li>
+</ul>
+<hr />
+
+<h1 id="简介">简介</h1>
+<p><em>class-dump is a command-line utility for examining the Objective-C segment of Mach-O files. It generates declarations for the classes, categories and protocols. This is the same information provided by using ‘otool -ov’, but presented as normal Objective-C declarations.</em></p>
+
+<p>这是class-dump的官方解释，我们用的最多就是做iOS的逆向工程。class-dump，是可以把Objective-C运行时的声明的信息导出来的工具。其实就是可以导出.h文件。用class-dump可以把未经加密的app的头文件导出来。</p>
+
+<p>官方网址：<a href="http://stevenygard.com/projects/class-dump/">http://stevenygard.com/projects/class-dump/</a></p>
+
+<h1 id="安装">安装</h1>
+<p>class-dump的下载地址：<a href="http://stevenygard.com/download/class-dump-3.5.tar.gz">http://stevenygard.com/download/class-dump-3.5.tar.gz</a></p>
+
+<p>点击下载后解压后会有class-dump和源码文件。将class-dump 复制到/usr/bin/class-dump。如果是OS X 10.11，因为没有/usr/bin文件夹的写权限，所以将class-dump复制到/usr/local/bin/class-dump即可。</p>
+
+<p>同时打开Terminal，执行命令赋予其执行权限：
+<code class="language-plaintext highlighter-rouge">sudo chmod 777 /usr/bin/class-dump</code></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/567057-c798c82bd0cbda3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20160814_3.png" /></p>
+:ET

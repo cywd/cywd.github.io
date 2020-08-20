@@ -1,0 +1,810 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#list-your-grants" id="markdown-toc-list-your-grants">List your grants</a>    <ul>
+      <li><a href="#response" id="markdown-toc-response">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#get-a-single-grant" id="markdown-toc-get-a-single-grant">Get a single grant</a>    <ul>
+      <li><a href="#response-1" id="markdown-toc-response-1">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#delete-a-grant" id="markdown-toc-delete-a-grant">Delete a grant</a>    <ul>
+      <li><a href="#response-2" id="markdown-toc-response-2">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#list-your-authorizations" id="markdown-toc-list-your-authorizations">List your authorizations</a>    <ul>
+      <li><a href="#response-3" id="markdown-toc-response-3">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#get-a-single-authorization" id="markdown-toc-get-a-single-authorization">Get a single authorization</a>    <ul>
+      <li><a href="#response-4" id="markdown-toc-response-4">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#create-a-new-authorization" id="markdown-toc-create-a-new-authorization">Create a new authorization</a>    <ul>
+      <li><a href="#parameters" id="markdown-toc-parameters">Parameters</a></li>
+      <li><a href="#response-5" id="markdown-toc-response-5">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#get-or-create-an-authorization-for-a-specific-app" id="markdown-toc-get-or-create-an-authorization-for-a-specific-app">Get-or-create an authorization for a specific app</a>    <ul>
+      <li><a href="#parameters-1" id="markdown-toc-parameters-1">Parameters</a></li>
+      <li><a href="#response-if-returning-a-new-token" id="markdown-toc-response-if-returning-a-new-token">Response if returning a new token</a></li>
+      <li><a href="#response-if-returning-an-existing-token" id="markdown-toc-response-if-returning-an-existing-token">Response if returning an existing token</a></li>
+    </ul>
+  </li>
+  <li><a href="#get-or-create-an-authorization-for-a-specific-app-and-fingerprint" id="markdown-toc-get-or-create-an-authorization-for-a-specific-app-and-fingerprint">Get-or-create an authorization for a specific app and fingerprint</a>    <ul>
+      <li><a href="#parameters-2" id="markdown-toc-parameters-2">Parameters</a></li>
+      <li><a href="#response-if-returning-a-new-token-1" id="markdown-toc-response-if-returning-a-new-token-1">Response if returning a new token</a></li>
+      <li><a href="#response-if-returning-an-existing-token-1" id="markdown-toc-response-if-returning-an-existing-token-1">Response if returning an existing token</a></li>
+    </ul>
+  </li>
+  <li><a href="#update-an-existing-authorization" id="markdown-toc-update-an-existing-authorization">Update an existing authorization</a>    <ul>
+      <li><a href="#parameters-3" id="markdown-toc-parameters-3">Parameters</a></li>
+      <li><a href="#response-6" id="markdown-toc-response-6">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#delete-an-authorization" id="markdown-toc-delete-an-authorization">Delete an authorization</a>    <ul>
+      <li><a href="#response-7" id="markdown-toc-response-7">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#check-an-authorization" id="markdown-toc-check-an-authorization">Check an authorization</a>    <ul>
+      <li><a href="#response-8" id="markdown-toc-response-8">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#reset-an-authorization" id="markdown-toc-reset-an-authorization">Reset an authorization</a>    <ul>
+      <li><a href="#response-9" id="markdown-toc-response-9">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#revoke-an-authorization-for-an-application" id="markdown-toc-revoke-an-authorization-for-an-application">Revoke an authorization for an application</a>    <ul>
+      <li><a href="#response-10" id="markdown-toc-response-10">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#revoke-a-grant-for-an-application" id="markdown-toc-revoke-a-grant-for-an-application">Revoke a grant for an application</a>    <ul>
+      <li><a href="#response-11" id="markdown-toc-response-11">Response</a></li>
+    </ul>
+  </li>
+  <li><a href="#more-information" id="markdown-toc-more-information">More Information</a></li>
+</ul>
+<hr />
+
+<p>You can use this API to manage the access OAuth applications have to your account. You can only access this API via <a href="https://developer.github.com/v3/auth#basic-authentication">Basic Authentication</a> using your username and password, not tokens.</p>
+
+<p>Make sure you understand how to <a href="https://developer.github.com/v3/auth/#working-with-two-factor-authentication">work with two-factor authentication</a> if you or your users have two-factor authentication enabled.</p>
+
+<h2 id="list-your-grants">List your grants</h2>
+
+<p>You can use this API to list the set of OAuth applications that have been granted access to your account. Unlike the <a href="https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations">list your authorizations</a> API, this API does not manage individual tokens. This API will return one entry for each OAuth application that has been granted access to your account, regardless of the number of tokens an application has generated for your user. The list of OAuth applications returned matches what is shown on <a href="https://github.com/settings/applications#authorized">the application authorizations settings screen within GitHub</a>. The <code class="language-plaintext highlighter-rouge">scopes</code> returned are the union of scopes authorized for the application. For example, if an application has one token with <code class="language-plaintext highlighter-rouge">repo</code> scope and another token with <code class="language-plaintext highlighter-rouge">user</code> scope, the grant will return <code class="language-plaintext highlighter-rouge">["repo", "user"]</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /applications/grants
+
+</code></pre></div></div>
+
+<h3 id="response">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+Link: &lt;https://api.github.com/resource?page=2&gt;; rel="next",
+      &lt;https://api.github.com/resource?page=5&gt;; rel="last"
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  {
+    "id": 1,
+    "url": "https://api.github.com/applications/grants/1",
+    "app": {
+      "url": "http://my-github-app.com",
+      "name": "my github app",
+      "client_id": "abcde12345fghij67890"
+    },
+    "created_at": "2011-09-06T17:26:27Z",
+    "updated_at": "2011-09-06T20:39:23Z",
+    "scopes": [
+      "public_repo"
+    ]
+  }
+]
+
+</code></pre></div></div>
+
+<h2 id="get-a-single-grant">Get a single grant</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /applications/grants/:id
+
+</code></pre></div></div>
+
+<h3 id="response-1">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/applications/grants/1",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "created_at": "2011-09-06T17:26:27Z",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "scopes": [
+    "public_repo"
+  ]
+}
+
+</code></pre></div></div>
+
+<h2 id="delete-a-grant">Delete a grant</h2>
+
+<p>Deleting an OAuth application’s grant will also delete all OAuth tokens associated with the application for your user. Once deleted, the application has no access to your account and is no longer listed on <a href="https://github.com/settings/applications#authorized">the application authorizations settings screen within GitHub</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /applications/grants/:id
+
+</code></pre></div></div>
+
+<h3 id="response-2">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 204 No Content
+
+</code></pre></div></div>
+
+<h2 id="list-your-authorizations">List your authorizations</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /authorizations
+
+</code></pre></div></div>
+
+<h3 id="response-3">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+Link: &lt;https://api.github.com/resource?page=2&gt;; rel="next",
+      &lt;https://api.github.com/resource?page=5&gt;; rel="last"
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+  {
+    "id": 1,
+    "url": "https://api.github.com/authorizations/1",
+    "scopes": [
+      "public_repo"
+    ],
+    "token": "",
+    "token_last_eight": "12345678",
+    "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+    "app": {
+      "url": "http://my-github-app.com",
+      "name": "my github app",
+      "client_id": "abcde12345fghij67890"
+    },
+    "note": "optional note",
+    "note_url": "http://optional/note/url",
+    "updated_at": "2011-09-06T20:39:23Z",
+    "created_at": "2011-09-06T17:26:27Z",
+    "fingerprint": "jklmnop12345678"
+  }
+]
+
+</code></pre></div></div>
+
+<h2 id="get-a-single-authorization">Get a single authorization</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /authorizations/:id
+
+</code></pre></div></div>
+
+<h3 id="response-4">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": "jklmnop12345678"
+}
+
+</code></pre></div></div>
+
+<h2 id="create-a-new-authorization">Create a new authorization</h2>
+
+<p>If you need a small number of personal access tokens, implementing the <a href="https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-authorization-options-for-oauth-apps/">web flow</a> can be cumbersome. Instead, tokens can be created using the OAuth Authorizations API using <a href="https://developer.github.com/v3/auth#basic-authentication">Basic Authentication</a>. To create personal access tokens for a particular OAuth application, you must provide its client ID and secret, found on the OAuth application settings page, linked from your <a href="https://github.com/settings/developers">OAuth applications listing on GitHub</a>.</p>
+
+<p>If your OAuth application intends to create multiple tokens for one user, use <code class="language-plaintext highlighter-rouge">fingerprint</code> to differentiate between them.</p>
+
+<p>You can also create OAuth tokens through the web UI via the <a href="https://github.com/settings/tokens">personal access tokens settings</a>. Read more about these tokens on the <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use">GitHub Help site</a>.</p>
+
+<p>Organizations that enforce SAML SSO require personal access tokens to be whitelisted. Read more about whitelisting tokens on the <a href="https://help.github.com/articles/about-identity-and-access-management-with-saml-single-sign-on">GitHub Help site</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /authorizations
+
+</code></pre></div></div>
+
+<h3 id="parameters">Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">scopes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">array</code></td>
+      <td>A list of scopes that this authorization is in.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><strong>Required</strong>. A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note_url</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A URL to remind you what app the OAuth token is for.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">client_id</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>The 20 character OAuth app client key for which to create the token.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">client_secret</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>The 40 character OAuth app client secret for which to create the token.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fingerprint</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A unique string to distinguish an authorization from others created for the same client ID and user.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "scopes": [
+    "public_repo"
+  ],
+  "note": "admin script"
+}
+
+</code></pre></div></div>
+
+<h3 id="response-5">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 201 Created
+Location: https://api.github.com/authorizations/1
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "abcdefgh12345678",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": ""
+}
+
+</code></pre></div></div>
+
+<h2 id="get-or-create-an-authorization-for-a-specific-app">Get-or-create an authorization for a specific app</h2>
+
+<p>This method will create a new authorization for the specified OAuth application, only if an authorization for that application doesn’t already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. It returns the user’s existing authorization for the application if one is present. Otherwise, it creates and returns a new one.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT /authorizations/clients/:client_id
+
+</code></pre></div></div>
+
+<h3 id="parameters-1">Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">client_secret</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><strong>Required</strong>. The 40 character OAuth app client secret associated with the client ID specified in the URL.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">scopes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">array</code></td>
+      <td>A list of scopes that this authorization is in.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A note to remind you what the OAuth token is for.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note_url</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A URL to remind you what app the OAuth token is for.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fingerprint</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A unique string to distinguish an authorization from others created for the same client and user. If provided, this API is functionally equivalent to <a href="https://developer.github.com/v3/oauth_authorizations/#get-or-create-an-authorization-for-a-specific-app-and-fingerprint">Get-or-create an authorization for a specific app and fingerprint</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "client_secret": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+  "scopes": [
+    "public_repo"
+  ],
+  "note": "admin script"
+}
+
+</code></pre></div></div>
+
+<h3 id="response-if-returning-a-new-token">Response if returning a new token</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 201 Created
+Location: https://api.github.com/authorizations/1
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "abcdefgh12345678",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": ""
+}
+
+</code></pre></div></div>
+
+<h3 id="response-if-returning-an-existing-token">Response if returning an existing token</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+Location: https://api.github.com/authorizations/1
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": ""
+}
+
+</code></pre></div></div>
+
+<h2 id="get-or-create-an-authorization-for-a-specific-app-and-fingerprint">Get-or-create an authorization for a specific app and fingerprint</h2>
+
+<p>This method will create a new authorization for the specified OAuth application, only if an authorization for that application and fingerprint do not already exist for the user. The URL includes the 20 character client ID for the OAuth app that is requesting the token. <code class="language-plaintext highlighter-rouge">fingerprint</code> is a unique string to distinguish an authorization from others created for the same client ID and user. It returns the user’s existing authorization for the application if one is present. Otherwise, it creates and returns a new one.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT /authorizations/clients/:client_id/:fingerprint
+
+</code></pre></div></div>
+
+<h3 id="parameters-2">Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">client_secret</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td><strong>Required</strong>. The 40 character OAuth app client secret associated with the client ID specified in the URL.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">scopes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">array</code></td>
+      <td>A list of scopes that this authorization is in.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A note to remind you what the OAuth token is for.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note_url</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A URL to remind you what app the OAuth token is for.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "client_secret": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+  "scopes": [
+    "public_repo"
+  ],
+  "note": "admin script"
+}
+
+</code></pre></div></div>
+
+<h3 id="response-if-returning-a-new-token-1">Response if returning a new token</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 201 Created
+Location: https://api.github.com/authorizations/1
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "abcdefgh12345678",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": "jklmnop12345678"
+}
+
+</code></pre></div></div>
+
+<h3 id="response-if-returning-an-existing-token-1">Response if returning an existing token</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+Location: https://api.github.com/authorizations/1
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": "jklmnop12345678"
+}
+
+</code></pre></div></div>
+
+<h2 id="update-an-existing-authorization">Update an existing authorization</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATCH /authorizations/:id
+
+</code></pre></div></div>
+
+<h3 id="parameters-3">Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">scopes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">array</code></td>
+      <td>Replaces the authorization scopes with these.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">add_scopes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">array</code></td>
+      <td>A list of scopes to add to this authorization.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">remove_scopes</code></td>
+      <td><code class="language-plaintext highlighter-rouge">array</code></td>
+      <td>A list of scopes to remove from this authorization.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note_url</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A URL to remind you what app the OAuth token is for.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fingerprint</code></td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+      <td>A unique string to distinguish an authorization from others created for the same client ID and user.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can only send one of these scope keys at a time.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "add_scopes": [
+    "repo"
+  ],
+  "note": "admin script"
+}
+
+</code></pre></div></div>
+
+<h3 id="response-6">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": "jklmnop12345678"
+}
+
+</code></pre></div></div>
+
+<h2 id="delete-an-authorization">Delete an authorization</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /authorizations/:id
+
+</code></pre></div></div>
+
+<h3 id="response-7">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 204 No Content
+
+</code></pre></div></div>
+
+<h2 id="check-an-authorization">Check an authorization</h2>
+
+<p>OAuth applications can use a special API method for checking OAuth token validity without running afoul of normal rate limits for failed login attempts. Authentication works differently with this particular endpoint. You must use <a href="https://developer.github.com/v3/auth#basic-authentication">Basic Authentication</a> when accessing it, where the username is the OAuth application <code class="language-plaintext highlighter-rouge">client_id</code> and the password is its <code class="language-plaintext highlighter-rouge">client_secret</code>. Invalid tokens will return <code class="language-plaintext highlighter-rouge">404 NOT FOUND</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /applications/:client_id/tokens/:access_token
+
+</code></pre></div></div>
+
+<h3 id="response-8">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "abcdefgh12345678",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": "jklmnop12345678",
+  "user": {
+    "login": "octocat",
+    "id": 1,
+    "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/octocat",
+    "html_url": "https://github.com/octocat",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+
+</code></pre></div></div>
+
+<h2 id="reset-an-authorization">Reset an authorization</h2>
+
+<p>OAuth applications can use this API method to reset a valid OAuth token without end user involvement. Applications must save the “token” property in the response, because changes take effect immediately. You must use <a href="https://developer.github.com/v3/auth#basic-authentication">Basic Authentication</a> when accessing it, where the username is the OAuth application <code class="language-plaintext highlighter-rouge">client_id</code> and the password is its <code class="language-plaintext highlighter-rouge">client_secret</code>. Invalid tokens will return <code class="language-plaintext highlighter-rouge">404 NOT FOUND</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /applications/:client_id/tokens/:access_token
+
+</code></pre></div></div>
+
+<h3 id="response-9">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 200 OK
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "id": 1,
+  "url": "https://api.github.com/authorizations/1",
+  "scopes": [
+    "public_repo"
+  ],
+  "token": "abcdefgh12345678",
+  "token_last_eight": "12345678",
+  "hashed_token": "25f94a2a5c7fbaf499c665bc73d67c1c87e496da8985131633ee0a95819db2e8",
+  "app": {
+    "url": "http://my-github-app.com",
+    "name": "my github app",
+    "client_id": "abcde12345fghij67890"
+  },
+  "note": "optional note",
+  "note_url": "http://optional/note/url",
+  "updated_at": "2011-09-06T20:39:23Z",
+  "created_at": "2011-09-06T17:26:27Z",
+  "fingerprint": "jklmnop12345678",
+  "user": {
+    "login": "octocat",
+    "id": 1,
+    "avatar_url": "https://github.com/images/error/octocat_happy.gif",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/octocat",
+    "html_url": "https://github.com/octocat",
+    "followers_url": "https://api.github.com/users/octocat/followers",
+    "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+    "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+    "organizations_url": "https://api.github.com/users/octocat/orgs",
+    "repos_url": "https://api.github.com/users/octocat/repos",
+    "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/octocat/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+
+</code></pre></div></div>
+
+<h2 id="revoke-an-authorization-for-an-application">Revoke an authorization for an application</h2>
+
+<p>OAuth application owners can revoke a single token for an OAuth application. You must use <a href="https://developer.github.com/v3/auth#basic-authentication">Basic Authentication</a> for this method, where the username is the OAuth application <code class="language-plaintext highlighter-rouge">client_id</code>and the password is its <code class="language-plaintext highlighter-rouge">client_secret</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /applications/:client_id/tokens/:access_token
+
+</code></pre></div></div>
+
+<h3 id="response-10">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 204 No Content
+
+</code></pre></div></div>
+
+<h2 id="revoke-a-grant-for-an-application">Revoke a grant for an application</h2>
+
+<p>OAuth application owners can revoke a grant for their OAuth application and a specific user. You must use <a href="https://developer.github.com/v3/auth#basic-authentication">Basic Authentication</a> for this method, where the username is the OAuth application <code class="language-plaintext highlighter-rouge">client_id</code> and the password is its <code class="language-plaintext highlighter-rouge">client_secret</code>. You must also provide a valid token as <code class="language-plaintext highlighter-rouge">:token</code>and the grant for the token’s owner will be deleted.</p>
+
+<p>Deleting an OAuth application’s grant will also delete all OAuth tokens associated with the application for the user. Once deleted, the application will have no access to the user’s account and will no longer be listed on <a href="https://github.com/settings/applications#authorized">the application authorizations settings screen within GitHub</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /applications/:client_id/grants/:access_token
+
+</code></pre></div></div>
+
+<h3 id="response-11">Response</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: 204 No Content
+
+</code></pre></div></div>
+
+<h2 id="more-information">More Information</h2>
+
+<p>It can be a little tricky to get started with OAuth. Here are a few links that might be of help:</p>
+
+<ul>
+  <li><a href="http://tools.ietf.org/html/rfc6749">OAuth 2 spec</a></li>
+  <li><a href="http://developers.facebook.com/docs/technical-guides/login/">Facebook Login API</a></li>
+  <li><a href="https://github.com/intridea/oauth2">Ruby OAuth2 lib</a></li>
+  <li><a href="https://gist.github.com/9fd1a6199da0465ec87c">Simple Ruby/Sinatra example</a></li>
+  <li><a href="https://gist.github.com/ib-lundgren/6507798">Python Flask example</a> using <a href="https://github.com/requests/requests-oauthlib">requests-oauthlib</a></li>
+  <li><a href="https://gist.github.com/e3fbd47fbb7ee3c626bb">Simple Python example</a> using <a href="https://github.com/dgouldin/python-oauth2">python-oauth2</a></li>
+  <li><a href="https://github.com/intridea/omniauth">Ruby OmniAuth example</a></li>
+  <li><a href="https://github.com/atmos/sinatra_auth_github">Ruby Sinatra extension</a></li>
+  <li><a href="https://github.com/atmos/warden-github">Ruby Warden strategy</a></li>
+  <li><a href="https://developer.github.com/v3/auth#authenticating-for-saml-sso">Personal access tokens and SAML SSO</a></li>
+</ul>
+:ET

@@ -1,0 +1,76 @@
+I"U<ul id="markdown-toc">
+  <li><a href="#basic-authentication" id="markdown-toc-basic-authentication">Basic Authentication</a>    <ul>
+      <li><a href="#via-username-and-password" id="markdown-toc-via-username-and-password">Via Username and Password</a></li>
+      <li><a href="#via-oauth-tokens" id="markdown-toc-via-oauth-tokens">Via OAuth Tokens</a></li>
+      <li><a href="#authenticating-for-saml-sso" id="markdown-toc-authenticating-for-saml-sso">Authenticating for SAML SSO</a></li>
+    </ul>
+  </li>
+  <li><a href="#working-with-two-factor-authentication" id="markdown-toc-working-with-two-factor-authentication">Working with two-factor authentication</a></li>
+</ul>
+<hr />
+
+<ul>
+  <li><a href="https://developer.github.com/v3/auth/#basic-authentication">Basic Authentication</a></li>
+  <li><a href="https://developer.github.com/v3/auth/#working-with-two-factor-authentication">Working with two-factor authentication</a></li>
+</ul>
+
+<p>While the API provides multiple methods for authentication, we strongly recommend using <a href="https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/">OAuth</a>for production applications. The other methods provided are intended to be used for scripts or testing (i.e., cases where full OAuth would be overkill). Third party applications that rely on GitHub for authentication should not ask for or collect GitHub credentials. Instead, they should use the <a href="https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-authorization-options-for-oauth-apps/">OAuth web flow</a>.</p>
+
+<h2 id="basic-authentication">Basic Authentication</h2>
+
+<p>The API supports Basic Authentication as defined in <a href="http://www.ietf.org/rfc/rfc2617.txt">RFC2617</a> with a few slight differences. The main difference is that the RFC requires unauthenticated requests to be answered with <code class="language-plaintext highlighter-rouge">401 Unauthorized</code> responses. In many places, this would disclose the existence of user data. Instead, the GitHub API responds with <code class="language-plaintext highlighter-rouge">404 Not Found</code>. This may cause problems for HTTP libraries that assume a <code class="language-plaintext highlighter-rouge">401 Unauthorized</code> response. The solution is to manually craft the <code class="language-plaintext highlighter-rouge">Authorization</code> header.</p>
+
+<h3 id="via-username-and-password">Via Username and Password</h3>
+
+<p>To use Basic Authentication with the GitHub API, simply send the username and password associated with the account.</p>
+
+<p>For example, if you’re accessing the API via <a href="http://curl.haxx.se/">cURL</a>, the following command would authenticate you if you replace <code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> with your GitHub username. (cURL will prompt you to enter the password.)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -u username https://api.github.com/user
+
+</code></pre></div></div>
+
+<h3 id="via-oauth-tokens">Via OAuth Tokens</h3>
+
+<p>Alternatively, you can use <a href="https://github.com/blog/1509-personal-api-tokens">personal access tokens</a> or OAuth tokens instead of your password.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -u username:token https://api.github.com/user
+
+</code></pre></div></div>
+
+<p>This approach is useful if your tools only support Basic Authentication but you want to take advantage of OAuth access token security features.</p>
+
+<h3 id="authenticating-for-saml-sso">Authenticating for SAML SSO</h3>
+
+<p><strong>Note:</strong> Integrations and Oauth applications that generate tokens on behalf of others are automatically whitelisted.</p>
+
+<p>If you’re using the API to access an organization that enforces <a href="https://help.github.com/articles/about-identity-and-access-management-with-saml-single-sign-on">SAML SSO</a> for authentication, you’ll need to create a personal access token (PAT) and <a href="https://help.github.com/articles/authorizing-a-personal-access-token-for-use-with-a-saml-single-sign-on-organization/">whitelist the token</a> for that organization. Visit the URL specified in <code class="language-plaintext highlighter-rouge">X-GitHub-SSO</code> to whitelist the token for the organization.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v -H "Authorization: token TOKEN" https://api.github.com/repos/octodocs-test/test
+
+X-GitHub-SSO: required; url=https://github.com/orgs/octodocs-test/sso?authorization_request=AZSCKtL4U8yX1H3sCQIVnVgmjmon5fWxks5YrqhJgah0b2tlbl9pZM4EuMz4
+{
+  "message": "Resource protected by organization SAML enforcement. You must grant your personal token access to this organization.",
+  "documentation_url": "https://help.github.com"
+}
+
+</code></pre></div></div>
+
+<p>When requesting data that could come from multiple organizations (for example, <a href="https://developer.github.com/v3/issues/#list-issues">requesting a list of issues created by the user</a>), the <code class="language-plaintext highlighter-rouge">X-GitHub-SSO</code> header indicates which organizations require whitelisting:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -v -H "Authorization: token TOKEN" https://api.github.com/user/issues
+
+X-GitHub-SSO: partial-results; organizations=21955855,20582480
+
+</code></pre></div></div>
+
+<p>The value <code class="language-plaintext highlighter-rouge">organizations</code> is a comma-separated list of organization IDs for organizations that require whitelisting.</p>
+
+<h2 id="working-with-two-factor-authentication">Working with two-factor authentication</h2>
+
+<p>For users with two-factor authentication enabled, Basic Authentication requires an extra step. When you attempt to authenticate with Basic Authentication, the server will respond with a <code class="language-plaintext highlighter-rouge">401</code>and an <code class="language-plaintext highlighter-rouge">X-GitHub-OTP: required; :2fa-type</code> header. This indicates that a two-factor authentication code is needed (in addition to the username and password). The <code class="language-plaintext highlighter-rouge">:2fa-type</code> in this header indicates whether the account receives its two-factor authentication codes via SMS or via an application.</p>
+
+<p>In addition to the Basic Authentication credentials, you must send the user’s authentication code (i.e., one-time password) in the <code class="language-plaintext highlighter-rouge">X-GitHub-OTP</code> header. Because these authentication codes expire quickly, we recommend using the Authorizations API to <a href="https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization">create an access token</a> and using that token to <a href="https://developer.github.com/v3/#authentication">authenticate via OAuth</a> for most API access.</p>
+
+<p>Alternately, you can create access tokens from the Personal Access Token <a href="https://github.com/settings/tokens">settings page</a>.</p>
+:ET

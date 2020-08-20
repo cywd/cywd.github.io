@@ -1,0 +1,43 @@
+I"s
+<hr />
+
+<p>virtualenv可以搭建虚拟且独立的python运行环境, 使得单个项目的运行环境与其它项目独立起来.</p>
+
+<p>virtualenv本质上是个python包, 使用pip安装:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip3</span> <span class="n">install</span> <span class="n">virtualenv</span>
+</code></pre></div></div>
+
+<p>在工作目录下创建虚拟环境:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>➜  virtualenvTest virtualenv test
+Using base prefix '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6'
+New python executable in /Users/cyrill/virtualenvTest/test/bin/python3.6
+Also creating executable in /Users/cyrill/virtualenvTest/test/bin/python
+Installing setuptools, pip, wheel...done.
+</code></pre></div></div>
+
+<p>默认情况下, 虚拟环境中不包括系统的site-packages, 若要使用请添加参数:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv --system-site-packages test
+</code></pre></div></div>
+
+<p>进入虚拟环境目录, 执行<code class="language-plaintext highlighter-rouge">source ./bin/activate</code>进入虚拟环境:</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>➜  virtualenvTest <span class="nb">cd test</span>
+➜  <span class="nb">test source</span> ./bin/activate
+<span class="o">(</span><span class="nb">test</span><span class="o">)</span> ➜  <span class="nb">test </span>python <span class="nt">-V</span>
+Python 3.6.2
+<span class="o">(</span><span class="nb">test</span><span class="o">)</span> ➜  <span class="nb">test </span>pip list
+DEPRECATION: The default format will switch to columns <span class="k">in </span>the future. You can use <span class="nt">--format</span><span class="o">=(</span>legacy|columns<span class="o">)</span> <span class="o">(</span>or define a <span class="nv">format</span><span class="o">=(</span>legacy|columns<span class="o">)</span> <span class="k">in </span>your pip.conf under the <span class="o">[</span>list] section<span class="o">)</span> to disable this warning.
+pip <span class="o">(</span>9.0.1<span class="o">)</span>
+setuptools <span class="o">(</span>36.2.7<span class="o">)</span>
+wheel <span class="o">(</span>0.29.0<span class="o">)</span>
+</code></pre></div></div>
+
+<p>退出虚拟环境:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(test) ➜  test deactivate
+➜  test
+</code></pre></div></div>
+:ET

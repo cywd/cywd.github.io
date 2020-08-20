@@ -1,0 +1,65 @@
+I"z<ul id="markdown-toc">
+  <li><a href="#前言" id="markdown-toc-前言">前言</a></li>
+  <li><a href="#原因" id="markdown-toc-原因">原因</a></li>
+  <li><a href="#解决" id="markdown-toc-解决">解决</a></li>
+  <li><a href="#注意" id="markdown-toc-注意">注意</a></li>
+</ul>
+<hr />
+
+<h2 id="前言">前言</h2>
+
+<p>当我们想要<code class="language-plaintext highlighter-rouge">Dict</code> 转成<code class="language-plaintext highlighter-rouge">Model</code>的时候会这样写：</p>
+
+<p>更新到<code class="language-plaintext highlighter-rouge">swift4</code>语法</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="nv">dict</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">])</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="nf">setValuesForKeys</span><span class="p">(</span><span class="n">dict</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">setValue</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="n">forUndefinedKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>但是！！！</p>
+
+<p>到了<code class="language-plaintext highlighter-rouge">Swift4</code>以后<code class="language-plaintext highlighter-rouge">setValuesForKeys()</code> 看上去失效了</p>
+
+<h2 id="原因">原因</h2>
+
+<p>在<code class="language-plaintext highlighter-rouge">swift3</code>中，编译器自动推断<code class="language-plaintext highlighter-rouge">@objc</code>，换句话说，它自动添加<code class="language-plaintext highlighter-rouge">@objc</code></p>
+
+<p>在<code class="language-plaintext highlighter-rouge">swift4</code>中，编译器不再自动推断，你必须显式添加<code class="language-plaintext highlighter-rouge">@objc</code></p>
+
+<h2 id="解决">解决</h2>
+
+<p>有两种</p>
+
+<p>1.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ABCModel: NSObject {
+	@objc var a: String = ""
+}
+</code></pre></div></div>
+
+<p>2.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">@objcMembers</span>
+<span class="kd">class</span> <span class="kt">ABCModel</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">{</span>
+	<span class="k">var</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span>
+	<span class="k">var</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span>
+	<span class="k">var</span> <span class="nv">c</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">var</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="注意">注意</h2>
+
+<p>如果有<code class="language-plaintext highlighter-rouge">Int</code>、 <code class="language-plaintext highlighter-rouge">Bool</code> 等基础类型，请手动赋默认值不然会不匹配</p>
+
+<p>另外如果本来是 Bool 的 你用 String 去接收，会抛出异常，异常类似：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[__NSCFBoolean length]: unrecognized selector sent to instance 0x10cb5f3a0
+</code></pre></div></div>
+
+:ET

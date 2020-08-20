@@ -1,0 +1,30 @@
+I"1<ul id="markdown-toc">
+  <li><a href="#原因" id="markdown-toc-原因">原因</a></li>
+  <li><a href="#解决" id="markdown-toc-解决">解决</a></li>
+</ul>
+<hr />
+
+<h2 id="原因">原因</h2>
+
+<p>cocoaPods升级后，Podfile文件的内容格式要求发生了变化，必须指出指出所用第三方库的target。</p>
+
+<h2 id="解决">解决</h2>
+
+<p>修改Podfile的内容</p>
+
+<p>修改之前</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>platform:ios,'7.0'
+
+pod 'AFNetworking', '~&gt; 3.1.0'
+</code></pre></div></div>
+
+<p>修改之后</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>platform:ios,'7.0'
+
+target "PodDemo" do
+pod 'AFNetworking', '~&gt; 3.1.0'
+end
+</code></pre></div></div>
+:ET

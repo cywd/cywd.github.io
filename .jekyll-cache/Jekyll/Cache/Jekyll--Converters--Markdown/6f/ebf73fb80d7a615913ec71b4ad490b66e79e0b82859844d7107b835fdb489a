@@ -1,0 +1,18 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#卸载mysql" id="markdown-toc-卸载mysql">卸载MySQL</a></li>
+</ul>
+<hr />
+
+<h2 id="卸载mysql">卸载MySQL</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> /usr/local/mysql
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /usr/local/mysql<span class="k">*</span>
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /Library/StartupItems/MySQLCOM
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /Library/PreferencePanes/My<span class="k">*</span>
+vim /etc/hostconfig  <span class="o">(</span>and removed the line <span class="nv">MYSQLCOM</span><span class="o">=</span><span class="nt">-YES-</span><span class="o">)</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> ~/Library/PreferencePanes/My<span class="k">*</span>
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /Library/Receipts/mysql<span class="k">*</span>
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /Library/Receipts/MySQL<span class="k">*</span>
+<span class="nb">sudo rm</span> <span class="nt">-rf</span> /var/db/receipts/com.mysql.<span class="k">*</span>
+</code></pre></div></div>
+:ET

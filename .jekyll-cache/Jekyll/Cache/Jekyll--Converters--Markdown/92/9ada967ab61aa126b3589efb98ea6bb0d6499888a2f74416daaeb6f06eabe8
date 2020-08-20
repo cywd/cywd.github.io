@@ -1,0 +1,249 @@
+I"J7<ul id="markdown-toc">
+  <li><a href="#psutil模块" id="markdown-toc-psutil模块">psutil模块</a>    <ul>
+      <li><a href="#1介绍" id="markdown-toc-1介绍">1.介绍</a></li>
+      <li><a href="#2安装" id="markdown-toc-2安装"><strong>2.安装</strong></a>        <ul>
+          <li><a href="#linux" id="markdown-toc-linux">linux</a></li>
+          <li><a href="#mac-pip" id="markdown-toc-mac-pip">mac pip</a></li>
+        </ul>
+      </li>
+      <li><a href="#3使用" id="markdown-toc-3使用">3.使用</a>        <ul>
+          <li><a href="#1cpu相关" id="markdown-toc-1cpu相关">1.CPU相关</a>            <ul>
+              <li><a href="#查看cpu信息" id="markdown-toc-查看cpu信息">查看cpu信息</a></li>
+              <li><a href="#显示cpu所有逻辑信息" id="markdown-toc-显示cpu所有逻辑信息">显示cpu所有逻辑信息</a></li>
+              <li><a href="#查看用户的cpu时间比" id="markdown-toc-查看用户的cpu时间比">查看用户的cpu时间比</a></li>
+              <li><a href="#查看cpu逻辑个数" id="markdown-toc-查看cpu逻辑个数">查看cpu逻辑个数</a></li>
+              <li><a href="#查看cpu物理个数" id="markdown-toc-查看cpu物理个数">查看cpu物理个数</a></li>
+              <li><a href="#查看cpu使用率百分比" id="markdown-toc-查看cpu使用率百分比">查看cpu使用率百分比</a></li>
+            </ul>
+          </li>
+          <li><a href="#2查看系统内存" id="markdown-toc-2查看系统内存">2.查看系统内存</a>            <ul>
+              <li><a href="#系统总计内存" id="markdown-toc-系统总计内存">系统总计内存</a></li>
+              <li><a href="#系统已经使用内存" id="markdown-toc-系统已经使用内存">系统已经使用内存</a></li>
+              <li><a href="#系统空闲内存" id="markdown-toc-系统空闲内存">系统空闲内存</a></li>
+              <li><a href="#获取swap内存信息" id="markdown-toc-获取swap内存信息">获取swap内存信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#3读取磁盘参数" id="markdown-toc-3读取磁盘参数">3.读取磁盘参数</a>            <ul>
+              <li><a href="#获取磁盘的完整信息" id="markdown-toc-获取磁盘的完整信息">获取磁盘的完整信息</a></li>
+              <li><a href="#获取分区表的参数" id="markdown-toc-获取分区表的参数">获取分区表的参数</a></li>
+              <li><a href="#获取硬盘io总个数" id="markdown-toc-获取硬盘io总个数">获取硬盘IO总个数</a></li>
+              <li><a href="#获取单个分区io个数" id="markdown-toc-获取单个分区io个数">获取单个分区IO个数</a></li>
+            </ul>
+          </li>
+          <li><a href="#读取网络信息" id="markdown-toc-读取网络信息">读取网络信息</a>            <ul>
+              <li><a href="#获取网络总io信息" id="markdown-toc-获取网络总io信息">获取网络总IO信息</a></li>
+              <li><a href="#输出网络每个接口信息" id="markdown-toc-输出网络每个接口信息">输出网络每个接口信息</a></li>
+            </ul>
+          </li>
+          <li><a href="#获取当前系统用户登录信息" id="markdown-toc-获取当前系统用户登录信息">获取当前系统用户登录信息</a></li>
+          <li><a href="#获取开机时间" id="markdown-toc-获取开机时间">获取开机时间</a></li>
+          <li><a href="#系统进程管理" id="markdown-toc-系统进程管理">系统进程管理</a></li>
+          <li><a href="#查看系统全部进程" id="markdown-toc-查看系统全部进程">查看系统全部进程</a></li>
+          <li><a href="#查看单个进程" id="markdown-toc-查看单个进程">查看单个进程</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h2 id="psutil模块">psutil模块</h2>
+
+<h3 id="1介绍">1.介绍</h3>
+
+<p><strong>psutil</strong>是一个跨平台库（http://code.google.com/p/psutil/），能够轻松实现获取系统运行的进程和系统利用率（包括CPU、内存、磁盘、网络等）信息。它主要应用于系统监控，分析和限制系统资源及进程的管理。它实现了同等命令行工具提供的功能，如ps、top、lsof、netstat、ifconfig、who、df、kill、free、nice、ionice、iostat、iotop、uptime、pidof、tty、taskset、pmap等。目前支持32位和64位的Linux、Windows、OS X、FreeBSD和Sun Solaris等操作系统</p>
+
+<h3 id="2安装"><strong>2.安装</strong></h3>
+
+<h4 id="linux">linux</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://pypi.python.org/packages/source/p/psutil/psutil-2.0.0.tar.gz
+tar -xzvf psutil-2.0.0.tar.gz
+cd psutil-2.0.0
+python setup.py install
+</code></pre></div></div>
+
+<h4 id="mac-pip">mac pip</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 install psutil
+</code></pre></div></div>
+
+<h3 id="3使用">3.使用</h3>
+
+<p>获取系统性能信息（CPU,内存，磁盘，网络）</p>
+
+<h4 id="1cpu相关">1.CPU相关</h4>
+
+<h5 id="查看cpu信息">查看cpu信息</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import psutil
+# 返回系统CPU运行时间的元组，时间为秒。
+&gt;&gt;&gt; psutil.cpu_times(precpu=False)
+# linux
+scputimes(user=11677.09, nice=57.93, system=148675.58, idle=2167147.79, iowait=260828.48, irq=7876.28, softirq=0.0, steal=3694.59, guest=0.0, guest_nice=0.0)
+# mac
+scputimes(user=11395.62, nice=0.0, system=5876.26, idle=67855.91)
+</code></pre></div></div>
+
+<h5 id="显示cpu所有逻辑信息">显示cpu所有逻辑信息</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; psutil.cpu_times(percpu=True)
+# linux
+[scputimes(user=11684.17, nice=57.93, system=148683.01, idle=2168982.08, iowait=260833.18, irq=7882.35, softirq=0.0, steal=3697.3, guest=0.0, guest_nice=0.0)]
+# mac
+[scputimes(user=4080.14, nice=0.0, system=2318.3, idle=15042.66), scputimes(user=1731.44, nice=0.0, system=863.43, idle=18845.4), scputimes(user=3914.96, nice=0.0, system=1862.18, idle=15663.15), scputimes(user=1751.7, nice=0.0, system=875.31, idle=18813.27)]
+</code></pre></div></div>
+
+<h5 id="查看用户的cpu时间比">查看用户的cpu时间比</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; psutil.cpu_times().user
+11684.4
+</code></pre></div></div>
+
+<h5 id="查看cpu逻辑个数">查看cpu逻辑个数</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; psutil.cpu_count()
+1
+</code></pre></div></div>
+
+<h5 id="查看cpu物理个数">查看cpu物理个数</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; psutil.cpu_count(logical=False)
+1
+</code></pre></div></div>
+
+<h5 id="查看cpu使用率百分比">查看cpu使用率百分比</h5>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">psutil</span><span class="p">.</span><span class="n">cpu_percent</span><span class="p">(</span><span class="n">interval</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">percpu</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="c1"># 返回一个浮点书，代表当前cpu的利用率的百分比，包括sy+user. 当interval为0或者None时，表示的是interval时间内的sys的利用率。
+# 当percpu为True返回是每一个cpu的利用率。
+# mac
+</span><span class="n">scputimes</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="mf">7.2</span><span class="p">,</span> <span class="n">nice</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">system</span><span class="o">=</span><span class="mf">4.7</span><span class="p">,</span> <span class="n">idle</span><span class="o">=</span><span class="mf">88.1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="2查看系统内存">2.查看系统内存</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import psutil
+&gt;&gt;&gt; mem = psutil.virtual_memory()
+&gt;&gt;&gt; mem
+#系统内存的所有信息
+svmem(total=1040662528, available=175054848, percent=83.2, used=965718016, free=74944512, active=566755328, inactive=59457536, buffers=9342976, cached=90767360)
+# mac
+svmem(total=8589934592, available=2400677888, percent=72.1, used=6985986048, free=24387584, active=2570063872, inactive=2376290304, wired=2039631872)
+</code></pre></div></div>
+
+<h5 id="系统总计内存">系统总计内存</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; mem.total
+1040662528
+</code></pre></div></div>
+
+<h5 id="系统已经使用内存">系统已经使用内存</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; mem.used
+965718016
+</code></pre></div></div>
+
+<h5 id="系统空闲内存">系统空闲内存</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; mem.free
+112779264
+</code></pre></div></div>
+
+<h5 id="获取swap内存信息">获取swap内存信息</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; psutil.swap_memory()
+sswap(total=0, used=0, free=0, percent=0, sin=0, sout=0)
+</code></pre></div></div>
+
+<h4 id="3读取磁盘参数">3.读取磁盘参数</h4>
+
+<p>磁盘利用率使用psutil.disk_usage方法获取，磁盘IO信息包括read_count(读IO数)，write_count(写IO数)</p>
+
+<p>read_bytes(IO写字节数)，read_time(磁盘读时间)，write_time(磁盘写时间),这些IO信息用</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.disk_io_counters()
+</code></pre></div></div>
+
+<h5 id="获取磁盘的完整信息">获取磁盘的完整信息</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.disk_partitions()
+</code></pre></div></div>
+
+<h5 id="获取分区表的参数">获取分区表的参数</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.disk_usage('/')   #获取/分区的状态
+</code></pre></div></div>
+
+<h5 id="获取硬盘io总个数">获取硬盘IO总个数</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.disk_io_counters()
+</code></pre></div></div>
+
+<h5 id="获取单个分区io个数">获取单个分区IO个数</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.disk_io_counters(perdisk=True)    #perdisk=True参数获取单个分区IO个数
+</code></pre></div></div>
+
+<h4 id="读取网络信息">读取网络信息</h4>
+
+<p>网络信息与磁盘IO信息类似,涉及到几个关键点，包括byes_sent(发送字节数),byte_recv=xxx(接受字节数),
+pack-ets_sent=xxx(发送字节数),pack-ets_recv=xxx(接收数据包数),这些网络信息用</p>
+
+<h5 id="获取网络总io信息">获取网络总IO信息</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.net_io_counters()  
+</code></pre></div></div>
+
+<h5 id="输出网络每个接口信息">输出网络每个接口信息</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.net_io_counters(pernic=True)     #pernic=True
+</code></pre></div></div>
+
+<h4 id="获取当前系统用户登录信息">获取当前系统用户登录信息</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.users()
+</code></pre></div></div>
+
+<h4 id="获取开机时间">获取开机时间</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.boot_time() #以linux时间格式返回
+datetime.datetime.fromtimestamp(psutil.boot_time ()).strftime("%Y-%m-%d %H: %M: %S") #转换成自然时间格式
+</code></pre></div></div>
+
+<h4 id="系统进程管理">系统进程管理</h4>
+
+<p>获取当前系统的进程信息,获取当前程序的运行状态,包括进程的启动时间,查看设置CPU亲和度,内存使用率,IO信息
+socket连接,线程数等
+获取进程信息</p>
+
+<h4 id="查看系统全部进程">查看系统全部进程</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psutil.pids()
+</code></pre></div></div>
+
+<h4 id="查看单个进程">查看单个进程</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p = psutil.Process(2423) 
+p.name()   #进程名
+p.exe()    #进程的bin路径
+p.cwd()    #进程的工作目录绝对路径
+p.status()   #进程状态
+p.create_time()  #进程创建时间
+p.uids()    #进程uid信息
+p.gids()    #进程的gid信息
+p.cpu_times()   #进程的cpu时间信息,包括user,system两个cpu信息
+p.cpu_affinity()  #get进程cpu亲和度,如果要设置cpu亲和度,将cpu号作为参考就好
+p.memory_percent()  #进程内存利用率
+p.memory_info()    #进程内存rss,vms信息
+p.io_counters()    #进程的IO信息,包括读写IO数字及参数
+p.connectios()   #返回进程列表
+p.num_threads()  #进程开启的线程数
+听过psutil的Popen方法启动应用程序，可以跟踪程序的相关信息
+from subprocess import PIPE
+p = psutil.Popen(["/usr/bin/python", "-c", "print('hello')"],stdout=PIPE)
+p.name()
+p.username()
+</code></pre></div></div>
+
+:ET

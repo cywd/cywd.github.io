@@ -1,0 +1,76 @@
+I"	 <hr />
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;stdarg.h&gt;
+#include &lt;string.h&gt;
+#include &lt;time.h&gt;
+#include &lt;ctype.h&gt;
+</span>
+<span class="k">struct</span> <span class="n">myTime</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">hour</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">min</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">sec</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">stu_data</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
+    <span class="k">struct</span> <span class="n">myTime</span> <span class="n">stuTime</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">stu_data</span> <span class="o">*</span> <span class="n">front</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">stu_data</span> <span class="o">*</span> <span class="n">back</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">stu_data</span> <span class="o">*</span><span class="n">stu</span><span class="p">,</span><span class="o">*</span><span class="n">p</span><span class="p">,</span><span class="o">*</span><span class="n">tail</span><span class="p">,</span><span class="o">*</span><span class="n">Head</span><span class="p">;</span>
+    <span class="kt">time_t</span> <span class="n">t</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tm</span> <span class="o">*</span><span class="n">timfo</span><span class="p">;</span>
+   
+    <span class="n">Head</span> <span class="o">=</span> <span class="n">p</span> <span class="o">=</span> <span class="n">tail</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">stu_data</span><span class="p">));</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">stu_data</span><span class="p">));</span>
+   
+    <span class="k">do</span>
+    <span class="p">{</span>
+        <span class="n">stu</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">stu_data</span><span class="p">));</span>
+        <span class="n">memset</span><span class="p">(</span><span class="n">stu</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">stu_data</span><span class="p">));</span>
+       
+        <span class="n">stu</span> <span class="o">-&gt;</span> <span class="n">front</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+        <span class="n">stu</span> <span class="o">-&gt;</span> <span class="n">back</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+        <span class="n">p</span> <span class="o">-&gt;</span> <span class="n">back</span> <span class="o">=</span> <span class="n">stu</span><span class="p">;</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">stu</span><span class="p">;</span>
+        <span class="n">tail</span> <span class="o">=</span> <span class="n">stu</span><span class="p">;</span>
+      
+        <span class="n">scanf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">stu</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">);</span>
+        <span class="n">time</span><span class="p">(</span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+        <span class="n">timfo</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+        <span class="n">stu</span> <span class="o">-&gt;</span> <span class="n">stuTime</span><span class="p">.</span><span class="n">hour</span> <span class="o">=</span> <span class="n">timfo</span> <span class="o">-&gt;</span> <span class="n">tm_hour</span><span class="p">;</span>
+        <span class="n">stu</span> <span class="o">-&gt;</span> <span class="n">stuTime</span><span class="p">.</span><span class="n">min</span>  <span class="o">=</span> <span class="n">timfo</span> <span class="o">-&gt;</span> <span class="n">tm_min</span><span class="p">;</span>
+        <span class="n">stu</span> <span class="o">-&gt;</span> <span class="n">stuTime</span><span class="p">.</span><span class="n">sec</span>  <span class="o">=</span> <span class="n">timfo</span> <span class="o">-&gt;</span> <span class="n">tm_sec</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">while</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">stu</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span> <span class="s">"exit"</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="n">stu</span> <span class="o">=</span> <span class="n">tail</span> <span class="o">-&gt;</span> <span class="n">front</span><span class="p">;</span>
+   
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="n">time</span><span class="p">(</span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+        <span class="n">timfo</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"%s,签到时间:%d时%d分%d秒</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">stu</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span><span class="n">stu</span><span class="o">-&gt;</span><span class="n">stuTime</span><span class="p">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">stu</span><span class="o">-&gt;</span><span class="n">stuTime</span><span class="p">.</span><span class="n">min</span><span class="p">,</span><span class="n">stu</span><span class="o">-&gt;</span><span class="n">stuTime</span><span class="p">.</span><span class="n">sec</span><span class="p">);</span>
+        <span class="n">stu</span> <span class="o">=</span> <span class="n">stu</span> <span class="o">-&gt;</span> <span class="n">front</span><span class="p">;</span>
+       
+    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">stu</span> <span class="o">!=</span>  <span class="nb">NULL</span><span class="p">);</span>
+
+<span class="c1">//    stu = Head -&gt; back;</span>
+<span class="c1">//    </span>
+<span class="c1">//    do {</span>
+<span class="c1">//        time(&amp;t);</span>
+<span class="c1">//        timfo = localtime(&amp;t);</span>
+<span class="c1">//        printf("%s,签到时间:%d时%d分%d秒\n",stu-&gt;name,stu-&gt;stuTime.hour, stu-&gt;stuTime.min,stu-&gt;stuTime.sec);</span>
+<span class="c1">//        stu = stu -&gt; back;</span>
+<span class="c1">//    } while (strcmp(stu-&gt;name, "exit"));</span>
+  
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+:ET

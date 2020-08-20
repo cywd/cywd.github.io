@@ -1,0 +1,1002 @@
+I"}�<ul id="markdown-toc">
+  <li><a href="#1如何快速的查看一段代码的执行时间" id="markdown-toc-1如何快速的查看一段代码的执行时间">1.如何快速的查看一段代码的执行时间。</a></li>
+  <li><a href="#2当view旋转缩放的时候出现锯齿" id="markdown-toc-2当view旋转缩放的时候出现锯齿">2.当view旋转缩放的时候出现锯齿</a></li>
+  <li><a href="#3uicontentmode的显示方式备忘" id="markdown-toc-3uicontentmode的显示方式备忘">3.UIContentMode的显示方式，备忘</a></li>
+  <li><a href="#4统计项目中代码行数shell" id="markdown-toc-4统计项目中代码行数shell">4.统计项目中代码行数(shell)</a></li>
+  <li><a href="#5宏的和作用" id="markdown-toc-5宏的和作用">5.宏的##和#作用</a></li>
+  <li><a href="#6忽略未使用变量的警告" id="markdown-toc-6忽略未使用变量的警告">6.忽略未使用变量的警告</a></li>
+  <li><a href="#7忽略方法未声明警告" id="markdown-toc-7忽略方法未声明警告">7.忽略方法未声明警告</a></li>
+  <li><a href="#8开启arc和mrc" id="markdown-toc-8开启arc和mrc">8.开启ARC和MRC</a></li>
+  <li><a href="#9判断是模拟器还是真机" id="markdown-toc-9判断是模拟器还是真机">9.判断是模拟器还是真机</a></li>
+  <li><a href="#10给nsobject-增加属性" id="markdown-toc-10给nsobject-增加属性">10.给NSObject 增加属性</a></li>
+  <li><a href="#11cgfloat和float的区别" id="markdown-toc-11cgfloat和float的区别">11.CGfloat和float的区别?</a></li>
+  <li><a href="#12foundation_export和define" id="markdown-toc-12foundation_export和define">12.FOUNDATION_EXPORT和#define</a></li>
+  <li><a href="#13滑动的时候隐藏navigationbar类似safari" id="markdown-toc-13滑动的时候隐藏navigationbar类似safari">13.滑动的时候隐藏navigationbar(类似safari)</a></li>
+  <li><a href="#14去掉导航条返回键带的title" id="markdown-toc-14去掉导航条返回键带的title">14.去掉导航条返回键带的title</a></li>
+  <li><a href="#15iskindofclassismemberofclass和issubclassofclass" id="markdown-toc-15iskindofclassismemberofclass和issubclassofclass">15.isKindOfClass、isMemberOfClass和isSubclassOfClass</a></li>
+  <li><a href="#16代码中字符串换行" id="markdown-toc-16代码中字符串换行">16.代码中字符串换行</a></li>
+  <li><a href="#17判断一个字符串是否包含另一个字符串" id="markdown-toc-17判断一个字符串是否包含另一个字符串">17.判断一个字符串是否包含另一个字符串</a></li>
+  <li><a href="#18引用" id="markdown-toc-18引用">18.引用</a></li>
+  <li><a href="#19重写description" id="markdown-toc-19重写description">19.重写description</a></li>
+  <li><a href="#20uiscrollview等滚动条闪一下" id="markdown-toc-20uiscrollview等滚动条闪一下">20.UIScrollView等滚动条闪一下</a></li>
+  <li><a href="#21点击cell中的按钮时如何取所在的cell" id="markdown-toc-21点击cell中的按钮时如何取所在的cell">21.点击Cell中的按钮时，如何取所在的Cell</a></li>
+  <li><a href="#22禁止程序运行时自动锁屏" id="markdown-toc-22禁止程序运行时自动锁屏">22.禁止程序运行时自动锁屏</a></li>
+  <li><a href="#23allsubviews-allapplicationviews-pathtoview" id="markdown-toc-23allsubviews-allapplicationviews-pathtoview">23.allSubviews, allApplicationViews, pathToView</a></li>
+  <li><a href="#24非常规退出" id="markdown-toc-24非常规退出">24.非常规退出</a></li>
+  <li><a href="#25-objective-c中的_cmd" id="markdown-toc-25-objective-c中的_cmd">25. Objective-C中的_cmd</a></li>
+  <li><a href="#26在appdelegate中禁用第三方键盘" id="markdown-toc-26在appdelegate中禁用第三方键盘">26.在APPDelegate中禁用第三方键盘</a></li>
+  <li><a href="#27自动滚动调整" id="markdown-toc-27自动滚动调整">27.自动滚动调整</a></li>
+  <li><a href="#28修改cell分割线距离" id="markdown-toc-28修改cell分割线距离">28.修改Cell分割线距离</a></li>
+  <li><a href="#29将汉字转换为拼音" id="markdown-toc-29将汉字转换为拼音">29.将汉字转换为拼音</a></li>
+  <li><a href="#30dispatch_once和synchronized的单例模式" id="markdown-toc-30dispatch_once和synchronized的单例模式">30.dispatch_once和@synchronized的单例模式</a>    <ul>
+      <li><a href="#synchronized" id="markdown-toc-synchronized">@synchronized</a></li>
+      <li><a href="#dispatch_once" id="markdown-toc-dispatch_once">dispatch_once</a></li>
+      <li><a href="#区别" id="markdown-toc-区别">区别</a></li>
+    </ul>
+  </li>
+  <li><a href="#31取绝对值的用法" id="markdown-toc-31取绝对值的用法">31.取绝对值的用法</a></li>
+  <li><a href="#32当子视图需要超出父视图响应事件" id="markdown-toc-32当子视图需要超出父视图响应事件">32.当子视图需要超出父视图响应事件</a></li>
+  <li><a href="#33判断当前viewcontroller是push还是present方式显示的" id="markdown-toc-33判断当前viewcontroller是push还是present方式显示的">33.判断当前ViewController是push还是present方式显示的</a>    <ul>
+      <li><a href="#1通过判断self有没有present方式显示的父视图presentingviewcontroller" id="markdown-toc-1通过判断self有没有present方式显示的父视图presentingviewcontroller">1.通过判断self有没有present方式显示的父视图presentingViewController</a></li>
+      <li><a href="#2通过判断selfnavigationcontrollerviewcontrollers的最后一个是否是当前控制器或者selfnavigationcontrollertopviewcontroller--self" id="markdown-toc-2通过判断selfnavigationcontrollerviewcontrollers的最后一个是否是当前控制器或者selfnavigationcontrollertopviewcontroller--self">2.通过判断self.navigationController.viewControllers的最后一个是否是当前控制器，或者self.navigationController.topViewController == self</a></li>
+    </ul>
+  </li>
+  <li><a href="#34提取ipa中的assetscar" id="markdown-toc-34提取ipa中的assetscar">34.提取.ipa中的Assets.car</a>    <ul>
+      <li><a href="#提取素材" id="markdown-toc-提取素材">提取素材</a></li>
+    </ul>
+  </li>
+  <li><a href="#35获取launchimage的图片" id="markdown-toc-35获取launchimage的图片">35获取LaunchImage的图片</a></li>
+  <li><a href="#36禁止手机睡眠" id="markdown-toc-36禁止手机睡眠">36.禁止手机睡眠</a></li>
+  <li><a href="#37隐藏某行cell" id="markdown-toc-37隐藏某行cell">37.隐藏某行cell</a></li>
+  <li><a href="#38去除数组中重复的对象" id="markdown-toc-38去除数组中重复的对象">38.去除数组中重复的对象</a></li>
+  <li><a href="#39uitextview中打开或禁用复制剪切选择全选等功能" id="markdown-toc-39uitextview中打开或禁用复制剪切选择全选等功能">39.UITextView中打开或禁用复制，剪切，选择，全选等功能</a></li>
+  <li><a href="#40为一个view添加虚线边框" id="markdown-toc-40为一个view添加虚线边框">40.为一个view添加虚线边框</a></li>
+  <li><a href="#41修改cellimageview的大小" id="markdown-toc-41修改cellimageview的大小">41.修改cell.imageView的大小</a></li>
+  <li><a href="#42在指定的宽度下让uilabel自动设置最佳font" id="markdown-toc-42在指定的宽度下让uilabel自动设置最佳font">42.在指定的宽度下，让UILabel自动设置最佳font</a></li>
+  <li><a href="#43统一收起键盘" id="markdown-toc-43统一收起键盘">43.统一收起键盘</a></li>
+  <li><a href="#44判断图片类型" id="markdown-toc-44判断图片类型">44.判断图片类型</a></li>
+  <li><a href="#45获取设备mac地址" id="markdown-toc-45获取设备mac地址">45.获取设备mac地址</a></li>
+  <li><a href="#46不让控制器的view随着控制器的xib拉伸或压缩" id="markdown-toc-46不让控制器的view随着控制器的xib拉伸或压缩">46.不让控制器的view随着控制器的xib拉伸或压缩</a></li>
+  <li><a href="#47导入自定义字体库" id="markdown-toc-47导入自定义字体库">47.导入自定义字体库</a></li>
+  <li><a href="#48获取到当前正在显示的controller" id="markdown-toc-48获取到当前正在显示的controller">48.获取到当前正在显示的controller</a></li>
+  <li><a href="#49为imageview添加倒影" id="markdown-toc-49为imageview添加倒影">49.为imageView添加倒影</a></li>
+  <li><a href="#50画水印" id="markdown-toc-50画水印">50.画水印</a></li>
+  <li><a href="#51获取一个视频的第一帧图片" id="markdown-toc-51获取一个视频的第一帧图片">51.获取一个视频的第一帧图片</a></li>
+  <li><a href="#52获取视频的时长" id="markdown-toc-52获取视频的时长">52.获取视频的时长</a></li>
+  <li><a href="#53当tableview占不满一屏时去除下边多余的单元格" id="markdown-toc-53当tableview占不满一屏时去除下边多余的单元格">53.当tableView占不满一屏时，去除下边多余的单元格</a></li>
+  <li><a href="#54iskindofclass和ismemberofclass的区别" id="markdown-toc-54iskindofclass和ismemberofclass的区别">54.isKindOfClass和isMemberOfClass的区别</a></li>
+  <li><a href="#55某个字体的高度" id="markdown-toc-55某个字体的高度">55.某个字体的高度</a></li>
+  <li><a href="#56删除nsuserdefaults所有记录" id="markdown-toc-56删除nsuserdefaults所有记录">56.删除NSUserDefaults所有记录</a></li>
+  <li><a href="#57uilabel设置文字描边" id="markdown-toc-57uilabel设置文字描边">57.UILabel设置文字描边</a></li>
+  <li><a href="#58layoutsubviews方法什么时候调用" id="markdown-toc-58layoutsubviews方法什么时候调用">58.layoutSubviews方法什么时候调用？</a></li>
+  <li><a href="#59摇一摇" id="markdown-toc-59摇一摇">59.摇一摇</a></li>
+  <li><a href="#60tableviewcell分割线顶到头" id="markdown-toc-60tableviewcell分割线顶到头">60.tableViewCell分割线顶到头</a></li>
+  <li><a href="#61判断一个字符串是否包含另一个字符串的另外一种方法" id="markdown-toc-61判断一个字符串是否包含另一个字符串的另外一种方法">61.判断一个字符串是否包含另一个字符串的另外一种方法</a></li>
+  <li><a href="#62没有用到类的成员变量的都写成类方法" id="markdown-toc-62没有用到类的成员变量的都写成类方法">62.没有用到类的成员变量的，都写成类方法</a></li>
+  <li><a href="#63category可以用来调试" id="markdown-toc-63category可以用来调试">63.category可以用来调试</a></li>
+  <li><a href="#64设置圆角和阴影要分层" id="markdown-toc-64设置圆角和阴影要分层">64.设置圆角和阴影要分层</a></li>
+  <li><a href="#65关于时间的一些宏" id="markdown-toc-65关于时间的一些宏">65.关于时间的一些宏</a></li>
+  <li><a href="#66uitabbarcontrollerd的viewcontrollers预加载" id="markdown-toc-66uitabbarcontrollerd的viewcontrollers预加载">66.UITabBarControllerd的viewcontrollers预加载</a></li>
+  <li><a href="#67undeclared-selector-warning-警告处理" id="markdown-toc-67undeclared-selector-warning-警告处理">67.Undeclared selector warning 警告处理</a>    <ul>
+      <li><a href="#第一种-忽略这个警告" id="markdown-toc-第一种-忽略这个警告">第一种 忽略这个警告</a></li>
+      <li><a href="#第二种-使用sel_registername" id="markdown-toc-第二种-使用sel_registername">第二种 使用‘sel_registerName’</a></li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h2 id="1如何快速的查看一段代码的执行时间">1.如何快速的查看一段代码的执行时间。</h2>
+
+<pre><code class="language-objective-c">#define TICK   NSDate *startTime = [NSDate date]
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
+// 使用时
+TICK
+// do your work here
+TOCK
+</code></pre>
+
+<h2 id="2当view旋转缩放的时候出现锯齿">2.当view旋转缩放的时候出现锯齿</h2>
+
+<p>使用<code class="language-plaintext highlighter-rouge">layer</code>的<code class="language-plaintext highlighter-rouge">allowsEdgeAntialiasing</code>属性消除锯齿</p>
+
+<pre><code class="language-objective-c">self.layer.allowsEdgeAntialiasing = YES;
+// 设置对应view的layer这个属性
+</code></pre>
+
+<h2 id="3uicontentmode的显示方式备忘">3.UIContentMode的显示方式，备忘</h2>
+
+<p>引用网上的图，不知道原作者是谁。</p>
+
+<p><img src="/img/article/tips/3.jpg" alt="引用网上的图" /></p>
+
+<h2 id="4统计项目中代码行数shell">4.统计项目中代码行数(shell)</h2>
+
+<p>终端cd到相应目录，执行</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="s2">"("</span> <span class="nt">-name</span> <span class="s2">".m"</span> <span class="nt">-or</span> <span class="nt">-name</span> <span class="s2">".mm"</span> <span class="nt">-or</span> <span class="nt">-name</span> <span class="s2">".cpp"</span> <span class="nt">-or</span> <span class="nt">-name</span> <span class="s2">".h"</span> <span class="nt">-or</span> <span class="nt">-name</span> <span class="s2">".rss"</span> <span class="nt">-or</span> <span class="nt">-name</span> <span class="s2">".xib"</span>  <span class="s2">")"</span> <span class="nt">-print</span> | xargs <span class="nb">wc</span> <span class="nt">-l</span>
+</code></pre></div></div>
+
+<h2 id="5宏的和作用">5.宏的##和#作用</h2>
+
+<p>在宏里面, ##的作用:连接2个标识符</p>
+
+<pre><code class="language-objective-c">#define method(name) - (void)load##name {}  
+//- (void)loadabc {}   method(abc)  
+//- (void)loadddd {}   method(ddd)  
+//- (void)loadttt {}   method(ttt) 
+</code></pre>
+
+<p>在宏里面, #的作用:给右边的标识符加上双引号””</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define test(name) @#name
+</span><span class="c1">// test(abc) @"abc"</span>
+</code></pre></div></div>
+
+<h2 id="6忽略未使用变量的警告">6.忽略未使用变量的警告</h2>
+
+<pre><code class="language-objective-c">#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+	UIView *testView = [[UIView alloc] init];
+#pragma clang diagnostic pop
+</code></pre>
+
+<h2 id="7忽略方法未声明警告">7.忽略方法未声明警告</h2>
+
+<pre><code class="language-objective-c">#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleNavigationTransition:)];
+    // 错误实例，这样做会在点击时崩溃
+#pragma clang diagnostic pop
+</code></pre>
+
+<h2 id="8开启arc和mrc">8.开启ARC和MRC</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-fobjc-arc     MRC
+-fno-objc-arc  ARC
+</code></pre></div></div>
+
+<h2 id="9判断是模拟器还是真机">9.判断是模拟器还是真机</h2>
+
+<pre><code class="language-objective-c">#if TARGET_IPHONE_SIMULATOR //模拟器
+
+#elif TARGET_OS_IPHONE //真机
+
+#endif
+</code></pre>
+
+<h2 id="10给nsobject-增加属性">10.给NSObject 增加属性</h2>
+
+<p>举例，比如我们希望button点击的时候，可以传递更多的属性。除开继承自UIButton添加属性外，还有这种方法。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+
+objc_setAssociatedObject(btn, "firstObject", @1, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+[btn setFrame:CGRectMake(10, 250, 100, 50)];
+[btn setTitle:@"Test To Logic" forState:UIControlStateNormal];
+[self.view addSubview:btn];
+btn.showsTouchWhenHighlighted = YES;
+[btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+
+- (void)click:(UIButton *)sender {
+	// 
+    id first = objc_getAssociatedObject(sender, "firstObject");
+}
+</code></pre></div></div>
+<h2 id="11cgfloat和float的区别">11.CGfloat和float的区别?</h2>
+
+<p>command+左键点击CGFloat.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef CGFLOAT_TYPE CGFloat;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#if defined(__LP64__) &amp;&amp; __LP64__
+# define CGFLOAT_TYPE double
+# define CGFLOAT_IS_DOUBLE 1
+# define CGFLOAT_MIN DBL_MIN
+# define CGFLOAT_MAX DBL_MAX
+#else
+# define CGFLOAT_TYPE float
+# define CGFLOAT_IS_DOUBLE 0
+# define CGFLOAT_MIN FLT_MIN
+# define CGFLOAT_MAX FLT_MAX
+#endif
+</code></pre></div></div>
+
+<p>64位系统下,CGFLOAT是double类型,32位系统下是float类型.
+如果需要精确计算，不要使用CGFloat或float，1.1	有时计算不准确，后面几位会出现精度丢失，要用double.</p>
+
+<h2 id="12foundation_export和define">12.FOUNDATION_EXPORT和#define</h2>
+
+<p>比较的时候FOUNDATION_EXPORT 可以 == 这种方式进行比较，#define 只是单纯的替换.</p>
+
+<h2 id="13滑动的时候隐藏navigationbar类似safari">13.滑动的时候隐藏navigationbar(类似safari)</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>navigationController.hidesBarsOnSwipe = Yes;
+</code></pre></div></div>
+
+<h2 id="14去掉导航条返回键带的title">14.去掉导航条返回键带的title</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                     forBarMetrics:UIBarMetricsDefault];
+</code></pre></div></div>
+<h2 id="15iskindofclassismemberofclass和issubclassofclass">15.isKindOfClass、isMemberOfClass和isSubclassOfClass</h2>
+
+<p>苛刻程度   <code class="language-plaintext highlighter-rouge">isKindOfClass &lt; isSubclassOfClass &lt; isMemberOfClass;</code></p>
+
+<pre><code class="language-objective-c">// isKindOfClass:       
+// isSubclassOfClass:   是子类
+// isMemberOfClass:     类型需完全一样
+</code></pre>
+<h2 id="16代码中字符串换行">16.代码中字符串换行</h2>
+
+<pre><code class="language-objective-c">NSString *string = @"ABCDEFGHIJKL" \
+         "MNOPQRSTUVsWXYZ";
+</code></pre>
+<h2 id="17判断一个字符串是否包含另一个字符串">17.判断一个字符串是否包含另一个字符串</h2>
+
+<pre><code class="language-objective-c">[str1 rangeOfString:str2].length != 0 ? @"包含" : @"不包含" ;
+</code></pre>
+
+<h2 id="18引用">18.引用</h2>
+
+<p>C++支持引用，Objective-C是从C衍变来的，不支持引用</p>
+
+<h2 id="19重写description">19.重写description</h2>
+
+<p>输出重要变量的值，因为调试窗口variableView有时候变量值显示不出来。</p>
+
+<h2 id="20uiscrollview等滚动条闪一下">20.UIScrollView等滚动条闪一下</h2>
+
+<pre><code class="language-objective-c">scrollVIew.flashScrollIndicators = YES;
+</code></pre>
+
+<h2 id="21点击cell中的按钮时如何取所在的cell">21.点击Cell中的按钮时，如何取所在的Cell</h2>
+
+<pre><code class="language-objective-c">-(void)OnTouchBtnInCell:(UIButton *)btn 
+{ 
+  CGPoint point = btn.center; 
+  point = [table convertPoint:point fromView:btn.superview]; 
+  NSIndexPath* indexpath = [table indexPathForRowAtPoint:point]; 
+  UITableViewCell *cell = [table cellForRowAtIndexPath:indexpath]; 
+  /*... */
+  // 也可以通过一路取btn的父窗口取到cell，但如果cell下通过好几层subview才到btn,就要取好几次 superview
+  // 所以我用上面的方法，比较通用。这种  方法也适用于其它控件。 
+} 
+</code></pre>
+
+<h2 id="22禁止程序运行时自动锁屏">22.禁止程序运行时自动锁屏</h2>
+
+<pre><code class="language-objective-c">[[UIApplication sharedApplication] setIdleTimerDisabled:YES]; 
+</code></pre>
+
+<h2 id="23allsubviews-allapplicationviews-pathtoview">23.allSubviews, allApplicationViews, pathToView</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSArray *allSubviews(UIView *aView)
+{
+	NSArray *results = [aView subviews];
+	for (UIView *eachView in [aView subviews])
+	{
+		NSArray *riz = allSubviews(eachView);
+		if (riz) results = [results arrayByAddingObjectsFromArray:riz];
+	}
+	return results;
+}
+
+// Return all views throughout the application
+NSArray *allApplicationViews()
+{
+    NSArray *results = [[UIApplication sharedApplication] windows];
+    for (UIWindow *window in [[UIApplication sharedApplication] windows])
+	{
+		NSArray *riz = allSubviews(window);
+        if (riz) results = [results arrayByAddingObjectsFromArray: riz];
+	}
+    return results;
+}
+
+// Return an array of parent views from the window down to the view
+NSArray *pathToView(UIView *aView)
+{
+    NSMutableArray *array = [NSMutableArray arrayWithObject:aView];
+    UIView *view = aView;
+    UIWindow *window = aView.window;
+    while (view != window)
+    {
+        view = [view superview];
+        [array insertObject:view atIndex:0];
+    }
+    return array;
+}
+
+</code></pre></div></div>
+<h2 id="24非常规退出">24.非常规退出</h2>
+
+<p>苹果不建议程序主动退出，但还是有一个函数可以实现这个效果：   </p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exit(0)
+</code></pre></div></div>
+
+<p>不过这个函数不触发<code class="language-plaintext highlighter-rouge">applicationWillResignActive</code>等<code class="language-plaintext highlighter-rouge">AppDelegate method</code>.</p>
+
+<h2 id="25-objective-c中的_cmd">25. Objective-C中的_cmd</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Objective-C</code>的编译器在编译后会在每个方法中加两个隐藏的参数:</p>
+
+<p>一个是<code class="language-plaintext highlighter-rouge">_cmd</code>，当前方法的一个<code class="language-plaintext highlighter-rouge">SEL</code>指针，即该方法的<code class="language-plaintext highlighter-rouge">selector</code>。</p>
+
+<p>另一个就是用的比较多的<code class="language-plaintext highlighter-rouge">self</code>，指向当前对象的一个指针。</p>
+
+<p><code class="language-plaintext highlighter-rouge">_cmd</code>可以赋值给SEL类型的变量，可以做为参数传递。</p>
+
+<p>example:</p>
+
+<pre><code class="language-objective-c">// 例如一个显示消息的方法： 
+- (void)ShowNotifyWithString:(NSString *)notifyString fromMethod:(SEL)originalMethod; 
+// originalMethod就是调用这个方法的selector。 
+// 调用： 
+NSString *stmp = @"test"; 
+[self ShowNotifyWithString:stmp fromMethod:_cmd]; 
+// 打印当前方法名称： 
+NSLog(@"%@", NSStringFromSelector(_cmd));
+</code></pre>
+
+<h2 id="26在appdelegate中禁用第三方键盘">26.在APPDelegate中禁用第三方键盘</h2>
+
+<pre><code class="language-objective-c">#pragma mark - 禁用第三方键盘
+- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(UIApplicationExtensionPointIdentifier)extensionPointIdentifier {
+    return NO;
+}
+</code></pre>
+
+<h2 id="27自动滚动调整">27.自动滚动调整</h2>
+
+<pre><code class="language-objective-c">self.automaticallyAdjustsScrollViewInsets = NO;  // 自动滚动调整，默认为YES
+</code></pre>
+
+<h2 id="28修改cell分割线距离">28.修改Cell分割线距离</h2>
+
+<pre><code class="language-objective-c">- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+	if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 15, 0, 15)];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsMake(0, 15, 0, 15)];
+    }
+    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
+}
+</code></pre>
+
+<h2 id="29将汉字转换为拼音">29.将汉字转换为拼音</h2>
+
+<pre><code class="language-objective-c">- (NSString *)chineseToPinyin:(NSString *)chinese withSpace:(BOOL)withSpace {
+    if(chinese) {
+        CFStringRef hanzi = (__bridge CFStringRef)chinese;
+        CFMutableStringRef string =CFStringCreateMutableCopy(NULL,0, hanzi);
+        CFStringTransform(string,NULL, kCFStringTransformMandarinLatin,NO);
+        CFStringTransform(string,NULL, kCFStringTransformStripDiacritics,NO);
+        NSString*pinyin = (NSString*)CFBridgingRelease(string);
+        
+        if(!withSpace) {
+            pinyin = [pinyin stringByReplacingOccurrencesOfString:@" "withString:@""];
+        }
+        return pinyin;
+    }
+    return nil;
+}
+</code></pre>
+
+<h2 id="30dispatch_once和synchronized的单例模式">30.dispatch_once和@synchronized的单例模式</h2>
+
+<h3 id="synchronized">@synchronized</h3>
+
+<pre><code class="language-objective-c">+ (id)sharedInstance {
+    static Instance *obj = nil;
+    @synchronized([Instance class]) {
+        if(!obj) 
+            obj = [[Instance alloc] init];
+    }
+    return obj;
+}
+</code></pre>
+
+<h3 id="dispatch_once">dispatch_once</h3>
+
+<pre><code class="language-objective-c">+ (id)sharedInstance {
+    static dispatch_once_t pred;
+    static Instance *obj = nil;
+    dispatch_once(&amp;pred, ^{
+        obj = [[Instance alloc] init];
+    });
+    return obj;
+}
+</code></pre>
+
+<h3 id="区别">区别</h3>
+
+<p>使用<code class="language-plaintext highlighter-rouge">@synchronized</code>，这样性能不是很好，因为每次调用+ (id)sharedInstance函数都会付出取锁的代价。
+GCD的单例首先满足了线程安全问题，其次很好满足静态分析器要求。GCD可以确保以更快的方式完成这些检测，它可以保证block中的代码在任何线程通过dispatch_once调用之前被执行，但它不会强制每次调用这个函数都让代码进行同步控制。实际上，如果你去看这个函数所在的头文件，你会发现目前它的实现其实是一个宏，进行了内联的初始化测试，这意味着通常情况下，你不用付出函数调用的负载代价，并且会有更少的同步控制负载。</p>
+
+<p>因此，单例模式的时候尽量使用GCD。</p>
+
+<h2 id="31取绝对值的用法">31.取绝对值的用法</h2>
+
+<pre><code class="language-objective-c">int abs(int i);         // 处理int类型的取绝对值  
+double fabs(double i);  // 处理double类型的取绝对值  
+float fabsf(float i);   // 处理float类型的取绝对值  
+</code></pre>
+<h2 id="32当子视图需要超出父视图响应事件">32.当子视图需要超出父视图响应事件</h2>
+
+<pre><code class="language-objective-c">// 可以重写 hitTest 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *v = [super hitTest:point withEvent:event];
+    if (v == nil) {
+        CGPoint tp = [self.cameraButton convertPoint:point fromView:self];
+        if (CGRectContainsPoint(self.cameraButton.bounds, tp)) {
+            v = self.cameraButton;
+        }
+    }
+    return v;
+}
+</code></pre>
+
+<h2 id="33判断当前viewcontroller是push还是present方式显示的">33.判断当前ViewController是push还是present方式显示的</h2>
+
+<h3 id="1通过判断self有没有present方式显示的父视图presentingviewcontroller">1.通过判断self有没有present方式显示的父视图presentingViewController</h3>
+
+<pre><code class="language-objective-c">- (IBAction)dismiss:(id)sender {
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+</code></pre>
+
+<h3 id="2通过判断selfnavigationcontrollerviewcontrollers的最后一个是否是当前控制器或者selfnavigationcontrollertopviewcontroller--self">2.通过判断self.navigationController.viewControllers的最后一个是否是当前控制器，或者self.navigationController.topViewController == self</h3>
+
+<pre><code class="language-objective-c">- (IBAction)dismiss:(id)sender {
+    if (self.navigationController.topViewController == self) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+</code></pre>
+<h2 id="34提取ipa中的assetscar">34.提取.ipa中的Assets.car</h2>
+
+<p>利用工具<a href="https://github.com/devcxm/iOS-Images-Extractor">iOS-Images-Extractor</a></p>
+
+<p><a href="https://github.com/devcxm/iOS-Images-Extractor/blob/master/README_zh-Hans.md">中文使用方法看这里</a></p>
+
+<p>到终端分别执行下面的四条命令：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/devcxm/iOS-Images-Extractor
+cd iOS-Images-Extractor
+git submodule update --init --recursive
+open iOSImagesExtractor.xcworkspace
+</code></pre></div></div>
+
+<h3 id="提取素材">提取素材</h3>
+
+<p>将Assets.car拖动到刚才运行的应用中。</p>
+
+<p>先点击“start”开始解压，然后点击“Output Dir”来查看导出的目录，就可以看到所有的素材了。</p>
+
+<h2 id="35获取launchimage的图片">35获取LaunchImage的图片</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+ (UIImage *)getTheLaunchImage
+{
+    CGSize viewSize = [UIScreen mainScreen].bounds.size;
+
+    NSString *viewOrientation = nil;
+    if (([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown) || ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait)) {
+        viewOrientation = @"Portrait";
+    } else {
+        viewOrientation = @"Landscape";
+    }
+
+
+    NSString *launchImage = nil;
+
+    NSArray* imagesDict = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    for (NSDictionary* dict in imagesDict)
+    {
+        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
+
+        if (CGSizeEqualToSize(imageSize, viewSize) &amp;&amp; [viewOrientation isEqualToString:dict[@"UILaunchImageOrientation"]])
+        {
+            launchImage = dict[@"UILaunchImageName"];
+        }
+    }
+
+    return [UIImage imageNamed:launchImage];
+
+}
+</code></pre></div></div>
+
+<p>参考：<a href="https://www.ianisme.com/ios/1825.html">如何从Images.xcassets中获取LaunchImage的图片</a></p>
+
+<h2 id="36禁止手机睡眠">36.禁止手机睡眠</h2>
+
+<pre><code class="language-objective-c">[UIApplication sharedApplication].idleTimerDisabled = YES;
+</code></pre>
+
+<h2 id="37隐藏某行cell">37.隐藏某行cell</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+// 如果是你需要隐藏的那一行，返回高度为0
+    if(indexPath.row == YouWantToHideRow)
+        return 0; 
+    return 44;
+}
+ 
+// 然后再你需要隐藏cell的时候调用
+[self.tableView beginUpdates];
+[self.tableView endUpdates];
+</code></pre></div></div>
+
+<h2 id="38去除数组中重复的对象">38.去除数组中重复的对象</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSArray *newArr = [oldArr valueForKeyPath:@“@distinctUnionOfObjects.self"];
+</code></pre></div></div>
+
+<h2 id="39uitextview中打开或禁用复制剪切选择全选等功能">39.UITextView中打开或禁用复制，剪切，选择，全选等功能</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 继承UITextView重写这个方法
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+// 返回NO为禁用，YES为开启
+    // 粘贴
+    if (action == @selector(paste:)) return NO;
+    // 剪切
+    if (action == @selector(cut:)) return NO;
+    // 复制
+    if (action == @selector(copy:)) return NO;
+    // 选择
+    if (action == @selector(select:)) return NO;
+    // 选中全部
+    if (action == @selector(selectAll:)) return NO;
+    // 删除
+    if (action == @selector(delete:)) return NO;
+    // 分享
+    if (action == @selector(share)) return NO;
+    return [super canPerformAction:action withSender:sender];
+}
+</code></pre></div></div>
+
+<h2 id="40为一个view添加虚线边框">40.为一个view添加虚线边框</h2>
+
+<pre><code class="language-objective-c">CAShapeLayer *border = [CAShapeLayer layer];
+border.strokeColor = [UIColor colorWithRed:67/255.0f green:37/255.0f blue:83/255.0f alpha:1].CGColor;
+border.fillColor = nil;
+border.lineDashPattern = @[@4, @2];
+border.path = [UIBezierPath bezierPathWithRect:view.bounds].CGPath;
+border.frame = view.bounds;
+[view.layer addSublayer:border];
+</code></pre>
+
+<h2 id="41修改cellimageview的大小">41.修改cell.imageView的大小</h2>
+
+<pre><code class="language-objective-c">UIImage *icon = [UIImage imageNamed:@""];
+CGSize itemSize = CGSizeMake(30, 30);
+UIGraphicsBeginImageContextWithOptions(itemSize, NO ,0.0);
+CGRect imageRect = CGRectMake(0.0, 0.0, itemSize.width, itemSize.height);
+[icon drawInRect:imageRect];
+cell.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+UIGraphicsEndImageContext();
+</code></pre>
+
+<h2 id="42在指定的宽度下让uilabel自动设置最佳font">42.在指定的宽度下，让UILabel自动设置最佳font</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>label.adjustsFontSizeToFitWidth = YES;
+</code></pre></div></div>
+
+<h2 id="43统一收起键盘">43.统一收起键盘</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+</code></pre></div></div>
+
+<h2 id="44判断图片类型">44.判断图片类型</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//通过图片Data数据第一个字节 来获取图片扩展名
+- (NSString *)contentTypeForImageData:(NSData *)data
+{
+    uint8_t c;
+    [data getBytes:&amp;c length:1];
+    switch (c)
+    {
+        case 0xFF:
+            return @"jpeg";
+ 
+        case 0x89:
+            return @"png";
+ 
+        case 0x47:
+            return @"gif";
+ 
+        case 0x49:
+        case 0x4D:
+            return @"tiff";
+ 
+        case 0x52:
+        if ([data length] &lt; 12) {
+            return nil;
+        }
+        NSString *testString = [[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding];
+        if ([testString hasPrefix:@"RIFF"]
+            &amp;&amp; [testString hasSuffix:@"WEBP"])
+        {
+            return @"webp";
+        }
+        return nil;
+    }
+    return nil;
+}
+</code></pre></div></div>
+
+<h2 id="45获取设备mac地址">45.获取设备mac地址</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+ (NSString *)macAddress {
+    int                 mib[6];
+    size_t              len;
+    char                *buf;
+    unsigned char       *ptr;
+    struct if_msghdr    *ifm;
+    struct sockaddr_dl  *sdl;
+ 
+    mib[0] = CTL_NET;
+    mib[1] = AF_ROUTE;
+    mib[2] = 0;
+    mib[3] = AF_LINK;
+    mib[4] = NET_RT_IFLIST;
+ 
+    if((mib[5] = if_nametoindex("en0")) == 0) {
+        printf("Error: if_nametoindex error\n");
+        return NULL;
+    }
+ 
+    if(sysctl(mib, 6, NULL, &amp;len, NULL, 0) &lt; 0) {
+        printf("Error: sysctl, take 1\n");
+        return NULL;
+    }
+ 
+    if((buf = malloc(len)) == NULL) {
+        printf("Could not allocate memory. Rrror!\n");
+        return NULL;
+    }
+ 
+    if(sysctl(mib, 6, buf, &amp;len, NULL, 0) &lt; 0) {
+        printf("Error: sysctl, take 2");
+        return NULL;
+    }
+ 
+    ifm = (struct if_msghdr *)buf;
+    sdl = (struct sockaddr_dl *)(ifm + 1);
+    ptr = (unsigned char *)LLADDR(sdl);
+    NSString *outstring = [NSString stringWithFormat:@"X:X:X:X:X:X",
+                           *ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    free(buf);
+ 
+    return outstring;
+}
+</code></pre></div></div>
+
+<h2 id="46不让控制器的view随着控制器的xib拉伸或压缩">46.不让控制器的view随着控制器的xib拉伸或压缩</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+</code></pre></div></div>
+
+<h2 id="47导入自定义字体库">47.导入自定义字体库</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.找到你想用的字体的 ttf 格式，拖入工程
+2.在工程的plist中增加一行数组，“Fonts provided by application”
+3.为这个key添加一个item，value为你刚才导入的ttf文件名
+4.直接使用即可：label.font = [UIFont fontWithName:@"你刚才导入的ttf文件名" size:20.0]；
+</code></pre></div></div>
+
+<h2 id="48获取到当前正在显示的controller">48.获取到当前正在显示的controller</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (UIViewController *)getVisibleViewControllerFrom:(UIViewController*)vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return [self getVisibleViewControllerFrom:[((UINavigationController*) vc) visibleViewController]];
+    }else if ([vc isKindOfClass:[UITabBarController class]]){
+        return [self getVisibleViewControllerFrom:[((UITabBarController*) vc) selectedViewController]];
+    } else {
+        if (vc.presentedViewController) {
+            return [self getVisibleViewControllerFrom:vc.presentedViewController];
+        } else {
+            return vc;
+        }
+    }
+}
+</code></pre></div></div>
+
+<h2 id="49为imageview添加倒影">49.为imageView添加倒影</h2>
+
+<pre><code class="language-objective-c">CGRect frame = self.frame;
+frame.origin.y += (frame.size.height + 1);
+
+UIImageView *reflectionImageView = [[UIImageView alloc] initWithFrame:frame];
+self.clipsToBounds = TRUE;
+reflectionImageView.contentMode = self.contentMode;
+[reflectionImageView setImage:self.image];
+reflectionImageView.transform = CGAffineTransformMakeScale(1.0, -1.0);
+
+CALayer *reflectionLayer = [reflectionImageView layer];
+
+CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+gradientLayer.bounds = reflectionLayer.bounds;
+gradientLayer.position = CGPointMake(reflectionLayer.bounds.size.width / 2, reflectionLayer.bounds.size.height * 0.5);
+gradientLayer.colors = [NSArray arrayWithObjects:
+                      (id)[[UIColor clearColor] CGColor],
+                      (id)[[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3] CGColor], nil];
+
+gradientLayer.startPoint = CGPointMake(0.5,0.5);
+gradientLayer.endPoint = CGPointMake(0.5,1.0);
+reflectionLayer.mask = gradientLayer;
+
+[self.superview addSubview:reflectionImageView];
+</code></pre>
+
+<h2 id="50画水印">50.画水印</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 画水印
+- (void) setImage:(UIImage *)image withWaterMark:(UIImage *)mark inRect:(CGRect)rect
+{
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] &gt;= 4.0)
+    {
+        UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, 0.0);
+    }
+    //原图
+    [image drawInRect:self.bounds];
+    //水印图
+    [mark drawInRect:rect];
+    UIImage *newPic = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.image = newPic;
+}
+</code></pre></div></div>
+
+<h2 id="51获取一个视频的第一帧图片">51.获取一个视频的第一帧图片</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSURL *url = [NSURL URLWithString:filepath];
+AVURLAsset *asset1 = [[AVURLAsset alloc] initWithURL:url options:nil];
+AVAssetImageGenerator *generate1 = [[AVAssetImageGenerator alloc] initWithAsset:asset1];
+generate1.appliesPreferredTrackTransform = YES;
+NSError *err = NULL;
+CMTime time = CMTimeMake(1, 2);
+CGImageRef oneRef = [generate1 copyCGImageAtTime:time actualTime:NULL error:&amp;err];
+UIImage *one = [[UIImage alloc] initWithCGImage:oneRef];
+
+return one;
+</code></pre></div></div>
+
+<h2 id="52获取视频的时长">52.获取视频的时长</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+ (NSInteger)getVideoTimeByUrlString:(NSString *)urlString {
+    NSURL *videoUrl = [NSURL URLWithString:urlString];
+    AVURLAsset *avUrl = [AVURLAsset assetWithURL:videoUrl];
+    CMTime time = [avUrl duration];
+    int seconds = ceil(time.value/time.timescale);
+    return seconds;
+}
+</code></pre></div></div>
+
+<h2 id="53当tableview占不满一屏时去除下边多余的单元格">53.当tableView占不满一屏时，去除下边多余的单元格</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>self.tableView.tableHeaderView = [UIView new];
+self.tableView.tableFooterView = [UIView new];
+</code></pre></div></div>
+
+<h2 id="54iskindofclass和ismemberofclass的区别">54.isKindOfClass和isMemberOfClass的区别</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>isKindOfClass 可以判断某个对象是否属于某个类，或者这个类的子类。
+isMemberOfClass 更加精准，它只能判断这个对象类型是否为这个类(不能判断子类)
+</code></pre></div></div>
+
+<h2 id="55某个字体的高度">55.某个字体的高度</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>font.lineHeight
+</code></pre></div></div>
+
+<h2 id="56删除nsuserdefaults所有记录">56.删除NSUserDefaults所有记录</h2>
+
+<pre><code class="language-objective-c">// 方法一
+NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+[[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];   
+// 方法二  
+- (void)resetDefaults {   
+	NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+	NSDictionary * dict = [defs dictionaryRepresentation];
+	for (id key in dict) {
+		[defs removeObjectForKey:key];
+	}
+	[defs synchronize];
+}
+// 方法三
+[[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
+</code></pre>
+
+<h2 id="57uilabel设置文字描边">57.UILabel设置文字描边</h2>
+
+<pre><code class="language-objective-c">// 子类化UILabel，重写drawTextInRect方法
+- (void)drawTextInRect:(CGRect)rect
+{
+    CGContextRef c = UIGraphicsGetCurrentContext();
+    // 设置描边宽度
+    CGContextSetLineWidth(c, 1);
+    CGContextSetLineJoin(c, kCGLineJoinRound);
+    CGContextSetTextDrawingMode(c, kCGTextStroke);
+    // 描边颜色
+    self.textColor = [UIColor redColor];
+    [super drawTextInRect:rect];
+    // 文本颜色
+    self.textColor = [UIColor yellowColor];
+    CGContextSetTextDrawingMode(c, kCGTextFill);
+    [super drawTextInRect:rect];
+}
+</code></pre>
+
+<h2 id="58layoutsubviews方法什么时候调用">58.layoutSubviews方法什么时候调用？</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1、init方法不会调用
+2、addSubview方法等时候会调用
+3、bounds改变的时候调用
+4、scrollView滚动的时候会调用scrollView的layoutSubviews方法(所以不建议在scrollView的layoutSubviews方法中做复杂逻辑)
+5、旋转设备的时候调用
+6、子视图被移除的时候调用
+</code></pre></div></div>
+
+<p><a href="http://blog.logichigh.com/2011/03/16/when-does-layoutsubviews-get-called/">http://blog.logichigh.com/2011/03/16/when-does-layoutsubviews-get-called/</a></p>
+
+<h2 id="59摇一摇">59.摇一摇</h2>
+
+<pre><code class="language-objective-c">// 1、打开摇一摇功能
+[UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
+// 2、让需要摇动的控制器成为第一响应者
+[self becomeFirstResponder];
+// 3、实现以下方法
+ 
+// 开始摇动
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+// 取消摇动
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
+// 摇动结束
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+</code></pre>
+
+<h2 id="60tableviewcell分割线顶到头">60.tableViewCell分割线顶到头</h2>
+
+<pre><code class="language-objective-c">- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setSeparatorInset:UIEdgeInsetsZero];
+    [cell setLayoutMargins:UIEdgeInsetsZero];
+    cell.preservesSuperviewLayoutMargins = NO;
+}
+ 
+- (void)viewDidLayoutSubviews {
+    [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    [self.tableView setLayoutMargins:UIEdgeInsetsZero];
+}
+</code></pre>
+
+<h2 id="61判断一个字符串是否包含另一个字符串的另外一种方法">61.判断一个字符串是否包含另一个字符串的另外一种方法</h2>
+
+<pre><code class="language-objective-c">[str1 rangeOfString:str2].length != 0 ? @"包含" : @"不包含";
+</code></pre>
+
+<h2 id="62没有用到类的成员变量的都写成类方法">62.没有用到类的成员变量的，都写成类方法</h2>
+
+<h2 id="63category可以用来调试">63.category可以用来调试</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 除了隐藏私有方法外，我主要用它截住函数。 
+// 例1：测试时我想知道TableViewCell有没有释放，就可以这样写 
+@implementation UITableViewCell(dealloc) 
+-(void)dealloc 
+{ 
+   NSLog(@"%@",NSStringFromSelector(_cmd)); 
+    NSArray *array = allSubviews(self); 		// allSubviews是cookBook里的函数，可以取一个view的所有subView ,在这个文档后面也有
+    NSLog(@"%@",array); 
+
+    [super dealloc]; 
+} 
+@end 
+// 其它的类也可以这样写，你随便输出什么 
+// 例2：我调试程序，觉得table的大小变了，想找到在哪改变的，这样做：
+ @implementation UITableView(setframe) 
+-(void)setFrame:(CGRect)frame 
+{ 
+   NSLog(%"%@",self); 
+    [super setFrame: frame]; 
+} 
+@end 
+</code></pre></div></div>
+
+<h2 id="64设置圆角和阴影要分层">64.设置圆角和阴影要分层</h2>
+
+<pre><code class="language-objective-c">CALayer *shadowLayer = [CALayer layer];
+shadowLayer.shadowColor = [UIColor blackColor].CGColor;
+shadowLayer.shadowOffset = CGSizeMake(0, 0);
+shadowLayer.shadowRadius = 5;
+shadowLayer.shadowOpacity = 1;
+shadowLayer.frame = self.bounds;
+shadowLayer.backgroundColor = [UIColor clearColor ].CGColor;
+shadowLayer.cornerRadius = 5;
+shadowLayer.borderColor = [UIColor whiteColor].CGColor;
+shadowLayer.borderWidth = 2.0;
+[self.layer addSublayer:shadowLayer];
+
+CALayer *borderLayer = [CALayer layer];
+borderLayer.cornerRadius = 5;
+borderLayer.masksToBounds = YES;
+borderLayer.frame = shadowLayer.bounds;
+[shadowLayer addSublayer:borderLayer];
+
+</code></pre>
+
+<h2 id="65关于时间的一些宏">65.关于时间的一些宏</h2>
+
+<p><strong>正确创建dispatch_time_t</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dispatch_time_t dispatch_time ( dispatch_time_t when, int64_t delta );
+</code></pre></div></div>
+
+<p>第一个参数一般是<strong>DISPATCH_TIME_NOW</strong>，表示从现在开始。</p>
+
+<p>那么第二个参数就是真正的延时的具体时间。</p>
+
+<p>这里要特别注意的是，<strong>delta</strong>参数是“<strong>纳秒</strong>！”，就是说，延时1秒的话，delta应该是“1000000000”=。=，太长了，所以理所当然系统提供了常量，如下：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#define NSEC_PER_SEC 1000000000ull
+#define USEC_PER_SEC 1000000ull
+#define NSEC_PER_USEC 1000ull
+
+NSEC：纳秒。
+USEC：微秒。
+SEC：秒
+PER：每
+
+
+所以：
+
+NSEC_PER_SEC，每秒有多少纳秒。
+USEC_PER_SEC，每秒有多少毫秒。（注意是指在纳秒的基础上）
+NSEC_PER_USEC，每毫秒有多少纳秒。
+
+所以，延时1秒可以写成如下几种：
+
+dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC);
+dispatch_time(DISPATCH_TIME_NOW, 1000 * USEC_PER_SEC);
+dispatch_time(DISPATCH_TIME_NOW, USEC_PER_SEC * NSEC_PER_USEC);
+
+最后一个“USEC_PER_SEC * NSEC_PER_USEC”，翻译过来就是“每秒的毫秒数乘以每毫秒的纳秒数”，也就是“每秒的纳秒数”，所以，延时500毫秒之类的，也就不难了吧~
+</code></pre></div></div>
+
+<h2 id="66uitabbarcontrollerd的viewcontrollers预加载">66.UITabBarControllerd的viewcontrollers预加载</h2>
+
+<p><code class="language-plaintext highlighter-rouge">UITabBarController</code>作为<code class="language-plaintext highlighter-rouge">ViewController</code>容器的时候，<code class="language-plaintext highlighter-rouge">TabBarController</code>显示后，只会默认load <code class="language-plaintext highlighter-rouge">TabBarController</code>的第一个<code class="language-plaintext highlighter-rouge">ViewController</code>（或者<code class="language-plaintext highlighter-rouge">selectedViewController</code>）的<code class="language-plaintext highlighter-rouge">View</code>.</p>
+
+<p>如果需要一开始就加载所有的<code class="language-plaintext highlighter-rouge">viewController</code>.可以调用<code class="language-plaintext highlighter-rouge">loadViewIfNeeded</code>.或者强制调用下 <code class="language-plaintext highlighter-rouge">loadVIew</code></p>
+
+<h2 id="67undeclared-selector-warning-警告处理">67.Undeclared selector warning 警告处理</h2>
+
+<p>比如调用_lookup: 这个私有方法，这时会报警告 Undeclared selector ‘_lookup:’，怎么去掉这个警告呢</p>
+
+<h3 id="第一种-忽略这个警告">第一种 忽略这个警告</h3>
+
+<pre><code class="language-objective-c">#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL sel = @selector(lookup:);
+#pragma clang diagnostic pop
+</code></pre>
+
+<h3 id="第二种-使用sel_registername">第二种 使用‘sel_registerName’</h3>
+
+<pre><code class="language-objective-c">SEL sel = sel_registerName(lookup:);
+</code></pre>
+
+:ET

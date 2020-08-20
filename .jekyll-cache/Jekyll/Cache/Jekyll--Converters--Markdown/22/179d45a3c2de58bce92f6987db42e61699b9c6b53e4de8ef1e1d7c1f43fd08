@@ -1,0 +1,384 @@
+I"��<ul id="markdown-toc">
+  <li><a href="#解释" id="markdown-toc-解释">解释</a></li>
+  <li><a href="#参考" id="markdown-toc-参考">参考</a></li>
+</ul>
+<hr />
+
+<h1 id="解释">解释</h1>
+
+<div class="language-nginx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 定义Nginx运行的用户和用户组 默认是nginx</span>
+<span class="k">user</span> <span class="s">www</span> <span class="s">www</span><span class="p">;</span>
+
+<span class="c1"># nginx进程数，建议设置为等于CPU总核心数。</span>
+<span class="k">worker_processes</span> <span class="mi">8</span><span class="p">;</span>
+
+<span class="c1"># 全局错误日志定义类型，[ debug | info | notice | warn | error | crit ]</span>
+<span class="k">error_log</span> <span class="nc">logs/error</span><span class="s">.log</span> <span class="s">info</span><span class="p">;</span>
+
+<span class="c1"># 进程pid文件，如果不设置 执行 nginx -s stop 时会找不到当前nginx进程</span>
+<span class="k">pid</span> <span class="nc">logs/nginx</span><span class="s">.pid</span><span class="p">;</span>
+
+<span class="c1"># 指定进程可以打开的最大描述符：数目</span>
+<span class="c1"># 工作模式与连接数上限</span>
+<span class="c1"># 这个指令是指当一个nginx进程打开的最多文件描述符数目，理论值应该是最多打开文件数（ulimit -n）与nginx进程数相除，但是nginx分配请求并不是那么均匀，所以最好与ulimit -n 的值保持一致。</span>
+<span class="c1"># 现在在linux 2.6内核下开启文件打开数为65535，worker_rlimit_nofile就相应应该填写65535。</span>
+<span class="c1"># 这是因为nginx调度时分配请求到进程并不是那么的均衡，所以假如填写10240，总并发量达到3-4万时就有进程可能超过10240了，这时会返回502错误。</span>
+<span class="k">worker_rlimit_nofile</span> <span class="mi">65535</span><span class="p">;</span>
+
+<span class="c1"># cpu亲和力配置，让不同的进程使用不同的cpu</span>
+<span class="k">worker_cpu_affinity</span> <span class="mi">0001</span> <span class="mi">0010</span> <span class="mi">0100</span> <span class="mi">1000</span> <span class="mi">0001</span> <span class="mi">00100100</span> <span class="mi">1000</span><span class="p">;</span>
+
+<span class="c1">#工作模式及连接数上限</span>
+<span class="k">events</span>
+<span class="p">{</span>
+  <span class="c1"># 参考事件模型，use [ kqueue | rtsig | epoll | /dev/poll | select | poll ]; epoll模型</span>
+  <span class="c1"># 是Linux 2.6以上版本内核中的高性能网络I/O模型，linux建议epoll，如果跑在FreeBSD上面，就用kqueue模型。</span>
+  <span class="c1"># 补充说明：</span>
+  <span class="c1"># 与apache相类，nginx针对不同的操作系统，有不同的事件模型</span>
+  <span class="c1"># A）标准事件模型</span>
+  <span class="c1"># Select、poll属于标准事件模型，如果当前系统不存在更有效的方法，nginx会选择select或poll</span>
+  <span class="c1"># B）高效事件模型</span>
+  <span class="c1"># Kqueue：使用于FreeBSD 4.1+, OpenBSD 2.9+, NetBSD 2.0 和 MacOS X.使用双处理器的MacOS X系统使用kqueue可能会造成内核崩溃。</span>
+  <span class="c1"># Epoll：使用于Linux内核2.6版本及以后的系统。</span>
+  <span class="c1"># /dev/poll：使用于Solaris 7 11/99+，HP/UX 11.22+ (eventport)，IRIX 6.5.15+ 和 Tru64 UNIX 5.1A+。</span>
+  <span class="c1"># Eventport：使用于Solaris 10。 为了防止出现内核崩溃的问题， 有必要安装安全补丁。</span>
+  <span class="kn">use</span> <span class="s">epoll</span><span class="p">;</span>
+
+  <span class="c1"># 单个进程最大连接数（最大连接数=连接数*进程数）</span>
+  <span class="c1"># 根据硬件调整，和前面工作进程配合起来用，尽量大，但是别把cpu跑到100%就行。每个进程允许的最多连接数，理论上每台nginx服务器的最大连接数为。</span>
+  <span class="kn">worker_connections</span> <span class="mi">65535</span><span class="p">;</span>
+
+  <span class="c1"># keepalive超时时间。</span>
+  <span class="kn">keepalive_timeout</span> <span class="mi">60</span><span class="p">;</span>
+
+  <span class="c1"># 客户端请求头部的缓冲区大小。这个可以根据你的系统分页大小来设置，一般一个请求头的大小不会超过1k，不过由于一般系统分页都要大于1k，所以这里设置为分页大小。</span>
+  <span class="c1"># 分页大小可以用命令getconf PAGESIZE 取得。</span>
+  <span class="c1"># [root@web001 ~]# getconf PAGESIZE</span>
+  <span class="c1"># 4096</span>
+  <span class="c1"># 但也有client_header_buffer_size超过4k的情况，但是client_header_buffer_size该值必须设置为“系统分页大小”的整倍数。</span>
+  <span class="kn">client_header_buffer_size</span> <span class="mi">4k</span><span class="p">;</span>
+
+  <span class="c1"># 这个将为打开文件指定缓存，默认是没有启用的，max指定缓存数量，建议和打开文件数一致，inactive是指经过多长时间文件没被请求后删除缓存。</span>
+  <span class="kn">open_file_cache</span> <span class="s">max=65535</span> <span class="s">inactive=60s</span><span class="p">;</span>
+
+  <span class="c1"># 这个是指多长时间检查一次缓存的有效信息。</span>
+  <span class="c1"># 语法:open_file_cache_valid time 默认值:open_file_cache_valid 60 使用字段:http, server, location 这个指令指定了何时需要检查open_file_cache中缓存项目的有效信息.</span>
+  <span class="kn">open_file_cache_valid</span> <span class="s">80s</span><span class="p">;</span>
+
+  <span class="c1"># open_file_cache指令中的inactive参数时间内文件的最少使用次数，如果超过这个数字，文件描述符一直是在缓存中打开的，如上例，如果有一个文件在inactive时间内一次没被使用，它将被移除。</span>
+  <span class="c1"># 语法:open_file_cache_min_uses number 默认值:open_file_cache_min_uses 1 使用字段:http, server, location  这个指令指定了在open_file_cache指令无效的参数中一定的时间范围内可以使用的最小文件数,如果使用更大的值,文件描述符在cache中总是打开状态.</span>
+  <span class="kn">open_file_cache_min_uses</span> <span class="mi">1</span><span class="p">;</span>
+
+  <span class="c1"># 语法:open_file_cache_errors on | off 默认值:open_file_cache_errors off 使用字段:http, server, location 这个指令指定是否在搜索一个文件是记录cache错误.</span>
+  <span class="kn">open_file_cache_errors</span> <span class="no">on</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="c1"># 设定http服务器，利用它的反向代理功能提供负载均衡支持</span>
+<span class="k">http</span>
+<span class="p">{</span>
+  <span class="c1"># 文件扩展名与文件类型映射表</span>
+  <span class="kn">include</span> <span class="s">mime.types</span><span class="p">;</span>
+
+  <span class="c1"># 默认文件类型</span>
+  <span class="kn">default_type</span> <span class="nc">application/octet-stream</span><span class="p">;</span>
+
+  <span class="c1"># 默认编码</span>
+  <span class="c1"># charset utf-8;</span>
+
+  <span class="c1"># 服务器名字的hash表大小</span>
+  <span class="c1"># 保存服务器名字的hash表是由指令server_names_hash_max_size 和server_names_hash_bucket_size所控制的。参数hash bucket size总是等于hash表的大小，并且是一路处理器缓存大小的倍数。在减少了在内存中的存取次数后，使在处理器中加速查找hash表键值成为可能。如果hash bucket size等于一路处理器缓存的大小，那么在查找键的时候，最坏的情况下在内存中查找的次数为2。第一次是确定存储单元的地址，第二次是在存储单元中查找键 值。因此，如果Nginx给出需要增大hash max size 或 hash bucket size的提示，那么首要的是增大前一个参数的大小.</span>
+  <span class="kn">server_names_hash_bucket_size</span> <span class="mi">128</span><span class="p">;</span>
+
+  <span class="c1"># 客户端请求头部的缓冲区大小。这个可以根据你的系统分页大小来设置，一般一个请求的头部大小不会超过1k，不过由于一般系统分页都要大于1k，所以这里设置为分页大小。分页大小可以用命令getconf PAGESIZE取得。</span>
+  <span class="kn">client_header_buffer_size</span> <span class="mi">32k</span><span class="p">;</span>
+
+  <span class="c1"># 客户请求头缓冲大小。nginx默认会用client_header_buffer_size这个buffer来读取header值，如果header过大，它会使用large_client_header_buffers来读取。</span>
+  <span class="kn">large_client_header_buffers</span> <span class="mi">4</span> <span class="mi">64k</span><span class="p">;</span>
+
+  <span class="c1"># 设定通过nginx上传文件的大小</span>
+  <span class="kn">client_max_body_size</span> <span class="mi">8m</span><span class="p">;</span>
+
+  <span class="c1"># 开启高效文件传输模式，sendfile指令指定nginx是否调用sendfile函数来输出文件，对于普通应用设为 on，如果用来进行下载等应用磁盘IO重负载应用，可设置为off，以平衡磁盘与网络I/O处理速度，降低系统的负载。注意：如果图片显示不正常把这个改成off。</span>
+  <span class="c1"># sendfile指令指定 nginx 是否调用sendfile 函数（zero copy 方式）来输出文件，对于普通应用，必须设为on。如果用来进行下载等应用磁盘IO重负载应用，可设置为off，以平衡磁盘与网络IO处理速度，降低系统uptime。</span>
+  <span class="kn">sendfile</span> <span class="no">on</span><span class="p">;</span>
+
+  <span class="c1"># 开启目录列表访问，合适下载服务器，默认关闭。</span>
+  <span class="kn">autoindex</span> <span class="no">on</span><span class="p">;</span>
+
+  <span class="c1"># 此选项允许或禁止使用socke的TCP_CORK的选项，此选项仅在使用sendfile的时候使用</span>
+  <span class="kn">tcp_nopush</span> <span class="no">on</span><span class="p">;</span>
+
+  <span class="kn">tcp_nodelay</span> <span class="no">on</span><span class="p">;</span>
+
+  <span class="c1"># 长连接超时时间，单位是秒</span>
+  <span class="kn">keepalive_timeout</span> <span class="mi">120</span><span class="p">;</span>
+
+  <span class="c1"># FastCGI相关参数是为了改善网站的性能：减少资源占用，提高访问速度。下面参数看字面意思都能理解。</span>
+  <span class="kn">fastcgi_connect_timeout</span> <span class="mi">300</span><span class="p">;</span>
+  <span class="kn">fastcgi_send_timeout</span> <span class="mi">300</span><span class="p">;</span>
+  <span class="kn">fastcgi_read_timeout</span> <span class="mi">300</span><span class="p">;</span>
+  <span class="kn">fastcgi_buffer_size</span> <span class="mi">64k</span><span class="p">;</span>
+  <span class="kn">fastcgi_buffers</span> <span class="mi">4</span> <span class="mi">64k</span><span class="p">;</span>
+  <span class="kn">fastcgi_busy_buffers_size</span> <span class="mi">128k</span><span class="p">;</span>
+  <span class="kn">fastcgi_temp_file_write_size</span> <span class="mi">128k</span><span class="p">;</span>
+
+  <span class="c1"># gzip模块设置</span>
+  <span class="kn">gzip</span> <span class="no">on</span><span class="p">;</span> <span class="c1"># 开启gzip压缩输出</span>
+  <span class="kn">gzip_min_length</span> <span class="mi">1k</span><span class="p">;</span> <span class="c1"># 最小压缩文件大小</span>
+  <span class="kn">gzip_buffers</span> <span class="mi">4</span> <span class="mi">16k</span><span class="p">;</span> <span class="c1"># 压缩缓冲区</span>
+  <span class="kn">gzip_http_version</span> <span class="mi">1</span><span class="s">.0</span><span class="p">;</span> <span class="c1"># 压缩版本（默认1.1，前端如果是squid2.5请使用1.0）</span>
+  <span class="kn">gzip_comp_level</span> <span class="mi">2</span><span class="p">;</span> <span class="c1"># 压缩等级</span>
+  <span class="kn">gzip_types</span> <span class="nc">text/plain</span> <span class="nc">application/x-javascript</span> <span class="nc">text/css</span> <span class="nc">application/xml</span><span class="p">;</span> <span class="c1"># 压缩类型，默认就已经包含textml，所以下面就不用再写了，写上去也不会有问题，但是会有一个warn。</span>
+  <span class="kn">gzip_vary</span> <span class="no">on</span><span class="p">;</span>
+
+  <span class="c1"># 开启限制IP连接数的时候需要使用</span>
+  <span class="c1"># limit_zone crawler $binary_remote_addr 10m;</span>
+
+  <span class="c1"># 负载均衡配置</span>
+  <span class="kn">upstream</span> <span class="s">piao.jd.com</span>
+  <span class="p">{</span>
+
+    <span class="c1"># upstream的负载均衡，weight是权重，可以根据机器配置定义权重。weigth参数表示权值，权值越高被分配到的几率越大。</span>
+    <span class="kn">server</span> <span class="nf">192.168.80.121</span><span class="p">:</span><span class="mi">80</span> <span class="s">weight=3</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="nf">192.168.80.122</span><span class="p">:</span><span class="mi">80</span> <span class="s">weight=2</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="nf">192.168.80.123</span><span class="p">:</span><span class="mi">80</span> <span class="s">weight=3</span><span class="p">;</span>
+
+    <span class="c1"># nginx的upstream目前支持4种方式的分配</span>
+    <span class="c1"># 1、轮询（默认）</span>
+    <span class="c1"># 每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。</span>
+    <span class="c1"># 2、weight</span>
+    <span class="c1"># 指定轮询几率，weight和访问比率成正比，用于后端服务器性能不均的情况。</span>
+    <span class="c1"># 例如：</span>
+    <span class="c1"># upstream bakend {</span>
+    <span class="c1">#     server 192.168.0.14 weight=10;</span>
+    <span class="c1">#     server 192.168.0.15 weight=10;</span>
+    <span class="c1"># }</span>
+    <span class="c1"># 2、ip_hash</span>
+    <span class="c1"># 每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。</span>
+    <span class="c1"># 例如：</span>
+    <span class="c1"># upstream bakend {</span>
+    <span class="c1">#     ip_hash;</span>
+    <span class="c1">#     server 192.168.0.14:88;</span>
+    <span class="c1">#     server 192.168.0.15:80;</span>
+    <span class="c1"># }</span>
+    <span class="c1"># 3、fair（第三方）</span>
+    <span class="c1"># 按后端服务器的响应时间来分配请求，响应时间短的优先分配。</span>
+    <span class="c1"># upstream backend {</span>
+    <span class="c1">#     server server1;</span>
+    <span class="c1">#     server server2;</span>
+    <span class="c1">#     fair;</span>
+    <span class="c1"># }</span>
+    <span class="c1"># 4、url_hash（第三方）</span>
+    <span class="c1"># 按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。</span>
+    <span class="c1"># 例：在upstream中加入hash语句，server语句中不能写入weight等其他的参数，hash_method是使用的hash算法</span>
+    <span class="c1"># upstream backend {</span>
+    <span class="c1">#     server squid1:3128;</span>
+    <span class="c1">#     server squid2:3128;</span>
+    <span class="c1">#     hash $request_uri;</span>
+    <span class="c1">#     hash_method crc32;</span>
+    <span class="c1"># }</span>
+
+    <span class="c1"># tips:</span>
+    <span class="c1"># upstream bakend{# 定义负载均衡设备的Ip及设备状态}{</span>
+    <span class="c1">#     ip_hash;</span>
+    <span class="c1">#     server 127.0.0.1:9090 down;</span>
+    <span class="c1">#     server 127.0.0.1:8080 weight=2;</span>
+    <span class="c1">#     server 127.0.0.1:6060;</span>
+    <span class="c1">#     server 127.0.0.1:7070 backup;</span>
+    <span class="c1"># }</span>
+    <span class="c1"># 在需要使用负载均衡的server中增加 proxy_pass http://bakend/;</span>
+    <span class="c1"># 每个设备的状态设置为:</span>
+    <span class="c1"># 1.down表示单前的server暂时不参与负载</span>
+    <span class="c1"># 2.weight为weight越大，负载的权重就越大。</span>
+    <span class="c1"># 3.max_fails：允许请求失败的次数默认为1.当超过最大次数时，返回proxy_next_upstream模块定义的错误</span>
+    <span class="c1"># 4.fail_timeout:max_fails次失败后，暂停的时间。</span>
+    <span class="c1"># 5.backup： 其它所有的非backup机器down或者忙的时候，请求backup机器。所以这台机器压力会最轻。</span>
+    <span class="c1"># nginx支持同时设置多组的负载均衡，用来给不用的server来使用。</span>
+    <span class="c1"># client_body_in_file_only设置为On 可以讲client post过来的数据记录到文件中用来做debug</span>
+    <span class="c1"># client_body_temp_path设置记录文件的目录 可以设置最多3层目录</span>
+    <span class="c1"># location对URL进行匹配.可以进行重定向或者进行新的代理 负载均衡</span>
+  <span class="p">}</span>
+
+
+  <span class="c1"># 虚拟主机的配置</span>
+  <span class="kn">server</span>
+  <span class="p">{</span>
+    <span class="c1"># 监听端口 也可以是1.2.3.4:80的形式</span>
+    <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+
+    <span class="c1"># 域名可以有多个，用空格隔开</span>
+    <span class="kn">server_name</span> <span class="s">www.jd.com</span> <span class="s">jd.com</span><span class="p">;</span>
+    <span class="kn">index</span> <span class="s">index.html</span> <span class="s">index.htm</span> <span class="s">index.php</span><span class="p">;</span>
+    <span class="kn">root</span> <span class="n">/data/www/jd</span><span class="p">;</span>
+    <span class="kn">error_page</span> <span class="mi">404</span> <span class="s">http://yourdomain.com/errors/404.html</span><span class="p">;</span>
+
+
+    <span class="c1"># ssl</span>
+    <span class="kn">ssl</span> <span class="no">on</span><span class="p">;</span> <span class="c1"># 开启ssl 默认值：ssl off 开启HTTPS。</span>
+    <span class="kn">ssl_certificate</span> <span class="n">/home/test/ssl/server.crt</span><span class="p">;</span> <span class="c1"># 服务的证书 为这个虚拟主机指定PEM格式的证书文件，一个文件可以包含其他的证书，同样，密钥也必须是PEM格式，0.6.7版本以后，这里的路径为相对于nginx.conf的路径，而不是编译时的prefix路径。</span>
+    <span class="kn">ssl_certificate_key</span> <span class="n">/home/test/ssl/server.key</span><span class="p">;</span> <span class="c1"># 服务端key 为这个虚拟主机指定PEM格式的密钥，0.6.7版本以后，这里的路径为相对于nginx.conf的路径，而不是编译时的prefix路径。</span>
+    <span class="kn">ssl_client_certificate</span> <span class="n">/home/test/ssl/ca.crt</span><span class="p">;</span> <span class="c1"># 指出PEM格式的证书认证文件，在检查客户端证书时使用。</span>
+    <span class="c1"># 由于nginx的ssl_client_certificate参数只能指定一个客户端公钥，如果增加一个客户端进行通信就要重新配一个server。</span>
+    <span class="c1"># n:1的模式是通过CA的级联证书模式实现的，首先自己生成一套CA根级证书，再借助其生成二级证书作为client证书。</span>
+    <span class="c1"># 此时client私钥签名不仅可以通过对应的client公钥验证，还可通过根证书的公钥进行验证。</span>
+
+
+    <span class="c1"># ssl_dhparam file;  # 指出PEM格式并带有Diffie-Hellman参数的文件，用于TLS会话。</span>
+    <span class="c1"># ssl_crl file # 指定一个PEM格式的证书吊销列表文件，用于检查客户端证书（0.8.7以后版本）</span>
+    <span class="kn">ssl_session_timeout</span> <span class="mi">5m</span><span class="p">;</span> <span class="c1"># 设置客户端能够反复使用储存在缓存中的会话参数时间。即session的超时时间</span>
+    <span class="kn">ssl_verify_client</span> <span class="no">on</span><span class="p">;</span> <span class="c1"># 启用客户端证书审核，参数“optional”在客户端主动提出时检查证书(0.8.7与0.7.63版本之前为"ask")。</span>
+
+    <span class="c1"># ssl_verify_depth 1;  # 设置客户证书认证链的长度。 默认1</span>
+
+    <span class="c1"># ssl_session_cache off|none|builtin:size and/or shared:name:size; # 设置储存SSL会话的缓存类型和大小。</span>
+    <span class="c1"># off - 强制关闭：nginx告诉客户端这个会话已经不能被再次使用。</span>
+    <span class="c1"># none - 非强制关闭：nginx告诉客户端这个会话可以被再次使用，但是nginx实际上并不使用它们，这是为某些使用ssl_session_cache的邮件客户端提供的一种变通方案，可以使用在邮件代理和HTTP服务器中。</span>
+    <span class="c1"># builtin - 内建OpenSSL缓存，仅能用在一个工作进程中，缓存大小在会话总数中指定，注意：如果要使用这个类型可能会引起内存碎片问题，具体请查看下文中参考文档。</span>
+    <span class="c1">#shared - 缓存在所有的工作进程中共享，缓存大小指定单位为字节，1MB缓存大概保存4000个会话，每个共享的缓存必须有自己的名称，相同名称的缓存可以使用在不同的虚拟主机中。</span>
+    <span class="c1"># 可以同时使用两个缓存类型，如：</span>
+    <span class="c1"># ssl_session_cache  builtin:1000  shared:SSL:10m;</span>
+    <span class="c1"># 然而，使用共享缓存而不适用内建缓存将更为有效。</span>
+    <span class="c1"># 0.8.34版本之前如果ssl_verify_client设置为'on'或者'optional'时这里必须设置为none或off</span>
+    <span class="kn">ssl_protocols</span> <span class="s">SSLv2</span> <span class="s">SSLv3</span> <span class="s">TLSv1</span><span class="p">;</span> <span class="c1"># 指定要使用的SSL协议。</span>
+    <span class="kn">ssl_ciphers</span> <span class="s">ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP</span><span class="p">;</span> <span class="c1"># 加密算法</span>
+    <span class="c1"># 指出允许的密码，密码指定为OpenSSL支持的格式，如：</span>
+    <span class="c1"># ssl_ciphers  ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;</span>
+    <span class="c1"># 使用下列命令查看完整格式列表：</span>
+    <span class="c1"># openssl ciphers</span>
+
+    <span class="kn">ssl_prefer_server_ciphers</span> <span class="no">on</span><span class="p">;</span> <span class="c1"># 启动加密算法,依赖SSLv3和TLSv1协议的服务器密码将优先于客户端密码。默认是off</span>
+
+    <span class="c1"># ssl_engine; 指定使用的OpenSSL引擎，如Padlock，需要比较新版本的OpenSSL。</span>
+
+    <span class="c1"># 对******进行负载均衡</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">.*.(php|php5)?$</span>
+    <span class="p">{</span>
+      <span class="kn">fastcgi_pass</span> <span class="nf">127.0.0.1</span><span class="p">:</span><span class="mi">9000</span><span class="p">;</span>
+      <span class="kn">fastcgi_index</span> <span class="s">index.php</span><span class="p">;</span>
+      <span class="kn">include</span> <span class="s">fastcgi.conf</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># 图片缓存时间设置</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">.*.(gif|jpg|jpeg|png|bmp|swf)$</span>
+    <span class="p">{</span>
+      <span class="kn">expires</span> <span class="s">10d</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># JS和CSS缓存时间设置</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">.*.(js|css)?$</span>
+    <span class="p">{</span>
+      <span class="kn">expires</span> <span class="s">1h</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># 日志格式设定</span>
+    <span class="c1"># $remote_addr与$http_x_forwarded_for用以记录客户端的ip地址；</span>
+    <span class="c1"># $remote_user：用来记录客户端用户名称；</span>
+    <span class="c1"># $time_local： 用来记录访问时间与时区；</span>
+    <span class="c1"># $request： 用来记录请求的url与http协议；</span>
+    <span class="c1"># $status： 用来记录请求状态；成功是200，</span>
+    <span class="c1"># $body_bytes_sent ：记录发送给客户端文件主体内容大小；</span>
+    <span class="c1"># $http_referer：用来记录从那个页面链接访问过来的；</span>
+    <span class="c1"># $http_user_agent：记录客户浏览器的相关信息；</span>
+    <span class="c1"># 通常web服务器放在反向代理的后面，这样就不能获取到客户的IP地址了，通过$remote_add拿到的IP地址是反向代理服务器的iP地址。反向代理服务器在转发请求的http头信息中，可以增加x_forwarded_for信息，用以记录原有客户端的IP地址和原来客户端的请求的服务器地址。</span>
+    <span class="kn">log_format</span> <span class="s">access</span> <span class="s">'</span><span class="nv">$remote_addr</span> <span class="s">-</span> <span class="nv">$remote_user</span> <span class="s">[</span><span class="nv">$time_local</span><span class="s">]</span> <span class="s">"</span><span class="nv">$request</span><span class="s">"</span> <span class="s">'</span>
+    <span class="s">'</span><span class="nv">$status</span> <span class="nv">$body_bytes_sent</span> <span class="s">"</span><span class="nv">$http_referer</span><span class="s">"</span> <span class="s">'</span>
+    <span class="s">'"</span><span class="nv">$http_user_agent</span><span class="s">"</span> <span class="nv">$http_x_forwarded_for</span><span class="s">'</span><span class="p">;</span>
+
+    <span class="c1"># 定义本虚拟主机的访问日志</span>
+    <span class="kn">access_log</span> <span class="nc">logs/host</span><span class="s">.access.log</span> <span class="s">main</span><span class="p">;</span>
+    <span class="kn">access_log</span> <span class="nc">logs/host</span><span class="s">.access.404.log</span> <span class="s">log404</span><span class="p">;</span>
+
+    <span class="c1"># 对 "/" 启用反向代理</span>
+    <span class="kn">location</span> <span class="n">/</span>
+    <span class="p">{</span>
+      <span class="kn">proxy_pass</span> <span class="s">http://127.0.0.1:88</span><span class="p">;</span>
+      <span class="kn">proxy_redirect</span> <span class="no">off</span><span class="p">;</span>
+      <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+
+      <span class="c1"># 后端的Web服务器可以通过X-Forwarded-For获取用户真实IP</span>
+      <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+
+      <span class="c1"># 以下是一些反向代理的配置，可选。</span>
+      <span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
+
+      <span class="c1"># 允许客户端请求的最大单文件字节数</span>
+      <span class="kn">client_max_body_size</span> <span class="mi">10m</span><span class="p">;</span>
+
+      <span class="c1"># 缓冲区代理缓冲用户端请求的最大字节数，</span>
+      <span class="c1"># 如果把它设置为比较大的数值，例如256k，那么，无论使用firefox还是IE浏览器，来提交任意小于256k的图片，都很正常。如果注释该指令，使用默认的client_body_buffer_size设置，也就是操作系统页面大小的两倍，8k或者16k，问题就出现了。</span>
+      <span class="c1"># 无论使用firefox4.0还是IE8.0，提交一个比较大，200k左右的图片，都返回500 Internal Server Error错误</span>
+      <span class="kn">client_body_buffer_size</span> <span class="mi">128k</span><span class="p">;</span>
+
+      <span class="c1"># 表示使nginx阻止HTTP应答代码为400或者更高的应答。</span>
+      <span class="kn">proxy_intercept_errors</span> <span class="no">on</span><span class="p">;</span>
+
+      <span class="c1"># 后端服务器连接的超时时间_发起握手等候响应超时时间</span>
+      <span class="c1"># nginx跟后端服务器连接超时时间(代理连接超时)</span>
+      <span class="kn">proxy_connect_timeout</span> <span class="mi">90</span><span class="p">;</span>
+
+      <span class="c1"># 后端服务器数据回传时间(代理发送超时)</span>
+      <span class="c1"># 后端服务器数据回传时间_就是在规定时间之内后端服务器必须传完所有的数据</span>
+      <span class="kn">proxy_send_timeout</span> <span class="mi">90</span><span class="p">;</span>
+
+      <span class="c1"># 连接成功后，后端服务器响应时间(代理接收超时)</span>
+      <span class="c1"># 连接成功后_等候后端服务器响应时间_其实已经进入后端的排队之中等候处理（也可以说是后端服务器处理请求的时间）</span>
+      <span class="kn">proxy_read_timeout</span> <span class="mi">90</span><span class="p">;</span>
+
+      <span class="c1"># 设置代理服务器（nginx）保存用户头信息的缓冲区大小</span>
+      <span class="c1"># 设置从被代理服务器读取的第一部分应答的缓冲区大小，通常情况下这部分应答中包含一个小的应答头，默认情况下这个值的大小为指令proxy_buffers中指定的一个缓冲区的大小，不过可以将其设置为更小</span>
+      <span class="kn">proxy_buffer_size</span> <span class="mi">4k</span><span class="p">;</span>
+
+      <span class="c1"># proxy_buffers缓冲区，网页平均在32k以下的设置</span>
+      <span class="c1"># 设置用于读取应答（来自被代理服务器）的缓冲区数目和大小，默认情况也为分页大小，根据操作系统的不同可能是4k或者8k</span>
+      <span class="kn">proxy_buffers</span> <span class="mi">4</span> <span class="mi">32k</span><span class="p">;</span>
+
+      <span class="c1"># 高负荷下缓冲大小（proxy_buffers*2）</span>
+      <span class="kn">proxy_busy_buffers_size</span> <span class="mi">64k</span><span class="p">;</span>
+
+      <span class="c1"># 设置在写入proxy_temp_path时数据的大小，预防一个工作进程在传递文件时阻塞太长</span>
+      <span class="c1"># 设定缓存文件夹大小，大于这个值，将从upstream服务器传</span>
+      <span class="kn">proxy_temp_file_write_size</span> <span class="mi">64k</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+    <span class="c1"># 设定查看Nginx状态的地址</span>
+    <span class="kn">location</span> <span class="n">/NginxStatus</span>
+    <span class="p">{</span>
+      <span class="kn">stub_status</span> <span class="no">on</span><span class="p">;</span>
+      <span class="kn">access_log</span> <span class="no">on</span><span class="p">;</span>
+      <span class="kn">auth_basic</span> <span class="s">"NginxStatus"</span><span class="p">;</span>
+      <span class="kn">auth_basic_user_file</span> <span class="s">confpasswd</span><span class="p">;</span>
+      <span class="c1"># htpasswd文件的内容可以用apache提供的htpasswd工具来产生。</span>
+    <span class="p">}</span>
+
+    <span class="c1"># 本地动静分离反向代理配置</span>
+    <span class="c1"># 所有jsp的页面均交由tomcat或resin处理</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">.(jsp|jspx|do)?$</span>
+    <span class="p">{</span>
+      <span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$host</span><span class="p">;</span>
+      <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+      <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-For</span> <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+      <span class="kn">proxy_pass</span> <span class="s">http://127.0.0.1:8080</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1"># 所有静态文件由nginx直接读取不经过tomcat或resin</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">.*.(htm|html|gif|jpg|jpeg|png|bmp|swf|ioc|rar|zip|txt|flv|mid|doc|ppt|</span>
+    <span class="s">pdf|xls|mp3|wma)</span>$
+    <span class="p">{</span>
+      <span class="kn">expires</span> <span class="s">15d</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">.*.(js|css)?$</span>
+    <span class="p">{</span>
+      <span class="kn">expires</span> <span class="s">1h</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h1 id="参考">参考</h1>
+
+<p><a href="http://shouce.jb51.net/nginx/OptionalHTTPmodules/SSL.html">http://shouce.jb51.net/nginx/OptionalHTTPmodules/SSL.html</a></p>
+:ET

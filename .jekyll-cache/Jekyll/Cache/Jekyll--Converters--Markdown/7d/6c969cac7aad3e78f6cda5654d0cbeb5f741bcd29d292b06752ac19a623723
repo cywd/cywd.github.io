@@ -1,0 +1,63 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#include--和-include-" id="markdown-toc-include--和-include-">#include “” 和 #include &lt;&gt;</a></li>
+  <li><a href="#import--和-import--" id="markdown-toc-import--和-import--">#import “” 和 #import &lt; &gt;</a></li>
+  <li><a href="#import" id="markdown-toc-import">@import</a></li>
+  <li><a href="#class" id="markdown-toc-class">@class</a></li>
+  <li><a href="#总结" id="markdown-toc-总结">总结</a></li>
+  <li><a href="#参考" id="markdown-toc-参考">参考</a></li>
+</ul>
+<hr />
+
+<h2 id="include--和-include-">#include “” 和 #include &lt;&gt;</h2>
+
+<p><code class="language-plaintext highlighter-rouge">#include "xxx.h"</code>:它用于对系统自带的头文件的引用,编译器会在系统文件目录下去查找该文件.</p>
+
+<p><code class="language-plaintext highlighter-rouge">#include &lt;xxx.h&gt;</code>用户自定义的文件用双引号引用,编译器首先会在用户目录下查找,然后到安装目录中查找,最后在系统文件中查找。</p>
+
+<p><strong>在使用<code class="language-plaintext highlighter-rouge">#include</code>的时候要注意处理重复引用 <em>(这也是objc中#include与#import的区别)</em></strong></p>
+
+<p>这样处理在编译时就不会有重复引用的错误出现</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#ifndef _CLASSC_H
+
+#define _CLASSC_H
+
+#include "ClassC"
+
+#endif
+</code></pre></div></div>
+
+<h2 id="import--和-import--">#import “” 和 #import &lt; &gt;</h2>
+
+<p><code class="language-plaintext highlighter-rouge">#import</code>大部分功能和<code class="language-plaintext highlighter-rouge">#include</code>是一样的,但是他处理了重复引用的问题,我们在引用文件的时候不用再去自己进行重复引用处理.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">#import</code>比起<code class="language-plaintext highlighter-rouge">#include</code>的好处就是不会引起交叉编译。</strong></p>
+
+<h2 id="import">@import</h2>
+
+<p>iOS7新关键字。</p>
+
+<p>使用<code class="language-plaintext highlighter-rouge">@import</code>的最大好处之一是当需要使用某个苹果自己的框架时，再也不需要在项目的<code class="language-plaintext highlighter-rouge">setting</code>中做 “点击’+’号按钮搜索依赖框架添加” 这样的操作了，<code class="language-plaintext highlighter-rouge">@import</code>内部会自动实现这个过程。这样我们就可以使用代码完成以前需要在图形界面完成的动作。苹果又为开发者做出了改进。但是目前使用<code class="language-plaintext highlighter-rouge">@import</code>仅适用于苹果自己的框架，当在项目中想使用<code class="language-plaintext highlighter-rouge">@import</code>导入自己搭建的框架或者第三方框架时，是无效的。</p>
+
+<p>以前写程序导入系统头文件的时候都这么写<code class="language-plaintext highlighter-rouge">#import , </code>现在你多了一种选择， 你可以这么写:</p>
+
+<p><code class="language-plaintext highlighter-rouge">@import Cocoa;</code> 并且免去了添加框架的操作.</p>
+
+<p>实际开发中上可能并不需要使用<code class="language-plaintext highlighter-rouge">@import</code>关键字。如果你选择使用”modules”(Xcode5中默认开启)，所有的<code class="language-plaintext highlighter-rouge">#import</code> 和 <code class="language-plaintext highlighter-rouge">#include</code>指令都会自动映射使用<code class="language-plaintext highlighter-rouge">@import</code>。</p>
+
+<h2 id="class">@class</h2>
+
+<p><code class="language-plaintext highlighter-rouge">import</code>会包含这个类的所有信息，包括实体变量和方法（.h文件中），而<code class="language-plaintext highlighter-rouge">@class</code>只是告诉编译器，其后面声明的名称是类的名称，至于这些类是如何定义的，后面会再告诉你。</p>
+
+<p>在头文件中， 我们一般只需要知道被引用的类的名称就可以了。 不需要知道其内部的实体变量和方法，所以在头文件中一般使用<code class="language-plaintext highlighter-rouge">@class</code>来声明这个名称是类的名称。 而在实现类里面，因为会用到这个引用类的内部的实体变量和方法，所以需要使用<code class="language-plaintext highlighter-rouge">#import</code>来包含这个被引用类的头文件。</p>
+
+<h2 id="总结">总结</h2>
+
+<p>一般来说，导入<code class="language-plaintext highlighter-rouge">objective-c</code>的头文件时用<code class="language-plaintext highlighter-rouge">#import</code>，包含<code class="language-plaintext highlighter-rouge">c/c++</code>头文件时用<code class="language-plaintext highlighter-rouge">#include</code>。</p>
+
+<p>头文件里一般使用<code class="language-plaintext highlighter-rouge">@class</code>。引入系统的头文件时可以使用<code class="language-plaintext highlighter-rouge">@import</code>。</p>
+
+<h2 id="参考">参考</h2>
+
+<p><a href="http://stackoverflow.com/questions/18947516/import-vs-import-ios-7">(http://stackoverflow.com/questions/18947516/import-vs-import-ios-7)</a></p>
+:ET

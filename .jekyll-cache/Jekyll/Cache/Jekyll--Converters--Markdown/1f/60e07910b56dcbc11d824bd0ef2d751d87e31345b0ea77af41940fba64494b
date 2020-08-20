@@ -1,0 +1,8 @@
+I"�<hr />
+
+<p>在升级到Xcode9 遇到以下错误：<code class="language-plaintext highlighter-rouge">Compiling IB documents for earlier than iOS 7 is no longer supported</code></p>
+
+<p>将<code class="language-plaintext highlighter-rouge">Builds for</code> 选项设置为iOS10 以后就OK了。</p>
+
+<p>参考：<a href="https://stackoverflow.com/questions/44429415/illegal-configuration-compiling-ib-documents-for-earlier-than-ios-7-is-no-longe">stackoverflow</a></p>
+:ET

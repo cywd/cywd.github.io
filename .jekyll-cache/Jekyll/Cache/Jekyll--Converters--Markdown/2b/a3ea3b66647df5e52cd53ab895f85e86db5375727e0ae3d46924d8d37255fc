@@ -1,0 +1,381 @@
+I"�H<ul id="markdown-toc">
+  <li><a href="#重装系统" id="markdown-toc-重装系统">重装系统</a></li>
+  <li><a href="#新系统配置开发环境" id="markdown-toc-新系统配置开发环境">新系统配置开发环境</a>    <ul>
+      <li><a href="#最先的一些配置" id="markdown-toc-最先的一些配置">最先的一些配置</a></li>
+      <li><a href="#xcode" id="markdown-toc-xcode">Xcode</a></li>
+      <li><a href="#一些常用软件" id="markdown-toc-一些常用软件">一些常用软件</a>        <ul>
+          <li><a href="#qq-微信" id="markdown-toc-qq-微信">QQ 微信</a></li>
+          <li><a href="#paste-2" id="markdown-toc-paste-2">Paste 2</a></li>
+          <li><a href="#app-icon-gear" id="markdown-toc-app-icon-gear">App Icon Gear</a></li>
+          <li><a href="#status-barred" id="markdown-toc-status-barred">Status Barred</a></li>
+          <li><a href="#sip" id="markdown-toc-sip">Sip</a></li>
+          <li><a href="#iconkit" id="markdown-toc-iconkit">IconKit</a></li>
+          <li><a href="#keynote-numbers-pages" id="markdown-toc-keynote-numbers-pages">Keynote Numbers Pages</a></li>
+          <li><a href="#the-unarchiver" id="markdown-toc-the-unarchiver">The Unarchiver</a></li>
+          <li><a href="#有道词典" id="markdown-toc-有道词典">有道词典</a></li>
+          <li><a href="#网易云音乐" id="markdown-toc-网易云音乐">网易云音乐</a></li>
+          <li><a href="#handshaker" id="markdown-toc-handshaker">HandShaker</a></li>
+          <li><a href="#蓝灯" id="markdown-toc-蓝灯">蓝灯</a></li>
+          <li><a href="#typora" id="markdown-toc-typora">Typora</a></li>
+          <li><a href="#reveal-4" id="markdown-toc-reveal-4">Reveal 4</a></li>
+          <li><a href="#dash" id="markdown-toc-dash">Dash</a></li>
+          <li><a href="#ifunboxmac" id="markdown-toc-ifunboxmac">ifunboxmac</a></li>
+          <li><a href="#mindnode" id="markdown-toc-mindnode">MindNode</a></li>
+          <li><a href="#office" id="markdown-toc-office">Office</a></li>
+          <li><a href="#photoshop-ai" id="markdown-toc-photoshop-ai">Photoshop AI</a></li>
+        </ul>
+      </li>
+      <li><a href="#iterm2--oh-my-zsh" id="markdown-toc-iterm2--oh-my-zsh">iTerm2 + oh my zsh</a></li>
+      <li><a href="#homebrew" id="markdown-toc-homebrew">Homebrew</a></li>
+      <li><a href="#git" id="markdown-toc-git">Git</a></li>
+      <li><a href="#cocoapods" id="markdown-toc-cocoapods">CocoaPods</a></li>
+      <li><a href="#python3" id="markdown-toc-python3">Python3</a></li>
+      <li><a href="#mysql" id="markdown-toc-mysql">mysql</a></li>
+      <li><a href="#各种编辑器" id="markdown-toc-各种编辑器">各种编辑器</a>        <ul>
+          <li><a href="#sublime" id="markdown-toc-sublime">Sublime</a></li>
+          <li><a href="#visualcode" id="markdown-toc-visualcode">VisualCode</a></li>
+          <li><a href="#atom" id="markdown-toc-atom">Atom</a></li>
+          <li><a href="#textmate" id="markdown-toc-textmate">TextMate</a></li>
+          <li><a href="#android-studio" id="markdown-toc-android-studio">Android Studio</a></li>
+          <li><a href="#webstorm" id="markdown-toc-webstorm">WebStorm</a></li>
+          <li><a href="#pycharm" id="markdown-toc-pycharm">PyCharm</a></li>
+          <li><a href="#unity" id="markdown-toc-unity">Unity</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h1 id="重装系统">重装系统</h1>
+
+<p>开机的时候按住 <code class="language-plaintext highlighter-rouge">Command + R</code>，直到出现苹果标及进度条。</p>
+
+<p>进入恢复模式之后，可以先格式化磁盘，然后选第二项安装系统，前提是要先联接上Wi-Fi，然后等着就行的，有进度时间提示，根据每个人网速不同时间不定。整个进度都走完会进入系统，由于我是格式化了磁盘，所以会提示进行各种设置，都设置完就可以进入系统了，新的一样。</p>
+
+<h1 id="新系统配置开发环境">新系统配置开发环境</h1>
+
+<h2 id="最先的一些配置">最先的一些配置</h2>
+
+<p>打开”安全性与隐私”中”任何来源”选项.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo spctl --master-disable
+</code></pre></div></div>
+
+<p>显示所有隐藏文件</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defaults write com.apple.finder AppleShowAllFiles YES
+</code></pre></div></div>
+
+<h2 id="xcode">Xcode</h2>
+
+<p>这个不多说，第一个安装毫无疑问。<code class="language-plaintext highlighter-rouge">App Store</code> 下载即可。就是时间比较久。</p>
+
+<h2 id="一些常用软件">一些常用软件</h2>
+
+<p>由于<code class="language-plaintext highlighter-rouge">Xcode</code>比较大安装比较慢，期间我会安装一些常用的软件</p>
+
+<h3 id="qq-微信">QQ 微信</h3>
+
+<p>不多说，可以从官网或者<code class="language-plaintext highlighter-rouge">App Store</code> 下载。</p>
+
+<h3 id="paste-2">Paste 2</h3>
+
+<p>可以查看复制的历史记录的软件。很好用。个人从 App Store 下载。</p>
+
+<h3 id="app-icon-gear">App Icon Gear</h3>
+
+<p>生成<code class="language-plaintext highlighter-rouge"> 1x 2x 3x </code>图片 和<code class="language-plaintext highlighter-rouge"> Launch Image </code>。 开发时会用到。</p>
+
+<h3 id="status-barred">Status Barred</h3>
+
+<p>去掉带状态条的截屏图片中的状态条。</p>
+
+<h3 id="sip">Sip</h3>
+
+<p>取色器，还挺好用的</p>
+
+<h3 id="iconkit">IconKit</h3>
+
+<p>生成 <code class="language-plaintext highlighter-rouge">iOS Mac</code> 的 应用图标。平时要求不太严格的时候还挺好用的。要求严格找设计吧。</p>
+
+<h3 id="keynote-numbers-pages">Keynote Numbers Pages</h3>
+
+<p>办公软件</p>
+
+<h3 id="the-unarchiver">The Unarchiver</h3>
+
+<p>解压RAR的</p>
+
+<h3 id="有道词典">有道词典</h3>
+
+<p>用来查单词</p>
+
+<h3 id="网易云音乐">网易云音乐</h3>
+
+<p>超级好的歌单和评论。</p>
+
+<h3 id="handshaker">HandShaker</h3>
+
+<p>锤子出品的安卓手机传输软件。</p>
+
+<h3 id="蓝灯">蓝灯</h3>
+
+<p><code class="language-plaintext highlighter-rouge">github</code>上找。不多说。</p>
+
+<h3 id="typora">Typora</h3>
+
+<p>网上搜。用来写<code class="language-plaintext highlighter-rouge">Markdown</code>，个人用着还习惯。</p>
+
+<h3 id="reveal-4">Reveal 4</h3>
+
+<p>可以去 <a href="http://www.sdifen.com">史蒂芬周的博客</a> 找。个人硬盘备份。</p>
+
+<h3 id="dash">Dash</h3>
+
+<p><a href="http://www.sdifen.com">史蒂芬周的博客</a> 找</p>
+
+<h3 id="ifunboxmac">ifunboxmac</h3>
+
+<p><a href="http://www.i-funbox.com/en_download.html">官网</a>下载</p>
+
+<h3 id="mindnode">MindNode</h3>
+
+<p>思维导图</p>
+
+<h3 id="office">Office</h3>
+
+<p>不得不装，适应周边大环境。虽然个人觉得 Pages 什么的更好用。</p>
+
+<h3 id="photoshop-ai">Photoshop AI</h3>
+
+<p>偶尔用来切个图</p>
+
+<h2 id="iterm2--oh-my-zsh">iTerm2 + oh my zsh</h2>
+
+<p>谁用谁知道。</p>
+
+<p>先安装<code class="language-plaintext highlighter-rouge">iTerm2</code></p>
+
+<p><a href="http://www.iterm2.com">iTerm2官网</a></p>
+
+<p><a href="http://www.iterm2.com/downloads.html">下载</a></p>
+
+<p>安装<code class="language-plaintext highlighter-rouge">oh my zsh</code></p>
+
+<p><a href="http://ohmyz.sh">oh my zsh官网</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">curl</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">wget</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh <span class="nt">-O</span> -<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">curl</code>在<code class="language-plaintext highlighter-rouge">command line tools</code>安装之后，就会有。</p>
+
+<p><code class="language-plaintext highlighter-rouge">cURL</code> <a href="https://curl.haxx.se">官网</a></p>
+
+<p>安装<code class="language-plaintext highlighter-rouge">command line tools</code>，安装完Xcode会有，或者也可以</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xcode-select <span class="nt">--install</span>
+</code></pre></div></div>
+
+<p>然后会有提示。点击安装就可以。</p>
+
+<p>而<code class="language-plaintext highlighter-rouge">wget</code>可以通过<code class="language-plaintext highlighter-rouge">homebrew</code>安装</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>wget
+</code></pre></div></div>
+
+<p>或者</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-O</span> http://ftp.gnu.org/gnu/wget/wget-1.13.4.tar.gz
+
+<span class="nb">tar </span>xzvf wget-1.13.4.tar.gz
+<span class="nb">cd </span>wget-1.13.4
+./configure <span class="nt">--with-ssl</span><span class="o">=</span>openssl
+<span class="nb">sudo </span>make
+<span class="nb">sudo </span>make <span class="nb">install
+</span>which wget <span class="c">#Should output: /usr/local/bin/wge</span>
+</code></pre></div></div>
+
+<p>配色、主题和插件</p>
+
+<p>配色采用<a href="http://ethanschoonover.com/solarized">solarized</a></p>
+
+<p>打开<code class="language-plaintext highlighter-rouge">iTerm2</code>的偏好设置，<code class="language-plaintext highlighter-rouge">Profiles -&gt; Colors</code> 选择 <code class="language-plaintext highlighter-rouge">Solarized Dark</code>。</p>
+
+<p>主题采用<code class="language-plaintext highlighter-rouge">agnoster</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
+</code></pre></div></div>
+
+<p>打开后找到<code class="language-plaintext highlighter-rouge">ZSH_THEME="robbyrussell"</code>修改为<code class="language-plaintext highlighter-rouge">ZSH_THEME="agnoster"</code></p>
+
+<p>这个时候会出现乱码 <code class="language-plaintext highlighter-rouge">？</code></p>
+
+<p>不要担心，是因为没有配套的字体。</p>
+
+<p><code class="language-plaintext highlighter-rouge">Powerline</code>字体下载安装</p>
+
+<p><code class="language-plaintext highlighter-rouge">clone</code>到随便的位置，<code class="language-plaintext highlighter-rouge">cd</code>到<code class="language-plaintext highlighter-rouge">fonts</code>目录，执行 <code class="language-plaintext highlighter-rouge">install.sh</code>。这样字体就都安装了。</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/powerline/fonts.git
+<span class="nb">cd </span>fonts
+./install.sh
+</code></pre></div></div>
+
+<p>接着可以到<code class="language-plaintext highlighter-rouge">iTerm2</code>偏好设置中，找到修改字体的选项，修改字体为后缀带有<code class="language-plaintext highlighter-rouge">powerline</code>的字体。<code class="language-plaintext highlighter-rouge">？</code>是不是没有了。</p>
+
+<p>接着安装插件，注意插件有很多，不过安装的插件越多程序反应会越慢。</p>
+
+<p>这里我们只安装一个插件 <a href="https://github.com/zsh-users/zsh-syntax-highlighting.git">zsh-syntax-highlighting</a></p>
+
+<p>执行</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+</code></pre></div></div>
+
+<p>接着再</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi ~/.zshrc
+</code></pre></div></div>
+
+<p>打开后找到</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">plugins</span><span class="o">=(</span> <span class="o">[</span>已有插件]  zsh-syntax-highlighting <span class="o">)</span>
+</code></pre></div></div>
+
+<p>source 一下 使其生效。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.zshrc
+</code></pre></div></div>
+
+<h2 id="homebrew">Homebrew</h2>
+
+<p><a href="https://brew.sh">官网</a></p>
+
+<p>安装(Install)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></pre></div></div>
+
+<p>安装 <code class="language-plaintext highlighter-rouge">tree</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>tree
+</code></pre></div></div>
+
+<h2 id="git">Git</h2>
+
+<p>安装<code class="language-plaintext highlighter-rouge">command line tools</code>就有了。当然也可以自己安装。</p>
+
+<p>说下个人<code class="language-plaintext highlighter-rouge">Git</code>的配置</p>
+
+<p>别名</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config <span class="nt">--global</span> alias.co checkout
+git config <span class="nt">--global</span> alias.br branch
+git config <span class="nt">--global</span> alias.ci <span class="s2">"commit -m"</span>
+git config <span class="nt">--global</span> alias.s status
+git config <span class="nt">--global</span> alias.p push
+</code></pre></div></div>
+
+<h2 id="cocoapods">CocoaPods</h2>
+
+<p>安装<code class="language-plaintext highlighter-rouge">rvm</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -L https://get.rvm.io | bash -s stable
+</code></pre></div></div>
+
+<p>安装<code class="language-plaintext highlighter-rouge">rails</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install rails
+</code></pre></div></div>
+
+<p>安装<code class="language-plaintext highlighter-rouge">CocoaPods</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install -n /usr/local/bin cocoapods
+</code></pre></div></div>
+
+<p>然后</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod setup
+</code></pre></div></div>
+
+<h2 id="python3">Python3</h2>
+
+<p>安装</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>Python3
+</code></pre></div></div>
+
+<h2 id="mysql">mysql</h2>
+
+<p><a href="https://www.mysql.com">官网</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Mac OS </code>系统的<code class="language-plaintext highlighter-rouge">MySQL</code>的版本：<code class="language-plaintext highlighter-rouge">MySQL Community Server (GPL)</code>，在下载页面提供有两种格式的文件下载,一种为<code class="language-plaintext highlighter-rouge">tar.gz</code>格式，另一种为<code class="language-plaintext highlighter-rouge">dmg</code>格式，这里推荐<code class="language-plaintext highlighter-rouge">dmg</code>格式。</p>
+
+<p>一路安装。中间会有个弹框，请记住里面的密码 （是<code class="language-plaintext highlighter-rouge">mysql root </code>账户默认的密码）</p>
+
+<p>安装好以后，去系统的偏好设置里找到<code class="language-plaintext highlighter-rouge">mysql</code>，开启<code class="language-plaintext highlighter-rouge">mysql</code>服务。</p>
+
+<p>此时我们在命令行输入<code class="language-plaintext highlighter-rouge">mysql -u root -p</code>命令会提示<code class="language-plaintext highlighter-rouge">commod not found</code>，我们还需要将<code class="language-plaintext highlighter-rouge">mysq</code>l加入系统环境变量。</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/
+<span class="c"># 分别打开.zshrc 和 .profile</span>
+vim ./.zshrc 
+vim ./.profile
+</code></pre></div></div>
+
+<p>添加</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Add Mysql to PATH for scripting.</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PATH</span><span class="s2">:/usr/local/mysql/bin"</span> 
+</code></pre></div></div>
+
+<p>source 一下 使其生效</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.profile
+<span class="nb">source</span> ~/.zshrc 
+</code></pre></div></div>
+
+<p>现在你就可以通过<code class="language-plaintext highlighter-rouge">mysql -u root -p</code>登录<code class="language-plaintext highlighter-rouge">mysql</code>了，会让你输入密码，就是之前记下来那一串。</p>
+
+<p>登陆成功后，可以更改密码</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SET PASSWORD FOR 'root'@'localhost' = PASSWORD('你想要设置的新密码');
+</code></pre></div></div>
+
+<p>也可以使用<code class="language-plaintext highlighter-rouge"> homebrew</code>安装 <code class="language-plaintext highlighter-rouge">mysql</code>，这里就不说了。</p>
+
+<h2 id="各种编辑器">各种编辑器</h2>
+
+<h3 id="sublime">Sublime</h3>
+
+<h3 id="visualcode">VisualCode</h3>
+
+<h3 id="atom">Atom</h3>
+
+<h3 id="textmate">TextMate</h3>
+
+<h3 id="android-studio">Android Studio</h3>
+
+<p>写Android的</p>
+
+<h3 id="webstorm">WebStorm</h3>
+
+<p>不多说</p>
+
+<h3 id="pycharm">PyCharm</h3>
+
+<p>个人用来写Python项目</p>
+
+<h3 id="unity">Unity</h3>
+
+<p>不多说</p>
+
+:ET

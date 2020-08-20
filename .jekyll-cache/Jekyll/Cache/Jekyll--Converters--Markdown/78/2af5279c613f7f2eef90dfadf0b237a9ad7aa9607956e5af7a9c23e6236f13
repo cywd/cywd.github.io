@@ -1,0 +1,138 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#1nil" id="markdown-toc-1nil">1.nil</a>    <ul>
+      <li><a href="#objch中的定义" id="markdown-toc-objch中的定义"><code class="language-plaintext highlighter-rouge">objc.h</code>中的定义</a></li>
+      <li><a href="#作用指向一个对象的指针为空" id="markdown-toc-作用指向一个对象的指针为空">作用：指向一个对象的指针为空.</a></li>
+      <li><a href="#在objective-c中用于id类型的对象" id="markdown-toc-在objective-c中用于id类型的对象">在Objective-C中用于id类型的对象</a></li>
+    </ul>
+  </li>
+  <li><a href="#2nil" id="markdown-toc-2nil">2.Nil</a>    <ul>
+      <li><a href="#objch中的定义-1" id="markdown-toc-objch中的定义-1"><code class="language-plaintext highlighter-rouge">objc.h</code>中的定义</a></li>
+      <li><a href="#作用指向一个对象的指针为空-1" id="markdown-toc-作用指向一个对象的指针为空-1">作用：指向一个对象的指针为空.</a></li>
+      <li><a href="#在objective-c中用于class类型的对象" id="markdown-toc-在objective-c中用于class类型的对象">在Objective-C中用于Class类型的对象</a></li>
+    </ul>
+  </li>
+  <li><a href="#3null" id="markdown-toc-3null">3.NULL</a>    <ul>
+      <li><a href="#stddefh里include-sys_types_nullh的定义" id="markdown-toc-stddefh里include-sys_types_nullh的定义"><code class="language-plaintext highlighter-rouge">stddef.h</code>里<code class="language-plaintext highlighter-rouge">#include &lt;sys/_types/_null.h&gt;</code>的定义</a></li>
+      <li><a href="#作用" id="markdown-toc-作用">作用</a></li>
+      <li><a href="#例子" id="markdown-toc-例子">例子</a></li>
+    </ul>
+  </li>
+  <li><a href="#4nsnull" id="markdown-toc-4nsnull">4.NSNull</a>    <ul>
+      <li><a href="#在nsnullh里只有一个类方法" id="markdown-toc-在nsnullh里只有一个类方法">在<code class="language-plaintext highlighter-rouge">NSNull.h</code>里只有一个类方法</a></li>
+      <li><a href="#作用用来表示空值的-objective-c-对象通常表示集合中的空值" id="markdown-toc-作用用来表示空值的-objective-c-对象通常表示集合中的空值">作用：用来表示空值的 Objective-C 对象(通常表示集合中的空值.)</a></li>
+      <li><a href="#例子-1" id="markdown-toc-例子-1">例子</a></li>
+      <li><a href="#为什么上面array里面的空对象不直接用nil" id="markdown-toc-为什么上面array里面的空对象不直接用nil">为什么上面<code class="language-plaintext highlighter-rouge">array</code>里面的空对象不直接用<code class="language-plaintext highlighter-rouge">nil</code>？</a></li>
+    </ul>
+  </li>
+  <li><a href="#5总结" id="markdown-toc-5总结">5.总结</a></li>
+</ul>
+<hr />
+
+<h2 id="1nil">1.nil</h2>
+
+<h3 id="objch中的定义"><code class="language-plaintext highlighter-rouge">objc.h</code>中的定义</h3>
+
+<pre><code class="language-objective-c">#ifndef nil
+# if __has_feature(cxx_nullptr)
+#   define nil nullptr
+# else
+#   define nil __DARWIN_NULL
+# endif
+#endif
+</code></pre>
+
+<h3 id="作用指向一个对象的指针为空">作用：指向一个对象的指针为空.</h3>
+
+<h3 id="在objective-c中用于id类型的对象">在Objective-C中用于id类型的对象</h3>
+
+<pre><code class="language-objective-c">NSString *name = nil;
+NSURL    *url  = nil;
+id object      = nil;
+</code></pre>
+
+<h2 id="2nil">2.Nil</h2>
+
+<h3 id="objch中的定义-1"><code class="language-plaintext highlighter-rouge">objc.h</code>中的定义</h3>
+
+<pre><code class="language-objective-c">#ifndef Nil
+# if __has_feature(cxx_nullptr)
+#   define Nil nullptr
+# else
+#   define Nil __DARWIN_NULL
+# endif
+#endif
+</code></pre>
+
+<h3 id="作用指向一个对象的指针为空-1">作用：指向一个对象的指针为空.</h3>
+
+<h3 id="在objective-c中用于class类型的对象">在Objective-C中用于Class类型的对象</h3>
+
+<pre><code class="language-objective-c">Class aClass = Nil;
+Clsss bClass = [NSURL class];
+</code></pre>
+
+<h2 id="3null">3.NULL</h2>
+
+<h3 id="stddefh里include-sys_types_nullh的定义"><code class="language-plaintext highlighter-rouge">stddef.h</code>里<code class="language-plaintext highlighter-rouge">#include &lt;sys/_types/_null.h&gt;</code>的定义</h3>
+
+<pre><code class="language-objective-c">#ifndef NULL 
+#define NULL  __DARWIN_NULL
+#endif  /* NULL */
+</code></pre>
+
+<p>其中<code class="language-plaintext highlighter-rouge">__DARWIN_NULL</code>的定义在<code class="language-plaintext highlighter-rouge">usr/include/sys/__types.h </code>里</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#ifdef __cplusplus
+#  ifdef __GNUG__
+#    define __DARWIN_NULL __null
+#  else /* ! __GNUG__ */
+#    ifdef __LP64__
+#      define __DARWIN_NULL (0L)
+#    else /* !__LP64__ */
+#      define __DARWIN_NULL 0
+#    endif /* __LP64__ */
+#  endif /* __GNUG__ */
+#else /* ! __cplusplus */
+#  define __DARWIN_NULL ((void *)0)
+#endif /* __cplusplus */
+</code></pre></div></div>
+
+<h3 id="作用">作用</h3>
+
+<p>指向其他类型（如：基本类型、C类型）的指针为空.</p>
+
+<p><strong>NULL 一般用于表示 C 指针空值</strong></p>
+
+<h3 id="例子">例子</h3>
+
+<pre><code class="language-objective-c">int   *pInt     = NULL;
+char  *chChar   = NULL;
+struct stStruct = NULL;
+</code></pre>
+
+<h2 id="4nsnull">4.NSNull</h2>
+
+<h3 id="在nsnullh里只有一个类方法">在<code class="language-plaintext highlighter-rouge">NSNull.h</code>里只有一个类方法</h3>
+
+<pre><code class="language-objective-c">+ (NSNull *)null;
+</code></pre>
+
+<h3 id="作用用来表示空值的-objective-c-对象通常表示集合中的空值">作用：用来表示空值的 Objective-C 对象(通常表示集合中的空值.)</h3>
+
+<h3 id="例子-1">例子</h3>
+
+<pre><code class="language-objective-c">NSArray *array = [NSArray arrayWithObjects:[[NSObject alloc] init], [NSNull null], [[NSObject alloc] init], [[NSObject alloc] init], nil];
+</code></pre>
+
+<h3 id="为什么上面array里面的空对象不直接用nil">为什么上面<code class="language-plaintext highlighter-rouge">array</code>里面的空对象不直接用<code class="language-plaintext highlighter-rouge">nil</code>？</h3>
+
+<pre><code class="language-objective-c">NSArray *array = [NSArray arrayWithObjects:[[NSObject alloc] init], nil,  [[NSObject alloc] init], [[NSObject alloc] init], nil];
+</code></pre>
+
+<p>那么数组到第二个位置就会结束。打印<code class="language-plaintext highlighter-rouge">[array count]</code>的话会显示1而不是4,
+所以<code class="language-plaintext highlighter-rouge">[NSNull null]</code>通常可以作为一个数组的占位符，从而使数组的count计算准确。</p>
+
+<h2 id="5总结">5.总结</h2>
+
+<p>不管是 <code class="language-plaintext highlighter-rouge">NULL</code>、<code class="language-plaintext highlighter-rouge">nil</code> 还是 <code class="language-plaintext highlighter-rouge">Nil</code>，它们本质上是一样的，都是 <code class="language-plaintext highlighter-rouge">(void *)0</code>，只是写法不同。这样做的意义是为了区分不同的数据类型，虽然它们值相同，但我们需要理解它们之间的字面意义并用于不同场景，让代码更加明确，增加可读性。</p>
+:ET

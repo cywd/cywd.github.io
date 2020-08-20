@@ -1,0 +1,132 @@
+I"{<ul id="markdown-toc">
+  <li><a href="#1安装cocoapods顺序" id="markdown-toc-1安装cocoapods顺序">1.安装cocoapods顺序</a></li>
+  <li><a href="#2安装及问题" id="markdown-toc-2安装及问题">2.安装及问题</a>    <ul>
+      <li><a href="#安装homebrew" id="markdown-toc-安装homebrew">安装homebrew</a></li>
+      <li><a href="#安装rvm" id="markdown-toc-安装rvm">安装rvm</a></li>
+      <li><a href="#ruby" id="markdown-toc-ruby">ruby</a></li>
+      <li><a href="#安装cocoapods" id="markdown-toc-安装cocoapods">安装cocoapods</a></li>
+    </ul>
+  </li>
+  <li><a href="#关于pod-setup-特别慢的问题" id="markdown-toc-关于pod-setup-特别慢的问题">关于pod setup 特别慢的问题</a></li>
+</ul>
+<hr />
+
+<h2 id="1安装cocoapods顺序">1.安装cocoapods顺序</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Xcode-&gt;homebrew-&gt;RVM-&gt;Ruby-&gt;CocoaPods
+</code></pre></div></div>
+
+<h2 id="2安装及问题">2.安装及问题</h2>
+
+<p>查看gcc版本</p>
+
+<p><code class="language-plaintext highlighter-rouge">gcc --version</code></p>
+
+<h3 id="安装homebrew">安装homebrew</h3>
+
+<p><code class="language-plaintext highlighter-rouge">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></p>
+
+<p>如果出现问题请：</p>
+
+<p>homebrew 修复问题</p>
+
+<p><code class="language-plaintext highlighter-rouge">brew doctor</code></p>
+
+<p>homebrew升级</p>
+
+<p><code class="language-plaintext highlighter-rouge">brew update</code></p>
+
+<p>更新连接</p>
+
+<p><code class="language-plaintext highlighter-rouge">brew install autoconf</code></p>
+
+<h3 id="安装rvm">安装rvm</h3>
+
+<p><code class="language-plaintext highlighter-rouge">curl -L  https://get.rvm.io | bash -s stable</code></p>
+
+<p>安装ralis</p>
+
+<p><code class="language-plaintext highlighter-rouge">gem install rails</code></p>
+
+<p>ruby的版本号过低</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ERROR:  Error installing cocoapods:
+activesupport requires Ruby version &gt;= 2.2.2.
+</code></pre></div></div>
+
+<h3 id="ruby">ruby</h3>
+
+<p>查看ruby的版本</p>
+
+<p><code class="language-plaintext highlighter-rouge">ruby -v</code></p>
+
+<p>查看已经安装的ruby版本</p>
+
+<p><code class="language-plaintext highlighter-rouge">rvm list</code></p>
+
+<p>查看所有可用的ruby</p>
+
+<p><code class="language-plaintext highlighter-rouge">rvm list known</code></p>
+
+<p>设置默认ruby</p>
+
+<p><code class="language-plaintext highlighter-rouge">rvm 2.3.0 --default</code></p>
+
+<p>移除ruby原生源</p>
+
+<p><code class="language-plaintext highlighter-rouge"> gem source -r https://rubygems.org/</code></p>
+
+<p>添加ruby社区源</p>
+
+<p><code class="language-plaintext highlighter-rouge"> gem source -a https://gems.ruby-china.org/</code></p>
+
+<p>查看源</p>
+
+<p><code class="language-plaintext highlighter-rouge">gem sources -l</code></p>
+
+<p>更新rvm文档</p>
+
+<p><code class="language-plaintext highlighter-rouge">rvm docs generate-ri</code></p>
+
+<h3 id="安装cocoapods">安装cocoapods</h3>
+
+<p><code class="language-plaintext highlighter-rouge">sudo gem install -n /usr/local/bin cocoapods</code></p>
+
+<p>如果有错误出现这个的时候</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ERROR:  While executing gem ... (TypeError)
+    no implicit conversion of nil into String
+</code></pre></div></div>
+
+<p>请更新gem</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo gem update --system</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo gem install cocoapods</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo gem install -n /usr/local/bin cocoapods</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">pod setup</code></p>
+
+<p>查看pod版本</p>
+
+<p><code class="language-plaintext highlighter-rouge">pod --version</code></p>
+
+<h2 id="关于pod-setup-特别慢的问题">关于pod setup 特别慢的问题</h2>
+
+<p>可以用 GitHub Desktop</p>
+
+<p>1.访问 <a href="https://github.com/CocoaPods/Specs">https://github.com/CocoaPods/Specs</a>，然后将Specs项目fork到自己的github账户上</p>
+<ol>
+  <li>用GitHub Desktop, 然后clone Specs项目。</li>
+  <li>将clone的Specs项目的文件夹改名为master，然后拖到/Users/用户名/.cocoapods/repos目录下。</li>
+  <li>运行pod setup</li>
+</ol>
+
+<p>关于cocoapods的使用</p>
+
+<p>不更新Specs的pod install 速度会快</p>
+
+<p><code class="language-plaintext highlighter-rouge">pod install --verbose --no-repo-update</code></p>
+
+:ET

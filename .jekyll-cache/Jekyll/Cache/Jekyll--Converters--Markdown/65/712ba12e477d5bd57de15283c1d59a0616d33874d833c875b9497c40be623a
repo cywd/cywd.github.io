@@ -1,0 +1,184 @@
+I"=<ul id="markdown-toc">
+  <li><a href="#1nullability" id="markdown-toc-1nullability">1.Nullability</a>    <ul>
+      <li><a href="#添加了一些新的关键字" id="markdown-toc-添加了一些新的关键字">添加了一些新的关键字.</a></li>
+      <li><a href="#举例" id="markdown-toc-举例">举例</a></li>
+    </ul>
+  </li>
+  <li><a href="#2泛型" id="markdown-toc-2泛型">2.泛型</a>    <ul>
+      <li><a href="#用法" id="markdown-toc-用法">用法</a></li>
+      <li><a href="#自定泛型" id="markdown-toc-自定泛型">自定泛型</a></li>
+      <li><a href="#协变性与逆变性" id="markdown-toc-协变性与逆变性">协变性与逆变性</a></li>
+    </ul>
+  </li>
+  <li><a href="#3_kindof" id="markdown-toc-3_kindof">3._kindof</a></li>
+</ul>
+<hr />
+
+<h2 id="1nullability">1.Nullability</h2>
+
+<h3 id="添加了一些新的关键字">添加了一些新的关键字.</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">关键字</th>
+      <th style="text-align: center">作用描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">nonnull / __nonnull / _Nonnull</td>
+      <td style="text-align: center">不可为空</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">nullable / __nullable / _Nullable</td>
+      <td style="text-align: center">可以为空     nullable更多的作用在于程序员之间的沟通交流(提醒同事某个属性可能是nil)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">null_unspecified</td>
+      <td style="text-align: center">不确定是否可以为空(极少情况)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">null_resettable</td>
+      <td style="text-align: center">set方法可以为nil，get方法不可返回nil,</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">NS_ASSUME_NONNULL_BEGIN  NS_ASSUME_NONNULL_END</td>
+      <td style="text-align: center">二者之间的所有属性都是  __nonnull</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="举例">举例</h3>
+
+<pre><code class="language-objective-c">@property (nonnull, copy, nonatomic) NSString *title;
+@property (nullable, copy, nonatomic) NSString *authur;
+@property (null_unspecified, copy, nonatomic) NSString *name;
+@property (null_resettable, copy, nonatomic) NSString *age;
+@property (nonatomic, strong, nullable) NSArray *names;
+@property (nonatomic, strong) NSArray * __nullable ages;
+// 错误写法
+//@property (nonatomic, assign, nullable) int age;
+
+// 在调用方法传nil的时候会有警告。
+- (void)setValue:(NSNumber * _Nonnull )number{   
+}
+- (void)setValue:(NSNumber * __nonnull )number{   
+}
+- (void)setValue:(nonnull NSNumber * )number{   
+}
+
+// NS_ASSUME_NONNULL_BEGIN  NS_ASSUME_NONNULL_END  之间的所有属性都是  __nonnull
+NS_ASSUME_NONNULL_BEGIN
+@interface ViewController ()
+@property (nonatomic, strong) NSArray *a1;
+@property (nonatomic, strong) NSArray *a2;
+@property (nonatomic, strong) NSArray *a3;
+@property (nonatomic, strong) NSArray *a4;
+@property (nonatomic, strong) NSArray *a5;
+@end
+NS_ASSUME_NONNULL_END
+</code></pre>
+
+<h2 id="2泛型">2.泛型</h2>
+
+<h3 id="用法">用法</h3>
+
+<pre><code class="language-objective-c">// 声明了这样一个数组后，就好比我告诉了编译器，这个数组中的数据类型都是NSString *类型的，如果我这个数组中元素的方法，会有提示了.
+NSMutableArray&lt;NSString *&gt; *array = [[NSMutableArray alloc] init];
+// 在我们向这个数组中追加元素的时候，编译器将元素的类型提示了出来，并且将FromArray方法中需要的元素类型也提示了出来。
+// 同样如果我们向这个数组中追加类型不匹配的元素,会有警告。
+</code></pre>
+
+<h3 id="自定泛型">自定泛型</h3>
+
+<pre><code class="language-objective-c">// 这个Type其实只是一个类型标识符，它具体怎么写并不重要，只是系统中都约定使用了Type.
+@interface Bag&lt;Type&gt; : NSObject
+
+@property (strong, nonatomic) Type typeObj;
+@property (nonatomic, strong, nonnull) NSMutableArray&lt;Type&gt; *array;
+@property (nonatomic, strong, nonnull) NSMutableArray&lt;UIView *&gt; *viewArray;
+@property (strong, nonatomic) NSMutableDictionary&lt;NSString *, NSNumber *&gt; *dict;
+
+- (void)add:(nonnull Type)object;
+- (Type)get:(int)index;
+
+@end
+</code></pre>
+
+<h3 id="协变性与逆变性">协变性与逆变性</h3>
+
+<pre><code class="language-objective-c">Bag&lt;NSString *&gt; *bagt1;
+Bag&lt;NSMutableString *&gt; *bagt2;
+
+bagt1 = bagt2; // 这里如果我们这样写，强行转换，会报警告，就有了逆变和协变这个概念
+</code></pre>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">关键字</th>
+      <th style="text-align: center">作用描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">__covariant</td>
+      <td style="text-align: center">子类型指针可以向父类型指针转换</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">__contravariant</td>
+      <td style="text-align: center">父类型指针可以向子类型转换</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>我们将自定义的类做如下修改，就不会出现警告了</p>
+
+<pre><code class="language-objective-c">@interface Bag&lt;__covariant Type&gt; : NSObject
+  
+@property (strong, nonatomic) Type typeObj;
+@property (nonatomic, strong, nonnull) NSMutableArray&lt;Type&gt; *array;
+@property (nonatomic, strong, nonnull) NSMutableArray&lt;UIView *&gt; *viewArray;
+@property (strong, nonatomic) NSMutableDictionary&lt;NSString *, NSNumber *&gt; *dict;
+
+- (void)add:(nonnull Type)object;
+- (Type)get:(int)index;
+
+@end
+</code></pre>
+
+<h2 id="3_kindof">3._kindof</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">关键字</th>
+      <th style="text-align: center">作用描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">__kindof</td>
+      <td style="text-align: center">告诉编译器，这里可以返回<code class="language-plaintext highlighter-rouge">Type类型</code>的子类指针</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-objective-c">- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    UIButton *btn;
+    Bag *bag = [[Bag alloc] init];
+    [bag.viewArray addObject:btn];
+    
+    // 这里会有警告，说类型不对
+    UIButton *button = [bag.viewArray firstObject];
+}
+</code></pre>
+
+<p>以前需要强转，现在只需要这样，加上<code class="language-plaintext highlighter-rouge">__kindof</code>警告就没了</p>
+
+<pre><code class="language-objective-c">@property (nonatomic, strong, nonnull) NSMutableArray&lt;__kindof UIView *&gt; *viewArray;
+</code></pre>
+:ET

@@ -1,0 +1,730 @@
+I"��<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#current-version" id="markdown-toc-current-version">Current Version</a></li>
+  <li><a href="#schema" id="markdown-toc-schema">Schema</a>    <ul>
+      <li><a href="#summary-representations" id="markdown-toc-summary-representations">Summary Representations</a></li>
+      <li><a href="#detailed-representations" id="markdown-toc-detailed-representations">Detailed Representations</a></li>
+    </ul>
+  </li>
+  <li><a href="#parameters" id="markdown-toc-parameters">Parameters</a></li>
+  <li><a href="#root-endpoint" id="markdown-toc-root-endpoint">Root Endpoint</a></li>
+  <li><a href="#client-errors" id="markdown-toc-client-errors">Client Errors</a></li>
+  <li><a href="#http-redirects" id="markdown-toc-http-redirects">HTTP Redirects</a></li>
+  <li><a href="#http-verbs" id="markdown-toc-http-verbs">HTTP Verbs</a></li>
+  <li><a href="#authentication" id="markdown-toc-authentication">Authentication</a>    <ul>
+      <li><a href="#basic-authentication" id="markdown-toc-basic-authentication">Basic Authentication</a></li>
+      <li><a href="#oauth2-token-sent-in-a-header" id="markdown-toc-oauth2-token-sent-in-a-header">OAuth2 Token (sent in a header)</a></li>
+      <li><a href="#oauth2-token-sent-as-a-parameter" id="markdown-toc-oauth2-token-sent-as-a-parameter">OAuth2 Token (sent as a parameter)</a></li>
+      <li><a href="#oauth2-keysecret" id="markdown-toc-oauth2-keysecret">OAuth2 Key/Secret</a></li>
+      <li><a href="#failed-login-limit" id="markdown-toc-failed-login-limit">Failed login limit</a></li>
+    </ul>
+  </li>
+  <li><a href="#hypermedia" id="markdown-toc-hypermedia">Hypermedia</a></li>
+  <li><a href="#pagination" id="markdown-toc-pagination">Pagination</a>    <ul>
+      <li><a href="#link-header" id="markdown-toc-link-header">Link Header</a></li>
+    </ul>
+  </li>
+  <li><a href="#rate-limiting" id="markdown-toc-rate-limiting">Rate Limiting</a>    <ul>
+      <li><a href="#increasing-the-unauthenticated-rate-limit-for-oauth-applications" id="markdown-toc-increasing-the-unauthenticated-rate-limit-for-oauth-applications">Increasing the unauthenticated rate limit for OAuth applications</a></li>
+      <li><a href="#staying-within-the-rate-limit" id="markdown-toc-staying-within-the-rate-limit">Staying within the rate limit</a></li>
+      <li><a href="#abuse-rate-limits" id="markdown-toc-abuse-rate-limits">Abuse rate limits</a></li>
+    </ul>
+  </li>
+  <li><a href="#user-agent-required" id="markdown-toc-user-agent-required">User Agent Required</a></li>
+  <li><a href="#conditional-requests" id="markdown-toc-conditional-requests">Conditional requests</a></li>
+  <li><a href="#cross-origin-resource-sharing" id="markdown-toc-cross-origin-resource-sharing">Cross Origin Resource Sharing</a></li>
+  <li><a href="#json-p-callbacks" id="markdown-toc-json-p-callbacks">JSON-P Callbacks</a></li>
+  <li><a href="#timezones" id="markdown-toc-timezones">Timezones</a>    <ul>
+      <li><a href="#explicitly-provide-an-iso-8601-timestamp-with-timezone-information" id="markdown-toc-explicitly-provide-an-iso-8601-timestamp-with-timezone-information">Explicitly provide an ISO 8601 timestamp with timezone information</a></li>
+      <li><a href="#using-the-time-zone-header" id="markdown-toc-using-the-time-zone-header">Using the <code class="language-plaintext highlighter-rouge">Time-Zone</code> header</a></li>
+      <li><a href="#using-the-last-known-timezone-for-the-user" id="markdown-toc-using-the-last-known-timezone-for-the-user">Using the last known timezone for the user</a></li>
+      <li><a href="#utc" id="markdown-toc-utc">UTC</a></li>
+    </ul>
+  </li>
+</ul>
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>This describes the resources that make up the official GitHub REST API v3. If you have any problems or requests please contact <a href="https://github.com/contact?form%5Bsubject%5D=APIv3">support</a>.</p>
+
+<ul>
+  <li><a href="https://developer.github.com/v3/#current-version">Current Version</a></li>
+  <li><a href="https://developer.github.com/v3/#schema">Schema</a></li>
+  <li><a href="https://developer.github.com/v3/#parameters">Parameters</a></li>
+  <li><a href="https://developer.github.com/v3/#root-endpoint">Root Endpoint</a></li>
+  <li><a href="https://developer.github.com/v3/#client-errors">Client Errors</a></li>
+  <li><a href="https://developer.github.com/v3/#http-redirects">HTTP Redirects</a></li>
+  <li><a href="https://developer.github.com/v3/#http-verbs">HTTP Verbs</a></li>
+  <li><a href="https://developer.github.com/v3/#authentication">Authentication</a></li>
+  <li><a href="https://developer.github.com/v3/#hypermedia">Hypermedia</a></li>
+  <li><a href="https://developer.github.com/v3/#pagination">Pagination</a></li>
+  <li><a href="https://developer.github.com/v3/#rate-limiting">Rate Limiting</a></li>
+  <li><a href="https://developer.github.com/v3/#user-agent-required">User Agent Required</a></li>
+  <li><a href="https://developer.github.com/v3/#conditional-requests">Conditional requests</a></li>
+  <li><a href="https://developer.github.com/v3/#cross-origin-resource-sharing">Cross Origin Resource Sharing</a></li>
+  <li><a href="https://developer.github.com/v3/#json-p-callbacks">JSON-P Callbacks</a></li>
+  <li><a href="https://developer.github.com/v3/#timezones">Timezones</a></li>
+</ul>
+
+<h2 id="current-version">Current Version</h2>
+
+<p>By default, all requests to <code class="language-plaintext highlighter-rouge">https://api.github.com</code> receive the <strong>v3</strong> <a href="https://developer.github.com/v3/versions">version</a> of the REST API. We encourage you to <a href="https://developer.github.com/v3/media/#request-specific-version">explicitly request this version via the <code class="language-plaintext highlighter-rouge">Accept</code> header</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Accept: application/vnd.github.v3+json
+</code></pre></div></div>
+
+<p>For information about GitHub’s GraphQL API v4, see the <a href="https://developer.github.com/v4">v4 documentation</a>.</p>
+
+<h2 id="schema">Schema</h2>
+
+<p>All API access is over HTTPS, and accessed from the <code class="language-plaintext highlighter-rouge">https://api.github.com</code>. All data is sent and received as JSON.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com/users/octocat/orgs
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 12 Oct 2012 23:33:14 GMT
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Status: 200 OK
+ETag: "a00049ba79152d03380c34652f2cb612"
+X-GitHub-Media-Type: github.v3
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4987
+X-RateLimit-Reset: 1350085394
+Content-Length: 5
+Cache-Control: max-age=0, private, must-revalidate
+X-Content-Type-Options: nosniff
+</code></pre></div></div>
+
+<p>Blank fields are included as <code class="language-plaintext highlighter-rouge">null</code> instead of being omitted.</p>
+
+<p>All timestamps return in ISO 8601 format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>YYYY-MM-DDTHH:MM:SSZ
+</code></pre></div></div>
+
+<p>For more information about time zones in timestamps, see <a href="https://developer.github.com/v3/#timezones">this section</a>.</p>
+
+<h3 id="summary-representations">Summary Representations</h3>
+
+<p>When you fetch a list of resources, the response includes a <em>subset</em> of the attributes for that resource. This is the “summary” representation of the resource. (Some attributes are computationally expensive for the API to provide. For performance reasons, the summary representation excludes those attributes. To obtain those attributes, fetch the “detailed” representation.)</p>
+
+<p><strong>Example</strong>: When you get a list of repositories, you get the summary representation of each repository. Here, we fetch the list of repositories owned by the <a href="https://github.com/octokit">octokit</a> organization:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /orgs/octokit/repos
+</code></pre></div></div>
+
+<h3 id="detailed-representations">Detailed Representations</h3>
+
+<p>When you fetch an individual resource, the response typically includes <em>all</em> attributes for that resource. This is the “detailed” representation of the resource. (Note that authorization sometimes influences the amount of detail included in the representation.)</p>
+
+<p><strong>Example</strong>: When you get an individual repository, you get the detailed representation of the repository. Here, we fetch the <a href="https://github.com/octokit/octokit.rb">octokit/octokit.rb</a> repository:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /repos/octokit/octokit.rb
+</code></pre></div></div>
+
+<p>The documentation provides an example response for each API method. The example response illustrates all attributes that are returned by that method.</p>
+
+<h2 id="parameters">Parameters</h2>
+
+<p>Many API methods take optional parameters. For GET requests, any parameters not specified as a segment in the path can be passed as an HTTP query string parameter:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i "https://api.github.com/repos/vmg/redcarpet/issues?state=closed"
+
+</code></pre></div></div>
+
+<p>In this example, the ‘vmg’ and ‘redcarpet’ values are provided for the <code class="language-plaintext highlighter-rouge">:owner</code> and <code class="language-plaintext highlighter-rouge">:repo</code>parameters in the path while <code class="language-plaintext highlighter-rouge">:state</code> is passed in the query string.</p>
+
+<p>For POST, PATCH, PUT, and DELETE requests, parameters not included in the URL should be encoded as JSON with a Content-Type of ‘application/json’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i -u username -d '{"scopes":["public_repo"]}' https://api.github.com/authorizations
+
+</code></pre></div></div>
+
+<h2 id="root-endpoint">Root Endpoint</h2>
+
+<p>You can issue a <code class="language-plaintext highlighter-rouge">GET</code> request to the root endpoint to get all the endpoint categories that the REST API v3 supports:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://api.github.com
+
+</code></pre></div></div>
+
+<h2 id="client-errors">Client Errors</h2>
+
+<p>There are three possible types of client errors on API calls that receive request bodies:</p>
+
+<ol>
+  <li>
+    <p>Sending invalid JSON will result in a <code class="language-plaintext highlighter-rouge">400 Bad Request</code> response.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Length: 35
+
+{"message":"Problems parsing JSON"}
+
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Sending the wrong type of JSON values will result in a <code class="language-plaintext highlighter-rouge">400 Bad Request</code> response.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Length: 40
+
+{"message":"Body should be a JSON object"}
+
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Sending invalid fields will result in a <code class="language-plaintext highlighter-rouge">422 Unprocessable Entity</code> response.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 422 Unprocessable Entity
+Content-Length: 149
+
+{
+  "message": "Validation Failed",
+  "errors": [
+    {
+      "resource": "Issue",
+      "field": "title",
+      "code": "missing_field"
+    }
+  ]
+}
+
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>All error objects have resource and field properties so that your client can tell what the problem is. There’s also an error code to let you know what is wrong with the field. These are the possible validation error codes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Error Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">missing</code></td>
+      <td>This means a resource does not exist.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">missing_field</code></td>
+      <td>This means a required field on a resource has not been set.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">invalid</code></td>
+      <td>This means the formatting of a field is invalid. The documentation for that resource should be able to give you more specific information.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">already_exists</code></td>
+      <td>This means another resource has the same value as this field. This can happen in resources that must have some unique key (such as Label names).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Resources may also send custom validation errors (where <code class="language-plaintext highlighter-rouge">code</code> is <code class="language-plaintext highlighter-rouge">custom</code>). Custom errors will always have a <code class="language-plaintext highlighter-rouge">message</code> field describing the error, and most errors will also include a <code class="language-plaintext highlighter-rouge">documentation_url</code> field pointing to some content that might help you resolve the error.</p>
+
+<h2 id="http-redirects">HTTP Redirects</h2>
+
+<p>API v3 uses HTTP redirection where appropriate. Clients should assume that any request may result in a redirection. Receiving an HTTP redirection is <em>not</em> an error and clients should follow that redirect. Redirect responses will have a <code class="language-plaintext highlighter-rouge">Location</code> header field which contains the URI of the resource to which the client should repeat the requests.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">301</code></td>
+      <td>Permanent redirection. The URI you used to make the request has been superseded by the one specified in the <code class="language-plaintext highlighter-rouge">Location</code> header field. This and all future requests to this resource should be directed to the new URI.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">302</code>, <code class="language-plaintext highlighter-rouge">307</code></td>
+      <td>Temporary redirection. The request should be repeated verbatim to the URI specified in the <code class="language-plaintext highlighter-rouge">Location</code> header field but clients should continue to use the original URI for future requests.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Other redirection status codes may be used in accordance with the HTTP 1.1 spec.</p>
+
+<h2 id="http-verbs">HTTP Verbs</h2>
+
+<p>Where possible, API v3 strives to use appropriate HTTP verbs for each action.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Verb</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HEAD</code></td>
+      <td>Can be issued against any resource to get just the HTTP header info.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+      <td>Used for retrieving resources.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+      <td>Used for creating resources.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PATCH</code></td>
+      <td>Used for updating resources with partial JSON data. For instance, an Issue resource has <code class="language-plaintext highlighter-rouge">title</code> and <code class="language-plaintext highlighter-rouge">body</code> attributes. A PATCH request may accept one or more of the attributes to update the resource. PATCH is a relatively new and uncommon HTTP verb, so resource endpoints also accept <code class="language-plaintext highlighter-rouge">POST</code> requests.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PUT</code></td>
+      <td>Used for replacing resources or collections. For <code class="language-plaintext highlighter-rouge">PUT</code> requests with no <code class="language-plaintext highlighter-rouge">body</code>attribute, be sure to set the <code class="language-plaintext highlighter-rouge">Content-Length</code> header to zero.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DELETE</code></td>
+      <td>Used for deleting resources.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>There are three ways to authenticate through GitHub API v3. Requests that require authentication will return <code class="language-plaintext highlighter-rouge">404 Not Found</code>, instead of <code class="language-plaintext highlighter-rouge">403 Forbidden</code>, in some places. This is to prevent the accidental leakage of private repositories to unauthorized users.</p>
+
+<h3 id="basic-authentication">Basic Authentication</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -u "username" https://api.github.com
+
+</code></pre></div></div>
+
+<h3 id="oauth2-token-sent-in-a-header">OAuth2 Token (sent in a header)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
+
+</code></pre></div></div>
+
+<h3 id="oauth2-token-sent-as-a-parameter">OAuth2 Token (sent as a parameter)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://api.github.com/?access_token=OAUTH-TOKEN
+
+</code></pre></div></div>
+
+<p>Read <a href="https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/">more about OAuth2</a>. Note that OAuth2 tokens can be <a href="https://developer.github.com/v3/oauth_authorizations/#create-a-new-authorization">acquired programmatically</a>, for applications that are not websites.</p>
+
+<h3 id="oauth2-keysecret">OAuth2 Key/Secret</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl 'https://api.github.com/users/whatever?client_id=xxxx&amp;client_secret=yyyy'
+
+</code></pre></div></div>
+
+<p>This should only be used in server to server scenarios. Don’t leak your OAuth application’s client secret to your users.</p>
+
+<p>Read <a href="https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications">more about unauthenticated rate limiting</a>.</p>
+
+<h3 id="failed-login-limit">Failed login limit</h3>
+
+<p>Authenticating with invalid credentials will return <code class="language-plaintext highlighter-rouge">401 Unauthorized</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com -u foo:bar
+HTTP/1.1 401 Unauthorized
+
+{
+  "message": "Bad credentials",
+  "documentation_url": "https://developer.github.com/v3"
+}
+
+</code></pre></div></div>
+
+<p>After detecting several requests with invalid credentials within a short period, the API will temporarily reject all authentication attempts for that user (including ones with valid credentials) with <code class="language-plaintext highlighter-rouge">403 Forbidden</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com -u valid_username:valid_password
+HTTP/1.1 403 Forbidden
+
+{
+  "message": "Maximum number of login attempts exceeded. Please try again later.",
+  "documentation_url": "https://developer.github.com/v3"
+}
+
+</code></pre></div></div>
+
+<h2 id="hypermedia">Hypermedia</h2>
+
+<p>All resources may have one or more <code class="language-plaintext highlighter-rouge">*_url</code> properties linking to other resources. These are meant to provide explicit URLs so that proper API clients don’t need to construct URLs on their own. It is highly recommended that API clients use these. Doing so will make future upgrades of the API easier for developers. All URLs are expected to be proper <a href="http://tools.ietf.org/html/rfc6570">RFC 6570</a> URI templates.</p>
+
+<p>You can then expand these templates using something like the <a href="https://github.com/hannesg/uri_template">uri_template</a> gem:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt; tmpl = URITemplate.new('/notifications{?since,all,participating}')
+&gt;&gt; tmpl.expand
+=&gt; "/notifications"
+
+&gt;&gt; tmpl.expand :all =&gt; 1
+=&gt; "/notifications?all=1"
+
+&gt;&gt; tmpl.expand :all =&gt; 1, :participating =&gt; 1
+=&gt; "/notifications?all=1&amp;participating=1"
+
+</code></pre></div></div>
+
+<h2 id="pagination">Pagination</h2>
+
+<p>Requests that return multiple items will be paginated to 30 items by default. You can specify further pages with the <code class="language-plaintext highlighter-rouge">?page</code> parameter. For some resources, you can also set a custom page size up to 100 with the <code class="language-plaintext highlighter-rouge">?per_page</code> parameter. Note that for technical reasons not all endpoints respect the <code class="language-plaintext highlighter-rouge">?per_page</code> parameter, see <a href="https://developer.github.com/v3/activity/events/">events</a> for example.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl 'https://api.github.com/user/repos?page=2&amp;per_page=100'
+
+</code></pre></div></div>
+
+<p>Note that page numbering is 1-based and that omitting the <code class="language-plaintext highlighter-rouge">?page</code> parameter will return the first page.</p>
+
+<p>For more information on pagination, check out our guide on <a href="https://developer.github.com/guides/traversing-with-pagination">Traversing with Pagination</a>.</p>
+
+<h3 id="link-header">Link Header</h3>
+
+<p><strong>Note:</strong> It’s important to form calls with Link header values instead of constructing your own URLs.</p>
+
+<p>The <a href="http://tools.ietf.org/html/rfc5988">Link header</a> includes pagination information:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link: &lt;https://api.github.com/user/repos?page=3&amp;per_page=100&gt;; rel="next",
+  &lt;https://api.github.com/user/repos?page=50&amp;per_page=100&gt;; rel="last"
+
+</code></pre></div></div>
+
+<p><em>The example includes a line break for readability.</em></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">Link</code> response header contains one or more <a href="https://developer.github.com/v3/#hypermedia">Hypermedia</a> link relations, some of which may require expansion as <a href="http://tools.ietf.org/html/rfc6570">URI templates</a>.</p>
+
+<p>The possible <code class="language-plaintext highlighter-rouge">rel</code> values are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">next</code></td>
+      <td>The link relation for the immediate next page of results.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">last</code></td>
+      <td>The link relation for the last page of results.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">first</code></td>
+      <td>The link relation for the first page of results.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">prev</code></td>
+      <td>The link relation for the immediate previous page of results.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="rate-limiting">Rate Limiting</h2>
+
+<p>For requests using Basic Authentication or OAuth, you can make up to 5000 requests per hour. Authenticated requests are associated with the authenticated user, regardless of whether <a href="https://developer.github.com/v3/#basic-authentication">Basic Authentication</a> or <a href="https://developer.github.com/v3/#oauth2-token-sent-in-a-header">an OAuth token</a> was used. This means that all OAuth applications authorized by a user share the same quota of 5000 requests per hour when they authenticate with different tokens owned by the same user.</p>
+
+<p>For unauthenticated requests, the rate limit allows for up to 60 requests per hour. Unauthenticated requests are associated with the originating IP address, and not the user making requests.</p>
+
+<p>Note that <a href="https://developer.github.com/v3/search/#rate-limit">the Search API has custom rate limit rules</a>.</p>
+
+<p>The returned HTTP headers of any API request show your current rate limit status:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com/users/octocat
+HTTP/1.1 200 OK
+Date: Mon, 01 Jul 2013 17:27:06 GMT
+Status: 200 OK
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 56
+X-RateLimit-Reset: 1372700873
+
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">X-RateLimit-Limit</code></td>
+      <td>The maximum number of requests you’re permitted to make per hour.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">X-RateLimit-Remaining</code></td>
+      <td>The number of requests remaining in the current rate limit window.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">X-RateLimit-Reset</code></td>
+      <td>The time at which the current rate limit window resets in <a href="http://en.wikipedia.org/wiki/Unix_time">UTC epoch seconds</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you need the time in a different format, any modern programming language can get the job done. For example, if you open up the console on your web browser, you can easily get the reset time as a JavaScript Date object.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new Date(1372700873 * 1000)
+// =&gt; Mon Jul 01 2013 13:47:53 GMT-0400 (EDT)
+
+</code></pre></div></div>
+
+<p>If you exceed the rate limit, an error response returns:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 403 Forbidden
+Date: Tue, 20 Aug 2013 14:50:41 GMT
+Status: 403 Forbidden
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 0
+X-RateLimit-Reset: 1377013266
+
+{
+   "message": "API rate limit exceeded for xxx.xxx.xxx.xxx. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+   "documentation_url": "https://developer.github.com/v3/#rate-limiting"
+}
+
+</code></pre></div></div>
+
+<p>You can <a href="https://developer.github.com/v3/rate_limit">check your rate limit status</a> without incurring an API hit.</p>
+
+<h3 id="increasing-the-unauthenticated-rate-limit-for-oauth-applications">Increasing the unauthenticated rate limit for OAuth applications</h3>
+
+<p>If your OAuth application needs to make unauthenticated calls with a higher rate limit, you can pass your app’s client ID and secret as part of the query string.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i 'https://api.github.com/users/whatever?client_id=xxxx&amp;client_secret=yyyy'
+HTTP/1.1 200 OK
+Date: Mon, 01 Jul 2013 17:27:06 GMT
+Status: 200 OK
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4966
+X-RateLimit-Reset: 1372700873
+
+</code></pre></div></div>
+
+<p><strong>Note:</strong> Never share your client secret with anyone or include it in client-side browser code. Use the method shown here only for server-to-server calls.</p>
+
+<h3 id="staying-within-the-rate-limit">Staying within the rate limit</h3>
+
+<p>If you exceed your rate limit using Basic Authentication or OAuth, you can likely fix the issue by caching API responses and using <a href="https://developer.github.com/v3/#conditional-requests">conditional requests</a>.</p>
+
+<h3 id="abuse-rate-limits">Abuse rate limits</h3>
+
+<p>To protect the quality of service on GitHub, additional rate limits may apply to some actions. For example: rapidly creating content, polling aggressively instead of using webhooks, making API calls with a high concurrency, or repeatedly requesting data that is computationally expensive may result in abuse rate limiting.</p>
+
+<p>Abuse rate limits are not intended to interfere with legitimate use of the API. Your normal <a href="https://developer.github.com/v3/#rate-limiting">rate limits</a> should be the only limit you target. To ensure you’re acting as a good API citizen, check out our <a href="https://developer.github.com/guides/best-practices-for-integrators/">Best Practices guidelines</a>.</p>
+
+<p>If your application triggers this rate limit, you’ll receive an informative response:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 403 Forbidden
+Content-Type: application/json; charset=utf-8
+Connection: close
+
+{
+  "message": "You have triggered an abuse detection mechanism and have been temporarily blocked from content creation. Please retry your request again later.",
+  "documentation_url": "https://developer.github.com/v3#abuse-rate-limits"
+}
+
+</code></pre></div></div>
+
+<h2 id="user-agent-required">User Agent Required</h2>
+
+<p>All API requests MUST include a valid <code class="language-plaintext highlighter-rouge">User-Agent</code> header. Requests with no <code class="language-plaintext highlighter-rouge">User-Agent</code> header will be rejected. We request that you use your GitHub username, or the name of your application, for the <code class="language-plaintext highlighter-rouge">User-Agent</code> header value. This allows us to contact you if there are problems.</p>
+
+<p>Here’s an example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User-Agent: Awesome-Octocat-App
+
+</code></pre></div></div>
+
+<p>cURL sends a valid <code class="language-plaintext highlighter-rouge">User-Agent</code> header by default. If you provide an invalid <code class="language-plaintext highlighter-rouge">User-Agent</code> header via cURL (or via an alternative client), you will receive a <code class="language-plaintext highlighter-rouge">403 Forbidden</code> response:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -iH 'User-Agent: ' https://api.github.com/meta
+HTTP/1.0 403 Forbidden
+Connection: close
+Content-Type: text/html
+
+Request forbidden by administrative rules.
+Please make sure your request has a User-Agent header.
+Check https://developer.github.com for other possible causes.
+
+</code></pre></div></div>
+
+<h2 id="conditional-requests">Conditional requests</h2>
+
+<p>Most responses return an <code class="language-plaintext highlighter-rouge">ETag</code> header. Many responses also return a <code class="language-plaintext highlighter-rouge">Last-Modified</code> header. You can use the values of these headers to make subsequent requests to those resources using the <code class="language-plaintext highlighter-rouge">If-None-Match</code> and <code class="language-plaintext highlighter-rouge">If-Modified-Since</code> headers, respectively. If the resource has not changed, the server will return a <code class="language-plaintext highlighter-rouge">304 Not Modified</code>.</p>
+
+<p><strong>Note</strong>: Making a conditional request and receiving a 304 response does not count against your <a href="https://developer.github.com/v3/#rate-limiting">Rate Limit</a>, so we encourage you to use it whenever possible.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com/user
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=60
+ETag: "644b5b0155e6404a9cc4bd9d8b1ae730"
+Last-Modified: Thu, 05 Jul 2012 15:31:30 GMT
+Status: 200 OK
+Vary: Accept, Authorization, Cookie
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4996
+X-RateLimit-Reset: 1372700873
+
+curl -i https://api.github.com/user -H 'If-None-Match: "644b5b0155e6404a9cc4bd9d8b1ae730"'
+HTTP/1.1 304 Not Modified
+Cache-Control: private, max-age=60
+ETag: "644b5b0155e6404a9cc4bd9d8b1ae730"
+Last-Modified: Thu, 05 Jul 2012 15:31:30 GMT
+Status: 304 Not Modified
+Vary: Accept, Authorization, Cookie
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4996
+X-RateLimit-Reset: 1372700873
+
+curl -i https://api.github.com/user -H "If-Modified-Since: Thu, 05 Jul 2012 15:31:30 GMT"
+HTTP/1.1 304 Not Modified
+Cache-Control: private, max-age=60
+Last-Modified: Thu, 05 Jul 2012 15:31:30 GMT
+Status: 304 Not Modified
+Vary: Accept, Authorization, Cookie
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4996
+X-RateLimit-Reset: 1372700873
+
+</code></pre></div></div>
+
+<h2 id="cross-origin-resource-sharing">Cross Origin Resource Sharing</h2>
+
+<p>The API supports Cross Origin Resource Sharing (CORS) for AJAX requests from any origin. You can read the <a href="http://www.w3.org/TR/cors/">CORS W3C Recommendation</a>, or <a href="http://code.google.com/p/html5security/wiki/CrossOriginRequestSecurity">this intro</a> from the HTML 5 Security Guide.</p>
+
+<p>Here’s a sample request sent from a browser hitting <code class="language-plaintext highlighter-rouge">http://example.com</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com -H "Origin: http://example.com"
+HTTP/1.1 302 Found
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+
+</code></pre></div></div>
+
+<p>This is what the CORS preflight request looks like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i https://api.github.com -H "Origin: http://example.com" -X OPTIONS
+HTTP/1.1 204 No Content
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, X-GitHub-OTP, X-Requested-With
+Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE
+Access-Control-Expose-Headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+Access-Control-Max-Age: 86400
+
+</code></pre></div></div>
+
+<h2 id="json-p-callbacks">JSON-P Callbacks</h2>
+
+<p>You can send a <code class="language-plaintext highlighter-rouge">?callback</code> parameter to any GET call to have the results wrapped in a JSON function. This is typically used when browsers want to embed GitHub content in web pages by getting around cross domain issues. The response includes the same data output as the regular API, plus the relevant HTTP Header information.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://api.github.com?callback=foo
+
+/**/foo({
+  "meta": {
+    "status": 200,
+    "X-RateLimit-Limit": "5000",
+    "X-RateLimit-Remaining": "4966",
+    "X-RateLimit-Reset": "1372700873",
+    "Link": [ // pagination headers and other links
+      ["https://api.github.com?page=2", {"rel": "next"}]
+    ]
+  },
+  "data": {
+    // the data
+  }
+})
+
+</code></pre></div></div>
+
+<p>You can write a JavaScript handler to process the callback. Here’s a minimal example you can try out:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;html&gt;
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+function foo(response) {
+  var meta = response.meta;
+  var data = response.data;
+  console.log(meta);
+  console.log(data);
+}
+
+var script = document.createElement('script');
+script.src = 'https://api.github.com?callback=foo';
+
+document.getElementsByTagName('head')[0].appendChild(script);
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;p&gt;Open up your browser's console.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre></div></div>
+
+<p>All of the headers are the same String value as the HTTP Headers with one notable exception: Link. Link headers are pre-parsed for you and come through as an array of <code class="language-plaintext highlighter-rouge">[url, options]</code>tuples.</p>
+
+<p>A link that looks like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link: &lt;url1&gt;; rel="next", &lt;url2&gt;; rel="foo"; bar="baz"
+
+</code></pre></div></div>
+
+<p>… will look like this in the Callback output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "Link": [
+    [
+      "url1",
+      {
+        "rel": "next"
+      }
+    ],
+    [
+      "url2",
+      {
+        "rel": "foo",
+        "bar": "baz"
+      }
+    ]
+  ]
+}
+
+</code></pre></div></div>
+
+<h2 id="timezones">Timezones</h2>
+
+<p>Some requests allow for specifying timestamps or generate timestamps with time zone information. We apply the following rules, in order of priority, to determine timezone information for API calls.</p>
+
+<h4 id="explicitly-provide-an-iso-8601-timestamp-with-timezone-information">Explicitly provide an ISO 8601 timestamp with timezone information</h4>
+
+<p>For API calls that allow for a timestamp to be specified, we use that exact timestamp. An example of this is the <a href="https://developer.github.com/v3/git/commits">Commits API</a>.</p>
+
+<p>These timestamps look something like <code class="language-plaintext highlighter-rouge">2014-02-27T15:05:06+01:00</code>. Also see <a href="https://developer.github.com/v3/git/commits/#example-input">this example</a> for how these timestamps can be specified.</p>
+
+<h4 id="using-the-time-zone-header">Using the <code class="language-plaintext highlighter-rouge">Time-Zone</code> header</h4>
+
+<p>It is possible to supply a <code class="language-plaintext highlighter-rouge">Time-Zone</code> header which defines a timezone according to the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">list of names from the Olson database</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -H "Time-Zone: Europe/Amsterdam" -X POST https://api.github.com/repos/github/linguist/contents/new_file.md
+
+</code></pre></div></div>
+
+<p>This means that we generate a timestamp for the moment your API call is made in the timezone this header defines. For example, the <a href="https://developer.github.com/v3/repos/contents/">Contents API</a> generates a git commit for each addition or change and uses the current time as the timestamp. This header will determine the timezone used for generating that current timestamp.</p>
+
+<h4 id="using-the-last-known-timezone-for-the-user">Using the last known timezone for the user</h4>
+
+<p>If no <code class="language-plaintext highlighter-rouge">Time-Zone</code> header is specified and you make an authenticated call to the API, we use the last known timezone for the authenticated user. The last known timezone is updated whenever you browse the GitHub website.</p>
+
+<h4 id="utc">UTC</h4>
+
+<p>If the steps above don’t result in any information, we use UTC as the timezone to create the git commit.</p>
+:ET

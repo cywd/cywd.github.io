@@ -1,0 +1,67 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#1安装依赖库" id="markdown-toc-1安装依赖库">1.安装依赖库</a></li>
+  <li><a href="#2下载及安装openresty" id="markdown-toc-2下载及安装openresty">2.下载及安装<code class="language-plaintext highlighter-rouge">OpenResty</code></a></li>
+  <li><a href="#3注意" id="markdown-toc-3注意">3.注意</a></li>
+</ul>
+<hr />
+
+<h1 id="1安装依赖库">1.安装依赖库</h1>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum <span class="nb">install</span> <span class="nt">-y</span> gcc gcc-c++ readline-devel pcre-devel openssl-devel tcl perl
+</code></pre></div></div>
+
+<h1 id="2下载及安装openresty">2.下载及安装<code class="language-plaintext highlighter-rouge">OpenResty</code></h1>
+
+<p>包括一些下载地址和安装说明可以看<a href="http://openresty.org/cn/">OpenResty官网</a>。</p>
+
+<p>我这里就说一下我的安装过程，</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 我这里规定下载的要放到这里  /home/soft/</span>
+<span class="nb">cd</span> /home/soft/
+wget <span class="nt">--no-check-certificate</span> https://openresty.org/download/openresty-1.13.6.2.tar.gz
+<span class="nb">tar</span> <span class="nt">-xzvf</span> openresty-1.13.6.2.tar.gz
+<span class="nb">cd </span>openresty-1.13.6.2/
+</code></pre></div></div>
+
+<p>下面开始配置</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 解释一下，--prefix= 是openresty的安装路径，</span>
+<span class="c"># --with-openssl= 指定openssl， </span>
+<span class="c"># --with-pcre= 指定pcre，</span>
+<span class="c"># --add-module= 加模块， </span>
+<span class="c"># --with-http_ssl_module 支持https</span>
+./configure  <span class="nt">--prefix</span><span class="o">=</span>/home/openresty <span class="nt">--with-http_ssl_module</span> <span class="nt">--with-openssl</span><span class="o">=</span>/home/solft/openssl/openssl-1.0.2g <span class="nt">--with-pcre</span><span class="o">=</span>/home/solft/pcre-8.40 <span class="nt">--add-module</span><span class="o">=</span>/home/solft/nginx_http_upstream_check_module
+</code></pre></div></div>
+
+<p>接着</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gmake
+</code></pre></div></div>
+
+<p>注意执行gmake的时候可能会报错。看报什么错，如果是关于opessl的，可以像上一步手动指定openssl</p>
+
+<p>如果没有出现什么问题可以接着执行</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gmake <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>如果一切顺利，恭喜部署成功了。</p>
+
+<p>最后为了方便调用可以</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/home/openresty/nginx/sbin
+</code></pre></div></div>
+
+<p>或者是改成其他名字</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">OPENRESTY_HOME</span><span class="o">=</span><span class="s2">"/home/openresty/"</span>
+<span class="nb">export </span><span class="nv">OPENRESTY_NGINX</span><span class="o">=</span><span class="s2">"/home/openresty/nginx/sbin/nginx"</span>
+</code></pre></div></div>
+
+<h1 id="3注意">3.注意</h1>
+
+<p><code class="language-plaintext highlighter-rouge">openssl</code>的版本更替中，<code class="language-plaintext highlighter-rouge">API</code>的改动非常大，版本兼容有问题，<code class="language-plaintext highlighter-rouge">OpenResty</code>需要的<code class="language-plaintext highlighter-rouge">openssl</code>版本，一定要匹配。</p>
+
+<p>我这里是<code class="language-plaintext highlighter-rouge"> openresty-1.13.6.2</code> 和 <code class="language-plaintext highlighter-rouge">openssl-1.0.2g</code>以及<code class="language-plaintext highlighter-rouge">pcre-8.40</code>。</p>
+
+:ET

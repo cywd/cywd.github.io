@@ -1,0 +1,58 @@
+I"S<ul id="markdown-toc">
+  <li><a href="#1声明" id="markdown-toc-1声明">1.声明</a></li>
+  <li><a href="#2什么是ipv6only" id="markdown-toc-2什么是ipv6only">2.什么是IPv6－only</a></li>
+  <li><a href="#3如何做到满足苹果要求呢" id="markdown-toc-3如何做到满足苹果要求呢">3.如何做到满足苹果要求呢？</a></li>
+  <li><a href="#4如何创造ipv6-only-测试环境" id="markdown-toc-4如何创造ipv6-only-测试环境">4.如何创造IPv6-ONLY 测试环境？</a></li>
+  <li><a href="#5ipv6客户端访问ipv4服务器原理" id="markdown-toc-5ipv6客户端访问ipv4服务器原理">5.IPv6客户端访问IPv4服务器原理?</a></li>
+</ul>
+<hr />
+
+<h3 id="1声明">1.声明</h3>
+
+<p>苹果从6月1日起，提供App Store审核的应用必须要兼容面向硬件识别和网络路由的最新互联网协议—<code class="language-plaintext highlighter-rouge">IPv6-only</code>标准。也就是说，如果不能兼容，就面临着不能审核上线。</p>
+
+<h3 id="2什么是ipv6only">2.什么是IPv6－only</h3>
+
+<p>IPv6－only(64位编码地址)，它时最新的互联网协议，以前我们大部分用的是IPv4(32位编码地址)，例如：<em>192.168.1.1</em>然而，这样的地址已经不够用了！！所以就有了类似2001:da8:215:4009:250:56ff:fe97:40c7这样的地址，这样的地址就叫做IPv6地址。在目前，一个网卡会同时使用这两张地址，但是在以后就会只使用IPv6了。一般情况下，使用这两种地址的设备是不能相互访问的，但是后来经过一些过度的处理旧可以让它们在某些情况下可以相互访问。（DNS64/NAT64）</p>
+
+<h3 id="3如何做到满足苹果要求呢">3.如何做到满足苹果要求呢？</h3>
+
+<p>(1)在应用中使用域名(例如：<code class="language-plaintext highlighter-rouge">www.baidu.com</code>),不要在任何地方使用IPv4地址(例如：114.255.40.60)</p>
+
+<p>(2)我们的服务器需要改成IPv6 地址么？这个不需要，但是必须使用域名(或者主机名)来表示服务器！</p>
+
+<p>(3)使用更高层次的网络API,避免使用socket API。</p>
+
+<p>WebKit,(NSURL,NSURLSession,NSURLRequest,NSURLConnection)，CFNetWork都是能支持IPv6的。</p>
+
+<p>如果不能避免使用socket，参考<a href="https://tools.ietf.org/html/rfc4038">https://tools.ietf.org/html/rfc4038</a></p>
+
+<p>(4)检查IPv4代码:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inet_addr()
+inet_aton()
+inet_lnaof()
+inet_makeaddr()
+inet_netof()
+inet_network()
+inet_ntoa()
+inet_ntoa_r()
+bindresvport()
+getipv4sourcefilter()
+setipv4sourcefilter()
+</code></pre></div></div>
+
+<h3 id="4如何创造ipv6-only-测试环境">4.如何创造IPv6-ONLY 测试环境？</h3>
+
+<p>MacOS 提供了这个功能。 使用 Mac 把有线网络共享到 WiFi，中间勾选 创建NAT64网络 即可。</p>
+
+<h3 id="5ipv6客户端访问ipv4服务器原理">5.IPv6客户端访问IPv4服务器原理?</h3>
+
+<p>首先，这个是无法直接访问的，必须网络的提供商支持过渡技术。</p>
+
+<p>IPv4与IPv6相互操作可参考<a href="http://network.51cto.com/art/201412/460320.htm">网络编程之IPv4与IPv6相互操作</a></p>
+
+<p>详情可参看 <a href="https://datatracker.ietf.org/doc/rfc6146/">RFC6146</a> 、<a href="https://datatracker.ietf.org/doc/RFC6147/">RFC6147 </a></p>
+
+<p> </p>
+:ET

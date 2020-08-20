@@ -3,6 +3,10 @@
         "color": "#814CCC",
         "url": "https://github.com/trending?l=1C-Enterprise"
     },
+    "4D": {
+        "color": null,
+        "url": "https://github.com/trending?l=4D"
+    },
     "ABAP": {
         "color": "#E8274B",
         "url": "https://github.com/trending?l=ABAP"
@@ -219,6 +223,10 @@
         "color": null,
         "url": "https://github.com/trending?l=COBOL"
     },
+    "CodeQL": {
+        "color": null,
+        "url": "https://github.com/trending?l=CodeQL"
+    },
     "CoffeeScript": {
         "color": "#244776",
         "url": "https://github.com/trending?l=CoffeeScript"
@@ -290,6 +298,10 @@
     "D": {
         "color": "#ba595e",
         "url": "https://github.com/trending?l=D"
+    },
+    "Dafny": {
+        "color": "#FFEC25",
+        "url": "https://github.com/trending?l=Dafny"
     },
     "Dart": {
         "color": "#00B4AB",
@@ -391,6 +403,10 @@
         "color": "#14253c",
         "url": "https://github.com/trending?l=Fantom"
     },
+    "Faust": {
+        "color": "#c37240",
+        "url": "https://github.com/trending?l=Faust"
+    },
     "Filebench WML": {
         "color": null,
         "url": "https://github.com/trending?l=Filebench-WML"
@@ -415,6 +431,10 @@
         "color": "#4d41b1",
         "url": "https://github.com/trending?l=Fortran"
     },
+    "Fortran Free Form": {
+        "color": null,
+        "url": "https://github.com/trending?l=Fortran-Free-Form"
+    },
     "FreeMarker": {
         "color": "#0050b2",
         "url": "https://github.com/trending?l=FreeMarker"
@@ -422,6 +442,10 @@
     "Frege": {
         "color": "#00cafe",
         "url": "https://github.com/trending?l=Frege"
+    },
+    "Futhark": {
+        "color": "#5f021f",
+        "url": "https://github.com/trending?l=Futhark"
     },
     "G-code": {
         "color": "#D08CF2",
@@ -655,6 +679,10 @@
         "color": "#DA5B0B",
         "url": "https://github.com/trending?l=Jupyter-Notebook"
     },
+    "Kaitai Struct": {
+        "color": "#773b37",
+        "url": "https://github.com/trending?l=Kaitai-Struct"
+    },
     "Kotlin": {
         "color": "#F18E33",
         "url": "https://github.com/trending?l=Kotlin"
@@ -751,6 +779,10 @@
         "color": null,
         "url": "https://github.com/trending?l=M4Sugar"
     },
+    "Macaulay2": {
+        "color": "#d8ffff",
+        "url": "https://github.com/trending?l=Macaulay2"
+    },
     "Makefile": {
         "color": "#427819",
         "url": "https://github.com/trending?l=Makefile"
@@ -808,7 +840,7 @@
         "url": "https://github.com/trending?l=mIRC-Script"
     },
     "MLIR": {
-        "color": null,
+        "color": "#5EC8DB",
         "url": "https://github.com/trending?l=MLIR"
     },
     "Modelica": {
@@ -867,6 +899,10 @@
         "color": null,
         "url": "https://github.com/trending?l=Myghty"
     },
+    "NASL": {
+        "color": null,
+        "url": "https://github.com/trending?l=NASL"
+    },
     "NCL": {
         "color": "#28431f",
         "url": "https://github.com/trending?l=NCL"
@@ -904,7 +940,7 @@
         "url": "https://github.com/trending?l=Nextflow"
     },
     "Nim": {
-        "color": "#37775b",
+        "color": "#ffc200",
         "url": "https://github.com/trending?l=Nim"
     },
     "Nit": {
@@ -947,6 +983,10 @@
         "color": "#3be133",
         "url": "https://github.com/trending?l=OCaml"
     },
+    "Odin": {
+        "color": "#60AFFE",
+        "url": "https://github.com/trending?l=Odin"
+    },
     "Omgrofl": {
         "color": "#cabbff",
         "url": "https://github.com/trending?l=Omgrofl"
@@ -974,6 +1014,10 @@
     "OpenEdge ABL": {
         "color": null,
         "url": "https://github.com/trending?l=OpenEdge-ABL"
+    },
+    "OpenQASM": {
+        "color": "#AA70FF",
+        "url": "https://github.com/trending?l=OpenQASM"
     },
     "OpenRC runscript": {
         "color": null,
@@ -1034,10 +1078,6 @@
     "Perl": {
         "color": "#0298c3",
         "url": "https://github.com/trending?l=Perl"
-    },
-    "Perl 6": {
-        "color": "#0000fb",
-        "url": "https://github.com/trending?l=Perl-6"
     },
     "PHP": {
         "color": "#4F5D95",
@@ -1123,6 +1163,10 @@
         "color": "#0040cd",
         "url": "https://github.com/trending?l=q"
     },
+    "Q#": {
+        "color": "#fed659",
+        "url": "https://github.com/trending?l=Qsharp"
+    },
     "QMake": {
         "color": null,
         "url": "https://github.com/trending?l=QMake"
@@ -1130,6 +1174,10 @@
     "QML": {
         "color": "#44a51c",
         "url": "https://github.com/trending?l=QML"
+    },
+    "Qt Script": {
+        "color": "#00b841",
+        "url": "https://github.com/trending?l=Qt-Script"
     },
     "Quake": {
         "color": "#882233",
@@ -1147,6 +1195,10 @@
         "color": "#9d5200",
         "url": "https://github.com/trending?l=Ragel"
     },
+    "Raku": {
+        "color": "#0000fb",
+        "url": "https://github.com/trending?l=Raku"
+    },
     "RAML": {
         "color": "#77d9fb",
         "url": "https://github.com/trending?l=RAML"
@@ -1160,7 +1212,7 @@
         "url": "https://github.com/trending?l=REALbasic"
     },
     "Reason": {
-        "color": null,
+        "color": "#ff5847",
         "url": "https://github.com/trending?l=Reason"
     },
     "Rebol": {
@@ -1271,6 +1323,10 @@
         "color": "#120F14",
         "url": "https://github.com/trending?l=Shen"
     },
+    "Sieve": {
+        "color": null,
+        "url": "https://github.com/trending?l=Sieve"
+    },
     "Slash": {
         "color": "#007eff",
         "url": "https://github.com/trending?l=Slash"
@@ -1331,6 +1387,10 @@
         "color": "#dc566d",
         "url": "https://github.com/trending?l=Standard-ML"
     },
+    "Starlark": {
+        "color": "#76d275",
+        "url": "https://github.com/trending?l=Starlark"
+    },
     "Stata": {
         "color": null,
         "url": "https://github.com/trending?l=Stata"
@@ -1342,6 +1402,10 @@
     "Swift": {
         "color": "#ffac45",
         "url": "https://github.com/trending?l=Swift"
+    },
+    "SWIG": {
+        "color": null,
+        "url": "https://github.com/trending?l=SWIG"
     },
     "SystemVerilog": {
         "color": "#DAE1C2",
@@ -1423,6 +1487,14 @@
         "color": "#fbe5cd",
         "url": "https://github.com/trending?l=Vala"
     },
+    "VBA": {
+        "color": "#867db1",
+        "url": "https://github.com/trending?l=VBA"
+    },
+    "VBScript": {
+        "color": "#15dcdc",
+        "url": "https://github.com/trending?l=VBScript"
+    },
     "VCL": {
         "color": "#148AA8",
         "url": "https://github.com/trending?l=VCL"
@@ -1439,9 +1511,9 @@
         "color": "#199f4b",
         "url": "https://github.com/trending?l=Vim-script"
     },
-    "Visual Basic": {
+    "Visual Basic .NET": {
         "color": "#945db7",
-        "url": "https://github.com/trending?l=Visual-Basic"
+        "url": "https://github.com/trending?l=Visual-Basic-.NET"
     },
     "Volt": {
         "color": "#1F1F1F",

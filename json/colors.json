@@ -71,6 +71,10 @@
         "color": "#aa2afe",
         "url": "https://github.com/trending?l=Arc"
     },
+    "ASL": {
+        "color": null,
+        "url": "https://github.com/trending?l=ASL"
+    },
     "ASP": {
         "color": "#6a40fd",
         "url": "https://github.com/trending?l=ASP"
@@ -1468,7 +1472,7 @@
         "url": "https://github.com/trending?l=Unix-Assembly"
     },
     "Uno": {
-        "color": null,
+        "color": "#9933cc",
         "url": "https://github.com/trending?l=Uno"
     },
     "UnrealScript": {

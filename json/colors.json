@@ -27,9 +27,9 @@
         "color": "#B9D9FF",
         "url": "https://github.com/trending?l=AGS-Script"
     },
-    "AL Code": {
+    "AL": {
         "color": "#3AA2B5",
-        "url": "https://github.com/trending?l=AL-Code"
+        "url": "https://github.com/trending?l=AL"
     },
     "Alloy": {
         "color": "#64C800",
@@ -64,7 +64,7 @@
         "url": "https://github.com/trending?l=APL"
     },
     "Apollo Guidance Computer": {
-        "color": null,
+        "color": "#0B3D91",
         "url": "https://github.com/trending?l=Apollo-Guidance-Computer"
     },
     "AppleScript": {
@@ -128,7 +128,7 @@
         "url": "https://github.com/trending?l=Befunge"
     },
     "Bison": {
-        "color": null,
+        "color": "#6A463F",
         "url": "https://github.com/trending?l=Bison"
     },
     "BitBake": {
@@ -252,7 +252,7 @@
         "url": "https://github.com/trending?l=ColdFusion"
     },
     "ColdFusion CFC": {
-        "color": null,
+        "color": "#ed2cd6",
         "url": "https://github.com/trending?l=ColdFusion-CFC"
     },
     "Common Lisp": {
@@ -378,6 +378,10 @@
     "Eiffel": {
         "color": "#4d6977",
         "url": "https://github.com/trending?l=Eiffel"
+    },
+    "EJS": {
+        "color": "#a91e50",
+        "url": "https://github.com/trending?l=EJS"
     },
     "Elixir": {
         "color": "#6e4a7e",
@@ -551,6 +555,10 @@
         "color": "#ff0000",
         "url": "https://github.com/trending?l=Grammatical-Framework"
     },
+    "GraphQL": {
+        "color": "#e10098",
+        "url": "https://github.com/trending?l=GraphQL"
+    },
     "Groovy": {
         "color": "#e69f56",
         "url": "https://github.com/trending?l=Groovy"
@@ -672,7 +680,7 @@
         "url": "https://github.com/trending?l=JavaScript+ERB"
     },
     "JFlex": {
-        "color": null,
+        "color": "#DBCA00",
         "url": "https://github.com/trending?l=JFlex"
     },
     "Jison": {
@@ -1004,7 +1012,7 @@
         "url": "https://github.com/trending?l=Nu"
     },
     "NumPy": {
-        "color": null,
+        "color": "#9C8AF9",
         "url": "https://github.com/trending?l=NumPy"
     },
     "Objective-C": {
@@ -1540,7 +1548,7 @@
         "url": "https://github.com/trending?l=TypeScript"
     },
     "Unified Parallel C": {
-        "color": null,
+        "color": "#4e3617",
         "url": "https://github.com/trending?l=Unified-Parallel-C"
     },
     "Unix Assembly": {

@@ -731,6 +731,10 @@
         "color": null,
         "url": "https://github.com/trending?l=LabVIEW"
     },
+    "Lark": {
+        "color": "#0b130f",
+        "url": "https://github.com/trending?l=Lark"
+    },
     "Lasso": {
         "color": "#999999",
         "url": "https://github.com/trending?l=Lasso"

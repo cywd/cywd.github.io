@@ -1019,6 +1019,10 @@
         "color": "#9C8AF9",
         "url": "https://github.com/trending?l=NumPy"
     },
+    "NWScript": {
+        "color": "#111522",
+        "url": "https://github.com/trending?l=NWScript"
+    },
     "Objective-C": {
         "color": "#438eff",
         "url": "https://github.com/trending?l=Objective-C"

@@ -1303,6 +1303,10 @@
         "color": null,
         "url": "https://github.com/trending?l=RenderScript"
     },
+    "ReScript": {
+        "color": "#ed5051",
+        "url": "https://github.com/trending?l=ReScript"
+    },
     "REXX": {
         "color": null,
         "url": "https://github.com/trending?l=REXX"

@@ -155,6 +155,10 @@
         "color": "#d4bec1",
         "url": "https://github.com/trending?l=Boo"
     },
+    "Boogie": {
+        "color": "#c80fa0",
+        "url": "https://github.com/trending?l=Boogie"
+    },
     "Brainfuck": {
         "color": "#2F2530",
         "url": "https://github.com/trending?l=Brainfuck"
@@ -234,6 +238,10 @@
     "Clojure": {
         "color": "#db5855",
         "url": "https://github.com/trending?l=Clojure"
+    },
+    "Closure Templates": {
+        "color": "#0d948f",
+        "url": "https://github.com/trending?l=Closure-Templates"
     },
     "CMake": {
         "color": null,
@@ -707,10 +715,6 @@
         "color": "#0064bd",
         "url": "https://github.com/trending?l=Jsonnet"
     },
-    "JSX": {
-        "color": null,
-        "url": "https://github.com/trending?l=JSX"
-    },
     "Julia": {
         "color": "#a270ba",
         "url": "https://github.com/trending?l=Julia"
@@ -770,6 +774,10 @@
     "Limbo": {
         "color": null,
         "url": "https://github.com/trending?l=Limbo"
+    },
+    "Liquid": {
+        "color": "#67b8de",
+        "url": "https://github.com/trending?l=Liquid"
     },
     "Literate Agda": {
         "color": null,
@@ -955,6 +963,10 @@
         "color": null,
         "url": "https://github.com/trending?l=mupad"
     },
+    "Mustache": {
+        "color": "#724b3b",
+        "url": "https://github.com/trending?l=Mustache"
+    },
     "Myghty": {
         "color": null,
         "url": "https://github.com/trending?l=Myghty"
@@ -1023,6 +1035,10 @@
         "color": "#9C8AF9",
         "url": "https://github.com/trending?l=NumPy"
     },
+    "Nunjucks": {
+        "color": "#3d8137",
+        "url": "https://github.com/trending?l=Nunjucks"
+    },
     "NWScript": {
         "color": "#111522",
         "url": "https://github.com/trending?l=NWScript"
@@ -1090,6 +1106,10 @@
     "OpenSCAD": {
         "color": null,
         "url": "https://github.com/trending?l=OpenSCAD"
+    },
+    "Org": {
+        "color": "#77aa99",
+        "url": "https://github.com/trending?l=Org"
     },
     "Ox": {
         "color": null,
@@ -1291,6 +1311,10 @@
         "color": "#358a5b",
         "url": "https://github.com/trending?l=Rebol"
     },
+    "Record Jar": {
+        "color": "#0673ba",
+        "url": "https://github.com/trending?l=Record-Jar"
+    },
     "Red": {
         "color": "#f50000",
         "url": "https://github.com/trending?l=Red"
@@ -1370,6 +1394,10 @@
     "Scala": {
         "color": "#c22d40",
         "url": "https://github.com/trending?l=Scala"
+    },
+    "Scaml": {
+        "color": "#bd181a",
+        "url": "https://github.com/trending?l=Scaml"
     },
     "Scheme": {
         "color": "#1e4aec",

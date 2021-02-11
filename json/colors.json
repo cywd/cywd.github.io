@@ -123,6 +123,10 @@
         "color": "#C1F12E",
         "url": "https://github.com/trending?l=Batchfile"
     },
+    "Beef": {
+        "color": "#a52f4e",
+        "url": "https://github.com/trending?l=Beef"
+    },
     "Befunge": {
         "color": null,
         "url": "https://github.com/trending?l=Befunge"
@@ -642,6 +646,10 @@
     "IGOR Pro": {
         "color": "#0000cc",
         "url": "https://github.com/trending?l=IGOR-Pro"
+    },
+    "ImageJ Macro": {
+        "color": "#99AAFF",
+        "url": "https://github.com/trending?l=ImageJ-Macro"
     },
     "Inform 7": {
         "color": null,

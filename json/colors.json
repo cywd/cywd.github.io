@@ -11,6 +11,10 @@
         "color": "#E8274B",
         "url": "https://github.com/trending?l=ABAP"
     },
+    "ABAP CDS": {
+        "color": "#555e25",
+        "url": "https://github.com/trending?l=ABAP-CDS"
+    },
     "ActionScript": {
         "color": "#882B0F",
         "url": "https://github.com/trending?l=ActionScript"

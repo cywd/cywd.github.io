@@ -719,6 +719,10 @@
         "color": "#843179",
         "url": "https://github.com/trending?l=Jolie"
     },
+    "jq": {
+        "color": "#c7254e",
+        "url": "https://github.com/trending?l=jq"
+    },
     "JSONiq": {
         "color": "#40d47e",
         "url": "https://github.com/trending?l=JSONiq"
@@ -752,7 +756,7 @@
         "url": "https://github.com/trending?l=LabVIEW"
     },
     "Lark": {
-        "color": "#0b130f",
+        "color": "#2980B9",
         "url": "https://github.com/trending?l=Lark"
     },
     "Lasso": {

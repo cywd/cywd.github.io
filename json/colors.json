@@ -523,6 +523,10 @@
         "color": "#355570",
         "url": "https://github.com/trending?l=GDScript"
     },
+    "Gemfile.lock": {
+        "color": "#701516",
+        "url": "https://github.com/trending?l=Gemfile.lock"
+    },
     "Genie": {
         "color": "#fb855d",
         "url": "https://github.com/trending?l=Genie"
@@ -706,6 +710,10 @@
     "JFlex": {
         "color": "#DBCA00",
         "url": "https://github.com/trending?l=JFlex"
+    },
+    "Jinja": {
+        "color": "#a52a22",
+        "url": "https://github.com/trending?l=Jinja"
     },
     "Jison": {
         "color": null,
@@ -1455,6 +1463,10 @@
         "color": null,
         "url": "https://github.com/trending?l=Sieve"
     },
+    "Singularity": {
+        "color": "#64E6AD",
+        "url": "https://github.com/trending?l=Singularity"
+    },
     "Slash": {
         "color": "#007eff",
         "url": "https://github.com/trending?l=Slash"
@@ -1526,6 +1538,10 @@
     "Stata": {
         "color": null,
         "url": "https://github.com/trending?l=Stata"
+    },
+    "StringTemplate": {
+        "color": "#3fb34f",
+        "url": "https://github.com/trending?l=StringTemplate"
     },
     "Stylus": {
         "color": "#ff6347",
@@ -1706,6 +1722,10 @@
     "Xojo": {
         "color": null,
         "url": "https://github.com/trending?l=Xojo"
+    },
+    "Xonsh": {
+        "color": "#285EEF",
+        "url": "https://github.com/trending?l=Xonsh"
     },
     "XProc": {
         "color": null,

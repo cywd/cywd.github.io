@@ -123,6 +123,10 @@
         "color": "#FF5000",
         "url": "https://github.com/trending?l=Ballerina"
     },
+    "BASIC": {
+        "color": "#ff0000",
+        "url": "https://github.com/trending?l=BASIC"
+    },
     "Batchfile": {
         "color": "#C1F12E",
         "url": "https://github.com/trending?l=Batchfile"
@@ -134,6 +138,10 @@
     "Befunge": {
         "color": null,
         "url": "https://github.com/trending?l=Befunge"
+    },
+    "Bicep": {
+        "color": "#519aba",
+        "url": "https://github.com/trending?l=Bicep"
     },
     "Bison": {
         "color": "#6A463F",
@@ -478,6 +486,10 @@
     "Fortran Free Form": {
         "color": null,
         "url": "https://github.com/trending?l=Fortran-Free-Form"
+    },
+    "FreeBasic": {
+        "color": "#867db1",
+        "url": "https://github.com/trending?l=FreeBasic"
     },
     "FreeMarker": {
         "color": "#0050b2",

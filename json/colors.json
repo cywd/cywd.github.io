@@ -31,6 +31,10 @@
         "color": "#B9D9FF",
         "url": "https://github.com/trending?l=AGS-Script"
     },
+    "AIDL": {
+        "color": "#34EB6B",
+        "url": "https://github.com/trending?l=AIDL"
+    },
     "AL": {
         "color": "#3AA2B5",
         "url": "https://github.com/trending?l=AL"
@@ -330,6 +334,10 @@
     "Cuda": {
         "color": "#3A4E3A",
         "url": "https://github.com/trending?l=Cuda"
+    },
+    "CUE": {
+        "color": "#5886E1",
+        "url": "https://github.com/trending?l=CUE"
     },
     "CWeb": {
         "color": null,

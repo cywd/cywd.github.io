@@ -352,7 +352,7 @@
         "url": "https://github.com/trending?l=Cycript"
     },
     "Cython": {
-        "color": null,
+        "color": "#fedf5b",
         "url": "https://github.com/trending?l=Cython"
     },
     "D": {
@@ -616,7 +616,7 @@
         "url": "https://github.com/trending?l=GraphQL"
     },
     "Groovy": {
-        "color": "#e69f56",
+        "color": "#4298b8",
         "url": "https://github.com/trending?l=Groovy"
     },
     "Groovy Server Pages": {

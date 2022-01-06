@@ -431,7 +431,7 @@ X.509是常见通用的证书格式。所有的证书都符合为Public Key Infr
 1. **PKCS#7**常用的后缀是： .P7B .P7C .SPC
 2. **PKCS#12**常用的后缀有： .P12 .PFX
 3. **X.509 DER**编码(ASCII)的后缀是： .DER .CER .CRT
-4. **X.509 PAM**编码(Base64)的后缀是： .PEM .CER .CRT
+4. **X.509 PEM**编码(Base64)的后缀是： .PEM .CER .CRT
 5. **.cer/.crt**是用于存放证书，它是2进制形式存放的，不含私钥。
 6. **.pem跟crt/cer**的区别是它以Ascii来表示。
 7. **pfx/p12**用于存放个人证书/私钥，他通常包含保护密码，2进制方式

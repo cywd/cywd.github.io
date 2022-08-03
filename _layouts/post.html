@@ -44,30 +44,28 @@ layout: default
 {% if page.comments == true %}
 <!-- {% include disqus.html %} -->
 
-<!--这里使用了gitment，感谢-->
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<!--这里使用了gitalk，感谢-->
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
-
     var str='{{ page.date | date: "%Y-%m-%d" }} {{ page.title }}';//原始字符串
     var id = str;//要展示的字符串
     if(str.length>=45){
         id=str.substring(0,45)+"...";
     }
- 
-    var gitment = new Gitment({
-        id: id,
-        owner: 'cywd',
-        repo: 'cywd.github.io',
-        oauth: {
-            client_id: 'eea37193acb231476066',
-            client_secret: 'b06ec9125454c7efc2ef9a81389aac65ddebf37c',
-        },
-    })
-    gitment.render('container')
-</script>
+	var gitalk = new Gitalk({
+	  clientID: '760155e9aded81d6035f',
+	  clientSecret: '6988680e3acbd307880feb5d85e83935c5189f00',
+	  repo: 'cywd.github.io',
+	  owner: 'cywd',
+	  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+	  id: id,      // Ensure uniqueness and length less than 50
+	  distractionFreeMode: false  // Facebook-like distraction free mode
+	})
 
+	gitalk.render('gitalk-container')
+</script>
 {% endif %}
 
 

@@ -1,0 +1,40 @@
+---
+layout: page
+title: Search
+permalink: /search/
+---
+
+<header>
+    <form action="" style="width: 100%; text-align: center;">
+        <input style="width: 100%;" name='keywords' type="text" id="search-input" placeholder="标题、相关内容或日期">
+    </form>
+</header>
+<div class="content">
+    <div id="results-container">
+        <ul></ul>
+
+        <p class="no-results" style="display:none;">没有搜索到相关文章</p>
+    </div>
+</div>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/js/simple-jekyll-search.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        var $form = document.querySelector('form');
+        $form.addEventListener('submit', function (event) {
+            event.preventDefault();
+        });
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container').querySelector('ul'),
+            json: '/search.json',
+            searchResultTemplate: '<li><a href="{url}" title="{title}"><span style="margin-right: 10px; color: #8d7edc;">{date}</span>{title}</a></li>',
+            limit: 20,
+            fuzzy: false,
+        });
+
+    });
+
+
+</script>

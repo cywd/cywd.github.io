@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Motivation, GitHub, C/C++, Objective-C, Swift, Python, HTML/CSS, OpenGL
-percentage: 100, 70, 80, 90, 80, 65, 60, 60
+aspects: Motivation, GitHub, C/C++, iOS, Python, Web, OpenGL, Nginx
+percentage: 100, 70, 80, 90, 80, 90, 60, 80

@@ -2,18 +2,14 @@
 layout: default
 ---
 
-<a class="btn" href= "{{ site.url }}/" >
+<a class="btn" href="{{ site.url }}/">
   Home
 </a>
 {% if page.image.feature %}
 <div class="post-image-feature">
-  <img class="feature-image" src=
-  {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
-  "{{ page.image.feature }}"
-  {% else %}
-  "{{ site.url }}/img/{{ page.image.feature }}"
-  {% endif %}
-  alt="{{ page.title }} feature image">
+  <img class="feature-image" src={% if page.image.feature contains 'https' or page.image.feature contains 'http'
+    %} "{{ page.image.feature }}" {% else %} "{{ site.url }}/img/{{ page.image.feature }}" {% endif %}
+    alt="{{ page.title }} feature image">
 
   {% if page.image.credit %}
   <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
@@ -49,33 +45,33 @@ layout: default
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
-    var str='{{ page.date | date: "%Y-%m-%d" }} {{ page.title }}';//原始字符串
-    var id = str;//要展示的字符串
-    if(str.length>=45){
-        id=str.substring(0,45)+"...";
-    }
-	var gitalk = new Gitalk({
-	  clientID: 'eea37193acb231476066',
-	  clientSecret: 'b7ddb1cbbec590c0c8d50a53408ad167d0d45e8c',
-	  repo: 'cywd.github.io',
-	  owner: 'cywd',
-	  admin: ['cywd'],
-	  id: id,      // Ensure uniqueness and length less than 50
-	  distractionFreeMode: false  // Facebook-like distraction free mode
-	})
+  var str = '{{ page.date | date: "%Y-%m-%d" }} {{ page.title }}';//原始字符串
+  var id = str;//要展示的字符串
+  if (str.length >= 45) {
+    id = str.substring(0, 45) + "...";
+  }
+  var gitalk = new Gitalk({
+    clientID: 'eea37193acb231476066',
+    clientSecret: 'b7ddb1cbbec590c0c8d50a53408ad167d0d45e8c',
+    repo: 'cywd.github.io',
+    owner: 'cywd',
+    admin: ['cywd'],
+    id: id,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
 
-	gitalk.render('gitalk-container')
+  gitalk.render('gitalk-container')
 </script>
 {% endif %}
 
 
 {% if site.related_posts.size > 0 %}
 <div class="related-articles">
-<h4>You might also enjoy</h4>
+  <h4>You might also enjoy</h4>
   <ul>
-  {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:3 %}
     <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  {% endfor %}
+    {% endfor %}
   </ul>
 </div><!-- /.related-articles -->
 {% endif %}

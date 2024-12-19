@@ -4,7 +4,7 @@
 ####################################
 #
 title: Cyrill
-email: lichunyang@outlook.com
+email: sakura_29@163.com
 description: Cyrill
 url: https://cywd.github.io # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
@@ -46,9 +46,9 @@ kramdown:
 owner:
   name: Cyrill
   avatar: cyrill.jpg
-  job: "iOS DEVELOPER"
-  bio: "A iOS developer who has a full-stack heart. Working for Fibrlink in Beijing, China"
-  email: lichunyang@outlook.com
+  job: "iOS & Web"
+  bio: "iOS & Web developer, working for Fibrlink in Beijing, China."
+  email: sakura_29@163.com
   disqus-shortname:
   twitter: pennyberry01 #username
   facebook: #username
